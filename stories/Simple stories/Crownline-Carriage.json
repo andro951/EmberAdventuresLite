@@ -1,0 +1,1446 @@
+{
+  "app": "EmberAdventures",
+  "exportType": "story-template",
+  "storyTemplate": {
+    "id": "crownline-carriage",
+    "title": "Crownline Carriage",
+    "description": "A sealed carriage arrives with the wrong passenger, forcing the player to protect one quiet political secret for a single afternoon.",
+    "createdAt": "2026-06-30T00:49:17.712Z",
+    "updatedAt": "2026-06-30T11:42:04.317Z",
+    "state": {
+      "meta": {
+        "genres": [
+          "historical",
+          "political",
+          "mystery"
+        ],
+        "story_guidance": "",
+        "default_image_model": "",
+        "story_source": {
+          "mode": "original",
+          "title": "Crownline Carriage",
+          "description": "A sealed carriage arrives with the wrong passenger, forcing the player to protect one quiet political secret for a single afternoon."
+        }
+      },
+      "location": {
+        "universe": "Crownline Carriage",
+        "world": "Edrin Province",
+        "continent": "",
+        "region": "Crownline Road",
+        "settlement_type": "town",
+        "settlement_name": "Briarford",
+        "district": "posting yard",
+        "specific_place": "Crownline Carriage Yard"
+      },
+      "world_map": {
+        "current_location_id": "loc-crownline-carriage-start",
+        "focus_location_id": "loc-crownline-carriage-start",
+        "travel_history": [
+          "loc-crownline-carriage-start"
+        ],
+        "locations": {
+          "loc-crownline-carriage-world": {
+            "id": "loc-crownline-carriage-world",
+            "name": "Edrin Province",
+            "type": "world",
+            "scale": "world",
+            "parent_id": "",
+            "x": 50,
+            "y": 50,
+            "discovered": true,
+            "travel_enabled": false,
+            "summary": "A historical province where roads carry letters faster than truth.",
+            "detail": {
+              "universe": "Crownline Carriage",
+              "world": "Edrin Province"
+            },
+            "connections": [
+              "loc-crownline-carriage-region"
+            ],
+            "npcs": []
+          },
+          "loc-crownline-carriage-region": {
+            "id": "loc-crownline-carriage-region",
+            "name": "Crownline Road",
+            "type": "region",
+            "scale": "region",
+            "parent_id": "loc-crownline-carriage-world",
+            "x": 52,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "Crownline Road connects minor officials, old houses, and nervous messengers.",
+            "detail": {
+              "universe": "Crownline Carriage",
+              "world": "Edrin Province",
+              "region": "Crownline Road"
+            },
+            "connections": [
+              "loc-crownline-carriage-world",
+              "loc-crownline-carriage-start"
+            ],
+            "npcs": []
+          },
+          "loc-crownline-carriage-start": {
+            "id": "loc-crownline-carriage-start",
+            "name": "Crownline Carriage Yard",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-crownline-carriage-region",
+            "x": 55,
+            "y": 55,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A posting yard where a sealed carriage has arrived early and wrong.",
+            "detail": {
+              "universe": "Crownline Carriage",
+              "world": "Edrin Province",
+              "region": "Crownline Road",
+              "settlement_name": "Briarford",
+              "district": "posting yard",
+              "specific_place": "Crownline Carriage Yard"
+            },
+            "connections": [
+              "loc-crownline-carriage-region"
+            ],
+            "npcs": [
+              "Julian Vey"
+            ]
+          }
+        }
+      },
+      "time": {
+        "year": 2026,
+        "month": 6,
+        "day": 30,
+        "hour": 9,
+        "minute": 0
+      },
+      "scene": {
+        "summary": "The player stands in a posting yard as a sealed carriage opens to reveal the wrong passenger.",
+        "party_members_present": [],
+        "image_characters": [
+          "Player"
+        ],
+        "npcs_present": [
+          "Julian Vey"
+        ],
+        "image_action": "sealed carriage yard"
+      },
+      "player": {
+        "id": "caleb-arden",
+        "name": "Caleb Arden",
+        "source": "Player",
+        "creation_tool": "Codex 5.5 (Medium)",
+        "can_die": false,
+        "gender": "male",
+        "age": 24,
+        "role": "Crownline Carriage protagonist",
+        "personality_description": "A capable, kind adult who starts the story with practical confidence and room for the player to define deeper choices.",
+        "speech_style": "Clear, calm, and direct, with occasional dry humor.",
+        "boldness": 4,
+        "starting_relationship_to_player": "stranger",
+        "starting_trust": 0,
+        "starting_attraction": 0,
+        "starting_affection": 0,
+        "starting_state_of_mind": "focused",
+        "starting_physical_state": "healthy",
+        "starting_pose": "standing naturally",
+        "appearance": {
+          "species": "white human",
+          "height": 5,
+          "skin_color": "",
+          "eye_color": "",
+          "hair_color": "",
+          "hair_length": "",
+          "hair_type": "",
+          "extra_description": "",
+          "body_description": "An average build."
+        },
+        "outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "clean fitted shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "plain practical trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "plain fitted travel shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "simple belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "practical travel trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable travel boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "starting_outfit_id": "default",
+        "starting_held_items": {
+          "right_hand": null,
+          "left_hand": null
+        },
+        "starting_inventory": [],
+        "durable_known_facts": [
+          "This is one selectable protagonist for the story.",
+          "Their choices should drive the story without locked personality outcomes."
+        ],
+        "default_seed": 0,
+        "image_prompt_config": {
+          "seed_enabled": true,
+          "seed": 0,
+          "style": "",
+          "profile_style": "Game Art Icon",
+          "negative": "",
+          "negative_prompt": ""
+        },
+        "default_profile_image": {
+          "url": "",
+          "source": "none",
+          "seed": null,
+          "prompt": "",
+          "negative_prompt": "",
+          "note": ""
+        },
+        "voice": {
+          "gender_bucket": "male",
+          "preferred_voice_name": ""
+        },
+        "clothing": {
+          "hat": null,
+          "hair": null,
+          "hair_accessory": null,
+          "face": null,
+          "ears": null,
+          "neck": null,
+          "shoulders": null,
+          "bra": null,
+          "undershirt": null,
+          "shirt": "clean fitted shirt",
+          "over_shirt": null,
+          "coat": null,
+          "back": null,
+          "hands": null,
+          "right_wrist": null,
+          "left_wrist": null,
+          "right_fingers": null,
+          "left_fingers": null,
+          "waist": null,
+          "belt_accessory": null,
+          "underwear": null,
+          "pants": "plain practical trousers",
+          "skirt": null,
+          "legwear": null,
+          "socks": null,
+          "feet": "comfortable shoes",
+          "other_accessory": null
+        }
+      },
+      "players": [
+        {
+          "id": "caleb-arden",
+          "name": "Caleb Arden",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "male",
+          "age": 24,
+          "role": "Crownline Carriage protagonist",
+          "personality_description": "A capable, kind adult who starts the story with practical confidence and room for the player to define deeper choices.",
+          "speech_style": "Clear, calm, and direct, with occasional dry humor.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "white human",
+            "height": 5,
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "default",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [],
+          "durable_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": {
+            "gender_bucket": "male",
+            "preferred_voice_name": ""
+          },
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "clean fitted shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "plain practical trousers",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "comfortable shoes",
+            "other_accessory": null
+          }
+        },
+        {
+          "id": "maya-rivers",
+          "name": "Maya Rivers",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "female",
+          "age": 24,
+          "role": "Crownline Carriage protagonist",
+          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
+          "speech_style": "Warm, concise, and thoughtful.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "Black human",
+            "height": 5,
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "well-fitted travel blouse",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical fitted travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "default",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [],
+          "durable_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Her choices should drive the story without locked personality outcomes."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": {
+            "gender_bucket": "non_male",
+            "preferred_voice_name": ""
+          },
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "clean fitted shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "plain practical trousers",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "comfortable shoes",
+            "other_accessory": null
+          }
+        },
+        {
+          "id": "rowan-ellis",
+          "name": "Rowan Ellis",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 24,
+          "role": "Crownline Carriage protagonist",
+          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
+          "speech_style": "Measured, observant, and plainspoken.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "mixed-race human",
+            "height": 5,
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "default",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [],
+          "durable_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": {
+            "gender_bucket": "non_male",
+            "preferred_voice_name": ""
+          },
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "clean fitted shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "plain practical trousers",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "comfortable shoes",
+            "other_accessory": null
+          }
+        }
+      ],
+      "characters": {},
+      "npc_directory": {
+        "locations": {
+          "Crownline Carriage Yard": {
+            "label": "Crownline Carriage Yard",
+            "characters": {
+              "Julian Vey": {
+                "id": "julian-vey",
+                "name": "Julian Vey",
+                "source": "Player",
+                "creation_tool": "Codex 5.5 (Medium)",
+                "can_die": false,
+                "gender": "male",
+                "age": 28,
+                "role": "provincial clerk",
+                "personality_description": "A precise clerk who panics inwardly and organizes outwardly.",
+                "speech_style": "Formal, quick, and increasingly honest under pressure.",
+                "boldness": 4,
+                "starting_relationship_to_player": "current contact",
+                "starting_trust": 2,
+                "starting_attraction": 0,
+                "starting_affection": 0,
+                "starting_state_of_mind": "focused",
+                "starting_physical_state": "healthy",
+                "starting_pose": "standing naturally",
+                "appearance": {
+                  "species": "white human",
+                  "height": 5,
+                  "skin_color": "",
+                  "eye_color": "",
+                  "hair_color": "",
+                  "hair_length": "",
+                  "hair_type": "",
+                  "extra_description": "",
+                  "body_description": "An average build."
+                },
+                "outfits": [
+                  {
+                    "id": "default",
+                    "name": "Default",
+                    "clothing": {
+                      "shirt": "clean fitted shirt",
+                      "pants": "plain practical trousers",
+                      "feet": "comfortable shoes"
+                    }
+                  }
+                ],
+                "starting_outfit_id": "default",
+                "starting_held_items": {
+                  "right_hand": null,
+                  "left_hand": null
+                },
+                "starting_inventory": [],
+                "durable_known_facts": [
+                  "Julian Vey is present at the start and can explain the immediate situation.",
+                  "Julian Vey should be useful without taking choices away from the player.",
+                  "Julian Vey has a clear stake in the first objective.",
+                  "Julian Vey can recur if the player keeps involving them."
+                ],
+                "default_seed": 0,
+                "image_prompt_config": {
+                  "seed_enabled": true,
+                  "seed": 0,
+                  "style": "",
+                  "profile_style": "Game Art Icon",
+                  "negative": "",
+                  "negative_prompt": ""
+                },
+                "default_profile_image": {
+                  "url": "",
+                  "source": "none",
+                  "seed": null,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": ""
+                },
+                "voice": {
+                  "gender_bucket": "male",
+                  "preferred_voice_name": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "world_flags": {
+        "tone": "Simple historical political mystery with one mistaken carriage and one secret."
+      },
+      "objectives": {
+        "active_id": "crownline-1-identify-the-wrong-passenger",
+        "no_current": false,
+        "items": [
+          {
+            "id": "crownline-1-identify-the-wrong-passenger",
+            "title": "Identify the Wrong Passenger",
+            "type": "story",
+            "kind": "main",
+            "status": "active",
+            "summary": "Find out who came in the sealed carriage.",
+            "rewards": [],
+            "requires": [],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": true,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player speaks to, inspects, or helps identify the carriage passenger.",
+            "completion_instruction": "Reveal the passenger's practical problem without adding broad court intrigue.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "crownline-2-check-the-official-letter",
+            "title": "Check the Official Letter",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Compare the seal, route, and message.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Julian Vey",
+                "stats": {
+                  "trust": 1,
+                  "affection": 0
+                }
+              }
+            ],
+            "requires": [
+              "crownline-1-identify-the-wrong-passenger"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player checks the letter, seal, route slip, or Julian's records.",
+            "completion_instruction": "Give one clear contradiction that points to a local political cover-up.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "crownline-3-choose-who-hears-first",
+            "title": "Choose Who Hears First",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Decide whether to report to the mayor, the magistrate, or nobody yet.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Julian Vey",
+                "stats": {
+                  "trust": 1,
+                  "affection": 0
+                }
+              }
+            ],
+            "requires": [
+              "crownline-2-check-the-official-letter"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player chooses who hears the secret first.",
+            "completion_instruction": "Record who learns first and make that affect trust or pressure.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "mayor",
+                "title": "Tell the Mayor",
+                "summary": "",
+                "effects": [],
+                "rewards": []
+              },
+              {
+                "id": "magistrate",
+                "title": "Tell the Magistrate",
+                "summary": "",
+                "effects": [],
+                "rewards": []
+              },
+              {
+                "id": "wait",
+                "title": "Keep It Quiet",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Julian Vey",
+                    "stats": {
+                      "trust": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "crownline-4-protect-the-afternoon-secret",
+            "title": "Protect the Afternoon Secret",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Keep the secret safe until the real courier is found.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Julian Vey",
+                "stats": {
+                  "trust": 1,
+                  "affection": 0
+                }
+              }
+            ],
+            "requires": [
+              "crownline-3-choose-who-hears-first"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the real courier is found, the secret is exposed, or the afternoon crisis is resolved.",
+            "completion_instruction": "Resolve the local political secret simply and show Julian's respect for the player's choice.",
+            "auto_completed_from_prereqs": false
+          }
+        ]
+      },
+      "future_cast": {
+        "enabled": true,
+        "items": {}
+      },
+      "story_rules": [],
+      "story_memory": {
+        "world_notes": [],
+        "unresolved_threads": [],
+        "relationship_notes": [],
+        "rules_and_constraints": [],
+        "ai_private_notes": []
+      },
+      "story_inventory": {},
+      "story_shops": {},
+      "story_job_offers": {},
+      "story_job_offer_history": [],
+      "active_generated_jobs": {},
+      "story_generated_npc_pool": {},
+      "recent_changes": []
+    },
+    "messages": [
+      {
+        "id": "crownline-carriage-opening",
+        "entryId": "crownline-carriage-opening",
+        "role": "assistant",
+        "speaker": "Narrator",
+        "text": "The Crownline carriage arrives two hours early.\n\nJulian Vey breaks the wax seal, opens the door, and goes pale.\n\n(Julian Vey) \"That is not the minister's courier. Please tell me you enjoy quiet disasters.\"",
+        "at": "2026-06-30T00:49:17.712Z"
+      }
+    ],
+    "source": "Original",
+    "app": "EmberAdventures",
+    "templateType": "story",
+    "creation_tool": "Codex 5.5 (Medium)",
+    "genres": [
+      "historical",
+      "political",
+      "mystery"
+    ],
+    "default_image_model": "",
+    "title_card_subjects": [
+      "sealed carriage",
+      "posting yard",
+      "official letter"
+    ],
+    "title_card_image": {
+      "url": "",
+      "source": "none",
+      "seed": null,
+      "prompt": "",
+      "negative_prompt": "",
+      "note": ""
+    },
+    "starting_player_count": 3,
+    "starting_party_member_count": 0,
+    "starting_npc_count": 1,
+    "main_objective_count": 4,
+    "side_objective_count": 0,
+    "future_character_count": 0
+  },
+  "exportedAt": "2026-06-30T11:42:04.317Z"
+}

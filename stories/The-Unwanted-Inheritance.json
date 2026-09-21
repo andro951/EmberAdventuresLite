@@ -1,0 +1,2929 @@
+{
+  "app": "EmberAdventures",
+  "exportType": "story-template",
+  "storyTemplate": {
+    "id": "the-unwanted-inheritance",
+    "title": "The Unwanted Inheritance",
+    "description": "After inheriting a grandparent's rural house, the player tries to build an ordinary small-town life while locked doors, familiar objects, and a false urn begin exposing a family horror below the floor.",
+    "createdAt": "2026-06-29T00:00:00.000Z",
+    "updatedAt": "2026-08-31T06:03:35.951Z",
+    "state": {
+      "meta": {
+        "story_guidance": "",
+        "genres": [
+          "horror"
+        ],
+        "default_image_model": "",
+        "story_source": {
+          "mode": "original",
+          "title": "The Unwanted Inheritance",
+          "description": "Original general-audience horror story about an inherited family house, a dead twin's grudge spirit, and the lie hidden beneath the cellar."
+        }
+      },
+      "location": {
+        "universe": "The Unwanted Inheritance",
+        "world": "United States",
+        "continent": "North America",
+        "region": "Grayling County",
+        "settlement_type": "town",
+        "settlement_name": "Grayling",
+        "district": "old county road",
+        "specific_place": "grandparents' inherited house"
+      },
+      "world_map": {
+        "current_location_id": "loc-inherited-house",
+        "focus_location_id": "loc-inherited-house",
+        "travel_history": [
+          "loc-inherited-house"
+        ],
+        "locations": {
+          "loc-grayling": {
+            "id": "loc-grayling",
+            "name": "Grayling",
+            "type": "town",
+            "scale": "settlement",
+            "parent_id": "",
+            "x": 50,
+            "y": 50,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A quiet small town where the player's grandparents were remembered fondly.",
+            "detail": {
+              "settlement_name": "Grayling"
+            },
+            "connections": [
+              "loc-inherited-house",
+              "loc-hardware-store",
+              "loc-law-office",
+              "loc-harlan-house"
+            ],
+            "npcs": []
+          },
+          "loc-inherited-house": {
+            "id": "loc-inherited-house",
+            "name": "Inherited House",
+            "type": "house",
+            "scale": "building",
+            "parent_id": "loc-grayling",
+            "x": 48,
+            "y": 48,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "The grandparents' old house, full of familiar daytime memories and locked places the player never noticed as a child.",
+            "detail": {
+              "specific_place": "grandparents' inherited house"
+            },
+            "connections": [
+              "loc-grayling",
+              "loc-living-room",
+              "loc-bedroom",
+              "loc-cellar-door"
+            ],
+            "npcs": []
+          },
+          "loc-living-room": {
+            "id": "loc-living-room",
+            "name": "Living Room",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-inherited-house",
+            "x": 49,
+            "y": 49,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "The room with old family photos, estate boxes, and the urn that supposedly holds the twin's ashes.",
+            "detail": {
+              "specific_place": "living room fireplace"
+            },
+            "connections": [
+              "loc-inherited-house"
+            ],
+            "npcs": []
+          },
+          "loc-bedroom": {
+            "id": "loc-bedroom",
+            "name": "Upstairs Bedroom",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-inherited-house",
+            "x": 50,
+            "y": 47,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A spare upstairs bedroom where the player sleeps in the house for the first time.",
+            "detail": {
+              "specific_place": "upstairs bedroom"
+            },
+            "connections": [
+              "loc-inherited-house"
+            ],
+            "npcs": []
+          },
+          "loc-cellar-door": {
+            "id": "loc-cellar-door",
+            "name": "Locked Cellar Door",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-inherited-house",
+            "x": 47,
+            "y": 47,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "A cellar door bound with chains, a keyed lock, and a six-letter combination lock.",
+            "detail": {
+              "specific_place": "back utility hall cellar door"
+            },
+            "connections": [
+              "loc-inherited-house",
+              "loc-cellar"
+            ],
+            "npcs": []
+          },
+          "loc-cellar": {
+            "id": "loc-cellar",
+            "name": "Cellar",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-inherited-house",
+            "x": 46,
+            "y": 46,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "The locked cellar beneath the family house.",
+            "detail": {
+              "specific_place": "cellar beneath the house"
+            },
+            "connections": [
+              "loc-cellar-door"
+            ],
+            "npcs": []
+          },
+          "loc-hardware-store": {
+            "id": "loc-hardware-store",
+            "name": "Grayling Hardware",
+            "type": "shop",
+            "scale": "building",
+            "parent_id": "loc-grayling",
+            "x": 53,
+            "y": 51,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "The player's new job and a source of practical supplies and local memory.",
+            "detail": {
+              "specific_place": "Grayling Hardware"
+            },
+            "connections": [
+              "loc-grayling"
+            ],
+            "npcs": [
+              "Deacon Miles"
+            ]
+          },
+          "loc-law-office": {
+            "id": "loc-law-office",
+            "name": "Brandt Law Office",
+            "type": "office",
+            "scale": "building",
+            "parent_id": "loc-grayling",
+            "x": 52,
+            "y": 53,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "Celia Brandt's small law office, where estate records and uncomfortable paperwork can be found.",
+            "detail": {
+              "specific_place": "Brandt Law Office"
+            },
+            "connections": [
+              "loc-grayling"
+            ],
+            "npcs": [
+              "Celia Brandt"
+            ]
+          },
+          "loc-harlan-house": {
+            "id": "loc-harlan-house",
+            "name": "Harlan House",
+            "type": "house",
+            "scale": "building",
+            "parent_id": "loc-grayling",
+            "x": 47,
+            "y": 49,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "June Harlan's house across the road from the inherited property.",
+            "detail": {
+              "specific_place": "June Harlan's porch"
+            },
+            "connections": [
+              "loc-grayling",
+              "loc-inherited-house"
+            ],
+            "npcs": [
+              "June Harlan"
+            ]
+          }
+        }
+      },
+      "time": {
+        "year": 2026,
+        "month": 9,
+        "day": 12,
+        "hour": 16,
+        "minute": 20
+      },
+      "scene": {
+        "summary": "The player stands in the grandparents' inherited house with keys, boxes, an estate folder, and a job waiting in town.",
+        "party_members_present": [],
+        "image_characters": [
+          "Player"
+        ],
+        "npcs_present": [],
+        "image_action": "inherited house entry"
+      },
+      "player": {
+        "id": 0,
+        "name": "Caleb Ward",
+        "source": "Player",
+        "creation_tool": "Codex 5.5 (Medium)",
+        "genres": [
+          "horror"
+        ],
+        "can_die": false,
+        "gender": "male",
+        "age": 25,
+        "role": "new heir to the grandparents' old house",
+        "personality_description": "A practical adult trying to turn an inherited family house into a livable start. They remember the house fondly from childhood visits, but their choices, courage, denial, anger, and curiosity are decided through play.",
+        "speech_style": "Natural and grounded, with tone shaped by the player's choices.",
+        "boldness": 5,
+        "starting_relationship_to_player": "none",
+        "starting_trust": 0,
+        "starting_attraction": 0,
+        "starting_affection": 0,
+        "starting_state_of_mind": "tired but functional",
+        "starting_physical_state": "healthy",
+        "starting_pose": "standing with luggage",
+        "appearance": {
+          "species": "adult white human",
+          "height": 6,
+          "skin_color": "light skin",
+          "eye_color": "brown eyes",
+          "hair_color": "brown hair",
+          "hair_length": "short hair",
+          "hair_type": "straight hair",
+          "extra_description": "",
+          "body_description": "An average build."
+        },
+        "outfits": [
+          {
+            "id": "arrival-clothes",
+            "name": "Arrival Clothes",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "plain travel shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable jeans",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "worn sneakers",
+              "other_accessory": "house keys and phone"
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "plain fitted travel shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "simple belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "practical travel trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable travel boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "starting_outfit_id": "arrival-clothes",
+        "starting_held_items": {
+          "right_hand": null,
+          "left_hand": null
+        },
+        "starting_inventory": [
+          "grandparents' house keys",
+          "phone",
+          "overnight bag",
+          "estate folder"
+        ],
+        "durable_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "They inherited their grandparents' old rural house after probate finished.",
+          "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+          "They remember visiting the house as a child and having warm daytime memories there.",
+          "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+          "Caleb's twin brother was named Noah."
+        ],
+        "default_seed": 0,
+        "image_prompt_config": {
+          "seed_enabled": true,
+          "seed": 0,
+          "style": "",
+          "profile_style": "Game Art Icon",
+          "negative": "",
+          "negative_prompt": ""
+        },
+        "default_profile_image": {
+          "url": "",
+          "source": "none",
+          "seed": null,
+          "prompt": "",
+          "negative_prompt": "",
+          "note": ""
+        },
+        "voice": null,
+        "clothing": {
+          "hat": null,
+          "hair": null,
+          "hair_accessory": null,
+          "face": null,
+          "ears": null,
+          "neck": null,
+          "shoulders": null,
+          "bra": null,
+          "undershirt": null,
+          "shirt": "plain travel shirt",
+          "over_shirt": null,
+          "coat": null,
+          "back": null,
+          "hands": null,
+          "right_wrist": null,
+          "left_wrist": null,
+          "right_fingers": null,
+          "left_fingers": null,
+          "waist": null,
+          "belt_accessory": null,
+          "underwear": null,
+          "pants": "comfortable jeans",
+          "skirt": null,
+          "legwear": null,
+          "socks": null,
+          "feet": "worn sneakers",
+          "other_accessory": "house keys and phone"
+        }
+      },
+      "players": [
+        {
+          "id": 0,
+          "name": "Caleb Ward",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "horror"
+          ],
+          "can_die": false,
+          "gender": "male",
+          "age": 25,
+          "role": "new heir to the grandparents' old house",
+          "personality_description": "A practical adult trying to turn an inherited family house into a livable start. They remember the house fondly from childhood visits, but their choices, courage, denial, anger, and curiosity are decided through play.",
+          "speech_style": "Natural and grounded, with tone shaped by the player's choices.",
+          "boldness": 5,
+          "starting_relationship_to_player": "none",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "tired but functional",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing with luggage",
+          "appearance": {
+            "species": "adult white human",
+            "height": 6,
+            "skin_color": "light skin",
+            "eye_color": "brown eyes",
+            "hair_color": "brown hair",
+            "hair_length": "short hair",
+            "hair_type": "straight hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "arrival-clothes",
+              "name": "Arrival Clothes",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable jeans",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "worn sneakers",
+                "other_accessory": "house keys and phone"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "arrival-clothes",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "grandparents' house keys",
+            "phone",
+            "overnight bag",
+            "estate folder"
+          ],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They inherited their grandparents' old rural house after probate finished.",
+            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+            "They remember visiting the house as a child and having warm daytime memories there.",
+            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+            "Caleb's twin brother was named Noah."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "plain travel shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "comfortable jeans",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "worn sneakers",
+            "other_accessory": "house keys and phone"
+          }
+        },
+        {
+          "id": 0,
+          "name": "Mara Ward",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "horror"
+          ],
+          "can_die": false,
+          "gender": "female",
+          "age": 25,
+          "role": "new heir to the grandparents' old house",
+          "personality_description": "A practical adult trying to turn an inherited family house into a livable start. They remember the house fondly from childhood visits, but their choices, courage, denial, anger, and curiosity are decided through play.",
+          "speech_style": "Natural and grounded, with tone shaped by the player's choices.",
+          "boldness": 5,
+          "starting_relationship_to_player": "none",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "tired but functional",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing with luggage",
+          "appearance": {
+            "species": "adult Black human",
+            "height": 5,
+            "skin_color": "deep brown skin",
+            "eye_color": "dark brown eyes",
+            "hair_color": "black hair",
+            "hair_length": "shoulder-length hair",
+            "hair_type": "natural curls",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "arrival-clothes",
+              "name": "Arrival Clothes",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable jeans",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "worn sneakers",
+                "other_accessory": "house keys and phone"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "well-fitted travel blouse",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical fitted travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "arrival-clothes",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "grandparents' house keys",
+            "phone",
+            "overnight bag",
+            "estate folder"
+          ],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They inherited their grandparents' old rural house after probate finished.",
+            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+            "They remember visiting the house as a child and having warm daytime memories there.",
+            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+            "Mara's twin sister was named Nora."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "plain travel shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "comfortable jeans",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "worn sneakers",
+            "other_accessory": "house keys and phone"
+          }
+        },
+        {
+          "id": 0,
+          "name": "Rowan Ward",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "horror"
+          ],
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 25,
+          "role": "new heir to the grandparents' old house",
+          "personality_description": "A practical adult trying to turn an inherited family house into a livable start. They remember the house fondly from childhood visits, but their choices, courage, denial, anger, and curiosity are decided through play.",
+          "speech_style": "Natural and grounded, with tone shaped by the player's choices.",
+          "boldness": 5,
+          "starting_relationship_to_player": "none",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "tired but functional",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing with luggage",
+          "appearance": {
+            "species": "adult mixed human",
+            "height": 5,
+            "skin_color": "medium tan skin",
+            "eye_color": "hazel eyes",
+            "hair_color": "dark brown hair",
+            "hair_length": "short hair",
+            "hair_type": "wavy hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "arrival-clothes",
+              "name": "Arrival Clothes",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable jeans",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "worn sneakers",
+                "other_accessory": "house keys and phone"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "arrival-clothes",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "grandparents' house keys",
+            "phone",
+            "overnight bag",
+            "estate folder"
+          ],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They inherited their grandparents' old rural house after probate finished.",
+            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+            "They remember visiting the house as a child and having warm daytime memories there.",
+            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+            "Rowan's twin was named Ellis."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "plain travel shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "comfortable jeans",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "worn sneakers",
+            "other_accessory": "house keys and phone"
+          }
+        }
+      ],
+      "characters": {},
+      "npc_directory": {
+        "locations": {
+          "grandparents' inherited house": {
+            "label": "grandparents' inherited house",
+            "characters": {
+              "Celia Brandt": {
+                "id": 0,
+                "name": "Celia Brandt",
+                "source": "Player",
+                "creation_tool": "Codex 5.5 (Medium)",
+                "genres": [
+                  "horror"
+                ],
+                "can_die": false,
+                "gender": "female",
+                "age": 58,
+                "role": "probate lawyer",
+                "personality_description": "A brisk small-town lawyer who has seen families become strange around inherited property. She is not cruel, but she has learned not to volunteer what clients did not ask.",
+                "speech_style": "Precise, practical, and professionally guarded.",
+                "boldness": 5,
+                "starting_relationship_to_player": "none",
+                "starting_trust": 0,
+                "starting_attraction": 0,
+                "starting_affection": 0,
+                "starting_state_of_mind": "tired but functional",
+                "starting_physical_state": "healthy",
+                "starting_pose": "standing with luggage",
+                "appearance": {
+                  "species": "adult white human",
+                  "height": 5,
+                  "skin_color": "fair skin",
+                  "eye_color": "gray eyes",
+                  "hair_color": "silver hair",
+                  "hair_length": "short hair",
+                  "hair_type": "neatly styled hair",
+                  "extra_description": "",
+                  "body_description": "An average build."
+                },
+                "outfits": [
+                  {
+                    "id": "arrival-clothes",
+                    "name": "Arrival Clothes",
+                    "clothing": {
+                      "shirt": "plain travel shirt",
+                      "pants": "comfortable jeans",
+                      "feet": "worn sneakers",
+                      "other_accessory": "house keys and phone"
+                    }
+                  }
+                ],
+                "starting_outfit_id": "arrival-clothes",
+                "starting_held_items": {
+                  "right_hand": null,
+                  "left_hand": null
+                },
+                "starting_inventory": [
+                  "grandparents' house keys",
+                  "phone",
+                  "overnight bag",
+                  "estate folder"
+                ],
+                "durable_known_facts": [
+                  "Celia Brandt handled the transfer of the grandparents' house to the player.",
+                  "She knows the estate paperwork but does not know the full cellar truth.",
+                  "She can answer questions about the will, property records, insurance requirements, and legal deadlines.",
+                  "She remembers that several relatives refused or ignored the inheritance before it passed to the player.",
+                  "She avoids family gossip unless pushed with evidence."
+                ],
+                "default_seed": 0,
+                "image_prompt_config": {
+                  "seed_enabled": true,
+                  "seed": 0,
+                  "style": "",
+                  "profile_style": "Game Art Icon",
+                  "negative": "",
+                  "negative_prompt": ""
+                },
+                "default_profile_image": {
+                  "url": "",
+                  "source": "none",
+                  "seed": null,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": ""
+                },
+                "voice": null
+              },
+              "Deacon Miles": {
+                "id": 0,
+                "name": "Deacon Miles",
+                "source": "Player",
+                "creation_tool": "Codex 5.5 (Medium)",
+                "genres": [
+                  "horror"
+                ],
+                "can_die": false,
+                "gender": "male",
+                "age": 41,
+                "role": "hardware store owner",
+                "personality_description": "A steady local business owner who gives practical advice and notices when customers buy the wrong things for the wrong reasons.",
+                "speech_style": "Plainspoken, dry, and helpful until a question sounds dangerous.",
+                "boldness": 5,
+                "starting_relationship_to_player": "none",
+                "starting_trust": 0,
+                "starting_attraction": 0,
+                "starting_affection": 0,
+                "starting_state_of_mind": "tired but functional",
+                "starting_physical_state": "healthy",
+                "starting_pose": "standing with luggage",
+                "appearance": {
+                  "species": "adult Black human",
+                  "height": 6,
+                  "skin_color": "dark brown skin",
+                  "eye_color": "dark eyes",
+                  "hair_color": "black hair",
+                  "hair_length": "short hair",
+                  "hair_type": "close-cropped hair",
+                  "extra_description": "",
+                  "body_description": "A strong, athletic build."
+                },
+                "outfits": [
+                  {
+                    "id": "arrival-clothes",
+                    "name": "Arrival Clothes",
+                    "clothing": {
+                      "shirt": "plain travel shirt",
+                      "pants": "comfortable jeans",
+                      "feet": "worn sneakers",
+                      "other_accessory": "house keys and phone"
+                    }
+                  }
+                ],
+                "starting_outfit_id": "arrival-clothes",
+                "starting_held_items": {
+                  "right_hand": null,
+                  "left_hand": null
+                },
+                "starting_inventory": [
+                  "grandparents' house keys",
+                  "phone",
+                  "overnight bag",
+                  "estate folder"
+                ],
+                "durable_known_facts": [
+                  "Deacon Miles owns Grayling Hardware and hired the player for steady work.",
+                  "He knew the grandparents as careful customers who bought locks, chain, salt, batteries, and repair supplies with strange regularity.",
+                  "He gives the player a normal daytime anchor outside the house.",
+                  "He can provide tools, gossip, and warnings without understanding the full haunting.",
+                  "He is more useful when the player asks concrete questions instead of sounding panicked."
+                ],
+                "default_seed": 0,
+                "image_prompt_config": {
+                  "seed_enabled": true,
+                  "seed": 0,
+                  "style": "",
+                  "profile_style": "Game Art Icon",
+                  "negative": "",
+                  "negative_prompt": ""
+                },
+                "default_profile_image": {
+                  "url": "",
+                  "source": "none",
+                  "seed": null,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": ""
+                },
+                "voice": null
+              },
+              "June Harlan": {
+                "id": 0,
+                "name": "June Harlan",
+                "source": "Player",
+                "creation_tool": "Codex 5.5 (Medium)",
+                "genres": [
+                  "horror"
+                ],
+                "can_die": false,
+                "gender": "female",
+                "age": 72,
+                "role": "neighbor across the road",
+                "personality_description": "A lonely neighbor who remembers too much and has spent years deciding which silences were kindness and which were cowardice.",
+                "speech_style": "Soft, evasive, and full of unfinished sentences.",
+                "boldness": 5,
+                "starting_relationship_to_player": "none",
+                "starting_trust": 0,
+                "starting_attraction": 0,
+                "starting_affection": 0,
+                "starting_state_of_mind": "tired but functional",
+                "starting_physical_state": "healthy",
+                "starting_pose": "standing with luggage",
+                "appearance": {
+                  "species": "adult white human",
+                  "height": 4,
+                  "skin_color": "pale wrinkled skin",
+                  "eye_color": "blue eyes",
+                  "hair_color": "white hair",
+                  "hair_length": "short hair",
+                  "hair_type": "thin curled hair",
+                  "extra_description": "",
+                  "body_description": "A slender build."
+                },
+                "outfits": [
+                  {
+                    "id": "arrival-clothes",
+                    "name": "Arrival Clothes",
+                    "clothing": {
+                      "shirt": "plain travel shirt",
+                      "pants": "comfortable jeans",
+                      "feet": "worn sneakers",
+                      "other_accessory": "house keys and phone"
+                    }
+                  }
+                ],
+                "starting_outfit_id": "arrival-clothes",
+                "starting_held_items": {
+                  "right_hand": null,
+                  "left_hand": null
+                },
+                "starting_inventory": [
+                  "grandparents' house keys",
+                  "phone",
+                  "overnight bag",
+                  "estate folder"
+                ],
+                "durable_known_facts": [
+                  "June Harlan lives across the road from the inherited house.",
+                  "She remembers the player visiting as a child but never staying overnight.",
+                  "She remembers the night the twin died, though not every detail.",
+                  "She knows the grandparents changed after the death and bought heavy locks soon after.",
+                  "She may tell the truth if the player brings enough evidence or if the house pressure becomes impossible to ignore."
+                ],
+                "default_seed": 0,
+                "image_prompt_config": {
+                  "seed_enabled": true,
+                  "seed": 0,
+                  "style": "",
+                  "profile_style": "Game Art Icon",
+                  "negative": "",
+                  "negative_prompt": ""
+                },
+                "default_profile_image": {
+                  "url": "",
+                  "source": "none",
+                  "seed": null,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": ""
+                },
+                "voice": null
+              }
+            }
+          }
+        }
+      },
+      "world_flags": {
+        "tone": "grounded supernatural horror with small-town normal life at daytime and escalating family horror at night",
+        "horror_control": "The narrator may impose fear, dread, sensory distortion, intrusive memories, hesitation, nightmares, lost time, and unreliable perception when the haunting escalates, but must not decide the player's major moral choices."
+      },
+      "objectives": {
+        "active_id": "take-possession-of-the-house",
+        "no_current": false,
+        "items": [
+          {
+            "id": "take-possession-of-the-house",
+            "title": "Take Possession of the House",
+            "type": "story",
+            "kind": "main",
+            "status": "active",
+            "summary": "Accept the keys, step inside, and begin turning the inherited house into a place to live.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "front-hall-first-entry",
+                "title": "First Entry",
+                "prompt": "old rural family house front hall in daylight, inherited home with faded wallpaper, dust motes, packed boxes, warm sad nostalgia, realistic horror-drama lighting, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": true,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player enters the inherited house, accepts the keys, begins unloading, or clearly starts taking possession of the property.",
+            "completion_instruction": "Keep the opening grounded and ordinary. The house should feel old, quiet, familiar, and a little too still, not openly haunted yet.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "walk-through-familiar-rooms",
+            "title": "Walk Through Familiar Rooms",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Look around the house and let the old rooms bring back normal childhood memories.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "fireplace-urn-daylight",
+                "title": "The Urn on the Fireplace",
+                "prompt": "old farmhouse living room fireplace mantel in daylight, small sealed ceramic urn beside family photos, dust, lace runner, quiet nostalgic sadness, realistic horror atmosphere, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "take-possession-of-the-house"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player explores the living room, kitchen, hallway, bedroom, or other familiar upstairs rooms and recalls childhood memories.",
+            "completion_instruction": "Describe ordinary family memories tied to house objects. Include the fireplace urn as familiar and sad, not suspicious yet. Do not reveal the cellar truth.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "start-work-at-grayling-hardware",
+            "title": "Start Work at Grayling Hardware",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Settle into a practical small-town job while the house waits for evening.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Deacon Miles",
+                "stats": {
+                  "trust": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "normal_life"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "walk-through-familiar-rooms"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player goes to Grayling Hardware, starts the job, meets Deacon Miles, or handles the first ordinary work shift.",
+            "completion_instruction": "Introduce Deacon Miles as the player's normal daytime anchor. Let the job involve practical supplies, small-town gossip, and ordinary house repair needs.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "settle-in-for-the-first-night",
+            "title": "Settle In for the First Night",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Spend the first night in a house that somehow never held you after dark.",
+            "rewards": [
+              {
+                "type": "add_story_rule",
+                "rule_id": "first-night-in-house",
+                "text": "The player has slept in the inherited house for the first time; the twin spirit may become more active at night because the surviving twin is present."
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "house_pressure"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "start-work-at-grayling-hardware"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player gets ready for bed, chooses a bedroom, locks up, or otherwise settles in for the first night.",
+            "completion_instruction": "As the player settles in, let them naturally remember that they visited this house often but never actually slept here before. Keep the thought brief and dismissible.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "wake-to-the-first-noise",
+            "title": "Wake to the First Noise",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "A noise outside the bedroom window wakes the player after midnight.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "bedroom-window-first-noise",
+                "title": "The First Noise",
+                "prompt": "dark old bedroom at night, window with moonlit glass, vague shadow outside, rumpled bed, rural horror atmosphere, realistic cinematic lighting, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "settle-in-for-the-first-night"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has shown the player waking to a noise that first seems to come from outside the bedroom window.",
+            "completion_instruction": "Make the sound specific and grounded: dragging, small knocks, wet tapping, or a child's faint movement outside. Do not answer what it is yet.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-first-noise-response",
+            "title": "Choose How to Respond",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Decide whether to follow the noise, lock yourself in, or pretend it is nothing.",
+            "rewards": [],
+            "requires": [
+              "wake-to-the-first-noise"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one response to the first night noise.",
+            "completion_instruction": "Resolve only the player's chosen first response and move to the consequences.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "go-outside",
+                "title": "Go Outside and Check",
+                "summary": "",
+                "effects": [
+                  "house_pressure +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-followed-first-noise",
+                    "text": "The player followed the first night noise and should discover it does not truly come from outside."
+                  }
+                ]
+              },
+              {
+                "id": "lock-bedroom-door",
+                "title": "Lock the Bedroom Door",
+                "summary": "",
+                "effects": [
+                  "house_pressure +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-locked-door-first-night",
+                    "text": "The player hid from the first night noise; the house pressure should escalate through sleep, dreams, and daytime unease."
+                  }
+                ]
+              },
+              {
+                "id": "go-back-to-sleep",
+                "title": "Go Back to Sleep",
+                "summary": "",
+                "effects": [
+                  "house_pressure +3"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 3
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-ignored-first-noise",
+                    "text": "The player ignored the first night noise; the haunting should become more intrusive because the twin was not answered."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "find-the-locked-cellar-door",
+            "title": "Find the Locked Cellar Door",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Trace the noise to a cellar door that does not belong in any warm memory of the house.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "locked-cellar-door",
+                "title": "The Locked Cellar Door",
+                "prompt": "old farmhouse utility hallway at night, heavy wooden cellar door wrapped in dark chains, one brass key lock, one six-letter combination lock, cold shadow under the door, subtle scratch marks around frame, realistic horror lighting, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "cellar_progress"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "choose-first-noise-response"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player finds or examines the cellar door with chains, a keyed lock, and a six-letter combination lock.",
+            "completion_instruction": "Reveal that the sound resolves toward the cellar door. The door should imply warning through locks and chains only; no one should state a warning aloud.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-cellar-commitment",
+            "title": "Choose What the Door Means",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Decide whether to treat the locked cellar as a problem, a mystery, or something to leave alone.",
+            "rewards": [],
+            "requires": [
+              "find-the-locked-cellar-door"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one stance toward the locked cellar.",
+            "completion_instruction": "Record the player's stance and continue into daytime estate tasks.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "start-searching",
+                "title": "Start Searching for the Key and Code",
+                "summary": "",
+                "effects": [
+                  "cellar_progress +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "cellar_progress"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-seeking-cellar-access",
+                    "text": "The player has decided to search for a way into the locked cellar."
+                  }
+                ]
+              },
+              {
+                "id": "leave-it-locked",
+                "title": "Leave It Locked for Now",
+                "summary": "",
+                "effects": [
+                  "house_pressure +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-left-cellar-locked",
+                    "text": "The player chose to leave the locked cellar alone for now; the twin spirit should keep pushing through objects, sleep, and noises."
+                  }
+                ]
+              },
+              {
+                "id": "document-it",
+                "title": "Photograph It for the Estate Records",
+                "summary": "",
+                "effects": [
+                  "cellar_progress +1",
+                  "normal_life +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "cellar_progress"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "normal_life"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "cellar-documented",
+                    "text": "The player documented the locked cellar door as part of the estate records."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sort-the-living-room",
+            "title": "Sort the Living Room",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Ordinary estate work turns familiar objects into quiet contradictions.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "normal_life"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "generate_story_image",
+                "id": "paired-childhood-objects",
+                "title": "Paired Childhood Objects",
+                "prompt": "old living room floor with estate boxes, two small childhood toys side by side, old family photos with one edge cropped awkwardly, dusty afternoon light, understated horror mood, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "choose-cellar-commitment"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player sorts living-room belongings, photographs, boxes, or mantel objects including the urn.",
+            "completion_instruction": "Let the player find warm memories and one wrong detail: paired toys, cropped photos, or the urn being treated too carefully. Do not reveal the dirt yet unless the player directly opens it.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "ask-around-at-work",
+            "title": "Ask Around at Work",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Normal small-town conversation starts to circle old purchases and old silences.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Deacon Miles",
+                "stats": {
+                  "trust": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "cellar_progress"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "sort-the-living-room"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player asks Deacon Miles or hardware customers about the house, the grandparents, old locks, chains, repair supplies, or the family.",
+            "completion_instruction": "Let Deacon remember practical purchase patterns: chains, locks, salt, candles, batteries, and regular repairs. Keep it mundane enough that the player can rationalize it.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "find-the-brass-key",
+            "title": "Find the Brass Key",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "One piece of the cellar lock turns up inside an ordinary family keepsake.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "cellar_progress"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "generate_story_image",
+                "id": "brass-cellar-key",
+                "title": "The Brass Key",
+                "prompt": "small tarnished brass key hidden in an old family sewing box, faded thread spools, dust, warm lamp light turning ominous, realistic horror still life, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "ask-around-at-work"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player finds the brass key for the cellar lock in a sewing box, tackle box, drawer, urn base, or other old family object.",
+            "completion_instruction": "Reveal the key through a normal object that carries a fond memory of a grandparent. Make the memory feel contaminated by what the key implies.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "open-the-urn",
+            "title": "Open the Urn",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The familiar urn on the fireplace becomes the first undeniable lie.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "house_pressure"
+                ],
+                "amount": 2
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "cellar_progress"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "urn-contained-dirt",
+                "text": "The player discovered that the twin's urn contained ordinary dirt instead of ashes."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "urn-filled-with-dirt",
+                "title": "The Urn Was Dirt",
+                "prompt": "open ceramic funeral urn on fireplace mantel, ordinary dark soil spilled across pale cloth, family photos nearby, cold realization, realistic psychological horror lighting, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "find-the-brass-key"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player opens, spills, checks, weighs, or otherwise confirms what is inside the twin's urn.",
+            "completion_instruction": "Reveal that the urn contains ordinary dirt, not ashes. The player should naturally think: if this is dirt, where is the twin, and did the parents know?",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-after-urn",
+            "title": "Choose Who to Call",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The urn proves someone lied, but calling the wrong person may bury the truth again.",
+            "rewards": [],
+            "requires": [
+              "open-the-urn"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects who to contact after discovering the urn contains dirt.",
+            "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "call-parent",
+                "title": "Call a Parent",
+                "summary": "",
+                "effects": [
+                  "family_doubt +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "family_doubt"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-called-parent-after-urn",
+                    "text": "The player called a parent after discovering dirt in the urn; the answer should be evasive, shaken, or incomplete rather than fully resolving the mystery."
+                  }
+                ]
+              },
+              {
+                "id": "call-lawyer",
+                "title": "Call Celia Brandt",
+                "summary": "",
+                "effects": [
+                  "normal_life +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "normal_life"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Celia Brandt",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-called-lawyer-after-urn",
+                    "text": "The player called Celia Brandt after discovering dirt in the urn and may press estate records for contradictions."
+                  }
+                ]
+              },
+              {
+                "id": "tell-no-one",
+                "title": "Tell No One Yet",
+                "summary": "",
+                "effects": [
+                  "house_pressure +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-hid-urn-discovery",
+                    "text": "The player told no one after discovering dirt in the urn; the isolation should intensify the haunting."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "learn-the-six-letter-code",
+            "title": "Learn the Six-Letter Code",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The combination lock needs six letters, and the house keeps pushing old names into view.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "cellar_progress"
+                ],
+                "amount": 2
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "cellar-code-known",
+                "text": "The player knows the six-letter combination needed to open the cellar lock."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "six-letter-code-clue",
+                "title": "The Six-Letter Code",
+                "prompt": "old childhood drawing on yellowed paper, two small figures holding hands near a house, one six-letter name-like word circled hard in pencil, eerie desk lamp, no readable text beyond abstract marks",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "choose-after-urn"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player discovers the six-letter cellar code through records, old drawings, a hidden note, a parent's evasive memory, or linked family objects.",
+            "completion_instruction": "Reveal the code as a family word tied to the twin and the grandparents' bargain, not as a random puzzle answer. The player should understand enough to open the lock.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-open-or-delay",
+            "title": "Choose Whether to Open the Cellar",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The player has the key and the code. The locks can finally open.",
+            "rewards": [],
+            "requires": [
+              "learn-the-six-letter-code"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects whether to open the cellar now or delay again.",
+            "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "open-cellar-now",
+                "title": "Open It Now",
+                "summary": "",
+                "effects": [
+                  "cellar_progress +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "cellar_progress"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-opened-cellar",
+                    "text": "The player chose to open the cellar after finding the key and code."
+                  }
+                ]
+              },
+              {
+                "id": "sleep-on-it",
+                "title": "Sleep on It",
+                "summary": "",
+                "effects": [
+                  "house_pressure +4"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 4
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-delayed-cellar-after-unlocking",
+                    "text": "The player had the means to open the cellar but chose to delay; the twin spirit should escalate sharply overnight."
+                  }
+                ]
+              },
+              {
+                "id": "leave-house",
+                "title": "Leave the House for the Night",
+                "summary": "",
+                "effects": [
+                  "house_pressure +3"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 3
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-left-house-before-opening-cellar",
+                    "text": "The player left the house after gaining access to the cellar; the haunting may follow through dreams, calls, and objects."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "descend-the-cellar-stairs",
+            "title": "Descend the Cellar Stairs",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The door opens onto a space that was never part of the happy house.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "cellar-stairs-open",
+                "title": "The Cellar Stairs",
+                "prompt": "old farmhouse cellar stairs descending into darkness, chains hanging loose on open door, damp wooden steps, weak flashlight beam, oppressive rural horror atmosphere, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "house_pressure"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "choose-open-or-delay"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player opens the cellar and descends the stairs or clearly enters the cellar threshold.",
+            "completion_instruction": "Show the cellar stairs as physically real and frightening. The spirit may pressure the player through fear, sensory distortion, and childhood memory, but do not make major choices for them.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "find-the-burial-place",
+            "title": "Find the Burial Place",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The cellar holds the truth the urn replaced.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "cellar_progress"
+                ],
+                "amount": 2
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "twin-buried-in-cellar",
+                "text": "The player discovered that the twin's body was hidden in the cellar instead of cremated."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "cellar-burial-place",
+                "title": "The Burial Place",
+                "prompt": "damp old cellar floor with one rectangular patch of disturbed earth beneath rotten boards, small childhood object half-buried nearby, flashlight beam, tragic supernatural horror mood, no gore, no text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "descend-the-cellar-stairs"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player discovers the hidden burial place, disturbed floor, concealed grave, or direct proof that the twin's body was hidden in the cellar.",
+            "completion_instruction": "Reveal the burial place without graphic gore. This is the emotional truth: the twin was buried under the house, and the cremation story was a lie.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "uncover-the-bargain",
+            "title": "Uncover the Bargain",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The grandparents' good name breaks under the reason they chose one child over another.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "family_doubt"
+                ],
+                "amount": 3
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "grandparents-chose-one-twin",
+                "text": "The grandparents made a bargain when they were young and later chose the player's twin as the price when the debt came due."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "grandparents-confession",
+                "title": "The Confession",
+                "prompt": "old handwritten confession pages spread on a cellar workbench, candle stubs, old lock keys, family photograph torn in half, rural occult horror mood, no readable text",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "find-the-burial-place"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player finds records, letters, ritual marks, a confession, or supernatural evidence explaining the grandparents' bargain and the twin's death.",
+            "completion_instruction": "Reveal that the grandparents made a desperate bargain in youth; when the debt came due, they chose one twin to die so the other would live. The active haunting is the dead twin's grudge spirit, not the old bargaining entity.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-what-to-do-with-truth",
+            "title": "Choose What to Do With the Truth",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The truth can be named, buried again, burned, or fled from.",
+            "rewards": [],
+            "requires": [
+              "uncover-the-bargain"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects what to do with the truth.",
+            "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "name-and-lay-to-rest",
+                "title": "Name the Twin and Lay Them to Rest",
+                "summary": "",
+                "effects": [
+                  "cellar_progress +3"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "cellar_progress"
+                    ],
+                    "amount": 3
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-chose-rest",
+                    "text": "The player chose to name the twin, acknowledge the truth, and try to lay the spirit to rest instead of preserving the family lie."
+                  },
+                  {
+                    "type": "start_objective",
+                    "objective_id": "perform-the-resting-rite"
+                  }
+                ]
+              },
+              {
+                "id": "keep-family-secret",
+                "title": "Keep the Family Secret",
+                "summary": "",
+                "effects": [
+                  "house_pressure +4"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 4
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-kept-family-secret",
+                    "text": "The player chose to keep the family secret, continuing the conditions that made the twin's grudge stronger."
+                  },
+                  {
+                    "type": "start_objective",
+                    "objective_id": "bad-ending-backseat"
+                  }
+                ]
+              },
+              {
+                "id": "burn-the-proof",
+                "title": "Burn the Proof",
+                "summary": "",
+                "effects": [
+                  "house_pressure +5"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 5
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-burned-proof",
+                    "text": "The player chose to destroy proof of the grandparents' crime; the twin spirit should treat this as betrayal."
+                  },
+                  {
+                    "type": "start_objective",
+                    "objective_id": "bad-ending-backseat"
+                  }
+                ]
+              },
+              {
+                "id": "run-from-house",
+                "title": "Run From the House",
+                "summary": "",
+                "effects": [
+                  "house_pressure +6"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "house_pressure"
+                    ],
+                    "amount": 6
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "player-ran-from-truth",
+                    "text": "The player chose to flee the house after learning the truth; the twin spirit may follow."
+                  },
+                  {
+                    "type": "start_objective",
+                    "objective_id": "bad-ending-backseat"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "perform-the-resting-rite",
+            "title": "Perform the Resting Rite",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The only kind ending requires returning the twin's name, remains, and story to the world above.",
+            "rewards": [
+              {
+                "type": "remove_story_rule",
+                "rule_id": "player-chose-rest"
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "twin-laid-to-rest",
+                "text": "The player named the twin, acknowledged the real death, and laid the spirit to rest."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "resting-rite",
+                "title": "The Resting Rite",
+                "prompt": "quiet dawn outside old rural house, small memorial under trees, extinguished candle, open empty urn beside fresh earth, peaceful horror aftermath, no text, no gore",
+                "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+              }
+            ],
+            "requires": [
+              "choose-what-to-do-with-truth"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "happy-ending-leave-town",
+                "requirements": [
+                  {
+                    "path": "story_inventory.cellar_progress",
+                    "op": ">=",
+                    "value": 9
+                  }
+                ]
+              },
+              "bad-ending-backseat"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player names the twin, recovers or acknowledges the remains, rejects the false urn, and completes a meaningful act of burial, memorial, confession, or release.",
+            "completion_instruction": "Allow this objective to complete only if the player is sincerely laying the twin to rest rather than hiding the truth again. Make it frightening but compassionate.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "bad-ending-backseat",
+            "title": "Drive Away in the Dark",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Leaving the house does not mean leaving the twin behind.",
+            "rewards": [],
+            "requires": [
+              "choose-what-to-do-with-truth"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player drives away from the house after keeping, burning, or fleeing the truth.",
+            "completion_instruction": "Put the player in the car at night. Let them hear a small movement from the back seat and notice something in the rear-view mirror.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-rear-view",
+            "title": "Choose Whether to Look",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Something moves in the back seat. Looking and not looking are both too late.",
+            "rewards": [],
+            "requires": [
+              "bad-ending-backseat"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects whether to look.",
+            "completion_instruction": "Resolve the selected bad ending. Either choice ends in death or disappearance; the difference is whether the player sees the spirit clearly.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "look-behind-you",
+                "title": "Look Behind You",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "generate_story_image",
+                    "id": "backseat-jumpscare",
+                    "title": "Back Seat",
+                    "prompt": "jump scare horror image from front seat of car at night, dead childlike twin spirit crouched in back seat shadow, pale wet face, hollow angry eyes, rear-view mirror reflection, cinematic terror, no gore, no text",
+                    "negative_prompt": "text, caption, logo, watermark, sexual content, gore, exposed organs"
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "ending-looked-back",
+                    "text": "Bad ending: the player looked back and saw the twin spirit in the back seat before dying or vanishing."
+                  },
+                  {
+                    "type": "kill_character",
+                    "target": "Player",
+                    "ignore_can_die": true,
+                    "reason": "The bad ending catches the player in the car after failing to lay the twin to rest."
+                  }
+                ]
+              },
+              {
+                "id": "keep-driving",
+                "title": "Keep Driving",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "generate_story_image",
+                    "id": "rearview-shadow",
+                    "title": "Rear-View Shadow",
+                    "prompt": "subtle horror image of rear-view mirror in dark car, small pale shape barely visible in back seat shadow, empty rural road behind, dread atmosphere, no gore, no text",
+                    "negative_prompt": "text, caption, logo, watermark, gore, explicit injury, sexual content"
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "ending-kept-driving",
+                    "text": "Bad ending: the player refused to look back, but the twin spirit was already in the car."
+                  },
+                  {
+                    "type": "kill_character",
+                    "target": "Player",
+                    "ignore_can_die": true,
+                    "reason": "The bad ending follows the player into the car after failing to lay the twin to rest."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "happy-ending-leave-town",
+            "title": "Leave the House Behind",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "With the twin finally at rest, the player can leave the house and the family lie behind.",
+            "rewards": [
+              {
+                "type": "add_story_rule",
+                "rule_id": "ending-happy-release",
+                "text": "Happy ending: the twin was laid to rest and the player moved away from the inherited house."
+              }
+            ],
+            "requires": [
+              "perform-the-resting-rite"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player leaves the house after the twin is laid to rest and no longer haunted by the cellar.",
+            "completion_instruction": "Resolve the only happy ending: the player moves away, the false urn is gone, the twin has a real memorial, and the house no longer has a claim on them.",
+            "auto_completed_from_prereqs": false
+          }
+        ]
+      },
+      "future_cast": {
+        "enabled": true,
+        "items": {}
+      },
+      "story_rules": [
+        {
+          "id": "horror-can-pressure-player",
+          "text": "This is a horror story. The narrator may impose fear responses, sensory distortions, intrusive memories, hesitation, panic, dread, nightmares, lost time, compulsive attention, and unreliable perception when the house or twin spirit pressure escalates. The narrator must not decide major moral choices for the player, but may make the player frightened, physically affected, misled by perception, or temporarily overwhelmed when the horror justifies it."
+        },
+        {
+          "id": "twin-spirit-is-entity",
+          "text": "The active supernatural entity is the dead twin's grudge spirit, not the old bargaining force. The twin spirit is angry, lonely, betrayed, and fixated on the surviving sibling."
+        },
+        {
+          "id": "grandparents-truth-hidden",
+          "text": "The player starts knowing only the family story: the twin died young and was cremated. The truth about the grandparents' bargain, the false urn, and the cellar burial must emerge through play."
+        }
+      ],
+      "story_memory": {
+        "world_notes": [
+          "The player inherited the grandparents' old house and has started a small-town job at Grayling Hardware.",
+          "The player has fond childhood memories of daytime visits to the house but never slept there before.",
+          "The twin's urn sits on the fireplace and is familiar to the player as part of the family story."
+        ],
+        "unresolved_threads": [
+          "Why did the grandparents never let the player sleep in the house?",
+          "What is really inside the urn?",
+          "Did the player's parents know the grandparents lied?",
+          "What is behind the locked cellar door?"
+        ],
+        "relationship_notes": [],
+        "rules_and_constraints": [
+          "Keep the horror concrete and clue-driven rather than abstract.",
+          "Daytime scenes should support normal life, work, errands, local conversations, and house sorting.",
+          "Night scenes may become more forceful and frightening as house_pressure rises."
+        ],
+        "ai_private_notes": []
+      },
+      "story_inventory": {
+        "house_pressure": 0,
+        "cellar_progress": 0,
+        "normal_life": 0,
+        "family_doubt": 0,
+        "rule_flags": []
+      },
+      "story_shops": {},
+      "story_job_offers": {},
+      "story_job_offer_history": [],
+      "active_generated_jobs": {},
+      "story_generated_npc_pool": {},
+      "recent_changes": []
+    },
+    "messages": [
+      {
+        "id": "opening-the-unwanted-inheritance",
+        "entryId": "opening-the-unwanted-inheritance",
+        "role": "assistant",
+        "speaker": "Narrator",
+        "text": "The key sticks the first time you turn it.\n\nYour grandparents' old house opens with a tired wooden groan and the smell of dust, old curtains, and summer visits you remember better than you expected.\n\nBoxes wait in the hall. The estate folder is under your arm. Your first shift at Grayling Hardware starts tomorrow morning.\n\nFor now, the house is quiet.",
+        "at": "2026-06-29T00:00:00.000Z"
+      }
+    ],
+    "source": "Original",
+    "app": "EmberAdventures",
+    "templateType": "story",
+    "creation_tool": "Codex 5.5 (Medium)",
+    "genres": [
+      "horror"
+    ],
+    "default_image_model": "",
+    "title_card_subjects": [
+      "old inherited house",
+      "fireplace urn",
+      "locked cellar door"
+    ],
+    "title_card_image": {
+      "url": "",
+      "source": "none",
+      "seed": null,
+      "prompt": "",
+      "negative_prompt": "",
+      "note": ""
+    },
+    "starting_player_count": 3,
+    "starting_party_member_count": 0,
+    "starting_npc_count": 0,
+    "main_objective_count": 23,
+    "side_objective_count": 0,
+    "future_character_count": 0
+  },
+  "exportedAt": "2026-08-31T06:03:35.951Z"
+}

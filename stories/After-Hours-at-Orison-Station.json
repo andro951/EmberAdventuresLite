@@ -1,0 +1,3491 @@
+{
+  "app": "EmberAdventures",
+  "exportType": "story-template",
+  "storyTemplate": {
+    "id": "after-hours-at-orison-station",
+    "title": "After Hours at Orison Station",
+    "description": "A focused mystery about an overnight station clerk, impossible tickets, hidden platforms, and trains that arrive from places the city insists do not exist.",
+    "createdAt": "2026-06-29T00:00:00.000Z",
+    "updatedAt": "2026-08-31T06:03:35.951Z",
+    "state": {
+      "meta": {
+        "story_guidance": "",
+        "genres": [
+          "mystery"
+        ],
+        "default_image_model": "",
+        "story_source": {
+          "mode": "original",
+          "title": "After Hours at Orison Station",
+          "description": "Original mystery story about impossible train routes, hidden platforms, and erased station records."
+        }
+      },
+      "location": {
+        "universe": "After Hours at Orison Station",
+        "world": "Orison City",
+        "continent": "",
+        "region": "Central Transit District",
+        "settlement_type": "city",
+        "settlement_name": "Orison City",
+        "district": "Old Central Line",
+        "specific_place": "Orison Station night desk"
+      },
+      "world_map": {
+        "current_location_id": "loc-night-desk",
+        "focus_location_id": "loc-orison-station",
+        "travel_history": [
+          "loc-night-desk"
+        ],
+        "locations": {
+          "loc-orison-city": {
+            "id": "loc-orison-city",
+            "name": "Orison City",
+            "type": "city",
+            "scale": "settlement",
+            "parent_id": "",
+            "x": 50,
+            "y": 50,
+            "discovered": true,
+            "travel_enabled": false,
+            "summary": "A modern city whose transit records do not always match its streets.",
+            "detail": {
+              "world": "Orison City",
+              "region": "Central Transit District"
+            },
+            "connections": [
+              "loc-orison-station"
+            ],
+            "npcs": []
+          },
+          "loc-orison-station": {
+            "id": "loc-orison-station",
+            "name": "Orison Station",
+            "type": "building",
+            "scale": "building",
+            "parent_id": "loc-orison-city",
+            "x": 52,
+            "y": 50,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A quiet city train station after the last scheduled service.",
+            "detail": {
+              "settlement_name": "Orison City",
+              "district": "Old Central Line",
+              "specific_place": "Orison Station"
+            },
+            "connections": [
+              "loc-night-desk",
+              "loc-platforms",
+              "loc-lost-property"
+            ],
+            "npcs": [
+              "Veda Coll"
+            ]
+          },
+          "loc-night-desk": {
+            "id": "loc-night-desk",
+            "name": "Night Desk",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-orison-station",
+            "x": 52,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "The attendant desk with the ticket printer, radio, ledger, and station keys.",
+            "detail": {
+              "specific_place": "Orison Station night desk"
+            },
+            "connections": [
+              "loc-orison-station",
+              "loc-platforms"
+            ],
+            "npcs": [
+              "Veda Coll"
+            ]
+          },
+          "loc-platforms": {
+            "id": "loc-platforms",
+            "name": "Known Platforms",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-orison-station",
+            "x": 55,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "Platforms One through Three, empty after the last scheduled train.",
+            "detail": {
+              "specific_place": "Orison Station platforms"
+            },
+            "connections": [
+              "loc-night-desk",
+              "loc-platform-four"
+            ],
+            "npcs": []
+          },
+          "loc-platform-four": {
+            "id": "loc-platform-four",
+            "name": "Platform Four",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-orison-station",
+            "x": 58,
+            "y": 53,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "A hidden platform that should not exist in Orison Station.",
+            "detail": {
+              "specific_place": "hidden Platform Four"
+            },
+            "connections": [
+              "loc-platforms",
+              "loc-signal-room",
+              "loc-maintenance-passage"
+            ],
+            "npcs": []
+          },
+          "loc-signal-room": {
+            "id": "loc-signal-room",
+            "name": "Old Signal Room",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-orison-station",
+            "x": 57,
+            "y": 49,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "A locked signal room whose old board can still call impossible routes.",
+            "detail": {
+              "specific_place": "old signal room"
+            },
+            "connections": [
+              "loc-platform-four"
+            ],
+            "npcs": []
+          },
+          "loc-lost-property": {
+            "id": "loc-lost-property",
+            "name": "Lost Property Room",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-orison-station",
+            "x": 49,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "Shelves of tagged belongings left behind by ordinary and not-so-ordinary passengers.",
+            "detail": {
+              "specific_place": "lost-property room"
+            },
+            "connections": [
+              "loc-orison-station"
+            ],
+            "npcs": []
+          },
+          "loc-maintenance-passage": {
+            "id": "loc-maintenance-passage",
+            "name": "Buried Maintenance Passage",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-orison-station",
+            "x": 60,
+            "y": 57,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "A descending service passage behind Platform Four.",
+            "detail": {
+              "specific_place": "maintenance passage below the hidden platform"
+            },
+            "connections": [
+              "loc-platform-four",
+              "loc-lower-concourse"
+            ],
+            "npcs": []
+          },
+          "loc-lower-concourse": {
+            "id": "loc-lower-concourse",
+            "name": "Lower Concourse",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-orison-station",
+            "x": 61,
+            "y": 60,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "A sealed lower station layer erased from public maps.",
+            "detail": {
+              "specific_place": "sealed lower concourse"
+            },
+            "connections": [
+              "loc-maintenance-passage",
+              "loc-missing-stop"
+            ],
+            "npcs": []
+          },
+          "loc-missing-stop": {
+            "id": "loc-missing-stop",
+            "name": "The Missing Stop",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-orison-station",
+            "x": 64,
+            "y": 62,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "The final hidden stop where unfinished returns wait to be witnessed.",
+            "detail": {
+              "specific_place": "Neverline missing stop"
+            },
+            "connections": [
+              "loc-lower-concourse"
+            ],
+            "npcs": []
+          },
+          "loc-epilogue-concourse": {
+            "id": "loc-epilogue-concourse",
+            "name": "Morning Concourse",
+            "type": "site",
+            "scale": "site",
+            "parent_id": "loc-orison-station",
+            "x": 52,
+            "y": 54,
+            "discovered": false,
+            "travel_enabled": false,
+            "summary": "Orison Station after the night's truth has been acted on.",
+            "detail": {
+              "specific_place": "morning concourse"
+            },
+            "connections": [
+              "loc-orison-station"
+            ],
+            "npcs": []
+          }
+        }
+      },
+      "time": {
+        "year": 2026,
+        "month": 10,
+        "day": 14,
+        "hour": 0,
+        "minute": 47
+      },
+      "scene": {
+        "summary": "The night clerk is at the Orison Station desk after the last scheduled train when an impossible ticket prints.",
+        "party_members_present": [],
+        "image_characters": [
+          "Player"
+        ],
+        "npcs_present": [
+          "Veda Coll"
+        ],
+        "image_action": "late station desk"
+      },
+      "player": {
+        "id": 0,
+        "name": "Mara Elloway",
+        "source": "Player",
+        "creation_tool": "Codex 5.5 (Medium)",
+        "genres": [
+          "mystery"
+        ],
+        "can_die": false,
+        "gender": "female",
+        "age": 29,
+        "role": "Night station attendant",
+        "personality_description": "A practical city transit worker with steady nerves, quiet curiosity, and a habit of solving problems before asking permission. She is observant, kind to stranded people, and stubborn when records stop matching reality.",
+        "speech_style": "Plainspoken and calm, with dry humor when pressure rises.",
+        "boldness": 5,
+        "starting_relationship_to_player": "none",
+        "starting_trust": 0,
+        "starting_attraction": 0,
+        "starting_affection": 0,
+        "starting_state_of_mind": "alert",
+        "starting_physical_state": "healthy",
+        "starting_pose": "standing behind the night desk",
+        "appearance": {
+          "species": "white human",
+          "height": 5,
+          "skin_color": "fair skin",
+          "eye_color": "gray eyes",
+          "hair_color": "dark brown hair",
+          "hair_length": "shoulder-length hair",
+          "hair_type": "straight hair",
+          "extra_description": "",
+          "body_description": "An average build."
+        },
+        "outfits": [
+          {
+            "id": "night-uniform",
+            "name": "Night Uniform",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "navy station uniform blouse with brass buttons",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed dark uniform trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "black work shoes",
+              "other_accessory": "transit badge and key ring"
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "well-fitted travel blouse",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "simple belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "practical fitted travel trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable travel boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered short travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy fitted travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft loose lounge top",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "starting_outfit_id": "night-uniform",
+        "starting_held_items": {
+          "right_hand": null,
+          "left_hand": null
+        },
+        "starting_inventory": [
+          "station key ring",
+          "pocket radio",
+          "ledger pencil"
+        ],
+        "durable_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "Mara works the quiet overnight shift at Orison Station.",
+          "She knows the normal platform schedule, ticket ledger, announcement booth, lost-property room, and signal access rules.",
+          "She is not a police officer and has limited authority outside the station.",
+          "She notices small discrepancies in records, timestamps, and passenger behavior.",
+          "She starts with a station key ring, a pocket radio, a ledger pencil, and enough confidence to question an impossible ticket.",
+          "Her choices can make her more official, more secretive, or more protective of stranded passengers."
+        ],
+        "default_seed": 0,
+        "image_prompt_config": {
+          "seed_enabled": true,
+          "seed": 0,
+          "style": "",
+          "profile_style": "Game Art Icon",
+          "negative": "",
+          "negative_prompt": ""
+        },
+        "default_profile_image": {
+          "url": "",
+          "source": "none",
+          "seed": null,
+          "prompt": "",
+          "negative_prompt": "",
+          "note": ""
+        },
+        "voice": null,
+        "clothing": {
+          "hat": null,
+          "hair": null,
+          "hair_accessory": null,
+          "face": null,
+          "ears": null,
+          "neck": null,
+          "shoulders": null,
+          "bra": null,
+          "undershirt": null,
+          "shirt": "navy station uniform blouse with brass buttons",
+          "over_shirt": null,
+          "coat": null,
+          "back": null,
+          "hands": null,
+          "right_wrist": null,
+          "left_wrist": null,
+          "right_fingers": null,
+          "left_fingers": null,
+          "waist": null,
+          "belt_accessory": null,
+          "underwear": null,
+          "pants": "pressed dark uniform trousers",
+          "skirt": null,
+          "legwear": null,
+          "socks": null,
+          "feet": "black work shoes",
+          "other_accessory": "transit badge and key ring"
+        }
+      },
+      "players": [
+        {
+          "id": 0,
+          "name": "Mara Elloway",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "mystery"
+          ],
+          "can_die": false,
+          "gender": "female",
+          "age": 29,
+          "role": "Night station attendant",
+          "personality_description": "A practical city transit worker with steady nerves, quiet curiosity, and a habit of solving problems before asking permission. She is observant, kind to stranded people, and stubborn when records stop matching reality.",
+          "speech_style": "Plainspoken and calm, with dry humor when pressure rises.",
+          "boldness": 5,
+          "starting_relationship_to_player": "none",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "alert",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing behind the night desk",
+          "appearance": {
+            "species": "white human",
+            "height": 5,
+            "skin_color": "fair skin",
+            "eye_color": "gray eyes",
+            "hair_color": "dark brown hair",
+            "hair_length": "shoulder-length hair",
+            "hair_type": "straight hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "night-uniform",
+              "name": "Night Uniform",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "navy station uniform blouse with brass buttons",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed dark uniform trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "black work shoes",
+                "other_accessory": "transit badge and key ring"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "well-fitted travel blouse",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical fitted travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "night-uniform",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "station key ring",
+            "pocket radio",
+            "ledger pencil"
+          ],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "Mara works the quiet overnight shift at Orison Station.",
+            "She knows the normal platform schedule, ticket ledger, announcement booth, lost-property room, and signal access rules.",
+            "She is not a police officer and has limited authority outside the station.",
+            "She notices small discrepancies in records, timestamps, and passenger behavior.",
+            "She starts with a station key ring, a pocket radio, a ledger pencil, and enough confidence to question an impossible ticket.",
+            "Her choices can make her more official, more secretive, or more protective of stranded passengers."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "navy station uniform blouse with brass buttons",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "pressed dark uniform trousers",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "black work shoes",
+            "other_accessory": "transit badge and key ring"
+          }
+        },
+        {
+          "id": 1,
+          "name": "Jonah Mercer",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "mystery"
+          ],
+          "can_die": false,
+          "gender": "male",
+          "age": 31,
+          "role": "Night station attendant",
+          "personality_description": "A careful overnight transit worker who hides worry behind procedure and keeps returning to small details until they make sense. He is courteous with passengers, suspicious of bad records, and steady when the station turns impossible.",
+          "speech_style": "Measured and practical, with brief dry remarks when stress rises.",
+          "boldness": 5,
+          "starting_relationship_to_player": "none",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "alert",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing behind the night desk",
+          "appearance": {
+            "species": "Black human",
+            "height": 6,
+            "skin_color": "medium dark brown skin",
+            "eye_color": "dark brown eyes",
+            "hair_color": "black hair",
+            "hair_length": "short hair",
+            "hair_type": "coiled hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "night-uniform",
+              "name": "Night Uniform",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "navy station uniform shirt with brass buttons",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed dark uniform trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "black work shoes",
+                "other_accessory": "transit badge and key ring"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "embroidered formal court shirt",
+                "over_shirt": null,
+                "coat": "tailored noble coat with metallic trim",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished court shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "night-uniform",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "station key ring",
+            "pocket radio",
+            "ledger pencil"
+          ],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "Jonah works the quiet overnight shift at Orison Station.",
+            "He knows the platform schedule, signal procedures, station key rules, and how reports move through transit bureaucracy.",
+            "He is not a police officer and must rely on evidence, witnesses, and station access instead of authority.",
+            "He tends to protect frightened passengers first and ask procedural questions second.",
+            "He starts with a station key ring, a pocket radio, a ledger pencil, and a strong instinct for when paperwork has been altered."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "navy station uniform shirt with brass buttons",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "pressed dark uniform trousers",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "black work shoes",
+            "other_accessory": "transit badge and key ring"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Riley Ashford",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "mystery"
+          ],
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 27,
+          "role": "Night station attendant",
+          "personality_description": "A sharp, quietly stubborn overnight transit worker who trusts patterns more than official explanations. They are patient with lost passengers, skeptical of tidy answers, and willing to break routine when the records stop matching the station.",
+          "speech_style": "Soft-spoken and precise, with clipped questions and understated humor.",
+          "boldness": 5,
+          "starting_relationship_to_player": "none",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "alert",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing behind the night desk",
+          "appearance": {
+            "species": "mixed-race human",
+            "height": 5,
+            "skin_color": "warm tan skin",
+            "eye_color": "hazel eyes",
+            "hair_color": "dark auburn hair",
+            "hair_length": "chin-length hair",
+            "hair_type": "wavy hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "night-uniform",
+              "name": "Night Uniform",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "navy station uniform shirt with brass buttons",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed dark uniform trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "black work shoes",
+                "other_accessory": "transit badge and key ring"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "night-uniform",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "station key ring",
+            "pocket radio",
+            "ledger pencil"
+          ],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "Riley works the quiet overnight shift at Orison Station.",
+            "They know the ticket printer, announcement booth, lost-property logs, and the small access rules most passengers never notice.",
+            "They are not a police officer and need evidence before anyone important will listen.",
+            "They are good at noticing when a familiar place has one extra door, one wrong sound, or one impossible timestamp.",
+            "They start with a station key ring, a pocket radio, a ledger pencil, and a habit of writing down contradictions."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "navy station uniform shirt with brass buttons",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "pressed dark uniform trousers",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "black work shoes",
+            "other_accessory": "transit badge and key ring"
+          }
+        }
+      ],
+      "characters": {},
+      "npc_directory": {
+        "locations": {
+          "Orison Station night desk": {
+            "label": "Orison Station night desk",
+            "characters": {
+              "Veda Coll": {
+                "id": 0,
+                "name": "Veda Coll",
+                "source": "Player",
+                "creation_tool": "Codex 5.5 (Medium)",
+                "genres": [
+                  "mystery"
+                ],
+                "can_die": false,
+                "gender": "female",
+                "age": 46,
+                "role": "Day-shift dispatcher",
+                "personality_description": "A tired but sharp dispatcher who knows more station history than she likes admitting. She acts skeptical until evidence is undeniable, then becomes intensely protective of the staff.",
+                "speech_style": "Blunt, clipped, and practical, often answering with station jargon before translating herself.",
+                "boldness": 4,
+                "starting_relationship_to_player": "none",
+                "starting_trust": 0,
+                "starting_attraction": 0,
+                "starting_affection": 0,
+                "starting_state_of_mind": "alert",
+                "starting_physical_state": "healthy",
+                "starting_pose": "standing naturally",
+                "appearance": {
+                  "species": "human Black",
+                  "height": 5,
+                  "skin_color": "deep brown skin",
+                  "eye_color": "dark brown eyes",
+                  "hair_color": "black hair",
+                  "hair_length": "short hair",
+                  "hair_type": "tight natural curls",
+                  "extra_description": "",
+                  "body_description": "An average build."
+                },
+                "outfits": [
+                  {
+                    "id": "dispatcher-coat",
+                    "name": "Dispatcher Coat",
+                    "clothing": {
+                      "shirt": "cream button-up shirt",
+                      "jacket": "gray transit dispatcher coat",
+                      "pants": "dark work slacks",
+                      "feet": "black practical shoes",
+                      "other_accessory": "silver whistle on a cord"
+                    }
+                  }
+                ],
+                "starting_outfit_id": "dispatcher-coat",
+                "starting_held_items": {
+                  "right_hand": null,
+                  "left_hand": null
+                },
+                "starting_inventory": [],
+                "durable_known_facts": [
+                  "Veda is the last day-shift employee leaving when the story begins.",
+                  "She has heard rumors of old route numbers being erased from station records.",
+                  "She dislikes panic and will demand proof before accepting impossible claims.",
+                  "She can help interpret dispatch logs, staff memories, and old transit protocols.",
+                  "If trusted, she becomes Mara's safest living witness before dawn."
+                ],
+                "default_seed": 0,
+                "image_prompt_config": {
+                  "seed_enabled": true,
+                  "seed": 0,
+                  "style": "",
+                  "profile_style": "Game Art Icon",
+                  "negative": "",
+                  "negative_prompt": ""
+                },
+                "default_profile_image": {
+                  "url": "",
+                  "source": "none",
+                  "seed": null,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": ""
+                },
+                "voice": null
+              }
+            }
+          }
+        }
+      },
+      "world_flags": {
+        "tone": "quiet, grounded urban mystery with escalating impossible evidence",
+        "setting_rule": "The station is modern and non-magical on the surface; impossible events should feel like evidence to investigate, not fantasy spectacle."
+      },
+      "objectives": {
+        "active_id": "check-unlisted-ticket",
+        "no_current": false,
+        "items": [
+          {
+            "id": "check-unlisted-ticket",
+            "title": "Check the Unlisted Ticket",
+            "type": "story",
+            "kind": "main",
+            "status": "active",
+            "summary": "A ticket has printed for a platform Orison Station does not have.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "unlisted_ticket"
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "unlisted-ticket-exists",
+                "text": "A physical ticket from the Neverline exists and should be treated as durable evidence."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "orison-unlisted-ticket",
+                "title": "Impossible Ticket",
+                "prompt": "modern city train station night desk after hours, old ticket printer on a counter, single blue train ticket reading Platform Four and Neverline, open paper ledger, quiet fluorescent station lighting, grounded mystery atmosphere, no people",
+                "negative_prompt": "text errors, watermark, logo, signature, extra people"
+              }
+            ],
+            "requires": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": true,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player examines the strange ticket, checks its route, or clearly starts investigating why it printed.",
+            "completion_instruction": "Show that the ticket names Platform Four and a route called the Neverline, then make the next concrete action finding where the platform announcement came from.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "find-platform-four",
+            "title": "Find Platform Four",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The announcement claims a train is boarding from a platform that should not exist.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "loc-platform-four"
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "hidden_platform"
+              },
+              {
+                "type": "generate_story_image",
+                "id": "orison-platform-four",
+                "title": "Platform Four",
+                "prompt": "hidden train platform inside a modern city station at night, blue Platform Four sign, empty tracks, dim service stair behind a wall, damp concrete, realistic urban mystery lighting, no people",
+                "negative_prompt": "watermark, logo, signature, readable random text, crowd"
+              }
+            ],
+            "requires": [
+              "check-unlisted-ticket"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player goes to the platform area, checks the stairwells, or otherwise searches for the source of Platform Four.",
+            "completion_instruction": "Reveal a service stair that was not on the normal station map and lead the player to an unused platform sign marked Four.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "inspect-impossible-platform",
+            "title": "Inspect the Impossible Platform",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The hidden platform is real enough to stand on, but its signs do not match the station.",
+            "rewards": [
+              {
+                "type": "introduce_future_character",
+                "character_id": "ira_noll",
+                "scene_presence": "npc",
+                "reason": "Ira Noll is waiting on Platform Four with an impossible return ticket."
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "scene",
+                  "npcs_present"
+                ],
+                "value": "Ira Noll"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "find-platform-four"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player inspects Platform Four's sign, tracks, timetable board, or arrival markings.",
+            "completion_instruction": "Let the platform feel physically real and reveal Ira Noll as the first stranded passenger without explaining the whole mystery.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "question-ira-noll",
+            "title": "Question Ira Noll",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The stranded passenger may know where the impossible route began.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Ira Noll",
+                "stats": {
+                  "trust": 1
+                }
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "ira_missing_station_memory"
+              }
+            ],
+            "requires": [
+              "inspect-impossible-platform"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player asks Ira where he came from, checks his ticket, or gets his account of the missing station.",
+            "completion_instruction": "Have Ira describe buying coffee at a station no city map contains, then make the report-or-hide decision feel immediate.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "decide-first-report",
+            "title": "Decide What to Do With the First Report",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Choose whether to make the incident official now or keep investigating quietly.",
+            "rewards": [],
+            "requires": [
+              "question-ira-noll"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one option from the choice menu.",
+            "completion_instruction": "Resolve only the selected reporting stance and return to the ledger investigation.",
+            "choices": [
+              {
+                "id": "file-official-report",
+                "title": "File an Official Incident Report",
+                "summary": "",
+                "effects": [
+                  "suspicion +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "official-report-filed",
+                    "text": "The player filed an official report about the impossible ticket and Platform Four."
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "suspicion"
+                    ],
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "id": "hide-report-for-now",
+                "title": "Keep It Off the Books For Now",
+                "summary": "",
+                "effects": [
+                  "suspicion -1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "report-hidden",
+                    "text": "The player chose to investigate the first impossible-ticket incident quietly before involving outside authorities."
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "suspicion"
+                    ],
+                    "amount": -1
+                  }
+                ]
+              }
+            ],
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "compare-ticket-ledger",
+            "title": "Compare the Ticket Ledger",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The normal station records may reveal whether this happened before.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "overwritten_midnight_routes"
+              }
+            ],
+            "requires": [
+              "decide-first-report"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player checks the ticket ledger, terminal records, cash drawer logs, or old route sheets for matching anomalies.",
+            "completion_instruction": "Reveal that several ordinary tickets were overwritten after midnight with route numbers that should not exist.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "trace-announcement-wire",
+            "title": "Trace the Announcement Wire",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The platform call used the station speaker system, but no one made it from the booth.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "loc-signal-room"
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "announcement_from_signal_room"
+              }
+            ],
+            "requires": [
+              "compare-ticket-ledger"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player checks the announcement booth, wiring closet, radio logs, or speaker controls.",
+            "completion_instruction": "Show the announcement signal coming from the old signal room instead of the public booth, and unlock the signal room as the next place to inspect.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "inspect-signal-room",
+            "title": "Inspect the Signal Room",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The old signal room may explain why the station called a train no one scheduled.",
+            "rewards": [
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "blue_track_signal"
+              }
+            ],
+            "requires": [
+              "trace-announcement-wire"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player enters or examines the old signal room and checks the active indicator board.",
+            "completion_instruction": "Reveal a blue track light pulsing for the 1:13 train and make Ira's fear of boarding or missing it part of the scene.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "keep-ira-calm",
+            "title": "Keep Ira Calm",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Ira may panic when the board announces another impossible arrival.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Ira Noll",
+                "stats": {
+                  "trust": 1,
+                  "affection": 0.5
+                }
+              }
+            ],
+            "requires": [
+              "inspect-signal-room"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player reassures Ira, sets a boundary, asks him to stay put, or otherwise prevents him from bolting blindly.",
+            "completion_instruction": "Let Ira respond to how the player handles him, then bring the 1:13 train into the station.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "let-the-113-arrive",
+            "title": "Let the 1:13 Arrive",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The hidden platform is calling in a train that should not be on the schedule.",
+            "rewards": [
+              {
+                "type": "introduce_future_character",
+                "character_id": "len_talver",
+                "scene_presence": "npc",
+                "reason": "Len Talver steps off the 1:13 train with a stopped watch."
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "scene",
+                  "npcs_present"
+                ],
+                "value": "Len Talver"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "generate_story_image",
+                "id": "orison-113-train",
+                "title": "The 1:13 Train",
+                "prompt": "driverless late-night train arriving at a hidden city station platform, blue destination light, doors opening into misty fluorescent darkness, grounded supernatural mystery, cinematic but realistic, no readable text",
+                "negative_prompt": "watermark, logo, signature, fantasy castle, spaceship"
+              }
+            ],
+            "requires": [
+              "keep-ira-calm"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has shown the 1:13 train arriving, stopping, and opening its doors or passing through in a resolved way.",
+            "completion_instruction": "Have the train arrive without a driver visible and introduce Len Talver as a passenger stepping off with a stopped watch.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "examine-lens-watch",
+            "title": "Examine Len's Watch",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Len carries a watch that stopped at a time the station has not reached yet.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Len Talver",
+                "stats": {
+                  "trust": 1
+                }
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "watch_stopped_at_future_time"
+              }
+            ],
+            "requires": [
+              "let-the-113-arrive"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player asks about Len's watch, inspects it, compares it to station time, or questions Len's delivery route.",
+            "completion_instruction": "Reveal that Len's watch stopped at 3:17 and that their delivery address is missing from current maps.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "decide-lens-train",
+            "title": "Decide Whether Len Boards Again",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Len wants to board the next impossible train before the station takes notice.",
+            "rewards": [],
+            "requires": [
+              "examine-lens-watch"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one option from the choice menu.",
+            "completion_instruction": "Resolve whether Len stays under protest or boards with a recorded warning, then continue toward the lost-property search.",
+            "choices": [
+              {
+                "id": "stop-len-from-boarding",
+                "title": "Stop Len From Boarding",
+                "summary": "",
+                "effects": [
+                  "Len trust -1",
+                  "evidence_count +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "len-held-at-station",
+                    "text": "Len was prevented from boarding another impossible train and remains available as a reluctant witness."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Len Talver",
+                    "stats": {
+                      "trust": -1
+                    }
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "evidence_count"
+                    ],
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "id": "let-len-board-with-warning",
+                "title": "Let Len Board With a Warning",
+                "summary": "",
+                "effects": [
+                  "Len trust +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "len-boarded-with-warning",
+                    "text": "Len was allowed to board after the player warned them and recorded what happened."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Len Talver",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "clues"
+                    ],
+                    "value": "len_departure_pattern"
+                  }
+                ]
+              }
+            ],
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "search-lost-property",
+            "title": "Search Lost Property",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Objects left behind may prove the impossible route has been taking passengers for years.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "loc-lost-property"
+              },
+              {
+                "type": "introduce_future_character",
+                "character_id": "mira_sorn",
+                "scene_presence": "npc",
+                "reason": "Mira Sorn arrives because the lost-property search disturbed evidence she has been watching."
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "scene",
+                  "npcs_present"
+                ],
+                "value": "Mira Sorn"
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "repeating_lost_property_dates"
+              },
+              {
+                "type": "generate_story_image",
+                "id": "orison-lost-property-room",
+                "title": "Lost Property Room",
+                "prompt": "cramped train station lost-property room at night, shelves of old coats bags umbrellas and tagged belongings, repeating date tags, dusty evidence boxes, single desk lamp, grounded mystery atmosphere, no people",
+                "negative_prompt": "watermark, logo, signature, readable random text"
+              }
+            ],
+            "requires": [
+              "decide-lens-train"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player searches the lost-property room, checks tagged items, or compares old belongings to the impossible route clues.",
+            "completion_instruction": "Reveal a shelf of belongings tagged with dates that repeat every few years, then introduce Mira Sorn as someone who came for one of them.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "question-mira-sorn",
+            "title": "Question Mira Sorn",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The woman in the raincoat knows enough to be useful and enough to be dangerous.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Mira Sorn",
+                "stats": {
+                  "trust": 1
+                }
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "erased_station_route_map"
+              }
+            ],
+            "requires": [
+              "search-lost-property"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player asks Mira what she knows, challenges why she came, or gets her explanation of the old route map.",
+            "completion_instruction": "Let Mira reveal that the Neverline follows stations erased by disasters, scandals, or deliberate coverups, but keep her motives uncertain.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "decide-whether-to-trust-mira",
+            "title": "Decide Whether to Trust Mira",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Mira can guide the investigation, but trusting her may shape who controls the truth.",
+            "rewards": [],
+            "requires": [
+              "question-mira-sorn"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one option from the choice menu.",
+            "completion_instruction": "Resolve the player's stance toward Mira without revealing all of her motives, then move to the maintenance-door investigation.",
+            "choices": [
+              {
+                "id": "share-ledger-with-mira",
+                "title": "Share the Ledger With Mira",
+                "summary": "",
+                "effects": [
+                  "Mira trust +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "mira-trusted-with-ledger",
+                    "text": "The player shared key ledger evidence with Mira Sorn."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Mira Sorn",
+                    "stats": {
+                      "trust": 2
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "keep-ledger-from-mira",
+                "title": "Keep the Ledger From Mira",
+                "summary": "",
+                "effects": [
+                  "Mira trust -1",
+                  "suspicion +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "mira-denied-ledger",
+                    "text": "The player withheld the ledger from Mira Sorn and kept control of the evidence."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Mira Sorn",
+                    "stats": {
+                      "trust": -1
+                    }
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "suspicion"
+                    ],
+                    "amount": 1
+                  }
+                ]
+              }
+            ],
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "open-maintenance-door",
+            "title": "Open the Maintenance Door",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The old map points to a service door behind the platform wall.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "loc-maintenance-passage"
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "buried_station_passage"
+              }
+            ],
+            "requires": [
+              "decide-whether-to-trust-mira"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player uses station keys, Mira's map, or evidence from the signal room to open or inspect the old maintenance door.",
+            "completion_instruction": "Unlock the maintenance passage and reveal that the Neverline is connected to a buried part of the station, not another city.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "walk-the-buried-passage",
+            "title": "Walk the Buried Passage",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The maintenance passage descends toward a part of Orison Station that should have been sealed.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "loc-lower-concourse"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "open-maintenance-door"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player enters the maintenance passage, follows the old rail marks, or reaches the sealed lower concourse.",
+            "completion_instruction": "Show the lower concourse as a real abandoned station layer with old public notices and fresh footprints.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "read-the-erased-notices",
+            "title": "Read the Erased Notices",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Old public notices may explain why a whole station layer vanished from records.",
+            "rewards": [
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "closed_lower_station_disappearance"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "walk-the-buried-passage"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player reads, photographs, copies, or compares the old notices and erased station records.",
+            "completion_instruction": "Reveal that the lower station was closed after a crowd disappeared during an overnight service and the public record was altered.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "interview-veda-before-dawn",
+            "title": "Interview Veda Before Dawn",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Veda's memory of old dispatch rules may connect the lower station to the current night shift.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Veda Coll",
+                "stats": {
+                  "trust": 2
+                }
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "veda_platform_four_confirmation"
+              }
+            ],
+            "requires": [
+              "read-the-erased-notices"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player calls, wakes, meets, or questions Veda about old dispatch records and the missing lower station.",
+            "completion_instruction": "Have Veda confirm that older staff were told never to acknowledge Platform Four, then let her become a reliable witness if treated honestly.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "assemble-route-pattern",
+            "title": "Assemble the Route Pattern",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The ticket, watch, ledger, lost property, and old notices point to one rule.",
+            "rewards": [
+              {
+                "type": "add_story_rule",
+                "rule_id": "neverline-pattern-known",
+                "text": "The player has identified the Neverline pattern: it appears around erased returns and unresolved station disappearances."
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "neverline_pattern"
+              }
+            ],
+            "requires": [
+              "interview-veda-before-dawn"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player lays out the evidence, states a working theory, or compares enough clues to identify how the Neverline chooses arrivals.",
+            "completion_instruction": "Let the player identify that the Neverline appears when the station hides a passenger's unfinished return, and make the next step deciding who hears the truth.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-who-hears-truth",
+            "title": "Choose Who Hears the Truth",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The evidence can protect people, expose the station, or disappear again.",
+            "rewards": [],
+            "requires": [
+              "assemble-route-pattern"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one option from the choice menu.",
+            "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet.",
+            "choices": [
+              {
+                "id": "tell-transit-authority",
+                "title": "Tell the Transit Authority",
+                "summary": "",
+                "effects": [
+                  "suspicion +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "truth-sent-to-authority",
+                    "text": "The player sent the Neverline evidence to transit authority channels."
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "suspicion"
+                    ],
+                    "amount": 2
+                  }
+                ]
+              },
+              {
+                "id": "tell-stranded-passengers",
+                "title": "Tell the Stranded Passengers",
+                "summary": "",
+                "effects": [
+                  "Ira trust +1",
+                  "Len trust +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "truth-shared-with-passengers",
+                    "text": "The player chose to tell stranded passengers the truth before involving institutions."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Ira Noll",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Len Talver",
+                    "stats": {
+                      "trust": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "keep-truth-until-proof",
+                "title": "Keep It Quiet Until Final Proof",
+                "summary": "",
+                "effects": [
+                  "suspicion -1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "truth-held-for-proof",
+                    "text": "The player kept the full Neverline theory quiet until one final proof could be gathered."
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "suspicion"
+                    ],
+                    "amount": -1
+                  }
+                ]
+              }
+            ],
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "ride-to-missing-stop",
+            "title": "Ride to the Missing Stop",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The only way to prove the rule is to board the impossible train and see where it stops.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "loc-missing-stop"
+              },
+              {
+                "type": "add_state_list_item",
+                "path": [
+                  "story_inventory",
+                  "clues"
+                ],
+                "value": "missing_stop_seen"
+              },
+              {
+                "type": "generate_story_image",
+                "id": "orison-missing-stop",
+                "title": "The Missing Stop",
+                "prompt": "abandoned underground train stop hidden beneath a modern city station, old tile walls, blue route light, empty platform, evidence of passengers who waited too long, eerie grounded mystery mood, no monsters, no people",
+                "negative_prompt": "watermark, logo, signature, gore, fantasy portal"
+              }
+            ],
+            "requires": [
+              "choose-who-hears-truth"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player boards the Neverline train, follows it to the missing stop, or otherwise commits to the final proof ride.",
+            "completion_instruction": "Take the player to the missing stop without making the ride feel like a random dream; tie every detail to earlier clues.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "solve-orison-stations-rule",
+            "title": "Solve Orison Station's Rule",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The missing stop reveals why some passengers return and others are erased.",
+            "rewards": [
+              {
+                "type": "add_story_rule",
+                "rule_id": "orison-rule-known",
+                "text": "The player knows Orison Station's rule: erased passengers can return only when their journey is witnessed and recorded honestly."
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "evidence_count"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "ride-to-missing-stop"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has shown the missing stop's core rule and how the player's evidence explains the Neverline's appearances.",
+            "completion_instruction": "Reveal that the station preserves unfinished returns until someone witnesses them honestly; then push toward the final decision about the schedule.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "decide-final-schedule",
+            "title": "Decide the Final Schedule",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Choose what Orison Station becomes after the truth is known.",
+            "rewards": [],
+            "requires": [
+              "solve-orison-stations-rule"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one option from the choice menu.",
+            "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger.",
+            "choices": [
+              {
+                "id": "seal-platform-four",
+                "title": "Seal Platform Four",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "ending-platform-sealed",
+                    "text": "Ending path: the player sealed Platform Four after recording the truth, preventing new impossible arrivals at Orison Station."
+                  },
+                  {
+                    "type": "unlock_location",
+                    "location_id": "loc-epilogue-concourse"
+                  },
+                  {
+                    "type": "set_state_field",
+                    "field_path": [
+                      "story_inventory",
+                      "final_schedule"
+                    ],
+                    "value": "seal-platform-four"
+                  }
+                ]
+              },
+              {
+                "id": "keep-a-watched-return",
+                "title": "Keep a Watched Return Route",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "ending-watched-return-route",
+                    "text": "Ending path: the player kept a controlled watched return route so erased passengers can be witnessed home."
+                  },
+                  {
+                    "type": "unlock_location",
+                    "location_id": "loc-epilogue-concourse"
+                  },
+                  {
+                    "type": "set_state_field",
+                    "field_path": [
+                      "story_inventory",
+                      "final_schedule"
+                    ],
+                    "value": "keep-a-watched-return"
+                  }
+                ]
+              },
+              {
+                "id": "publish-the-record",
+                "title": "Publish the Full Record",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "ending-record-published",
+                    "text": "Ending path: the player published the full Neverline record, forcing the city to confront what it erased."
+                  },
+                  {
+                    "type": "unlock_location",
+                    "location_id": "loc-epilogue-concourse"
+                  },
+                  {
+                    "type": "set_state_field",
+                    "field_path": [
+                      "story_inventory",
+                      "final_schedule"
+                    ],
+                    "value": "publish-the-record"
+                  }
+                ]
+              }
+            ],
+            "auto_completed_from_prereqs": false
+          }
+        ]
+      },
+      "future_cast": {
+        "enabled": true,
+        "items": {
+          "ira_noll": {
+            "id": "ira_noll",
+            "name": "Ira Noll",
+            "status": "locked",
+            "category": "npc",
+            "role": "Stranded passenger with an impossible return ticket",
+            "visibility": "hidden",
+            "meet_condition": "Introduced when the player inspects Platform Four.",
+            "join_condition": null,
+            "location_hint": "Platform Four",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Ira should appear frightened but coherent, holding a return ticket from a route the station does not run.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "A stranded passenger waits under the wrong platform sign.",
+            "full_character": {
+              "id": 0,
+              "name": "Ira Noll",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "mystery"
+              ],
+              "can_die": false,
+              "gender": "male",
+              "age": 34,
+              "role": "Stranded passenger with an impossible return ticket",
+              "personality_description": "A polite, frightened office worker trying not to unravel. He remembers buying coffee at a station that no city map admits exists.",
+              "speech_style": "Careful and apologetic, with anxious pauses when his memory contradicts the room.",
+              "boldness": 2,
+              "starting_relationship_to_player": "none",
+              "starting_trust": 0,
+              "starting_attraction": 0,
+              "starting_affection": 0,
+              "starting_state_of_mind": "alert",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing naturally",
+              "appearance": {
+                "species": "human East Asian",
+                "height": 5,
+                "skin_color": "light warm skin",
+                "eye_color": "dark eyes",
+                "hair_color": "black hair",
+                "hair_length": "short hair",
+                "hair_type": "straight hair",
+                "extra_description": "",
+                "body_description": "A slender build."
+              },
+              "outfits": [
+                {
+                  "id": "rumpled-commuter",
+                  "name": "Rumpled Commuter Suit",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pale blue office shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "matching charcoal suit trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "scuffed black dress shoes",
+                    "other_accessory": "paper coffee cup with no shop logo"
+                  }
+                },
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pressed work shirt",
+                    "over_shirt": null,
+                    "coat": "simple office jacket",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark office trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished work shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "workwear",
+                  "name": "Workwear",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pressed buttoned work shirt",
+                    "over_shirt": null,
+                    "coat": "plain professional blazer",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "black office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "formal",
+                  "name": "Formal",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "formal dress shirt",
+                    "over_shirt": null,
+                    "coat": "tailored formal coat",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed formal trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished formal shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft relaxed shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "rumpled-commuter",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Ira appears after Platform Four is first discovered.",
+                "His ticket names a return route that no active schedule contains.",
+                "He remembers a station bell ringing under a street with no name.",
+                "He is not dangerous, but fear can make him try to board the next impossible train.",
+                "His memories are the first proof that passengers can return changed but alive."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "pale blue office shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "matching charcoal suit trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "scuffed black dress shoes",
+                "other_accessory": "paper coffee cup with no shop logo"
+              }
+            }
+          },
+          "len_talver": {
+            "id": "len_talver",
+            "name": "Len Talver",
+            "status": "locked",
+            "category": "npc",
+            "role": "Passenger carrying a stopped watch",
+            "visibility": "hidden",
+            "meet_condition": "Introduced when the 1:13 impossible train arrives.",
+            "join_condition": null,
+            "location_hint": "Platform Four",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Len should arrive defensive, confused, and eager to leave before anyone examines the stopped watch.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "A courier steps off the train with a stopped watch.",
+            "full_character": {
+              "id": 0,
+              "name": "Len Talver",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "mystery"
+              ],
+              "can_die": false,
+              "gender": "nonbinary",
+              "age": 22,
+              "role": "Passenger carrying a stopped watch",
+              "personality_description": "A sharp, defensive courier who covers fear with jokes and refuses to be treated like a helpless victim.",
+              "speech_style": "Fast, sarcastic, and evasive until someone catches a real contradiction.",
+              "boldness": 6,
+              "starting_relationship_to_player": "none",
+              "starting_trust": 0,
+              "starting_attraction": 0,
+              "starting_affection": 0,
+              "starting_state_of_mind": "alert",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing naturally",
+              "appearance": {
+                "species": "human mixed",
+                "height": 4,
+                "skin_color": "tan skin",
+                "eye_color": "hazel eyes",
+                "hair_color": "copper hair",
+                "hair_length": "chin-length hair",
+                "hair_type": "messy wavy hair",
+                "extra_description": "",
+                "body_description": "An average build."
+              },
+              "outfits": [
+                {
+                  "id": "courier-layers",
+                  "name": "Courier Layers",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "black zip-front shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark cargo pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "worn gray trainers",
+                    "other_accessory": "stopped wristwatch with two second hands"
+                  }
+                },
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "plain fitted travel shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "simple belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "practical travel trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "comfortable travel boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "travel",
+                  "name": "Travel",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "layered travel tunic",
+                    "over_shirt": null,
+                    "coat": "weathered travel cloak",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "sturdy travel pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "road-worn boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "formal",
+                  "name": "Formal",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "formal dress shirt",
+                    "over_shirt": null,
+                    "coat": "tailored formal coat",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed formal trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished formal shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft relaxed shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "courier-layers",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Len arrives on the 1:13 train after the announcement wire is traced.",
+                "Their watch stopped at a time that has not happened yet tonight.",
+                "They know a delivery address that is not on any current map.",
+                "They resist authority but respond to honest bargaining.",
+                "Their route gives the player a choice between preventing a dangerous boarding and learning a stronger clue."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "black zip-front shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark cargo pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "worn gray trainers",
+                "other_accessory": "stopped wristwatch with two second hands"
+              }
+            }
+          },
+          "mira_sorn": {
+            "id": "mira_sorn",
+            "name": "Mira Sorn",
+            "status": "locked",
+            "category": "npc",
+            "role": "Woman in the raincoat",
+            "visibility": "hidden",
+            "meet_condition": "Introduced after the lost-property room proves the pattern repeats.",
+            "join_condition": null,
+            "location_hint": "Station Concourse",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Mira should enter quietly with an old transit map and act like she knows which questions are dangerous.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "A woman in a raincoat waits by the closed ticket gates.",
+            "full_character": {
+              "id": 0,
+              "name": "Mira Sorn",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "mystery"
+              ],
+              "can_die": false,
+              "gender": "female",
+              "age": 38,
+              "role": "Woman in the raincoat",
+              "personality_description": "Quiet, composed, and hard to read. She speaks as if she has visited impossible platforms before and has learned which truths make people disappear.",
+              "speech_style": "Soft, precise, and indirect, with warnings phrased as ordinary travel advice.",
+              "boldness": 5,
+              "starting_relationship_to_player": "none",
+              "starting_trust": 0,
+              "starting_attraction": 0,
+              "starting_affection": 0,
+              "starting_state_of_mind": "alert",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing naturally",
+              "appearance": {
+                "species": "human white",
+                "height": 6,
+                "skin_color": "pale skin",
+                "eye_color": "green eyes",
+                "hair_color": "black hair",
+                "hair_length": "long hair",
+                "hair_type": "straight hair",
+                "extra_description": "",
+                "body_description": "An average build."
+              },
+              "outfits": [
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "well-fitted travel blouse",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "simple belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "practical fitted travel trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "comfortable travel boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "travel",
+                  "name": "Travel",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "layered travel tunic",
+                    "over_shirt": null,
+                    "coat": "weathered short travel cloak",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "sturdy fitted travel pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "road-worn boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "casual",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Mira appears after the lost-property room reveals evidence of repeated impossible arrivals.",
+                "She knows the phrase 'Neverline' but avoids saying who taught it to her.",
+                "She can guide the player toward the maintenance door if trusted.",
+                "She may be a survivor, a witness, or someone protecting the station from worse exposure.",
+                "Her advice is useful but incomplete, forcing the player to decide whether to trust her."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "cream knit top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": null,
+                "skirt": "Opaque ankle-length skirt without openings",
+                "legwear": null,
+                "socks": null,
+                "feet": "brown ankle boots",
+                "other_accessory": "old transit map folded into a triangle"
+              }
+            }
+          }
+        }
+      },
+      "story_rules": [
+        {
+          "id": "mystery-grounded-evidence",
+          "text": "Treat impossible train events as concrete evidence with physical traces, witnesses, records, and consequences; avoid dream logic unless a clue supports it."
+        }
+      ],
+      "story_memory": {
+        "world_notes": [
+          "Orison Station normally has three platforms, a night desk, a public announcement booth, a lost-property room, and an old locked signal room.",
+          "The Neverline is not known to the public at the start; it is discovered through tickets, records, passengers, and station architecture."
+        ],
+        "unresolved_threads": [
+          "Why did Platform Four appear tonight?",
+          "Who erased the old lower station from the public record?",
+          "Can stranded passengers return safely without hiding the truth again?"
+        ],
+        "relationship_notes": [],
+        "rules_and_constraints": [
+          "The story should advance through investigation, evidence, and witness accounts.",
+          "Do not turn the station into a sentient building or a broad cosmic system; keep the focus on the local mystery."
+        ],
+        "ai_private_notes": []
+      },
+      "story_inventory": {
+        "evidence_count": 0,
+        "suspicion": 0,
+        "clues": []
+      },
+      "story_shops": {},
+      "story_job_offers": {},
+      "story_job_offer_history": [],
+      "active_generated_jobs": {},
+      "story_generated_npc_pool": {},
+      "recent_changes": []
+    },
+    "messages": [
+      {
+        "id": "opening-after-hours-orison-station",
+        "entryId": "opening-after-hours-orison-station",
+        "role": "assistant",
+        "speaker": "Narrator",
+        "text": "The last scheduled train left Orison Station twenty minutes ago.\n\nYou are behind the night desk with the ledger open, the radio quiet, and Veda Coll pulling on her coat near the staff door.\n\nThe ticket printer clicks once.\n\nA single blue ticket slides out by itself: Platform Four. Neverline. Due now.\n\nOrison Station has three platforms.",
+        "at": "2026-06-29T00:00:00.000Z"
+      }
+    ],
+    "source": "Original",
+    "app": "EmberAdventures",
+    "templateType": "story",
+    "creation_tool": "Codex 5.5 (Medium)",
+    "genres": [
+      "mystery"
+    ],
+    "default_image_model": "",
+    "title_card_subjects": [
+      "night station desk",
+      "blue impossible ticket",
+      "hidden train platform"
+    ],
+    "title_card_image": {
+      "url": "",
+      "source": "none",
+      "seed": null,
+      "prompt": "",
+      "negative_prompt": "",
+      "note": ""
+    },
+    "starting_party_member_count": 0,
+    "starting_npc_count": 1,
+    "main_objective_count": 24,
+    "side_objective_count": 0,
+    "future_character_count": 3,
+    "starting_player_count": 3
+  },
+  "exportedAt": "2026-08-31T06:03:35.951Z"
+}

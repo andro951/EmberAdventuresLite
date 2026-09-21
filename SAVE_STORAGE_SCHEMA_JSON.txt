@@ -1,0 +1,2013 @@
+// AUTHORITATIVE STORAGE RECORD CONTRACT
+// Strict record fields, types, object stores and indexes.
+
+  "storyDefinitions": {
+    "storyId": "the-inspector - Stable authored story ID. - string (required)",
+    "revisionId": "revision-2026-08-04 - Immutable definition revision identity. - string (required)",
+    "contentHash": "7f3c9a21dbe54870 - Verifies that this immutable story revision has not changed or collided with different content. - string (required)",
+    "title": "The Inspector - Player-facing title. - string (required)",
+    "description": "Begin a healthier second life as the federal inspector of licensed craft guilds. Travel with an arachne assistant through a vast federation of species-shaped cities, solve local safety, labor, identity, and licensing conflicts, and choose which professional, romantic, or household relationships become part of your future. - Player-facing description. - string",
+    "source": "Original - Authored source label. - string (required)",
+    "creator": "Isaac - Searchable public creator display name. - string",
+    "creator_id": "creator-isaac - Stable searchable creator identity. - string",
+    "creation_tool": "EmberAdventures Story Skill - Tool and model used to create the definition. - string (required)",
+    "genres": [
+      "fantasy - The 0 at this definition path. - string (required)",
+      "isekai - The 1 at this definition path. - string (required)",
+      "workplace - The 2 at this definition path. - string (required)",
+      "comedy - The 3 at this definition path. - string (required)",
+      "romance - The 4 at this definition path. - string (required)",
+      "fantasy - The 5 at this definition path. - string (required)",
+      "slice of life - The 6 at this definition path. - string (required)",
+      "adventure - The 7 at this definition path. - string (required)"
+    ],
+    "createdAt": "2026-07-24T00:44:27Z - Original definition creation time. - string (required)",
+    "updatedAt": "2026-07-30T00:16:43.220Z - Most recent definition update time. - string (required)",
+    "allow_any_player": "true - The allow any player at this definition path. - boolean",
+    "any_player_starting_state": {
+      "role": "Inspector candidate - Durable character role. - string (required)",
+      "starting_known_facts_to_add": [
+        "The selected library character has died prematurely and awakened before |[character:caelira-vey]| with an offered healthy adult reincarnation and optional federal appointment. - The 0 at this definition path. - string (required)",
+        "No existing identity, gender, anatomy, appearance, species, orientation, or personality is overwritten by the premise. - The 1 at this definition path. - string (required)"
+      ],
+      "starting_inventory": [],
+      "stats": {},
+      "starting_state_of_mind": "alert after an unexpected reincarnation - Mental state copied into runtime when play begins. - string (required)",
+      "starting_physical_state": "healthy adult reincarnated body compatible with the selected identity - Physical state copied into runtime when play begins. - string (required)",
+      "starting_pose": "seated or standing in |[character:caelira-vey]|'s divine receiving room - Pose copied into runtime when play begins. - string (required)",
+      "male_outfits": [
+        {
+          "id": "inspector-travel - Stable identifier within its owning definition. - string (required)",
+          "name": "Inspector Travel Uniform - Player-facing character name. - string (required)",
+          "clothing": {
+            "undershirt": "soft charcoal cotton undershirt - The undershirt at this definition path. - string (required)",
+            "shirt": "tailored charcoal button-front shirt with violet piping - The shirt at this definition path. - string (required)",
+            "coat": "violet-black federal inspector travel coat with a small gold insignia - The coat at this definition path. - string (required)",
+            "underwear": "charcoal boxer briefs - The underwear at this definition path. - string (required)",
+            "pants": "dark tailored travel trousers - The pants at this definition path. - string (required)",
+            "socks": "dark wool socks - The socks at this definition path. - string (required)",
+            "feet": "polished black leather travel boots - The feet at this definition path. - string (required)",
+            "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+            "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+          }
+        }
+      ],
+      "male_starting_outfit_id": "inspector-travel - The male starting outfit id at this definition path. - string (required)",
+      "non_male_outfits": [
+        {
+          "id": "inspector-travel - Stable identifier within its owning definition. - string (required)",
+          "name": "Inspector Travel Uniform - Player-facing character name. - string (required)",
+          "clothing": {
+            "bra": "supportive charcoal bra - The bra at this definition path. - string (required)",
+            "undershirt": "soft charcoal cotton camisole - The undershirt at this definition path. - string (required)",
+            "shirt": "tailored charcoal blouse with violet piping - The shirt at this definition path. - string (required)",
+            "coat": "violet-black federal inspector travel coat with a small gold insignia - The coat at this definition path. - string (required)",
+            "underwear": "charcoal fitted underwear - The underwear at this definition path. - string (required)",
+            "pants": "dark tailored travel trousers - The pants at this definition path. - string (required)",
+            "socks": "dark wool socks - The socks at this definition path. - string (required)",
+            "feet": "polished black leather travel boots - The feet at this definition path. - string (required)",
+            "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+            "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+          }
+        }
+      ],
+      "non_male_starting_outfit_id": "inspector-travel - The non male starting outfit id at this definition path. - string (required)"
+    },
+    "state": {
+      "meta": {
+        "story_guidance": "empty string - Durable hidden guidance for narration throughout the story. - string (required)",
+        "story_source": {
+          "mode": "original - The mode at this definition path. - string (required)",
+          "title": "The Inspector - Player-facing title. - string (required)",
+          "description": "Original fantasy inspection journey across twenty-two species-shaped cities. - Player-facing description. - string",
+          "modifications": "empty string - The modifications at this definition path. - string (required)"
+        }
+      },
+      "starting_location_id": "loc-divine-receiving-room - Initial current location resolved through world_map.locations. - string FK (required)",
+      "world_map": {
+        "locations": {
+          "loc-federal-office": {
+            "name": "Example - string (required)",
+            "type": "place - The type at this definition path. - string (required)",
+            "scale": "site - The scale at this definition path. - string (required)",
+            "parent_id": "null - Root locations use null; every other location references its parent key. - string FK/null (required)",
+            "x": "50 - The x at this definition path. - integer (required)",
+            "y": "15 - The y at this definition path. - integer (required)",
+            "discovered": "false - The discovered at this definition path. - boolean (required)",
+            "travel_enabled": "false - The travel enabled at this definition path. - boolean (required)",
+            "summary": "The professional office coordinating the Grand Harmonization Circuit. - The summary at this definition path. - string",
+            "connections": [
+              "loc-divine-receiving-room - The 0 at this definition path. - string (required)",
+              "loc-city-hearthcross - The 1 at this definition path. - string (required)"
+            ]
+          }
+        }
+      },
+      "time": {
+        "year": "1 - The year at this definition path. - integer (required)",
+        "month": "1 - The month at this definition path. - integer (required)",
+        "day": "1 - The day at this definition path. - integer (required)",
+        "hour": "9 - The hour at this definition path. - integer (required)",
+        "minute": "0 - The minute at this definition path. - integer (required)",
+        "elapsed_minutes": "0 - Minutes elapsed since this game began; the canonical duration counter used by time requirements and timed events. - integer (required)"
+      },
+      "scene": {
+        "summary": "The player awakens in a goddess's elegant office-garden and is invited to question an honest offer of reincarnation, one supernatural gift, and an unusual government appointment. - The summary at this definition path. - string",
+        "party_members_present": [],
+        "image_characters": [
+          "player - Initial-scene player sentinel resolved to saveHeaders.playerCharacterId during save creation. - string (required)"
+        ],
+        "npcs_present": [
+          "caelira-vey - Stable initial-scene character id resolved by compiledStoryIndexes.characterById. - string FK (required)"
+        ],
+        "image_action": "the newly reincarnated player seated in an elegant office-garden beneath an impossible open sky - The image action at this definition path. - string (required)"
+      },
+      "player": {
+        "version": "1 - Positive whole-number character definition version; current humanoid definitions use the exact 0-20 appearance shape. - integer (required)",
+        "id": "mara-quinn - Stable identifier within its owning definition. - string (required)",
+        "name": "Mara Quinn - Player-facing character name. - string (required)",
+        "source": "Player - Authored source label. - string (required)",
+        "creation_tool": "ChatGPT GPT-5.6 Thinking (high reasoning) - Tool and model used to create the definition. - string (required)",
+        "can_die": "false - Whether normal gameplay may kill the character. - boolean (required)",
+        "romanceable": "false - Whether attraction preferences may adapt this character presentation. - boolean (required)",
+        "gender": "female - Canonical gender presentation. - string (required)",
+        "fallback_name": "Marek Quinn - Alternate-presentation name. - string (required)",
+        "fallback_outfits": [
+          {
+            "id": "inspector-travel - Stable identifier within its owning definition. - string (required)",
+            "name": "Inspector Travel Uniform - Player-facing character name. - string (required)",
+            "clothing": {
+              "undershirt": "soft deep-teal cotton undershirt - The undershirt at this definition path. - string (required)",
+              "shirt": "tailored violet-black inspector shirt with subtle gold piping - The shirt at this definition path. - string (required)",
+              "coat": "fitted black travel coat bearing a small federal inspector insignia - The coat at this definition path. - string (required)",
+              "underwear": "deep-teal boxer briefs - The underwear at this definition path. - string (required)",
+              "pants": "dark tailored travel trousers - The pants at this definition path. - string (required)",
+              "socks": "dark wool socks - The socks at this definition path. - string (required)",
+              "feet": "well-kept black leather ankle boots - The feet at this definition path. - string (required)",
+              "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+              "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "inspector-travel - Starting outfit for the alternate presentation. - string (required)",
+        "age": "26 - Character age. - integer (required)",
+        "role": "Federal inspector - Durable character role. - string (required)",
+        "personality_description": "Curious, direct, and socially capable without being pushy. Meets strange people with an open mind, while the player decides priorities, attraction, and moral boundaries. - Durable personality and behavioral guidance. - string (required)",
+        "speech_style": "Warm, clear, and quick to ask the question everyone else avoids. - Durable dialogue style. - string (required)",
+        "boldness": "6 - Base behavioral boldness from 0 through 10. - integer (required)",
+        "starting_relationship_to_player": "self - Relationship copied into runtime when play begins. - string (required)",
+        "starting_trust": "10 - Trust copied into runtime when play begins. - integer (required)",
+        "starting_attraction": "0 - Attraction copied into runtime when play begins. - integer (required)",
+        "starting_affection": "0 - Affection copied into runtime when play begins. - integer (required)",
+        "starting_state_of_mind": "alert after an unexpected reincarnation - Mental state copied into runtime when play begins. - string (required)",
+        "starting_physical_state": "healthy adult body provided by |[character:caelira-vey]| - Physical state copied into runtime when play begins. - string (required)",
+        "starting_pose": "standing in the divine receiving room - Pose copied into runtime when play begins. - string (required)",
+        "appearance": {
+          "species": "Human - The complete species identity, including any meaningful subtype or qualifier, at this definition path. - string (required)",
+          "height": "10 - The height at this definition path; whole number from 0 through 20. - integer (required)",
+          "body_description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+
+          "skin_color": "medium olive skin - The skin color at this definition path. - string (required)",
+          "eye_color": "green - The eye color at this definition path. - string (required)",
+          "hair_color": "auburn - The hair color at this definition path. - string (required)",
+          "hair_length": "shoulder length - The hair length at this definition path. - string (required)",
+          "hair_type": "wavy - The hair type at this definition path. - string (required)",
+          "extra_description": "A curvy, fit adult with bright green eyes, an expressive face, and an easy, grounded manner. - The extra description at this definition path. - string",
+          "extra_description_lower_body": "empty string - The extra description lower body at this definition path. - string",
+          "nonhuman_lower_body": "false - The nonhuman lower body at this definition path. - boolean (required)"
+        },
+        "outfits": [
+          {
+            "id": "inspector-travel - Stable identifier within its owning definition. - string (required)",
+            "name": "Inspector Travel Uniform - Player-facing character name. - string (required)",
+            "clothing": {
+              "bra": "deep teal supportive bra - The bra at this definition path. - string (required)",
+              "shirt": "tailored violet-black inspector blouse with subtle gold piping - The shirt at this definition path. - string (required)",
+              "coat": "fitted black travel coat bearing a small federal inspector insignia - The coat at this definition path. - string (required)",
+              "underwear": "deep teal fitted underwear - The underwear at this definition path. - string (required)",
+              "skirt": "opaque ankle-length travel skirt without openings - The skirt at this definition path. - string (required)",
+              "legwear": "opaque black tights - The legwear at this definition path. - string (required)",
+              "feet": "well-kept black leather ankle boots - The feet at this definition path. - string (required)",
+              "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+              "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+            }
+          }
+        ],
+        "starting_outfit_id": "inspector-travel - Outfit copied into mutable clothing when play begins. - string (required)",
+        "starting_inventory": [],
+        "starting_known_facts": [
+          "The player died prematurely and is being offered a healthy adult reincarnated body. - The 0 at this definition path. - string (required)",
+          "The player has not yet accepted the inspector appointment or selected a supernatural gift. - The 1 at this definition path. - string (required)"
+        ],
+        "stats": {},
+        "created_at": "2026-07-25T00:00:00Z - Original character creation time. - string (required)",
+        "updated_at": "2026-07-26T00:00:00.000Z - Most recent definition update time. - string (required)",
+        "default_seed": "20260723 - Default image-generation seed. - integer (required)",
+        "image_prompt_config": {
+          "seed_enabled": "true - The seed enabled at this definition path. - boolean (required)",
+          "seed": "20260723 - The seed at this definition path. - integer (required)",
+          "style": "empty string - The style at this definition path. - string (required)",
+          "profile_style": "empty string - The profile style at this definition path. - string (required)",
+          "negative": "empty string - The negative at this definition path. - string (required)",
+          "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)"
+        },
+        "default_profile_image": {
+          "url": "empty string - The url at this definition path. - string (required)",
+          "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+          "source": "none - Authored source label. - string (required)",
+          "seed": "null - The seed at this definition path. - number|string|null (required)",
+          "prompt": "empty string - The prompt at this definition path. - string (required)",
+          "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+          "note": "empty string - The note at this definition path. - string (required)",
+          "male": "false - The male at this definition path. - boolean (required)"
+        },
+        "profile_image_presentations": {
+          "male": {
+            "url": "empty string - The url at this definition path. - string (required)",
+            "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+            "source": "none - Authored source label. - string (required)",
+            "seed": "null - The seed at this definition path. - number|string|null (required)",
+            "prompt": "empty string - The prompt at this definition path. - string (required)",
+            "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+            "note": "empty string - The note at this definition path. - string (required)",
+            "male": "true - The male at this definition path. - boolean (required)"
+          },
+          "non_male": {
+            "url": "empty string - The url at this definition path. - string (required)",
+            "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+            "source": "none - Authored source label. - string (required)",
+            "seed": "null - The seed at this definition path. - number|string|null (required)",
+            "prompt": "empty string - The prompt at this definition path. - string (required)",
+            "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+            "note": "empty string - The note at this definition path. - string (required)",
+            "male": "false - The male at this definition path. - boolean (required)"
+          }
+        },
+        "profile_images": {
+          "active_image_id": "empty string - The active image id at this definition path. - string (required)",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "empty string - The active image id at this definition path. - string (required)",
+          "image_ids": []
+        },
+        "voice": "null - Runtime-populated voice assignment. - number|string|null (required)"
+      },
+      "players": [
+        {
+          "version": "1 - Positive whole-number character definition version; current humanoid definitions use the exact 0-20 appearance shape. - integer (required)",
+          "id": "mara-quinn - Stable identifier within its owning definition. - string (required)",
+          "name": "Mara Quinn - Player-facing character name. - string (required)",
+          "source": "Player - Authored source label. - string (required)",
+          "creation_tool": "ChatGPT GPT-5.6 Thinking (high reasoning) - Tool and model used to create the definition. - string (required)",
+          "can_die": "false - Whether normal gameplay may kill the character. - boolean (required)",
+          "romanceable": "false - Whether attraction preferences may adapt this character presentation. - boolean (required)",
+          "gender": "female - Canonical gender presentation. - string (required)",
+          "fallback_name": "Marek Quinn - Alternate-presentation name. - string (required)",
+          "fallback_outfits": [
+            {
+              "id": "inspector-travel - Stable identifier within its owning definition. - string (required)",
+              "name": "Inspector Travel Uniform - Player-facing character name. - string (required)",
+              "clothing": {
+                "undershirt": "soft deep-teal cotton undershirt - The undershirt at this definition path. - string (required)",
+                "shirt": "tailored violet-black inspector shirt with subtle gold piping - The shirt at this definition path. - string (required)",
+                "coat": "fitted black travel coat bearing a small federal inspector insignia - The coat at this definition path. - string (required)",
+                "underwear": "deep-teal boxer briefs - The underwear at this definition path. - string (required)",
+                "pants": "dark tailored travel trousers - The pants at this definition path. - string (required)",
+                "socks": "dark wool socks - The socks at this definition path. - string (required)",
+                "feet": "well-kept black leather ankle boots - The feet at this definition path. - string (required)",
+                "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+                "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "inspector-travel - Starting outfit for the alternate presentation. - string (required)",
+          "age": "26 - Character age. - integer (required)",
+          "role": "Federal inspector - Durable character role. - string (required)",
+          "personality_description": "Curious, direct, and socially capable without being pushy. Meets strange people with an open mind, while the player decides priorities, attraction, and moral boundaries. - Durable personality and behavioral guidance. - string (required)",
+          "speech_style": "Warm, clear, and quick to ask the question everyone else avoids. - Durable dialogue style. - string (required)",
+          "boldness": "6 - Base behavioral boldness from 0 through 10. - integer (required)",
+          "starting_relationship_to_player": "self - Relationship copied into runtime when play begins. - string (required)",
+          "starting_trust": "10 - Trust copied into runtime when play begins. - integer (required)",
+          "starting_attraction": "0 - Attraction copied into runtime when play begins. - integer (required)",
+          "starting_affection": "0 - Affection copied into runtime when play begins. - integer (required)",
+          "starting_state_of_mind": "alert after an unexpected reincarnation - Mental state copied into runtime when play begins. - string (required)",
+          "starting_physical_state": "healthy adult body provided by |[character:caelira-vey]| - Physical state copied into runtime when play begins. - string (required)",
+          "starting_pose": "standing in the divine receiving room - Pose copied into runtime when play begins. - string (required)",
+          "appearance": {
+            "species": "Human - The complete species identity, including any meaningful subtype or qualifier, at this definition path. - string (required)",
+            "height": "10 - The height at this definition path; whole number from 0 through 20. - integer (required)",
+            "body_description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+
+            "skin_color": "medium olive skin - The skin color at this definition path. - string (required)",
+            "eye_color": "green - The eye color at this definition path. - string (required)",
+            "hair_color": "auburn - The hair color at this definition path. - string (required)",
+            "hair_length": "shoulder length - The hair length at this definition path. - string (required)",
+            "hair_type": "wavy - The hair type at this definition path. - string (required)",
+            "extra_description": "A curvy, fit adult with bright green eyes, an expressive face, and an easy, grounded manner. - The extra description at this definition path. - string",
+            "extra_description_lower_body": "empty string - The extra description lower body at this definition path. - string",
+            "nonhuman_lower_body": "false - The nonhuman lower body at this definition path. - boolean (required)"
+          },
+          "outfits": [
+            {
+              "id": "inspector-travel - Stable identifier within its owning definition. - string (required)",
+              "name": "Inspector Travel Uniform - Player-facing character name. - string (required)",
+              "clothing": {
+                "bra": "deep teal supportive bra - The bra at this definition path. - string (required)",
+                "shirt": "tailored violet-black inspector blouse with subtle gold piping - The shirt at this definition path. - string (required)",
+                "coat": "fitted black travel coat bearing a small federal inspector insignia - The coat at this definition path. - string (required)",
+                "underwear": "deep teal fitted underwear - The underwear at this definition path. - string (required)",
+                "skirt": "opaque ankle-length travel skirt without openings - The skirt at this definition path. - string (required)",
+                "legwear": "opaque black tights - The legwear at this definition path. - string (required)",
+                "feet": "well-kept black leather ankle boots - The feet at this definition path. - string (required)",
+                "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+                "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+              }
+            }
+          ],
+          "starting_outfit_id": "inspector-travel - Outfit copied into mutable clothing when play begins. - string (required)",
+          "starting_inventory": [],
+          "starting_known_facts": [
+            "The player died prematurely and is being offered a healthy adult reincarnated body. - The 0 at this definition path. - string (required)",
+            "The player has not yet accepted the inspector appointment or selected a supernatural gift. - The 1 at this definition path. - string (required)"
+          ],
+          "stats": {},
+          "created_at": "2026-07-25T00:00:00Z - Original character creation time. - string (required)",
+          "updated_at": "2026-07-26T00:00:00.000Z - Most recent definition update time. - string (required)",
+          "default_seed": "20260723 - Default image-generation seed. - integer (required)",
+          "image_prompt_config": {
+            "seed_enabled": "true - The seed enabled at this definition path. - boolean (required)",
+            "seed": "20260723 - The seed at this definition path. - integer (required)",
+            "style": "empty string - The style at this definition path. - string (required)",
+            "profile_style": "empty string - The profile style at this definition path. - string (required)",
+            "negative": "empty string - The negative at this definition path. - string (required)",
+            "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)"
+          },
+          "default_profile_image": {
+            "url": "empty string - The url at this definition path. - string (required)",
+            "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+            "source": "none - Authored source label. - string (required)",
+            "seed": "null - The seed at this definition path. - number|string|null (required)",
+            "prompt": "empty string - The prompt at this definition path. - string (required)",
+            "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+            "note": "empty string - The note at this definition path. - string (required)",
+            "male": "false - The male at this definition path. - boolean (required)"
+          },
+          "profile_image_presentations": {
+            "male": {
+              "url": "empty string - The url at this definition path. - string (required)",
+              "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+              "source": "none - Authored source label. - string (required)",
+              "seed": "null - The seed at this definition path. - number|string|null (required)",
+              "prompt": "empty string - The prompt at this definition path. - string (required)",
+              "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+              "note": "empty string - The note at this definition path. - string (required)",
+              "male": "true - The male at this definition path. - boolean (required)"
+            },
+            "non_male": {
+              "url": "empty string - The url at this definition path. - string (required)",
+              "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+              "source": "none - Authored source label. - string (required)",
+              "seed": "null - The seed at this definition path. - number|string|null (required)",
+              "prompt": "empty string - The prompt at this definition path. - string (required)",
+              "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+              "note": "empty string - The note at this definition path. - string (required)",
+              "male": "false - The male at this definition path. - boolean (required)"
+            }
+          },
+          "profile_images": {
+            "active_image_id": "empty string - The active image id at this definition path. - string (required)",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "empty string - The active image id at this definition path. - string (required)",
+            "image_ids": []
+          },
+          "voice": "null - Runtime-populated voice assignment. - number|string|null (required)"
+        }
+      ],
+      "characters": {
+        "vessa-threadwell": "{ Vessa Threadwell uses the complete character_definition structure shown in the characterDefinition group } - The vessa threadwell at this definition path. - string (required)"
+      },
+      "npc_directory": {
+        "locations": {
+          "loc-federal-office": {
+            "label": "Federal Inspection Office - The label at this definition path. - string (required)",
+            "characters": {
+              "vessa-threadwell": {
+                "name": "Vessa Threadwell - Player-facing character name. - string (required)",
+                "player_known_name": "true - The player known name at this definition path. - boolean (required)",
+                "player_facing_label": "Vessa Threadwell - The player facing label at this definition path. - string (required)",
+                "full_character": "{ Vessa Threadwell uses the complete character_definition structure shown in the characterDefinition group } - The full character at this definition path. - string (required)"
+              }
+            }
+          }
+        }
+      },
+      "world_flags": {
+        "tone": "warm bureaucratic fantasy with thoughtful choices and consequential inspections - The tone at this definition path. - string (required)"
+      },
+      "story_inventory": {
+        "coins": "120 - The coins at this definition path. - integer (required)",
+        "cities_completed": "0 - The cities completed at this definition path. - integer (required)",
+        "worker_advocacy": "0 - The worker advocacy at this definition path. - integer (required)",
+        "items": [
+          {
+            "id": "federal-writ - Stable identifier within its owning definition. - string (required)",
+            "name": "Federal Inspector Writ - Player-facing character name. - string (required)",
+            "type": "quest - The type at this definition path. - string (required)",
+            "quantity": "1 - The quantity at this definition path. - integer",
+            "value": "0 - The value at this definition path. - integer (required)",
+            "sellable": "false - The sellable at this definition path. - boolean (required)",
+            "quest_item": "true - The quest item at this definition path. - boolean (required)",
+            "description": "Proof of the player's federal appointment. - Player-facing description. - string",
+            "image": {
+              "url": "https://example.invalid/federal-writ.png - The url at this definition path. - string (required)",
+              "title": "Federal Inspector Writ - Player-facing title. - string (required)"
+            }
+          }
+        ]
+      },
+      "numeric_precision": {
+        "story_inventory": {
+          "inspection_score": "2 - The inspection score at this definition path. - integer (required)"
+        },
+        "character_stats": {
+          "case_efficiency": "2 - The case efficiency at this definition path. - integer (required)"
+        }
+      },
+      "objectives": {
+        "starting_objective_id": "accept-inspector-appointment - The objective active when a new save begins. Objective definitions never store runtime active, hidden, complete, or no-current state. - string FK (required)",
+        "items": [
+          {
+            "id": "travel-hearthcross - Stable identifier within its owning definition. - string (required)",
+            "title": "Travel to Hearthcross - Player-facing title. - string (required)",
+            "type": "story - The type at this definition path. - string (required)",
+            "summary": "Travel to Hearthcross with Vessa when ready. - The summary at this definition path. - string",
+            "while_active_guidance": "Allow questions and preparation, but do not narrate arrival until the player commits to travel. - Required hidden AI guidance used while this objective is active. - string (required)",
+            "completion_control": "player - Determines whether completion is checked from player action, AI scene resolution, a direct choice, or deterministic requirements. - string (required)",
+            "completion_requirements": [],
+            "completion_criteria": "Complete when the player clearly commits to traveling to Hearthcross. - One private observable condition that completes the objective. - string (required)",
+            "selectable": "true - The selectable at this definition path. - boolean (required)",
+            "locked_until_complete": "false - The locked until complete at this definition path. - boolean (required)",
+            "next_objectives": [
+              {
+                "id": "travel-hearthcross-output - Stable identifier within its owning definition. - string (required)",
+                "objective_id": "arrive-hearthcross - The objective id at this definition path. - string (required)",
+                "target_input_group_id": "arrive-hearthcross-input-1 - Destination input group receiving this transition. - string (required)",
+                "completion_instruction": "Narrate the journey with Vessa and establish arrival in Hearthcross. - Hidden narrator guidance applied when this output resolves. - string (required)",
+                "dialogue_lines": [
+                  "(Vessa Threadwell) \"I have the Hearthcross files ready.\" - The 0 at this definition path. - string (required)"
+                ],
+                "requirements": [],
+                "rewards": [
+                  {
+                    "type": "unlock_location - The type at this definition path. - string (required)",
+                    "location_id": "loc-city-hearthcross - The location id at this definition path. - string (required)"
+                  }
+                ],
+                "travel_location_id": "loc-city-hearthcross - The travel location id at this definition path. - string"
+              }
+            ]
+          },
+          {
+            "id": "accept-inspector-appointment - Stable identifier within its owning definition. - string (required)",
+            "title": "Decide Whether to Become the Inspector - Player-facing title. - string (required)",
+            "type": "story - The type at this definition path. - string (required)",
+            "summary": "Accept, negotiate, or decline the federal appointment. - The summary at this definition path. - string",
+            "while_active_guidance": "Preserve the player choice and do not imply the appointment has already been accepted. - Required hidden AI guidance used while this objective is active. - string (required)",
+            "completion_control": "choice - Determines whether completion is checked from player action, AI scene resolution, a direct choice, or deterministic requirements. - string (required)",
+            "choice_response_mode": "optional_text - The choice response mode at this definition path. - string (required)",
+            "selectable": "true - The selectable at this definition path. - boolean (required)",
+            "locked_until_complete": "true - The locked until complete at this definition path. - boolean (required)",
+            "choices": [
+              {
+                "id": "accept-job - Stable identifier within its owning definition. - string (required)",
+                "title": "Accept the Appointment - Player-facing title. - string (required)",
+                "summary": "Begin the new life as a federal inspector. - The summary at this definition path. - string",
+                "player_text": "I accept the appointment. - The player text at this definition path. - string (required)",
+                "next_objective_id": "meet-vessa - The next objective id at this definition path. - string (required)",
+                "target_input_group_id": "meet-vessa-input-1 - Destination input group receiving this transition. - string (required)",
+                "completion_instruction": "Acknowledge the acceptance and introduce Vessa as the assigned assistant. - Hidden narrator guidance applied when this output resolves. - string (required)",
+                "dialogue_lines": [
+                  "(Vessa Threadwell) \"Inspector. I am Vessa Threadwell, your assigned assistant.\" - The 0 at this definition path. - string (required)"
+                ],
+                "requirements": [],
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "introduce_future_character - The type at this definition path. - string (required)",
+                    "character_id": "vessa-threadwell - The character id at this definition path. - string (required)",
+                    "location_id": "loc-federal-office - Location referenced by this reward. - string FK (required)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "judge-hearthcross-inspection - Stable identifier within its owning definition. - string (required)",
+            "title": "Conclude the Hearthcross Inspection - Player-facing title. - string (required)",
+            "type": "story - The type at this definition path. - string (required)",
+            "summary": "Reach a defensible conclusion after examining the establishment. - The summary at this definition path. - string",
+            "while_active_guidance": "Let the evidence and the player's approach determine Vessa's recommendation. - Required hidden AI guidance used while this objective is active. - string (required)",
+            "completion_control": "ai - Determines whether completion is checked from player action, AI scene resolution, a direct choice, or deterministic requirements. - string (required)",
+            "evaluate_ai_on_activation": "true - Requests one AI completion decision immediately when the objective activates. - boolean",
+            "completion_requirements": [
+              {
+                "path": "story_inventory.cities_completed - The path at this definition path. - string (required)",
+                "op": ">= - The op at this definition path. - string (required)",
+                "value": "1 - The value at this definition path. - integer (required)"
+              }
+            ],
+            "completion_criteria": "Complete when the inspection has reached a clear supported conclusion. - One private observable condition that completes the objective. - string (required)",
+            "route_control": "ai - The route control at this definition path. - string",
+            "outcome_routes": [
+              {
+                "id": "worker-protection-route - Stable identifier within its owning definition. - string (required)",
+                "criteria": "Choose when the player prioritizes worker safety and credible testimony. - The criteria at this definition path. - string (required)",
+                "next_objective_id": "travel-goldmeadow - The next objective id at this definition path. - string (required)",
+                "target_input_group_id": "travel-goldmeadow-input-1 - Destination input group receiving this transition. - string (required)",
+                "completion_instruction": "Have Vessa record a worker-protective ruling. - Hidden narrator guidance applied when this output resolves. - string (required)",
+                "requirements": [
+                  {
+                    "path": "story_inventory.worker_advocacy - The path at this definition path. - string (required)",
+                    "op": ">= - The op at this definition path. - string (required)",
+                    "value": "1 - The value at this definition path. - integer (required)"
+                  }
+                ],
+                "dialogue_lines": [],
+                "rewards": [
+                  {
+                    "type": "adjust_relationship - The type at this definition path. - string (required)",
+                    "target": "Vessa Threadwell - The target at this definition path. - string (required)",
+                    "stats": {
+                      "trust": "1 - The trust at this definition path. - integer (required)",
+                      "affection": "1 - The affection at this definition path. - integer (required)"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "neutral-route - Stable identifier within its owning definition. - string (required)",
+                "criteria": "Use when no stronger route clearly applies. - The criteria at this definition path. - string (required)",
+                "fallback": "true - The fallback at this definition path. - boolean (required)",
+                "next_objective_id": "travel-goldmeadow - The next objective id at this definition path. - string (required)",
+                "target_input_group_id": "travel-goldmeadow-input-2 - Destination input group receiving this transition. - string (required)",
+                "completion_instruction": "Have Vessa record a cautious neutral ruling. - Hidden narrator guidance applied when this output resolves. - string (required)",
+                "requirements": [],
+                "dialogue_lines": [],
+                "rewards": []
+              }
+            ]
+          },
+          {
+            "id": "hearthcross-route-convergence - Stable identifier within its owning definition. - string (required)",
+            "title": "Record the Hearthcross Outcome - Player-facing title. - string (required)",
+            "type": "story - The type at this definition path. - string (required)",
+            "summary": "Record the completed inspection outcome. - The summary at this definition path. - string",
+            "while_active_guidance": "This deterministic transition records the result without narration. - Required hidden AI guidance used while this objective is active. - string (required)",
+            "completion_control": "reward_only - Determines whether completion is checked from player action, AI scene resolution, a direct choice, or deterministic requirements. - string (required)",
+            "requirement_check_only": "true - Makes an AI-controlled node a deterministic no-AI automatic transition. - boolean",
+            "completion_requirements": [
+              {
+                "type": "objective_complete - The type at this definition path. - string (required)",
+                "objective_id": "judge-hearthcross-inspection - The objective id at this definition path. - string (required)"
+              }
+            ],
+            "selectable": "false - The selectable at this definition path. - boolean (required)",
+            "next_objectives": [
+              {
+                "id": "convergence-output - Stable identifier within its owning definition. - string (required)",
+                "objective_id": "travel-goldmeadow - The objective id at this definition path. - string (required)",
+                "target_input_group_id": "travel-goldmeadow-input-1 - Destination input group receiving this transition. - string (required)",
+                "completion_instruction": "Carry the recorded outcome forward without adding a new scene. - Hidden narrator guidance applied when this output resolves. - string (required)",
+                "requirements": [],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory - The type at this definition path. - string (required)",
+                    "field": "cities_completed - The field at this definition path. - string (required)",
+                    "amount": "1 - The amount at this definition path. - integer (required)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "finish-inspection-circuit - Stable identifier within its owning definition. - string (required)",
+            "title": "Complete the Inspection Circuit - Player-facing title. - string (required)",
+            "type": "story - The type at this definition path. - string (required)",
+            "summary": "Conclude the final federal inspection. - The summary at this definition path. - string",
+            "while_active_guidance": "Resolve the final consequences from the player's accumulated decisions. - Required hidden AI guidance used while this objective is active. - string (required)",
+            "completion_control": "ai - Determines whether completion is checked from player action, AI scene resolution, a direct choice, or deterministic requirements. - string (required)",
+            "completion_criteria": "Complete when the final inspection and its immediate consequences are resolved. - One private observable condition that completes the objective. - string (required)",
+            "next_objectives": [
+              {
+                "id": "finish-inspection-circuit-ending - Stable identifier within its owning definition. - string (required)",
+                "completion_instruction": "Close the inspection circuit and present its final consequences. - Hidden narrator guidance applied when this output resolves. - string (required)",
+                "rewards": [],
+                "ending_type": "ending - Optional output ending behavior. - freeplay | ending | game_over",
+                "ending_message": "The Inspector's first circuit is complete. - Optional message shown for this ending. - string"
+              }
+            ],
+            "rewards": []
+          }
+        ]
+      },
+      "future_cast": {
+        "enabled": "true - The enabled at this definition path. - boolean (required)",
+        "items": {
+          "vessa-threadwell": {
+            "id": "vessa-threadwell - Stable identifier within its owning definition. - string (required)",
+            "name": "Vessa Threadwell - Player-facing character name. - string (required)",
+            "initial_status": "locked - Immutable starting future-cast status copied into runtime only when a new save is created. - string (required)",
+            "canonical_order": "1 - The canonical order at this definition path. - integer (required)",
+            "introduce_as": "npc - The introduce as at this definition path. - string (required)",
+            "can_die": "false - Whether normal gameplay may kill the character. - boolean (required)",
+            "location_hint": "Divine receiving room after the player accepts the appointment - The location hint at this definition path. - string (required)",
+            "scene_presence": "nearby - The scene presence at this definition path. - string (required)",
+            "role": "Federal inspection assistant - Durable character role. - string (required)",
+            "relationship": "not yet met - The relationship at this definition path. - string (required)",
+            "note": "Central assistant and relationship anchor. - The note at this definition path. - string (required)",
+            "personality_description": "Intelligent, formal, observant, and professionally firm. - Durable personality and behavioral guidance. - string (required)",
+            "greeting": "A precise arachne assistant arrives with the inspection itinerary and tries not to stare at the reincarnated inspector. - The greeting at this definition path. - string (required)",
+            "full_character": "{ Vessa Threadwell uses the complete character_definition structure shown in the characterDefinition group } - The full character at this definition path. - string (required)",
+            "meet_condition": "Accept the federal inspection appointment. - The meet condition at this definition path. - string (required)",
+            "join_condition": "Begins as traveling assistant; romance remains optional. - The join condition at this definition path. - string (required)",
+            "on_unlock": {
+              "greeting": "Introduce Vessa as the player's newly assigned professional assistant without presuming attraction. - The greeting at this definition path. - string (required)"
+            },
+            "location_id": "loc-federal-office - Location associated with this future character. - string FK (required)"
+          }
+        }
+      },
+      "timed_events": {
+        "inspection-reminder": {
+          "id": "inspection-reminder - Stable identifier within its owning definition. - string (required)",
+          "title": "Inspection Reminder - Player-facing title. - string (required)",
+          "trigger": {
+            "objective_id": "accept-inspector-appointment - Objective whose completion starts this timed event. - string FK (required)"
+          },
+          "time_limit_minutes": "720 - Minutes after this event starts before its deadline rewards apply. - integer (required)",
+          "cancel_objective_id": "complete-hearthcross-inspection - Completing this objective cancels the event before its deadline. - string FK",
+          "stages": [
+            {
+              "id": "warning-1 - Stable stage identifier within this timed event. - string (required)",
+              "after_minutes": "480 - Minutes after the event starts before this stage applies. - integer (required)",
+              "message": "The Hearthcross inspection deadline is approaching. - Player-facing stage message. - string",
+              "rewards": []
+            }
+          ],
+          "rewards": [
+            {
+              "type": "add_story_rule - The type at this definition path. - string (required)",
+              "rule_id": "inspection-deadline-near - The rule id at this definition path. - string (required)",
+              "text": "The Hearthcross inspection deadline is approaching. - The text at this definition path. - string (required)"
+            }
+          ]
+        }
+      },
+      "story_rules": [
+        "Inspectors must respect professional boundaries. - The 0 at this definition path. - string (required)"
+      ],
+      "story_memory": {
+        "world_notes": [
+          "The federal circuit begins in Hearthcross. - The 0 at this definition path. - string (required)"
+        ],
+        "unresolved_threads": [
+          "Vessa has not yet explained her private reasons for joining the Inspectorate. - The 0 at this definition path. - string (required)"
+        ],
+        "relationship_notes": [],
+        "rules_and_constraints": [],
+        "ai_private_notes": []
+      },
+      "recent_changes": [],
+      "reward_bundles": {
+        "introduce-vessa": {
+          "rewards": [
+            {
+              "type": "introduce_future_character - The type at this definition path. - string (required)",
+              "character_id": "vessa-threadwell - The character id at this definition path. - string (required)",
+              "location_id": "loc-federal-office - Location referenced by this reward. - string FK (required)"
+            }
+          ]
+        },
+        "reward-hearthcross-trust": {
+          "rewards": [
+            {
+              "type": "adjust_relationship - The type at this definition path. - string (required)",
+              "target": "Vessa Threadwell - The target at this definition path. - string (required)",
+              "stats": {
+                "trust": "1 - The trust at this definition path. - integer (required)",
+                "affection": "1 - The affection at this definition path. - integer (required)"
+              }
+            }
+          ]
+        }
+      },
+      "reward_templates": {
+        "adjust-character-trust": {
+          "parameters": {
+            "character_id": {
+              "type": "character_id - The type at this definition path. - string (required)"
+            },
+            "stat_path": {
+              "type": "path - The type at this definition path. - string (required)"
+            }
+          },
+          "rewards": [
+            {
+              "type": "modify_number - The type at this definition path. - string (required)",
+              "operation": "add - The operation at this definition path. - string (required)",
+              "character_id": {
+                "parameter": "character_id - The parameter at this definition path. - string (required)"
+              },
+              "field_path": {
+                "parameter": "stat_path - The parameter at this definition path. - string (required)"
+              },
+              "value": "1 - The value at this definition path. - integer (required)"
+            }
+          ]
+        }
+      },
+      "character_shop_cost_templates": {
+        "inspection-contract": {
+          "type": "stat - The type at this definition path. - string (required)",
+          "costs": [
+            {
+              "label": "Required Rank - The label at this definition path. - string (required)",
+              "available_expression": {
+                "initial": {
+                  "path": [
+                    "story_inventory - The 0 at this definition path. - string (required)",
+                    "cities_completed - The 1 at this definition path. - string (required)"
+                  ]
+                }
+              },
+              "op": ">= - The op at this definition path. - string (required)",
+              "required_stat": "required_rank - The required stat at this definition path. - string (required)"
+            }
+          ],
+          "effects": [
+            {
+              "label": "Inspection credit - The label at this definition path. - string (required)",
+              "operation": "add - The operation at this definition path. - string (required)",
+              "field_path": [
+                "story_inventory - The 0 at this definition path. - string (required)",
+                "coins - The 1 at this definition path. - string (required)"
+              ],
+              "value_stat": "contract_bonus - The value stat at this definition path. - string (required)"
+            }
+          ]
+        }
+      },
+      "story_shops": {
+        "federal-supply-office": {
+          "id": "federal-supply-office - Stable identifier within its owning definition. - string (required)",
+          "title": "Federal Supply Office - Player-facing title. - string (required)",
+          "type": "general - The type at this definition path. - string (required)",
+          "subtype": "General Store - The subtype at this definition path. - string (required)",
+          "description": "Official inspection supplies. - Player-facing description. - string",
+          "unlocked": "true - The unlocked at this definition path. - boolean (required)",
+          "currency": "coins - The currency at this definition path. - string (required)",
+          "location_id": "loc-federal-office - Location containing this shop. - string FK (required)",
+          "owner_npc_id": "vessa-threadwell - The owner npc id at this definition path. - string",
+          "markup": "1.2 - The markup at this definition path. - number (required)",
+          "buying": {
+            "enabled": "true - The enabled at this definition path. - boolean (required)",
+            "quest_items_rejected": "true - The quest items rejected at this definition path. - boolean (required)"
+          },
+          "items": [
+            {
+              "id": "inspection-ledger - Stable identifier within its owning definition. - string (required)",
+              "quantity": "1 - The quantity at this definition path. - integer",
+              "item": {
+                "id": "inspection-ledger - Stable identifier within its owning definition. - string (required)",
+                "name": "Inspection Ledger - Player-facing character name. - string (required)",
+                "type": "tool - The type at this definition path. - string (required)",
+                "quantity": "1 - The quantity at this definition path. - integer",
+                "value": "20 - The value at this definition path. - integer (required)",
+                "sellable": "true - The sellable at this definition path. - boolean (required)",
+                "quest_item": "false - The quest item at this definition path. - boolean (required)",
+                "description": "A durable field ledger. - Player-facing description. - string",
+                "image": {
+                  "url": "https://example.invalid/ledger.png - The url at this definition path. - string (required)",
+                  "title": "Inspection Ledger - Player-facing title. - string (required)"
+                }
+              },
+              "requirements": [],
+              "rewards": []
+            }
+          ]
+        },
+        "assistant-services": {
+          "id": "assistant-services - Stable identifier within its owning definition. - string (required)",
+          "title": "Assistant Services - Player-facing title. - string (required)",
+          "type": "character - The type at this definition path. - string (required)",
+          "subtype": "Professional Services - The subtype at this definition path. - string (required)",
+          "description": "Book a specialist for one inspection scene. - Player-facing description. - string",
+          "unlocked": "true - The unlocked at this definition path. - boolean (required)",
+          "currency": "coins - The currency at this definition path. - string (required)",
+          "location_id": "loc-federal-office - Location containing this shop. - string FK (required)",
+          "purchase_verb": "Book - The purchase verb at this definition path. - string (required)",
+          "purchase_completed_verb": "booked - The purchase completed verb at this definition path. - string (required)",
+          "purchase_mode": "service - The purchase mode at this definition path. - string (required)",
+          "repeatable": "true - The repeatable at this definition path. - boolean (required)",
+          "post_purchase_presence": "current_scene - The post purchase presence at this definition path. - string (required)",
+          "items": [
+            {
+              "id": "book-vessa - Stable identifier within its owning definition. - string (required)",
+              "character_id": "vessa-threadwell - The character id at this definition path. - string (required)",
+              "price": "25 - The price at this definition path. - integer (required)",
+              "locked": "false - The locked at this definition path. - boolean (required)",
+              "requirements": [],
+              "unlock_reason": "Available after accepting the appointment. - The unlock reason at this definition path. - string",
+              "on_purchase_objective": "meet-vessa - The on purchase objective at this definition path. - string",
+              "purchase_opening": {
+                "dialogue": "\"Thank you for booking me. Please, follow me.\" - Authored opening dialogue shown immediately after a service booking. - string (required for service)",
+                "guidance": "Acknowledge the payment, stay in character, and begin the booked service naturally. - Hidden guidance for the next AI scene reply. - string"
+              }
+            }
+          ]
+        },
+        "silkrest-outfitter": {
+          "id": "silkrest-outfitter - Stable identifier within its owning definition. - string (required)",
+          "title": "Silkrest Outfitter - Player-facing title. - string (required)",
+          "type": "clothing - The type at this definition path. - string (required)",
+          "subtype": "Outfitter - The subtype at this definition path. - string (required)",
+          "description": "Arachne-tailored formalwear. - Player-facing description. - string",
+          "unlocked": "false - The unlocked at this definition path. - boolean (required)",
+          "currency": "coins - The currency at this definition path. - string (required)",
+          "location_id": "loc-inn-silkrest-the-gilded-web - Location containing this shop. - string FK (required)",
+          "items": [
+            {
+              "id": "vessa-confidence-outfit - Stable identifier within its owning definition. - string (required)",
+              "title": "Silkrest Confidence Outfit - Player-facing title. - string (required)",
+              "price": "80 - The price at this definition path. - integer (required)",
+              "requirements": [],
+              "outfit": {
+                "id": "silkrest-confidence - Stable identifier within its owning definition. - string (required)",
+                "name": "Silkrest Confidence Outfit - Player-facing character name. - string (required)",
+                "clothing": {
+                  "bra": "supportive underlayer suited to the character's body and the outfit design - The bra at this definition path. - string (required)",
+                  "undershirt": "soft species-safe inner layer where anatomically useful - The undershirt at this definition path. - string (required)",
+                  "shirt": "an elegant copper-and-violet arachne-tailored blouse and draped harness that displays |[character_possessive_pronoun:vessa-threadwell]| upper body attractively while preserving professional dignity - The shirt at this definition path. - string (required)",
+                  "pants": "the public outfit's skirt, hip straps, drapes, trousers, or lower-body adaptation - The pants at this definition path. - string (required)",
+                  "underwear": "comfortable species-safe underwear beneath the public look - The underwear at this definition path. - string (required)",
+                  "feet": "footwear or protective limb coverings appropriate to species anatomy - The feet at this definition path. - string (required)",
+                  "other_accessory": "inn, city, and species-themed accessories integrated with the public outfit - The other accessory at this definition path. - string (required)",
+                  "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+                  "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+                }
+              }
+            }
+          ]
+        },
+        "hearthcross-job-board": {
+          "id": "hearthcross-job-board - Stable identifier within its owning definition. - string (required)",
+          "title": "Hearthcross Job Board - Player-facing title. - string (required)",
+          "type": "job - The type at this definition path. - string (required)",
+          "subtype": "Job Board - The subtype at this definition path. - string (required)",
+          "description": "Federal and local inspection work. - Player-facing description. - string",
+          "unlocked": "true - The unlocked at this definition path. - boolean (required)",
+          "currency": "coins - The currency at this definition path. - string (required)",
+          "location_id": "loc-federal-office - Location containing this job board. - string FK (required)",
+          "visible_count": "3 - The visible count at this definition path. - integer (required)",
+          "generic_jobs_enabled": "true - The generic jobs enabled at this definition path. - boolean (required)",
+          "items": [
+            {
+              "id": "audit-hearthcross-ledgers - Stable identifier within its owning definition. - string (required)",
+              "title": "Audit the Hearthcross Ledgers - Player-facing title. - string (required)",
+              "summary": "Compare establishment ledgers against federal filings. - The summary at this definition path. - string",
+              "genres": [
+                "fantasy - The 0 at this definition path. - string (required)"
+              ],
+              "rank": "1 - The rank at this definition path. - integer",
+              "requirements": [],
+              "reward_coins": "40 - The reward coins at this definition path. - integer (required)",
+              "reward_xp": "10 - The reward xp at this definition path. - integer (required)",
+              "reward_items": [],
+              "client_npc_id": "vessa-threadwell - The client npc id at this definition path. - string",
+              "start_location": {
+                "world": "Elyndar - The world at this definition path. - string (required)",
+                "region": "Hearthcross Province - The region at this definition path. - string (required)",
+                "settlement_name": "Hearthcross - The settlement name at this definition path. - string (required)",
+                "district": "Federal Quarter - The district at this definition path. - string (required)",
+                "specific_place": "Federal Inspection Office - The specific place at this definition path. - string (required)"
+              },
+              "completion_criteria": "Complete when the player finishes checking the ledgers. - One private observable condition that completes the objective. - string (required)",
+              "completion_instruction": "Have Vessa confirm the audit findings and prepare the payment. - Hidden narrator guidance applied when this output resolves. - string (required)"
+            }
+          ]
+        }
+      },
+      "story_job_offers": {},
+      "story_job_offer_history": {},
+      "active_generated_jobs": {},
+      "story_generated_npc_pool": {}
+    },
+    "messages": [
+      {
+        "role": "assistant - Durable character role. - string (required)",
+        "speaker": "Narrator - The speaker at this definition path. - string (required)",
+        "text": "Caelira Vey offers the player a second life and a federal inspector appointment. - The text at this definition path. - string (required)"
+      }
+    ],
+    "default_image_model": "empty string - The default image model at this definition path. - string (required)",
+    "editor_data": {
+      "story_tree": {
+        "positions": {
+          "travel-hearthcross": {
+            "x": "80 - The x at this definition path. - integer (required)",
+            "y": "80 - The y at this definition path. - integer (required)"
+          }
+        },
+        "viewport": {
+          "x": "0 - The x at this definition path. - integer (required)",
+          "y": "0 - The y at this definition path. - integer (required)",
+          "zoom": "1 - The zoom at this definition path. - integer (required)"
+        }
+      }
+    },
+    "title_card_subjects": [
+      "Vessa Threadwell - The 0 at this definition path. - string (required)",
+      "Federal Inspection Office - The 1 at this definition path. - string (required)"
+    ],
+    "title_card_image": {
+      "id": "the-inspector-title - Stable identifier within its owning definition. - string (required)",
+      "title": "The Inspector - Player-facing title. - string (required)",
+      "prompt": "Vessa and the inspector preparing to depart the federal office. - The prompt at this definition path. - string (required)",
+      "negativePrompt": "text, watermark - The negative prompt at this definition path. - string (required)",
+      "seed": "20260723 - The seed at this definition path. - integer (required)",
+      "model": "perchance - The model at this definition path. - string (required)",
+      "source": "hosted - Authored source label. - string (required)",
+      "url": "https://example.invalid/the-inspector-title.png - The url at this definition path. - string (required)",
+      "hosted_url": "https://example.invalid/the-inspector-title.png - The hosted url at this definition path. - string (required)",
+      "html": "empty string - The html at this definition path. - string (required)",
+      "favorite": "true - The favorite at this definition path. - boolean (required)",
+      "upload_attestation_classification": "Example - string",
+      "upload_attested_by": "creator-user-id - User/profile identity that made the upload declaration. - string",
+      "upload_attested_at": "2026-08-31T00:00:00.000Z - Time of the upload declaration. - string",
+      "upload_attestation_policy_version": "1 - integer"
+    }
+  }
+
+  "compiledStoryIndexes": {
+    "storyId": "the-inspector - Links to storyDefinitions.storyId. - string FK (required)",
+    "revisionId": "revision-2026-08-04 - Links to the exact immutable story revision. - string FK (required)",
+    "compilerVersion": "1 - Compiler contract used to create these indexes. - number (required)",
+    "definitionContentHash": "7f3c9a21dbe54870 - Must match storyDefinitions.contentHash before the indexes may be used. - string (required)",
+    "startingObjectiveId": "accept-inspector-appointment - Resolved starting objective. - string FK (required)",
+    "objectiveIndexById": "{ travel-hearthcross: 0 } - Direct index into storyDefinitions.state.objectives.items without duplicating objective definitions. - structured immutable value (required)",
+    "incomingObjectiveIdsByObjectiveId": "{ arrive-hearthcross: [travel-hearthcross] } - Indexed incoming objective links. - structured immutable value (required)",
+    "incomingTransitionGroupsByObjectiveId": "{ arrive-hearthcross: { arrive-hearthcross-input-1: [{ sourceObjectiveId: travel-hearthcross, outputId: travel-hearthcross-output }] } } - Compiled OR groups of AND transition requirements used to activate destination objectives without scanning the objective tree. - structured immutable value (required)",
+    "outgoingObjectiveIdsByObjectiveId": "{ travel-hearthcross: [arrive-hearthcross] } - Indexed outgoing objective links. - structured immutable value (required)",
+    "requirementDependentsByKey": "{ objective:travel-hearthcross: [arrive-hearthcross], story_inventory:cities_completed: [judge-hearthcross-inspection] } - Objectives reevaluated when a dependency changes. - structured immutable value (required)",
+    "characterById": "{ vessa-threadwell: { immutable character locator } } - Direct authored character and future-cast resolver index. - structured immutable value (required)",
+    "locationById": "{ loc-city-hearthcross: { immutable location locator } } - Direct authored location resolver index. - structured immutable value (required)",
+    "shopById": "{ field-supplies: { immutable shop locator } } - Direct authored shop resolver index. - structured immutable value (required)",
+    "rewardBundleById": "{ introduce-vessa: { immutable reward bundle locator } } - Direct reusable reward-bundle resolver index. - structured immutable value (required)"
+  }
+
+  "storyLibraryEntries": {
+    "storyId": "the-inspector - Stable library identity. - string (required)",
+    "revisionId": "revision-2026-08-04 - Currently selected immutable local revision. - string FK (required)",
+    "title": "The Inspector - Player-facing library-card title. - string (required)",
+    "description": "Begin a healthier second life as a federal inspector. - Bounded player-facing library-card description. - string",
+    "source": "Original - Authored source label used by library filters. - string (required)",
+    "creation_tool": "EmberAdventures Story Skill - Tool used to create the story. - string",
+    "creator": "Isaac - Searchable creator display name. - string",
+    "creatorId": "creator-isaac - Stable searchable creator identity. - string",
+    "genres": [
+      "fantasy - Searchable story genre. - string (required)"
+    ]
+  }
+
+  "authoredCharacterDefinitions": {
+    "characterId": "vessa-threadwell-c8142d90 - Stable authored character ID. - string (required)",
+    "revisionId": "revision-2026-08-04 - Immutable character revision identity. - string (required)",
+    "contentHash": "c8142d90a76134be - Verifies that this immutable character revision has not changed or collided with different content. - string (required)",
+    "name": "Vessa Threadwell - Player-facing character name. - string (required)",
+    "fallback_name": "Dorian Ves Threadwell - Alternate-presentation name. - string (required)",
+    "source": "Original - Authored source label. - string (required)",
+    "creator": "Isaac - Searchable public creator display name. - string",
+    "creator_id": "creator-isaac - Stable searchable creator identity. - string",
+    "creation_tool": "EmberAdventures Character Skill - Tool and model used to create the definition. - string (required)",
+    "default_image_background": "softly painted observatory interior - Optional standalone-character visual environment guidance used only when no explicit image, scene, or location background exists. - string",
+    "genres": [
+      "fantasy - The 0 at this definition path. - string (required)",
+      "romance - The 1 at this definition path. - string (required)",
+      "adventure - The 2 at this definition path. - string (required)"
+    ],
+    "gender": "female - Canonical gender presentation. - string (required)",
+    "role": "Federal inspection assistant - Durable character role. - string (required)",
+    "created_at": "2026-07-24T00:44:27Z - Original character creation time. - string (required)",
+    "updated_at": "2026-07-26T00:00:00.000Z - Most recent definition update time. - string (required)",
+    "version": "1 - Positive whole-number character definition version; current humanoid definitions use the exact 0-20 appearance shape. - integer (required)",
+    "can_die": "false - Whether normal gameplay may kill the character. - boolean (required)",
+    "romanceable": "true - Whether attraction preferences may adapt this character presentation. - boolean (required)",
+    "fallback_outfits": [
+      {
+        "id": "federal-public - Stable identifier within its owning definition. - string (required)",
+        "name": "Federal Inspectorate Uniform - Player-facing character name. - string (required)",
+        "clothing": {
+          "undershirt": "soft species-safe inner layer where anatomically useful - The undershirt at this definition path. - string (required)",
+          "shirt": "high-collared federal blouse, fitted waistcoat, modest underlayers, long side drapes adapted around |[character_possessive_pronoun:vessa-threadwell]| body junction, gloves, official satchel harness, and polished leg guards - The shirt at this definition path. - string (required)",
+          "pants": "species-safe trousers, hip drapes, straps, or lower-body adaptation matching the public design - The pants at this definition path. - string (required)",
+          "underwear": "comfortable fitted underwear beneath the public look - The underwear at this definition path. - string (required)",
+          "feet": "footwear or protective limb coverings appropriate to species anatomy - The feet at this definition path. - string (required)",
+          "other_accessory": "the same inn, city, and species-themed status details as the canonical public look - The other accessory at this definition path. - string (required)",
+          "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+          "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+        }
+      },
+      {
+        "id": "silkrest-confidence - Stable identifier within its owning definition. - string (required)",
+        "name": "Silkrest Confidence Outfit - Player-facing character name. - string (required)",
+        "clothing": {
+          "undershirt": "soft species-safe inner layer where anatomically useful - The undershirt at this definition path. - string (required)",
+          "shirt": "an elegant copper-and-violet arachne-tailored blouse and draped harness that displays |[character_possessive_pronoun:vessa-threadwell]| upper body attractively while preserving professional dignity - The shirt at this definition path. - string (required)",
+          "pants": "species-safe trousers, hip drapes, straps, or lower-body adaptation matching the public design - The pants at this definition path. - string (required)",
+          "underwear": "comfortable fitted underwear beneath the public look - The underwear at this definition path. - string (required)",
+          "feet": "footwear or protective limb coverings appropriate to species anatomy - The feet at this definition path. - string (required)",
+          "other_accessory": "the same inn, city, and species-themed status details as the canonical public look - The other accessory at this definition path. - string (required)",
+          "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+          "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+        }
+      },
+      {
+        "id": "private-silk - Stable identifier within its owning definition. - string (required)",
+        "name": "Private Silk Outfit - Player-facing character name. - string (required)",
+        "clothing": {
+          "undershirt": "a plain copper-black woven undershirt - The undershirt at this definition path. - string (required)",
+          "underwear": "plain cotton undergarments - The underwear at this definition path. - string (required)",
+          "other_accessory": "the same palette, jewelry, chains, fasteners, and body accents as the canonical private look - The other accessory at this definition path. - string (required)",
+          "legwear": "species-safe stockings, straps, or limb adornments when anatomically applicable - The legwear at this definition path. - string (required)",
+          "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+          "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+        }
+      }
+    ],
+    "fallback_starting_outfit_id": "federal-public - Starting outfit for the alternate presentation. - string (required)",
+    "age": "27 - Character age. - integer (required)",
+    "personality_description": "Intelligent, formal, observant, and professionally firm. - Durable personality and behavioral guidance. - string (required)",
+    "speech_style": "Precise, formal, softly corrective, and increasingly candid as trust grows. - Durable dialogue style. - string (required)",
+    "boldness": "4 - Base behavioral boldness from 0 through 10. - integer (required)",
+    "starting_relationship_to_player": "newly assigned coworker - Relationship copied into runtime when play begins. - string (required)",
+    "starting_trust": "2 - Trust copied into runtime when play begins. - integer (required)",
+    "starting_attraction": "0 - Attraction copied into runtime when play begins. - integer (required)",
+    "starting_affection": "0 - Affection copied into runtime when play begins. - integer (required)",
+    "starting_state_of_mind": "professionally composed - Mental state copied into runtime when play begins. - string (required)",
+    "starting_physical_state": "healthy adult - Physical state copied into runtime when play begins. - string (required)",
+    "starting_pose": "standing attentively - Pose copied into runtime when play begins. - string (required)",
+    "appearance": {
+      "species": "Arachne - The complete species identity, including any meaningful subtype or qualifier, at this definition path. - string (required)",
+      "height": "10 - The height at this definition path; whole number from 0 through 20. - integer (required)",
+      "body_description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+
+      "skin_color": "warm brown skin with copper abdominal markings - The skin color at this definition path. - string (required)",
+      "eye_color": "amber - The eye color at this definition path. - string (required)",
+      "hair_color": "chestnut - The hair color at this definition path. - string (required)",
+      "hair_length": "waist length - The hair length at this definition path. - string (required)",
+      "hair_type": "soft waves - The hair type at this definition path. - string (required)",
+      "extra_description": "Adult arachne with a curvy humanlike upper body, large dark-umber spider lower body, warm copper abdominal markings, long chestnut hair, amber eyes, several smaller eyes at |[character_possessive_pronoun:vessa-threadwell]| temples, fine sensory hairs, dexterous spinnerets, and graceful carefully controlled legs. - The extra description at this definition path. - string",
+      "extra_description_lower_body": "Arachne-specific nonhuman lower body and anatomy as described in the character design. - The extra description lower body at this definition path. - string",
+      "nonhuman_lower_body": "true - The nonhuman lower body at this definition path. - boolean (required)"
+    },
+    "outfits": [
+      {
+        "id": "federal-public - Stable identifier within its owning definition. - string (required)",
+        "name": "Federal Inspectorate Uniform - Player-facing character name. - string (required)",
+        "clothing": {
+          "bra": "supportive underlayer suited to the character's body and the outfit design - The bra at this definition path. - string (required)",
+          "undershirt": "soft species-safe inner layer where anatomically useful - The undershirt at this definition path. - string (required)",
+          "shirt": "high-collared federal blouse, fitted waistcoat, modest underlayers, long side drapes adapted around |[character_possessive_pronoun:vessa-threadwell]| body junction, gloves, official satchel harness, and polished leg guards - The shirt at this definition path. - string (required)",
+          "pants": "the public outfit's skirt, hip straps, drapes, trousers, or lower-body adaptation - The pants at this definition path. - string (required)",
+          "underwear": "comfortable species-safe underwear beneath the public look - The underwear at this definition path. - string (required)",
+          "feet": "footwear or protective limb coverings appropriate to species anatomy - The feet at this definition path. - string (required)",
+          "other_accessory": "inn, city, and species-themed accessories integrated with the public outfit - The other accessory at this definition path. - string (required)",
+          "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+          "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+        }
+      },
+      {
+        "id": "silkrest-confidence - Stable identifier within its owning definition. - string (required)",
+        "name": "Silkrest Confidence Outfit - Player-facing character name. - string (required)",
+        "clothing": {
+          "bra": "supportive underlayer suited to the character's body and the outfit design - The bra at this definition path. - string (required)",
+          "undershirt": "soft species-safe inner layer where anatomically useful - The undershirt at this definition path. - string (required)",
+          "shirt": "an elegant copper-and-violet arachne-tailored blouse and draped harness that displays |[character_possessive_pronoun:vessa-threadwell]| upper body attractively while preserving professional dignity - The shirt at this definition path. - string (required)",
+          "pants": "the public outfit's skirt, hip straps, drapes, trousers, or lower-body adaptation - The pants at this definition path. - string (required)",
+          "underwear": "comfortable species-safe underwear beneath the public look - The underwear at this definition path. - string (required)",
+          "feet": "footwear or protective limb coverings appropriate to species anatomy - The feet at this definition path. - string (required)",
+          "other_accessory": "inn, city, and species-themed accessories integrated with the public outfit - The other accessory at this definition path. - string (required)",
+          "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+          "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+        }
+      },
+      {
+        "id": "private-silk - Stable identifier within its owning definition. - string (required)",
+        "name": "Private Silk Outfit - Player-facing character name. - string (required)",
+        "clothing": {
+          "bra": "a plain copper-black woven undershirt - The bra at this definition path. - string (required)",
+          "underwear": "matching revealing lower piece described by the same private outfit - The underwear at this definition path. - string (required)",
+          "other_accessory": "the outfit-specific jewelry, chains, fasteners, and body accents described in the design - The other accessory at this definition path. - string (required)",
+          "legwear": "species-safe stockings, straps, or leg adornments when anatomically applicable - The legwear at this definition path. - string (required)",
+          "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
+          "rightHand": "null - Exact authored hand-item description when occupied. - string/null (required)"
+        }
+      }
+    ],
+    "starting_outfit_id": "federal-public - Outfit copied into mutable clothing when play begins. - string (required)",
+    "starting_inventory": [],
+    "starting_known_facts": [
+      "Vessa is the player's assigned assistant and the central emotional relationship throughout all twenty-two cities. - The 0 at this definition path. - string (required)",
+      "|[character_pronoun_cap:vessa-threadwell]| has Weaver's Fever, causing frequent cycles, excess silk, scent sensitivity, insomnia, intrusive fantasies, clinginess, involuntary web-building, and possible feral escalation if neglected. - The 1 at this definition path. - string (required)",
+      "The fever is treatable by the local healer. - The 2 at this definition path. - string (required)",
+      "|[character_pronoun_cap:vessa-threadwell]| entered regulation to protect workers and because precision felt safer than emotional exposure. - The 3 at this definition path. - string (required)",
+      "Silkrest is |[character_possessive_pronoun:vessa-threadwell]| first major turning point because |[character_pronoun:vessa-threadwell]| sees arachne treated as respected and desirable. - The 4 at this definition path. - string (required)",
+      "If accepted, |[character_pronoun:vessa-threadwell]| becomes the first acknowledged household partner and participates in later relationship and household decisions. - The 5 at this definition path. - string (required)",
+      "|[character_pronoun_cap:vessa-threadwell]| may have independent friendships, attractions, boundaries, jealousy, and private needs rather than functioning only as administrator. - The 6 at this definition path. - string (required)",
+      "By the final cities |[character_pronoun:vessa-threadwell]| can ask directly for affection and wear clothing |[character_pronoun:vessa-threadwell]| genuinely enjoys. - The 7 at this definition path. - string (required)"
+    ],
+    "default_seed": "20260723 - Default image-generation seed. - integer (required)",
+    "image_prompt_config": {
+      "seed_enabled": "true - The seed enabled at this definition path. - boolean (required)",
+      "seed": "20260723 - The seed at this definition path. - integer (required)",
+      "style": "empty string - The style at this definition path. - string (required)",
+      "profile_style": "empty string - The profile style at this definition path. - string (required)",
+      "negative": "empty string - The negative at this definition path. - string (required)",
+      "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)"
+    },
+    "default_profile_image": {
+      "url": "empty string - The url at this definition path. - string (required)",
+      "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+      "source": "none - Authored source label. - string (required)",
+      "seed": "null - The seed at this definition path. - number|string|null (required)",
+      "prompt": "empty string - The prompt at this definition path. - string (required)",
+      "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+      "note": "empty string - The note at this definition path. - string (required)",
+      "male": "false - The male at this definition path. - boolean (required)"
+    },
+    "profile_image_presentations": {
+      "male": {
+        "url": "empty string - The url at this definition path. - string (required)",
+        "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+        "source": "none - Authored source label. - string (required)",
+        "seed": "null - The seed at this definition path. - number|string|null (required)",
+        "prompt": "empty string - The prompt at this definition path. - string (required)",
+        "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+        "note": "empty string - The note at this definition path. - string (required)",
+        "male": "true - The male at this definition path. - boolean (required)"
+      },
+      "non_male": {
+        "url": "empty string - The url at this definition path. - string (required)",
+        "local_image_id": "empty string - The local image id at this definition path. - string (required)",
+        "source": "none - Authored source label. - string (required)",
+        "seed": "null - The seed at this definition path. - number|string|null (required)",
+        "prompt": "empty string - The prompt at this definition path. - string (required)",
+        "negative_prompt": "empty string - The negative prompt at this definition path. - string (required)",
+        "note": "empty string - The note at this definition path. - string (required)",
+        "male": "false - The male at this definition path. - boolean (required)"
+      }
+    },
+    "profile_images": {
+      "active_image_id": "empty string - The active image id at this definition path. - string (required)",
+      "image_ids": []
+    },
+    "images": {
+      "active_image_id": "empty string - The active image id at this definition path. - string (required)",
+      "image_ids": []
+    },
+    "voice": "null - Runtime-populated voice assignment. - number|string|null (required)"
+  }
+
+  "characterLibraryEntries": {
+    "characterId": "vessa-threadwell-c8142d90 - Stable library character identity. - string (required)",
+    "revisionId": "revision-2026-08-04 - Currently selected immutable local revision. - string FK (required)",
+    "name": "Vessa Threadwell - Player-facing library-card name. - string (required)",
+    "fallbackName": "Dorian Ves Threadwell - Alternate-presentation display name. - string (required)",
+    "role": "Federal inspection assistant - Bounded player-facing role summary. - string (required)",
+    "source": "Original - Authored source label used by library filters. - string (required)",
+    "creation_tool": "EmberAdventures Character Skill - Tool used to create the character. - string",
+    "creator": "Isaac - Searchable creator display name. - string",
+    "creatorId": "creator-isaac - Stable searchable creator identity. - string",
+    "genres": [
+      "fantasy - Searchable character genre. - string (required)"
+    ],
+    "gender": "female - Canonical character presentation used by library filters. - string (required)"
+  }
+
+  "assetBlobs": {
+    "imageId": "1785358068234.9626 - Same globally unique imageId used by the owning image record. - string (required)",
+    "blob": "<PNG Blob for Vessa Threadwell> - Actual image binary. - Blob (required)",
+    "mimeType": "image/png - Blob MIME type. - string (required)",
+    "byteLength": "428391 - Stored size. - number (required)",
+    "contentHash": "95c0e3b71f6a4283 - Identifies duplicate binary content and verifies the stored image. - string (required)"
+  }
+
+  "characterProfileImages": {
+    "imageId": "1785358068234.9626 - Stable profile-image identity. - string (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character whose references share this profile image. - string FK (required)",
+    "presentation": "non_male - Gender presentation for which the image was authored or generated. - male | non_male (required)",
+    "favorite": "false - Whether the player marked this image as a favorite. - boolean (required)",
+    "createdAt": "2026-07-23T14:17:48.234Z - Time this profile image record was created. - string",
+    "source": "generated - Exact image origin used to distinguish generated images from hosted or imported images. - string",
+    "model": "game-art-icon - Image model used to generate the image. - string",
+    "seed": "20260723 - Generation seed. - number|string|null",
+    "prompt": "Vessa Threadwell portrait. - Exact generation prompt. - string",
+    "negativePrompt": "text, watermark - Exact negative generation prompt. - string",
+    "url": "https://example.invalid/vessa-profile.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "characterProfileImageSelections": {
+    "characterId": "vessa-threadwell-c8142d90 - Character whose selected profile image is stored. - string FK (required)",
+    "presentation": "non_male - Gender presentation whose selection is stored. - male | non_male (required)",
+    "imageId": "1785358068234.9626 - Selected characterProfileImages image. - string FK/null (required)"
+  }
+
+  "characterImages": {
+    "imageId": "1785358068234.9731 - Stable normal-size character-image identity. - string (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character whose references share this solo-character image. - string FK (required)",
+    "presentation": "non_male - Finalized presentation for which this solo-character image is valid. - male | non_male (required)",
+    "favorite": "false - Whether the player marked this image as a favorite. - boolean (required)",
+    "model": "game-art - Image model used to generate the image. - string",
+    "seed": "20260724 - Generation seed. - number|string|null",
+    "prompt": "Vessa Threadwell reviewing an inspection itinerary. - Exact generation prompt. - string",
+    "negativePrompt": "text, watermark - Exact negative generation prompt. - string",
+    "url": "https://example.invalid/vessa-character.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "storyItemImages": {
+    "storyId": "the-inspector - Story whose item instances share this image. - string FK (required)",
+    "itemId": "federal-inspector-badge - Stable authored story-item identity. - string (required)",
+    "imageId": "story-item-federal-inspector-badge-1 - Stable item-image identity. - string (required)",
+    "model": "game-art-icon - Image model used to generate the image. - string",
+    "seed": "20260725 - Generation seed. - number|string|null",
+    "prompt": "A polished Federal Inspectorate badge. - Exact generation prompt. - string",
+    "negativePrompt": "text, watermark - Exact negative generation prompt. - string",
+    "url": "https://example.invalid/federal-inspector-badge.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "storyItemImageSelections": {
+    "storyId": "the-inspector - Story owning the authored item identity. - string FK (required)",
+    "itemId": "federal-inspector-badge - Stable authored item identity. - string (required)",
+    "imageId": "story-item-federal-inspector-badge-1 - Selected storyItemImages image. - string FK/null (required)"
+  }
+
+  "storyOutfitImages": {
+    "storyId": "the-inspector - Story whose outfit instances share this image. - string FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character definition owning the outfit id. - string FK (required)",
+    "outfitId": "federal-public - Stable authored story-outfit identity. - string (required)",
+    "imageId": "story-outfit-federal-public-1 - Stable outfit-image identity. - string (required)",
+    "model": "game-art-icon - Image model used to generate the image. - string",
+    "seed": "20260726 - Generation seed. - number|string|null",
+    "prompt": "A formal Federal Inspectorate uniform. - Exact generation prompt. - string",
+    "negativePrompt": "text, watermark - Exact negative generation prompt. - string",
+    "url": "https://example.invalid/federal-public-outfit.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "storyOutfitImageSelections": {
+    "storyId": "the-inspector - Story owning the authored outfit identity. - string FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character definition owning the outfit id. - string FK (required)",
+    "outfitId": "federal-public - Stable authored outfit identity. - string (required)",
+    "imageId": "story-outfit-federal-public-1 - Selected storyOutfitImages image. - string FK/null (required)"
+  }
+
+  "storyTitleImages": {
+    "storyId": "the-inspector - Story whose library entry uses this title image. - string FK (required)",
+    "storyTitle": "The Inspector - Story title retained so orphaned images can reconnect after deleting and reimporting the same story under a new local id. - string",
+    "imageId": "story-title-the-inspector-1 - Stable story-title-image identity. - string (required)",
+    "source": "generated - Exact image origin used to distinguish generated images from hosted or imported images. - string",
+    "model": "game-art - Image model used to generate the image. - string",
+    "seed": "20260727 - Generation seed. - number|string|null",
+    "prompt": "The Inspector story title image. - Exact generation prompt. - string",
+    "negativePrompt": "text, watermark - Exact negative generation prompt. - string",
+    "favorite": "false - Whether the player marked this image as a favorite. - boolean",
+    "upload_attestation_classification": "Example - string",
+    "upload_attested_by": "profile-or-account-id - User identity that made the title-card classification declaration. - string",
+    "upload_attested_at": "2026-08-31T12:00:00.000Z - Time the title-card classification was declared. - string",
+    "upload_attestation_policy_version": "1 - integer",
+    "url": "https://example.invalid/the-inspector-title.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "storyTitleImageSelections": {
+    "storyId": "the-inspector - Story whose local library title-image selection is stored. - string FK (required)",
+    "imageId": "story-title-the-inspector-1 - Selected storyTitleImages image. - string FK/null (required)"
+  }
+
+  "storyRewardImages": {
+    "storyId": "the-inspector - Story whose save instances share this authored reward image. - string FK (required)",
+    "rewardImageId": "appointment-accepted - Stable authored reward-image identity. - string (required)",
+    "imageId": "story-reward-appointment-accepted-1 - Stable stored image identity. - string (required)",
+    "title": "The Inspector's Appointment - Reward-image display title. - string",
+    "model": "game-art - Image model used to generate the image. - string",
+    "seed": "20260728 - Generation seed. - number|string|null",
+    "prompt": "Vessa presents the new Inspector with the official appointment. - Exact generation prompt. - string",
+    "negativePrompt": "text, watermark - Exact negative generation prompt. - string",
+    "url": "https://example.invalid/appointment-accepted.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "saveHeaders": {
+    "saveId": "27 - Stable numeric save identity. - number (required)",
+    "storyId": "the-inspector - Links to storyDefinitions.storyId. - string FK (required)",
+    "revisionId": "revision-2026-08-04 - Links to the immutable story revision used by this save. - string FK (required)",
+    "playerCharacterId": "silas-dorne-4a82f11c - Identifies exactly one saveCharacterDefinitions record as the player. - string FK (required)",
+    "displayName": "The Inspector - Player-editable Load Adventure name. - string (required)",
+    "storyGuidance": "Keep the inspection premise focused on local people and practical consequences. - Player-editable AI guidance for this save. - string",
+    "titleImageId": "1785358068234.9626 - Optional shared image used by generated saves in Load Adventure. - string FK",
+    "createdAt": "1785870000000 - Save creation time. - number (required)"
+  }
+
+  "saveCommitState": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "sesNum": "12 - Increments for each user-level open/play session. - number (required)",
+    "comId": "49 - Last atomically committed change in this session. - number (required)",
+    "isOpen": "true - Whether the current persistence session is open. - boolean (required)",
+    "time": "1785870123456 - Last successful commit time and Load Adventure ordering value. - number (required)"
+  }
+
+  "saveCharacterDefinitions": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Unique finalized runtime character identity; use a stable readable id with a deterministic hash suffix so same-name characters cannot collide. - string (required)",
+    "definitionType": "humanoid - Distinguishes normal humanoid character records from lean animal records. - humanoid | animal (required)",
+    "name": "Vessa Threadwell - Finalized in-game name. - string (required)",
+    "species": "Arachne - Finalized species for either a humanoid or animal definition. - string (required)",
+    "physicalDescription": " - Complete physical description for an animal definition; empty for humanoid definitions stored in characterAppearance. - string (required)",
+    "canDie": "false - Exact finalized character can_die value. - boolean (required)",
+    "age": "27 - Finalized character age. - number (required)",
+    "gender": "female - Finalized character gender. - string (required)",
+    "personalityDescription": "Intelligent, formal, observant, and professionally firm. - Durable personality_description. - string (required)",
+    "speechStyle": "Precise, formal, softly corrective, and increasingly candid as trust grows. - Current speech_style. - string (required)",
+    "boldness": "4 - Current numeric or descriptive character boldness. - number/string (required)"
+  }
+
+  "characterAppearance": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "species": "Arachne - Current appearance.species, including any meaningful subtype or qualifier. - string (required)",
+    "height": "10 - Current appearance.height, whole number from 0 through 20. - number/string (required)",
+    "bodyDescription": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+
+    "skinColor": "warm brown skin with copper abdominal markings - Current appearance.skin_color. - string (required)",
+    "eyeColor": "amber - Current appearance.eye_color. - string (required)",
+    "hairColor": "chestnut - Current appearance.hair_color. - string (required)",
+    "hairLength": "waist length - Current appearance.hair_length. - string (required)",
+    "hairType": "soft waves - Current appearance.hair_type. - string (required)",
+    "extraDescription": "Adult arachne with a curvy humanlike upper body, large dark-umber spider lower body, warm copper abdominal markings, long chestnut hair, amber eyes, several smaller eyes at her temples, fine sensory hairs, dexterous spinnerets, and graceful carefully controlled legs. - Current appearance.extra_description. - string",
+    "extraDescriptionLowerBody": "Arachne-specific nonhuman lower body and anatomy as described in the character design. - Current appearance.extra_description_lower_body. - string",
+    "maleOnlyExtraDescription": "short neatly trimmed beard - Current appearance.male_only_extra_description when the active presentation is male; optional text or null. - string/null",
+    "nonMaleOnlyExtraDescription": "clean-shaven face - Current appearance.non_male_only_extra_description when the active presentation is non-male; optional text or null. - string/null",
+    "nonhumanLowerBody": "true - Current appearance.nonhuman_lower_body. - boolean (required)"
+  }
+
+  "characterSettings": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "voice": "Google UK English Female - Current saved voice assignment. - string",
+    "imageSeedEnabled": "true - Whether normal images use this character's fixed seed. - boolean (required)",
+    "imageSeed": "20260723 - Fixed image seed retained even while fixed-seed use is disabled. - number (required)",
+    "profileModelOverride": " - Character-specific profile-image model override; empty uses the current default. - string"
+  }
+
+  "characterDurableState": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "role": "Federal inspection assistant - Current durable character role. - string (required)",
+    "relationshipToPlayer": "newly assigned coworker - Current descriptive relationship to the player. - string (required)",
+    "activeOutfitId": "federal-public - Current active outfit preset; equippedItems remains authoritative for what is actually equipped. - string/null"
+  }
+
+  "characterRelationshipStats": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character whose numerical relationship state is stored. - string FK (required)",
+    "trust": "5 - Current trust in the player from 0 through 10. - number (required)",
+    "attraction": "1 - Current attraction to the player from 0 through 10. - number (required)",
+    "affection": "1 - Current affection for the player from 0 through 10. - number (required)"
+  }
+
+  "characterStats": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "statId": "inspection - Story-defined stat key. - string (required)",
+    "value": "6.5 - Current stat value. Numeric precision is resolved from the immutable story definition. - number/string/boolean/null (required)"
+  }
+
+  "characterFacts": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "factId": "fact-17 - Storage identity for one current known_facts entry. - string (required)",
+    "sequence": "2 - Stable insertion sequence for prompt order; it is never renumbered after deletion. - number (required)",
+    "text": "Vessa is the player's assigned assistant. - Exact known fact text. - string (required)"
+  }
+
+  "characterSceneState": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "stateOfMind": "focused - Current state_of_mind. - string (required)",
+    "physicalState": "flushed - Current physical_state. - string (required)",
+    "pose": "touching herself - Current pose. - string (required)"
+  }
+
+  "partyMembers": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character currently recruited into the player's party. - string FK (required)"
+  }
+
+  "items": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "itemId": "vessa-federal-blouse-81c2 - Stable identity for this item. - string (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character who owns the item. - string FK (required)",
+    "name": "Federal Inspectorate Blouse - Player-facing inventory name. - string (required)",
+    "type": "clothing - Story-defined item category used by inventory, shops, and rewards. - string (required)",
+    "slot": "shirt - Compatible equipment slot; hand permits either hand and null means non-equippable. - clothing slot | hand | null (required)",
+    "quantity": "1 - Current stack quantity; non-stackable items always use 1. - number (required)",
+    "inventorySequence": "1 - Original or current inventory display order when the item came from an ordered inventory list. - number",
+    "value": "35 - Current per-item currency value. - number (required)",
+    "sellable": "true - Whether a shop may buy this item. - boolean (required)",
+    "questItem": "false - Whether normal sale or deletion is prohibited. - boolean (required)",
+    "description": "high-collared federal blouse - Inventory and image-prompt description. - string (required)",
+    "imageId": "story-item-vessa-federal-blouse-1 - Selected storyItemImages record when the item has an authored image. - string FK/null"
+  }
+
+  "characterOutfits": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "outfitId": "federal-public - Exact outfit.id. - string (required)",
+    "name": "Federal Inspectorate Uniform - Exact outfit.name. - string (required)",
+    "formality": "0 - Exact outfit.formality. - number (required)",
+    "revealing": "0 - Exact outfit.revealing. - number (required)",
+    "origin": " - Exact outfit.origin. - string (required)",
+    "memory": " - Exact outfit.memory. - string (required)",
+    "sourceShopId": " - Exact outfit.source_shop_id. - string (required)",
+    "sourceOutfitId": " - Exact outfit.source_outfit_id. - string (required)",
+    "imagePrompt": " - Exact outfit.image_prompt. - string (required)",
+    "imageId": " - Exact outfit.image_id. - string (required)",
+    "contexts": [
+      "work - One exact outfit.contexts value. - string"
+    ],
+    "hat": "null - Clothing item assigned to the outfit's hat slot. - string FK/null (required)",
+    "hairAccessory": "null - Clothing item assigned to the outfit's hair_accessory slot. - string FK/null (required)",
+    "face": "null - Clothing item assigned to the outfit's face slot. - string FK/null (required)",
+    "ears": "null - Clothing item assigned to the outfit's ears slot. - string FK/null (required)",
+    "neck": "null - Clothing item assigned to the outfit's neck slot. - string FK/null (required)",
+    "shoulders": "null - Clothing item assigned to the outfit's shoulders slot. - string FK/null (required)",
+    "bra": "vessa-supportive-underlayer-f482 - Clothing item assigned to the outfit's bra slot. - string FK/null (required)",
+    "undershirt": "vessa-soft-inner-layer-c173 - Clothing item assigned to the outfit's undershirt slot. - string FK/null (required)",
+    "shirt": "vessa-federal-blouse-81c2 - Clothing item assigned to the outfit's shirt slot. - string FK/null (required)",
+    "overShirt": "null - Clothing item assigned to the outfit's over_shirt slot. - string FK/null (required)",
+    "coat": "null - Clothing item assigned to the outfit's coat slot. - string FK/null (required)",
+    "back": "null - Clothing item assigned to the outfit's back slot. - string FK/null (required)",
+    "hands": "null - Clothing item assigned to the outfit's hands slot. - string FK/null (required)",
+    "rightWrist": "null - Clothing item assigned to the outfit's right_wrist slot. - string FK/null (required)",
+    "leftWrist": "null - Clothing item assigned to the outfit's left_wrist slot. - string FK/null (required)",
+    "rightFingers": "null - Clothing item assigned to the outfit's right_fingers slot. - string FK/null (required)",
+    "leftFingers": "null - Clothing item assigned to the outfit's left_fingers slot. - string FK/null (required)",
+    "waist": "null - Clothing item assigned to the outfit's waist slot. - string FK/null (required)",
+    "beltAccessory": "null - Clothing item assigned to the outfit's belt_accessory slot. - string FK/null (required)",
+    "underwear": "vessa-comfortable-underwear-a614 - Clothing item assigned to the outfit's underwear slot. - string FK/null (required)",
+    "pants": "vessa-species-safe-trousers-912e - Clothing item assigned to the outfit's pants slot. - string FK/null (required)",
+    "skirt": "null - Clothing item assigned to the outfit's skirt slot. - string FK/null (required)",
+    "legwear": "null - Clothing item assigned to the outfit's legwear slot. - string FK/null (required)",
+    "socks": "null - Clothing item assigned to the outfit's socks slot. - string FK/null (required)",
+    "feet": "vessa-polished-leg-guards-37ab - Item assigned to the outfit's feet slot. - string FK/null (required)",
+    "otherAccessory": "vessa-official-satchel-harness-45d9 - Item assigned to the outfit's other_accessory slot. - string FK/null (required)",
+    "leftHand": "null - Hand item assigned to the outfit's left hand. - string FK/null (required)",
+    "rightHand": "vessa-leather-itinerary-64b1 - Hand item assigned to the outfit's right hand. - string FK/null (required)"
+  }
+
+  "equippedItems": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Links to saveCharacterDefinitions. - string FK (required)",
+    "hat": "null - Clothing item currently equipped in the hat slot. - string FK/null (required)",
+    "hairAccessory": "null - Clothing item currently equipped in the hair_accessory slot. - string FK/null (required)",
+    "face": "null - Clothing item currently equipped in the face slot. - string FK/null (required)",
+    "ears": "null - Clothing item currently equipped in the ears slot. - string FK/null (required)",
+    "neck": "null - Clothing item currently equipped in the neck slot. - string FK/null (required)",
+    "shoulders": "null - Clothing item currently equipped in the shoulders slot. - string FK/null (required)",
+    "bra": "null - Clothing item currently equipped in the bra slot. - string FK/null (required)",
+    "undershirt": "null - Clothing item currently equipped in the undershirt slot. - string FK/null (required)",
+    "shirt": "vessa-federal-blouse-81c2 - Clothing item currently equipped in the shirt slot. - string FK/null (required)",
+    "overShirt": "null - Clothing item currently equipped in the over_shirt slot. - string FK/null (required)",
+    "coat": "null - Clothing item currently equipped in the coat slot. - string FK/null (required)",
+    "back": "null - Clothing item currently equipped in the back slot. - string FK/null (required)",
+    "hands": "null - Clothing item currently equipped in the hands slot. - string FK/null (required)",
+    "rightWrist": "null - Clothing item currently equipped in the right_wrist slot. - string FK/null (required)",
+    "leftWrist": "null - Clothing item currently equipped in the left_wrist slot. - string FK/null (required)",
+    "rightFingers": "null - Clothing item currently equipped in the right_fingers slot. - string FK/null (required)",
+    "leftFingers": "null - Clothing item currently equipped in the left_fingers slot. - string FK/null (required)",
+    "waist": "null - Clothing item currently equipped in the waist slot. - string FK/null (required)",
+    "beltAccessory": "null - Clothing item currently equipped in the belt_accessory slot. - string FK/null (required)",
+    "underwear": "vessa-comfortable-underwear-a614 - Clothing item currently equipped in the underwear slot. - string FK/null (required)",
+    "pants": "vessa-species-safe-trousers-912e - Clothing item currently equipped in the pants slot. - string FK/null (required)",
+    "skirt": "null - Clothing item currently equipped in the skirt slot. - string FK/null (required)",
+    "legwear": "null - Clothing item currently equipped in the legwear slot. - string FK/null (required)",
+    "socks": "null - Clothing item currently equipped in the socks slot. - string FK/null (required)",
+    "feet": "vessa-polished-leg-guards-37ab - Item currently equipped in the feet slot. - string FK/null (required)",
+    "otherAccessory": "vessa-official-satchel-harness-45d9 - Item currently equipped in the other_accessory slot. - string FK/null (required)",
+    "leftHand": "null - Hand item currently equipped in the left hand. - string FK/null (required)",
+    "rightHand": "vessa-leather-itinerary-64b1 - Hand item currently equipped in the right hand. - string FK/null (required)"
+  }
+
+  "temporaryRemovedItems": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character whose temporarily removed items are stored. - string FK (required)",
+    "hat": "null - Temporarily removed item from the hat slot. - string FK/null (required)",
+    "hairAccessory": "null - Temporarily removed item from the hair_accessory slot. - string FK/null (required)",
+    "face": "null - Temporarily removed item from the face slot. - string FK/null (required)",
+    "ears": "null - Temporarily removed item from the ears slot. - string FK/null (required)",
+    "neck": "null - Temporarily removed item from the neck slot. - string FK/null (required)",
+    "shoulders": "null - Temporarily removed item from the shoulders slot. - string FK/null (required)",
+    "bra": "vessa-supportive-underlayer-f482 - Temporarily removed item from the bra slot. - string FK/null (required)",
+    "undershirt": "null - Temporarily removed item from the undershirt slot. - string FK/null (required)",
+    "shirt": "null - Temporarily removed item from the shirt slot. - string FK/null (required)",
+    "overShirt": "null - Temporarily removed item from the over_shirt slot. - string FK/null (required)",
+    "coat": "null - Temporarily removed item from the coat slot. - string FK/null (required)",
+    "back": "null - Temporarily removed item from the back slot. - string FK/null (required)",
+    "hands": "null - Temporarily removed item from the hands slot. - string FK/null (required)",
+    "rightWrist": "null - Temporarily removed item from the right_wrist slot. - string FK/null (required)",
+    "leftWrist": "null - Temporarily removed item from the left_wrist slot. - string FK/null (required)",
+    "rightFingers": "null - Temporarily removed item from the right_fingers slot. - string FK/null (required)",
+    "leftFingers": "null - Temporarily removed item from the left_fingers slot. - string FK/null (required)",
+    "waist": "null - Temporarily removed item from the waist slot. - string FK/null (required)",
+    "beltAccessory": "null - Temporarily removed item from the belt_accessory slot. - string FK/null (required)",
+    "underwear": "null - Temporarily removed item from the underwear slot. - string FK/null (required)",
+    "pants": "null - Temporarily removed item from the pants slot. - string FK/null (required)",
+    "skirt": "null - Temporarily removed item from the skirt slot. - string FK/null (required)",
+    "legwear": "null - Temporarily removed item from the legwear slot. - string FK/null (required)",
+    "socks": "null - Temporarily removed item from the socks slot. - string FK/null (required)",
+    "feet": "null - Temporarily removed item from the feet slot. - string FK/null (required)",
+    "otherAccessory": "null - Temporarily removed item from the other_accessory slot. - string FK/null (required)",
+    "leftHand": "null - Temporarily removed hand item from the left hand. - string FK/null (required)",
+    "rightHand": "null - Temporarily removed hand item from the right hand. - string FK/null (required)"
+  }
+
+  "sceneRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "summary": "Silas cuddles with Vessa in the Ivory Suite. - Exact scene.summary. - string (required)",
+    "imageAction": "cuddling and drifting off to sleep - Exact scene.image_action. - string (required)"
+  }
+
+  "sceneMembers": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Character currently present in the scene; party or NPC status is resolved from its authoritative membership records. - string FK (required)"
+  }
+
+  "sceneImageTargets": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Resolved identity from scene.image_characters. - string FK (required)"
+  }
+
+  "worldValues": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "fieldId": "magic_level - Exact top-level key from state.world. - string (required)",
+    "value": "high - Exact state.world field value. - bounded value (required)"
+  }
+
+  "currentLocation": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "locationId": "loc-inn-hearthcross-the-hearth-pack - Player's current location. - string FK (required)"
+  }
+
+  "runtimeLocationDefinitions": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "locationId": "loc-private-receiving-room - Exact generated location.id. - string (required)",
+    "name": "Private Receiving Room - Exact generated location.name. - string (required)",
+    "type": "place - Exact generated location.type. - string (required)",
+    "scale": "site - Exact generated location.scale. - string (required)",
+    "parentId": "loc-divine-receiving-room - Parent authored or runtime location; null is required for a root location. - string FK/null (required)",
+    "x": "58 - Exact generated location.x. - number (required)",
+    "y": "78 - Exact generated location.y. - number (required)",
+    "summary": "A private divine office. - Exact generated location.summary. - string (required)"
+  }
+
+  "locationRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "locationId": "loc-hearthcross - Links to an authored or runtime location definition. - string FK (required)",
+    "discovered": "true - Current discovery override. - boolean",
+    "travelEnabled": "true - Current travel-enabled override. - boolean"
+  }
+
+  "locationConnections": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "fromLocationId": "loc-hearthcross - Source location. - string FK (required)",
+    "toLocationId": "loc-federal-office - Authored connection being overridden. - string FK (required)",
+    "present": "false - Whether the connection exists in current runtime; false records an authored connection removal. - boolean (required)"
+  }
+
+  "gameTime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "year": "1 - Exact state.time.year. - number (required)",
+    "month": "1 - Exact state.time.month. - number (required)",
+    "day": "1 - Exact state.time.day. - number (required)",
+    "hour": "12 - Exact state.time.hour. - number (required)",
+    "minute": "0 - Exact state.time.minute. - number (required)",
+    "elapsedMinutes": "720 - Exact state.time.elapsed_minutes; canonical minutes elapsed since this game began. - number (required)"
+  }
+
+  "timedEventRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "timedEventId": "first-frost - Links to the immutable timed-event definition. - string FK (required)",
+    "status": "waiting - Exact current timed event status. - waiting | active | ready | complete | cancelled | declined | missed (required)",
+    "startElapsedMinutes": "720 - Exact current start_elapsed_minutes. - number/null (required)"
+  }
+
+  "timedEventAppliedStages": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "timedEventId": "first-frost - Links to timedEventRuntime. - string FK (required)",
+    "stageId": "warning-1 - Exact current applied_stage_ids entry. - string (required)"
+  }
+
+  "storyValues": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "root": "story_inventory - Exact flexible-state root such as story_inventory, world_flags, or progression. - string (required)",
+    "pathKey": "hearth_pack_first_lead - Exact canonical path beneath the root. - string (required)",
+    "value": "worker - Exact scalar current value. Numeric precision is resolved from the immutable story definition. - number/string/boolean/null (required)"
+  }
+
+  "storyListItems": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "root": "story_inventory - Exact flexible-state root. - string (required)",
+    "listPathKey": "gella_traits_absorbed - Exact canonical list path beneath the root. - string (required)",
+    "itemKey": "fnv1a-stone-skin - Deterministic key from the canonical value; idempotent story lists do not preserve duplicate values. - string (required)",
+    "sequence": "2 - Stable insertion sequence used only when this list path is explicitly declared ordered; it is never renumbered. - number/null",
+    "value": "stone skin - Exact list item value. - bounded value (required)"
+  }
+
+  "storyMapEntries": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "root": "world_flags - Exact flexible-state root. - string (required)",
+    "mapPathKey": "city_inspections - Exact canonical map path beneath the root. - string (required)",
+    "entryKey": "hearthcross - Exact current map key. - string (required)",
+    "value": "complete - Exact current map value. - bounded value (required)"
+  }
+
+  "storyMemoryNotes": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "category": "world_notes - Exact story_memory category key. - world_notes | unresolved_threads | relationship_notes | rules_and_constraints | ai_private_notes (required)",
+    "noteId": "memory-note-3 - Storage identity for one exact note entry. - string (required)",
+    "sequence": "1 - Stable insertion sequence used for display and prompt order; it is never renumbered. - number (required)",
+    "text": "The circuit includes twenty-two cities. - Exact note text. - string (required)"
+  }
+
+  "recentChanges": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "changeRecordId": "recent-change-8 - Storage identity for one current recent_changes entry. - string (required)",
+    "sequence": "1 - Stable insertion sequence used for recency order; it is never renumbered. - number (required)",
+    "text": "Silas completed the Hearth Pack inspection. - Exact recent change text. - string (required)"
+  }
+
+  "storyRuleAdds": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "ruleId": "player-is-inspector - Stable added rule id. - string (required)",
+    "text": "The player holds a legitimate federal inspector appointment. - Exact added rule text. - string (required)"
+  }
+
+  "storyRuleRemovals": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "ruleId": "respect-local-laws - Stable id of the immutable authored rule suppressed for this save. - string FK (required)"
+  }
+
+  "objectiveControl": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "activeMainObjectiveId": "inspect-hearthcross-the-velvet-paw - Active main objective; null during an ending, game over, freeplay with no main objective, or an unresolved route transition. - string FK/null (required)",
+    "focusedSideObjectiveId": "worker-fenna-dawnwhisper-aftermath - Focused side objective; null when none is focused. - string FK/null (required)"
+  }
+
+  "pendingObjectiveRouteChoices": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "choiceId": "objective-route-choice-8 - Stable pending route-choice identity. - string (required)",
+    "reason": "multiple_main_dependents - Why deterministic routing could not select one objective. - string (required)",
+    "completedObjectiveId": "route-start - Objective whose completion created this pending route choice. - string FK (required)"
+  }
+
+  "pendingObjectiveRouteOptions": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "choiceId": "objective-route-choice-8 - Links to pendingObjectiveRouteChoices. - string FK (required)",
+    "objectiveId": "inspect-hearthcross-the-velvet-paw - One eligible destination objective. - string FK (required)"
+  }
+
+  "objectiveRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "objectiveId": "inspect-hearthcross-the-velvet-paw - Links to an immutable authored or generated-job objective. - string FK (required)",
+    "status": "active - Sparse override used only when derived graph state is insufficient. - active | hidden | locked | future | queued | complete",
+    "selectedOutputId": "Example - string FK/null",
+    "selectedOutputMessageId": "104 - Message whose resolution selected the output. - string FK/null",
+    "activationAiCheckAttempted": "true - Exact sparse activationAiCheckAttemptedById value. - boolean",
+    "activationNumber": "2 - Exact sparse activationNumberById value. - number"
+  }
+
+  "objectiveProgressNotes": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "objectiveId": "inspect-hearthcross-the-velvet-paw - Links to objectiveRuntime or its immutable definition. - string FK (required)",
+    "noteId": "objective-note-2 - Storage identity for one exact progress_notes entry. - string (required)",
+    "sequence": "1 - Stable insertion sequence used for progress-note order; it is never renumbered. - number (required)",
+    "text": "Maelin invited Silas into the main lounge. - Exact progress note text. - string (required)"
+  }
+
+  "objectiveExclusiveGroupChoices": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "groupId": "hearth-pack-first-lead - Exact exclusive_group_choices key. - string (required)",
+    "selectedObjectiveId": "choose-hearth-pack-first-lead - Exact selected objective id. - string FK (required)"
+  }
+
+  "pendingRewardChoices": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "choiceId": "reward-choice-4 - Exact pending reward choice id. - string (required)",
+    "objectiveId": "choose-one-gift - Exact objective_id. - string FK (required)",
+    "kind": "item - Exact reward choice kind. - string (required)",
+    "reward": "{ type: grant_item, item: crystal compass } - Exact bounded reward invocation awaiting a target. - structured value (required)"
+  }
+
+  "pendingRewardChoiceOptions": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "choiceId": "reward-choice-4 - Links to pendingRewardChoices. - string FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Eligible player or party character target. - string FK (required)"
+  }
+
+  "rewardInvocations": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "invocationId": "objective-meet-vessa--reward-0 - Exact idempotency key. - string (required)",
+    "appliedAt": "2026-08-04T12:00:00.000Z - Exact appliedAt value. - string (required)",
+    "sourceType": "objective - Exact sourceType value. - string (required)",
+    "sourceId": "meet-vessa - Exact sourceId value. - string (required)"
+  }
+
+  "futureCharacters": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "characterId": "fenna-dawnwhisper-f3917a42 - Links to the immutable future-cast and character definitions. - string FK (required)",
+    "status": "introduced - Sparse runtime future-cast status override. - string",
+    "unlockedBy": "inspect-hearthcross-the-velvet-paw - Objective or source that unlocked the character. - string",
+    "lastTriggeredReason": "objective reward - Most recent runtime trigger reason. - string",
+    "locationId": "loc-inn-hearthcross-the-velvet-paw - Sparse runtime location override when different from the immutable definition. - string FK/null"
+  }
+
+  "npcShells": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "locationId": "loc-inn-hearthcross-the-velvet-paw - NPC's current authored or runtime location. - string FK (required)",
+    "characterId": "fenna-dawnwhisper-f3917a42 - Stable character identity; links to a finalized definition when one exists. - string FK (required)",
+    "name": "Fenna Dawnwhisper - Lightweight shell name retained only while no finalized character definition exists. - string",
+    "playerKnownName": "true - Exact player_known_name. - boolean",
+    "playerFacingLabel": "Fenna - Exact player_facing_label. - string",
+    "gender": "female - Lightweight shell gender retained only while no finalized character definition exists. - string",
+    "age": "24 - Lightweight shell age retained only while no finalized character definition exists. - number",
+    "role": "licensed worker - Lightweight shell role retained only while no finalized character definition exists. - string",
+    "relationshipToPlayer": "new acquaintance - Lightweight relationship retained only while no characterDurableState record exists. - string",
+    "note": "Responds strongly to patient treatment. - Lightweight shell note retained only while no finalized character definition exists. - string",
+    "personalityDescription": "Warm, guarded, and observant. - Lightweight shell personality retained only while no finalized character definition exists. - string",
+    "greeting": "Welcome to The Velvet Paw. - Lightweight shell greeting retained only while no finalized character definition exists. - string",
+    "currentAppearance": "wearing a work apron and watching the entrance - Temporary visible shell condition before inspection. - string",
+    "canDie": "false - Safety authority until a finalized saveCharacterDefinitions record exists; finalized character data takes precedence. - boolean (required)",
+    "recruitable": "false - Whether this NPC may be promoted to the party. - boolean (required)",
+    "everInvited": "false - Whether the player has ever invited this NPC to the party. - boolean (required)",
+    "futureCharacterId": "fenna-dawnwhisper - Links this shell to immutable future-cast data when applicable. - string FK/null",
+    "status": "alive - Current NPC life status. - alive | dead (required)",
+    "deathNote": " - Required nonempty explanation when status is dead. - string",
+    "killedBy": " - Resolved killer name or identity when known. - string",
+    "killedByPlayer": "false - Whether the player directly caused this death. - boolean (required)",
+    "inspected": "false - Whether this shell has been inspected and finalized into complete save character records. - boolean (required)"
+  }
+
+  "generatedNpcPoolEntries": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "poolEntryId": "hearthcross-worker-1 - Exact story_generated_npc_pool key. - string (required)",
+    "characterId": "generated-npc-fenna-helper-31ad92f0 - Links to the generated character definition and NPC shell. - string FK (required)"
+  }
+
+  "temporarySpeakers": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "temporarySpeakerId": "temporary-speaker-director-vellis-104 - Stable save-local speaker identity. - string (required)",
+    "name": "Director Vellis - Exact displayed temporary-speaker name. - string (required)",
+    "gender": "female - Exact temporary-speaker gender. - male | female | neutral (required)",
+    "voice": "Google UK English Female - Exact persisted voice assignment. - string (required)",
+    "firstSeenMessageId": "104 - Exact first_seen_message_id. - string/number/null (required)"
+  }
+
+  "messages": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "messageId": "104 - Exact message id. - string (required)",
+    "sequence": "104 - Exact entryId ordering value. - number (required)",
+    "role": "assistant - Exact message.role. - string (required)",
+    "speaker": "Vessa Threadwell - Exact message.speaker. - string (required)",
+    "text": "Vessa opens the itinerary and begins her report. - Final persisted message text; streaming text remains in memory until the message finishes. - string (required)",
+    "detail": "normal - Exact message.detail. - string (required)",
+    "at": "2026-08-04T12:00:00.000Z - Exact message.at. - string (required)",
+    "stateSyncStatus": "complete - Exact message.stateSyncStatus. - string",
+    "autoTurn": "false - Exact message.autoTurn. - boolean",
+    "autoRead": "true - Exact message.autoRead. - boolean",
+    "replySource": "player-message - Exact message.replySource. - string",
+    "generationStopped": "false - Whether the player stopped this assistant response and kept its partial text. - boolean",
+    "objectiveComplete": "true - Exact message.objectiveComplete. - boolean",
+    "choiceObjectiveId": "accept-inspector-appointment - Exact message.choiceObjectiveId. - string FK",
+    "choiceSnapshotId": "12 - Exact message.choiceSnapshotId. - string FK",
+    "stateBackupId": "11 - Exact message.stateBackupId. - string FK"
+  }
+
+  "messageRelations": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "messageId": "104 - Links to messages. - string FK (required)",
+    "relatedMessageId": "103 - Exact relatedMessageIds value. - string FK (required)"
+  }
+
+  "messageVoiceData": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "messageId": "104 - Links to messages. - string FK (required)",
+    "voiceMeta": "{ narrator: Narrator, speakers: [Vessa Threadwell] } - Exact bounded message.voiceMeta value. - structured value",
+    "voiceText": "Vessa opens the itinerary and begins her report. - Exact tagged or normalized playback text when it differs from visible message text. Speaker lists are derived from voiceMeta and voiceText. - string"
+  }
+
+  "storyImages": {
+    "saveId": "27 - Save whose playthrough created and owns this image. - number FK (required)",
+    "imageId": "1785358068234.9626 - Exact image id. - string (required)",
+    "at": "2026-08-04T12:00:00.000Z - Exact image.at. - string (required)",
+    "favorite": "false - Exact image.favorite. - boolean (required)",
+    "title": "Hearthcross Inspection - Exact story-image title. - string",
+    "reason": "Opening inspection scene - Exact story-image generation reason. - string",
+    "model": "game-art - Exact image.model. - string (required)",
+    "seed": "20260723 - Exact image.seed. - number/string/null",
+    "prompt": "Silas and Vessa begin the Hearthcross inspection circuit. - Exact image.prompt. - string (required)",
+    "negativePrompt": "text, watermark - Exact image.negativePrompt. - string (required)",
+    "requestOrder": "14 - Exact image.requestOrder. - number",
+    "requestedAfterMessageId": "103 - Exact image.requestedAfterMessageId. - string FK",
+    "status": "ready - Durable request state. Loaded queued or generating requests restart as queued; failures are not persisted. - queued | generating | ready (required)",
+    "hideFromChat": "false - Exact image.hideFromChat. - boolean",
+    "promptType": "story - Exact story-image prompt type. - string",
+    "url": "https://example.invalid/inspection-scene.png - Hosted image URL when present; otherwise a same-imageId record exists in assetBlobs. - string"
+  }
+
+  "storyImageTargets": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "imageId": "42 - Links to storyImages. - string FK (required)",
+    "characterId": "vessa-threadwell-c8142d90 - Resolved target character identity. - string FK (required)"
+  }
+
+  "snapshots": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "snapshotId": "12 - Exact snapshot id. - string (required)",
+    "createdAt": "2026-08-04T11:59:58.000Z - Exact snapshot.createdAt/at. - string (required)",
+    "completedAt": "2026-08-04T12:00:03.000Z - Time the complete turn finished committing; absent means startup must roll the snapshot back. - string",
+    "reason": "Before accepting the inspector appointment - Exact snapshot.reason. - string (required)",
+    "type": "choice - Exact snapshot.type when present. - string",
+    "messageBoundaryId": "104 - Exact snapshot.messageBoundaryId. - string FK (required)",
+    "startMessageId": "101 - Exact snapshot.startMessageId when present. - string FK",
+    "objectiveId": "travel-hearthcross - Exact snapshot.objectiveId when present. - string FK",
+    "parentObjectiveId": "accept-inspector-appointment - Exact snapshot.parentObjectiveId when present. - string FK"
+  }
+
+  "snapshotRelatedMessages": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "snapshotId": "12 - Links to snapshots. - string FK (required)",
+    "messageId": "104 - Message associated with this backup or rollback operation. - string FK (required)"
+  }
+
+  "snapshotReverseOperations": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "snapshotId": "12 - Links to snapshots. - string FK (required)",
+    "operationIndex": "1 - Stable reverse-operation execution order within the snapshot. - number (required)",
+    "targetStore": "messages - Exact whitelisted mutable object-store name. - string (required)",
+    "targetKey": "[27, 104] - Complete IndexedDB key for the target record, including saveId. - structured key (required)",
+    "operation": "put - Reverse operation to apply. - put | delete (required)",
+    "previousRecord": "{ saveId: 27, messageId: 104, text: previous text } - Complete prior normalized record for put; null for delete. Blobs and immutable definitions are never stored here. - bounded record/null"
+  }
+
+  "shopRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "shopId": "shop-silkrest-gilded-web - Links to an immutable story shop definition. - string FK (required)",
+    "unlocked": "true - Exact current shop.unlocked override. - boolean (required)"
+  }
+
+  "shopItemRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "shopId": "shop-silkrest-gilded-web - Links to an immutable story shop definition. - string FK (required)",
+    "itemId": "vessa-private-silk - Exact immutable shop item id or character_id. - string FK (required)",
+    "quantity": "1 - Exact current quantity when applicable. - number/null",
+    "purchaseCount": "1 - Exact current purchase_count when applicable. - number",
+    "removed": "false - Exact current removed when applicable. - boolean",
+    "locked": "false - Exact current locked. - boolean",
+    "accepted": "false - Exact current accepted for story jobs. - boolean",
+    "completed": "false - Exact current completed for story jobs. - boolean"
+  }
+
+  "runtimeJobDefinitions": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "jobId": "job-inspect-hearthcross - Exact generated job id. - string (required)",
+    "definition": "{ id: job-inspect-hearthcross, title: Inspect Hearthcross, objectives: [...] } - Exact validated generated job fields excluding runtime status/progress/current/completed/accepted fields. - structured immutable value (required)",
+    "compiledIndexes": "{ objectiveIndexById, incoming/outgoing links, requirementDependentsByKey } - Derived immutable indexes built once with the generated job. - structured immutable value (required)"
+  }
+
+  "generatedJobRuntime": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "jobId": "job-inspect-hearthcross - Links to runtimeJobDefinitions. - string FK (required)",
+    "status": "active - Exact current job.status. - string (required)",
+    "currentStepId": "interview-proprietor - Current generated-job step; null when the job is complete, failed, or has no active step. - string/null (required)"
+  }
+
+  "generatedJobProgressValues": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "jobId": "job-inspect-hearthcross - Links to generatedJobRuntime. - string FK (required)",
+    "pathKey": "inspections_complete - Canonical progress path beneath this generated job. - string (required)",
+    "value": "1 - Exact scalar progress value. - number/string/boolean/null (required)"
+  }
+
+  "generatedJobCompletedSteps": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "jobId": "job-inspect-hearthcross - Links to generatedJobRuntime. - string FK (required)",
+    "stepId": "interview-proprietor - Exact completed_step_ids/completedStepIds value. - string (required)"
+  }
+
+  "storyJobOffers": {
+    "saveId": "27 - Links to saveHeaders. - number FK (required)",
+    "boardId": "job-board-hearthcross - Exact story_job_offers board key. - string FK (required)",
+    "offerId": "offer-hearthcross-inspection - Exact offer_id. - string (required)",
+    "templateId": "inspection-template - Exact template_id. - string FK (required)",
+    "title": "Inspect a Hearthcross Establishment - Exact title. - string (required)",
+    "rank": "1 - Exact rank. - number (required)",
+    "romanceable": "false - Exact romanceable. - boolean (required)",
+    "genres": [
+      "inspection - Exact offer genre. - string"
+    ],
+    "summary": "Inspect one licensed establishment. - Exact summary. - string (required)",
+    "rewardCoins": "50 - Exact reward_coins. - number (required)",
+    "rewardXp": "10 - Exact reward_xp. - number (required)",
+    "filledValues": "{ establishment: The Velvet Paw } - Exact filled_values object. - structured value (required)",
+    "accepted": "false - Exact accepted. - boolean (required)"
+  }
+
+  "indexedDbStoreContracts": {
+    "storyDefinitions": "keyPath [storyId, revisionId]; indexes byTitle(title), byCreatorId(creator_id), byGenre(genres multiEntry)",
+    "compiledStoryIndexes": "keyPath [storyId, revisionId]",
+    "storyLibraryEntries": "keyPath storyId; indexes byRevision([storyId, revisionId]), byTitle(title), byCreatorId(creatorId), byGenre(genres multiEntry)",
+    "authoredCharacterDefinitions": "keyPath [characterId, revisionId]; indexes byName(name), byCreatorId(creator_id), byGenre(genres multiEntry)",
+    "characterLibraryEntries": "keyPath characterId; indexes byRevision([characterId, revisionId]), byName(name), byCreatorId(creatorId), byGenre(genres multiEntry)",
+    "assetBlobs": "keyPath imageId; index byContentHash(contentHash)",
+    "characterProfileImages": "keyPath imageId; indexes byCharacter(characterId), byCharacterPresentation([characterId, presentation]), byFavorite(favorite)",
+    "characterProfileImageSelections": "keyPath [characterId, presentation]",
+    "characterImages": "keyPath imageId; indexes byCharacter(characterId), byCharacterPresentation([characterId, presentation]), byFavorite(favorite)",
+    "storyItemImages": "keyPath imageId; indexes byStory(storyId), byStoryItem([storyId, itemId])",
+    "storyItemImageSelections": "keyPath [storyId, itemId]",
+    "storyOutfitImages": "keyPath imageId; indexes byStory(storyId), byStoryOutfit([storyId, characterId, outfitId])",
+    "storyOutfitImageSelections": "keyPath [storyId, characterId, outfitId]",
+    "storyTitleImages": "keyPath imageId; index byStory(storyId)",
+    "storyTitleImageSelections": "keyPath storyId",
+    "storyRewardImages": "keyPath imageId; indexes byStory(storyId), byStoryReward([storyId, rewardImageId])",
+    "saveHeaders": "keyPath saveId with autoIncrement true; indexes byStoryRevision([storyId, revisionId]), byCreatedAt(createdAt)",
+    "saveCommitState": "keyPath saveId; index byTime(time)",
+    "saveCharacterDefinitions": "keyPath [saveId, characterId]",
+    "characterAppearance": "keyPath [saveId, characterId]",
+    "characterSettings": "keyPath [saveId, characterId]",
+    "characterDurableState": "keyPath [saveId, characterId]",
+    "characterRelationshipStats": "keyPath [saveId, characterId]",
+    "characterStats": "keyPath [saveId, characterId, statId]",
+    "characterFacts": "keyPath [saveId, characterId, factId]; index byCharacterSequence([saveId, characterId, sequence])",
+    "characterSceneState": "keyPath [saveId, characterId]",
+    "partyMembers": "keyPath [saveId, characterId]",
+    "items": "keyPath [saveId, itemId]; indexes byCharacter([saveId, characterId]), byCharacterSlot([saveId, characterId, slot])",
+    "characterOutfits": "keyPath [saveId, characterId, outfitId]",
+    "equippedItems": "keyPath [saveId, characterId]",
+    "temporaryRemovedItems": "keyPath [saveId, characterId]",
+    "sceneRuntime": "keyPath saveId",
+    "sceneMembers": "keyPath [saveId, characterId]",
+    "sceneImageTargets": "keyPath [saveId, characterId]",
+    "worldValues": "keyPath [saveId, fieldId]",
+    "currentLocation": "keyPath saveId",
+    "runtimeLocationDefinitions": "keyPath [saveId, locationId]",
+    "locationRuntime": "keyPath [saveId, locationId]",
+    "locationConnections": "keyPath [saveId, fromLocationId, toLocationId]; index byDestination([saveId, toLocationId])",
+    "gameTime": "keyPath saveId",
+    "timedEventRuntime": "keyPath [saveId, timedEventId]",
+    "timedEventAppliedStages": "keyPath [saveId, timedEventId, stageId]",
+    "storyValues": "keyPath [saveId, root, pathKey]",
+    "storyListItems": "keyPath [saveId, root, listPathKey, itemKey]; index byListSequence([saveId, root, listPathKey, sequence])",
+    "storyMapEntries": "keyPath [saveId, root, mapPathKey, entryKey]",
+    "storyMemoryNotes": "keyPath [saveId, category, noteId]; index byCategorySequence([saveId, category, sequence])",
+    "recentChanges": "keyPath [saveId, changeRecordId]; index bySequence([saveId, sequence])",
+    "storyRuleAdds": "keyPath [saveId, ruleId]",
+    "storyRuleRemovals": "keyPath [saveId, ruleId]",
+    "objectiveControl": "keyPath saveId",
+    "pendingObjectiveRouteChoices": "keyPath [saveId, choiceId]",
+    "pendingObjectiveRouteOptions": "keyPath [saveId, choiceId, objectiveId]",
+    "objectiveRuntime": "keyPath [saveId, objectiveId]; index byStatus([saveId, status])",
+    "objectiveProgressNotes": "keyPath [saveId, objectiveId, noteId]; index byObjectiveSequence([saveId, objectiveId, sequence])",
+    "objectiveExclusiveGroupChoices": "keyPath [saveId, groupId]",
+    "pendingRewardChoices": "keyPath [saveId, choiceId]",
+    "pendingRewardChoiceOptions": "keyPath [saveId, choiceId, characterId]",
+    "rewardInvocations": "keyPath [saveId, invocationId]",
+    "futureCharacters": "keyPath [saveId, characterId]; index byStatus([saveId, status])",
+    "npcShells": "keyPath [saveId, characterId]; indexes byLocation([saveId, locationId]), byStatus([saveId, status])",
+    "generatedNpcPoolEntries": "keyPath [saveId, poolEntryId]; index byCharacter([saveId, characterId])",
+    "temporarySpeakers": "keyPath [saveId, temporarySpeakerId]; index byFirstSeenMessage([saveId, firstSeenMessageId])",
+    "messages": "keyPath [saveId, messageId]; unique index bySequence([saveId, sequence])",
+    "messageRelations": "keyPath [saveId, messageId, relatedMessageId]; index byRelatedMessage([saveId, relatedMessageId])",
+    "messageVoiceData": "keyPath [saveId, messageId]",
+    "storyImages": "keyPath [saveId, imageId]; indexes byRequestOrder([saveId, requestOrder]), byStatus([saveId, status]), byRequestedAfterMessage([saveId, requestedAfterMessageId])",
+    "storyImageTargets": "keyPath [saveId, imageId, characterId]; index byCharacter([saveId, characterId])",
+    "snapshots": "keyPath [saveId, snapshotId]; indexes byCreatedAt([saveId, createdAt]), byMessageBoundary([saveId, messageBoundaryId])",
+    "snapshotRelatedMessages": "keyPath [saveId, snapshotId, messageId]; index byMessage([saveId, messageId])",
+    "snapshotReverseOperations": "keyPath [saveId, snapshotId, operationIndex]",
+    "shopRuntime": "keyPath [saveId, shopId]",
+    "shopItemRuntime": "keyPath [saveId, shopId, itemId]",
+    "runtimeJobDefinitions": "keyPath [saveId, jobId]",
+    "generatedJobRuntime": "keyPath [saveId, jobId]; index byStatus([saveId, status])",
+    "generatedJobProgressValues": "keyPath [saveId, jobId, pathKey]",
+    "generatedJobCompletedSteps": "keyPath [saveId, jobId, stepId]",
+    "storyJobOffers": "keyPath [saveId, boardId, offerId]; indexes byBoard([saveId, boardId]), byAccepted([saveId, accepted])"
+  }

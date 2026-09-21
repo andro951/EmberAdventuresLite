@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "styles": [
+    "styles/app.css"
+  ],
+  "testStyles": [
+    "styles/private-tests.css"
+  ],
+  "shell": "shell/page.html",
+  "dependencyScripts": [
+    "vendor/brotli-compress-2.2.2.js",
+    "scripts/dependencies.js"
+  ],
+  "workerScripts": [
+    "persistence/schema-contract.js",
+    "persistence/domain-operation-contract.js",
+    "persistence/persistence-worker.js"
+  ],
+  "testWorkerScripts": [
+    "persistence/diagnostic-schema-contract.js",
+    "persistence/domain-operation-contract.js",
+    "persistence/persistence-worker.js"
+  ],
+  "libraryWorkerScripts": [
+    "contracts/public-library-contract.js",
+    "workers/library-worker.js"
+  ],
+  "turnWorkerScripts": [
+    "workers/turn-worker.js"
+  ],
+  "scriptBridge": "shell/between-scripts.html",
+  "applicationScripts": [
+    "contracts/public-library-contract.js",
+    "persistence/domain-operation-contract.js",
+    "scripts/integration/00-runtime-bridge.js",
+    "scripts/integration/01-persistence-controller.js",
+    "scripts/integration/02-library-controller.js",
+    "scripts/integration/03-turn-controller.js",
+    "scripts/app/00-bootstrap-storage.js",
+    "scripts/app/01-diagnostics-runtime.js",
+    "scripts/app/02-settings-voices.js",
+    "scripts/app/03-messages-saves.js",
+    "scripts/app/03a-save-record-projector.js",
+    "scripts/app/04-story-runtime.js",
+    "scripts/app/04a-any-player-story-schema-compat.js",
+    "scripts/app/05-menus-profiles.js",
+    "scripts/app/06-render-images.js",
+    "scripts/app/07-profile-images.js",
+    "scripts/app/08-chat-characters.js",
+    "scripts/app/09-shops-objectives.js",
+    "scripts/app/10-state-ai-queue.js",
+    "scripts/app/11-objective-checks.js",
+    "scripts/app/12-rewards-state.js",
+    "scripts/app/13-state-patches.js",
+    "scripts/app/14-ai-plugins.js",
+    "scripts/app/15-import-validation.js",
+    "scripts/app/16-library-ui.js",
+    "scripts/app/17-smokes-core.js",
+    "scripts/app/18-smokes-library.js",
+    "scripts/app/19-smokes-objectives.js",
+    "scripts/app/20-smokes-performance.js",
+    "scripts/app/21-smokes-characters.js",
+    "scripts/app/22-smokes-images.js",
+    "scripts/app/23-smokes-profiles.js",
+    "scripts/app/24-story-builder-graph.js",
+    "scripts/app/25-story-builder-validation.js",
+    "scripts/app/26-objective-suggestions.js",
+    "scripts/app/28-dev-playtest-profile-compat.js",
+    "scripts/app/27-hosted-images-startup.js"
+  ],
+  "testApplicationInsertAfter": "scripts/app/03-messages-saves.js",
+  "testApplicationScripts": [
+    "scripts/tests/persistence-tests.js",
+    "scripts/tests/runtime-architecture-tests.js"
+  ],
+  "tail": "shell/tail.html"
+}

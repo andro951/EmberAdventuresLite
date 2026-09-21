@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+node_modules/
+test-output/
+*.pfx
+*.pem
+bottom.runtime-tests.html
+bottom_compressed.private-tests.html

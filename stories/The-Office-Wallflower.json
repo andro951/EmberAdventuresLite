@@ -1,0 +1,4033 @@
+{
+  "app": "EmberAdventures",
+  "exportType": "story-template",
+  "storyTemplate": {
+    "id": "the-office-wallflower",
+    "title": "The Office Wallflower",
+    "description": "A shy, unusually attractive new office hire keeps failing upward through compliments, lunches, projects, and romcom disasters while a friendly coworker coaches them toward real connection.",
+    "createdAt": "2026-06-29T00:00:00.000Z",
+    "updatedAt": "2026-08-31T06:03:35.951Z",
+    "state": {
+      "meta": {
+        "story_guidance": "",
+        "genres": [
+          "workplace",
+          "slice of life",
+          "cozy",
+          "romance",
+          "comedy",
+          "anime"
+        ],
+        "default_image_model": "",
+        "story_source": {
+          "mode": "original",
+          "title": "The Office Wallflower",
+          "description": "Original general-audience cozy workplace slice-of-life romcom about a socially inept but talented new hire building relationships."
+        }
+      },
+      "location": {
+        "universe": "The Office Wallflower",
+        "world": "United States",
+        "continent": "North America",
+        "region": "Harbor City",
+        "settlement_type": "city",
+        "settlement_name": "Harbor City",
+        "district": "downtown office district",
+        "specific_place": "Brightleaf Analytics reception"
+      },
+      "world_map": {
+        "current_location_id": "loc-brightleaf-reception",
+        "focus_location_id": "loc-brightleaf-office",
+        "travel_history": [
+          "loc-brightleaf-reception"
+        ],
+        "locations": {
+          "loc-harbor-city": {
+            "id": "loc-harbor-city",
+            "name": "Harbor City",
+            "type": "city",
+            "scale": "settlement",
+            "parent_id": "",
+            "x": 50,
+            "y": 50,
+            "discovered": true,
+            "travel_enabled": false,
+            "summary": "A normal modern city with a comfortable downtown office district.",
+            "detail": {
+              "settlement_name": "Harbor City"
+            },
+            "connections": [
+              "loc-brightleaf-office"
+            ],
+            "npcs": []
+          },
+          "loc-brightleaf-office": {
+            "id": "loc-brightleaf-office",
+            "name": "Brightleaf Analytics",
+            "type": "building",
+            "scale": "building",
+            "parent_id": "loc-harbor-city",
+            "x": 52,
+            "y": 50,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A pleasant mid-sized office where analysis, client work, break-room snacks, and romantic misunderstandings coexist.",
+            "detail": {
+              "specific_place": "Brightleaf Analytics office"
+            },
+            "connections": [
+              "loc-brightleaf-reception",
+              "loc-team-floor",
+              "loc-break-room",
+              "loc-meeting-room"
+            ],
+            "npcs": [
+              "Rika Sato"
+            ]
+          },
+          "loc-brightleaf-reception": {
+            "id": "loc-brightleaf-reception",
+            "name": "Reception",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-brightleaf-office",
+            "x": 52,
+            "y": 51,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "The front reception area where the player's first social disaster begins.",
+            "detail": {
+              "specific_place": "Brightleaf reception desk"
+            },
+            "connections": [
+              "loc-brightleaf-office",
+              "loc-team-floor"
+            ],
+            "npcs": [
+              "Rika Sato"
+            ]
+          },
+          "loc-team-floor": {
+            "id": "loc-team-floor",
+            "name": "Team Floor",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-brightleaf-office",
+            "x": 53,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "Rows of desks, soft keyboard sounds, team chatter, and far too many chances to be perceived.",
+            "detail": {
+              "specific_place": "team floor"
+            },
+            "connections": [
+              "loc-brightleaf-reception",
+              "loc-break-room",
+              "loc-meeting-room"
+            ],
+            "npcs": []
+          },
+          "loc-break-room": {
+            "id": "loc-break-room",
+            "name": "Break Room",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-brightleaf-office",
+            "x": 51,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "Coffee, snacks, birthday cards, lunch invitations, and several forms of emotional danger.",
+            "detail": {
+              "specific_place": "office break room"
+            },
+            "connections": [
+              "loc-team-floor"
+            ],
+            "npcs": []
+          },
+          "loc-meeting-room": {
+            "id": "loc-meeting-room",
+            "name": "Meeting Room",
+            "type": "room",
+            "scale": "room",
+            "parent_id": "loc-brightleaf-office",
+            "x": 54,
+            "y": 52,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A glass-walled meeting room for client calls, team presentations, and accidentally impressive competence.",
+            "detail": {
+              "specific_place": "glass meeting room"
+            },
+            "connections": [
+              "loc-team-floor"
+            ],
+            "npcs": []
+          },
+          "loc-after-work-cafe": {
+            "id": "loc-after-work-cafe",
+            "name": "Corner Cafe",
+            "type": "shop",
+            "scale": "building",
+            "parent_id": "loc-harbor-city",
+            "x": 55,
+            "y": 51,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A cozy cafe near the office where after-work conversations feel less like meetings and more like possibilities.",
+            "detail": {
+              "specific_place": "corner cafe near Brightleaf"
+            },
+            "connections": [
+              "loc-brightleaf-office"
+            ],
+            "npcs": []
+          }
+        }
+      },
+      "time": {
+        "year": 2026,
+        "month": 4,
+        "day": 6,
+        "hour": 8,
+        "minute": 50
+      },
+      "scene": {
+        "summary": "The player has arrived at Brightleaf Analytics for their first day, carrying new-hire paperwork and too much nervous energy.",
+        "party_members_present": [],
+        "image_characters": [
+          "Player"
+        ],
+        "npcs_present": [
+          "Rika Sato"
+        ],
+        "image_action": "office reception arrival"
+      },
+      "player": {
+        "id": 0,
+        "name": "Eli Mercer",
+        "source": "Player",
+        "creation_tool": "Codex 5.5 (Medium)",
+        "genres": [
+          "workplace",
+          "slice of life",
+          "cozy",
+          "romance",
+          "comedy",
+          "anime"
+        ],
+        "can_die": false,
+        "gender": "male",
+        "age": 24,
+        "role": "quietly brilliant new office hire",
+        "personality_description": "A painfully shy, socially inept new hire who is far more talented than they can comfortably admit. They are extremely attractive in a way that draws attention, but their choices decide whether they avoid connection, stumble into it, or slowly learn to accept being liked.",
+        "speech_style": "Soft, hesitant, and awkward at first, with sincerity showing through when they stop overthinking.",
+        "boldness": 2,
+        "starting_relationship_to_player": "coworker",
+        "starting_trust": 0,
+        "starting_attraction": 0,
+        "starting_affection": 0,
+        "starting_state_of_mind": "starting the workday",
+        "starting_physical_state": "healthy",
+        "starting_pose": "standing professionally",
+        "appearance": {
+          "species": "adult white human",
+          "height": 6,
+          "skin_color": "light skin",
+          "eye_color": "gray eyes",
+          "hair_color": "brown hair",
+          "hair_length": "short hair",
+          "hair_type": "soft straight hair",
+          "extra_description": "",
+          "body_description": "An average build."
+        },
+        "outfits": [
+          {
+            "id": "first-day-office",
+            "name": "First Day Office Outfit",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "neat soft office shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "clean tailored work pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable dress shoes",
+              "other_accessory": "employee badge clipped slightly crooked"
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "pressed work shirt",
+              "over_shirt": null,
+              "coat": "simple office jacket",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "dark office trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished work shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "workwear",
+            "name": "Workwear",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "pressed buttoned work shirt",
+              "over_shirt": null,
+              "coat": "plain professional blazer",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed work trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "black office shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "starting_outfit_id": "first-day-office",
+        "starting_held_items": {
+          "right_hand": null,
+          "left_hand": null
+        },
+        "starting_inventory": [],
+        "durable_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+          "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+          "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+          "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+          "Eli has the kind of quiet good looks that make coworkers assume he is confident until he tries to speak."
+        ],
+        "default_seed": 0,
+        "image_prompt_config": {
+          "seed_enabled": true,
+          "seed": 0,
+          "style": "",
+          "profile_style": "Game Art Icon",
+          "negative": "",
+          "negative_prompt": ""
+        },
+        "default_profile_image": {
+          "url": "",
+          "source": "none",
+          "seed": null,
+          "prompt": "",
+          "negative_prompt": "",
+          "note": ""
+        },
+        "voice": null,
+        "clothing": {
+          "hat": null,
+          "hair": null,
+          "hair_accessory": null,
+          "face": null,
+          "ears": null,
+          "neck": null,
+          "shoulders": null,
+          "bra": null,
+          "undershirt": null,
+          "shirt": "neat soft office shirt",
+          "over_shirt": null,
+          "coat": null,
+          "back": null,
+          "hands": null,
+          "right_wrist": null,
+          "left_wrist": null,
+          "right_fingers": null,
+          "left_fingers": null,
+          "waist": null,
+          "belt_accessory": null,
+          "underwear": null,
+          "pants": "clean tailored work pants",
+          "skirt": null,
+          "legwear": null,
+          "socks": null,
+          "feet": "comfortable dress shoes",
+          "other_accessory": "employee badge clipped slightly crooked"
+        }
+      },
+      "players": [
+        {
+          "id": 0,
+          "name": "Eli Mercer",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "workplace",
+            "slice of life",
+            "cozy",
+            "romance",
+            "comedy",
+            "anime"
+          ],
+          "can_die": false,
+          "gender": "male",
+          "age": 24,
+          "role": "quietly brilliant new office hire",
+          "personality_description": "A painfully shy, socially inept new hire who is far more talented than they can comfortably admit. They are extremely attractive in a way that draws attention, but their choices decide whether they avoid connection, stumble into it, or slowly learn to accept being liked.",
+          "speech_style": "Soft, hesitant, and awkward at first, with sincerity showing through when they stop overthinking.",
+          "boldness": 2,
+          "starting_relationship_to_player": "coworker",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "starting the workday",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing professionally",
+          "appearance": {
+            "species": "adult white human",
+            "height": 6,
+            "skin_color": "light skin",
+            "eye_color": "gray eyes",
+            "hair_color": "brown hair",
+            "hair_length": "short hair",
+            "hair_type": "soft straight hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "first-day-office",
+              "name": "First Day Office Outfit",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "neat soft office shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "clean tailored work pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable dress shoes",
+                "other_accessory": "employee badge clipped slightly crooked"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "pressed work shirt",
+                "over_shirt": null,
+                "coat": "simple office jacket",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark office trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished work shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "workwear",
+              "name": "Workwear",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "pressed buttoned work shirt",
+                "over_shirt": null,
+                "coat": "plain professional blazer",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed work trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "black office shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "first-day-office",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+            "Eli has the kind of quiet good looks that make coworkers assume he is confident until he tries to speak."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "neat soft office shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "clean tailored work pants",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "comfortable dress shoes",
+            "other_accessory": "employee badge clipped slightly crooked"
+          }
+        },
+        {
+          "id": 0,
+          "name": "Mina Brooks",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "workplace",
+            "slice of life",
+            "cozy",
+            "romance",
+            "comedy",
+            "anime"
+          ],
+          "can_die": false,
+          "gender": "female",
+          "age": 22,
+          "role": "quietly brilliant new office hire",
+          "personality_description": "A painfully shy, socially inept new hire who is far more talented than they can comfortably admit. They are extremely attractive in a way that draws attention, but their choices decide whether they avoid connection, stumble into it, or slowly learn to accept being liked.",
+          "speech_style": "Soft, hesitant, and awkward at first, with sincerity showing through when they stop overthinking.",
+          "boldness": 2,
+          "starting_relationship_to_player": "coworker",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "starting the workday",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing professionally",
+          "appearance": {
+            "species": "adult Black human",
+            "height": 5,
+            "skin_color": "deep brown skin",
+            "eye_color": "dark brown eyes",
+            "hair_color": "black hair",
+            "hair_length": "shoulder-length hair",
+            "hair_type": "natural curls",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "first-day-office",
+              "name": "First Day Office Outfit",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "neat soft office shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "clean tailored work pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable dress shoes",
+                "other_accessory": "employee badge clipped slightly crooked"
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "first-day-office",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+            "Mina looks effortlessly put together until a compliment makes her forget how doors work."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "neat soft office shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "clean tailored work pants",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "comfortable dress shoes",
+            "other_accessory": "employee badge clipped slightly crooked"
+          }
+        },
+        {
+          "id": 0,
+          "name": "Avery Lin",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "genres": [
+            "workplace",
+            "slice of life",
+            "cozy",
+            "romance",
+            "comedy",
+            "anime"
+          ],
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 27,
+          "role": "quietly brilliant new office hire",
+          "personality_description": "A painfully shy, socially inept new hire who is far more talented than they can comfortably admit. They are extremely attractive in a way that draws attention, but their choices decide whether they avoid connection, stumble into it, or slowly learn to accept being liked.",
+          "speech_style": "Soft, hesitant, and awkward at first, with sincerity showing through when they stop overthinking.",
+          "boldness": 2,
+          "starting_relationship_to_player": "coworker",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "starting the workday",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing professionally",
+          "appearance": {
+            "species": "adult Chinese American human",
+            "height": 5,
+            "skin_color": "light warm skin",
+            "eye_color": "dark brown eyes",
+            "hair_color": "black hair",
+            "hair_length": "short hair",
+            "hair_type": "neatly layered hair",
+            "extra_description": "",
+            "body_description": "An average build."
+          },
+          "outfits": [
+            {
+              "id": "first-day-office",
+              "name": "First Day Office Outfit",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "neat soft office shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "clean tailored work pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable dress shoes",
+                "other_accessory": "employee badge clipped slightly crooked"
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "pressed work shirt",
+                "over_shirt": null,
+                "coat": "simple office jacket",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark office trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished work shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "workwear",
+              "name": "Workwear",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "pressed buttoned work shirt",
+                "over_shirt": null,
+                "coat": "plain professional blazer",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed work trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "black office shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "first-day-office",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [],
+          "durable_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+            "Avery is striking in a quiet way and has perfected the art of pretending not to notice people noticing them."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "",
+            "profile_style": "Game Art Icon",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": ""
+          },
+          "voice": null,
+          "clothing": {
+            "hat": null,
+            "hair": null,
+            "hair_accessory": null,
+            "face": null,
+            "ears": null,
+            "neck": null,
+            "shoulders": null,
+            "bra": null,
+            "undershirt": null,
+            "shirt": "neat soft office shirt",
+            "over_shirt": null,
+            "coat": null,
+            "back": null,
+            "hands": null,
+            "right_wrist": null,
+            "left_wrist": null,
+            "right_fingers": null,
+            "left_fingers": null,
+            "waist": null,
+            "belt_accessory": null,
+            "underwear": null,
+            "pants": "clean tailored work pants",
+            "skirt": null,
+            "legwear": null,
+            "socks": null,
+            "feet": "comfortable dress shoes",
+            "other_accessory": "employee badge clipped slightly crooked"
+          }
+        }
+      ],
+      "characters": {},
+      "npc_directory": {
+        "locations": {
+          "Brightleaf Analytics reception": {
+            "label": "Brightleaf Analytics reception",
+            "characters": {
+              "Rika Sato": {
+                "id": 0,
+                "name": "Rika Sato",
+                "source": "Player",
+                "creation_tool": "Codex 5.5 (Medium)",
+                "genres": [
+                  "workplace",
+                  "slice of life",
+                  "cozy",
+                  "romance",
+                  "comedy",
+                  "anime"
+                ],
+                "can_die": false,
+                "gender": "female",
+                "age": 27,
+                "role": "operations coordinator and self-appointed wing-woman",
+                "personality_description": "A warm, socially fearless coordinator who adopts awkward coworkers the way other people adopt office plants. She is funny, nosy, kind, and determined to teach the player how to survive compliments without vanishing.",
+                "speech_style": "Bright, teasing, and practical, with gentle coaching disguised as jokes.",
+                "boldness": 8,
+                "starting_relationship_to_player": "coworker",
+                "starting_trust": 2,
+                "starting_attraction": 0,
+                "starting_affection": 1,
+                "starting_state_of_mind": "starting the workday",
+                "starting_physical_state": "healthy",
+                "starting_pose": "standing professionally",
+                "appearance": {
+                  "species": "adult Japanese American human",
+                  "height": 5,
+                  "skin_color": "light warm skin",
+                  "eye_color": "dark eyes",
+                  "hair_color": "black hair",
+                  "hair_length": "long hair",
+                  "hair_type": "straight hair",
+                  "extra_description": "",
+                  "body_description": "An average build."
+                },
+                "outfits": [
+                  {
+                    "id": "office-cardigan",
+                    "name": "Office Cardigan",
+                    "clothing": {
+                      "shirt": "cream blouse",
+                      "sweater": "soft green cardigan",
+                      "skirt": "Opaque ankle-length skirt without openings",
+                      "feet": "brown flats",
+                      "other_accessory": "planner covered in colored tabs"
+                    }
+                  }
+                ],
+                "starting_outfit_id": "office-cardigan",
+                "starting_held_items": {
+                  "right_hand": null,
+                  "left_hand": null
+                },
+                "starting_inventory": [],
+                "durable_known_facts": [
+                  "Rika is the guide character and wing-woman for the player.",
+                  "She coaches the player through small talk, lunch invitations, compliments, and workplace romcom disasters.",
+                  "She is not a romantic route by default; her role is support, comedy, and emotional grounding.",
+                  "She believes effort matters more than smoothness.",
+                  "She should regularly give practical but funny advice when the player makes an awkward choice.",
+                  "She knows the office social map and can point the player toward love interests without forcing a choice."
+                ],
+                "default_seed": 0,
+                "image_prompt_config": {
+                  "seed_enabled": true,
+                  "seed": 0,
+                  "style": "",
+                  "profile_style": "Game Art Icon",
+                  "negative": "",
+                  "negative_prompt": ""
+                },
+                "default_profile_image": {
+                  "url": "",
+                  "source": "none",
+                  "seed": null,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": ""
+                },
+                "voice": null
+              }
+            }
+          }
+        }
+      },
+      "world_flags": {
+        "tone": "cozy anime-style workplace romcom and slice-of-life",
+        "player_trope": "The player is extremely attractive, quietly talented, and socially inept; attention should feel flattering and overwhelming rather than predatory."
+      },
+      "objectives": {
+        "active_id": "arrive-for-first-day",
+        "no_current": false,
+        "items": [
+          {
+            "id": "arrive-for-first-day",
+            "title": "Arrive for Your First Day",
+            "type": "story",
+            "kind": "main",
+            "status": "active",
+            "summary": "Start at Brightleaf Analytics and try to look like a normal new hire.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-reception",
+                "title": "First Day Reception",
+                "prompt": "bright modern office reception area, elevator doors open, new-hire paperwork on a counter, coffee aroma mood, cozy anime workplace romcom tone, no people, no readable text, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": true,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player arrives at the Brightleaf Analytics office, checks in, or begins the first workday.",
+            "completion_instruction": "Introduce the office as pleasant, ordinary, and slightly anime-romcom in tone. Let the player immediately draw visual attention while keeping the scene friendly and respectful.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "meet-rika-the-wing-woman",
+            "title": "Meet Rika at Reception",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The operations coordinator decides the new hire needs help before the elevator doors even close.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Rika Sato",
+                "stats": {
+                  "trust": 2,
+                  "affection": 1
+                }
+              }
+            ],
+            "requires": [
+              "arrive-for-first-day"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player meets Rika Sato, receives onboarding help, or is clearly taken under her wing.",
+            "completion_instruction": "Introduce Rika as funny, warm, and immediately aware that the player is both attractive and socially doomed without guidance.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "survive-first-compliment",
+            "title": "Survive the First Compliment",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Someone compliments the player's appearance before the workday has even started.",
+            "rewards": [],
+            "requires": [
+              "meet-rika-the-wing-woman"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one awkward response.",
+            "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "freeze",
+                "title": "Freeze Silently",
+                "summary": "",
+                "effects": [
+                  "social_panic +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "social_panic"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "office_warmth"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "awkward-style-freeze",
+                    "text": "The player's first compliment response was freezing silently. Coworkers may find the awkwardness oddly endearing."
+                  }
+                ]
+              },
+              {
+                "id": "you-too",
+                "title": "Say 'You Too' Incorrectly",
+                "summary": "",
+                "effects": [
+                  "social_panic +1",
+                  "romance_momentum +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "social_panic"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "romance_momentum"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "awkward-style-you-too",
+                    "text": "The player's first compliment response was saying 'you too' when it made no sense."
+                  }
+                ]
+              },
+              {
+                "id": "compliment-plant",
+                "title": "Compliment the Office Plant",
+                "summary": "",
+                "effects": [
+                  "office_warmth +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "office_warmth"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "awkward-style-plant",
+                    "text": "The player redirected a compliment toward an office plant, creating a harmless running joke."
+                  }
+                ]
+              },
+              {
+                "id": "flee-to-elevator",
+                "title": "Flee Toward the Elevator",
+                "summary": "",
+                "effects": [
+                  "social_panic +3"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "social_panic"
+                    ],
+                    "amount": 3
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "awkward-style-flee",
+                    "text": "The player fled a compliment during onboarding. Rika should coach them gently afterward."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solve-the-first-work-problem",
+            "title": "Solve the First Work Problem",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "A messy spreadsheet or client file gives the player a chance to show why they were hired.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "competence_reputation"
+                ],
+                "amount": 2
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "romance_momentum"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-first-fix",
+                "title": "The First Work Fix",
+                "prompt": "modern office desk with laptop, spreadsheets represented as abstract charts, sticky notes, coffee mug, clean morning light, quiet competence moment, no readable text, no people, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [
+              "survive-first-compliment"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player catches an error, fixes a workflow, improves a document, or otherwise solves the first real office problem.",
+            "completion_instruction": "Let the player be genuinely talented. Their solution should be useful enough that coworkers notice, which creates new attention and more social pressure.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "meet-the-team",
+            "title": "Meet the Team",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The player's competence makes several coworkers more interested than a wallflower can comfortably handle.",
+            "rewards": [
+              {
+                "type": "introduce_future_character",
+                "character_id": "hana_morikawa",
+                "scene_presence": "npc",
+                "reason": "Hana Morikawa joins the first team scene after seeing the player's careful work."
+              },
+              {
+                "type": "introduce_future_character",
+                "character_id": "claire_bennett",
+                "scene_presence": "npc",
+                "reason": "Claire Bennett notices the player's useful fix and social panic."
+              },
+              {
+                "type": "introduce_future_character",
+                "character_id": "marcus_cho",
+                "scene_presence": "npc",
+                "reason": "Marcus Cho recognizes the player's analytical talent."
+              },
+              {
+                "type": "introduce_future_character",
+                "character_id": "sophie_reed",
+                "scene_presence": "npc",
+                "reason": "Sophie Reed handles onboarding and tries to include the player."
+              },
+              {
+                "type": "introduce_future_character",
+                "character_id": "nolan_price",
+                "scene_presence": "npc",
+                "reason": "Nolan Price becomes aware that the new hire may help with a difficult project."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-team-floor",
+                "title": "The Team Floor",
+                "prompt": "pleasant modern office team floor, rows of desks, break-room plants, soft afternoon light, cozy workplace anime romcom feeling, no readable text, no people, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [
+              "solve-the-first-work-problem"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player meets the core team members and gets a first impression of multiple potential love interests.",
+            "completion_instruction": "Introduce Hana, Claire, Marcus, Sophie, and Nolan through future-cast rewards as coworkers, not as a sudden ensemble pile-on. Each should have a distinct first impression.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-first-lunch-disaster",
+            "title": "Choose the Lunch Disaster",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "A coworker invites the player to lunch. Every response is somehow wrong.",
+            "rewards": [],
+            "requires": [
+              "meet-the-team"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one lunch response.",
+            "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "i-have-eaten-before",
+                "title": "Say 'I Have Eaten Before'",
+                "summary": "",
+                "effects": [
+                  "Hana affection +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Hana Morikawa",
+                    "stats": {
+                      "affection": 1,
+                      "attraction": 0.5
+                    }
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "social_panic"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "lunch-disaster-eaten-before",
+                    "text": "The player answered a lunch invitation with 'I have eaten before.'"
+                  }
+                ]
+              },
+              {
+                "id": "overexplain-diet",
+                "title": "Overexplain Your Entire Food History",
+                "summary": "",
+                "effects": [
+                  "Sophie affection +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Sophie Reed",
+                    "stats": {
+                      "affection": 1,
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "social_panic"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "lunch-disaster-food-history",
+                    "text": "The player overexplained their food history during the first lunch invitation."
+                  }
+                ]
+              },
+              {
+                "id": "accidentally-accept-date",
+                "title": "Accidentally Make It Sound Like a Date",
+                "summary": "",
+                "effects": [
+                  "romance_momentum +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "romance_momentum"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Claire Bennett",
+                    "stats": {
+                      "attraction": 1
+                    }
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "lunch-disaster-date-vibe",
+                    "text": "The player accidentally made the lunch invitation sound romantic."
+                  }
+                ]
+              },
+              {
+                "id": "hide-behind-rika",
+                "title": "Hide Behind Rika",
+                "summary": "",
+                "effects": [
+                  "Rika trust +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Rika Sato",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "social_panic"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "lunch-disaster-rika-shield",
+                    "text": "The player used Rika as a social shield during the lunch invitation."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rika-coaching-session-one",
+            "title": "Accept Rika's Coaching",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Rika gives the player practical advice about surviving office kindness.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Rika Sato",
+                "stats": {
+                  "trust": 1,
+                  "affection": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "choose-first-lunch-disaster"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player talks with Rika about the lunch disaster, accepts coaching, resists it, or reflects on the advice.",
+            "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "work-with-hana",
+            "title": "Work With Hana",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Help Hana polish a design review and get to know her quieter side.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Hana Morikawa",
+                "stats": {
+                  "trust": 2,
+                  "affection": 1,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "rika-coaching-session-one"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player spends meaningful work time with Hana, helps her design review, or has a real conversation with her.",
+            "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "help-claire-client-call",
+            "title": "Help Claire's Client Call",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Claire pulls the player into a client call where competence and flirting become hard to separate.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Claire Bennett",
+                "stats": {
+                  "trust": 1,
+                  "affection": 1,
+                  "attraction": 2
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "competence_reputation"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "rika-coaching-session-one"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player helps Claire with the client call, prepares notes, catches a client issue, or handles the aftermath with her.",
+            "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "review-data-with-marcus",
+            "title": "Review Data With Marcus",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Marcus gives the player quiet space to do good work without making a spectacle of them.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Marcus Cho",
+                "stats": {
+                  "trust": 2,
+                  "affection": 1,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "rika-coaching-session-one"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player reviews data with Marcus, catches a subtle issue, or has a meaningful low-pressure conversation with him.",
+            "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "join-sophies-welcome-lunch",
+            "title": "Join Sophie's Welcome Lunch",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Sophie tries to make the player feel included without scaring them off.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Sophie Reed",
+                "stats": {
+                  "trust": 2,
+                  "affection": 1,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "office_warmth"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "rika-coaching-session-one"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player joins Sophie's welcome lunch, helps with it, or meaningfully talks to Sophie about office life.",
+            "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "assist-nolans-project",
+            "title": "Assist Nolan's Project",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Nolan asks the player for help on a project that matters more than office gossip.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Nolan Price",
+                "stats": {
+                  "trust": 2,
+                  "affection": 1,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "competence_reputation"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "rika-coaching-session-one"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player assists Nolan's project, solves a problem with him, or has a meaningful private work conversation.",
+            "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "finish-first-week",
+            "title": "Finish the First Week",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The first week ends with the player more noticed, more valued, and not quite as alone.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "office_warmth"
+                ],
+                "amount": 2
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "work-with-hana",
+              "help-claire-client-call",
+              "review-data-with-marcus",
+              "join-sophies-welcome-lunch",
+              "assist-nolans-project"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player reaches the end of the first week and reflects on how work and relationships have changed.",
+            "completion_instruction": "Summarize the week through cozy office details and relationship momentum. Rika should point out that the player survived because they kept trying.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-team-event-approach",
+            "title": "Choose the Team Event Approach",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "A small after-work team event becomes another chance to connect badly but sincerely.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-after-work-table",
+                "title": "After-Work Table",
+                "prompt": "cozy cafe table after work, coffee cups, pastry plate, office bags on chairs, warm evening window light, romantic slice-of-life mood, no readable text, no people, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [
+              "finish-first-week"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one team-event approach.",
+            "completion_instruction": "Resolve the approach and let it set up the confession arc.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "practice-with-rika",
+                "title": "Practice With Rika First",
+                "summary": "",
+                "effects": [
+                  "confidence +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "confidence"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Rika Sato",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "event-practiced-with-rika",
+                    "text": "The player practiced social basics with Rika before the team event."
+                  }
+                ]
+              },
+              {
+                "id": "bring-useful-work",
+                "title": "Bring Useful Work Notes",
+                "summary": "",
+                "effects": [
+                  "competence_reputation +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "competence_reputation"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "event-brought-work-notes",
+                    "text": "The player brought useful work notes to an after-work social event because competence felt safer than small talk."
+                  }
+                ]
+              },
+              {
+                "id": "try-direct-compliment",
+                "title": "Try One Direct Compliment",
+                "summary": "",
+                "effects": [
+                  "romance_momentum +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "romance_momentum"
+                    ],
+                    "amount": 2
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "event-direct-compliment",
+                    "text": "The player tried giving one direct compliment at the team event."
+                  }
+                ]
+              },
+              {
+                "id": "almost-cancel",
+                "title": "Almost Cancel, Then Show Up Anyway",
+                "summary": "",
+                "effects": [
+                  "confidence +1",
+                  "office_warmth +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "confidence"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "office_warmth"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "event-showed-up-anyway",
+                    "text": "The player nearly canceled the team event but showed up anyway."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "survive-after-work-event",
+            "title": "Survive the After-Work Event",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The player spends time with coworkers outside normal work structure.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "romance_momentum"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "choose-team-event-approach"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player attends the after-work event and has at least one meaningful interaction with a love interest or Rika.",
+            "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "coffee-with-hana",
+            "title": "Share a Quiet Coffee With Hana",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Hana invites the player into a calmer corner of the day where neither of them has to perform.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Hana Morikawa",
+                "stats": {
+                  "trust": 2,
+                  "affection": 2,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "romance_momentum"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "survive-after-work-event"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player spends a quiet coffee or break-room scene with Hana and learns something personal about her.",
+            "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "walk-back-with-claire",
+            "title": "Walk Back With Claire",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Claire slows down long enough for the player to see the person behind the confident office sparkle.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Claire Bennett",
+                "stats": {
+                  "trust": 1,
+                  "affection": 2,
+                  "attraction": 2
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "romance_momentum"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "survive-after-work-event"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player has a more personal walk, commute, or end-of-day conversation with Claire.",
+            "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "stay-late-with-marcus",
+            "title": "Stay Late With Marcus",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Marcus and the player work in comfortable quiet after most of the office has gone home.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Marcus Cho",
+                "stats": {
+                  "trust": 2,
+                  "affection": 2,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "survive-after-work-event"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player shares a late-work or quiet problem-solving scene with Marcus that becomes personally revealing.",
+            "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "help-sophie-after-hours",
+            "title": "Help Sophie After Hours",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Sophie needs help with a small office kindness that turns into an unexpectedly honest conversation.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Sophie Reed",
+                "stats": {
+                  "trust": 2,
+                  "affection": 2,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "office_warmth"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "survive-after-work-event"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player helps Sophie after hours, with an office errand, welcome board, celebration setup, or similar personal kindness.",
+            "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "review-plans-with-nolan",
+            "title": "Review Tomorrow's Plans With Nolan",
+            "type": "story",
+            "kind": "side",
+            "status": "hidden",
+            "summary": "Nolan asks for the player's opinion when nobody else is watching.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Nolan Price",
+                "stats": {
+                  "trust": 2,
+                  "affection": 2,
+                  "attraction": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "competence_reputation"
+                ],
+                "amount": 1
+              }
+            ],
+            "requires": [
+              "survive-after-work-event"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player has a private planning, debrief, or project-trust scene with Nolan.",
+            "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "ask-rika-for-final-advice",
+            "title": "Ask Rika for Final Advice",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Before choosing what to do with all this attention, get one last painfully practical coaching session from Rika.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Rika Sato",
+                "stats": {
+                  "trust": 1,
+                  "affection": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-rika-coaching",
+                "title": "Rika's Final Coaching",
+                "prompt": "quiet office break room after hours, two coffee cups on a small table, colorful planner with tabs, warm practical friendship mood, no people, no readable text, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [
+              "coffee-with-hana",
+              "walk-back-with-claire",
+              "stay-late-with-marcus",
+              "help-sophie-after-hours",
+              "review-plans-with-nolan"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "loc-break-room",
+            "travel_location_name": "Break Room",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player talks with Rika about who they like, what they are afraid of, or whether they are ready to ask anyone out.",
+            "completion_instruction": "Let Rika coach without choosing for the player. She should make the options feel emotionally clear: ask someone sincerely, or choose honest distance for now without treating that as failure.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "choose-who-to-ask",
+            "title": "Choose What to Do About Your Feelings",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Decide whether to ask someone out now or admit you are not ready yet.",
+            "rewards": [],
+            "requires": [
+              "ask-rika-for-final-advice"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_criteria": "Completed immediately by EmberAdventures when the player selects one person to ask out or chooses not to ask anyone yet.",
+            "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
+            "auto_completed_from_prereqs": false,
+            "choices": [
+              {
+                "id": "ask-hana",
+                "title": "Ask Hana",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "route-hana",
+                    "text": "The player chose to ask Hana Morikawa to be their girlfriend."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Hana Morikawa",
+                    "stats": {
+                      "affection": 3,
+                      "attraction": 2,
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "route_flags"
+                    ],
+                    "value": "route-hana"
+                  }
+                ]
+              },
+              {
+                "id": "ask-claire",
+                "title": "Ask Claire",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "route-claire",
+                    "text": "The player chose to ask Claire Bennett to be their girlfriend."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Claire Bennett",
+                    "stats": {
+                      "affection": 3,
+                      "attraction": 2,
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "route_flags"
+                    ],
+                    "value": "route-claire"
+                  }
+                ]
+              },
+              {
+                "id": "ask-marcus",
+                "title": "Ask Marcus",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "route-marcus",
+                    "text": "The player chose to ask Marcus Cho to be their boyfriend."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Marcus Cho",
+                    "stats": {
+                      "affection": 3,
+                      "attraction": 2,
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "route_flags"
+                    ],
+                    "value": "route-marcus"
+                  }
+                ]
+              },
+              {
+                "id": "ask-sophie",
+                "title": "Ask Sophie",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "route-sophie",
+                    "text": "The player chose to ask Sophie Reed to be their girlfriend."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Sophie Reed",
+                    "stats": {
+                      "affection": 3,
+                      "attraction": 2,
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "route_flags"
+                    ],
+                    "value": "route-sophie"
+                  }
+                ]
+              },
+              {
+                "id": "ask-nolan",
+                "title": "Ask Nolan",
+                "summary": "",
+                "effects": [],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "route-nolan",
+                    "text": "The player chose to ask Nolan Price to be their boyfriend."
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Nolan Price",
+                    "stats": {
+                      "affection": 3,
+                      "attraction": 2,
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "route_flags"
+                    ],
+                    "value": "route-nolan"
+                  }
+                ]
+              },
+              {
+                "id": "not-yet",
+                "title": "Not Yet",
+                "summary": "",
+                "effects": [
+                  "confidence +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "add_story_rule",
+                    "rule_id": "route-not-yet",
+                    "text": "The player chose not to ask anyone out yet, but did not give up on connection."
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "field_path": [
+                      "confidence"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "path": [
+                      "story_inventory",
+                      "route_flags"
+                    ],
+                    "value": "route-not-yet"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "follow-through-honestly",
+            "title": "Follow Through Honestly",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "Say the truth as clearly as the player can, whether that means asking someone out or admitting they need more time.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "confidence"
+                ],
+                "amount": 2
+              },
+              {
+                "type": "adjust_story_inventory",
+                "field_path": [
+                  "office_warmth"
+                ],
+                "amount": 1
+              },
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-honest-follow-through",
+                "title": "Honest Follow-Through",
+                "prompt": "quiet modern office corner near sunset, two coffee cups, soft city window light, gentle romantic or friendship confession mood, no people, no readable text, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [
+              "choose-who-to-ask"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player follows through on the route chosen in the previous objective: a sincere romantic confession, a clear boyfriend/girlfriend ask, or an honest not-yet conversation.",
+            "completion_instruction": "Resolve the route chosen in the previous objective. For a romantic route, the confession may be awkward but should reward sincerity and the relationship built so far. For the not-yet route, make it a warm, valid ending path about choosing connection without forcing romance.",
+            "auto_completed_from_prereqs": false
+          },
+          {
+            "id": "settle-into-office-rhythm",
+            "title": "Settle Into the Office Rhythm",
+            "type": "story",
+            "kind": "main",
+            "status": "hidden",
+            "summary": "The player learns that being liked does not have to mean being trapped under attention, and office life becomes a little easier to enter each morning.",
+            "rewards": [
+              {
+                "type": "add_story_rule",
+                "rule_id": "ending-office-wallflower",
+                "text": "The player settled into office life with more confidence, stronger relationships, and a romantic route or honest delay shaped by their choices."
+              },
+              {
+                "type": "generate_story_image",
+                "id": "office-wallflower-new-rhythm",
+                "title": "New Office Rhythm",
+                "prompt": "cozy modern office morning, tidy desk with coffee and new-hire notes now settled in, soft sunlight, calm slice-of-life workplace mood, no people, no readable text, no logos",
+                "negative_prompt": "watermark, logo, signature, readable random text, office logo text"
+              }
+            ],
+            "requires": [
+              "follow-through-honestly"
+            ],
+            "next_objectives": [],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "unlock_mode": "manual",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the narrator shows the player's next comfortable office rhythm after the honest follow-through scene.",
+            "completion_instruction": "End on a cozy slice-of-life note shaped by the chosen route. Work continues, Rika remains a trusted coach, and the player has built real connection through effort instead of smoothness.",
+            "auto_completed_from_prereqs": false
+          }
+        ],
+        "counts": {
+          "main": 14,
+          "side": 10
+        }
+      },
+      "future_cast": {
+        "enabled": true,
+        "items": {
+          "hana_morikawa": {
+            "id": "hana_morikawa",
+            "name": "Hana Morikawa",
+            "status": "locked",
+            "category": "npc",
+            "role": "soft-spoken design lead",
+            "visibility": "hidden",
+            "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
+            "join_condition": null,
+            "location_hint": "Brightleaf Analytics office",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Hana Morikawa should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "Hana Morikawa joins the office scene.",
+            "full_character": {
+              "id": 0,
+              "name": "Hana Morikawa",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "workplace",
+                "slice of life",
+                "cozy",
+                "romance",
+                "comedy",
+                "anime"
+              ],
+              "can_die": false,
+              "gender": "female",
+              "age": 25,
+              "role": "soft-spoken design lead",
+              "personality_description": "A gentle design lead who notices small details and mistakes the player's silence for depth before slowly realizing it is panic. She is patient, creative, and quietly romantic.",
+              "speech_style": "Soft, thoughtful, and observant, with careful compliments that accidentally devastate the player.",
+              "boldness": 4,
+              "starting_relationship_to_player": "coworker",
+              "starting_trust": 0,
+              "starting_attraction": 1,
+              "starting_affection": 0,
+              "starting_state_of_mind": "starting the workday",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing professionally",
+              "appearance": {
+                "species": "adult Japanese human",
+                "height": 5,
+                "skin_color": "light warm skin",
+                "eye_color": "dark brown eyes",
+                "hair_color": "black hair",
+                "hair_length": "long hair",
+                "hair_type": "straight hair",
+                "extra_description": "",
+                "body_description": "A slender build."
+              },
+              "outfits": [
+                {
+                  "id": "office-default",
+                  "name": "Office Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "polished office top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "neat office slacks",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "clean office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "office-default",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Hana leads design review for client materials.",
+                "She likes calm workspaces, tea, stationery, and people who try even when embarrassed.",
+                "She can bond with the player through quiet competence and shared problem solving.",
+                "Her romantic route is gentle and slow-burn.",
+                "She becomes more direct only after trust builds."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "polished office top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "neat office slacks",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "clean office shoes",
+                "other_accessory": null
+              }
+            }
+          },
+          "claire_bennett": {
+            "id": "claire_bennett",
+            "name": "Claire Bennett",
+            "status": "locked",
+            "category": "npc",
+            "role": "confident sales manager",
+            "visibility": "hidden",
+            "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
+            "join_condition": null,
+            "location_hint": "Brightleaf Analytics office",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Claire Bennett should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "Claire Bennett joins the office scene.",
+            "full_character": {
+              "id": 0,
+              "name": "Claire Bennett",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "workplace",
+                "slice of life",
+                "cozy",
+                "romance",
+                "comedy",
+                "anime"
+              ],
+              "can_die": false,
+              "gender": "female",
+              "age": 29,
+              "role": "confident sales manager",
+              "personality_description": "A charismatic sales manager who is amused by the player's awkwardness and impressed by their talent. She flirts lightly but respects boundaries when they are stated clearly.",
+              "speech_style": "Confident, playful, and direct, with a talent for making normal sentences sound like dares.",
+              "boldness": 4,
+              "starting_relationship_to_player": "coworker",
+              "starting_trust": 0,
+              "starting_attraction": 1,
+              "starting_affection": 0,
+              "starting_state_of_mind": "starting the workday",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing professionally",
+              "appearance": {
+                "species": "adult white human",
+                "height": 6,
+                "skin_color": "fair skin",
+                "eye_color": "green eyes",
+                "hair_color": "auburn hair",
+                "hair_length": "shoulder-length hair",
+                "hair_type": "wavy hair",
+                "extra_description": "",
+                "body_description": "An average build."
+              },
+              "outfits": [
+                {
+                  "id": "office-default",
+                  "name": "Office Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "polished office top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "neat office slacks",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "clean office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "office-default",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Claire manages client-facing sales and knows how to read a room.",
+                "She is openly interested in the player when they show competence under pressure.",
+                "Her route is playful, confident, and full of flustered misunderstandings.",
+                "She likes when the player tries to be honest instead of perfect.",
+                "She can help the player practice social confidence through low-stakes office challenges."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "polished office top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "neat office slacks",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "clean office shoes",
+                "other_accessory": null
+              }
+            }
+          },
+          "marcus_cho": {
+            "id": "marcus_cho",
+            "name": "Marcus Cho",
+            "status": "locked",
+            "category": "npc",
+            "role": "senior analyst",
+            "visibility": "hidden",
+            "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
+            "join_condition": null,
+            "location_hint": "Brightleaf Analytics office",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Marcus Cho should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "Marcus Cho joins the office scene.",
+            "full_character": {
+              "id": 0,
+              "name": "Marcus Cho",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "workplace",
+                "slice of life",
+                "cozy",
+                "romance",
+                "comedy",
+                "anime"
+              ],
+              "can_die": false,
+              "gender": "male",
+              "age": 28,
+              "role": "senior analyst",
+              "personality_description": "A calm senior analyst who respects competence before charm. He sees through the player's panic and quietly makes space for them to breathe.",
+              "speech_style": "Dry, concise, and kind, with understated humor.",
+              "boldness": 4,
+              "starting_relationship_to_player": "coworker",
+              "starting_trust": 0,
+              "starting_attraction": 1,
+              "starting_affection": 0,
+              "starting_state_of_mind": "starting the workday",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing professionally",
+              "appearance": {
+                "species": "adult Korean American human",
+                "height": 7,
+                "skin_color": "light warm skin",
+                "eye_color": "dark brown eyes",
+                "hair_color": "black hair",
+                "hair_length": "short hair",
+                "hair_type": "neatly styled hair",
+                "extra_description": "",
+                "body_description": "A strong, athletic build."
+              },
+              "outfits": [
+                {
+                  "id": "office-default",
+                  "name": "Office Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "polished office top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "tailored office slacks",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "clean office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pressed work shirt",
+                    "over_shirt": null,
+                    "coat": "simple office jacket",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark office trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished work shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "workwear",
+                  "name": "Workwear",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pressed buttoned work shirt",
+                    "over_shirt": null,
+                    "coat": "plain professional blazer",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "black office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "formal",
+                  "name": "Formal",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "formal dress shirt",
+                    "over_shirt": null,
+                    "coat": "tailored formal coat",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed formal trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished formal shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft relaxed shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "office-default",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Marcus is one of the best analysts in the office until the player starts catching things he missed.",
+                "He is secure enough to admire talent without making it a competition.",
+                "His route is quiet, respectful, and built around trust.",
+                "He often helps by reducing pressure rather than adding attention.",
+                "He notices when the player is overwhelmed before most people do."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "polished office top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "tailored office slacks",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "clean office shoes",
+                "other_accessory": null
+              }
+            }
+          },
+          "sophie_reed": {
+            "id": "sophie_reed",
+            "name": "Sophie Reed",
+            "status": "locked",
+            "category": "npc",
+            "role": "cheerful HR assistant",
+            "visibility": "hidden",
+            "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
+            "join_condition": null,
+            "location_hint": "Brightleaf Analytics office",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Sophie Reed should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "Sophie Reed joins the office scene.",
+            "full_character": {
+              "id": 0,
+              "name": "Sophie Reed",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "workplace",
+                "slice of life",
+                "cozy",
+                "romance",
+                "comedy",
+                "anime"
+              ],
+              "can_die": false,
+              "gender": "female",
+              "age": 24,
+              "role": "cheerful HR assistant",
+              "personality_description": "A cheerful HR assistant who loves office traditions, birthdays, welcome lunches, and making shy people feel included. She is sweet, persistent, and more emotionally perceptive than she first appears.",
+              "speech_style": "Warm, quick, and encouraging, with gentle enthusiasm.",
+              "boldness": 4,
+              "starting_relationship_to_player": "coworker",
+              "starting_trust": 0,
+              "starting_attraction": 1,
+              "starting_affection": 0,
+              "starting_state_of_mind": "starting the workday",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing professionally",
+              "appearance": {
+                "species": "adult Latina human",
+                "height": 5,
+                "skin_color": "warm brown skin",
+                "eye_color": "brown eyes",
+                "hair_color": "dark brown hair",
+                "hair_length": "long hair",
+                "hair_type": "curly hair",
+                "extra_description": "",
+                "body_description": "An average build."
+              },
+              "outfits": [
+                {
+                  "id": "office-default",
+                  "name": "Office Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "polished office top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "neat office slacks",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "clean office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "office-default",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Sophie organizes onboarding, office birthdays, and team lunches.",
+                "She is one of the first people to openly compliment the player.",
+                "Her route is bright, supportive, and cozy.",
+                "She can help the player feel included without demanding they become extroverted.",
+                "She gets hurt if the player repeatedly treats kindness like a trap."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "polished office top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "neat office slacks",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "clean office shoes",
+                "other_accessory": null
+              }
+            }
+          },
+          "nolan_price": {
+            "id": "nolan_price",
+            "name": "Nolan Price",
+            "status": "locked",
+            "category": "npc",
+            "role": "quiet project manager",
+            "visibility": "hidden",
+            "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
+            "join_condition": null,
+            "location_hint": "Brightleaf Analytics office",
+            "on_unlock": {
+              "ai_greeting": true,
+              "greeting_instruction": "Nolan Price should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+              "image": {
+                "generate_profile_image": true,
+                "generate_solo_normal_image": false
+              }
+            },
+            "unlocked_by": "",
+            "last_triggered_reason": "",
+            "greeting": "Nolan Price joins the office scene.",
+            "full_character": {
+              "id": 0,
+              "name": "Nolan Price",
+              "source": "Player",
+              "creation_tool": "Codex 5.5 (Medium)",
+              "genres": [
+                "workplace",
+                "slice of life",
+                "cozy",
+                "romance",
+                "comedy",
+                "anime"
+              ],
+              "can_die": false,
+              "gender": "male",
+              "age": 31,
+              "role": "quiet project manager",
+              "personality_description": "A composed project manager who looks intimidating until he starts bringing the player extra reference documents and remembering how they take coffee. He is reserved, competent, and protective without being pushy.",
+              "speech_style": "Low-key, precise, and thoughtful, with warmth hidden under practical wording.",
+              "boldness": 4,
+              "starting_relationship_to_player": "coworker",
+              "starting_trust": 0,
+              "starting_attraction": 1,
+              "starting_affection": 0,
+              "starting_state_of_mind": "starting the workday",
+              "starting_physical_state": "healthy",
+              "starting_pose": "standing professionally",
+              "appearance": {
+                "species": "adult Black human",
+                "height": 7,
+                "skin_color": "dark brown skin",
+                "eye_color": "dark brown eyes",
+                "hair_color": "black hair",
+                "hair_length": "short hair",
+                "hair_type": "close-cropped hair",
+                "extra_description": "",
+                "body_description": "A strong, athletic build."
+              },
+              "outfits": [
+                {
+                  "id": "office-default",
+                  "name": "Office Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "polished office top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "tailored office slacks",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "clean office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pressed work shirt",
+                    "over_shirt": null,
+                    "coat": "simple office jacket",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark office trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished work shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "workwear",
+                  "name": "Workwear",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "pressed buttoned work shirt",
+                    "over_shirt": null,
+                    "coat": "plain professional blazer",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "black office shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "formal",
+                  "name": "Formal",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "formal dress shirt",
+                    "over_shirt": null,
+                    "coat": "tailored formal coat",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "pressed formal trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "polished formal shoes",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft relaxed shirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "starting_outfit_id": "office-default",
+              "starting_held_items": {
+                "right_hand": null,
+                "left_hand": null
+              },
+              "starting_inventory": [],
+              "durable_known_facts": [
+                "Nolan manages the team's most difficult client project.",
+                "He notices the player's talent early but does not embarrass them publicly unless necessary.",
+                "His route is mature, steady, and built through acts of consideration.",
+                "He respects boundaries and expects honesty.",
+                "He can become a calming anchor when office attention becomes too much."
+              ],
+              "default_seed": 0,
+              "image_prompt_config": {
+                "seed_enabled": true,
+                "seed": 0,
+                "style": "",
+                "profile_style": "Game Art Icon",
+                "negative": "",
+                "negative_prompt": ""
+              },
+              "default_profile_image": {
+                "url": "",
+                "source": "none",
+                "seed": null,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": ""
+              },
+              "voice": null,
+              "clothing": {
+                "hat": null,
+                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "polished office top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "tailored office slacks",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "clean office shoes",
+                "other_accessory": null
+              }
+            }
+          }
+        }
+      },
+      "story_rules": [
+        {
+          "id": "general-audience-office-romcom",
+          "text": "Keep the story general-audience, cozy, romantic, and workplace-appropriate. Romantic interest can be clear, but do not make the workplace predatory or explicit."
+        },
+        {
+          "id": "awkward-choices-early",
+          "text": "Early social choice objectives should offer awkward, bad, or embarrassing options that still fail forward into relationship growth and comedy."
+        },
+        {
+          "id": "competence-draws-attention",
+          "text": "The player's talent should repeatedly solve real office problems, causing coworkers to notice and making social attention harder to avoid."
+        },
+        {
+          "id": "interest-is-kind-not-predatory",
+          "text": "Coworker interest should feel flattering, awkward, and age-appropriate, never predatory or coercive. The comedy comes from the player's social panic and sincere effort."
+        }
+      ],
+      "story_memory": {
+        "world_notes": [
+          "Brightleaf Analytics is a pleasant mid-sized office with client work, team projects, onboarding, break-room rituals, and after-work events.",
+          "Rika Sato acts as the player's wing-woman and social coach.",
+          "Brightleaf's best scenes alternate between useful work competence and small social disasters, so the player feels talented without becoming socially smooth too quickly."
+        ],
+        "unresolved_threads": [
+          "Can the player keep trying after embarrassing social failures?",
+          "Which love interest, if any, will the player choose to ask out?"
+        ],
+        "relationship_notes": [],
+        "rules_and_constraints": [
+          "The player's romantic goal is eventually choosing whether to ask one love interest to be their boyfriend or girlfriend.",
+          "Do not make Rika solve every scene; she coaches and nudges, but the player must still try.",
+          "If the player chooses not to ask anyone out yet, treat that as a valid honest route, not a failed romance ending."
+        ],
+        "ai_private_notes": []
+      },
+      "story_inventory": {
+        "social_panic": 0,
+        "office_warmth": 0,
+        "confidence": 0,
+        "competence_reputation": 0,
+        "romance_momentum": 0,
+        "rule_flags": [],
+        "route_flags": []
+      },
+      "story_shops": {},
+      "story_job_offers": {},
+      "story_job_offer_history": [],
+      "active_generated_jobs": {},
+      "story_generated_npc_pool": {},
+      "recent_changes": []
+    },
+    "messages": [
+      {
+        "id": "opening-office-wallflower",
+        "entryId": "opening-office-wallflower",
+        "role": "assistant",
+        "speaker": "Narrator",
+        "text": "Brightleaf Analytics occupies the seventh floor of a quiet downtown office building that smells like coffee, printer toner, and new carpet.\n\nYou step out of the elevator with your new-hire packet held a little too tightly.\n\nAt reception, a woman in a green cardigan looks up from a planner full of colored tabs, blinks once, then smiles like she has just found a project.\n\n(Rika Sato) \"You must be the new hire. Okay. First rule: breathe before anyone compliments you.\"",
+        "at": "2026-06-29T00:00:00.000Z"
+      }
+    ],
+    "source": "Original",
+    "app": "EmberAdventures",
+    "templateType": "story",
+    "creation_tool": "Codex 5.5 (Medium)",
+    "genres": [
+      "workplace",
+      "slice of life",
+      "cozy",
+      "romance",
+      "comedy",
+      "anime"
+    ],
+    "default_image_model": "",
+    "title_card_subjects": [
+      "shy new hire",
+      "modern office",
+      "coffee and paperwork",
+      "cozy workplace romcom"
+    ],
+    "title_card_image": {
+      "url": "",
+      "source": "generated",
+      "seed": null,
+      "prompt": "cozy modern office reception on a bright morning, elevator doors, new-hire packet, coffee station, soft anime romcom atmosphere, clean professional workspace",
+      "negative_prompt": "text, readable text, logo, watermark, signature",
+      "note": "Optional title-card prompt for the original general-audience workplace romcom story."
+    },
+    "starting_player_count": 3,
+    "starting_party_member_count": 0,
+    "starting_npc_count": 1,
+    "main_objective_count": 14,
+    "side_objective_count": 10,
+    "future_character_count": 5
+  },
+  "exportedAt": "2026-08-31T06:03:35.951Z"
+}

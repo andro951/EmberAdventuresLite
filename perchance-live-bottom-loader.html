@@ -1,0 +1,29 @@
+<script>
+(() => {
+  const params = new URLSearchParams();
+  params.set("live", Date.now());
+  try {
+    const parentParams = new URLSearchParams(parent.location.search);
+    for (const key of ["debugScenario", "debugAllLogs", "rerun"]) {
+      const value = parentParams.get(key);
+      if (value) params.set(key, value);
+    }
+  } catch {}
+  const url = "https://localhost:51829/bottom.html?" + params.toString();
+  window.__EMBERADVENTURES_LIVE_ASSET_BASE = "https://localhost:51829";
+  document.documentElement.innerHTML = "<head><title>Loading EmberAdventures</title></head><body style=\"background:#101116;color:#f4efe6;font:16px sans-serif;padding:24px\">Loading EmberAdventures from " + url + "...</body>";
+  fetch(url, { cache: "no-store" })
+    .then(response => {
+      if (!response.ok) throw new Error("HTTP " + response.status + " loading " + url);
+      return response.text();
+    })
+    .then(html => {
+      document.open();
+      document.write(html);
+      document.close();
+    })
+    .catch(error => {
+      document.body.innerHTML = "<pre style=\"white-space:pre-wrap;color:#ffd8d8;background:#2a1115;padding:16px;border:1px solid #7a303a\">EmberAdventures live loader failed:\n" + String(error && error.stack || error) + "</pre>";
+    });
+})();
+</script>

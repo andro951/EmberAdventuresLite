@@ -1,0 +1,145 @@
+{
+  "character_definition": {
+    "version": 1,
+    "id": "character-orin-tideglass",
+    "name": "Orin Tideglass",
+    "source": "Original",
+    "creation_tool": "EmberAdventures",
+    "genres": [
+      "fantasy",
+      "adventure",
+      "romance"
+    ],
+    "can_die": false,
+    "romanceable": true,
+    "gender": "male",
+    "fallback_name": "Oria Tideglass",
+    "fallback_outfits": [
+      {
+        "id": "shore",
+        "name": "Everyday full-coverage clothing",
+        "clothing": {
+          "undershirt": null,
+          "shirt": "Opaque long-sleeved high-neck tunic covering the torso completely",
+          "coat": null,
+          "underwear": "plain undergarments",
+          "pants": "Opaque full-length trousers covering both legs to the ankles",
+          "socks": "plain socks",
+          "feet": "waterproof leather shoes",
+          "neck": "tideglass pendant",
+          "waist": "small waterproof document belt"
+        }
+      }
+    ],
+    "fallback_starting_outfit_id": "shore",
+    "age": 38,
+    "role": "Coastal diplomat and surface-culture mediator",
+    "personality_description": "|[character]| is an adventurous merfolk coastal diplomat who can temporarily assume a land-dwelling form. |[character_subject_pronoun_cap]| approaches surface customs with sincere fascination and often notices contradictions that everyone else accepts without question. |[character_subject_pronoun_cap]| is patient during negotiations but mischievous when a ritual becomes absurd, and |[character]| refuses to pretend confusion is the same thing as agreement. |[character_subject_pronoun_cap]| wants the coast and the deep to exchange knowledge without turning either culture into a curiosity, though |[character]| is still learning how to represent a people whose opinions are not always unified.",
+    "speech_style": "Courteous and inquisitive, with careful questions about unfamiliar customs, vivid water metaphors, and a warm laugh at social contradictions.",
+    "boldness": 7,
+    "starting_relationship_to_player": "not yet met",
+    "starting_trust": 0,
+    "starting_attraction": 0,
+    "starting_affection": 0,
+    "starting_state_of_mind": "eager to compare two conflicting versions of a coastal treaty",
+    "starting_physical_state": "healthy adult merfolk in a temporary land-dwelling form",
+    "starting_pose": "standing beside a tide pool with a shell-sealed treaty case and an openly curious expression",
+    "appearance": {
+      "species": "tideglass reef merfolk",
+      "height": 11,
+      "body_description": "A naturally soft build.",
+      "skin_color": "cool sea-green skin with pearly markings",
+      "eye_color": "deep blue",
+      "hair_color": "black with teal highlights",
+      "hair_length": "shoulder length",
+      "hair_type": "wavy and salt-softened",
+      "extra_description": "Small translucent fins line the forearms and jaw, and pale tideglass-like markings trace the temples and collarbones.",
+      "extra_description_lower_body": "In water, the lower body becomes a broad teal-and-silver fish tail; on land, the magic supplies sturdy webbed feet and ordinary legs for a limited time.",
+      "nonhuman_lower_body": true
+    },
+    "outfits": [
+      {
+        "id": "shore",
+        "name": "Surface Diplomat Clothes",
+        "clothing": {
+          "undershirt": "sea-green undershirt",
+          "shirt": "white linen shirt",
+          "coat": "teal diplomat's coat with shell buttons",
+          "underwear": "plain undergarments",
+          "pants": "navy walking trousers",
+          "socks": "light cotton socks",
+          "feet": "waterproof leather shoes",
+          "neck": "tideglass pendant",
+          "waist": "small waterproof document belt"
+        }
+      }
+    ],
+    "starting_outfit_id": "shore",
+    "starting_held_items": {
+      "right_hand": null,
+      "left_hand": null
+    },
+    "starting_inventory": [
+      "shell-sealed treaty case",
+      "tideglass compass",
+      "surface phrasebook"
+    ],
+    "starting_known_facts": [
+      "Orin can temporarily assume a land-dwelling form and serves as a bridge between coastal surface communities and merfolk settlements.",
+      "Orin studies surface customs with genuine curiosity and is willing to question both sides when a tradition hides an unfair assumption."
+    ],
+    "stats": {},
+    "default_seed": 0,
+    "image_prompt_config": {
+      "seed_enabled": true,
+      "seed": 0,
+      "style": "",
+      "profile_style": "",
+      "negative": "",
+      "negative_prompt": ""
+    },
+    "default_profile_image": {
+      "url": "",
+      "local_image_id": "",
+      "source": "none",
+      "seed": null,
+      "prompt": "",
+      "negative_prompt": "",
+      "note": "",
+      "male": true
+    },
+    "profile_image_presentations": {
+      "male": {
+        "url": "",
+        "local_image_id": "",
+        "source": "none",
+        "seed": null,
+        "prompt": "general-audience waist-up thumbnail of Orin Tideglass, an adult male merfolk diplomat in a temporary land form, sea-green skin with pearly markings, black hair with teal highlights, teal shell-button diplomat coat, holding a shell-sealed treaty case beside a tide pool, curious thoughtful expression, coastal daylight, no text, no logo",
+        "negative_prompt": "nudity, lingerie, sexualized pose, gore, extra people, text, logo, watermark",
+        "note": "Male presentation: shell treaty case, tide pool, and diplomatic coat establish the coastal mediator role.",
+        "male": true
+      },
+      "non_male": {
+        "url": "",
+        "local_image_id": "",
+        "source": "none",
+        "seed": null,
+        "prompt": "general-audience waist-up thumbnail of Oria Tideglass, an adult female merfolk diplomat in a temporary land form, sea-green skin with pearly markings, black hair with teal highlights, teal shell-button diplomat coat, holding a shell-sealed treaty case beside a tide pool, curious thoughtful expression, coastal daylight, no text, no logo",
+        "negative_prompt": "nudity, lingerie, sexualized pose, gore, extra people, text, logo, watermark",
+        "note": "Non-male presentation: shell treaty case, tide pool, and diplomatic coat establish the coastal mediator role.",
+        "male": false
+      }
+    },
+    "profile_images": {
+      "active_image_id": "",
+      "image_ids": []
+    },
+    "images": {
+      "active_image_id": "",
+      "image_ids": []
+    },
+    "voice": null,
+    "created_at": "2026-08-31T00:00:00.000Z",
+    "updated_at": "2026-09-03T06:16:19.219Z"
+  }
+}

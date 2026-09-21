@@ -1,0 +1,20 @@
+{
+  "name": "emberadventures-lite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node build_bottom_compressed.js",
+    "build:tests": "node build_bottom_compressed.js --private-tests",
+    "test": "node tools/test-settings.cjs && node tools/test-appearance.cjs && node tools/test-content-references.cjs && node tools/test-image-safety.cjs && node tools/test-local.cjs && node tools/validate-content.cjs",
+    "test:settings": "node tools/test-settings.cjs",
+    "test:runtime": "node tools/test-local.cjs --runtime",
+    "test:smokes": "node tools/test-local.cjs --smokes",
+    "test:content": "node tools/validate-content.cjs",
+    "test:appearance": "node tools/test-appearance.cjs",
+    "test:legacy-stories": "node tools/validate-content.cjs --include-stories"
+  },
+  "devDependencies": {
+    "dexie": "4.0.11",
+    "playwright": "1.58.2"
+  }
+}

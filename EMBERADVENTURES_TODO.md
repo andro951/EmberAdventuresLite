@@ -1,0 +1,3 @@
+# Remaining work
+
+- The 54 older JSON exports in `stories/` fail the current canonical story validator, independently of the body-description change. Examples include obsolete `starting_player_count` / `starting_party_member_count` metadata, missing `allow_any_player` and `story_clock`, and outdated NPC/objective structures. Appearance fields were updated, but these story formats still need a separate content/schema revision before import. Reproduce with `node tools/validate-content.cjs --include-stories`; see `test-output/legacy-story-validation.json`. The normal content gate covers current characters and documented examples.
