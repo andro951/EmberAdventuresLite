@@ -6336,8 +6336,9 @@ JSON:`;
     });
   }
   async function generateImageHtml(prompt, negativePrompt, seed, imageModel = app.settings.imageModel, options = {}) {
+    const hostedImage = generationPreferences().image === "hosting-proxy";
     const imagePlugin = perchancePlugin("textToImagePlugin");
-    if (!imagePlugin) {
+    if (!hostedImage && !imagePlugin) {
       if (options.requirePlugin) throw new Error("Perchance text-to-image plugin is not available.");
       return "";
     }
@@ -6379,6 +6380,7 @@ JSON:`;
       });
     }
     try {
+      if (hostedImage) return await generateHostedImageHtml(promptText, negativePrompt, seed, options);
       const resultObj = imagePlugin(promptData);
       if (typeof options.onPluginResult === "function") {
         options.onPluginResult(resultObj);

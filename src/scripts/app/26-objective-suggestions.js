@@ -5063,6 +5063,7 @@ JSON PATCH:`;
                     <label class="check-row"><input id="swapAllGendersToPreferred" type="checkbox"> <span>Swap all non-player genders to preferred</span></label>
                     <label class="check-row"><input id="reducedUi" type="checkbox"> <span>Reduced UI</span></label>
                     <label>AI message length <select id="aiMessageLength"><option value="normal">Normal</option><option value="short">Short</option><option value="very_short">Very Short</option></select></label>
+                    ${generationSettingsHtml()}
                     ${localCodexSettingsHtml}
                     <label class="check-row"><input id="downloadOldImagesBeforeDelete" type="checkbox"> <span>Download old images instead of only deleting them</span></label>
                     <div class="row">
@@ -5159,6 +5160,7 @@ JSON PATCH:`;
     }
     bindVoicePreviewControls();
     bindSettingsAutoSave();
+    bindGenerationSettings();
     if ($("openBoldnessBtn")) $("openBoldnessBtn").onclick = openBoldnessModal;
   }
   function makeZip(files) {

@@ -1,0 +1,22 @@
+{
+  "text": {
+    "kind": "openai-chat",
+    "baseUrl": "https://YOUR_TEXT_ENDPOINT_ID.api.runpod.ai/v1",
+    "authorizationEnv": "RUNPOD_AUTHORIZATION",
+    "inferenceKeyEnv": "EMBER_TEXT_GATEWAY_KEY",
+    "model": "RedHatAI/Qwen3.8-27B-INT4",
+    "maxTokens": 800,
+    "temperature": 0.7,
+    "topP": 0.8,
+    "topK": 20,
+    "enableThinking": false
+  },
+  "image": {
+    "kind": "sglang-images",
+    "baseUrl": "https://YOUR_IMAGE_ENDPOINT_ID.api.runpod.ai/v1",
+    "authorizationEnv": "RUNPOD_AUTHORIZATION",
+    "model": "krea/Krea-2-Turbo",
+    "steps": 8,
+    "guidanceScale": 1.0
+  }
+}

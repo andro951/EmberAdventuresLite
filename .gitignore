@@ -7,3 +7,8 @@ test-output/
 *.pem
 bottom.runtime-tests.html
 bottom_compressed.private-tests.html
+
+hosting/*.local.json
+hosting/__pycache__/
+hosting/**/*.local.json
+hosting/**/__pycache__/

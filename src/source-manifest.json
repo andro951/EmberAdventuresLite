@@ -30,6 +30,7 @@
   ],
   "scriptBridge": "shell/between-scripts.html",
   "applicationScripts": [
+    "contracts/generation-contract.js",
     "contracts/public-library-contract.js",
     "persistence/domain-operation-contract.js",
     "scripts/integration/00-runtime-bridge.js",
@@ -39,6 +40,7 @@
     "scripts/app/00-bootstrap-storage.js",
     "scripts/app/01-diagnostics-runtime.js",
     "scripts/app/02-settings-voices.js",
+    "scripts/app/02a-generation-providers.js",
     "scripts/app/03-messages-saves.js",
     "scripts/app/03a-save-record-projector.js",
     "scripts/app/04-story-runtime.js",

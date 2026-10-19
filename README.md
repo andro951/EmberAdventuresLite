@@ -10,6 +10,8 @@ A standalone, general-audience fantasy RPG and character-chat application.
 
 The game uses Perchance for live AI text and images. A direct local preview is useful for editors and deterministic tests, but does not provide those hosted plugins. `perchance-live-bottom-loader.html` is optional; if the browser blocks localhost requests from Perchance, use the compressed bottom pane directly.
 
+Text and image generation can also be selected independently through a safe local hosting proxy. See [hosting setup, Krea image container, provider adapters, tests and limitations](hosting/README.md). Perchance remains the default. No paid resources or credentials are configured automatically.
+
 The game has its own `EmberAdventuresLiteRuntimeV1` database. Export backups through the main menu Tools before clearing browser data.
 
 ## Included systems

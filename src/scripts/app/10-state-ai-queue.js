@@ -1289,7 +1289,8 @@ const CHARACTER_BOLDNESS_PHRASES = {
       instruction: finalInstruction,
       opts,
       provider,
-      providerEndpoint: provider === "local-codex" ? String(app.settings?.localCodexTextUrl || defaultSettings.localCodexTextUrl || "").trim() : "perchance",
+      hostingProxyUrl: provider === "hosting-proxy" ? generationPreferences().proxyUrl : "",
+      providerEndpoint: provider === "local-codex" ? String(app.settings?.localCodexTextUrl || defaultSettings.localCodexTextUrl || "").trim() : provider,
       gameRuntimeGeneration: app.gameRuntimeGeneration,
       queuedAt,
       promptEditorSnapshot: app.settings?.devMode ? promptEditorSnapshotForReplay({
@@ -1548,7 +1549,7 @@ const CHARACTER_BOLDNESS_PHRASES = {
     return enqueueAiTextRequest(instruction, opts);
   }
   function exactTextProvider(value) {
-    if (value !== "local-codex" && value !== "perchance") throw new Error('textProvider must be exactly "local-codex" or "perchance".');
+    if (!["local-codex", "perchance", "hosting-proxy"].includes(value)) throw new Error('textProvider must be local-codex, perchance or hosting-proxy.');
     return value;
   }
   function localCodexTextLaunchEnabled() {
@@ -1556,7 +1557,7 @@ const CHARACTER_BOLDNESS_PHRASES = {
     return new URLSearchParams(location.search).get("localCodexText") === "1";
   }
   function currentLaunchTextProvider() {
-    return localCodexTextLaunchEnabled() ? "local-codex" : "perchance";
+    return localCodexTextLaunchEnabled() ? "local-codex" : generationPreferences().text;
   }
   function exactLocalCodexTextModel(value) {
     if (typeof value !== "string" || !Object.hasOwn(LOCAL_CODEX_TEXT_MODELS, value)) throw new Error(`localCodexTextModel must be one of: ${Object.keys(LOCAL_CODEX_TEXT_MODELS).join(", ")}.`);
@@ -1650,7 +1651,9 @@ const CHARACTER_BOLDNESS_PHRASES = {
     devLog("AI prompt", aiPromptDevLogDetail(label, instruction));
     try {
       if (isCancelled()) throw aiCancelledError(requestMessageId, cancellationReason());
-      if (exactTextProvider(opts.textProviderOverride || currentLaunchTextProvider()) === "local-codex") {
+      const provider = exactTextProvider(activeRequest?.provider || opts.textProviderOverride || currentLaunchTextProvider());
+      if (provider === "hosting-proxy") return await runHostedText(instruction, opts, activeRequest, isCancelled);
+      if (provider === "local-codex") {
         if (typeof opts.onPluginStart === "function") {
           opts.onPluginStart({
             label

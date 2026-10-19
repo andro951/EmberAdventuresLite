@@ -1,0 +1,22 @@
+services:
+  image:
+    image: ember-krea2-turbo:sglang-krea-3c560089
+    build: .
+    init: true
+    restart: "no"
+    gpus: all
+    ipc: host
+    ports:
+      - "127.0.0.1:30000:30000"
+    environment:
+      HF_TOKEN: ${HF_TOKEN:?Set an authorized read-only gated-model token in this shell}
+      EMBER_IMAGE_TOKEN: ${EMBER_IMAGE_TOKEN:?Set an inference-only bearer secret in this shell}
+      EMBER_IMAGE_MODE: http
+      EMBER_MODEL_REVISION: 98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7
+      HF_HOME: /cache/huggingface
+    volumes:
+      - model-cache:/cache
+    shm_size: 16gb
+volumes:
+  model-cache:
+    name: ember-krea2-model-cache

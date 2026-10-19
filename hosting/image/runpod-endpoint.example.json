@@ -1,0 +1,13 @@
+{
+  "name": "ember-lite-krea2-turbo",
+  "templateId": "YOUR_PRIVATE_TEMPLATE_ID",
+  "computeType": "GPU",
+  "gpuTypeIds": ["NVIDIA A40", "NVIDIA RTX A6000"],
+  "allowedCudaVersions": ["13.0"],
+  "gpuCount": 1,
+  "workersMin": 0,
+  "workersMax": 1,
+  "idleTimeout": 60,
+  "flashboot": true,
+  "networkVolumeId": "YOUR_100GB_NETWORK_VOLUME_ID"
+}

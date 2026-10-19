@@ -1,0 +1,14 @@
+{
+  "imageName": "YOUR_REGISTRY/ember-krea2-turbo:sglang-krea-3c560089",
+  "name": "ember-lite-krea2-turbo",
+  "category": "NVIDIA",
+  "containerDiskInGb": 100,
+  "isPublic": false,
+  "isServerless": true,
+  "volumeMountPath": "/runpod-volume",
+  "env": {
+    "EMBER_IMAGE_MODE": "runpod",
+    "HF_HOME": "/runpod-volume/huggingface",
+    "EMBER_MODEL_REVISION": "98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7"
+  }
+}
