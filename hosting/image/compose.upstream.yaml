@@ -1,0 +1,23 @@
+# Dedicated Linux GPU host. Uses official upstream image directly: no build/push.
+services:
+  image:
+    image: lmsysorg/sglang:nightly-dev-cu13-20261019-3c560089@sha256:c1f4d9fc6fcf50c2269adbc757ce7b1778883af04155edb888fa9eea3b6648c0
+    init: true
+    restart: "no"
+    gpus: all
+    ipc: host
+    entrypoint: ["python3", "/opt/ember-image/worker.py"]
+    ports:
+      - "127.0.0.1:30000:30000"
+    environment:
+      HF_TOKEN: ${HF_TOKEN:?Set an authorized read-only gated-model token in this shell}
+      EMBER_IMAGE_MODE: upstream
+      EMBER_MODEL_REVISION: 98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7
+      HF_HOME: /cache/huggingface
+    volumes:
+      - ./worker.py:/opt/ember-image/worker.py:ro
+      - model-cache:/cache
+    shm_size: 16gb
+volumes:
+  model-cache:
+    name: ember-krea2-model-cache

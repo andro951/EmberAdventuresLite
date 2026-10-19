@@ -26,7 +26,7 @@ function validateConfig(config) {
     }
     contract.exact(c, fields, at);
     for (const key of fields.filter(k => !["kind", "cost", "maxTokens", "temperature", "pollIntervalMs", "steps", "cfgScale", "guidanceScale", "topP", "topK", "enableThinking"].includes(k))) contract.string(c[key], `${at}.${key}`, key === "authorizationEnv");
-    if (role === "text" && c.kind !== "disabled" && (typeof c.enableThinking !== "boolean" || typeof c.topP !== "number" || c.topP <= 0 || c.topP > 1 || !Number.isInteger(c.topK) || c.topK < 1)) throw new Error(`${at} has invalid enableThinking/topP/topK.`);
+    if (role === "text" && c.kind !== "disabled" && (c.enableThinking !== null && typeof c.enableThinking !== "boolean" || typeof c.topP !== "number" || c.topP <= 0 || c.topP > 1 || !Number.isInteger(c.topK) || c.topK < 1)) throw new Error(`${at} has invalid enableThinking/topP/topK.`);
     for (const key of ["maxTokens", "steps", "pollIntervalMs"]) if (fields.includes(key) && (!Number.isInteger(c[key]) || c[key] < (key === "pollIntervalMs" ? 250 : 1))) throw new Error(`${at}.${key} is invalid.`);
     for (const key of ["temperature", "cfgScale", "guidanceScale", "cost"]) if (fields.includes(key) && (typeof c[key] !== "number" || !Number.isFinite(c[key]) || c[key] < 0)) throw new Error(`${at}.${key} is invalid.`);
     if (c.baseUrl) {
@@ -164,7 +164,7 @@ function createAdapters(config, options = {}) {
       // Chat APIs do not universally support assistant prefilling. Carry the requested prefix
       // as an instruction, then restore it once at the browser boundary if it was omitted.
       const messages = [{role: "system", content: "You are the generation engine for a general-audience fantasy RPG. Follow the requested format exactly. Keep all content safe for work." + (request.startWith ? ` Begin your answer with this exact prefix: ${JSON.stringify(request.startWith)}.` : "")}, {role: "user", content: request.instruction}];
-      const sampling = {max_tokens: c.maxTokens, temperature: c.temperature, top_p: c.topP, top_k: c.topK, chat_template_kwargs: {enable_thinking: c.enableThinking}, ...(request.stopSequences.length ? {stop: request.stopSequences} : {})};
+      const sampling = {max_tokens: c.maxTokens, temperature: c.temperature, top_p: c.topP, top_k: c.topK, ...(c.enableThinking === null ? {} : {chat_template_kwargs: {enable_thinking: c.enableThinking}}), ...(request.stopSequences.length ? {stop: request.stopSequences} : {})};
       if (c.kind === "runpod-vllm") {
         const output = await runpod(c, {route: "/v1/chat/completions", body: {model: c.model, messages, stream: false, ...sampling}}, signal);
         // Current worker-vllm (vLLM 0.31.0) aggregates the one yielded OpenAI response.

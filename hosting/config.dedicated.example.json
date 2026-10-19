@@ -3,17 +3,17 @@
     "kind": "openai-chat",
     "baseUrl": "https://YOUR-TEXT-ENDPOINT/v1",
     "authorizationEnv": "EMBER_TEXT_AUTHORIZATION",
-    "model": "RedHatAI/Qwen3.8-27B-INT4",
+    "model": "ember-qwen-27b",
     "maxTokens": 800,
     "temperature": 0.7,
     "topP": 0.8,
     "topK": 20,
-    "enableThinking": false
+    "enableThinking": null
   },
   "image": {
     "kind": "sglang-images",
     "baseUrl": "http://127.0.0.1:30000/v1",
-    "authorizationEnv": "EMBER_IMAGE_AUTHORIZATION",
+    "authorizationEnv": "",
     "model": "krea/Krea-2-Turbo",
     "steps": 8,
     "guidanceScale": 1.0

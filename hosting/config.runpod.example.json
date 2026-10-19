@@ -3,7 +3,7 @@
     "kind": "runpod-vllm",
     "baseUrl": "https://api.runpod.ai/v2/YOUR_TEXT_ENDPOINT_ID",
     "authorizationEnv": "RUNPOD_AUTHORIZATION",
-    "model": "RedHatAI/Qwen3.8-27B-INT4",
+    "model": "ember-qwen-27b",
     "maxTokens": 800,
     "temperature": 0.7,
     "pollIntervalMs": 1500,

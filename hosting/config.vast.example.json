@@ -5,7 +5,7 @@
     "apiKeyEnv": "VAST_API_KEY",
     "python": "python",
     "cost": 800,
-    "model": "RedHatAI/Qwen3.8-27B-INT4",
+    "model": "ember-qwen-27b",
     "maxTokens": 800,
     "temperature": 0.7,
     "topP": 0.8,

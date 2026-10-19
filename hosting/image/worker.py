@@ -12,6 +12,7 @@ import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 MODEL = "krea/Krea-2-Turbo"
+MODEL_FILES = ["model_index.json", "transformer/**", "text_encoder/**", "vae/**", "tokenizer/**", "scheduler/**", "processor/**"]
 BACKEND = "http://127.0.0.1:30001"
 FIELDS = {"model", "prompt", "negative_prompt", "size", "n", "response_format", "output_format", "num_inference_steps", "guidance_scale", "seed"}
 
@@ -106,15 +107,19 @@ class ImageHandler(BaseHTTPRequestHandler):
 
 def main():
     mode = os.environ.get("EMBER_IMAGE_MODE", "http")
-    if mode not in {"http", "runpod"}:
-        raise ValueError("EMBER_IMAGE_MODE must be http or runpod.")
+    if mode not in {"http", "runpod", "upstream"}:
+        raise ValueError("EMBER_IMAGE_MODE must be http, runpod or upstream.")
     if mode == "http" and not os.environ.get("EMBER_IMAGE_TOKEN") and os.environ.get("EMBER_PROVIDER_AUTH") != "runpod":
         raise ValueError("HTTP mode needs EMBER_IMAGE_TOKEN, or EMBER_PROVIDER_AUTH=runpod behind the authenticated RunPod gateway.")
     model_path = os.environ.get("EMBER_MODEL_PATH")
     if not model_path:
         from huggingface_hub import snapshot_download
-        model_path = snapshot_download(repo_id=MODEL, revision=os.environ.get("EMBER_MODEL_REVISION", "98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7"), token=os.environ.get("HF_TOKEN"))
-    child = subprocess.Popen(["sglang", "serve", "--model-path", model_path, "--num-gpus", "1", "--host", "127.0.0.1", "--port", "30001"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        model_path = snapshot_download(repo_id=MODEL, revision=os.environ.get("EMBER_MODEL_REVISION", "98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7"), token=os.environ.get("HF_TOKEN"), allow_patterns=MODEL_FILES)
+    if mode == "upstream":
+        # Official container + read-only mounted script: no custom build/publication.
+        # Publish its container port to host loopback only; use an SSH tunnel.
+        os.execvp("sglang", ["sglang", "serve", "--model-path", model_path, "--model-id", "Krea-2-Turbo", "--served-model-name", MODEL, "--num-gpus", "1", "--host", "0.0.0.0", "--port", "30000"])
+    child = subprocess.Popen(["sglang", "serve", "--model-path", model_path, "--model-id", "Krea-2-Turbo", "--served-model-name", MODEL, "--num-gpus", "1", "--host", "127.0.0.1", "--port", "30001"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     def stop(*_args):
         child.terminate()
         raise SystemExit(0)

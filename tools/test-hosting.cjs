@@ -49,6 +49,10 @@ test("shared demo RunPod load-balancer contract uses both gateway and platform c
   const calls=[];const g=createAdapters({text:{...chat,inferenceKeyEnv:"GATEWAY_KEY"},image:disabled()},{env:{TEST_AUTH:"Bearer fake-platform",GATEWAY_KEY:"fake-gateway"},fetch:mock([chatResult],calls)});
   await g("text",text);assert.equal(calls[0].headers.Authorization,"Bearer fake-platform");assert.equal(calls[0].headers["X-Inference-Key"],"fake-gateway");
 });
+test("generic llama.cpp candidate can omit vLLM-specific thinking controls",async()=>{
+  const calls=[];const g=createAdapters({text:{...chat,model:"ember-qwen-27b",enableThinking:null},image:disabled()},{env:{TEST_AUTH:"Bearer fake"},fetch:mock([chatResult],calls)});
+  await g("text",text);assert.equal(calls[0].payload.model,"ember-qwen-27b");assert.equal(Object.hasOwn(calls[0].payload,"chat_template_kwargs"),false);
+});
 test("Krea queue worker returns its image schema after RunPod polling",async()=>{
   const calls=[];const c={kind:"runpod-sglang-images",baseUrl:"https://api.runpod.ai/v2/krea-test",authorizationEnv:"TEST_AUTH",model:"krea/Krea-2-Turbo",steps:8,guidanceScale:1,pollIntervalMs:250};
   const g=createAdapters({text:disabled(),image:c},{env:{TEST_AUTH:"Bearer fake"},sleep:async()=>{},fetch:mock([{id:"k",status:"IN_QUEUE"},{id:"k",status:"COMPLETED",output:{data:[{b64_json:"aGVsbG8="}]}}],calls)});
@@ -109,5 +113,12 @@ test("RunPod deployment lifecycle is dry by default and mocks create/delete with
   const options={execute:true,stateFile,image:"fixture/krea:test",volumeId:"volume-fixture",env:{RUNPOD_MANAGEMENT_KEY:"fake-management-token",HF_TOKEN:"fake-hf-token"},fetch:fetcher};
   const result=await lifecycle("create",options);assert.equal(result.endpointId,"endpoint-fixture");assert.equal(calls[1].payload.workersMin,0);assert.equal(calls[1].payload.workersMax,1);assert.equal(calls[0].payload.env.HF_TOKEN,"fake-hf-token");assert.doesNotMatch(fs.readFileSync(stateFile,"utf8"),/token/);
   await assert.rejects(lifecycle("create",options),/already exists/);await lifecycle("delete",options);assert.equal(calls[2].method,"DELETE");assert.equal(calls[3].method,"DELETE");
+});
+test("official upstream RunPod template embeds reviewed bootstrap without registry publication",async()=>{
+  const {lifecycle,upstreamEntrypoint}=require("../hosting/image/runpod-lifecycle.cjs");const stateFile=path.join(tmp,"upstream.local.json"),calls=[];
+  const entrypoint=upstreamEntrypoint();assert.equal(entrypoint[0],"python3");assert.match(entrypoint[2],/runpod==1.12.0/);
+  const fetcher=async(url,o)=>{calls.push(JSON.parse(o.body));return new Response(JSON.stringify({id:calls.length===1?"t-upstream":"e-upstream"}));};
+  await lifecycle("create",{execute:true,stateFile,volumeId:"v-fixture",env:{RUNPOD_MANAGEMENT_KEY:"fake-management",HF_TOKEN:"fake-hf"},fetch:fetcher});
+  assert.match(calls[0].imageName,/^lmsysorg\/sglang:nightly/);assert.deepEqual(calls[0].dockerEntrypoint,entrypoint);assert.doesNotMatch(entrypoint[2],/fake-hf|fake-management/);
 });
 test.after(()=>fs.rmSync(tmp,{recursive:true,force:true}));

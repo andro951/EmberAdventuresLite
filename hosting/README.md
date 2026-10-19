@@ -62,9 +62,11 @@ Generation selections live in a separate strict `emberadventures-lite-generation
 
 ## Selected text profile (shared with the separate demo)
 
-Default: `RedHatAI/Qwen3.8-27B-INT4`, **vLLM 0.31.0**, 16,384 context, one concurrent request, thinking disabled, temperature 0.7, top_p 0.8, top_k 20, max output 800. This is compressed-tensors **W4A16**, not GGUF Q4_K_M. Let vLLM detect its quantization; do not force `--quantization awq`. Target a separate 48 GB A40/A6000 worker. Text serving/provisioning belongs to the separate [demo repository](https://github.com/andro951/model-hosting-presentation-demo), contract revision `020b9962f6677135ec36efcfe554e6b6fb383408`; this repo owns only its request adapter and example config. Dedicated text uses a bearer inference secret. RunPod load-balancer text additionally requires the separate `X-Inference-Key` gateway secret.
+The selected deployment **candidate** is now **Qwen3.8-27B GGUF Q4_K_M through llama.cpp on a 24 GiB GPU**, served as `ember-qwen-27b`. This supersedes the earlier compressed-tensors W4A16/vLLM 48 GB default. Exact GGUF file, revision, llama.cpp image, context and engine settings belong to the separate [demo hosting setup](https://github.com/andro951/model-hosting-presentation-demo/blob/main/hosting/SETUP.md); follow its updated selected profile rather than duplicate text infrastructure here. Neither model fit nor quality has been measured by this task.
 
-The model card and runtime recipe support the serving approach; the chosen GPU fit and gameplay quality are **not locally measured**. A game's world/story JSON may need more than 800 output tokens or exceed a 16K context. The adapter reports truncation/context errors instead of silently shortening canonical game data. Increase the appropriate backend setting only after validating the intended game workflow; keep matched settings for the two-prompt comparison.
+The generic `openai-chat` adapter sends the served alias and parses `choices[0].message.content`; it does not infer the checkpoint format from that alias. The dedicated/load-balancer examples use this contract. `enableThinking: null` omits vLLM-specific `chat_template_kwargs`; configure thinking and template behavior through the selected llama.cpp/demo profile. Native `runpod-vllm` and `vast-vllm` remain opt-in adapters for independently configured vLLM deployments, not the selected GGUF runtime. Do not attempt to load the GGUF file using a vLLM template.
+
+Text serving/provisioning stays in the demo repository. Dedicated text uses a bearer inference secret. RunPod load-balancer text additionally requires the separate `X-Inference-Key` gateway secret. Lite keeps sampling configurable (example temperature 0.7, top_p 0.8, top_k 20 and output cap 800). A game's world/story JSON may require more output/context than the two-prompt demo. The adapter reports truncation/context errors instead of silently shortening canonical game data; validate each intended workflow after funding.
 
 ## Krea image setup: concrete implementation, pending funded verification
 
@@ -72,50 +74,55 @@ The read-only desktop inspection found `C:\Users\Isaac\Documents\ComfyUI`, with 
 
 Cloud target: **`krea/Krea-2-Turbo` BF16**, pinned model revision `98e0fe118d17c9e3547fbb2e25acdbae2cadf7c7`, eight steps and **SGLang guidance_scale 1.0**. This is the same family with higher precision than the local Q3 checkpoint, not evidence of a larger parameter count or guaranteed quality improvement. Do not substitute FLUX.1 Krea or assume RAW is automatically better. SGLang's documented H200 benchmark reports 37,466 MiB (36.59 GiB) peak PyTorch reserved memory over the complete request, excluding non-PyTorch allocations; choose a **separate 48 GB GPU**, batch one, initially 1024-square. That benchmark is not an A40 latency measurement. The game sends its requested aspect ratio/dimensions unchanged; those modes also need funded validation.
 
-The provided image container extends official `lmsysorg/sglang:nightly-dev-cu13-20261019-3c560089`, pinned manifest digest `sha256:c1f4d9fc6fcf50c2269adbc757ce7b1778883af04155edb888fa9eea3b6648c0`. The tag/digest and Krea pipeline/image API source at `3c560089e1818a5217a73f2168273485a5350341` were verified without pulling container layers. The cookbook labels its benchmark 0.5.13, but the plain 0.5.13 release lacks the Krea pipeline; do not use that release as the Krea runtime. The future image build asserts Krea source presence, and GPU acceptance remains unrun. It runs native SGLang behind an inference-only HTTP gateway, or a real RunPod queue handler. It has no GPU/account provisioning endpoints. Build context excludes everything except Dockerfile and worker.py. Model weights are fetched at startup into the persistent cache only when you later launch it.
+The provided image container extends official `lmsysorg/sglang:nightly-dev-cu13-20261019-3c560089`, pinned manifest digest `sha256:c1f4d9fc6fcf50c2269adbc757ce7b1778883af04155edb888fa9eea3b6648c0`. The tag/digest and Krea pipeline/image API source at `3c560089e1818a5217a73f2168273485a5350341` were verified without pulling container layers. The cookbook labels its benchmark 0.5.13, but the plain 0.5.13 release lacks the Krea pipeline; do not use that release as the Krea runtime. The future image build asserts Krea source presence, and GPU acceptance remains unrun. It optionally runs native SGLang behind an inference-only HTTP gateway, or a real RunPod queue handler; the upstream-only Compose path uses the official image directly. It has no GPU/account provisioning endpoints. Build context excludes everything except Dockerfile and worker.py. Model weights are fetched at startup into the persistent cache only when you later launch it.
 
 ### One-time prerequisites
 
 1. User reviews/accepts the applicable Krea terms and obtains access to the gated official Hugging Face repo. No terms were accepted here. Sources give conflicting commercial guidance: resolve applicable terms before a commercial product launch; do not infer that a classroom demonstration necessarily requires the commercial subscription.
 2. User chooses/funds a provider account and GPU offer; reviews compute, disk, network-volume and registry costs. Zero workers does not eliminate stored-volume charges.
-3. Linux NVIDIA host supports the pinned container's CUDA 13 stack, Docker and NVIDIA Container Toolkit; check the selected offer's driver capability. A 48 GB GPU does not itself establish driver compatibility. Allow 100 GB container disk and a persistent 100 GB cache; adjust from actual inventory and costs. This desktop has only about 14 GB free and no Docker command, so the cloud image was **not built locally**.
+3. Linux NVIDIA host supports the pinned container's CUDA 13 stack, Docker and NVIDIA Container Toolkit; check the selected offer's driver capability. A 48 GB GPU does not itself establish driver compatibility. Allow 100 GB container disk and a persistent 100 GB cache; adjust from actual inventory and costs. This desktop has 14.89 GB (13.87 GiB) free and no Docker/Podman command or verified Linux Docker daemon. The pinned nightly amd64 image alone is **15,792,040,319 compressed bytes** (14.71 GiB), already exceeding free space before extraction. Unpacked image size was not measured. Public model metadata totals 61,995,040,979 bytes because it includes a redundant 26,283,332,608-byte root checkpoint; the launcher selects only Diffusers components, with a conservative upper bound of 35,711,708,371 bytes (33.26 GiB). Allow additional extraction/cache/build scratch; the 100 GiB free-space preflight budget is planning headroom, not a measured unpacked total. No huge pull/build was attempted. Run `python hosting/image/preflight.py --path ACTUAL_DOCKER_STORAGE_PATH` on the intended Linux host; verify the model volume separately.
 4. Keep credential roles distinct: provider management token for creating/deleting resources; inference credential for this local proxy; HF read token with gated-model access for worker downloads; registry credential only if needed to pull your private container. Do not bake tokens into image layers, arguments, model snapshots or Git.
 
-### Dedicated host on Vast or RunPod
+### Dedicated host: official upstream container directly (no build/push)
 
-Provision the chosen Linux GPU host through its console after funding approval. Upload only `hosting/image/`. On that host, enter secrets using hidden terminal input, then:
+A custom image is **not required**. On an approved Linux GPU host with Docker, upload `hosting/image/worker.py`, `compose.upstream.yaml` and `preflight.py`. The Compose file uses the immutable official upstream image and mounts the small reviewed Python launcher read-only. Upstream mode installs no extra package, downloads only the pinned Diffusers-layout components, then execs SGLang directly. No HTTP gateway wrapper or new registry artifact is needed. This direct upstream server has no application authentication in the audited diffusion source, so its host port stays loopback-only and is reached over SSH.
 
 ```bash
 cd hosting/image
+python3 preflight.py --path .
 read -rs -p 'HF read token: ' HF_TOKEN; export HF_TOKEN; echo
-read -rs -p 'Image inference secret: ' EMBER_IMAGE_TOKEN; export EMBER_IMAGE_TOKEN; echo
-docker compose build
-docker compose up -d
-curl -i http://127.0.0.1:30000/ping
+docker compose -f compose.upstream.yaml pull
+docker compose -f compose.upstream.yaml up -d
+curl -i http://127.0.0.1:30000/health
 ```
 
-HTTP 204 means initializing, 200 means the backend's read-only health endpoint is ready. This is not proof of generation quality. First startup downloads gated weights and loads the GPU; none of these commands were run here. On Isaac-PC, open an SSH tunnel with the host's verified SSH address/key:
+These are future GPU-host commands, not commands run on Isaac-PC. Readiness HTTP 200 is not a generation-quality result. The official runtime's startup warmup may itself run a synthetic generation after model loading; execute only when GPU/model loading and spend are authorized. On Isaac-PC open the verified host's SSH tunnel:
 
 ```powershell
 ssh -N -L 30000:127.0.0.1:30000 USER@HOST -p SSH_PORT
 ```
 
-Use image `kind=sglang-images`, `baseUrl=http://127.0.0.1:30000/v1`, `authorizationEnv=EMBER_IMAGE_AUTHORIZATION`, model `krea/Krea-2-Turbo`, steps 8, guidanceScale 1. Enter the matching inference secret in the local proxy shell. Keep the remote service bound behind the tunnel. For a provider-native template where Docker-in-Docker is unavailable, build/publish the supplied image once on a Linux Docker builder and launch that image directly; do not assume the provider host can run nested Docker.
+Use `config.dedicated.example.json` image settings: `kind=sglang-images`, `baseUrl=http://127.0.0.1:30000/v1`, `authorizationEnv=""`, model `krea/Krea-2-Turbo`, steps 8, guidanceScale 1. Authentication is provided by the SSH connection. Do not expose the unauthenticated upstream port to the Internet.
 
-Stop the image process with `docker compose stop`. Remove containers while retaining cache with `docker compose down`. Remove the cache only when you explicitly intend to discard downloaded models: `docker volume rm ember-krea2-model-cache`. Separately stop/terminate the paid provider instance and remove unwanted provider volumes in its console; stopping a Docker container alone does not stop GPU rental billing.
+Stop with `docker compose -f compose.upstream.yaml stop`; remove containers while retaining cache with `docker compose -f compose.upstream.yaml down`. Remove cache only when explicitly discarding weights: `docker volume rm ember-krea2-model-cache`. Separately stop/terminate the provider instance and remove unwanted provider volumes to end billing.
+
+The existing `compose.yaml` + Dockerfile remain an optional packaging choice for the authenticated HTTP wrapper. That path needs `EMBER_IMAGE_TOKEN`, `docker compose build`, then `docker compose up -d`; no publication is needed when building directly on the GPU host. If a provider's native container environment cannot run Docker-in-Docker, use its official-image entrypoint/start-command support or build on a separate approved Linux builder. Do not assume nested Docker is available.
 
 ### RunPod queue serverless (scale to zero)
 
-Build and publish the custom image on a suitable builder; no model files/keys are in its build context:
+The lifecycle script now defaults to the **same immutable official upstream image**, using RunPod's documented template `dockerEntrypoint`/`dockerStartCmd` fields to embed the reviewed worker source in a Python startup command. It installs pinned `runpod==1.12.0` inside the ephemeral container, then starts the real queue handler. No custom build or registry publication is required. This provider startup transport and package installation are mocked/source-checked, not paid-host verified. Startup requires package-index access, writable `/tmp`, and the normal container Python/pip runtime. A prebuilt custom image can reduce cold-start installation work but is optional, and no image was published.
+
+Optional custom packaging, only on an approved Linux builder and with explicit publication approval:
 
 ```bash
 docker build -t YOUR_REGISTRY/ember-krea2-turbo:sglang-krea-3c560089 hosting/image
-docker push YOUR_REGISTRY/ember-krea2-turbo:sglang-krea-3c560089
+# Do not push without separate explicit approval.
+# docker push YOUR_REGISTRY/ember-krea2-turbo:sglang-krea-3c560089
 ```
 
-Create a 100 GB network volume in the same eligible region as the chosen 48 GB GPU and record its ID. Private registry pulls require a provider registry connection (configure that in the console). The shipped template has `EMBER_IMAGE_MODE=runpod`, HF cache under `/runpod-volume`, zero minimum workers and one maximum worker. It is a **queue endpoint**, not a load-balancer pretending to accept `/run`. Its native RunPod job output is `{data:[{b64_json}]}`. Provider execution/TTL limits still apply; this app adds none. Review the endpoint's platform execution limit against measured cold startup before relying on long jobs.
+Create a 100 GB network volume in the same eligible region as the chosen 48 GB GPU and record its ID. Private registry pulls require a provider registry connection (configure that in the console). The lifecycle-rendered template has `EMBER_IMAGE_MODE=runpod`, HF cache under `/runpod-volume`, zero minimum workers and one maximum worker. It is a **queue endpoint**, not a load-balancer pretending to accept `/run`. Do not submit the raw template JSON alone: the lifecycle script inserts the required embedded startup command. Its native RunPod job output is `{data:[{b64_json}]}`. Provider execution/TTL limits still apply; this app adds none. Review the endpoint's platform execution limit against measured cold startup before relying on long jobs.
 
-The lifecycle script uses the documented RunPod REST `/v1/templates` and `/v1/endpoints` APIs. Default is a no-network plan:
+An optional `--image=YOUR_REGISTRY/IMAGE:TAG` uses your already-built custom image instead of embedded bootstrap. The lifecycle script uses the documented RunPod REST `/v1/templates` and `/v1/endpoints` APIs. Default is a no-network plan:
 
 ```powershell
 node hosting/image/runpod-lifecycle.cjs create
@@ -124,7 +131,7 @@ node hosting/image/runpod-lifecycle.cjs create
 After you have explicitly chosen to provision, set session `RUNPOD_MANAGEMENT_KEY` and `HF_TOKEN` using `Read-Host -MaskInput`, then:
 
 ```powershell
-node hosting/image/runpod-lifecycle.cjs create --image=YOUR_REGISTRY/ember-krea2-turbo:sglang-krea-3c560089 --volume-id=YOUR_VOLUME_ID --execute
+node hosting/image/runpod-lifecycle.cjs create --volume-id=YOUR_VOLUME_ID --execute
 node hosting/image/runpod-lifecycle.cjs status --execute
 ```
 
@@ -168,4 +175,4 @@ The second presentation demonstration must still run the **actual game using bot
 - [Vast SDK quickstart](https://docs.vast.ai/guides/serverless/quickstart), [Vast vLLM](https://docs.vast.ai/guides/serverless/vllm), [Vast ComfyUI](https://docs.vast.ai/guides/serverless/comfy-ui).
 - [SGLang Krea 2 recipe and benchmark](https://docs.sglang.io/cookbook/diffusion/Krea/Krea-2), [installation](https://docs.sglang.io/docs/sglang-diffusion/installation), [pinned Krea pipeline](https://github.com/sgl-project/sglang/blob/3c560089/python/sglang/multimodal_gen/runtime/pipelines/krea2.py), [pinned image protocol](https://github.com/sgl-project/sglang/blob/3c560089/python/sglang/multimodal_gen/runtime/entrypoints/openai/protocol.py), [official nightly tag metadata](https://hub.docker.com/r/lmsysorg/sglang/tags?name=nightly-dev-cu13-20261019-3c560089).
 - [Krea 2 Turbo model](https://huggingface.co/krea/Krea-2-Turbo), [official ComfyUI Krea 2 tutorial](https://docs.comfy.org/tutorials/image/krea/krea-2), [ComfyUI HTTP routes](https://docs.comfy.org/development/comfyui-server/comms_routes), [A1111 API](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API).
-- [Text checkpoint card](https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4), [vLLM runtime recipe](https://recipes.vllm.ai/Qwen/Qwen3.8-27B).
+- [Canonical text demo hosting setup](https://github.com/andro951/model-hosting-presentation-demo/blob/main/hosting/SETUP.md): follow its updated GGUF/llama.cpp candidate and exact revision pins.

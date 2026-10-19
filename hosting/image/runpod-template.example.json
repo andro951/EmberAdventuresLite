@@ -1,5 +1,5 @@
 {
-  "imageName": "YOUR_REGISTRY/ember-krea2-turbo:sglang-krea-3c560089",
+  "imageName": "lmsysorg/sglang:nightly-dev-cu13-20261019-3c560089@sha256:c1f4d9fc6fcf50c2269adbc757ce7b1778883af04155edb888fa9eea3b6648c0",
   "name": "ember-lite-krea2-turbo",
   "category": "NVIDIA",
   "containerDiskInGb": 100,
