@@ -4,12 +4,12 @@ Repository: `andro951/EmberAdventuresLite`, cloned from `master` at `6f5963a13f9
 
 Passed:
 
-- `node --test tools/test-hosting.cjs`: **17/17** after setup-readiness follow-up. Covers separate wire formats, request/response validation, text parameters/prefix/stops, generic llama.cpp thinking-control omission, truncation, dedicated images, RunPod polling and explicit cancellation, ComfyUI history/image retrieval, Vast SDK boundaries, provider errors, secret-safe failures, proxy origin/Host/path restrictions, mocked resource create/delete and official-image embedded startup. No external provider traffic.
+- `node --test tools/test-hosting.cjs`: **18/18** after hosted-resolution follow-up. Covers separate wire formats, request/response validation, text parameters/prefix/stops, generic llama.cpp thinking-control omission, truncation, dedicated images, RunPod polling and explicit cancellation, ComfyUI history/image retrieval, Vast SDK boundaries, provider errors, secret-safe failures, proxy origin/Host/path restrictions, mocked resource create/delete and official-image embedded startup. No external provider traffic.
 - `python tools/test-image-worker.py`: **5/5** after follow-up. SGLang image-worker validation, exact image API request, result handling, upstream-only exec without wrapper/build, offline disk/runtime preflight, and absence of a live-job timeout. No SGLang import or GPU/model load.
 - `node tools/test-settings.cjs`: passed existing strict settings/storage checks.
 - `node tools/test-image-safety.cjs`: passed existing SFW image prompt checks.
 - `node tools/test-hosting-ui.cjs`: passed in fresh headless Edge contexts. Exercised the actual text queue and image entrypoint with fake hosting responses, fake Perchance compatibility, independent persisted selections, invalid proxy-origin rejection and reload. Nonlocal network blocked. Desktop/mobile screenshots and JSON evidence are in `test-output/hosting-*`.
-- `node build_bottom_compressed.js`: source assembly, parse checks and compression round trip passed. Final build `ea-8ac024124d8830d5`.
+- `node build_bottom_compressed.js`: source assembly, parse checks and compression round trip passed. Final build `ea-ec285c20281e2753`.
 - Started the actual proxy CLI with `config.disabled.example.json`, read `/api/generation/status` locally (`text=disabled`, `image=disabled`, `remoteVerified=false`), then stopped it.
 - RunPod lifecycle **dry-run only**. Preflight correctly reports disabled providers without contacting them.
 
@@ -24,3 +24,5 @@ Follow-up readiness correction: a custom image build/publication is **optional**
 Offline local preflight correctly blocks pulling/building: no Docker/Podman command or verified Linux daemon; 14.89 GB free is less than the official amd64 image's 15,792,040,319 compressed bytes. Unpacked size is unmeasured. Model metadata is 61,995,040,979 bytes including a redundant 26,283,332,608-byte root checkpoint; selective Diffusers-component download avoids it (35,711,708,371-byte upper bound). No layers or weights were fetched. Use a suitable approved Linux host with inspected storage; `preflight.py` never downloads, installs or starts a GPU.
 
 Text examples now use the generic alias `ember-qwen-27b` for the demo's Qwen3.8-27B GGUF Q4_K_M / llama.cpp **24 GiB candidate**. Exact weights/runtime/profile stay owned by the demo; current public-to-this-connection README still showed the previous vLLM profile at inspection time, so the newer parent handoff supersedes that old default. No GPU-fit claim is made here.
+
+Hosted-resolution follow-up: verified outgoing portrait 832x1216 and profile/square 1024x1024 at both proxy and native SGLang request boundaries using mocks. Browser test asserts original Perchance 512x768 portrait / 768x768 profile requests remain unchanged. Added exact deployment request examples. The 1024-square published memory result does not establish portrait peak; portrait GPU memory/latency remain unmeasured. No GPU or paid requests were run.

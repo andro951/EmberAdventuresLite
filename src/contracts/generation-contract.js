@@ -23,6 +23,15 @@
     proxyUrl(value.proxyUrl);
     return value;
   }
+  const hostedImageDefaults = Object.freeze({portrait: "832x1216", square: "1024x1024"});
+  function hostedImageResolution(value = "512x768") {
+    // Translate only the game's existing default projections at the hosted boundary.
+    // Saved records, explicit nondefault dimensions and the Perchance path stay intact.
+    if (value === "512x768") return hostedImageDefaults.portrait;
+    if (value === "512x512" || value === "768x768") return hostedImageDefaults.square;
+    if (typeof value !== "string" || !/^[1-9]\d*x[1-9]\d*$/.test(value)) throw new Error("Image resolution must be positive WIDTHxHEIGHT.");
+    return value;
+  }
   function request(role, value) {
     if (role === "text") {
       exact(value, ["instruction", "startWith", "stopSequences"], "request");
@@ -48,7 +57,7 @@
     if (role === "text") string(value.text, "response.text"); else imageSource(value.image);
     return value;
   }
-  const api = {exact, string, proxyUrl, preferences, request, response, imageSource};
+  const api = {exact, string, proxyUrl, preferences, request, response, imageSource, hostedImageDefaults, hostedImageResolution};
   if (typeof module === "object" && module.exports) module.exports = api;
   else root.EmberGenerationContract = api;
 })(globalThis);

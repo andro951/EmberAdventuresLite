@@ -1,0 +1,12 @@
+{
+  "model": "krea/Krea-2-Turbo",
+  "prompt": "A fully clothed elven ranger at a lantern-lit high-fantasy castle gate, safe for work illustration",
+  "negative_prompt": "nudity, explicit content, text, watermark",
+  "size": "832x1216",
+  "n": 1,
+  "response_format": "b64_json",
+  "output_format": "png",
+  "num_inference_steps": 8,
+  "guidance_scale": 1.0,
+  "seed": 42
+}

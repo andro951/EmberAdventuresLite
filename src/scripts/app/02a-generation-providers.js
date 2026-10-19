@@ -9,7 +9,7 @@
   function generationSettingsHtml() {
     const settings = generationPreferences();
     const select = role => `<label>${role === "text" ? "Text" : "Image"} generation provider <select id="generation-${role}"><option value="perchance" ${settings[role] === "perchance" ? "selected" : ""}>Perchance</option><option value="hosting-proxy" ${settings[role] === "hosting-proxy" ? "selected" : ""}>Paid hosting via local proxy</option></select></label>`;
-    return `<fieldset style="grid-column:1/-1;min-width:0"><legend>Generation hosting</legend><p class="hint">Select text and images independently. Configure models and hosting in the local proxy. Keep API keys out of this page. Paid requests require your own configured endpoint.</p>${select("text")}${select("image")}<label>Local hosting proxy origin <input id="generation-proxyUrl" value="${escapeHtml(settings.proxyUrl)}"></label><p class="hint">Existing image style controls still apply prompt styles. The remote checkpoint is configured in the proxy. Remote text arrives as a complete response.</p><button type="button" id="generation-save">Save generation providers</button><p id="generation-status" role="status"></p></fieldset>`;
+    return `<fieldset style="grid-column:1/-1;min-width:0"><legend>Generation hosting</legend><p class="hint">Select text and images independently. Configure models and hosting in the local proxy. Keep API keys out of this page. Paid requests require your own configured endpoint.</p>${select("text")}${select("image")}<label>Local hosting proxy origin <input id="generation-proxyUrl" value="${escapeHtml(settings.proxyUrl)}"></label><p class="hint">Hosted defaults: portrait 832×1216; profile/square 1024×1024. Perchance keeps its existing dimensions. Existing image style controls still apply prompt styles. The remote checkpoint is configured in the proxy. Remote text arrives as a complete response.</p><button type="button" id="generation-save">Save generation providers</button><p id="generation-status" role="status"></p></fieldset>`;
   }
   function bindGenerationSettings() {
     $("generation-save").onclick = () => {
@@ -56,7 +56,7 @@
     return text.trim();
   }
   async function generateHostedImageHtml(prompt, negativePrompt, seed, options = {}) {
-    const resolution = /^(\d+)x(\d+)$/.exec(options.resolution || "512x768");
+    const resolution = /^(\d+)x(\d+)$/.exec(EmberGenerationContract.hostedImageResolution(options.resolution));
     if (!resolution) throw new Error("Image resolution must be WIDTHxHEIGHT.");
     const payload = EmberGenerationContract.request("image", {prompt: String(prompt), negativePrompt: String(negativePrompt || ""), seed: seed == null || seed === "random" ? -1 : Number(seed), width: Number(resolution[1]), height: Number(resolution[2])});
     try {

@@ -25,12 +25,16 @@ class WorkerTests(unittest.TestCase):
                 worker.validate(payload)
 
     def test_internal_image_request_and_response(self):
-        with patch.object(worker.urllib.request, "urlopen", return_value=io.BytesIO(json.dumps({"data": [{"b64_json": "aGVsbG8="}]}).encode())) as call:
-            self.assertEqual(worker.generate(self.payload()), {"data": [{"b64_json": "aGVsbG8="}]})
-            request = call.call_args.args[0]
-            self.assertEqual(request.full_url, "http://127.0.0.1:30001/v1/images/generations")
-            self.assertEqual(json.loads(request.data)["seed"], 42)
-            self.assertNotIn("timeout", call.call_args.kwargs)
+        for size in ["832x1216", "1024x1024"]:
+            with self.subTest(size=size), patch.object(worker.urllib.request, "urlopen", return_value=io.BytesIO(json.dumps({"data": [{"b64_json": "aGVsbG8="}]}).encode())) as call:
+                payload = self.payload()
+                payload["size"] = size
+                self.assertEqual(worker.generate(payload), {"data": [{"b64_json": "aGVsbG8="}]})
+                request = call.call_args.args[0]
+                self.assertEqual(request.full_url, "http://127.0.0.1:30001/v1/images/generations")
+                self.assertEqual(json.loads(request.data)["seed"], 42)
+                self.assertEqual(json.loads(request.data)["size"], size)
+                self.assertNotIn("timeout", call.call_args.kwargs)
 
     def test_missing_result_fails(self):
         with patch.object(worker.urllib.request, "urlopen", return_value=io.BytesIO(b'{"data":[]}')):

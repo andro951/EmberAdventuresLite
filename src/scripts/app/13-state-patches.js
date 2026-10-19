@@ -6360,7 +6360,7 @@ JSON:`;
       prompt: perchancePluginPromptValue(promptText),
       negativePrompt,
       seed: seed == null ? seed : String(seed),
-      resolution: options.resolution || "512x768"
+      resolution: hostedImage ? EmberGenerationContract.hostedImageResolution(options.resolution) : options.resolution || "512x768"
     };
     if (app.settings?.devMode) {
       rememberPromptEditorAiCall("images", {

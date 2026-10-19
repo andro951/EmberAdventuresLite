@@ -10,7 +10,7 @@ const {createAdapters, validateConfig, workflow} = require("../hosting/adapters.
 const {createServer} = require("../hosting/server.cjs");
 const disabled = () => ({kind: "disabled"});
 const text = {instruction: "Describe an enchanted forest.", startWith: "", stopSequences: ["END"]};
-const image = {prompt: "A fully clothed elf in a fantasy forest", negativePrompt: "nudity", width: 512, height: 768, seed: 42};
+const image = {prompt: "A fully clothed elf in a fantasy forest", negativePrompt: "nudity", width: 832, height: 1216, seed: 42};
 const chat = {kind: "openai-chat", baseUrl: "https://text.example/v1", authorizationEnv: "TEST_AUTH", model: "qwen", maxTokens: 800, temperature: 0.7, topP: 0.8, topK: 20, enableThinking: false};
 const chatResult = {choices: [{finish_reason: "stop", message: {content: "The forest glows."}}]};
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "ember-hosting-"));
@@ -28,6 +28,14 @@ test("strict shared boundaries reject unknown fields, credentials and unsafe ima
   assert.throws(() => validateConfig({text:{...chat, apiKey:"secret"},image:disabled()}));
   assert.throws(() => validateConfig({text:{...chat, baseUrl:"https://text.example?api_key=secret"},image:disabled()}));
 });
+test("hosted portrait and square defaults validate without changing explicit nondefault dimensions",()=>{
+  assert.equal(contract.hostedImageResolution(),"832x1216");
+  assert.equal(contract.hostedImageResolution("512x768"),"832x1216");
+  for(const size of ["512x512","768x768","1024x1024"])assert.equal(contract.hostedImageResolution(size),"1024x1024");
+  assert.equal(contract.hostedImageResolution("1024x576"),"1024x576");
+  for(const [width,height] of [[832,1216],[1024,1024]])assert.equal(contract.request("image",{...image,width,height}).width,width);
+  assert.throws(()=>contract.hostedImageResolution("0x1024"),/resolution/);
+});
 test("dedicated vLLM sends matching sampling, prefix and stops; rejects truncation", async () => {
   const calls=[]; const generate=createAdapters({text:chat,image:disabled()}, {fetch:mock([chatResult,{choices:[{finish_reason:"length",message:{content:"partial"}}]}],calls), env:{TEST_AUTH:"Bearer fake-for-test"}});
   assert.equal((await generate("text", {...text,startWith:"Scene:"})).text,"The forest glows.");
@@ -42,7 +50,7 @@ test("SGLang image endpoint uses image schema and preserves dimensions/seed/nega
   const g=createAdapters({text:disabled(),image:c},{fetch:mock([{data:[{b64_json:"aGVsbG8="}]}],calls)});
   assert.equal((await g("image",image)).image,"data:image/png;base64,aGVsbG8=");
   assert.equal(calls[0].url,"https://image.example/v1/images/generations");
-  assert.equal(calls[0].payload.size,"512x768"); assert.equal(calls[0].payload.negative_prompt,"nudity");
+  assert.equal(calls[0].payload.size,"832x1216"); assert.equal(calls[0].payload.negative_prompt,"nudity");
   assert.equal(calls[0].payload.guidance_scale,1);assert.equal(calls[0].payload.num_inference_steps,8);assert.equal(calls[0].payload.seed,42); assert.equal(calls[0].payload.messages,undefined);
 });
 test("shared demo RunPod load-balancer contract uses both gateway and platform credentials",async()=>{
@@ -56,7 +64,7 @@ test("generic llama.cpp candidate can omit vLLM-specific thinking controls",asyn
 test("Krea queue worker returns its image schema after RunPod polling",async()=>{
   const calls=[];const c={kind:"runpod-sglang-images",baseUrl:"https://api.runpod.ai/v2/krea-test",authorizationEnv:"TEST_AUTH",model:"krea/Krea-2-Turbo",steps:8,guidanceScale:1,pollIntervalMs:250};
   const g=createAdapters({text:disabled(),image:c},{env:{TEST_AUTH:"Bearer fake"},sleep:async()=>{},fetch:mock([{id:"k",status:"IN_QUEUE"},{id:"k",status:"COMPLETED",output:{data:[{b64_json:"aGVsbG8="}]}}],calls)});
-  assert.match((await g("image",image)).image,/^data:image\/png/);assert.equal(calls[0].payload.input.guidance_scale,1);assert.equal(calls[0].payload.input.messages,undefined);
+  assert.match((await g("image",image)).image,/^data:image\/png/);assert.equal(calls[0].payload.input.size,"832x1216");assert.equal(calls[0].payload.input.guidance_scale,1);assert.equal(calls[0].payload.input.messages,undefined);
 });
 test("Automatic1111 decodes images rather than chat",async()=>{
   const calls=[];const g=createAdapters({text:disabled(),image:{kind:"automatic1111",baseUrl:"http://127.0.0.1:7860",authorizationEnv:"",steps:20,cfgScale:7}},{fetch:mock([{images:["aGVsbG8="]}],calls)});
