@@ -62,7 +62,20 @@ Generation selections live in a separate strict `emberadventures-lite-generation
 
 ## Selected text profile (shared with the separate demo)
 
-The selected deployment **candidate** is now **Qwen3.8-27B GGUF Q4_K_M through llama.cpp on a 24 GiB GPU**, served as `ember-qwen-27b`. This supersedes the earlier compressed-tensors W4A16/vLLM 48 GB default. Exact GGUF file, revision, llama.cpp image, context and engine settings belong to the separate [demo hosting setup](https://github.com/andro951/model-hosting-presentation-demo/blob/main/hosting/SETUP.md); follow its updated selected profile rather than duplicate text infrastructure here. Neither model fit nor quality has been measured by this task.
+The selected default is now **Qwen3.8-27B GGUF Q5_K_M through llama.cpp**, served as `ember-qwen-27b`. **Q4_K_M remains a manually selected fallback**; Lite does not silently change quantization. Text serving/download/provisioning stays in the separate [demo hosting setup](https://github.com/andro951/model-hosting-presentation-demo/blob/main/hosting/SETUP.md). The unchanged generic served alias is deliberately independent of the selected GGUF file.
+
+Exact artifacts read from the completed Unity smoke report, staged plan/manifest and result packet:
+
+| Selection | Repository / revision | File / bytes | SHA-256 |
+| --- | --- | --- | --- |
+| Default Q5_K_M | `bartowski/Qwen3.8-27B-GGUF@87410e7b9a5c21e6ca70c0c9cc5237de909fe621` | `Qwen3.8-27B-Q5_K_M.gguf`, 20,923,877,088 bytes | `9f0a899d43b29285a02da149f9b62f007d7b5d5fd59afe9f46dda1b891636b0a` |
+| Manual fallback Q4_K_M | `ggml-org/Qwen3.8-27B-GGUF@a316ea527fde32c12487be7574e2db5ac2ad2a7e` | `Qwen3.8-27B-Q4_K_M.gguf`, 18,973,870,528 bytes | `c600de0300ae8a0eb3a6c0b8b5561b8b96f16bd2c863c2a66c42de29d391a747` |
+
+Measured runtime: llama.cpp commit `620d2225cc436ab0b001e3200e590e3b286ef9ab`, identified by the binary as `0.7.0-dev`, CUDA 12.8, **32,768 context allocated, one slot, FP16 K/V**, batch 2048, microbatch 512, Flash Attention on, reasoning off and speculative decoding disabled. This is provenance of the completed experiment, not a new deployment implementation in Lite; retain the demo's matching runtime/profile.
+
+On the same nominal 24 GB NVIDIA L4 (actual capacity **22.494 GiB**), each exact artifact matched **2/2 short fixtures**. Q5's sampled whole-device peak was **21.470 GiB**, with **1.025 GiB** minimum free; Q4's was **20.011 GiB**, with **2.484 GiB** minimum free. The requests were about **1.5K prompt tokens** with short outputs: **32K was allocated, not exercised by full-context stress**. This does not establish sustained serving, concurrency, all RPG workloads, other GPUs/backends, or comparative model quality. Memory was sampled at a target 100 ms interval; an unsampled instantaneous peak cannot be ruled out.
+
+Read-only evidence on Isaac-PC: `C:\Users\Isaac\Documents\Codex\2026-10-19\task\unity38-smoke-report.md`, `unity38-plan.json`, `unity38-stage-manifest.json`, and `unity38-evidence/q5_k_m/result.json`. These Unity experiments were performed outside this Lite task; this update neither loaded weights nor started inference.
 
 The generic `openai-chat` adapter sends the served alias and parses `choices[0].message.content`; it does not infer the checkpoint format from that alias. The dedicated/load-balancer examples use this contract. `enableThinking: null` omits vLLM-specific `chat_template_kwargs`; configure thinking and template behavior through the selected llama.cpp/demo profile. Native `runpod-vllm` and `vast-vllm` remain opt-in adapters for independently configured vLLM deployments, not the selected GGUF runtime. Do not attempt to load the GGUF file using a vLLM template.
 
@@ -175,4 +188,4 @@ The second presentation demonstration must still run the **actual game using bot
 - [Vast SDK quickstart](https://docs.vast.ai/guides/serverless/quickstart), [Vast vLLM](https://docs.vast.ai/guides/serverless/vllm), [Vast ComfyUI](https://docs.vast.ai/guides/serverless/comfy-ui).
 - [SGLang Krea 2 recipe and benchmark](https://docs.sglang.io/cookbook/diffusion/Krea/Krea-2), [installation](https://docs.sglang.io/docs/sglang-diffusion/installation), [pinned Krea pipeline](https://github.com/sgl-project/sglang/blob/3c560089/python/sglang/multimodal_gen/runtime/pipelines/krea2.py), [pinned image protocol](https://github.com/sgl-project/sglang/blob/3c560089/python/sglang/multimodal_gen/runtime/entrypoints/openai/protocol.py), [official nightly tag metadata](https://hub.docker.com/r/lmsysorg/sglang/tags?name=nightly-dev-cu13-20261019-3c560089).
 - [Krea 2 Turbo model](https://huggingface.co/krea/Krea-2-Turbo), [official ComfyUI Krea 2 tutorial](https://docs.comfy.org/tutorials/image/krea/krea-2), [ComfyUI HTTP routes](https://docs.comfy.org/development/comfyui-server/comms_routes), [A1111 API](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API).
-- [Canonical text demo hosting setup](https://github.com/andro951/model-hosting-presentation-demo/blob/main/hosting/SETUP.md): follow its updated GGUF/llama.cpp candidate and exact revision pins.
+- [Canonical text demo hosting setup](https://github.com/andro951/model-hosting-presentation-demo/blob/main/hosting/SETUP.md): follow its selected Q5_K_M default, Q4_K_M fallback and exact llama.cpp revision pins.
