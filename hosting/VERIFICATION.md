@@ -1,9 +1,13 @@
-# Local verification — 2026-10-19
+# Local verification - 2026-10-20
 
 Repository: `andro951/EmberAdventuresLite`, cloned from `master` at `6f5963a13f918732559937725912c421d147846b` into the separate C: workspace. Branch: `codex/paid-generation-adapters`. Initial checkout was clean. No prior project, E: drive, model-hosting demo or personal ComfyUI files were edited.
 
 Passed:
 
+- `node --test tools/test-hosting-setup.cjs`: **6/6**. Direct and actual demo relay handoff schemas, unchanged image configuration/sampling, required authentication roles, secret-free browser landing, real local child startup/shutdown, occupied-port errors and malformed configuration rejection. Provider calls use fakes only.
+- `python tools/test-hosting-launch.py`: **6/6**. Non-secret defaults, hidden new credentials, inherited credential exclusion, noninteractive rejection, full mocked guided launch/stop and invalid handoff handling. Also imported the separate demo's current `Session.handoff()` in mock mode with a temporary own-workspace directory and bytecode writes disabled, validated its real seven-field export, and confirmed zero mock cloud calls. No sibling source was edited.
+- `node tools/test-hosting-setup-ui.cjs`: passed in fresh headless Edge. The explicit launch button opens the actual Lite UI, selects hosted text, retains Perchance images, exposes no session key in storage, and performs no generation. Nonlocal network blocked; screenshot `test-output/hosting-launch.png`.
+- `Start Hosted Lite.bat --help`: passed through the actual Windows batch entrypoint. The installed `py` launcher has no registered interpreter, so detection now prefers a working Python executable, then the bundled Python, then a verified `py -3`; no provider traffic.
 - `node --test tools/test-hosting.cjs`: **18/18** after hosted-resolution follow-up. Covers separate wire formats, request/response validation, text parameters/prefix/stops, generic llama.cpp thinking-control omission, truncation, dedicated images, RunPod polling and explicit cancellation, ComfyUI history/image retrieval, Vast SDK boundaries, provider errors, secret-safe failures, proxy origin/Host/path restrictions, mocked resource create/delete and official-image embedded startup. No external provider traffic.
 - `python tools/test-image-worker.py`: **5/5** after follow-up. SGLang image-worker validation, exact image API request, result handling, upstream-only exec without wrapper/build, offline disk/runtime preflight, and absence of a live-job timeout. No SGLang import or GPU/model load.
 - `node tools/test-settings.cjs`: passed existing strict settings/storage checks.

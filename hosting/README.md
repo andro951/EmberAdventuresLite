@@ -2,7 +2,20 @@
 
 This branch connects the **actual game's text queue and image generator** to independently selected providers. Perchance is the default for both. The existing `?localCodexText=1` developer launch still takes precedence for text. No account, paid resource, secret, model download, GPU load or live deployment was created during implementation.
 
-## Start locally
+## Start locally without PowerShell
+
+With an **already prepared** OpenAI-compatible text endpoint, double-click **Start Hosted Lite.bat** in the repository root. Python 3 and Node 20+ are required; the launcher detects Isaac-PC's existing bundled Node if Node is absent from PATH.
+
+1. Enter a non-secret endpoint handoff file, or press Enter for provider, complete Chat Completions URL and model-alias prompts.
+2. Enter fresh session keys at the hidden prompts. Direct RunPod load balancing requires the API key and separate gateway inference key. No existing credentials are read.
+3. Click **Open Lite with hosted text** in the local browser page. Text changes to the local proxy; the existing image selection remains unchanged.
+4. Keep the launcher open. Press Enter there to stop the local proxy. Use the demo's separate cloud cleanup flow to stop paid resources.
+
+`hosting/config.local.json` is ignored and contains only validated non-secret settings and credential-variable names. New defaults disable both hosted roles; existing image configuration and text sampling are preserved. Keys pass through a private process pipe and are never written to that file, arguments or the browser. Starting the launcher performs no inference. Opening the game can resume existing game behavior.
+
+The separate demo's guided **Start Hosting Setup.bat → Demo & Ember Lite → Launch Lite** flow starts its own relay/proxy without a shell. In Lite, use Settings → Generation hosting, select hosted text at `http://127.0.0.1:51840`, and save. Its image backend is disabled. Its seven-field relay export and the direct endpoint handoff are distinct formats; both validate here, but a standalone relay import needs a temporary local relay key which the current demo does not expose. Prefer its integrated Launch Lite button. See [the exact handoff contracts and session interface](HANDOFF.md).
+
+The existing advanced CLI remains available:
 
 From the repository root, with Node 20+:
 

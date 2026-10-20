@@ -12,6 +12,8 @@ The game uses Perchance for live AI text and images. A direct local preview is u
 
 Text and image generation can also be selected independently through a safe local hosting proxy. See [hosting setup, Krea image container, provider adapters, tests and limitations](hosting/README.md). Perchance remains the default. No paid resources or credentials are configured automatically.
 
+For an already prepared text endpoint, double-click **Start Hosted Lite.bat**. It guides URL/configuration entry, asks for new session keys with input hidden, and opens a local page with **Open Lite with hosted text**. Python 3 and Node 20+ are required; Isaac-PC's existing bundled Node is detected. No PowerShell entry is needed. The separate demo's **Start Hosting Setup.bat → Demo & Ember Lite → Launch Lite** flow also remains compatible; see the [handoff and launch instructions](hosting/HANDOFF.md). Real paid text/image service behavior remains unverified.
+
 The game has its own `EmberAdventuresLiteRuntimeV1` database. Export backups through the main menu Tools before clearing browser data.
 
 ## Included systems

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "provider": "runpod_lb",
+  "url": "https://YOUR_ENDPOINT_ID.api.runpod.ai/v1/chat/completions",
+  "model": "ember-qwen-27b"
+}
