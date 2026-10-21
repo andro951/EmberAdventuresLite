@@ -3924,7 +3924,12 @@ Setup:\n${progressionPrompt}`, "player setup", {
       delete next.default_image_background;
     }
     if (input?.profile_image_presentations != null) next.profile_image_presentations = clone(input.profile_image_presentations);
-    if (!Number.isSafeInteger(next.age) || next.age < 18) throw new Error("character.age must be a whole number of at least 18.");
+    if (options.embeddedStory === true) {
+      next.age = exactStoryCharacterAge(input.age, "character.age");
+      if (next.age < 18 && (next.romanceable !== false || next.attraction !== 0)) throw new Error("Story characters under 18 must be non-romanceable with zero attraction.");
+    } else if (!Number.isSafeInteger(next.age) || next.age < 18) {
+      throw new Error("character.age must be a whole number of at least 18.");
+    }
     next.source = input.source;
     next.creator = input.creator;
     next.creation_tool = input.creation_tool;

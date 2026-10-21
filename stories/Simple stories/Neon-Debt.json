@@ -20,8 +20,10 @@
         "story_source": {
           "mode": "original",
           "title": "Neon Debt",
-          "description": "A small-time courier gets blamed for a stolen identity chip and has one night to prove who really sold it."
-        }
+          "description": "A small-time courier gets blamed for a stolen identity chip and has one night to prove who really sold it.",
+          "modifications": []
+        },
+        "app": "EmberAdventures"
       },
       "location": {
         "universe": "Neon Debt",
@@ -31,7 +33,8 @@
         "settlement_type": "city",
         "settlement_name": "Chromehaven",
         "district": "market underpass",
-        "specific_place": "Kestrel Pawn"
+        "specific_place": "Kestrel Pawn",
+        "npc_location_id": "loc-neon-debt-start"
       },
       "world_map": {
         "current_location_id": "loc-neon-debt-start",
@@ -150,13 +153,15 @@
         "appearance": {
           "species": "white human",
           "height": 5,
+          "body_description": "An average build.",
           "skin_color": "",
           "eye_color": "",
           "hair_color": "",
           "hair_length": "",
           "hair_type": "",
           "extra_description": "",
-          "body_description": "An average build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -164,7 +169,6 @@
             "name": "Default",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -197,7 +201,6 @@
             "name": "Casual",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -230,7 +233,6 @@
             "name": "Travel",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -263,7 +265,6 @@
             "name": "Formal",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -296,7 +297,6 @@
             "name": "Relaxed",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -331,10 +331,6 @@
           "left_hand": null
         },
         "starting_inventory": [],
-        "durable_known_facts": [
-          "This is one selectable protagonist for the story.",
-          "Their choices should drive the story without locked personality outcomes."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -346,45 +342,217 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": true
         },
-        "voice": {
-          "gender_bucket": "male",
-          "preferred_voice_name": ""
+        "voice": null,
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Caleb Arden",
+        "fallback_outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "clean fitted shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "plain practical trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "fitted techwear jacket over a breathable undershirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": "thin interface gloves",
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "dark utility trousers with sealed seams",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "mag-lock urban boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "default",
+        "starting_known_facts": [
+          "This is one selectable protagonist for the story.",
+          "Their choices should drive the story without locked personality outcomes."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
         },
-        "clothing": {
-          "hat": null,
-          "hair": null,
-          "hair_accessory": null,
-          "face": null,
-          "ears": null,
-          "neck": null,
-          "shoulders": null,
-          "bra": null,
-          "undershirt": null,
-          "shirt": "clean fitted shirt",
-          "over_shirt": null,
-          "coat": null,
-          "back": null,
-          "hands": null,
-          "right_wrist": null,
-          "left_wrist": null,
-          "right_fingers": null,
-          "left_fingers": null,
-          "waist": null,
-          "belt_accessory": null,
-          "underwear": null,
-          "pants": "plain practical trousers",
-          "skirt": null,
-          "legwear": null,
-          "socks": null,
-          "feet": "comfortable shoes",
-          "other_accessory": null
-        }
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-06-30T00:49:17.712Z",
+        "updated_at": "2026-06-30T11:42:04.338Z"
       },
       "players": [
         {
@@ -409,13 +577,15 @@
           "appearance": {
             "species": "white human",
             "height": 5,
+            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
             "hair_length": "",
             "hair_type": "",
             "extra_description": "",
-            "body_description": "An average build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -423,7 +593,6 @@
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -456,7 +625,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -489,7 +657,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -522,7 +689,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -555,7 +721,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -590,10 +755,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -605,83 +766,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": true
           },
-          "voice": {
-            "gender_bucket": "male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "maya-rivers",
-          "name": "Maya Rivers",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "female",
-          "age": 24,
-          "role": "Neon Debt protagonist",
-          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
-          "speech_style": "Warm, concise, and thoughtful.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "Black human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Caleb Arden",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -714,7 +816,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -747,7 +848,238 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.338Z"
+        },
+        {
+          "id": "maya-rivers",
+          "name": "Maya Rivers",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "female",
+          "age": 24,
+          "role": "Neon Debt protagonist",
+          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
+          "speech_style": "Warm, concise, and thoughtful.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "Black human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -780,7 +1112,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -815,10 +1146,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Her choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -830,83 +1157,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "rowan-ellis",
-          "name": "Rowan Ellis",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "non-binary",
-          "age": 24,
-          "role": "Neon Debt protagonist",
-          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
-          "speech_style": "Measured, observant, and plainspoken.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "mixed-race human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Maya Rivers",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -939,7 +1207,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -972,7 +1239,206 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Her choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.338Z"
+        },
+        {
+          "id": "rowan-ellis",
+          "name": "Rowan Ellis",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 24,
+          "role": "Neon Debt protagonist",
+          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
+          "speech_style": "Measured, observant, and plainspoken.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "mixed-race human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1005,7 +1471,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1038,7 +1503,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1073,10 +1537,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -1088,126 +1548,361 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Rowan Ellis",
+          "fallback_outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.338Z"
         }
       ],
       "characters": {},
       "npc_directory": {
         "locations": {
-          "Kestrel Pawn": {
+          "loc-neon-debt-start": {
             "label": "Kestrel Pawn",
             "characters": {
-              "Juno Marr": {
+              "juno-marr": {
                 "id": "juno-marr",
                 "name": "Juno Marr",
-                "source": "Player",
-                "creation_tool": "Codex 5.5 (Medium)",
                 "can_die": false,
                 "gender": "female",
                 "age": 28,
                 "role": "pawn broker and reluctant ally",
-                "personality_description": "A sharp, practical broker who hates being dragged into trouble but hates dirty frame jobs more.",
-                "speech_style": "Fast, clipped, and skeptical.",
-                "boldness": 4,
-                "starting_relationship_to_player": "current contact",
-                "starting_trust": 2,
-                "starting_attraction": 0,
-                "starting_affection": 0,
-                "starting_state_of_mind": "focused",
-                "starting_physical_state": "healthy",
-                "starting_pose": "standing naturally",
-                "appearance": {
-                  "species": "East Asian human",
-                  "height": 5,
-                  "skin_color": "",
-                  "eye_color": "",
-                  "hair_color": "",
-                  "hair_length": "",
-                  "hair_type": "",
-                  "extra_description": "",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Default",
-                    "clothing": {
-                      "shirt": "clean fitted shirt",
-                      "pants": "plain practical trousers",
-                      "feet": "comfortable shoes"
-                    }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": null,
-                  "left_hand": null
-                },
-                "starting_inventory": [],
-                "durable_known_facts": [
-                  "Juno Marr is present at the start and can explain the immediate situation.",
-                  "Juno Marr should be useful without taking choices away from the player.",
-                  "Juno Marr has a clear stake in the first objective.",
-                  "Juno Marr can recur if the player keeps involving them."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
                 "voice": {
                   "gender_bucket": "non_male",
                   "preferred_voice_name": ""
+                },
+                "relationship": "current contact",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "juno-marr",
+                  "name": "Juno Marr",
+                  "source": "Player",
+                  "creation_tool": "Codex 5.5 (Medium)",
+                  "can_die": false,
+                  "gender": "female",
+                  "age": 28,
+                  "role": "pawn broker and reluctant ally",
+                  "personality_description": "A sharp, practical broker who hates being dragged into trouble but hates dirty frame jobs more.",
+                  "speech_style": "Fast, clipped, and skeptical.",
+                  "boldness": 4,
+                  "starting_relationship_to_player": "current contact",
+                  "starting_trust": 2,
+                  "starting_attraction": 0,
+                  "starting_affection": 0,
+                  "starting_state_of_mind": "focused",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "standing naturally",
+                  "appearance": {
+                    "species": "East Asian human",
+                    "height": 5,
+                    "body_description": "An average build.",
+                    "skin_color": "",
+                    "eye_color": "",
+                    "hair_color": "",
+                    "hair_length": "",
+                    "hair_type": "",
+                    "extra_description": "",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": null,
+                    "left_hand": null
+                  },
+                  "starting_inventory": [],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Juno Marr",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Juno Marr is present at the start and can explain the immediate situation.",
+                    "Juno Marr should be useful without taking choices away from the player.",
+                    "Juno Marr has a clear stake in the first objective.",
+                    "Juno Marr can recur if the player keeps involving them."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-06-30T00:49:17.712Z",
+                  "updated_at": "2026-06-30T11:42:04.338Z"
                 }
               }
             }
@@ -1225,15 +1920,21 @@
             "id": "neon-debt-1-check-the-false-chip",
             "title": "Check the False Chip",
             "type": "story",
-            "kind": "main",
             "status": "active",
             "summary": "Inspect the chip that carries the player's identity.",
             "rewards": [],
             "requires": [],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "neon-debt-2-question-the-underpass-dealer",
+                "id": "neon-debt-1-check-the-false-chip-output-1",
+                "completion_instruction": "Let Juno identify one useful lead: the chip was rewritten at a nearby back-room terminal.",
+                "rewards": [],
+                "target_input_group_id": "from-neon-debt-1-check-the-false-chip"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": true,
@@ -1243,13 +1944,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player inspects the chip, asks Juno about it, or compares it to their own identity record.",
             "completion_instruction": "Let Juno identify one useful lead: the chip was rewritten at a nearby back-room terminal.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Inspect the chip that carries the player's identity."
           },
           {
             "id": "neon-debt-2-question-the-underpass-dealer",
             "title": "Question the Underpass Dealer",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Find the person who sold the chip.",
             "rewards": [
@@ -1265,10 +1965,17 @@
             "requires": [
               "neon-debt-1-check-the-false-chip"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "neon-debt-3-enter-the-courier-depot",
+                "id": "neon-debt-2-question-the-underpass-dealer-output-1",
+                "completion_instruction": "Reveal that the dealer was paid by a masked runner from a courier depot.",
+                "rewards": [],
+                "target_input_group_id": "from-neon-debt-2-question-the-underpass-dealer"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1278,13 +1985,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player reaches the underpass dealer, questions them, threatens them, bribes them, or gets a clear lead from them.",
             "completion_instruction": "Reveal that the dealer was paid by a masked runner from a courier depot.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Find the person who sold the chip."
           },
           {
             "id": "neon-debt-3-enter-the-courier-depot",
             "title": "Enter the Courier Depot",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Get inside the depot before the evidence is wiped.",
             "rewards": [
@@ -1300,10 +2006,17 @@
             "requires": [
               "neon-debt-2-question-the-underpass-dealer"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "neon-debt-4-clear-your-name",
+                "id": "neon-debt-3-enter-the-courier-depot-output-1",
+                "completion_instruction": "Show the depot's log pointing to one real culprit without resolving the final confrontation yet.",
+                "rewards": [],
+                "target_input_group_id": "from-neon-debt-3-enter-the-courier-depot"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1313,13 +2026,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player gets inside the courier depot or accesses its records.",
             "completion_instruction": "Show the depot's log pointing to one real culprit without resolving the final confrontation yet.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Get inside the depot before the evidence is wiped."
           },
           {
             "id": "neon-debt-4-clear-your-name",
             "title": "Clear Your Name",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Confront the person who tried to use the player's identity.",
             "rewards": [
@@ -1335,10 +2047,17 @@
             "requires": [
               "neon-debt-3-enter-the-courier-depot"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "id": "neon-debt-4-clear-your-name-output-1",
+                "completion_instruction": "Resolve the confrontation according to the player's approach and end with the player's name cleared but Chromehaven still dangerous.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1348,7 +2067,7 @@
             "completion_control": "ai",
             "completion_criteria": "Return yes only when the confrontation is resolved and the player is no longer the obvious suspect.",
             "completion_instruction": "Resolve the confrontation according to the player's approach and end with the player's name cleared but Chromehaven still dangerous.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Confront the person who tried to use the player's identity."
           }
         ]
       },
@@ -1364,18 +2083,28 @@
         "rules_and_constraints": [],
         "ai_private_notes": []
       },
-      "story_inventory": {},
+      "story_inventory": {
+        "items": []
+      },
       "story_shops": {},
       "story_job_offers": {},
       "story_job_offer_history": [],
       "active_generated_jobs": {},
       "story_generated_npc_pool": {},
-      "recent_changes": []
+      "recent_changes": [],
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "2026-06-30 09:00"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
     "messages": [
       {
-        "id": "neon-debt-opening",
-        "entryId": "neon-debt-opening",
         "role": "assistant",
         "speaker": "Narrator",
         "text": "Rain taps against the metal awning outside Kestrel Pawn.\n\nJuno Marr slides a cracked identity chip across the counter and keeps her voice low.\n\n(Juno Marr) \"This came in under your name. That means someone is either wearing your life or trying to bury it. Start by telling me where you were last night.\"",
@@ -1399,19 +2128,20 @@
       "rainy city"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
-      "seed": null,
+      "id": "neon-debt-title-card",
+      "title": "Neon Debt title card",
       "prompt": "",
-      "negative_prompt": "",
-      "note": ""
+      "negativePrompt": "",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
-    "starting_player_count": 3,
-    "starting_party_member_count": 0,
-    "starting_npc_count": 1,
-    "main_objective_count": 4,
-    "side_objective_count": 0,
-    "future_character_count": 0
+    "allow_any_player": false,
+    "any_player_starting_state": {}
   },
   "exportedAt": "2026-06-30T11:42:04.338Z"
 }

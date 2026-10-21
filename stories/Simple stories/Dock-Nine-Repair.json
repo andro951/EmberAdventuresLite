@@ -19,8 +19,10 @@
         "story_source": {
           "mode": "original",
           "title": "Dock Nine Repair",
-          "description": "A new repair tech on an orbital dock has one shift to fix a failing shuttle before its passengers miss the last safe launch window."
-        }
+          "description": "A new repair tech on an orbital dock has one shift to fix a failing shuttle before its passengers miss the last safe launch window.",
+          "modifications": []
+        },
+        "app": "EmberAdventures"
       },
       "location": {
         "universe": "Dock Nine Repair",
@@ -30,7 +32,8 @@
         "settlement_type": "space station",
         "settlement_name": "Luma Dock",
         "district": "repair bay",
-        "specific_place": "Dock Nine"
+        "specific_place": "Dock Nine",
+        "npc_location_id": "loc-dock-nine-repair-start"
       },
       "world_map": {
         "current_location_id": "loc-dock-nine-repair-start",
@@ -149,13 +152,15 @@
         "appearance": {
           "species": "white human",
           "height": 5,
+          "body_description": "An average build.",
           "skin_color": "",
           "eye_color": "",
           "hair_color": "",
           "hair_length": "",
           "hair_type": "",
           "extra_description": "",
-          "body_description": "An average build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -163,7 +168,6 @@
             "name": "Default",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -196,7 +200,6 @@
             "name": "Casual",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -229,7 +232,6 @@
             "name": "Travel",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -262,7 +264,6 @@
             "name": "Formal",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -295,7 +296,6 @@
             "name": "Relaxed",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -330,10 +330,6 @@
           "left_hand": null
         },
         "starting_inventory": [],
-        "durable_known_facts": [
-          "This is one selectable protagonist for the story.",
-          "Their choices should drive the story without locked personality outcomes."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -345,45 +341,217 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": true
         },
-        "voice": {
-          "gender_bucket": "male",
-          "preferred_voice_name": ""
+        "voice": null,
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Caleb Arden",
+        "fallback_outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "clean fitted shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "plain practical trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "fitted techwear jacket over a breathable undershirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": "thin interface gloves",
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "dark utility trousers with sealed seams",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "mag-lock urban boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "default",
+        "starting_known_facts": [
+          "This is one selectable protagonist for the story.",
+          "Their choices should drive the story without locked personality outcomes."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
         },
-        "clothing": {
-          "hat": null,
-          "hair": null,
-          "hair_accessory": null,
-          "face": null,
-          "ears": null,
-          "neck": null,
-          "shoulders": null,
-          "bra": null,
-          "undershirt": null,
-          "shirt": "clean fitted shirt",
-          "over_shirt": null,
-          "coat": null,
-          "back": null,
-          "hands": null,
-          "right_wrist": null,
-          "left_wrist": null,
-          "right_fingers": null,
-          "left_fingers": null,
-          "waist": null,
-          "belt_accessory": null,
-          "underwear": null,
-          "pants": "plain practical trousers",
-          "skirt": null,
-          "legwear": null,
-          "socks": null,
-          "feet": "comfortable shoes",
-          "other_accessory": null
-        }
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-06-30T00:49:17.712Z",
+        "updated_at": "2026-06-30T11:42:04.319Z"
       },
       "players": [
         {
@@ -408,13 +576,15 @@
           "appearance": {
             "species": "white human",
             "height": 5,
+            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
             "hair_length": "",
             "hair_type": "",
             "extra_description": "",
-            "body_description": "An average build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -422,7 +592,6 @@
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -455,7 +624,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -488,7 +656,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -521,7 +688,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -554,7 +720,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -589,10 +754,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -604,83 +765,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": true
           },
-          "voice": {
-            "gender_bucket": "male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "maya-rivers",
-          "name": "Maya Rivers",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "female",
-          "age": 24,
-          "role": "Dock Nine Repair protagonist",
-          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
-          "speech_style": "Warm, concise, and thoughtful.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "Black human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Caleb Arden",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -713,7 +815,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -746,7 +847,238 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.319Z"
+        },
+        {
+          "id": "maya-rivers",
+          "name": "Maya Rivers",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "female",
+          "age": 24,
+          "role": "Dock Nine Repair protagonist",
+          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
+          "speech_style": "Warm, concise, and thoughtful.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "Black human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -779,7 +1111,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -814,10 +1145,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Her choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -829,83 +1156,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "rowan-ellis",
-          "name": "Rowan Ellis",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "non-binary",
-          "age": 24,
-          "role": "Dock Nine Repair protagonist",
-          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
-          "speech_style": "Measured, observant, and plainspoken.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "mixed-race human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Maya Rivers",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -938,7 +1206,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -971,7 +1238,206 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Her choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.319Z"
+        },
+        {
+          "id": "rowan-ellis",
+          "name": "Rowan Ellis",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 24,
+          "role": "Dock Nine Repair protagonist",
+          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
+          "speech_style": "Measured, observant, and plainspoken.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "mixed-race human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1004,7 +1470,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1037,7 +1502,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1072,10 +1536,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -1087,126 +1547,361 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Rowan Ellis",
+          "fallback_outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.319Z"
         }
       ],
       "characters": {},
       "npc_directory": {
         "locations": {
-          "Dock Nine": {
+          "loc-dock-nine-repair-start": {
             "label": "Dock Nine",
             "characters": {
-              "Anika Solen": {
+              "anika-solen": {
                 "id": "anika-solen",
                 "name": "Anika Solen",
-                "source": "Player",
-                "creation_tool": "Codex 5.5 (Medium)",
                 "can_die": false,
                 "gender": "female",
                 "age": 28,
                 "role": "dock repair lead",
-                "personality_description": "A patient repair lead who teaches by asking good questions instead of grabbing the tools away.",
-                "speech_style": "Calm, technical, and encouraging.",
-                "boldness": 4,
-                "starting_relationship_to_player": "current contact",
-                "starting_trust": 2,
-                "starting_attraction": 0,
-                "starting_affection": 0,
-                "starting_state_of_mind": "focused",
-                "starting_physical_state": "healthy",
-                "starting_pose": "standing naturally",
-                "appearance": {
-                  "species": "South Asian human",
-                  "height": 5,
-                  "skin_color": "",
-                  "eye_color": "",
-                  "hair_color": "",
-                  "hair_length": "",
-                  "hair_type": "",
-                  "extra_description": "",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Default",
-                    "clothing": {
-                      "shirt": "clean fitted shirt",
-                      "pants": "plain practical trousers",
-                      "feet": "comfortable shoes"
-                    }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": null,
-                  "left_hand": null
-                },
-                "starting_inventory": [],
-                "durable_known_facts": [
-                  "Anika Solen is present at the start and can explain the immediate situation.",
-                  "Anika Solen should be useful without taking choices away from the player.",
-                  "Anika Solen has a clear stake in the first objective.",
-                  "Anika Solen can recur if the player keeps involving them."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
                 "voice": {
                   "gender_bucket": "non_male",
                   "preferred_voice_name": ""
+                },
+                "relationship": "current contact",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "anika-solen",
+                  "name": "Anika Solen",
+                  "source": "Player",
+                  "creation_tool": "Codex 5.5 (Medium)",
+                  "can_die": false,
+                  "gender": "female",
+                  "age": 28,
+                  "role": "dock repair lead",
+                  "personality_description": "A patient repair lead who teaches by asking good questions instead of grabbing the tools away.",
+                  "speech_style": "Calm, technical, and encouraging.",
+                  "boldness": 4,
+                  "starting_relationship_to_player": "current contact",
+                  "starting_trust": 2,
+                  "starting_attraction": 0,
+                  "starting_affection": 0,
+                  "starting_state_of_mind": "focused",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "standing naturally",
+                  "appearance": {
+                    "species": "South Asian human",
+                    "height": 5,
+                    "body_description": "An average build.",
+                    "skin_color": "",
+                    "eye_color": "",
+                    "hair_color": "",
+                    "hair_length": "",
+                    "hair_type": "",
+                    "extra_description": "",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": null,
+                    "left_hand": null
+                  },
+                  "starting_inventory": [],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Anika Solen",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Anika Solen is present at the start and can explain the immediate situation.",
+                    "Anika Solen should be useful without taking choices away from the player.",
+                    "Anika Solen has a clear stake in the first objective.",
+                    "Anika Solen can recur if the player keeps involving them."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-06-30T00:49:17.712Z",
+                  "updated_at": "2026-06-30T11:42:04.319Z"
                 }
               }
             }
@@ -1224,21 +1919,30 @@
             "id": "dock-nine-1-read-the-diagnostic-slate",
             "title": "Read the Diagnostic Slate",
             "type": "story",
-            "kind": "main",
             "status": "active",
             "summary": "Find out what the shuttle thinks is broken.",
             "rewards": [
               {
                 "type": "adjust_story_inventory",
-                "path": "repair_progress",
-                "amount": 1
+                "amount": 1,
+                "field_path": [
+                  "repair_progress"
+                ],
+                "operation": "add"
               }
             ],
             "requires": [],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "dock-nine-2-open-the-faulty-panel",
+                "id": "dock-nine-1-read-the-diagnostic-slate-output-1",
+                "completion_instruction": "Identify one clear repair problem and one possible false reading.",
+                "rewards": [],
+                "target_input_group_id": "from-dock-nine-1-read-the-diagnostic-slate"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": true,
@@ -1248,13 +1952,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player reads the diagnostic slate, asks Anika about the fault, or starts the first check.",
             "completion_instruction": "Identify one clear repair problem and one possible false reading.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Find out what the shuttle thinks is broken."
           },
           {
             "id": "dock-nine-2-open-the-faulty-panel",
             "title": "Open the Faulty Panel",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Inspect the shuttle part causing the launch delay.",
             "rewards": [
@@ -1270,10 +1973,17 @@
             "requires": [
               "dock-nine-1-read-the-diagnostic-slate"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "dock-nine-3-choose-the-repair-method",
+                "id": "dock-nine-2-open-the-faulty-panel-output-1",
+                "completion_instruction": "Show the physical fault clearly and keep the repair understandable.",
+                "rewards": [],
+                "target_input_group_id": "from-dock-nine-2-open-the-faulty-panel"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1283,13 +1993,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player opens, inspects, or tests the faulty panel.",
             "completion_instruction": "Show the physical fault clearly and keep the repair understandable.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Inspect the shuttle part causing the launch delay."
           },
           {
             "id": "dock-nine-3-choose-the-repair-method",
             "title": "Choose the Repair Method",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Decide between a careful fix and a fast patch.",
             "rewards": [
@@ -1305,10 +2014,8 @@
             "requires": [
               "dock-nine-2-open-the-faulty-panel"
             ],
-            "next_objectives": [],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1316,9 +2023,7 @@
             "notes": [],
             "completion_message": "",
             "completion_control": "choice",
-            "completion_criteria": "Completed immediately by EmberAdventures when the player chooses the repair method.",
             "completion_instruction": "Record the repair style and let Anika react to the risk.",
-            "auto_completed_from_prereqs": false,
             "choices": [
               {
                 "id": "careful-fix",
@@ -1335,10 +2040,16 @@
                   },
                   {
                     "type": "adjust_story_inventory",
-                    "path": "repair_progress",
-                    "amount": 1
+                    "amount": 1,
+                    "field_path": [
+                      "repair_progress"
+                    ],
+                    "operation": "add"
                   }
-                ]
+                ],
+                "next_objective_id": "dock-nine-4-clear-the-launch-window",
+                "completion_instruction": "Record the repair style and let Anika react to the risk.",
+                "target_input_group_id": "from-dock-nine-3-choose-the-repair-method"
               },
               {
                 "id": "fast-patch",
@@ -1348,18 +2059,24 @@
                 "rewards": [
                   {
                     "type": "adjust_story_inventory",
-                    "path": "repair_progress",
-                    "amount": 1
+                    "amount": 1,
+                    "field_path": [
+                      "repair_progress"
+                    ],
+                    "operation": "add"
                   }
-                ]
+                ],
+                "next_objective_id": "dock-nine-4-clear-the-launch-window",
+                "completion_instruction": "Record the repair style and let Anika react to the risk.",
+                "target_input_group_id": "from-dock-nine-3-choose-the-repair-method"
               }
-            ]
+            ],
+            "while_active_guidance": "Decide between a careful fix and a fast patch."
           },
           {
             "id": "dock-nine-4-clear-the-launch-window",
             "title": "Clear the Launch Window",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Finish the repair before the shuttle loses its launch slot.",
             "rewards": [
@@ -1375,10 +2092,17 @@
             "requires": [
               "dock-nine-3-choose-the-repair-method"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "id": "dock-nine-4-clear-the-launch-window-output-1",
+                "completion_instruction": "Resolve the launch according to the repair approach and show Anika's assessment.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1388,7 +2112,7 @@
             "completion_control": "ai",
             "completion_criteria": "Return yes only when the shuttle is cleared, delayed, or the repair outcome is resolved.",
             "completion_instruction": "Resolve the launch according to the repair approach and show Anika's assessment.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Finish the repair before the shuttle loses its launch slot."
           }
         ]
       },
@@ -1405,19 +2129,28 @@
         "ai_private_notes": []
       },
       "story_inventory": {
-        "repair_progress": 0
+        "repair_progress": 0,
+        "items": []
       },
       "story_shops": {},
       "story_job_offers": {},
       "story_job_offer_history": [],
       "active_generated_jobs": {},
       "story_generated_npc_pool": {},
-      "recent_changes": []
+      "recent_changes": [],
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "2026-06-30 09:00"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
     "messages": [
       {
-        "id": "dock-nine-repair-opening",
-        "entryId": "dock-nine-repair-opening",
         "role": "assistant",
         "speaker": "Narrator",
         "text": "Dock Nine hums under your boots.\n\nA shuttle panel hangs open beside a blinking launch timer, and Anika Solen hands you the diagnostic slate.\n\n(Anika Solen) \"Nothing glamorous. Find the fault, fix the fault, and do not let the passengers see us sweat.\"",
@@ -1440,19 +2173,20 @@
       "tool cart"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
-      "seed": null,
+      "id": "dock-nine-repair-title-card",
+      "title": "Dock Nine Repair title card",
       "prompt": "",
-      "negative_prompt": "",
-      "note": ""
+      "negativePrompt": "",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
-    "starting_player_count": 3,
-    "starting_party_member_count": 0,
-    "starting_npc_count": 1,
-    "main_objective_count": 4,
-    "side_objective_count": 0,
-    "future_character_count": 0
+    "allow_any_player": false,
+    "any_player_starting_state": {}
   },
   "exportedAt": "2026-06-30T11:42:04.319Z"
 }

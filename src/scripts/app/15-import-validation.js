@@ -393,6 +393,12 @@ function isPlainObject(value) {
     if (!Number.isSafeInteger(value) || value < 18) throw new Error(`${path} must be a whole number of at least 18.`);
     return value;
   }
+  function exactStoryCharacterAge(value, path = "age") {
+    // Embedded story definitions allow younger characters and age-zero
+    // robots. Match that contract when materializing authored NPCs.
+    if (!Number.isSafeInteger(value) || value < 0) throw new Error(`${path} must be a non-negative whole number.`);
+    return value;
+  }
   function parseAdultAgeInput(value, path = "age") {
     const parsed = typeof value === "number" ? value : typeof value === "string" && /^\d+$/.test(value.trim()) ? Number(value) : Number.NaN;
     return exactAdultAge(parsed, path);

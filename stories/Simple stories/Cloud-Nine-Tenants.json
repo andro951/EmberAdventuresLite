@@ -20,8 +20,10 @@
         "story_source": {
           "mode": "original",
           "title": "Cloud Nine Tenants",
-          "description": "A new apartment manager tries to survive move-in day without losing the master keys, the mail cart, or their patience."
-        }
+          "description": "A new apartment manager tries to survive move-in day without losing the master keys, the mail cart, or their patience.",
+          "modifications": []
+        },
+        "app": "EmberAdventures"
       },
       "location": {
         "universe": "Cloud Nine Tenants",
@@ -31,7 +33,8 @@
         "settlement_type": "city",
         "settlement_name": "Harbor City",
         "district": "Cloud Nine Apartments",
-        "specific_place": "Lobby Desk"
+        "specific_place": "Lobby Desk",
+        "npc_location_id": "loc-cloud-nine-tenants-start"
       },
       "world_map": {
         "current_location_id": "loc-cloud-nine-tenants-start",
@@ -150,13 +153,15 @@
         "appearance": {
           "species": "white human",
           "height": 5,
+          "body_description": "An average build.",
           "skin_color": "",
           "eye_color": "",
           "hair_color": "",
           "hair_length": "",
           "hair_type": "",
           "extra_description": "",
-          "body_description": "An average build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -164,7 +169,6 @@
             "name": "Default",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -197,7 +201,6 @@
             "name": "Casual",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -230,7 +233,6 @@
             "name": "Travel",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -263,7 +265,6 @@
             "name": "Formal",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -296,7 +297,6 @@
             "name": "Relaxed",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -331,10 +331,6 @@
           "left_hand": null
         },
         "starting_inventory": [],
-        "durable_known_facts": [
-          "This is one selectable protagonist for the story.",
-          "Their choices should drive the story without locked personality outcomes."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -346,45 +342,217 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": true
         },
-        "voice": {
-          "gender_bucket": "male",
-          "preferred_voice_name": ""
+        "voice": null,
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Caleb Arden",
+        "fallback_outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "clean fitted shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "plain practical trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "plain fitted travel shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "simple belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "practical travel trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable travel boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "default",
+        "starting_known_facts": [
+          "This is one selectable protagonist for the story.",
+          "Their choices should drive the story without locked personality outcomes."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
         },
-        "clothing": {
-          "hat": null,
-          "hair": null,
-          "hair_accessory": null,
-          "face": null,
-          "ears": null,
-          "neck": null,
-          "shoulders": null,
-          "bra": null,
-          "undershirt": null,
-          "shirt": "clean fitted shirt",
-          "over_shirt": null,
-          "coat": null,
-          "back": null,
-          "hands": null,
-          "right_wrist": null,
-          "left_wrist": null,
-          "right_fingers": null,
-          "left_fingers": null,
-          "waist": null,
-          "belt_accessory": null,
-          "underwear": null,
-          "pants": "plain practical trousers",
-          "skirt": null,
-          "legwear": null,
-          "socks": null,
-          "feet": "comfortable shoes",
-          "other_accessory": null
-        }
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-06-30T00:49:17.712Z",
+        "updated_at": "2026-06-30T11:42:04.314Z"
       },
       "players": [
         {
@@ -409,13 +577,15 @@
           "appearance": {
             "species": "white human",
             "height": 5,
+            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
             "hair_length": "",
             "hair_type": "",
             "extra_description": "",
-            "body_description": "An average build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -423,7 +593,6 @@
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -456,7 +625,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -489,7 +657,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -522,7 +689,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -555,7 +721,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -590,10 +755,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -605,83 +766,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": true
           },
-          "voice": {
-            "gender_bucket": "male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "maya-rivers",
-          "name": "Maya Rivers",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "female",
-          "age": 24,
-          "role": "Cloud Nine Tenants protagonist",
-          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
-          "speech_style": "Warm, concise, and thoughtful.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "Black human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Caleb Arden",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -714,7 +816,238 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.314Z"
+        },
+        {
+          "id": "maya-rivers",
+          "name": "Maya Rivers",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "female",
+          "age": 24,
+          "role": "Cloud Nine Tenants protagonist",
+          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
+          "speech_style": "Warm, concise, and thoughtful.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "Black human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -747,7 +1080,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -780,7 +1112,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -815,10 +1146,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Her choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -830,83 +1157,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "rowan-ellis",
-          "name": "Rowan Ellis",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "non-binary",
-          "age": 24,
-          "role": "Cloud Nine Tenants protagonist",
-          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
-          "speech_style": "Measured, observant, and plainspoken.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "mixed-race human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Maya Rivers",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -939,7 +1207,206 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "well-fitted travel blouse",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical fitted travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Her choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.314Z"
+        },
+        {
+          "id": "rowan-ellis",
+          "name": "Rowan Ellis",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 24,
+          "role": "Cloud Nine Tenants protagonist",
+          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
+          "speech_style": "Measured, observant, and plainspoken.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "mixed-race human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -972,7 +1439,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1005,7 +1471,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1038,7 +1503,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1073,10 +1537,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -1088,126 +1548,361 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Rowan Ellis",
+          "fallback_outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.314Z"
         }
       ],
       "characters": {},
       "npc_directory": {
         "locations": {
-          "Lobby Desk": {
+          "loc-cloud-nine-tenants-start": {
             "label": "Lobby Desk",
             "characters": {
-              "Nadia Bell": {
+              "nadia-bell": {
                 "id": "nadia-bell",
                 "name": "Nadia Bell",
-                "source": "Player",
-                "creation_tool": "Codex 5.5 (Medium)",
                 "can_die": false,
                 "gender": "female",
                 "age": 28,
                 "role": "assistant manager",
-                "personality_description": "A practical assistant manager who has seen every tenant emergency twice.",
-                "speech_style": "Cheerful, dry, and quick with advice.",
-                "boldness": 4,
-                "starting_relationship_to_player": "current contact",
-                "starting_trust": 2,
-                "starting_attraction": 0,
-                "starting_affection": 0,
-                "starting_state_of_mind": "focused",
-                "starting_physical_state": "healthy",
-                "starting_pose": "standing naturally",
-                "appearance": {
-                  "species": "Black human",
-                  "height": 5,
-                  "skin_color": "",
-                  "eye_color": "",
-                  "hair_color": "",
-                  "hair_length": "",
-                  "hair_type": "",
-                  "extra_description": "",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Default",
-                    "clothing": {
-                      "shirt": "clean fitted shirt",
-                      "pants": "plain practical trousers",
-                      "feet": "comfortable shoes"
-                    }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": null,
-                  "left_hand": null
-                },
-                "starting_inventory": [],
-                "durable_known_facts": [
-                  "Nadia Bell is present at the start and can explain the immediate situation.",
-                  "Nadia Bell should be useful without taking choices away from the player.",
-                  "Nadia Bell has a clear stake in the first objective.",
-                  "Nadia Bell can recur if the player keeps involving them."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
                 "voice": {
                   "gender_bucket": "non_male",
                   "preferred_voice_name": ""
+                },
+                "relationship": "current contact",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "nadia-bell",
+                  "name": "Nadia Bell",
+                  "source": "Player",
+                  "creation_tool": "Codex 5.5 (Medium)",
+                  "can_die": false,
+                  "gender": "female",
+                  "age": 28,
+                  "role": "assistant manager",
+                  "personality_description": "A practical assistant manager who has seen every tenant emergency twice.",
+                  "speech_style": "Cheerful, dry, and quick with advice.",
+                  "boldness": 4,
+                  "starting_relationship_to_player": "current contact",
+                  "starting_trust": 2,
+                  "starting_attraction": 0,
+                  "starting_affection": 0,
+                  "starting_state_of_mind": "focused",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "standing naturally",
+                  "appearance": {
+                    "species": "Black human",
+                    "height": 5,
+                    "body_description": "An average build.",
+                    "skin_color": "",
+                    "eye_color": "",
+                    "hair_color": "",
+                    "hair_length": "",
+                    "hair_type": "",
+                    "extra_description": "",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": null,
+                    "left_hand": null
+                  },
+                  "starting_inventory": [],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Nadia Bell",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Nadia Bell is present at the start and can explain the immediate situation.",
+                    "Nadia Bell should be useful without taking choices away from the player.",
+                    "Nadia Bell has a clear stake in the first objective.",
+                    "Nadia Bell can recur if the player keeps involving them."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-06-30T00:49:17.712Z",
+                  "updated_at": "2026-06-30T11:42:04.314Z"
                 }
               }
             }
@@ -1225,15 +1920,21 @@
             "id": "cloud-nine-1-catch-the-mail-cart",
             "title": "Catch the Mail Cart",
             "type": "story",
-            "kind": "main",
             "status": "active",
             "summary": "Stop the rolling mail cart before the lobby becomes a paper storm.",
             "rewards": [],
             "requires": [],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "cloud-nine-2-sort-the-key-mix-up",
+                "id": "cloud-nine-1-catch-the-mail-cart-output-1",
+                "completion_instruction": "Resolve the mail cart problem as a harmless comedy beat and reveal the next tenant issue.",
+                "rewards": [],
+                "target_input_group_id": "from-cloud-nine-1-catch-the-mail-cart"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": true,
@@ -1243,13 +1944,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player stops the mail cart, redirects it, or handles the immediate lobby mess.",
             "completion_instruction": "Resolve the mail cart problem as a harmless comedy beat and reveal the next tenant issue.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Stop the rolling mail cart before the lobby becomes a paper storm."
           },
           {
             "id": "cloud-nine-2-sort-the-key-mix-up",
             "title": "Sort the Key Mix-Up",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Figure out why three tenants have the wrong keys.",
             "rewards": [
@@ -1265,10 +1965,17 @@
             "requires": [
               "cloud-nine-1-catch-the-mail-cart"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "cloud-nine-3-calm-the-move-in-line",
+                "id": "cloud-nine-2-sort-the-key-mix-up-output-1",
+                "completion_instruction": "Reveal a simple human mistake, not a conspiracy, and keep the tone warm.",
+                "rewards": [],
+                "target_input_group_id": "from-cloud-nine-2-sort-the-key-mix-up"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1278,13 +1985,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player checks the key tags, talks to Nadia, or finds the source of the mix-up.",
             "completion_instruction": "Reveal a simple human mistake, not a conspiracy, and keep the tone warm.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Figure out why three tenants have the wrong keys."
           },
           {
             "id": "cloud-nine-3-calm-the-move-in-line",
             "title": "Calm the Move-In Line",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Keep move-in day from turning into a lobby argument.",
             "rewards": [
@@ -1300,10 +2006,17 @@
             "requires": [
               "cloud-nine-2-sort-the-key-mix-up"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "cloud-nine-4-close-the-lobby-desk",
+                "id": "cloud-nine-3-calm-the-move-in-line-output-1",
+                "completion_instruction": "Let the player improve the day through patience, humor, or practical organization.",
+                "rewards": [],
+                "target_input_group_id": "from-cloud-nine-3-calm-the-move-in-line"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1313,13 +2026,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player talks down the line, organizes tenants, or solves the practical bottleneck.",
             "completion_instruction": "Let the player improve the day through patience, humor, or practical organization.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Keep move-in day from turning into a lobby argument."
           },
           {
             "id": "cloud-nine-4-close-the-lobby-desk",
             "title": "Close the Lobby Desk",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "End the first shift with the building still standing.",
             "rewards": [
@@ -1335,10 +2047,17 @@
             "requires": [
               "cloud-nine-3-calm-the-move-in-line"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "id": "cloud-nine-4-close-the-lobby-desk-output-1",
+                "completion_instruction": "End on a cozy note with Nadia admitting the player did better than expected.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1348,7 +2067,7 @@
             "completion_control": "ai",
             "completion_criteria": "Return yes only when the first shift is over and the lobby's main problems are settled.",
             "completion_instruction": "End on a cozy note with Nadia admitting the player did better than expected.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "End the first shift with the building still standing."
           }
         ]
       },
@@ -1364,18 +2083,28 @@
         "rules_and_constraints": [],
         "ai_private_notes": []
       },
-      "story_inventory": {},
+      "story_inventory": {
+        "items": []
+      },
       "story_shops": {},
       "story_job_offers": {},
       "story_job_offer_history": [],
       "active_generated_jobs": {},
       "story_generated_npc_pool": {},
-      "recent_changes": []
+      "recent_changes": [],
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "2026-06-30 09:00"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
     "messages": [
       {
-        "id": "cloud-nine-tenants-opening",
-        "entryId": "cloud-nine-tenants-opening",
         "role": "assistant",
         "speaker": "Narrator",
         "text": "The Cloud Nine lobby smells like coffee, floor polish, and fresh paint.\n\nNadia Bell drops a heavy key ring into your palm just as the mail cart begins rolling away by itself.\n\n(Nadia Bell) \"First rule of management: chase the thing with wheels before answering the phone.\"",
@@ -1399,19 +2128,20 @@
       "mail cart"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
-      "seed": null,
+      "id": "cloud-nine-tenants-title-card",
+      "title": "Cloud Nine Tenants title card",
       "prompt": "",
-      "negative_prompt": "",
-      "note": ""
+      "negativePrompt": "",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
-    "starting_player_count": 3,
-    "starting_party_member_count": 0,
-    "starting_npc_count": 1,
-    "main_objective_count": 4,
-    "side_objective_count": 0,
-    "future_character_count": 0
+    "allow_any_player": false,
+    "any_player_starting_state": {}
   },
   "exportedAt": "2026-06-30T11:42:04.314Z"
 }

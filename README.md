@@ -32,7 +32,7 @@ The standalone roster contains **40 characters: 20 male and 20 female**, selecte
 
 ## Authoring
 
-See `docs/character-authoring.md` and `docs/story-authoring.md`. `docs/examples/` contains current-schema examples. The `stories/` directory also contains older authored reference files; these are retained as source material and are not all compatible with the current strict import schema. They are not automatically loaded into a new library.
+See `docs/character-authoring.md` and `docs/story-authoring.md`. `docs/examples/` contains current-schema examples. All 54 JSON files in `stories/`, including its sandbox, simple, and source-story subfolders, use the current strict import schema. These stories are imported manually and are not automatically loaded into a new library.
 
 ## Tests
 

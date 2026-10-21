@@ -553,6 +553,45 @@ const appRuntimeTests = [{
     return measurementDetail(measurement);
   }
 }, {
+  id: "authored-story-npc-ages",
+  name: "Authored story NPCs retain younger and age-zero identities",
+  execute: async () => {
+    const state = runtimeStoryFixture("runtime-story-ages").storyTemplate.state;
+    state.future_cast = { enabled: true, items: {} };
+    for (const age of [0, 7, 16, 17, 18]) {
+      const character = runtimeCharacterFixture(`runtime-story-age-${age}`).character_definition;
+      delete character.genres;
+      character.age = age;
+      character.romanceable = false;
+      character.starting_attraction = 0;
+      if (age === 0) character.gender = "robot";
+      const validation = validateCharacterDefinition(character, "story NPC", { embedded: true });
+      if (!validation.ok) throw new Error(validationErrorsText(validation));
+      const entry = { id: character.id, name: character.name, full_character: character, scene_presence: "none" };
+      state.future_cast.items[entry.id] = entry;
+      const full = futureCharacterFullCharacter(entry, entry.name, state);
+      if (full.age !== age || full.romanceable !== false || full.attraction !== 0) throw new Error(`Story NPC age ${age} or relationship settings changed during materialization.`);
+      const introduced = introduceFutureCharacterFromReward(state, { type: "introduce_future_character", character_id: entry.id, npc_location_id: state.location.npc_location_id, scene_presence: "none", reason: "Story age regression" }, { id: "story-age-test", title: "Story age test" });
+      const npc = state.npc_directory.locations[state.location.npc_location_id].characters[entry.name];
+      if (!introduced || npc?.age !== age || npc.full_character.age !== age) throw new Error(`Introducing an NPC did not preserve age ${age}.`);
+    }
+    for (const value of [-1, 1.5, "16", NaN, Infinity]) {
+      let rejected = false;
+      try { exactStoryCharacterAge(value); } catch { rejected = true; }
+      if (!rejected) throw new Error(`Invalid story age was accepted: ${value}.`);
+    }
+    for (const patch of [{ romanceable: true }, { starting_attraction: 1 }]) {
+      const character = { ...runtimeCharacterFixture("runtime-invalid-minor").character_definition, age: 17, romanceable: false, starting_attraction: 0, ...patch };
+      let rejected = false;
+      try { futureCharacterFullCharacter({ name: character.name, full_character: character }, character.name, state); } catch { rejected = true; }
+      if (!rejected) throw new Error("Invalid relationship settings for a younger story character were accepted.");
+    }
+    let adultOnlyRejected = false;
+    try { exactAdultAge(17); } catch { adultOnlyRejected = true; }
+    if (!adultOnlyRejected) throw new Error("The standalone adult-age check changed.");
+    return "five authored ages preserved through materialization and introduction; malformed ages and adult-only imports remain rejected";
+  }
+}, {
   id: "main-menu-render",
   name: "Repeated main-menu rendering stays responsive",
   execute: async () => {

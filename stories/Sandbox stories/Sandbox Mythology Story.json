@@ -16,17 +16,20 @@
       "mythology"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
-      "seed": null,
+      "id": "story-sandbox-mythology-story-title-card",
+      "title": "Sandbox Mythology Story title card",
       "prompt": "",
-      "negative_prompt": "",
-      "note": ""
+      "negativePrompt": "",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
     "messages": [
       {
-        "id": 1,
-        "entryId": 1,
         "role": "assistant",
         "speaker": "Narrator",
         "text": "Foam breaks over the lower temple steps though the tide is out.\n\nA bronze bowl waits on the altar stone. Inside it, seawater turns against the wind, circling a black feather, a gold coin, and a shard of bone.\n\nThe temple doors are shut, but the omen is already speaking.",
@@ -38,9 +41,10 @@
         "app": "EmberAdventures",
         "story_guidance": "",
         "story_source": {
-          "mode": "custom",
+          "mode": "original",
           "title": "Sandbox Mythology Story",
-          "description": "A mythology start: reach a sacred threshold and decide how to answer the omen."
+          "description": "A mythology start: reach a sacred threshold and decide how to answer the omen.",
+          "modifications": []
         },
         "genres": [
           "mythology"
@@ -54,7 +58,8 @@
         "settlement_type": "",
         "settlement_name": "",
         "district": "",
-        "specific_place": "steps below the sea temple"
+        "specific_place": "steps below the sea temple",
+        "npc_location_id": "loc-sea-temple-steps"
       },
       "world_map": {
         "current_location_id": "loc-sea-temple-steps",
@@ -105,19 +110,21 @@
         "age": 24,
         "role": "temple champion",
         "voice": null,
-        "speech_style": "",
+        "speech_style": "Clear, conversational speech suited to their role as temple champion.",
         "personality_description": "A temple champion with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
         "boldness": 6,
         "appearance": {
           "species": "adult white human",
           "height": 6,
+          "body_description": "A strong, athletic build.",
           "skin_color": "light skin",
           "eye_color": "brown eyes",
           "hair_color": "brown hair",
           "hair_length": "short hair",
           "hair_type": "practical hair",
           "extra_description": "",
-          "body_description": "A strong, athletic build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -125,7 +132,6 @@
             "name": "Casual",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -158,7 +164,6 @@
             "name": "Travel",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -191,7 +196,6 @@
             "name": "Formal",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -224,7 +228,6 @@
             "name": "Relaxed",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -270,13 +273,6 @@
           "personal papers",
           "travel bag"
         ],
-        "durable_known_facts": [
-          "This is one of three selectable player characters for mythology starts.",
-          "The character is an adult and physically adult.",
-          "The opening objective should work the same regardless of which player option is selected.",
-          "The character's exact choices, morality, relationships, and future path are decided through play.",
-          "Their starting role is temple champion, giving them a natural reason to engage with the opening situation."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -288,41 +284,188 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": true
         },
-        "clothing": {
-          "hat": null,
-          "hair": null,
-          "hair_accessory": null,
-          "face": null,
-          "ears": null,
-          "neck": null,
-          "shoulders": null,
-          "bra": null,
-          "undershirt": null,
-          "shirt": "linen wrapped tunic",
-          "over_shirt": null,
-          "coat": null,
-          "back": null,
-          "hands": null,
-          "right_wrist": null,
-          "left_wrist": null,
-          "right_fingers": null,
-          "left_fingers": null,
-          "waist": "braided belt",
-          "belt_accessory": null,
-          "underwear": null,
-          "pants": null,
-          "skirt": "same tunic falls to the ankles",
-          "legwear": null,
-          "socks": null,
-          "feet": "leather sandals",
-          "other_accessory": null
-        }
+        "id": "miles-ward",
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Miles Ward",
+        "fallback_outfits": [
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "plain fitted travel shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "simple belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "practical travel trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable travel boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "casual",
+        "starting_known_facts": [
+          "This is one of three selectable player characters for mythology starts.",
+          "The character is an adult and physically adult.",
+          "The opening objective should work the same regardless of which player option is selected.",
+          "The character's exact choices, morality, relationships, and future path are decided through play.",
+          "Their starting role is temple champion, giving them a natural reason to engage with the opening situation."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
+        },
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-06-26T00:00:00.000Z",
+        "updated_at": "2026-06-30T12:03:07.011Z"
       },
       "players": [
         {
@@ -334,19 +477,21 @@
           "age": 24,
           "role": "temple champion",
           "voice": null,
-          "speech_style": "",
+          "speech_style": "Clear, conversational speech suited to their role as temple champion.",
           "personality_description": "A temple champion with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
           "boldness": 6,
           "appearance": {
             "species": "adult white human",
             "height": 6,
+            "body_description": "A strong, athletic build.",
             "skin_color": "light skin",
             "eye_color": "brown eyes",
             "hair_color": "brown hair",
             "hair_length": "short hair",
             "hair_type": "practical hair",
             "extra_description": "",
-            "body_description": "A strong, athletic build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -354,7 +499,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -387,7 +531,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -420,7 +563,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -453,7 +595,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -499,13 +640,6 @@
             "personal papers",
             "travel bag"
           ],
-          "durable_known_facts": [
-            "This is one of three selectable player characters for mythology starts.",
-            "The character is an adult and physically adult.",
-            "The opening objective should work the same regardless of which player option is selected.",
-            "The character's exact choices, morality, relationships, and future path are decided through play.",
-            "Their starting role is temple champion, giving them a natural reason to engage with the opening situation."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -517,41 +651,188 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": true
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "linen wrapped tunic",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": "braided belt",
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": null,
-            "skirt": "same tunic falls to the ankles",
-            "legwear": null,
-            "socks": null,
-            "feet": "leather sandals",
-            "other_accessory": null
-          }
+          "id": "miles-ward",
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Miles Ward",
+          "fallback_outfits": [
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "casual",
+          "starting_known_facts": [
+            "This is one of three selectable player characters for mythology starts.",
+            "The character is an adult and physically adult.",
+            "The opening objective should work the same regardless of which player option is selected.",
+            "The character's exact choices, morality, relationships, and future path are decided through play.",
+            "Their starting role is temple champion, giving them a natural reason to engage with the opening situation."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-26T00:00:00.000Z",
+          "updated_at": "2026-06-30T12:03:07.011Z"
         },
         {
           "name": "Rhea Moss",
@@ -562,19 +843,21 @@
           "age": 26,
           "role": "shield-bearer",
           "voice": null,
-          "speech_style": "",
+          "speech_style": "Clear, conversational speech suited to their role as shield-bearer.",
           "personality_description": "A shield-bearer with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
           "boldness": 5,
           "appearance": {
             "species": "adult East Asian human",
             "height": 5,
+            "body_description": "An average build.",
             "skin_color": "light warm skin",
             "eye_color": "dark eyes",
             "hair_color": "black hair",
             "hair_length": "long hair",
             "hair_type": "straight hair",
             "extra_description": "",
-            "body_description": "An average build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -582,7 +865,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -615,7 +897,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -648,7 +929,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -694,13 +974,6 @@
             "personal papers",
             "travel bag"
           ],
-          "durable_known_facts": [
-            "This is one of three selectable player characters for mythology starts.",
-            "The character is an adult and physically adult.",
-            "The opening objective should work the same regardless of which player option is selected.",
-            "The character's exact choices, morality, relationships, and future path are decided through play.",
-            "Their starting role is shield-bearer, giving them a natural reason to engage with the opening situation."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -712,41 +985,156 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "linen wrapped tunic",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": "braided belt",
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": null,
-            "skirt": "same tunic falls to the ankles",
-            "legwear": null,
-            "socks": null,
-            "feet": "leather sandals",
-            "other_accessory": null
-          }
+          "id": "rhea-moss",
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Rhea Moss",
+          "fallback_outfits": [
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "well-fitted travel blouse",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical fitted travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "casual",
+          "starting_known_facts": [
+            "This is one of three selectable player characters for mythology starts.",
+            "The character is an adult and physically adult.",
+            "The opening objective should work the same regardless of which player option is selected.",
+            "The character's exact choices, morality, relationships, and future path are decided through play.",
+            "Their starting role is shield-bearer, giving them a natural reason to engage with the opening situation."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-26T00:00:00.000Z",
+          "updated_at": "2026-06-30T12:03:07.011Z"
         },
         {
           "name": "Sol Arden",
@@ -757,19 +1145,21 @@
           "age": 29,
           "role": "chosen mortal witness",
           "voice": null,
-          "speech_style": "",
+          "speech_style": "Clear, conversational speech suited to their role as chosen mortal witness.",
           "personality_description": "A chosen mortal witness with enough independence to make their own choices at the start of the story. They are capable, observant, and ready to respond to the opening situation without being locked into one moral path.",
           "boldness": 7,
           "appearance": {
             "species": "adult Mediterranean human",
             "height": 5,
+            "body_description": "An average build.",
             "skin_color": "olive skin",
             "eye_color": "gold-brown eyes",
             "hair_color": "dark curly hair",
             "hair_length": "short-to-medium hair",
             "hair_type": "practical styled hair",
             "extra_description": "",
-            "body_description": "An average build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -777,7 +1167,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -810,7 +1199,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -843,7 +1231,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -876,7 +1263,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -922,13 +1308,6 @@
             "personal papers",
             "travel bag"
           ],
-          "durable_known_facts": [
-            "This is one of three selectable player characters for mythology starts.",
-            "The character is an adult and physically adult.",
-            "The opening objective should work the same regardless of which player option is selected.",
-            "The character's exact choices, morality, relationships, and future path are decided through play.",
-            "Their starting role is chosen mortal witness, giving them a natural reason to engage with the opening situation."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -940,46 +1319,202 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "linen wrapped tunic",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": "braided belt",
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": null,
-            "skirt": "same tunic falls to the ankles",
-            "legwear": null,
-            "socks": null,
-            "feet": "leather sandals",
-            "other_accessory": null
-          }
+          "id": "sol-arden",
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Sol Arden",
+          "fallback_outfits": [
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "casual",
+          "starting_known_facts": [
+            "This is one of three selectable player characters for mythology starts.",
+            "The character is an adult and physically adult.",
+            "The opening objective should work the same regardless of which player option is selected.",
+            "The character's exact choices, morality, relationships, and future path are decided through play.",
+            "Their starting role is chosen mortal witness, giving them a natural reason to engage with the opening situation."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-26T00:00:00.000Z",
+          "updated_at": "2026-06-30T12:03:07.011Z"
         }
       ],
       "characters": {},
       "npc_directory": {
-        "locations": {}
+        "locations": {
+          "loc-sea-temple-steps": {
+            "label": "Sea Temple Steps",
+            "characters": {}
+          },
+          "oracle-task-stone": {
+            "label": "Oracle Task Stone",
+            "characters": {}
+          }
+        }
       },
       "world_flags": {
         "tone": "mythology opening with one clear starting objective",
@@ -993,14 +1528,12 @@
             "id": "answer-the-omen",
             "title": "Answer the Omen",
             "type": "story",
-            "kind": "main",
             "status": "active",
             "summary": "The player has reached a sacred place and needs to answer the omen before entering.",
             "rewards": [],
             "requires": [],
             "travel_location_id": "loc-sea-temple-steps",
             "travel_location_name": "Sea Temple Steps",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": true,
@@ -1010,7 +1543,16 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player answers the omen through words, ritual action, offering, refusal, or another clear response before entering the sacred place.",
             "completion_instruction": "Acknowledge the player's first concrete progress on answer the omen and keep the story open-ended after this single template objective is complete.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "The player has reached a sacred place and needs to answer the omen before entering.",
+            "next_objectives": [
+              {
+                "id": "answer-the-omen-output-1",
+                "completion_instruction": "Acknowledge the player's first concrete progress on answer the omen and keep the story open-ended after this single template objective is complete.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ]
           }
         ]
       },
@@ -1022,88 +1564,36 @@
             "name": "Mythology Guild Clerk",
             "status": "available",
             "role": "job board owner",
-            "summary": "Runs Oracle Task Stone and handles job turn-ins.",
             "full_character": {
               "name": "Mythology Guild Clerk",
               "source": "Original",
               "creation_tool": "Codex 5.5 (Medium)",
-              "genres": [
-                "mythology"
-              ],
               "age": 28,
               "gender": "female",
               "role": "job board owner",
-              "voice": {
-                "gender_bucket": "non_male",
-                "preferred_voice_name": ""
-              },
+              "voice": null,
               "personality_description": "Mythology Guild Clerk is a practical job board owner built for the sandbox job-board system, giving concrete jobs and reacting like a real local contact instead of a menu label.",
               "speech_style": "Concise, grounded, helpful, and genre-aware; gives useful job details without narrating hidden mechanics.",
-              "relationship_to_player": "local job contact",
-              "trust": 0,
-              "attraction": 0,
-              "affection": 0,
               "boldness": 5,
-              "state_of_mind": "working",
-              "physical_state": "healthy",
-              "pose": "standing behind a job counter",
               "appearance": {
                 "species": "adult human woman",
                 "height": 4,
+                "body_description": "A slender build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
                 "hair_length": "shoulder-length",
                 "hair_type": "",
                 "extra_description": "Genre-appropriate job board owner with a clear readable silhouette for a job-board hub.",
-                "body_description": "A slender build."
+                "extra_description_lower_body": "",
+                "nonhuman_lower_body": false
               },
-              "clothing": {
-                "hat": null,
-                "hair": null,
-                "hair_accessory": null,
-                "face": null,
-                "ears": null,
-                "neck": null,
-                "shoulders": null,
-                "bra": null,
-                "undershirt": null,
-                "shirt": "neat work shirt",
-                "over_shirt": "practical guild vest",
-                "coat": null,
-                "back": null,
-                "hands": null,
-                "right_wrist": null,
-                "left_wrist": null,
-                "right_fingers": null,
-                "left_fingers": null,
-                "waist": "utility belt",
-                "belt_accessory": null,
-                "underwear": null,
-                "pants": "dark work trousers",
-                "skirt": null,
-                "legwear": null,
-                "socks": null,
-                "feet": "sturdy boots",
-                "other_accessory": null
-              },
-              "held_items": {
-                "right_hand": null,
-                "left_hand": "job ledger"
-              },
-              "inventory": [],
-              "durable_known_facts": [
-                "Runs a sandbox job hub suitable for mythology stories.",
-                "Can explain available jobs, rewards, turn-ins, and local dangers.",
-                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
-              ],
               "outfits": [
                 {
                   "id": "default",
                   "name": "Default",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1136,7 +1626,6 @@
                   "name": "Relaxed",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1180,100 +1669,177 @@
               "starting_inventory": [],
               "default_seed": 0,
               "image_prompt_config": {
+                "seed_enabled": true,
                 "seed": 0,
-                "style": ""
+                "style": "",
+                "profile_style": "",
+                "negative": "",
+                "negative_prompt": ""
               },
-              "default_profile_image": null,
-              "can_die": false
-            }
+              "default_profile_image": {
+                "url": "",
+                "local_image_id": "",
+                "source": "hosted",
+                "seed": 0,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": "",
+                "male": false
+              },
+              "can_die": false,
+              "id": "story-sandbox-mythology-story-job-board-owner",
+              "version": 1,
+              "romanceable": true,
+              "fallback_name": "Mythology Guild Clerk",
+              "fallback_outfits": [
+                {
+                  "id": "default",
+                  "name": "Default",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "neat work shirt",
+                    "over_shirt": "practical guild vest",
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "sturdy boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "fallback_starting_outfit_id": "default",
+              "starting_known_facts": [
+                "Runs a sandbox job hub suitable for mythology stories.",
+                "Can explain available jobs, rewards, turn-ins, and local dangers.",
+                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
+              ],
+              "profile_image_presentations": {
+                "male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": false
+                }
+              },
+              "profile_images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "created_at": "2026-06-26T00:00:00.000Z",
+              "updated_at": "2026-06-30T12:03:07.011Z"
+            },
+            "canonical_order": 1,
+            "introduce_as": "npc",
+            "can_die": false,
+            "scene_presence": "none",
+            "npc_location_id": "loc-sea-temple-steps",
+            "note": "Runs Oracle Task Stone and handles job turn-ins.",
+            "meet_condition": "",
+            "join_condition": ""
           },
           "story-sandbox-mythology-story-job-client": {
             "id": "story-sandbox-mythology-story-job-client",
             "name": "Mythology Job Client",
             "status": "locked",
             "role": "curated job client",
-            "summary": "Client for the sandbox story's curated mythology job.",
             "full_character": {
               "name": "Mythology Job Client",
               "source": "Original",
               "creation_tool": "Codex 5.5 (Medium)",
-              "genres": [
-                "mythology"
-              ],
               "age": 28,
               "gender": "female",
               "role": "curated job client",
-              "voice": {
-                "gender_bucket": "non_male",
-                "preferred_voice_name": ""
-              },
+              "voice": null,
               "personality_description": "Mythology Job Client is a practical curated job client built for the sandbox job-board system, giving concrete jobs and reacting like a real local contact instead of a menu label.",
               "speech_style": "Concise, grounded, helpful, and genre-aware; gives useful job details without narrating hidden mechanics.",
-              "relationship_to_player": "local job contact",
-              "trust": 0,
-              "attraction": 0,
-              "affection": 0,
               "boldness": 5,
-              "state_of_mind": "working",
-              "physical_state": "healthy",
-              "pose": "standing behind a job counter",
               "appearance": {
                 "species": "adult human woman",
                 "height": 4,
+                "body_description": "A slender build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
                 "hair_length": "shoulder-length",
                 "hair_type": "",
                 "extra_description": "Genre-appropriate curated job client with a clear readable silhouette for a job-board hub.",
-                "body_description": "A slender build."
+                "extra_description_lower_body": "",
+                "nonhuman_lower_body": false
               },
-              "clothing": {
-                "hat": null,
-                "hair": null,
-                "hair_accessory": null,
-                "face": null,
-                "ears": null,
-                "neck": null,
-                "shoulders": null,
-                "bra": null,
-                "undershirt": null,
-                "shirt": "neat work shirt",
-                "over_shirt": "practical guild vest",
-                "coat": null,
-                "back": null,
-                "hands": null,
-                "right_wrist": null,
-                "left_wrist": null,
-                "right_fingers": null,
-                "left_fingers": null,
-                "waist": "utility belt",
-                "belt_accessory": null,
-                "underwear": null,
-                "pants": "dark work trousers",
-                "skirt": null,
-                "legwear": null,
-                "socks": null,
-                "feet": "sturdy boots",
-                "other_accessory": null
-              },
-              "held_items": {
-                "right_hand": null,
-                "left_hand": "job ledger"
-              },
-              "inventory": [],
-              "durable_known_facts": [
-                "Runs a sandbox job hub suitable for mythology stories.",
-                "Can explain available jobs, rewards, turn-ins, and local dangers.",
-                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
-              ],
               "outfits": [
                 {
                   "id": "default",
                   "name": "Default",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1306,7 +1872,6 @@
                   "name": "Casual",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1339,7 +1904,6 @@
                   "name": "Travel",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1372,7 +1936,6 @@
                   "name": "Relaxed",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1416,12 +1979,205 @@
               "starting_inventory": [],
               "default_seed": 0,
               "image_prompt_config": {
+                "seed_enabled": true,
                 "seed": 0,
-                "style": ""
+                "style": "",
+                "profile_style": "",
+                "negative": "",
+                "negative_prompt": ""
               },
-              "default_profile_image": null,
-              "can_die": false
-            }
+              "default_profile_image": {
+                "url": "",
+                "local_image_id": "",
+                "source": "hosted",
+                "seed": 0,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": "",
+                "male": false
+              },
+              "can_die": false,
+              "id": "story-sandbox-mythology-story-job-client",
+              "version": 1,
+              "romanceable": true,
+              "fallback_name": "Mythology Job Client",
+              "fallback_outfits": [
+                {
+                  "id": "default",
+                  "name": "Default",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "neat work shirt",
+                    "over_shirt": "practical guild vest",
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "sturdy boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "well-fitted travel blouse",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "simple belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "practical fitted travel trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "comfortable travel boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "travel",
+                  "name": "Travel",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "layered travel tunic",
+                    "over_shirt": null,
+                    "coat": "weathered short travel cloak",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "sturdy fitted travel pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "road-worn boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "fallback_starting_outfit_id": "default",
+              "starting_known_facts": [
+                "Runs a sandbox job hub suitable for mythology stories.",
+                "Can explain available jobs, rewards, turn-ins, and local dangers.",
+                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
+              ],
+              "profile_image_presentations": {
+                "male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": false
+                }
+              },
+              "profile_images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "created_at": "2026-06-26T00:00:00.000Z",
+              "updated_at": "2026-06-30T12:03:07.011Z"
+            },
+            "canonical_order": 2,
+            "introduce_as": "npc",
+            "can_die": false,
+            "scene_presence": "none",
+            "npc_location_id": "loc-sea-temple-steps",
+            "note": "Client for the sandbox story's curated mythology job.",
+            "meet_condition": "",
+            "join_condition": ""
           }
         }
       },
@@ -1456,7 +2212,8 @@
             "settlement_type": "",
             "settlement_name": "",
             "district": "Oracle Task Stone",
-            "specific_place": "Oracle Task Stone"
+            "specific_place": "Oracle Task Stone",
+            "npc_location_id": "oracle-task-stone"
           },
           "owner_npc_id": "story-sandbox-mythology-story-job-board-owner",
           "visible_count": 6,
@@ -1493,11 +2250,26 @@
               "completion_criteria": "Complete the curated mythology sandbox job in a way that fits the story genre.",
               "completion_instruction": "Resolve the curated mythology sandbox job, then point the player back toward Oracle Task Stone to turn it in."
             }
-          ]
+          ],
+          "npc_location_id": "oracle-task-stone"
         }
-      }
+      },
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "1-01-01 09:00"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
-    "starting_player_count": 3,
-    "starting_party_member_count": 0
+    "allow_any_player": false,
+    "any_player_starting_state": {},
+    "default_image_model": "",
+    "title_card_subjects": [
+      "Sandbox Mythology Story"
+    ]
   }
 }

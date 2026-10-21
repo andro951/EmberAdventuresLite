@@ -19,8 +19,10 @@
         "story_source": {
           "mode": "original",
           "title": "Brass Ballot",
-          "description": "A quiet district election turns dangerous when a steamworks candidate asks the player to guard the ballot engine."
-        }
+          "description": "A quiet district election turns dangerous when a steamworks candidate asks the player to guard the ballot engine.",
+          "modifications": []
+        },
+        "app": "EmberAdventures"
       },
       "location": {
         "universe": "Brass Ballot",
@@ -30,7 +32,8 @@
         "settlement_type": "city",
         "settlement_name": "Gearwick",
         "district": "civic hall",
-        "specific_place": "Ballot Engine Room"
+        "specific_place": "Ballot Engine Room",
+        "npc_location_id": "loc-brass-ballot-start"
       },
       "world_map": {
         "current_location_id": "loc-brass-ballot-start",
@@ -149,13 +152,15 @@
         "appearance": {
           "species": "white human",
           "height": 5,
+          "body_description": "An average build.",
           "skin_color": "",
           "eye_color": "",
           "hair_color": "",
           "hair_length": "",
           "hair_type": "",
           "extra_description": "",
-          "body_description": "An average build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -163,7 +168,6 @@
             "name": "Default",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -196,7 +200,6 @@
             "name": "Casual",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -229,7 +232,6 @@
             "name": "Travel",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -262,7 +264,6 @@
             "name": "Formal",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -295,7 +296,6 @@
             "name": "Relaxed",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -330,10 +330,6 @@
           "left_hand": null
         },
         "starting_inventory": [],
-        "durable_known_facts": [
-          "This is one selectable protagonist for the story.",
-          "Their choices should drive the story without locked personality outcomes."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -345,45 +341,217 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": true
         },
-        "voice": {
-          "gender_bucket": "male",
-          "preferred_voice_name": ""
+        "voice": null,
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Caleb Arden",
+        "fallback_outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "clean fitted shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "plain practical trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "plain fitted travel shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "simple belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "practical travel trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "comfortable travel boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "default",
+        "starting_known_facts": [
+          "This is one selectable protagonist for the story.",
+          "Their choices should drive the story without locked personality outcomes."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
         },
-        "clothing": {
-          "hat": null,
-          "hair": null,
-          "hair_accessory": null,
-          "face": null,
-          "ears": null,
-          "neck": null,
-          "shoulders": null,
-          "bra": null,
-          "undershirt": null,
-          "shirt": "clean fitted shirt",
-          "over_shirt": null,
-          "coat": null,
-          "back": null,
-          "hands": null,
-          "right_wrist": null,
-          "left_wrist": null,
-          "right_fingers": null,
-          "left_fingers": null,
-          "waist": null,
-          "belt_accessory": null,
-          "underwear": null,
-          "pants": "plain practical trousers",
-          "skirt": null,
-          "legwear": null,
-          "socks": null,
-          "feet": "comfortable shoes",
-          "other_accessory": null
-        }
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-06-30T00:49:17.712Z",
+        "updated_at": "2026-06-30T11:42:04.309Z"
       },
       "players": [
         {
@@ -408,13 +576,15 @@
           "appearance": {
             "species": "white human",
             "height": 5,
+            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
             "hair_length": "",
             "hair_type": "",
             "extra_description": "",
-            "body_description": "An average build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -422,7 +592,6 @@
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -455,7 +624,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -488,7 +656,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -521,7 +688,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -554,7 +720,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -589,10 +754,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -604,83 +765,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": true
           },
-          "voice": {
-            "gender_bucket": "male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "maya-rivers",
-          "name": "Maya Rivers",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "female",
-          "age": 24,
-          "role": "Brass Ballot protagonist",
-          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
-          "speech_style": "Warm, concise, and thoughtful.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "Black human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Caleb Arden",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -713,7 +815,238 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.309Z"
+        },
+        {
+          "id": "maya-rivers",
+          "name": "Maya Rivers",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "female",
+          "age": 24,
+          "role": "Brass Ballot protagonist",
+          "personality_description": "A capable, kind adult who starts the story observant, steady, and open to the player's direction.",
+          "speech_style": "Warm, concise, and thoughtful.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "Black human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -746,7 +1079,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -779,7 +1111,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -814,10 +1145,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Her choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -829,83 +1156,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
-          },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
-        },
-        {
-          "id": "rowan-ellis",
-          "name": "Rowan Ellis",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "non-binary",
-          "age": 24,
-          "role": "Brass Ballot protagonist",
-          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
-          "speech_style": "Measured, observant, and plainspoken.",
-          "boldness": 4,
-          "starting_relationship_to_player": "stranger",
-          "starting_trust": 0,
-          "starting_attraction": 0,
-          "starting_affection": 0,
-          "starting_state_of_mind": "focused",
-          "starting_physical_state": "healthy",
-          "starting_pose": "standing naturally",
-          "appearance": {
-            "species": "mixed-race human",
-            "height": 5,
-            "skin_color": "",
-            "eye_color": "",
-            "hair_color": "",
-            "hair_length": "",
-            "hair_type": "",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Maya Rivers",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -938,7 +1206,206 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "well-fitted travel blouse",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical fitted travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Her choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.309Z"
+        },
+        {
+          "id": "rowan-ellis",
+          "name": "Rowan Ellis",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 24,
+          "role": "Brass Ballot protagonist",
+          "personality_description": "A capable, kind adult who starts the story adaptable, careful, and ready to be shaped by player choices.",
+          "speech_style": "Measured, observant, and plainspoken.",
+          "boldness": 4,
+          "starting_relationship_to_player": "stranger",
+          "starting_trust": 0,
+          "starting_attraction": 0,
+          "starting_affection": 0,
+          "starting_state_of_mind": "focused",
+          "starting_physical_state": "healthy",
+          "starting_pose": "standing naturally",
+          "appearance": {
+            "species": "mixed-race human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "",
+            "eye_color": "",
+            "hair_color": "",
+            "hair_length": "",
+            "hair_type": "",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -971,7 +1438,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1004,7 +1470,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1037,7 +1502,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1072,10 +1536,6 @@
             "left_hand": null
           },
           "starting_inventory": [],
-          "durable_known_facts": [
-            "This is one selectable protagonist for the story.",
-            "Their choices should drive the story without locked personality outcomes."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -1087,126 +1547,361 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "voice": {
-            "gender_bucket": "non_male",
-            "preferred_voice_name": ""
+          "voice": null,
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Rowan Ellis",
+          "fallback_outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "clean fitted shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "plain practical trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "plain fitted travel shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "simple belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "practical travel trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "comfortable travel boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one selectable protagonist for the story.",
+            "Their choices should drive the story without locked personality outcomes."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "clean fitted shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": null,
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "plain practical trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "comfortable shoes",
-            "other_accessory": null
-          }
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-30T00:49:17.712Z",
+          "updated_at": "2026-06-30T11:42:04.309Z"
         }
       ],
       "characters": {},
       "npc_directory": {
         "locations": {
-          "Ballot Engine Room": {
+          "loc-brass-ballot-start": {
             "label": "Ballot Engine Room",
             "characters": {
-              "Mira Caldane": {
+              "mira-caldane": {
                 "id": "mira-caldane",
                 "name": "Mira Caldane",
-                "source": "Player",
-                "creation_tool": "Codex 5.5 (Medium)",
                 "can_die": false,
                 "gender": "female",
                 "age": 28,
                 "role": "union candidate",
-                "personality_description": "A patient, stubborn candidate who believes clean procedure matters even when the room turns against her.",
-                "speech_style": "Plainspoken, firm, and polite under pressure.",
-                "boldness": 4,
-                "starting_relationship_to_player": "current contact",
-                "starting_trust": 2,
-                "starting_attraction": 0,
-                "starting_affection": 0,
-                "starting_state_of_mind": "focused",
-                "starting_physical_state": "healthy",
-                "starting_pose": "standing naturally",
-                "appearance": {
-                  "species": "Black human",
-                  "height": 5,
-                  "skin_color": "",
-                  "eye_color": "",
-                  "hair_color": "",
-                  "hair_length": "",
-                  "hair_type": "",
-                  "extra_description": "",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Default",
-                    "clothing": {
-                      "shirt": "clean fitted shirt",
-                      "pants": "plain practical trousers",
-                      "feet": "comfortable shoes"
-                    }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": null,
-                  "left_hand": null
-                },
-                "starting_inventory": [],
-                "durable_known_facts": [
-                  "Mira Caldane is present at the start and can explain the immediate situation.",
-                  "Mira Caldane should be useful without taking choices away from the player.",
-                  "Mira Caldane has a clear stake in the first objective.",
-                  "Mira Caldane can recur if the player keeps involving them."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
                 "voice": {
                   "gender_bucket": "non_male",
                   "preferred_voice_name": ""
+                },
+                "relationship": "current contact",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "mira-caldane",
+                  "name": "Mira Caldane",
+                  "source": "Player",
+                  "creation_tool": "Codex 5.5 (Medium)",
+                  "can_die": false,
+                  "gender": "female",
+                  "age": 28,
+                  "role": "union candidate",
+                  "personality_description": "A patient, stubborn candidate who believes clean procedure matters even when the room turns against her.",
+                  "speech_style": "Plainspoken, firm, and polite under pressure.",
+                  "boldness": 4,
+                  "starting_relationship_to_player": "current contact",
+                  "starting_trust": 2,
+                  "starting_attraction": 0,
+                  "starting_affection": 0,
+                  "starting_state_of_mind": "focused",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "standing naturally",
+                  "appearance": {
+                    "species": "Black human",
+                    "height": 5,
+                    "body_description": "An average build.",
+                    "skin_color": "",
+                    "eye_color": "",
+                    "hair_color": "",
+                    "hair_length": "",
+                    "hair_type": "",
+                    "extra_description": "",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": null,
+                    "left_hand": null
+                  },
+                  "starting_inventory": [],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Mira Caldane",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Default",
+                      "clothing": {
+                        "shirt": "clean fitted shirt",
+                        "pants": "plain practical trousers",
+                        "feet": "comfortable shoes"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Mira Caldane is present at the start and can explain the immediate situation.",
+                    "Mira Caldane should be useful without taking choices away from the player.",
+                    "Mira Caldane has a clear stake in the first objective.",
+                    "Mira Caldane can recur if the player keeps involving them."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-06-30T00:49:17.712Z",
+                  "updated_at": "2026-06-30T11:42:04.309Z"
                 }
               }
             }
@@ -1224,15 +1919,21 @@
             "id": "brass-ballot-1-inspect-the-ballot-engine",
             "title": "Inspect the Ballot Engine",
             "type": "story",
-            "kind": "main",
             "status": "active",
             "summary": "Find out why the counting machine is repeating votes.",
             "rewards": [],
             "requires": [],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "brass-ballot-2-find-the-missing-mechanic",
+                "id": "brass-ballot-1-inspect-the-ballot-engine-output-1",
+                "completion_instruction": "Reveal that the engine has a fresh unauthorized gear hidden under the counter plate.",
+                "rewards": [],
+                "target_input_group_id": "from-brass-ballot-1-inspect-the-ballot-engine"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": true,
@@ -1242,13 +1943,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player inspects the engine, checks the punch cards, or asks Mira what changed before the count.",
             "completion_instruction": "Reveal that the engine has a fresh unauthorized gear hidden under the counter plate.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Find out why the counting machine is repeating votes."
           },
           {
             "id": "brass-ballot-2-find-the-missing-mechanic",
             "title": "Find the Missing Mechanic",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Locate the only person who could have fitted the false gear.",
             "rewards": [
@@ -1264,10 +1964,17 @@
             "requires": [
               "brass-ballot-1-inspect-the-ballot-engine"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "brass-ballot-3-face-the-council-room",
+                "id": "brass-ballot-2-find-the-missing-mechanic-output-1",
+                "completion_instruction": "Show whether the mechanic was bribed, threatened, or framed, and point toward the person pressuring the vote.",
+                "rewards": [],
+                "target_input_group_id": "from-brass-ballot-2-find-the-missing-mechanic"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1277,13 +1984,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player finds, questions, or tracks the missing mechanic.",
             "completion_instruction": "Show whether the mechanic was bribed, threatened, or framed, and point toward the person pressuring the vote.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Locate the only person who could have fitted the false gear."
           },
           {
             "id": "brass-ballot-3-face-the-council-room",
             "title": "Face the Council Room",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Bring the evidence before the vote is certified.",
             "rewards": [
@@ -1299,10 +2005,17 @@
             "requires": [
               "brass-ballot-2-find-the-missing-mechanic"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "objective_id": "brass-ballot-4-protect-the-real-count",
+                "id": "brass-ballot-3-face-the-council-room-output-1",
+                "completion_instruction": "Let the council resist, bargain, or panic, but keep the problem focused on this election.",
+                "rewards": [],
+                "target_input_group_id": "from-brass-ballot-3-face-the-council-room"
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1312,13 +2025,12 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player presents the evidence or forces the council to hear the accusation.",
             "completion_instruction": "Let the council resist, bargain, or panic, but keep the problem focused on this election.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Bring the evidence before the vote is certified."
           },
           {
             "id": "brass-ballot-4-protect-the-real-count",
             "title": "Protect the Real Count",
             "type": "story",
-            "kind": "main",
             "status": "hidden",
             "summary": "Keep the corrected count from being stopped.",
             "rewards": [
@@ -1334,10 +2046,17 @@
             "requires": [
               "brass-ballot-3-face-the-council-room"
             ],
-            "next_objectives": [],
+            "next_objectives": [
+              {
+                "id": "brass-ballot-4-protect-the-real-count-output-1",
+                "completion_instruction": "Resolve the election's immediate outcome and show how Mira reacts to the player's help.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ],
             "travel_location_id": "",
             "travel_location_name": "",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": false,
@@ -1347,7 +2066,7 @@
             "completion_control": "ai",
             "completion_criteria": "Return yes only when the corrected count is completed, protected, or publicly verified.",
             "completion_instruction": "Resolve the election's immediate outcome and show how Mira reacts to the player's help.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "Keep the corrected count from being stopped."
           }
         ]
       },
@@ -1363,18 +2082,28 @@
         "rules_and_constraints": [],
         "ai_private_notes": []
       },
-      "story_inventory": {},
+      "story_inventory": {
+        "items": []
+      },
       "story_shops": {},
       "story_job_offers": {},
       "story_job_offer_history": [],
       "active_generated_jobs": {},
       "story_generated_npc_pool": {},
-      "recent_changes": []
+      "recent_changes": [],
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "2026-06-30 09:00"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
     "messages": [
       {
-        "id": "brass-ballot-opening",
-        "entryId": "brass-ballot-opening",
         "role": "assistant",
         "speaker": "Narrator",
         "text": "The Ballot Engine Room smells like oil, wet wool, and nervous voters.\n\nThe brass counter jerks, clacks, and prints the same name twenty-seven times in a row.\n\nMira Caldane looks from the paper strip to you.\n\n(Mira Caldane) \"That machine is either broken or bought. Help me find out which before they call the election.\"",
@@ -1397,19 +2126,20 @@
       "local election"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
-      "seed": null,
+      "id": "brass-ballot-title-card",
+      "title": "Brass Ballot title card",
       "prompt": "",
-      "negative_prompt": "",
-      "note": ""
+      "negativePrompt": "",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
-    "starting_player_count": 3,
-    "starting_party_member_count": 0,
-    "starting_npc_count": 1,
-    "main_objective_count": 4,
-    "side_objective_count": 0,
-    "future_character_count": 0
+    "allow_any_player": false,
+    "any_player_starting_state": {}
   },
   "exportedAt": "2026-06-30T11:42:04.309Z"
 }

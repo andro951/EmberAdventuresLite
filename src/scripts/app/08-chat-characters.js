@@ -1735,7 +1735,7 @@ function renderThread(reason = "", options = {}) {
       ...(characters[name] || {}),
       name,
       gender: full.gender || entry.gender || "unspecified",
-      age: exactAdultAge(full.age ?? entry.age, `shop NPC ${name}.age`),
+      age: exactStoryCharacterAge(full.age ?? entry.age, `shop NPC ${name}.age`),
       role: textSlot(entry.role || full.role, "shop character"),
       relationship: textSlot(entry.relationship || full.relationship_to_player, "shop contact"),
       note: textSlot(options.note || entry.note || entry.summary, "Available through a story shop."),
@@ -1783,7 +1783,7 @@ function renderThread(reason = "", options = {}) {
       name,
       role: textSlot(existing.full_character?.role || existing.role, storyShopOwnerRole(shop)),
       personality_description: textSlot(existing.full_character?.personality_description || existing.note || shop.description, `${name} runs ${shop.title || "this shop"} and handles customers professionally.`)
-    }, name);
+    }, name, { embeddedStory: true });
     const definitionId = ensureRuntimeCharacterDefinition(full, name);
     full.id = definitionId;
     full.definition_id = definitionId;
@@ -1792,7 +1792,7 @@ function renderThread(reason = "", options = {}) {
       name,
       definition_id: definitionId,
       gender: full.gender || existing.gender || "unspecified",
-      age: exactAdultAge(full.age ?? existing.age, `shop owner ${name}.age`),
+      age: exactStoryCharacterAge(full.age ?? existing.age, `shop owner ${name}.age`),
       role: full.role || storyShopOwnerRole(shop),
       relationship: textSlot(existing.relationship || full.relationship_to_player, "shop contact"),
       note: textSlot(options.note || existing.note || shop.description, `${shop.title || "Shop"} owner.`),

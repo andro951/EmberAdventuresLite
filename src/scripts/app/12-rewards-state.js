@@ -2749,7 +2749,7 @@ ${unsyncedChatContext}`, {
       return applyStoryDefaultImageModelToCharacter(animal, state);
     }
     const full = isPlainObject(entry?.full_character) ? clone(entry.full_character) : blankCharacterTemplate(entry?.name || fallbackName);
-    full.age = exactAdultAge(full.age ?? entry?.age, `future cast ${entry?.name || fallbackName || "character"}.age`);
+    full.age = exactStoryCharacterAge(full.age ?? entry?.age, `future cast ${entry?.name || fallbackName || "character"}.age`);
     full.gender = canonicalCharacterGenderValue(textSlot(full.gender || entry?.gender, "unspecified"));
     full.role = textSlot(full.role || entry?.role || entry?.role, "local adult");
     if (entry?.can_die != null) full.can_die = entry.can_die === true;
@@ -2769,7 +2769,8 @@ ${unsyncedChatContext}`, {
     }
     resolveActiveProfileImageReference(full);
     const name = entry?.name || fallbackName;
-    const runtime = Object.hasOwn(full, "clothing") || Object.hasOwn(full, "active_outfit_id") ? materializeCharacterForRuntime(full, name) : materializeCharacterForRuntime(materializeCharacterDefinitionForRuntime(full, name), name);
+    const runtimeInput = Object.hasOwn(full, "clothing") || Object.hasOwn(full, "active_outfit_id") ? full : materializeCharacterDefinitionForRuntime(full, name);
+    const runtime = materializeCharacterForRuntime(runtimeInput, name, { embeddedStory: true });
     runtime.relationship_to_player = textSlot(runtime.relationship_to_player) || textSlot(full.starting_relationship_to_player || entry?.relationship, "");
     if (!runtime.relationship_to_player) throw new Error(`Future character ${name || full.id || "unknown"} requires a relationship to the player before runtime materialization.`);
     return applyStoryDefaultImageModelToCharacter(runtime, state);
@@ -2792,7 +2793,7 @@ ${unsyncedChatContext}`, {
       name,
       id: full.id,
       gender: full.gender || entry.gender || "unspecified",
-      age: isAnimalEntity(full) ? full.age : exactAdultAge(full.age ?? entry.age, `introduced future NPC ${name}.age`),
+      age: isAnimalEntity(full) ? full.age : exactStoryCharacterAge(full.age ?? entry.age, `introduced future NPC ${name}.age`),
       role: textSlot(entry.role || full.role, "local"),
       relationship: textSlot(entry.relationship || full.relationship_to_player, "unknown"),
       trust: full.trust,

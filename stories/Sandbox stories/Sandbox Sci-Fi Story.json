@@ -16,17 +16,20 @@
       "sci-fi"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
-      "seed": null,
+      "id": "story-sandbox-sci-fi-story-title-card",
+      "title": "Sandbox Sci-Fi Story title card",
       "prompt": "",
-      "negative_prompt": "",
-      "note": ""
+      "negativePrompt": "",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
     "messages": [
       {
-        "id": 1,
-        "entryId": 1,
         "role": "assistant",
         "speaker": "Narrator",
         "text": "The shuttle hatch opens onto recycled air, bright dock lights, and the low thunder of engines bleeding through the station hull.\n\nYour temporary pass blinks amber on your wrist: visitor access, two hours remaining. Across the gantry, a public contract terminal cycles through salvage jobs, courier runs, and station security postings.\n\nBefore the timer locks you out of the work decks, you need a contract with your name on it.",
@@ -38,9 +41,10 @@
         "app": "EmberAdventures",
         "story_guidance": "",
         "story_source": {
-          "mode": "custom",
+          "mode": "original",
           "title": "Sandbox Sci-Fi Story",
-          "description": "A spaceport sci-fi start: arrive on an orbital station and claim a work contract before your docking window expires."
+          "description": "A spaceport sci-fi start: arrive on an orbital station and claim a work contract before your docking window expires.",
+          "modifications": []
         },
         "genres": [
           "sci-fi"
@@ -54,7 +58,8 @@
         "settlement_type": "",
         "settlement_name": "",
         "district": "",
-        "specific_place": "arrival gantry outside Dock C-17"
+        "specific_place": "arrival gantry outside Dock C-17",
+        "npc_location_id": "loc-dock-c-17"
       },
       "world_map": {
         "current_location_id": "loc-dock-c-17",
@@ -105,19 +110,21 @@
         "age": 24,
         "role": "freelance pilot",
         "voice": null,
-        "speech_style": "",
+        "speech_style": "Clear, conversational speech suited to their role as freelance pilot.",
         "personality_description": "A freelance pilot with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
         "boldness": 6,
         "appearance": {
           "species": "adult white human",
           "height": 6,
+          "body_description": "A strong, athletic build.",
           "skin_color": "light skin",
           "eye_color": "brown eyes",
           "hair_color": "brown hair",
           "hair_length": "short hair",
           "hair_type": "practical hair",
           "extra_description": "",
-          "body_description": "A strong, athletic build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -125,7 +132,6 @@
             "name": "Default",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -158,7 +164,6 @@
             "name": "Casual",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -191,7 +196,6 @@
             "name": "Travel",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -224,7 +228,6 @@
             "name": "Formal",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -257,7 +260,6 @@
             "name": "Relaxed",
             "clothing": {
               "hat": null,
-              "hair": null,
               "hair_accessory": null,
               "face": null,
               "ears": null,
@@ -303,13 +305,6 @@
           "personal papers",
           "travel bag"
         ],
-        "durable_known_facts": [
-          "This is one of three selectable player characters for sci-fi starts.",
-          "The character is an adult and physically adult.",
-          "The opening objective should work the same regardless of which player option is selected.",
-          "The character's exact choices, morality, relationships, and future path are decided through play.",
-          "Their starting role is freelance pilot, giving them a natural reason to engage with the opening situation."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -321,41 +316,220 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": true
         },
-        "clothing": {
-          "hat": null,
-          "hair": null,
-          "hair_accessory": null,
-          "face": null,
-          "ears": null,
-          "neck": null,
-          "shoulders": null,
-          "bra": null,
-          "undershirt": null,
-          "shirt": "fitted station jacket over a plain work shirt",
-          "over_shirt": null,
-          "coat": null,
-          "back": null,
-          "hands": null,
-          "right_wrist": null,
-          "left_wrist": null,
-          "right_fingers": null,
-          "left_fingers": null,
-          "waist": "tool belt",
-          "belt_accessory": null,
-          "underwear": null,
-          "pants": "dark utility trousers",
-          "skirt": null,
-          "legwear": null,
-          "socks": null,
-          "feet": "magnetic work boots",
-          "other_accessory": null
-        }
+        "id": "orin-voss",
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Orin Voss",
+        "fallback_outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "fitted station jacket over a plain work shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "tool belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "dark utility trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "magnetic work boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "casual",
+            "name": "Casual",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "fitted techwear jacket over a breathable undershirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": "thin interface gloves",
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "dark utility trousers with sealed seams",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "mag-lock urban boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "travel",
+            "name": "Travel",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "layered travel tunic",
+              "over_shirt": null,
+              "coat": "weathered travel cloak",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": "utility belt",
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "sturdy travel pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "road-worn boots",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "formal",
+            "name": "Formal",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "formal dress shirt",
+              "over_shirt": null,
+              "coat": "tailored formal coat",
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "pressed formal trousers",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "polished formal shoes",
+              "other_accessory": null
+            }
+          },
+          {
+            "id": "relaxed",
+            "name": "Relaxed",
+            "clothing": {
+              "hat": null,
+              "hair_accessory": null,
+              "face": null,
+              "ears": null,
+              "neck": null,
+              "shoulders": null,
+              "bra": null,
+              "undershirt": null,
+              "shirt": "soft relaxed shirt",
+              "over_shirt": null,
+              "coat": null,
+              "back": null,
+              "hands": null,
+              "right_wrist": null,
+              "left_wrist": null,
+              "right_fingers": null,
+              "left_fingers": null,
+              "waist": null,
+              "belt_accessory": null,
+              "underwear": null,
+              "pants": "comfortable lounge pants",
+              "skirt": null,
+              "legwear": null,
+              "socks": null,
+              "feet": "simple house slippers",
+              "other_accessory": null
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "default",
+        "starting_known_facts": [
+          "This is one of three selectable player characters for sci-fi starts.",
+          "The character is an adult and physically adult.",
+          "The opening objective should work the same regardless of which player option is selected.",
+          "The character's exact choices, morality, relationships, and future path are decided through play.",
+          "Their starting role is freelance pilot, giving them a natural reason to engage with the opening situation."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
+        },
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-06-26T00:00:00.000Z",
+        "updated_at": "2026-06-30T12:03:07.019Z"
       },
       "players": [
         {
@@ -367,19 +541,21 @@
           "age": 24,
           "role": "freelance pilot",
           "voice": null,
-          "speech_style": "",
+          "speech_style": "Clear, conversational speech suited to their role as freelance pilot.",
           "personality_description": "A freelance pilot with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
           "boldness": 6,
           "appearance": {
             "species": "adult white human",
             "height": 6,
+            "body_description": "A strong, athletic build.",
             "skin_color": "light skin",
             "eye_color": "brown eyes",
             "hair_color": "brown hair",
             "hair_length": "short hair",
             "hair_type": "practical hair",
             "extra_description": "",
-            "body_description": "A strong, athletic build."
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
           },
           "outfits": [
             {
@@ -387,7 +563,6 @@
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -420,7 +595,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -453,7 +627,6 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -486,7 +659,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -519,7 +691,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -565,13 +736,6 @@
             "personal papers",
             "travel bag"
           ],
-          "durable_known_facts": [
-            "This is one of three selectable player characters for sci-fi starts.",
-            "The character is an adult and physically adult.",
-            "The opening objective should work the same regardless of which player option is selected.",
-            "The character's exact choices, morality, relationships, and future path are decided through play.",
-            "Their starting role is freelance pilot, giving them a natural reason to engage with the opening situation."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -583,72 +747,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": true
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "fitted station jacket over a plain work shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": "tool belt",
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "dark utility trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "magnetic work boots",
-            "other_accessory": null
-          }
-        },
-        {
-          "name": "Talia Wren",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "female",
-          "age": 26,
-          "role": "xenobiology courier",
-          "voice": null,
-          "speech_style": "",
-          "personality_description": "A xenobiology courier with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
-          "boldness": 5,
-          "appearance": {
-            "species": "adult East Asian human",
-            "height": 5,
-            "skin_color": "light warm skin",
-            "eye_color": "dark eyes",
-            "hair_color": "black hair",
-            "hair_length": "long hair",
-            "hair_type": "straight hair",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "id": "orin-voss",
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Orin Voss",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -681,7 +797,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -714,7 +829,234 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one of three selectable player characters for sci-fi starts.",
+            "The character is an adult and physically adult.",
+            "The opening objective should work the same regardless of which player option is selected.",
+            "The character's exact choices, morality, relationships, and future path are decided through play.",
+            "Their starting role is freelance pilot, giving them a natural reason to engage with the opening situation."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-26T00:00:00.000Z",
+          "updated_at": "2026-06-30T12:03:07.019Z"
+        },
+        {
+          "name": "Talia Wren",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "female",
+          "age": 26,
+          "role": "xenobiology courier",
+          "voice": null,
+          "speech_style": "Clear, conversational speech suited to their role as xenobiology courier.",
+          "personality_description": "A xenobiology courier with enough independence to make their own choices at the start of the story. They are capable, alert, and ready to respond to the opening situation without being locked into one moral path.",
+          "boldness": 5,
+          "appearance": {
+            "species": "adult East Asian human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "light warm skin",
+            "eye_color": "dark eyes",
+            "hair_color": "black hair",
+            "hair_length": "long hair",
+            "hair_type": "straight hair",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted station jacket over a plain work shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "tool belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "magnetic work boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -747,7 +1089,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -793,13 +1134,6 @@
             "personal papers",
             "travel bag"
           ],
-          "durable_known_facts": [
-            "This is one of three selectable player characters for sci-fi starts.",
-            "The character is an adult and physically adult.",
-            "The opening objective should work the same regardless of which player option is selected.",
-            "The character's exact choices, morality, relationships, and future path are decided through play.",
-            "Their starting role is xenobiology courier, giving them a natural reason to engage with the opening situation."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -811,72 +1145,24 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "fitted station jacket over a plain work shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": "tool belt",
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "dark utility trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "magnetic work boots",
-            "other_accessory": null
-          }
-        },
-        {
-          "name": "Avery Sol",
-          "source": "Player",
-          "creation_tool": "Codex 5.5 (Medium)",
-          "can_die": false,
-          "gender": "non-binary",
-          "age": 29,
-          "role": "ship systems specialist",
-          "voice": null,
-          "speech_style": "",
-          "personality_description": "A ship systems specialist with enough independence to make their own choices at the start of the story. They are capable, observant, and ready to respond to the opening situation without being locked into one moral path.",
-          "boldness": 7,
-          "appearance": {
-            "species": "adult mixed human",
-            "height": 5,
-            "skin_color": "medium tan skin",
-            "eye_color": "blue cybernetic eyes",
-            "hair_color": "silver hair",
-            "hair_length": "short-to-medium hair",
-            "hair_type": "practical styled hair",
-            "extra_description": "",
-            "body_description": "An average build."
-          },
-          "outfits": [
+          "id": "talia-wren",
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Talia Wren",
+          "fallback_outfits": [
             {
               "id": "default",
               "name": "Default",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -909,7 +1195,6 @@
               "name": "Casual",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -942,7 +1227,202 @@
               "name": "Travel",
               "clothing": {
                 "hat": null,
-                "hair": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered short travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy fitted travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft loose lounge top",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one of three selectable player characters for sci-fi starts.",
+            "The character is an adult and physically adult.",
+            "The opening objective should work the same regardless of which player option is selected.",
+            "The character's exact choices, morality, relationships, and future path are decided through play.",
+            "Their starting role is xenobiology courier, giving them a natural reason to engage with the opening situation."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-26T00:00:00.000Z",
+          "updated_at": "2026-06-30T12:03:07.019Z"
+        },
+        {
+          "name": "Avery Sol",
+          "source": "Player",
+          "creation_tool": "Codex 5.5 (Medium)",
+          "can_die": false,
+          "gender": "non-binary",
+          "age": 29,
+          "role": "ship systems specialist",
+          "voice": null,
+          "speech_style": "Clear, conversational speech suited to their role as ship systems specialist.",
+          "personality_description": "A ship systems specialist with enough independence to make their own choices at the start of the story. They are capable, observant, and ready to respond to the opening situation without being locked into one moral path.",
+          "boldness": 7,
+          "appearance": {
+            "species": "adult mixed human",
+            "height": 5,
+            "body_description": "An average build.",
+            "skin_color": "medium tan skin",
+            "eye_color": "blue cybernetic eyes",
+            "hair_color": "silver hair",
+            "hair_length": "short-to-medium hair",
+            "hair_type": "practical styled hair",
+            "extra_description": "",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted station jacket over a plain work shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "tool belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "magnetic work boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -975,7 +1455,6 @@
               "name": "Formal",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1008,7 +1487,6 @@
               "name": "Relaxed",
               "clothing": {
                 "hat": null,
-                "hair": null,
                 "hair_accessory": null,
                 "face": null,
                 "ears": null,
@@ -1054,13 +1532,6 @@
             "personal papers",
             "travel bag"
           ],
-          "durable_known_facts": [
-            "This is one of three selectable player characters for sci-fi starts.",
-            "The character is an adult and physically adult.",
-            "The opening objective should work the same regardless of which player option is selected.",
-            "The character's exact choices, morality, relationships, and future path are decided through play.",
-            "Their starting role is ship systems specialist, giving them a natural reason to engage with the opening situation."
-          ],
           "default_seed": 0,
           "image_prompt_config": {
             "seed_enabled": true,
@@ -1072,46 +1543,234 @@
           },
           "default_profile_image": {
             "url": "",
+            "local_image_id": "",
             "source": "none",
             "seed": null,
             "prompt": "",
             "negative_prompt": "",
-            "note": ""
+            "note": "",
+            "male": false
           },
-          "clothing": {
-            "hat": null,
-            "hair": null,
-            "hair_accessory": null,
-            "face": null,
-            "ears": null,
-            "neck": null,
-            "shoulders": null,
-            "bra": null,
-            "undershirt": null,
-            "shirt": "fitted station jacket over a plain work shirt",
-            "over_shirt": null,
-            "coat": null,
-            "back": null,
-            "hands": null,
-            "right_wrist": null,
-            "left_wrist": null,
-            "right_fingers": null,
-            "left_fingers": null,
-            "waist": "tool belt",
-            "belt_accessory": null,
-            "underwear": null,
-            "pants": "dark utility trousers",
-            "skirt": null,
-            "legwear": null,
-            "socks": null,
-            "feet": "magnetic work boots",
-            "other_accessory": null
-          }
+          "id": "avery-sol",
+          "version": 1,
+          "romanceable": true,
+          "fallback_name": "Avery Sol",
+          "fallback_outfits": [
+            {
+              "id": "default",
+              "name": "Default",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted station jacket over a plain work shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "tool belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "magnetic work boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "casual",
+              "name": "Casual",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "fitted techwear jacket over a breathable undershirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": "thin interface gloves",
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "dark utility trousers with sealed seams",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "mag-lock urban boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "travel",
+              "name": "Travel",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "layered travel tunic",
+                "over_shirt": null,
+                "coat": "weathered travel cloak",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "utility belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "sturdy travel pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "road-worn boots",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "formal",
+              "name": "Formal",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "formal dress shirt",
+                "over_shirt": null,
+                "coat": "tailored formal coat",
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "pressed formal trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "polished formal shoes",
+                "other_accessory": null
+              }
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "soft relaxed shirt",
+                "over_shirt": null,
+                "coat": null,
+                "back": null,
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": null,
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "comfortable lounge pants",
+                "skirt": null,
+                "legwear": null,
+                "socks": null,
+                "feet": "simple house slippers",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "default",
+          "starting_known_facts": [
+            "This is one of three selectable player characters for sci-fi starts.",
+            "The character is an adult and physically adult.",
+            "The opening objective should work the same regardless of which player option is selected.",
+            "The character's exact choices, morality, relationships, and future path are decided through play.",
+            "Their starting role is ship systems specialist, giving them a natural reason to engage with the opening situation."
+          ],
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "hosted",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "seed": null,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "created_at": "2026-06-26T00:00:00.000Z",
+          "updated_at": "2026-06-30T12:03:07.019Z"
         }
       ],
       "characters": {},
       "npc_directory": {
-        "locations": {}
+        "locations": {
+          "loc-dock-c-17": {
+            "label": "Dock C-17",
+            "characters": {}
+          },
+          "orbital-contract-kiosk": {
+            "label": "Orbital Contract Kiosk",
+            "characters": {}
+          }
+        }
       },
       "world_flags": {
         "tone": "sci-fi opening with one clear starting objective",
@@ -1125,14 +1784,12 @@
             "id": "claim-a-station-contract",
             "title": "Claim a Station Contract",
             "type": "story",
-            "kind": "main",
             "status": "active",
             "summary": "The player has arrived on Helix Station and needs to claim a legitimate work contract.",
             "rewards": [],
             "requires": [],
             "travel_location_id": "loc-dock-c-17",
             "travel_location_name": "Dock C-17",
-            "unlock_mode": "manual",
             "exclusive_group": "",
             "selectable": true,
             "available_now": true,
@@ -1142,7 +1799,16 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player claims, signs, verifies, or is assigned a legitimate Helix Station work contract.",
             "completion_instruction": "Acknowledge the player's first concrete progress on claim a station contract and keep the story open-ended after this single template objective is complete.",
-            "auto_completed_from_prereqs": false
+            "while_active_guidance": "The player has arrived on Helix Station and needs to claim a legitimate work contract.",
+            "next_objectives": [
+              {
+                "id": "claim-a-station-contract-output-1",
+                "completion_instruction": "Acknowledge the player's first concrete progress on claim a station contract and keep the story open-ended after this single template objective is complete.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ]
           }
         ]
       },
@@ -1154,88 +1820,36 @@
             "name": "Sci-Fi Guild Clerk",
             "status": "available",
             "role": "job board owner",
-            "summary": "Runs Orbital Contract Kiosk and handles job turn-ins.",
             "full_character": {
               "name": "Sci-Fi Guild Clerk",
               "source": "Original",
               "creation_tool": "Codex 5.5 (Medium)",
-              "genres": [
-                "sci-fi"
-              ],
               "age": 28,
               "gender": "female",
               "role": "job board owner",
-              "voice": {
-                "gender_bucket": "non_male",
-                "preferred_voice_name": ""
-              },
+              "voice": null,
               "personality_description": "Sci-Fi Guild Clerk is a practical job board owner built for the sandbox job-board system, giving concrete jobs and reacting like a real local contact instead of a menu label.",
               "speech_style": "Concise, grounded, helpful, and genre-aware; gives useful job details without narrating hidden mechanics.",
-              "relationship_to_player": "local job contact",
-              "trust": 0,
-              "attraction": 0,
-              "affection": 0,
               "boldness": 5,
-              "state_of_mind": "working",
-              "physical_state": "healthy",
-              "pose": "standing behind a job counter",
               "appearance": {
                 "species": "adult human woman",
                 "height": 4,
+                "body_description": "A slender build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
                 "hair_length": "shoulder-length",
                 "hair_type": "",
                 "extra_description": "Genre-appropriate job board owner with a clear readable silhouette for a job-board hub.",
-                "body_description": "A slender build."
+                "extra_description_lower_body": "",
+                "nonhuman_lower_body": false
               },
-              "clothing": {
-                "hat": null,
-                "hair": null,
-                "hair_accessory": null,
-                "face": null,
-                "ears": null,
-                "neck": null,
-                "shoulders": null,
-                "bra": null,
-                "undershirt": null,
-                "shirt": "neat work shirt",
-                "over_shirt": "practical guild vest",
-                "coat": null,
-                "back": null,
-                "hands": null,
-                "right_wrist": null,
-                "left_wrist": null,
-                "right_fingers": null,
-                "left_fingers": null,
-                "waist": "utility belt",
-                "belt_accessory": null,
-                "underwear": null,
-                "pants": "dark work trousers",
-                "skirt": null,
-                "legwear": null,
-                "socks": null,
-                "feet": "sturdy boots",
-                "other_accessory": null
-              },
-              "held_items": {
-                "right_hand": null,
-                "left_hand": "job ledger"
-              },
-              "inventory": [],
-              "durable_known_facts": [
-                "Runs a sandbox job hub suitable for sci-fi stories.",
-                "Can explain available jobs, rewards, turn-ins, and local dangers.",
-                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
-              ],
               "outfits": [
                 {
                   "id": "default",
                   "name": "Default",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1268,7 +1882,6 @@
                   "name": "Relaxed",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1312,100 +1925,177 @@
               "starting_inventory": [],
               "default_seed": 0,
               "image_prompt_config": {
+                "seed_enabled": true,
                 "seed": 0,
-                "style": ""
+                "style": "",
+                "profile_style": "",
+                "negative": "",
+                "negative_prompt": ""
               },
-              "default_profile_image": null,
-              "can_die": false
-            }
+              "default_profile_image": {
+                "url": "",
+                "local_image_id": "",
+                "source": "hosted",
+                "seed": 0,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": "",
+                "male": false
+              },
+              "can_die": false,
+              "id": "story-sandbox-sci-fi-story-job-board-owner",
+              "version": 1,
+              "romanceable": true,
+              "fallback_name": "Sci-Fi Guild Clerk",
+              "fallback_outfits": [
+                {
+                  "id": "default",
+                  "name": "Default",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "neat work shirt",
+                    "over_shirt": "practical guild vest",
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "sturdy boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "fallback_starting_outfit_id": "default",
+              "starting_known_facts": [
+                "Runs a sandbox job hub suitable for sci-fi stories.",
+                "Can explain available jobs, rewards, turn-ins, and local dangers.",
+                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
+              ],
+              "profile_image_presentations": {
+                "male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": false
+                }
+              },
+              "profile_images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "created_at": "2026-06-26T00:00:00.000Z",
+              "updated_at": "2026-06-30T12:03:07.019Z"
+            },
+            "canonical_order": 1,
+            "introduce_as": "npc",
+            "can_die": false,
+            "scene_presence": "none",
+            "npc_location_id": "loc-dock-c-17",
+            "note": "Runs Orbital Contract Kiosk and handles job turn-ins.",
+            "meet_condition": "",
+            "join_condition": ""
           },
           "story-sandbox-sci-fi-story-job-client": {
             "id": "story-sandbox-sci-fi-story-job-client",
             "name": "Sci-Fi Job Client",
             "status": "locked",
             "role": "curated job client",
-            "summary": "Client for the sandbox story's curated sci-fi job.",
             "full_character": {
               "name": "Sci-Fi Job Client",
               "source": "Original",
               "creation_tool": "Codex 5.5 (Medium)",
-              "genres": [
-                "sci-fi"
-              ],
               "age": 28,
               "gender": "female",
               "role": "curated job client",
-              "voice": {
-                "gender_bucket": "non_male",
-                "preferred_voice_name": ""
-              },
+              "voice": null,
               "personality_description": "Sci-Fi Job Client is a practical curated job client built for the sandbox job-board system, giving concrete jobs and reacting like a real local contact instead of a menu label.",
               "speech_style": "Concise, grounded, helpful, and genre-aware; gives useful job details without narrating hidden mechanics.",
-              "relationship_to_player": "local job contact",
-              "trust": 0,
-              "attraction": 0,
-              "affection": 0,
               "boldness": 5,
-              "state_of_mind": "working",
-              "physical_state": "healthy",
-              "pose": "standing behind a job counter",
               "appearance": {
                 "species": "adult human woman",
                 "height": 4,
+                "body_description": "A slender build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
                 "hair_length": "shoulder-length",
                 "hair_type": "",
                 "extra_description": "Genre-appropriate curated job client with a clear readable silhouette for a job-board hub.",
-                "body_description": "A slender build."
+                "extra_description_lower_body": "",
+                "nonhuman_lower_body": false
               },
-              "clothing": {
-                "hat": null,
-                "hair": null,
-                "hair_accessory": null,
-                "face": null,
-                "ears": null,
-                "neck": null,
-                "shoulders": null,
-                "bra": null,
-                "undershirt": null,
-                "shirt": "neat work shirt",
-                "over_shirt": "practical guild vest",
-                "coat": null,
-                "back": null,
-                "hands": null,
-                "right_wrist": null,
-                "left_wrist": null,
-                "right_fingers": null,
-                "left_fingers": null,
-                "waist": "utility belt",
-                "belt_accessory": null,
-                "underwear": null,
-                "pants": "dark work trousers",
-                "skirt": null,
-                "legwear": null,
-                "socks": null,
-                "feet": "sturdy boots",
-                "other_accessory": null
-              },
-              "held_items": {
-                "right_hand": null,
-                "left_hand": "job ledger"
-              },
-              "inventory": [],
-              "durable_known_facts": [
-                "Runs a sandbox job hub suitable for sci-fi stories.",
-                "Can explain available jobs, rewards, turn-ins, and local dangers.",
-                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
-              ],
               "outfits": [
                 {
                   "id": "default",
                   "name": "Default",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1438,7 +2128,6 @@
                   "name": "Casual",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1471,7 +2160,6 @@
                   "name": "Travel",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1504,7 +2192,6 @@
                   "name": "Relaxed",
                   "clothing": {
                     "hat": null,
-                    "hair": null,
                     "hair_accessory": null,
                     "face": null,
                     "ears": null,
@@ -1548,12 +2235,205 @@
               "starting_inventory": [],
               "default_seed": 0,
               "image_prompt_config": {
+                "seed_enabled": true,
                 "seed": 0,
-                "style": ""
+                "style": "",
+                "profile_style": "",
+                "negative": "",
+                "negative_prompt": ""
               },
-              "default_profile_image": null,
-              "can_die": false
-            }
+              "default_profile_image": {
+                "url": "",
+                "local_image_id": "",
+                "source": "hosted",
+                "seed": 0,
+                "prompt": "",
+                "negative_prompt": "",
+                "note": "",
+                "male": false
+              },
+              "can_die": false,
+              "id": "story-sandbox-sci-fi-story-job-client",
+              "version": 1,
+              "romanceable": true,
+              "fallback_name": "Sci-Fi Job Client",
+              "fallback_outfits": [
+                {
+                  "id": "default",
+                  "name": "Default",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "neat work shirt",
+                    "over_shirt": "practical guild vest",
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark work trousers",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "sturdy boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "casual",
+                  "name": "Casual",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "fitted techwear jacket over a breathable undershirt",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": "thin interface gloves",
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "dark utility trousers with sealed seams",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "mag-lock urban boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "travel",
+                  "name": "Travel",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "layered travel tunic",
+                    "over_shirt": null,
+                    "coat": "weathered short travel cloak",
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": "utility belt",
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "sturdy fitted travel pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "road-worn boots",
+                    "other_accessory": null
+                  }
+                },
+                {
+                  "id": "relaxed",
+                  "name": "Relaxed",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "soft loose lounge top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": "comfortable lounge pants",
+                    "skirt": null,
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "simple house slippers",
+                    "other_accessory": null
+                  }
+                }
+              ],
+              "fallback_starting_outfit_id": "default",
+              "starting_known_facts": [
+                "Runs a sandbox job hub suitable for sci-fi stories.",
+                "Can explain available jobs, rewards, turn-ins, and local dangers.",
+                "Exists to make optional money and side-objective play available without relying on AI-invented economy actions."
+              ],
+              "profile_image_presentations": {
+                "male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "local_image_id": "",
+                  "source": "hosted",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "male": false
+                }
+              },
+              "profile_images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "images": {
+                "active_image_id": "",
+                "image_ids": []
+              },
+              "created_at": "2026-06-26T00:00:00.000Z",
+              "updated_at": "2026-06-30T12:03:07.019Z"
+            },
+            "canonical_order": 2,
+            "introduce_as": "npc",
+            "can_die": false,
+            "scene_presence": "none",
+            "npc_location_id": "loc-dock-c-17",
+            "note": "Client for the sandbox story's curated sci-fi job.",
+            "meet_condition": "",
+            "join_condition": ""
           }
         }
       },
@@ -1588,7 +2468,8 @@
             "settlement_type": "",
             "settlement_name": "",
             "district": "Orbital Contract Kiosk",
-            "specific_place": "Orbital Contract Kiosk"
+            "specific_place": "Orbital Contract Kiosk",
+            "npc_location_id": "orbital-contract-kiosk"
           },
           "owner_npc_id": "story-sandbox-sci-fi-story-job-board-owner",
           "visible_count": 6,
@@ -1625,11 +2506,26 @@
               "completion_criteria": "Complete the curated sci-fi sandbox job in a way that fits the story genre.",
               "completion_instruction": "Resolve the curated sci-fi sandbox job, then point the player back toward Orbital Contract Kiosk to turn it in."
             }
-          ]
+          ],
+          "npc_location_id": "orbital-contract-kiosk"
         }
-      }
+      },
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "1-01-01 09:00"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
-    "starting_player_count": 3,
-    "starting_party_member_count": 0
+    "allow_any_player": false,
+    "any_player_starting_state": {},
+    "default_image_model": "",
+    "title_card_subjects": [
+      "Sandbox Sci-Fi Story"
+    ]
   }
 }

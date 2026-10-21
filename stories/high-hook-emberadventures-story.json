@@ -1,12 +1,8 @@
 {
   "app": "EmberAdventures",
   "exportType": "story-template",
-  "story_engine": "normal",
-  "schema_version": 1,
   "storyTemplate": {
     "id": "high-hook",
-    "story_engine": "normal",
-    "schema_version": 1,
     "title": "High Hook",
     "description": "A grounded zombie survival story where a tower crane operator directs trapped construction workers from above, using radios, machinery, and the job site itself to keep the crew alive.",
     "createdAt": "2026-07-06T00:00:00-04:00",
@@ -24,16 +20,12 @@
         ],
         "default_image_model": "",
         "story_source": {
+          "mode": "original",
           "title": "Original",
-          "description": "Original construction-site zombie outbreak survival premise."
+          "description": "Original construction-site zombie outbreak survival premise.",
+          "modifications": []
         },
-        "player_select_enabled": false,
-        "player_count": 1,
-        "main_objective_count": 15,
-        "side_objective_count": 3,
-        "future_character_count": 0,
-        "starting_party_member_count": 0,
-        "starting_npc_count": 6
+        "app": "EmberAdventures"
       },
       "location": {
         "universe": "High Hook",
@@ -43,7 +35,8 @@
         "settlement_type": "city",
         "settlement_name": "Mercer Ridge",
         "district": "Riverside redevelopment zone",
-        "specific_place": "Briarhook Tower construction site"
+        "specific_place": "Briarhook Tower construction site",
+        "npc_location_id": "crane-cab"
       },
       "time": {
         "year": 2026,
@@ -62,7 +55,7 @@
         "image_action": "crane cab above outbreak"
       },
       "player": {
-        "id": 0,
+        "id": "case-mercer",
         "name": "Case Mercer",
         "source": "Player",
         "creation_tool": "Codex GPT-5 (Medium)",
@@ -83,13 +76,15 @@
         "appearance": {
           "species": "mixed-race human",
           "height": 5,
+          "body_description": "An average build.",
           "skin_color": "medium brown skin",
           "eye_color": "dark brown eyes",
           "hair_color": "black hair",
           "hair_length": "short hair",
           "hair_type": "tight curls",
           "extra_description": "small burn scar on the right forearm",
-          "body_description": "An average build."
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
         },
         "outfits": [
           {
@@ -117,14 +112,6 @@
           "site radio",
           "half-full water bottle"
         ],
-        "durable_known_facts": [
-          "Has a bird's-eye view of the whole job site from the crane cab.",
-          "Knows the safe working radius, load limits, blind corners, and emergency stop procedures.",
-          "Can speak to most crews by radio but cannot physically reach them quickly.",
-          "Trusts the rigger Lena Ortiz more than anyone else on the ground.",
-          "Has a professional rivalry with foreman Darius Pike, who is used to giving the orders.",
-          "Fears making a wrong call that gets someone killed more than being trapped in the cab."
-        ],
         "default_seed": 0,
         "image_prompt_config": {
           "seed_enabled": true,
@@ -136,516 +123,984 @@
         },
         "default_profile_image": {
           "url": "",
+          "local_image_id": "",
           "source": "none",
           "seed": null,
           "prompt": "",
           "negative_prompt": "",
-          "note": ""
+          "note": "",
+          "male": false
         },
-        "voice": null
+        "voice": null,
+        "version": 1,
+        "romanceable": true,
+        "fallback_name": "Case Mercer",
+        "fallback_outfits": [
+          {
+            "id": "default",
+            "name": "Work Gear",
+            "clothing": {
+              "hat": "white crane-operator hard hat with company decals",
+              "shirt": "high-visibility long-sleeve work shirt",
+              "over_shirt": "orange reflective safety vest",
+              "pants": "dark canvas work pants",
+              "hands": "work gloves clipped to a belt loop",
+              "feet": "steel-toe work boots",
+              "belt_accessory": "radio lanyard and lift-plan pouch"
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "default",
+        "starting_known_facts": [
+          "Has a bird's-eye view of the whole job site from the crane cab.",
+          "Knows the safe working radius, load limits, blind corners, and emergency stop procedures.",
+          "Can speak to most crews by radio but cannot physically reach them quickly.",
+          "Trusts the rigger Lena Ortiz more than anyone else on the ground.",
+          "Has a professional rivalry with foreman Darius Pike, who is used to giving the orders.",
+          "Fears making a wrong call that gets someone killed more than being trapped in the cab."
+        ],
+        "profile_image_presentations": {
+          "male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "hosted",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          }
+        },
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "created_at": "2026-07-06T00:00:00-04:00",
+        "updated_at": "2026-08-31T06:03:35.951Z"
       },
       "characters": {},
       "npc_directory": {
         "locations": {
-          "Laydown Yard": {
+          "laydown-yard": {
+            "label": "Laydown Yard",
             "characters": {
-              "Lena Ortiz": {
-                "id": 0,
+              "lena-ortiz": {
+                "id": "lena-ortiz",
                 "name": "Lena Ortiz",
-                "source": "Player",
-                "creation_tool": "Codex GPT-5 (Medium)",
                 "can_die": false,
                 "gender": "female",
                 "age": 32,
                 "role": "lead rigger",
-                "personality_description": "Fast-thinking, loyal, and physically brave, Lena understands rigging language instantly and can turn a dangerous lift plan into action under pressure.",
-                "speech_style": "Speaks in crisp radio confirmations, dry jokes, and urgent corrections when a plan is unsafe.",
-                "boldness": 7,
-                "starting_relationship_to_player": "trusted coworker",
-                "starting_trust": 7,
-                "starting_attraction": 0,
-                "starting_affection": 3,
-                "starting_state_of_mind": "alert",
-                "starting_physical_state": "healthy",
-                "starting_pose": "standing near bundled rebar with a radio on her shoulder",
-                "appearance": {
-                  "species": "Latina human",
-                  "height": 5,
-                  "skin_color": "warm tan skin",
-                  "eye_color": "brown eyes",
-                  "hair_color": "black hair",
-                  "hair_length": "shoulder-length hair",
-                  "hair_type": "wavy hair tied back",
-                  "extra_description": "faded knuckle tattoos on both hands",
-                  "body_description": "A strong, athletic build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Rigging Gear",
-                    "clothing": {
-                      "hat": "red rigger hard hat",
-                      "shirt": "gray work hoodie under a reflective vest",
-                      "pants": "reinforced work pants",
-                      "hands": "leather rigging gloves",
-                      "feet": "muddy steel-toe boots",
-                      "belt_accessory": "shackle wrench and signal whistle"
+                "voice": null,
+                "relationship": "trusted coworker",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "lena-ortiz",
+                  "name": "Lena Ortiz",
+                  "source": "Player",
+                  "creation_tool": "Codex GPT-5 (Medium)",
+                  "can_die": false,
+                  "gender": "female",
+                  "age": 32,
+                  "role": "lead rigger",
+                  "personality_description": "Fast-thinking, loyal, and physically brave, Lena understands rigging language instantly and can turn a dangerous lift plan into action under pressure.",
+                  "speech_style": "Speaks in crisp radio confirmations, dry jokes, and urgent corrections when a plan is unsafe.",
+                  "boldness": 7,
+                  "starting_relationship_to_player": "trusted coworker",
+                  "starting_trust": 7,
+                  "starting_attraction": 0,
+                  "starting_affection": 3,
+                  "starting_state_of_mind": "alert",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "standing near bundled rebar with a radio on her shoulder",
+                  "appearance": {
+                    "species": "Latina human",
+                    "height": 5,
+                    "body_description": "A strong, athletic build.",
+                    "skin_color": "warm tan skin",
+                    "eye_color": "brown eyes",
+                    "hair_color": "black hair",
+                    "hair_length": "shoulder-length hair",
+                    "hair_type": "wavy hair tied back",
+                    "extra_description": "faded knuckle tattoos on both hands",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Rigging Gear",
+                      "clothing": {
+                        "hat": "red rigger hard hat",
+                        "shirt": "gray work hoodie under a reflective vest",
+                        "pants": "reinforced work pants",
+                        "hands": "leather rigging gloves",
+                        "feet": "muddy steel-toe boots",
+                        "belt_accessory": "shackle wrench and signal whistle"
+                      }
                     }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": "tag line",
-                  "left_hand": "radio handset"
-                },
-                "starting_inventory": [
-                  "shackle wrench",
-                  "folding knife",
-                  "spare radio battery"
-                ],
-                "durable_known_facts": [
-                  "Can hook and unhook crane loads quickly if she can reach them.",
-                  "Knows the player well enough to trust short, technical instructions.",
-                  "Will risk herself to pull another worker out of danger.",
-                  "Hates panic on the radio and cuts through it with blunt orders.",
-                  "Can improvise barricades from rebar bundles, chain, and pallets.",
-                  "Her trust matters because many ground workers follow her lead."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
-                "voice": null
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": "tag line",
+                    "left_hand": "radio handset"
+                  },
+                  "starting_inventory": [
+                    "shackle wrench",
+                    "folding knife",
+                    "spare radio battery"
+                  ],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Lena Ortiz",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Rigging Gear",
+                      "clothing": {
+                        "hat": "red rigger hard hat",
+                        "shirt": "gray work hoodie under a reflective vest",
+                        "pants": "reinforced work pants",
+                        "hands": "leather rigging gloves",
+                        "feet": "muddy steel-toe boots",
+                        "belt_accessory": "shackle wrench and signal whistle"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Can hook and unhook crane loads quickly if she can reach them.",
+                    "Knows the player well enough to trust short, technical instructions.",
+                    "Will risk herself to pull another worker out of danger.",
+                    "Hates panic on the radio and cuts through it with blunt orders.",
+                    "Can improvise barricades from rebar bundles, chain, and pallets.",
+                    "Her trust matters because many ground workers follow her lead."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-07-06T00:00:00-04:00",
+                  "updated_at": "2026-08-31T06:03:35.951Z"
+                }
               },
-              "Brooks Kane": {
-                "id": 0,
+              "brooks-kane": {
+                "id": "brooks-kane",
                 "name": "Brooks Kane",
-                "source": "Player",
-                "creation_tool": "Codex GPT-5 (Medium)",
                 "can_die": true,
                 "gender": "male",
                 "age": 44,
                 "role": "equipment operator",
-                "personality_description": "A steady operator who trusts machines more than people and can turn an excavator, skid steer, or forklift into a shield if someone gives him clear sight lines.",
-                "speech_style": "Talks slow and gravelly, with practical questions about fuel, clearance, and whether the route is worth the risk.",
-                "boldness": 5,
-                "starting_relationship_to_player": "coworker",
-                "starting_trust": 4,
-                "starting_attraction": 0,
-                "starting_affection": 1,
-                "starting_state_of_mind": "wary",
-                "starting_physical_state": "healthy",
-                "starting_pose": "beside an idling excavator near the yard fence",
-                "appearance": {
-                  "species": "white human",
-                  "height": 6,
-                  "skin_color": "weathered fair skin",
-                  "eye_color": "gray eyes",
-                  "hair_color": "sandy blond hair",
-                  "hair_length": "short hair",
-                  "hair_type": "straight hair",
-                  "extra_description": "crooked nose from an old break",
-                  "body_description": "A strong, athletic build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Operator Gear",
-                    "clothing": {
-                      "hat": "yellow hard hat with ear protection clipped on",
-                      "shirt": "faded blue work shirt",
-                      "coat": "canvas work jacket",
-                      "pants": "grease-marked work pants",
-                      "hands": "fingerless mechanic gloves",
-                      "feet": "heavy work boots"
+                "voice": null,
+                "relationship": "coworker",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "brooks-kane",
+                  "name": "Brooks Kane",
+                  "source": "Player",
+                  "creation_tool": "Codex GPT-5 (Medium)",
+                  "can_die": true,
+                  "gender": "male",
+                  "age": 44,
+                  "role": "equipment operator",
+                  "personality_description": "A steady operator who trusts machines more than people and can turn an excavator, skid steer, or forklift into a shield if someone gives him clear sight lines.",
+                  "speech_style": "Talks slow and gravelly, with practical questions about fuel, clearance, and whether the route is worth the risk.",
+                  "boldness": 5,
+                  "starting_relationship_to_player": "coworker",
+                  "starting_trust": 4,
+                  "starting_attraction": 0,
+                  "starting_affection": 1,
+                  "starting_state_of_mind": "wary",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "beside an idling excavator near the yard fence",
+                  "appearance": {
+                    "species": "white human",
+                    "height": 6,
+                    "body_description": "A strong, athletic build.",
+                    "skin_color": "weathered fair skin",
+                    "eye_color": "gray eyes",
+                    "hair_color": "sandy blond hair",
+                    "hair_length": "short hair",
+                    "hair_type": "straight hair",
+                    "extra_description": "crooked nose from an old break",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Operator Gear",
+                      "clothing": {
+                        "hat": "yellow hard hat with ear protection clipped on",
+                        "shirt": "faded blue work shirt",
+                        "coat": "canvas work jacket",
+                        "pants": "grease-marked work pants",
+                        "hands": "fingerless mechanic gloves",
+                        "feet": "heavy work boots"
+                      }
                     }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": "excavator key ring",
-                  "left_hand": null
-                },
-                "starting_inventory": [
-                  "equipment keys",
-                  "utility knife",
-                  "diesel rag"
-                ],
-                "durable_known_facts": [
-                  "Can operate the excavator, skid steer, forklift, and telehandler.",
-                  "Needs clear radio guidance when zombies block his mirrors or blind spots.",
-                  "Will not throw machinery away on a hopeless stunt unless convinced.",
-                  "Keeps track of fuel levels and whether a machine can still move.",
-                  "Has a protective streak toward apprentices and younger workers."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
-                "voice": null
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": "excavator key ring",
+                    "left_hand": null
+                  },
+                  "starting_inventory": [
+                    "equipment keys",
+                    "utility knife",
+                    "diesel rag"
+                  ],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": true
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Brooks Kane",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Operator Gear",
+                      "clothing": {
+                        "hat": "yellow hard hat with ear protection clipped on",
+                        "shirt": "faded blue work shirt",
+                        "coat": "canvas work jacket",
+                        "pants": "grease-marked work pants",
+                        "hands": "fingerless mechanic gloves",
+                        "feet": "heavy work boots"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Can operate the excavator, skid steer, forklift, and telehandler.",
+                    "Needs clear radio guidance when zombies block his mirrors or blind spots.",
+                    "Will not throw machinery away on a hopeless stunt unless convinced.",
+                    "Keeps track of fuel levels and whether a machine can still move.",
+                    "Has a protective streak toward apprentices and younger workers."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-07-06T00:00:00-04:00",
+                  "updated_at": "2026-08-31T06:03:35.951Z"
+                }
               }
             }
           },
-          "Level Twelve Deck": {
+          "level-twelve-deck": {
+            "label": "Level Twelve Deck",
             "characters": {
-              "Darius Pike": {
-                "id": 0,
+              "darius-pike": {
+                "id": "darius-pike",
                 "name": "Darius Pike",
-                "source": "Player",
-                "creation_tool": "Codex GPT-5 (Medium)",
                 "can_die": false,
                 "gender": "male",
                 "age": 51,
                 "role": "site foreman",
-                "personality_description": "Commanding, proud, and safety-obsessed in his own rough way, Darius struggles when the best view and the best decisions belong to someone in the crane.",
-                "speech_style": "Barks orders with clipped authority, then grudgingly admits when a better plan is working.",
-                "boldness": 8,
-                "starting_relationship_to_player": "professional rival",
-                "starting_trust": 3,
-                "starting_attraction": 0,
-                "starting_affection": 1,
-                "starting_state_of_mind": "irritated and alarmed",
-                "starting_physical_state": "healthy",
-                "starting_pose": "standing near a temporary stairwell with a clipboard and radio",
-                "appearance": {
-                  "species": "Black human",
-                  "height": 7,
-                  "skin_color": "deep brown skin",
-                  "eye_color": "dark eyes",
-                  "hair_color": "black and gray hair",
-                  "hair_length": "closely cropped hair",
-                  "hair_type": "coiled hair",
-                  "extra_description": "gray beard trimmed close",
-                  "body_description": "A strong, athletic build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Foreman Gear",
-                    "clothing": {
-                      "hat": "white foreman hard hat",
-                      "shirt": "navy polo under a reflective vest",
-                      "coat": "light rain shell tied around the waist",
-                      "pants": "tan work pants",
-                      "feet": "black safety boots",
-                      "belt_accessory": "clipboard pouch and radio"
+                "voice": null,
+                "relationship": "professional rival",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "darius-pike",
+                  "name": "Darius Pike",
+                  "source": "Player",
+                  "creation_tool": "Codex GPT-5 (Medium)",
+                  "can_die": false,
+                  "gender": "male",
+                  "age": 51,
+                  "role": "site foreman",
+                  "personality_description": "Commanding, proud, and safety-obsessed in his own rough way, Darius struggles when the best view and the best decisions belong to someone in the crane.",
+                  "speech_style": "Barks orders with clipped authority, then grudgingly admits when a better plan is working.",
+                  "boldness": 8,
+                  "starting_relationship_to_player": "professional rival",
+                  "starting_trust": 3,
+                  "starting_attraction": 0,
+                  "starting_affection": 1,
+                  "starting_state_of_mind": "irritated and alarmed",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "standing near a temporary stairwell with a clipboard and radio",
+                  "appearance": {
+                    "species": "Black human",
+                    "height": 7,
+                    "body_description": "A strong, athletic build.",
+                    "skin_color": "deep brown skin",
+                    "eye_color": "dark eyes",
+                    "hair_color": "black and gray hair",
+                    "hair_length": "closely cropped hair",
+                    "hair_type": "coiled hair",
+                    "extra_description": "gray beard trimmed close",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Foreman Gear",
+                      "clothing": {
+                        "hat": "white foreman hard hat",
+                        "shirt": "navy polo under a reflective vest",
+                        "coat": "light rain shell tied around the waist",
+                        "pants": "tan work pants",
+                        "feet": "black safety boots",
+                        "belt_accessory": "clipboard pouch and radio"
+                      }
                     }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": "clipboard",
-                  "left_hand": "radio"
-                },
-                "starting_inventory": [
-                  "master site keys",
-                  "paper lift schedule",
-                  "first-aid card"
-                ],
-                "durable_known_facts": [
-                  "Can command respect from crews who might ignore a voice from the crane.",
-                  "Knows evacuation plans but cannot see the whole site from the deck.",
-                  "Dislikes losing authority but cares deeply about getting workers home.",
-                  "Can organize a floor-by-floor retreat if he accepts the player's overview.",
-                  "Keeps the site master keys on his belt."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
-                "voice": null
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": "clipboard",
+                    "left_hand": "radio"
+                  },
+                  "starting_inventory": [
+                    "master site keys",
+                    "paper lift schedule",
+                    "first-aid card"
+                  ],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": true
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Darius Pike",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Foreman Gear",
+                      "clothing": {
+                        "hat": "white foreman hard hat",
+                        "shirt": "navy polo under a reflective vest",
+                        "coat": "light rain shell tied around the waist",
+                        "pants": "tan work pants",
+                        "feet": "black safety boots",
+                        "belt_accessory": "clipboard pouch and radio"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Can command respect from crews who might ignore a voice from the crane.",
+                    "Knows evacuation plans but cannot see the whole site from the deck.",
+                    "Dislikes losing authority but cares deeply about getting workers home.",
+                    "Can organize a floor-by-floor retreat if he accepts the player's overview.",
+                    "Keeps the site master keys on his belt."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-07-06T00:00:00-04:00",
+                  "updated_at": "2026-08-31T06:03:35.951Z"
+                }
               },
-              "Mika Voss": {
-                "id": 0,
+              "mika-voss": {
+                "id": "mika-voss",
                 "name": "Mika Voss",
-                "source": "Player",
-                "creation_tool": "Codex GPT-5 (Medium)",
                 "can_die": true,
                 "gender": "female",
                 "age": 24,
                 "role": "apprentice ironworker",
-                "personality_description": "Nervous but quick, Mika knows she is inexperienced and overcompensates by volunteering for tight routes no one else can fit through.",
-                "speech_style": "Speaks fast, asks for confirmation twice, and becomes steadier when given one clear job.",
-                "boldness": 4,
-                "starting_relationship_to_player": "junior coworker",
-                "starting_trust": 4,
-                "starting_attraction": 0,
-                "starting_affection": 1,
-                "starting_state_of_mind": "scared but listening",
-                "starting_physical_state": "healthy",
-                "starting_pose": "crouched near a column form with a harness clipped to a lifeline",
-                "appearance": {
-                  "species": "East Asian human",
-                  "height": 4,
-                  "skin_color": "light beige skin",
-                  "eye_color": "dark brown eyes",
-                  "hair_color": "black hair",
-                  "hair_length": "chin-length hair",
-                  "hair_type": "straight hair tucked under helmet",
-                  "extra_description": "tiny silver nose stud",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Apprentice Gear",
-                    "clothing": {
-                      "hat": "green apprentice hard hat",
-                      "shirt": "high-visibility thermal shirt",
-                      "over_shirt": "yellow reflective vest",
-                      "pants": "black work pants",
-                      "hands": "new leather gloves",
-                      "feet": "clean steel-toe boots",
-                      "belt_accessory": "fall-arrest harness"
+                "voice": null,
+                "relationship": "junior coworker",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "mika-voss",
+                  "name": "Mika Voss",
+                  "source": "Player",
+                  "creation_tool": "Codex GPT-5 (Medium)",
+                  "can_die": true,
+                  "gender": "female",
+                  "age": 24,
+                  "role": "apprentice ironworker",
+                  "personality_description": "Nervous but quick, Mika knows she is inexperienced and overcompensates by volunteering for tight routes no one else can fit through.",
+                  "speech_style": "Speaks fast, asks for confirmation twice, and becomes steadier when given one clear job.",
+                  "boldness": 4,
+                  "starting_relationship_to_player": "junior coworker",
+                  "starting_trust": 4,
+                  "starting_attraction": 0,
+                  "starting_affection": 1,
+                  "starting_state_of_mind": "scared but listening",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "crouched near a column form with a harness clipped to a lifeline",
+                  "appearance": {
+                    "species": "East Asian human",
+                    "height": 4,
+                    "body_description": "An average build.",
+                    "skin_color": "light beige skin",
+                    "eye_color": "dark brown eyes",
+                    "hair_color": "black hair",
+                    "hair_length": "chin-length hair",
+                    "hair_type": "straight hair tucked under helmet",
+                    "extra_description": "tiny silver nose stud",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Apprentice Gear",
+                      "clothing": {
+                        "hat": "green apprentice hard hat",
+                        "shirt": "high-visibility thermal shirt",
+                        "over_shirt": "yellow reflective vest",
+                        "pants": "black work pants",
+                        "hands": "new leather gloves",
+                        "feet": "clean steel-toe boots",
+                        "belt_accessory": "fall-arrest harness"
+                      }
                     }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": "spud wrench",
-                  "left_hand": null
-                },
-                "starting_inventory": [
-                  "spud wrench",
-                  "chalk line",
-                  "protein bar"
-                ],
-                "durable_known_facts": [
-                  "Can move through narrow scaffold bays and unfinished service gaps.",
-                  "Needs calm, specific instructions when panic spikes.",
-                  "Has better hearing than most workers and notices distant radio chatter.",
-                  "Wants to prove she belongs on the crew.",
-                  "Can carry small tools or batteries between floors if protected."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
-                "voice": null
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": "spud wrench",
+                    "left_hand": null
+                  },
+                  "starting_inventory": [
+                    "spud wrench",
+                    "chalk line",
+                    "protein bar"
+                  ],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Mika Voss",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Apprentice Gear",
+                      "clothing": {
+                        "hat": "green apprentice hard hat",
+                        "shirt": "high-visibility thermal shirt",
+                        "over_shirt": "yellow reflective vest",
+                        "pants": "black work pants",
+                        "hands": "new leather gloves",
+                        "feet": "clean steel-toe boots",
+                        "belt_accessory": "fall-arrest harness"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Can move through narrow scaffold bays and unfinished service gaps.",
+                    "Needs calm, specific instructions when panic spikes.",
+                    "Has better hearing than most workers and notices distant radio chatter.",
+                    "Wants to prove she belongs on the crew.",
+                    "Can carry small tools or batteries between floors if protected."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-07-06T00:00:00-04:00",
+                  "updated_at": "2026-08-31T06:03:35.951Z"
+                }
               }
             }
           },
-          "Electrical Room": {
+          "electrical-room": {
+            "label": "Electrical Room",
             "characters": {
-              "Soren Bell": {
-                "id": 0,
+              "soren-bell": {
+                "id": "soren-bell",
                 "name": "Soren Bell",
-                "source": "Player",
-                "creation_tool": "Codex GPT-5 (Medium)",
                 "can_die": true,
                 "gender": "male",
                 "age": 39,
                 "role": "site electrician",
-                "personality_description": "Methodical, anxious, and technically sharp, Soren understands temporary power, generator transfer switches, alarms, and what can go wrong if panicked workers touch the wrong panel.",
-                "speech_style": "Explains hazards in precise fragments and gets sarcastic when people ignore electrical danger.",
-                "boldness": 3,
-                "starting_relationship_to_player": "coworker",
-                "starting_trust": 3,
-                "starting_attraction": 0,
-                "starting_affection": 1,
-                "starting_state_of_mind": "injured and trying to stay lucid",
-                "starting_physical_state": "sprained ankle and scraped arm",
-                "starting_pose": "sitting beside temporary power panels with a radio nearby",
-                "appearance": {
-                  "species": "Middle Eastern human",
-                  "height": 5,
-                  "skin_color": "olive skin",
-                  "eye_color": "hazel eyes",
-                  "hair_color": "dark brown hair",
-                  "hair_length": "short hair",
-                  "hair_type": "curly hair",
-                  "extra_description": "thin scar through one eyebrow",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Electrical Gear",
-                    "clothing": {
-                      "hat": "blue electrician hard hat",
-                      "shirt": "arc-rated gray work shirt",
-                      "over_shirt": "reflective safety vest",
-                      "pants": "arc-rated navy work pants",
-                      "hands": "insulated gloves hanging from a belt",
-                      "feet": "electrical hazard safety boots",
-                      "belt_accessory": "voltage tester and tool pouch"
+                "voice": null,
+                "relationship": "coworker",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "soren-bell",
+                  "name": "Soren Bell",
+                  "source": "Player",
+                  "creation_tool": "Codex GPT-5 (Medium)",
+                  "can_die": true,
+                  "gender": "male",
+                  "age": 39,
+                  "role": "site electrician",
+                  "personality_description": "Methodical, anxious, and technically sharp, Soren understands temporary power, generator transfer switches, alarms, and what can go wrong if panicked workers touch the wrong panel.",
+                  "speech_style": "Explains hazards in precise fragments and gets sarcastic when people ignore electrical danger.",
+                  "boldness": 3,
+                  "starting_relationship_to_player": "coworker",
+                  "starting_trust": 3,
+                  "starting_attraction": 0,
+                  "starting_affection": 1,
+                  "starting_state_of_mind": "injured and trying to stay lucid",
+                  "starting_physical_state": "sprained ankle and scraped arm",
+                  "starting_pose": "sitting beside temporary power panels with a radio nearby",
+                  "appearance": {
+                    "species": "Middle Eastern human",
+                    "height": 5,
+                    "body_description": "An average build.",
+                    "skin_color": "olive skin",
+                    "eye_color": "hazel eyes",
+                    "hair_color": "dark brown hair",
+                    "hair_length": "short hair",
+                    "hair_type": "curly hair",
+                    "extra_description": "thin scar through one eyebrow",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Electrical Gear",
+                      "clothing": {
+                        "hat": "blue electrician hard hat",
+                        "shirt": "arc-rated gray work shirt",
+                        "over_shirt": "reflective safety vest",
+                        "pants": "arc-rated navy work pants",
+                        "hands": "insulated gloves hanging from a belt",
+                        "feet": "electrical hazard safety boots",
+                        "belt_accessory": "voltage tester and tool pouch"
+                      }
                     }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": "voltage tester",
-                  "left_hand": "radio"
-                },
-                "starting_inventory": [
-                  "voltage tester",
-                  "panel key",
-                  "roll of electrical tape"
-                ],
-                "durable_known_facts": [
-                  "Can shut down backup alarms, floodlights, or temporary panels if guided and protected.",
-                  "Is injured enough that moving him is difficult.",
-                  "Knows which electrical rooms can be locked from inside.",
-                  "Can help the player understand why sound and light are pulling the infected.",
-                  "May die if abandoned too long near the lower electrical room."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
-                "voice": null
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": "voltage tester",
+                    "left_hand": "radio"
+                  },
+                  "starting_inventory": [
+                    "voltage tester",
+                    "panel key",
+                    "roll of electrical tape"
+                  ],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": true
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Soren Bell",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Electrical Gear",
+                      "clothing": {
+                        "hat": "blue electrician hard hat",
+                        "shirt": "arc-rated gray work shirt",
+                        "over_shirt": "reflective safety vest",
+                        "pants": "arc-rated navy work pants",
+                        "hands": "insulated gloves hanging from a belt",
+                        "feet": "electrical hazard safety boots",
+                        "belt_accessory": "voltage tester and tool pouch"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Can shut down backup alarms, floodlights, or temporary panels if guided and protected.",
+                    "Is injured enough that moving him is difficult.",
+                    "Knows which electrical rooms can be locked from inside.",
+                    "Can help the player understand why sound and light are pulling the infected.",
+                    "May die if abandoned too long near the lower electrical room."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-07-06T00:00:00-04:00",
+                  "updated_at": "2026-08-31T06:03:35.951Z"
+                }
               }
             }
           },
-          "Trailer Row": {
+          "trailer-row": {
+            "label": "Trailer Row",
             "characters": {
-              "Priya Nair": {
-                "id": 0,
+              "priya-nair": {
+                "id": "priya-nair",
                 "name": "Priya Nair",
-                "source": "Player",
-                "creation_tool": "Codex GPT-5 (Medium)",
                 "can_die": true,
                 "gender": "female",
                 "age": 37,
                 "role": "site medic and safety officer",
-                "personality_description": "Practical, compassionate, and stubborn, Priya triages injuries quickly and refuses to let fear turn people into disposable numbers.",
-                "speech_style": "Uses calm medical phrasing, firm boundaries, and blunt warnings when someone is about to make an injury worse.",
-                "boldness": 6,
-                "starting_relationship_to_player": "coworker",
-                "starting_trust": 4,
-                "starting_attraction": 0,
-                "starting_affection": 2,
-                "starting_state_of_mind": "controlled but frightened",
-                "starting_physical_state": "healthy",
-                "starting_pose": "inside the safety trailer with trauma kits open",
-                "appearance": {
-                  "species": "South Asian human",
-                  "height": 5,
-                  "skin_color": "brown skin",
-                  "eye_color": "dark brown eyes",
-                  "hair_color": "black hair",
-                  "hair_length": "long hair",
-                  "hair_type": "straight hair in a low braid",
-                  "extra_description": "small red bindi",
-                  "body_description": "An average build."
-                },
-                "outfits": [
-                  {
-                    "id": "default",
-                    "name": "Safety Officer Gear",
-                    "clothing": {
-                      "hat": "white hard hat with safety cross decal",
-                      "shirt": "teal work shirt",
-                      "over_shirt": "lime safety vest with medic patches",
-                      "pants": "gray cargo work pants",
-                      "hands": "blue nitrile gloves tucked into a pocket",
-                      "feet": "black safety boots",
-                      "belt_accessory": "compact trauma pouch"
+                "voice": null,
+                "relationship": "coworker",
+                "note": "",
+                "inspected": true,
+                "full_character": {
+                  "id": "priya-nair",
+                  "name": "Priya Nair",
+                  "source": "Player",
+                  "creation_tool": "Codex GPT-5 (Medium)",
+                  "can_die": true,
+                  "gender": "female",
+                  "age": 37,
+                  "role": "site medic and safety officer",
+                  "personality_description": "Practical, compassionate, and stubborn, Priya triages injuries quickly and refuses to let fear turn people into disposable numbers.",
+                  "speech_style": "Uses calm medical phrasing, firm boundaries, and blunt warnings when someone is about to make an injury worse.",
+                  "boldness": 6,
+                  "starting_relationship_to_player": "coworker",
+                  "starting_trust": 4,
+                  "starting_attraction": 0,
+                  "starting_affection": 2,
+                  "starting_state_of_mind": "controlled but frightened",
+                  "starting_physical_state": "healthy",
+                  "starting_pose": "inside the safety trailer with trauma kits open",
+                  "appearance": {
+                    "species": "South Asian human",
+                    "height": 5,
+                    "body_description": "An average build.",
+                    "skin_color": "brown skin",
+                    "eye_color": "dark brown eyes",
+                    "hair_color": "black hair",
+                    "hair_length": "long hair",
+                    "hair_type": "straight hair in a low braid",
+                    "extra_description": "small red bindi",
+                    "extra_description_lower_body": "",
+                    "nonhuman_lower_body": false
+                  },
+                  "outfits": [
+                    {
+                      "id": "default",
+                      "name": "Safety Officer Gear",
+                      "clothing": {
+                        "hat": "white hard hat with safety cross decal",
+                        "shirt": "teal work shirt",
+                        "over_shirt": "lime safety vest with medic patches",
+                        "pants": "gray cargo work pants",
+                        "hands": "blue nitrile gloves tucked into a pocket",
+                        "feet": "black safety boots",
+                        "belt_accessory": "compact trauma pouch"
+                      }
                     }
-                  }
-                ],
-                "starting_outfit_id": "default",
-                "starting_held_items": {
-                  "right_hand": "trauma shears",
-                  "left_hand": "radio"
-                },
-                "starting_inventory": [
-                  "trauma kit",
-                  "tourniquets",
-                  "site injury log"
-                ],
-                "durable_known_facts": [
-                  "Can stabilize wounded workers if they reach the safety trailer.",
-                  "Knows where emergency supplies, keys, and muster lists are stored.",
-                  "Pushes back against plans that treat injured workers as acceptable losses.",
-                  "Can coordinate triage if the player gives her a defensible route.",
-                  "Has enough authority to keep frightened survivors from scattering."
-                ],
-                "default_seed": 0,
-                "image_prompt_config": {
-                  "seed_enabled": true,
-                  "seed": 0,
-                  "style": "",
-                  "profile_style": "Game Art Icon",
-                  "negative": "",
-                  "negative_prompt": ""
-                },
-                "default_profile_image": {
-                  "url": "",
-                  "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": ""
-                },
-                "voice": null
+                  ],
+                  "starting_outfit_id": "default",
+                  "starting_held_items": {
+                    "right_hand": "trauma shears",
+                    "left_hand": "radio"
+                  },
+                  "starting_inventory": [
+                    "trauma kit",
+                    "tourniquets",
+                    "site injury log"
+                  ],
+                  "default_seed": 0,
+                  "image_prompt_config": {
+                    "seed_enabled": true,
+                    "seed": 0,
+                    "style": "",
+                    "profile_style": "Game Art Icon",
+                    "negative": "",
+                    "negative_prompt": ""
+                  },
+                  "default_profile_image": {
+                    "url": "",
+                    "local_image_id": "",
+                    "source": "none",
+                    "seed": null,
+                    "prompt": "",
+                    "negative_prompt": "",
+                    "note": "",
+                    "male": false
+                  },
+                  "voice": null,
+                  "version": 1,
+                  "romanceable": true,
+                  "fallback_name": "Priya Nair",
+                  "fallback_outfits": [
+                    {
+                      "id": "default",
+                      "name": "Safety Officer Gear",
+                      "clothing": {
+                        "hat": "white hard hat with safety cross decal",
+                        "shirt": "teal work shirt",
+                        "over_shirt": "lime safety vest with medic patches",
+                        "pants": "gray cargo work pants",
+                        "hands": "blue nitrile gloves tucked into a pocket",
+                        "feet": "black safety boots",
+                        "belt_accessory": "compact trauma pouch"
+                      }
+                    }
+                  ],
+                  "fallback_starting_outfit_id": "default",
+                  "starting_known_facts": [
+                    "Can stabilize wounded workers if they reach the safety trailer.",
+                    "Knows where emergency supplies, keys, and muster lists are stored.",
+                    "Pushes back against plans that treat injured workers as acceptable losses.",
+                    "Can coordinate triage if the player gives her a defensible route.",
+                    "Has enough authority to keep frightened survivors from scattering."
+                  ],
+                  "profile_image_presentations": {
+                    "male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "hosted",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "local_image_id": "",
+                      "source": "none",
+                      "seed": null,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "male": false
+                    }
+                  },
+                  "profile_images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "images": {
+                    "active_image_id": "",
+                    "image_ids": []
+                  },
+                  "created_at": "2026-07-06T00:00:00-04:00",
+                  "updated_at": "2026-08-31T06:03:35.951Z"
+                }
               }
             }
+          },
+          "crane-cab": {
+            "label": "Tower Crane Cab",
+            "characters": {}
           }
         }
       },
@@ -891,7 +1346,8 @@
         "morale": 3,
         "injuries": 1,
         "fuel": 3,
-        "rule_flags": []
+        "rule_flags": [],
+        "items": []
       },
       "story_rules": [
         {
@@ -934,1167 +1390,1721 @@
         "violence_level": "zombie horror violence, not splatter comedy",
         "player_agency": "The player chooses priorities and tactics; do not assume heroic sacrifice or abandonment without input."
       },
-      "objectives": [
-        {
-          "id": "answer-the-first-radio-call",
-          "title": "Answer the First Radio Call",
-          "type": "story",
-          "kind": "main",
-          "status": "active",
-          "summary": "Use the crane cab view and radio to identify where the first screams are coming from.",
-          "rewards": [
-            {
-              "type": "generate_story_image",
-              "id": "site-from-crane-first-panic",
-              "title": "Bird's-Eye Panic",
-              "prompt": "tower crane cab view over a modern high-rise construction site, workers scattering below, service gate buckling, suspended steel load, afternoon storm light, grounded zombie outbreak horror",
-              "negative_prompt": "text, logo, watermark, readable signs"
-            }
-          ],
-          "requires": [],
-          "next_objectives": [
-            "choose-first-site-priority"
-          ],
-          "travel_location_id": "crane-cab",
-          "travel_location_name": "Tower Crane Cab",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": true,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player uses the radio, crane view, or both to ask for a report, identify the trouble near the gate, or direct the crew to clarify what is happening.",
-          "completion_instruction": "Let the player receive overlapping reports from the gate, laydown yard, and upper deck. Establish that infected people are entering the site and that the player's high view can coordinate workers who cannot see each other.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "choose-first-site-priority",
-          "title": "Choose the First Site Priority",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Pick which crisis the crane operator addresses first while the outbreak is still small enough to shape.",
-          "rewards": [],
-          "requires": [
-            "answer-the-first-radio-call"
-          ],
-          "next_objectives": [
-            "make-the-first-crane-move"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "first-priority",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "choice",
-          "completion_criteria": "Completed immediately by EmberAdventures when the player selects which early crisis to prioritize.",
-          "completion_instruction": "Resolve only the selected priority as the first coordinated response, then show the other areas worsening enough to keep pressure on the player.",
-          "choices": [
-            {
-              "id": "secure-gate",
-              "title": "Block the Service Gate",
-              "summary": "",
-              "effects": [
-                "site_control +1",
-                "noise +1"
-              ],
-              "auto_preferred": true,
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 1
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "noise",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "gate-first"
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Darius Pike",
-                  "stats": {
-                    "trust": 1
-                  }
-                }
-              ]
-            },
-            {
-              "id": "save-laydown-yard",
-              "title": "Protect the Laydown Yard",
-              "summary": "",
-              "effects": [
-                "morale +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "morale",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "laydown-first"
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Lena Ortiz",
-                  "stats": {
-                    "trust": 1,
-                    "affection": 1
-                  }
-                }
-              ]
-            },
-            {
-              "id": "quiet-the-alarms",
-              "title": "Quiet the Backup Alarms",
-              "summary": "",
-              "effects": [
-                "noise -1",
-                "injuries +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "noise",
-                  "amount": -1
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "injuries",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "alarms-first"
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Soren Bell",
-                  "stats": {
-                    "trust": 1
-                  }
-                }
-              ]
-            }
-          ],
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "make-the-first-crane-move",
-          "title": "Make the First Crane Move",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Use the crane, a suspended load, or the hook block to create space for the crew.",
-          "rewards": [
-            {
-              "type": "adjust_story_inventory",
-              "path": "site_control",
-              "amount": 1
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "noise",
-              "amount": 1
-            },
-            {
-              "type": "adjust_relationship",
-              "target": "Lena Ortiz",
-              "stats": {
-                "trust": 1
+      "objectives": {
+        "active_id": "answer-the-first-radio-call",
+        "no_current": false,
+        "items": [
+          {
+            "id": "answer-the-first-radio-call",
+            "title": "Answer the First Radio Call",
+            "type": "story",
+            "status": "active",
+            "summary": "Use the crane cab view and radio to identify where the first screams are coming from.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "site-from-crane-first-panic",
+                "title": "Bird's-Eye Panic",
+                "prompt": "tower crane cab view over a modern high-rise construction site, workers scattering below, service gate buckling, suspended steel load, afternoon storm light, grounded zombie outbreak horror",
+                "negative_prompt": "text, logo, watermark, readable signs"
               }
-            }
-          ],
-          "requires": [
-            "choose-first-site-priority"
-          ],
-          "next_objectives": [
-            "establish-radio-discipline"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "ai",
-          "completion_criteria": "Return yes only when the narrator has resolved the player's first crane tactic and shown the immediate effect on zombies, workers, and site hazards.",
-          "completion_instruction": "Resolve the crane action according to the player's chosen method. Make it useful but costly: a path opens, a cluster is scattered or crushed, and the noise or damaged materials create a new complication.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "establish-radio-discipline",
-          "title": "Establish Radio Discipline",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Cut through panic, assign channels or call signs, and make the workers listen before the site turns into noise.",
-          "rewards": [
-            {
-              "type": "adjust_story_inventory",
-              "path": "morale",
-              "amount": 1
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "noise",
-              "amount": -1
-            },
-            {
-              "type": "add_story_rule",
-              "rule_id": "organized-radio-net",
-              "text": "The surviving crew has a rough radio net: short messages, location first, no screaming unless contact is immediate."
-            }
-          ],
-          "requires": [
-            "make-the-first-crane-move"
-          ],
-          "next_objectives": [
-            "route-the-separated-crews"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player tells the crew how to use the radio, assigns priorities or call signs, or directly orders panicked workers to report locations instead of shouting.",
-          "completion_instruction": "Have key workers respond to the player's radio discipline. Darius may resist, Lena backs practical calls, and the next danger becomes guiding separated crews through blind spots.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "route-the-separated-crews",
-          "title": "Route the Separated Crews",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Use the overhead view to guide workers through blind spots, ladders, stair towers, and equipment lanes.",
-          "rewards": [
-            {
-              "type": "unlock_location",
-              "location_id": "river-access-road",
-              "travel_enabled": false
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "crew_alive",
-              "amount": 0
-            },
-            {
-              "type": "adjust_relationship",
-              "target": "Mika Voss",
-              "stats": {
-                "trust": 1
+            ],
+            "requires": [],
+            "next_objectives": [
+              {
+                "objective_id": "choose-first-site-priority",
+                "id": "answer-the-first-radio-call-output-1",
+                "completion_instruction": "Let the player receive overlapping reports from the gate, laydown yard, and upper deck. Establish that infected people are entering the site and that the player's high view can coordinate workers who cannot see each other.",
+                "rewards": [],
+                "target_input_group_id": "from-answer-the-first-radio-call"
               }
-            }
-          ],
-          "requires": [
-            "establish-radio-discipline"
-          ],
-          "next_objectives": [
-            "choose-who-gets-the-clearest-route"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player gives at least one specific route or movement order based on what they can see from the crane.",
-          "completion_instruction": "Show workers moving because of the player's guidance. Let at least one route succeed, then reveal that two endangered groups now need mutually incompatible help.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "choose-who-gets-the-clearest-route",
-          "title": "Choose Who Gets the Clearest Route",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Two groups need direction at once, and the player must decide whose route gets the safest call.",
-          "rewards": [],
-          "requires": [
-            "route-the-separated-crews"
-          ],
-          "next_objectives": [
-            "recover-the-trailer-supplies"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "clearest-route",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "choice",
-          "completion_criteria": "Completed immediately by EmberAdventures when the player chooses which endangered group receives the clearest route guidance.",
-          "completion_instruction": "Show the selected group gaining the safer route while the other group survives with a cost, delay, or injury rather than vanishing from the story.",
-          "choices": [
-            {
-              "id": "guide-upper-deck",
-              "title": "Guide the Upper Deck Crew",
-              "summary": "",
-              "effects": [
-                "morale +1"
-              ],
-              "auto_preferred": true,
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "morale",
-                  "amount": 1
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Darius Pike",
-                  "stats": {
-                    "trust": 1
+            ],
+            "travel_location_id": "crane-cab",
+            "travel_location_name": "Tower Crane Cab",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": true,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player uses the radio, crane view, or both to ask for a report, identify the trouble near the gate, or direct the crew to clarify what is happening.",
+            "completion_instruction": "Let the player receive overlapping reports from the gate, laydown yard, and upper deck. Establish that infected people are entering the site and that the player's high view can coordinate workers who cannot see each other.",
+            "while_active_guidance": "Use the crane cab view and radio to identify where the first screams are coming from."
+          },
+          {
+            "id": "choose-first-site-priority",
+            "title": "Choose the First Site Priority",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Pick which crisis the crane operator addresses first while the outbreak is still small enough to shape.",
+            "rewards": [],
+            "requires": [
+              "answer-the-first-radio-call"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "first-priority",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_instruction": "Resolve only the selected priority as the first coordinated response, then show the other areas worsening enough to keep pressure on the player.",
+            "choices": [
+              {
+                "id": "secure-gate",
+                "title": "Block the Service Gate",
+                "summary": "",
+                "effects": [
+                  "site_control +1",
+                  "noise +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "noise"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "gate-first",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Darius Pike",
+                    "stats": {
+                      "trust": 1
+                    }
                   }
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "upper-deck-prioritized"
-                }
-              ]
-            },
-            {
-              "id": "guide-trailer-row",
-              "title": "Guide the Trailer Row",
-              "summary": "",
-              "effects": [
-                "injuries -1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "injuries",
-                  "amount": -1
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Priya Nair",
-                  "stats": {
-                    "trust": 1
+                ],
+                "next_objective_id": "make-the-first-crane-move",
+                "completion_instruction": "Resolve only the selected priority as the first coordinated response, then show the other areas worsening enough to keep pressure on the player.",
+                "target_input_group_id": "from-choose-first-site-priority"
+              },
+              {
+                "id": "save-laydown-yard",
+                "title": "Protect the Laydown Yard",
+                "summary": "",
+                "effects": [
+                  "morale +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "morale"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "laydown-first",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Lena Ortiz",
+                    "stats": {
+                      "trust": 1,
+                      "affection": 1
+                    }
                   }
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "trailer-row-prioritized"
-                }
-              ]
-            },
-            {
-              "id": "split-the-channel",
-              "title": "Split the Channel",
-              "summary": "",
-              "effects": [
-                "noise +1",
-                "site_control +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "noise",
-                  "amount": 1
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "split-channel"
-                }
-              ]
-            }
-          ],
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "recover-the-trailer-supplies",
-          "title": "Recover the Trailer Supplies",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Coordinate a dangerous run for first aid, keys, batteries, and the muster list.",
-          "rewards": [
-            {
-              "type": "add_story_item",
-              "item": "muster list"
-            },
-            {
-              "type": "add_story_item",
-              "item": "spare radio batteries"
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "morale",
-              "amount": 1
-            },
-            {
-              "type": "adjust_relationship",
-              "target": "Priya Nair",
-              "stats": {
-                "trust": 1
+                ],
+                "next_objective_id": "make-the-first-crane-move",
+                "completion_instruction": "Resolve only the selected priority as the first coordinated response, then show the other areas worsening enough to keep pressure on the player.",
+                "target_input_group_id": "from-choose-first-site-priority"
+              },
+              {
+                "id": "quiet-the-alarms",
+                "title": "Quiet the Backup Alarms",
+                "summary": "",
+                "effects": [
+                  "noise -1",
+                  "injuries +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": -1,
+                    "field_path": [
+                      "noise"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "injuries"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "alarms-first",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Soren Bell",
+                    "stats": {
+                      "trust": 1
+                    }
+                  }
+                ],
+                "next_objective_id": "make-the-first-crane-move",
+                "completion_instruction": "Resolve only the selected priority as the first coordinated response, then show the other areas worsening enough to keep pressure on the player.",
+                "target_input_group_id": "from-choose-first-site-priority"
               }
-            }
-          ],
-          "requires": [
-            "choose-who-gets-the-clearest-route"
-          ],
-          "next_objectives": [
-            "investigate-the-wrong-voice"
-          ],
-          "travel_location_id": "trailer-row",
-          "travel_location_name": "Trailer Row",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "ai",
-          "completion_criteria": "Return yes only when the narrator has resolved the supply run and established whether first aid, keys, batteries, or the muster list were recovered.",
-          "completion_instruction": "Resolve the run through trailer row with practical obstacles: narrow doors, a blocked porch, a trapped worker, or infected drawn to radio noise. Let recovered supplies improve the crew's chances and point toward the strange radio transmission.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "investigate-the-wrong-voice",
-          "title": "Investigate the Wrong Voice",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "A radio call repeats words from a worker who should not be on that channel anymore.",
-          "rewards": [
-            {
-              "type": "add_story_rule",
-              "rule_id": "infected-radio-mimic",
-              "text": "At least one infected person carries an open radio; repeated words or clipped old phrases may lure workers toward danger."
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "morale",
-              "amount": -1
-            }
-          ],
-          "requires": [
-            "recover-the-trailer-supplies"
-          ],
-          "next_objectives": [
-            "decide-how-to-handle-the-lure"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player questions the suspicious radio call, asks someone to verify the speaker, scans the site for the radio source, or warns the crew not to follow the voice.",
-          "completion_instruction": "Reveal that the suspicious transmission is coming from an infected worker or corpse with an open radio near a dangerous route. Make the discovery frightening and useful without explaining the whole outbreak.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "decide-how-to-handle-the-lure",
-          "title": "Decide How to Handle the Lure",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "The open radio can either be silenced, used as bait, or ignored while the crew keeps moving.",
-          "rewards": [],
-          "requires": [
-            "investigate-the-wrong-voice"
-          ],
-          "next_objectives": [
-            "choose-the-site-weapon"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "radio-lure",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "choice",
-          "completion_criteria": "Completed immediately by EmberAdventures when the player chooses what to do with the open-radio lure.",
-          "completion_instruction": "Resolve the selected use of the open radio, showing how the infected react to sound and how workers emotionally handle hearing a familiar voice used as bait.",
-          "choices": [
-            {
-              "id": "use-radio-as-bait",
-              "title": "Use It as Bait",
-              "summary": "",
-              "effects": [
-                "site_control +1",
-                "morale -1"
-              ],
-              "auto_preferred": true,
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 1
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "morale",
-                  "amount": -1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "used-radio-bait"
+            ],
+            "while_active_guidance": "Pick which crisis the crane operator addresses first while the outbreak is still small enough to shape."
+          },
+          {
+            "id": "make-the-first-crane-move",
+            "title": "Make the First Crane Move",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Use the crane, a suspended load, or the hook block to create space for the crew.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "site_control"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "noise"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_relationship",
+                "target": "Lena Ortiz",
+                "stats": {
+                  "trust": 1
                 }
-              ]
-            },
-            {
-              "id": "silence-the-radio",
-              "title": "Silence It",
-              "summary": "",
-              "effects": [
-                "noise -1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "noise",
-                  "amount": -1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "silenced-radio"
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Priya Nair",
-                  "stats": {
-                    "trust": 1
-                  }
-                }
-              ]
-            },
-            {
-              "id": "keep-moving",
-              "title": "Keep Everyone Moving",
-              "summary": "",
-              "effects": [
-                "injuries +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "injuries",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "ignored-radio-lure"
-                }
-              ]
-            }
-          ],
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "choose-the-site-weapon",
-          "title": "Choose the Site Weapon",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Pick which piece of the job site becomes the crew's main way to push back.",
-          "rewards": [],
-          "requires": [
-            "decide-how-to-handle-the-lure"
-          ],
-          "next_objectives": [
-            "execute-the-site-counterattack"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "site-weapon",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "choice",
-          "completion_criteria": "Completed immediately by EmberAdventures when the player chooses the job-site tool or environment feature to turn against the infected.",
-          "completion_instruction": "Frame the chosen weapon as a dangerous construction tactic, not a clean video-game power. Show the crew preparing it with fear and urgency.",
-          "choices": [
-            {
-              "id": "suspended-load",
-              "title": "Swing the Suspended Load",
-              "summary": "",
-              "effects": [
-                "site_control +2",
-                "noise +2"
-              ],
-              "auto_preferred": true,
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 2
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "noise",
-                  "amount": 2
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "weapon-suspended-load"
-                }
-              ]
-            },
-            {
-              "id": "excavator-line",
-              "title": "Build an Excavator Line",
-              "summary": "",
-              "effects": [
-                "fuel -1",
-                "site_control +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "fuel",
-                  "amount": -1
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 1
-                },
-                {
-                  "type": "adjust_relationship",
-                  "target": "Brooks Kane",
-                  "stats": {
-                    "trust": 1
-                  }
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "weapon-excavator-line"
-                }
-              ]
-            },
-            {
-              "id": "drop-material-barricades",
-              "title": "Drop Material Barricades",
-              "summary": "",
-              "effects": [
-                "site_control +1",
-                "morale +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 1
-                },
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "morale",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "weapon-barricades"
-                }
-              ]
-            }
-          ],
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "execute-the-site-counterattack",
-          "title": "Execute the Site Counterattack",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Coordinate the chosen equipment, workers, and timing to carve out breathing room.",
-          "rewards": [
-            {
-              "type": "generate_story_image",
-              "id": "construction-site-counterattack",
-              "title": "Counterattack",
-              "prompt": "modern construction site zombie survival counterattack, crane hook and heavy equipment used tactically, workers in safety gear coordinating by radio, dramatic grounded horror action",
-              "negative_prompt": "text, logo, watermark, comic gore"
-            },
-            {
-              "type": "adjust_relationship",
-              "target": "all_npcs_present",
-              "preset": "all",
-              "amount": 0.5
-            }
-          ],
-          "requires": [
-            "choose-the-site-weapon"
-          ],
-          "next_objectives": [
-            {
-              "objective_id": "contain-the-site-collapse",
-              "requirements": [
-                {
-                  "path": "story_inventory.noise",
-                  "op": ">=",
-                  "value": 4
-                }
-              ]
-            },
-            {
-              "objective_id": "prepare-the-escape-route"
-            }
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "ai",
-          "completion_criteria": "Return yes only when the narrator has resolved the coordinated counterattack and shown whether it created safe space, damaged equipment, attracted more infected, or injured workers.",
-          "completion_instruction": "Resolve the counterattack with practical cause and effect. If the plan is loud or risky, show infected from outside the fence turning toward the site; otherwise let the crew gain enough control to think about escape.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "contain-the-site-collapse",
-          "title": "Contain the Site Collapse",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "The noise has drawn too many infected, so the player must prevent the site from breaking open before escape is possible.",
-          "rewards": [
-            {
-              "type": "adjust_story_inventory",
-              "path": "site_control",
-              "amount": -1
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "injuries",
-              "amount": 1
-            },
-            {
-              "type": "remove_story_rule",
-              "rule_id": "organized-radio-net"
-            },
-            {
-              "type": "add_story_rule",
-              "rule_id": "site-near-collapse",
-              "text": "The site is under heavy pressure; delays, loud machinery, and scattered workers can quickly become fatal."
-            }
-          ],
-          "requires": [
-            "execute-the-site-counterattack"
-          ],
-          "next_objectives": [
-            "prepare-the-escape-route"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "ai",
-          "completion_criteria": "Return yes only when the narrator has shown the crew containing a major breach, losing ground, or paying a visible cost to keep the site from being overrun.",
-          "completion_instruction": "Show the consequence of too much noise: a fence bowing, a machine trapped, an injured worker, or a route lost. Then force the story toward a narrower escape plan rather than another open-ended fight.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "prepare-the-escape-route",
-          "title": "Prepare the Escape Route",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Use the crane's view to choose a route out: river road, upper deck bridge, or a vehicle push through the gate.",
-          "rewards": [
-            {
-              "type": "unlock_location",
-              "location_id": "river-access-road",
-              "travel_enabled": true
-            },
-            {
-              "type": "add_story_rule",
-              "rule_id": "escape-window-open",
-              "text": "A narrow escape window exists, but it will close if the crew hesitates or the crane is disabled."
-            }
-          ],
-          "requires": [
-            "execute-the-site-counterattack"
-          ],
-          "next_objectives": [
-            "choose-the-final-crane-risk"
-          ],
-          "travel_location_id": "river-access-road",
-          "travel_location_name": "River Access Road",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player clearly chooses or prepares an escape route using what they can see from the crane.",
-          "completion_instruction": "Let the chosen route become plausible but dangerous. Show who is moving, who is lagging behind, and why the crane may need one last risky operation.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "choose-the-final-crane-risk",
-          "title": "Choose the Final Crane Risk",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Decide whether the crane is a rescue tool, a weapon, or the player's way down.",
-          "rewards": [],
-          "requires": [
-            "prepare-the-escape-route"
-          ],
-          "next_objectives": [
-            "resolve-high-hook-ending"
-          ],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "final-crane-risk",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "choice",
-          "completion_criteria": "Completed immediately by EmberAdventures when the player chooses the crane's final use.",
-          "completion_instruction": "Lock in the final approach and set up the ending scene around that decision.",
-          "choices": [
-            {
-              "id": "lift-survivors",
-              "title": "Use the Crane to Lift Survivors",
-              "summary": "",
-              "effects": [
-                "morale +1"
-              ],
-              "auto_preferred": true,
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "morale",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "final-lift-survivors"
-                }
-              ]
-            },
-            {
-              "id": "sacrifice-crane",
-              "title": "Use the Crane as a Weapon",
-              "summary": "",
-              "effects": [
-                "site_control +2"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "site_control",
-                  "amount": 2
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "final-crane-weapon"
-                }
-              ]
-            },
-            {
-              "id": "climb-down",
-              "title": "Climb Down and Lead Them Out",
-              "summary": "",
-              "effects": [
-                "injuries +1"
-              ],
-              "rewards": [
-                {
-                  "type": "adjust_story_inventory",
-                  "path": "injuries",
-                  "amount": 1
-                },
-                {
-                  "type": "add_state_list_item",
-                  "path": [
-                    "story_inventory",
-                    "rule_flags"
-                  ],
-                  "value": "final-climb-down"
-                }
-              ]
-            }
-          ],
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "resolve-high-hook-ending",
-          "title": "Resolve the High Hook Ending",
-          "type": "story",
-          "kind": "main",
-          "status": "hidden",
-          "summary": "Play out the final escape, sacrifice, or last stand created by the player's calls.",
-          "rewards": [
-            {
-              "type": "generate_story_image",
-              "id": "high-hook-final-escape",
-              "title": "Final Escape",
-              "prompt": "survivors escaping a zombie-overrun construction site at dusk, tower crane silhouetted above, workers in safety gear moving through barricades and heavy equipment, tense grounded cinematic horror",
-              "negative_prompt": "text, logo, watermark"
-            },
-            {
-              "type": "add_state_list_item",
-              "path": [
-                "story_inventory",
-                "rule_flags"
-              ],
-              "value": "ending-reached"
-            }
-          ],
-          "requires": [
-            "choose-the-final-crane-risk"
-          ],
-          "next_objectives": [],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "The construction site is no longer just a job. It is the place where the crew learned who could still listen, who could still lead, and what a crane operator could do from the sky.",
-          "completion_control": "ai",
-          "completion_criteria": "Return yes only when the narrator has resolved the final escape or last stand and clearly shown the fate of the player, the surviving crew, and the crane.",
-          "completion_instruction": "Choose the ending tone from the recorded state: high morale and site control produce a hard-won group escape; low morale or heavy injuries produce a smaller, haunted escape; a final crane weapon choice may strand or imperil the player; a climb-down choice makes the ending intimate and dangerous on the ground.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "side-check-the-muster-list",
-          "title": "Check the Muster List",
-          "type": "story",
-          "kind": "side",
-          "status": "hidden",
-          "summary": "Use the site roster to find out who is still missing before the final route is chosen.",
-          "rewards": [
-            {
-              "type": "adjust_story_inventory",
-              "path": "morale",
-              "amount": 1
-            },
-            {
-              "type": "add_state_list_item",
-              "path": [
-                "story_inventory",
-                "rule_flags"
-              ],
-              "value": "muster-list-checked"
-            }
-          ],
-          "requires": [
-            "recover-the-trailer-supplies"
-          ],
-          "next_objectives": [],
-          "travel_location_id": "",
-          "travel_location_name": "",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player asks Priya, Darius, or the radio net to compare the recovered muster list against known survivors and missing workers.",
-          "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "side-cut-the-noise",
-          "title": "Cut the Noise",
-          "type": "story",
-          "kind": "side",
-          "status": "hidden",
-          "summary": "Coordinate Soren and nearby workers to silence alarms, idle machines, or clattering hazards.",
-          "rewards": [
-            {
-              "type": "adjust_story_inventory",
-              "path": "noise",
-              "amount": -2
-            },
-            {
-              "type": "adjust_relationship",
-              "target": "Soren Bell",
-              "stats": {
-                "trust": 1
               }
-            }
-          ],
-          "requires": [
-            "investigate-the-wrong-voice"
-          ],
-          "next_objectives": [],
-          "travel_location_id": "electrical-room",
-          "travel_location_name": "Temporary Electrical Room",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "ai",
-          "completion_criteria": "Return yes only when the narrator has resolved an effort to reduce site noise by silencing alarms, shutting down equipment, or securing loose metal hazards.",
-          "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
-          "auto_completed_from_prereqs": false
-        },
-        {
-          "id": "side-give-mika-a-job",
-          "title": "Give Mika a Job",
-          "type": "story",
-          "kind": "side",
-          "status": "hidden",
-          "summary": "Give the frightened apprentice one concrete task that can change the site situation.",
-          "rewards": [
-            {
-              "type": "adjust_relationship",
-              "target": "Mika Voss",
-              "stats": {
-                "trust": 2,
-                "affection": 1
+            ],
+            "requires": [
+              "choose-first-site-priority"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "establish-radio-discipline",
+                "id": "make-the-first-crane-move-output-1",
+                "completion_instruction": "Resolve the crane action according to the player's chosen method. Make it useful but costly: a path opens, a cluster is scattered or crushed, and the noise or damaged materials create a new complication.",
+                "rewards": [],
+                "target_input_group_id": "from-make-the-first-crane-move"
               }
-            },
-            {
-              "type": "adjust_story_inventory",
-              "path": "morale",
-              "amount": 1
-            }
-          ],
-          "requires": [
-            "route-the-separated-crews"
-          ],
-          "next_objectives": [],
-          "travel_location_id": "level-twelve-deck",
-          "travel_location_name": "Level Twelve Deck",
-          "unlock_mode": "manual",
-          "exclusive_group": "",
-          "selectable": true,
-          "available_now": false,
-          "blocked_reason": "",
-          "notes": [],
-          "completion_message": "",
-          "completion_control": "player",
-          "completion_criteria": "Return yes only when the player gives Mika a specific useful task such as carrying a battery, checking a stair, relaying a message, or marking a route.",
-          "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
-          "auto_completed_from_prereqs": false
-        }
-      ],
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has resolved the player's first crane tactic and shown the immediate effect on zombies, workers, and site hazards.",
+            "completion_instruction": "Resolve the crane action according to the player's chosen method. Make it useful but costly: a path opens, a cluster is scattered or crushed, and the noise or damaged materials create a new complication.",
+            "while_active_guidance": "Use the crane, a suspended load, or the hook block to create space for the crew."
+          },
+          {
+            "id": "establish-radio-discipline",
+            "title": "Establish Radio Discipline",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Cut through panic, assign channels or call signs, and make the workers listen before the site turns into noise.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "morale"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": -1,
+                "field_path": [
+                  "noise"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "organized-radio-net",
+                "text": "The surviving crew has a rough radio net: short messages, location first, no screaming unless contact is immediate."
+              }
+            ],
+            "requires": [
+              "make-the-first-crane-move"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "route-the-separated-crews",
+                "id": "establish-radio-discipline-output-1",
+                "completion_instruction": "Have key workers respond to the player's radio discipline. Darius may resist, Lena backs practical calls, and the next danger becomes guiding separated crews through blind spots.",
+                "rewards": [],
+                "target_input_group_id": "from-establish-radio-discipline"
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player tells the crew how to use the radio, assigns priorities or call signs, or directly orders panicked workers to report locations instead of shouting.",
+            "completion_instruction": "Have key workers respond to the player's radio discipline. Darius may resist, Lena backs practical calls, and the next danger becomes guiding separated crews through blind spots.",
+            "while_active_guidance": "Cut through panic, assign channels or call signs, and make the workers listen before the site turns into noise."
+          },
+          {
+            "id": "route-the-separated-crews",
+            "title": "Route the Separated Crews",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Use the overhead view to guide workers through blind spots, ladders, stair towers, and equipment lanes.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "river-access-road"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": 0,
+                "field_path": [
+                  "crew_alive"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_relationship",
+                "target": "Mika Voss",
+                "stats": {
+                  "trust": 1
+                }
+              }
+            ],
+            "requires": [
+              "establish-radio-discipline"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "choose-who-gets-the-clearest-route",
+                "id": "route-the-separated-crews-output-1",
+                "completion_instruction": "Show workers moving because of the player's guidance. Let at least one route succeed, then reveal that two endangered groups now need mutually incompatible help.",
+                "rewards": [],
+                "target_input_group_id": "from-route-the-separated-crews"
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player gives at least one specific route or movement order based on what they can see from the crane.",
+            "completion_instruction": "Show workers moving because of the player's guidance. Let at least one route succeed, then reveal that two endangered groups now need mutually incompatible help.",
+            "while_active_guidance": "Use the overhead view to guide workers through blind spots, ladders, stair towers, and equipment lanes."
+          },
+          {
+            "id": "choose-who-gets-the-clearest-route",
+            "title": "Choose Who Gets the Clearest Route",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Two groups need direction at once, and the player must decide whose route gets the safest call.",
+            "rewards": [],
+            "requires": [
+              "route-the-separated-crews"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "clearest-route",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_instruction": "Show the selected group gaining the safer route while the other group survives with a cost, delay, or injury rather than vanishing from the story.",
+            "choices": [
+              {
+                "id": "guide-upper-deck",
+                "title": "Guide the Upper Deck Crew",
+                "summary": "",
+                "effects": [
+                  "morale +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "morale"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Darius Pike",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "upper-deck-prioritized",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "recover-the-trailer-supplies",
+                "completion_instruction": "Show the selected group gaining the safer route while the other group survives with a cost, delay, or injury rather than vanishing from the story.",
+                "target_input_group_id": "from-choose-who-gets-the-clearest-route"
+              },
+              {
+                "id": "guide-trailer-row",
+                "title": "Guide the Trailer Row",
+                "summary": "",
+                "effects": [
+                  "injuries -1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": -1,
+                    "field_path": [
+                      "injuries"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Priya Nair",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "trailer-row-prioritized",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "recover-the-trailer-supplies",
+                "completion_instruction": "Show the selected group gaining the safer route while the other group survives with a cost, delay, or injury rather than vanishing from the story.",
+                "target_input_group_id": "from-choose-who-gets-the-clearest-route"
+              },
+              {
+                "id": "split-the-channel",
+                "title": "Split the Channel",
+                "summary": "",
+                "effects": [
+                  "noise +1",
+                  "site_control +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "noise"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "split-channel",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "recover-the-trailer-supplies",
+                "completion_instruction": "Show the selected group gaining the safer route while the other group survives with a cost, delay, or injury rather than vanishing from the story.",
+                "target_input_group_id": "from-choose-who-gets-the-clearest-route"
+              }
+            ],
+            "while_active_guidance": "Two groups need direction at once, and the player must decide whose route gets the safest call."
+          },
+          {
+            "id": "recover-the-trailer-supplies",
+            "title": "Recover the Trailer Supplies",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Coordinate a dangerous run for first aid, keys, batteries, and the muster list.",
+            "rewards": [
+              {
+                "type": "add_story_item",
+                "item": {
+                  "id": "muster-list",
+                  "name": "muster list",
+                  "type": "quest",
+                  "quantity": 1,
+                  "value": 0,
+                  "sellable": false,
+                  "quest_item": true,
+                  "description": "",
+                  "image_prompt": "",
+                  "image_id": ""
+                }
+              },
+              {
+                "type": "add_story_item",
+                "item": {
+                  "id": "spare-radio-batteries",
+                  "name": "spare radio batteries",
+                  "type": "quest",
+                  "quantity": 1,
+                  "value": 0,
+                  "sellable": false,
+                  "quest_item": true,
+                  "description": "",
+                  "image_prompt": "",
+                  "image_id": ""
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "morale"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_relationship",
+                "target": "Priya Nair",
+                "stats": {
+                  "trust": 1
+                }
+              }
+            ],
+            "requires": [
+              "choose-who-gets-the-clearest-route"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "investigate-the-wrong-voice",
+                "id": "recover-the-trailer-supplies-output-1",
+                "completion_instruction": "Resolve the run through trailer row with practical obstacles: narrow doors, a blocked porch, a trapped worker, or infected drawn to radio noise. Let recovered supplies improve the crew's chances and point toward the strange radio transmission.",
+                "rewards": [],
+                "target_input_group_id": "from-recover-the-trailer-supplies"
+              }
+            ],
+            "travel_location_id": "trailer-row",
+            "travel_location_name": "Trailer Row",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has resolved the supply run and established whether first aid, keys, batteries, or the muster list were recovered.",
+            "completion_instruction": "Resolve the run through trailer row with practical obstacles: narrow doors, a blocked porch, a trapped worker, or infected drawn to radio noise. Let recovered supplies improve the crew's chances and point toward the strange radio transmission.",
+            "while_active_guidance": "Coordinate a dangerous run for first aid, keys, batteries, and the muster list."
+          },
+          {
+            "id": "investigate-the-wrong-voice",
+            "title": "Investigate the Wrong Voice",
+            "type": "story",
+            "status": "hidden",
+            "summary": "A radio call repeats words from a worker who should not be on that channel anymore.",
+            "rewards": [
+              {
+                "type": "add_story_rule",
+                "rule_id": "infected-radio-mimic",
+                "text": "At least one infected person carries an open radio; repeated words or clipped old phrases may lure workers toward danger."
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": -1,
+                "field_path": [
+                  "morale"
+                ],
+                "operation": "add"
+              }
+            ],
+            "requires": [
+              "recover-the-trailer-supplies"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "decide-how-to-handle-the-lure",
+                "id": "investigate-the-wrong-voice-output-1",
+                "completion_instruction": "Reveal that the suspicious transmission is coming from an infected worker or corpse with an open radio near a dangerous route. Make the discovery frightening and useful without explaining the whole outbreak.",
+                "rewards": [],
+                "target_input_group_id": "from-investigate-the-wrong-voice"
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player questions the suspicious radio call, asks someone to verify the speaker, scans the site for the radio source, or warns the crew not to follow the voice.",
+            "completion_instruction": "Reveal that the suspicious transmission is coming from an infected worker or corpse with an open radio near a dangerous route. Make the discovery frightening and useful without explaining the whole outbreak.",
+            "while_active_guidance": "A radio call repeats words from a worker who should not be on that channel anymore."
+          },
+          {
+            "id": "decide-how-to-handle-the-lure",
+            "title": "Decide How to Handle the Lure",
+            "type": "story",
+            "status": "hidden",
+            "summary": "The open radio can either be silenced, used as bait, or ignored while the crew keeps moving.",
+            "rewards": [],
+            "requires": [
+              "investigate-the-wrong-voice"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "radio-lure",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_instruction": "Resolve the selected use of the open radio, showing how the infected react to sound and how workers emotionally handle hearing a familiar voice used as bait.",
+            "choices": [
+              {
+                "id": "use-radio-as-bait",
+                "title": "Use It as Bait",
+                "summary": "",
+                "effects": [
+                  "site_control +1",
+                  "morale -1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": -1,
+                    "field_path": [
+                      "morale"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "used-radio-bait",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "choose-the-site-weapon",
+                "completion_instruction": "Resolve the selected use of the open radio, showing how the infected react to sound and how workers emotionally handle hearing a familiar voice used as bait.",
+                "target_input_group_id": "from-decide-how-to-handle-the-lure"
+              },
+              {
+                "id": "silence-the-radio",
+                "title": "Silence It",
+                "summary": "",
+                "effects": [
+                  "noise -1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": -1,
+                    "field_path": [
+                      "noise"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "silenced-radio",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Priya Nair",
+                    "stats": {
+                      "trust": 1
+                    }
+                  }
+                ],
+                "next_objective_id": "choose-the-site-weapon",
+                "completion_instruction": "Resolve the selected use of the open radio, showing how the infected react to sound and how workers emotionally handle hearing a familiar voice used as bait.",
+                "target_input_group_id": "from-decide-how-to-handle-the-lure"
+              },
+              {
+                "id": "keep-moving",
+                "title": "Keep Everyone Moving",
+                "summary": "",
+                "effects": [
+                  "injuries +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "injuries"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "ignored-radio-lure",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "choose-the-site-weapon",
+                "completion_instruction": "Resolve the selected use of the open radio, showing how the infected react to sound and how workers emotionally handle hearing a familiar voice used as bait.",
+                "target_input_group_id": "from-decide-how-to-handle-the-lure"
+              }
+            ],
+            "while_active_guidance": "The open radio can either be silenced, used as bait, or ignored while the crew keeps moving."
+          },
+          {
+            "id": "choose-the-site-weapon",
+            "title": "Choose the Site Weapon",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Pick which piece of the job site becomes the crew's main way to push back.",
+            "rewards": [],
+            "requires": [
+              "decide-how-to-handle-the-lure"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "site-weapon",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_instruction": "Frame the chosen weapon as a dangerous construction tactic, not a clean video-game power. Show the crew preparing it with fear and urgency.",
+            "choices": [
+              {
+                "id": "suspended-load",
+                "title": "Swing the Suspended Load",
+                "summary": "",
+                "effects": [
+                  "site_control +2",
+                  "noise +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 2,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 2,
+                    "field_path": [
+                      "noise"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "weapon-suspended-load",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "execute-the-site-counterattack",
+                "completion_instruction": "Frame the chosen weapon as a dangerous construction tactic, not a clean video-game power. Show the crew preparing it with fear and urgency.",
+                "target_input_group_id": "from-choose-the-site-weapon"
+              },
+              {
+                "id": "excavator-line",
+                "title": "Build an Excavator Line",
+                "summary": "",
+                "effects": [
+                  "fuel -1",
+                  "site_control +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": -1,
+                    "field_path": [
+                      "fuel"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_relationship",
+                    "target": "Brooks Kane",
+                    "stats": {
+                      "trust": 1
+                    }
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "weapon-excavator-line",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "execute-the-site-counterattack",
+                "completion_instruction": "Frame the chosen weapon as a dangerous construction tactic, not a clean video-game power. Show the crew preparing it with fear and urgency.",
+                "target_input_group_id": "from-choose-the-site-weapon"
+              },
+              {
+                "id": "drop-material-barricades",
+                "title": "Drop Material Barricades",
+                "summary": "",
+                "effects": [
+                  "site_control +1",
+                  "morale +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "morale"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "weapon-barricades",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "execute-the-site-counterattack",
+                "completion_instruction": "Frame the chosen weapon as a dangerous construction tactic, not a clean video-game power. Show the crew preparing it with fear and urgency.",
+                "target_input_group_id": "from-choose-the-site-weapon"
+              }
+            ],
+            "while_active_guidance": "Pick which piece of the job site becomes the crew's main way to push back."
+          },
+          {
+            "id": "execute-the-site-counterattack",
+            "title": "Execute the Site Counterattack",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Coordinate the chosen equipment, workers, and timing to carve out breathing room.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "construction-site-counterattack",
+                "title": "Counterattack",
+                "prompt": "modern construction site zombie survival counterattack, crane hook and heavy equipment used tactically, workers in safety gear coordinating by radio, dramatic grounded horror action",
+                "negative_prompt": "text, logo, watermark, comic gore"
+              },
+              {
+                "type": "adjust_relationship",
+                "target": "all_npcs_present",
+                "preset": "all",
+                "amount": 0.5
+              }
+            ],
+            "requires": [
+              "choose-the-site-weapon"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "contain-the-site-collapse",
+                "requirements": [
+                  {
+                    "path": "story_inventory.noise",
+                    "op": ">=",
+                    "value": 4
+                  }
+                ],
+                "id": "execute-the-site-counterattack-output-1",
+                "completion_instruction": "Resolve the counterattack with practical cause and effect. If the plan is loud or risky, show infected from outside the fence turning toward the site; otherwise let the crew gain enough control to think about escape.",
+                "rewards": [],
+                "target_input_group_id": "from-execute-the-site-counterattack"
+              },
+              {
+                "objective_id": "prepare-the-escape-route",
+                "id": "execute-the-site-counterattack-output-2",
+                "completion_instruction": "Resolve the counterattack with practical cause and effect. If the plan is loud or risky, show infected from outside the fence turning toward the site; otherwise let the crew gain enough control to think about escape.",
+                "rewards": [],
+                "target_input_group_id": "from-execute-the-site-counterattack"
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has resolved the coordinated counterattack and shown whether it created safe space, damaged equipment, attracted more infected, or injured workers.",
+            "completion_instruction": "Resolve the counterattack with practical cause and effect. If the plan is loud or risky, show infected from outside the fence turning toward the site; otherwise let the crew gain enough control to think about escape.",
+            "while_active_guidance": "Coordinate the chosen equipment, workers, and timing to carve out breathing room."
+          },
+          {
+            "id": "contain-the-site-collapse",
+            "title": "Contain the Site Collapse",
+            "type": "story",
+            "status": "hidden",
+            "summary": "The noise has drawn too many infected, so the player must prevent the site from breaking open before escape is possible.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "amount": -1,
+                "field_path": [
+                  "site_control"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "injuries"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "remove_story_rule",
+                "rule_id": "organized-radio-net"
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "site-near-collapse",
+                "text": "The site is under heavy pressure; delays, loud machinery, and scattered workers can quickly become fatal."
+              }
+            ],
+            "requires": [
+              "execute-the-site-counterattack"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "prepare-the-escape-route",
+                "id": "contain-the-site-collapse-output-1",
+                "completion_instruction": "Show the consequence of too much noise: a fence bowing, a machine trapped, an injured worker, or a route lost. Then force the story toward a narrower escape plan rather than another open-ended fight.",
+                "rewards": [],
+                "target_input_group_id": "from-contain-the-site-collapse"
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has shown the crew containing a major breach, losing ground, or paying a visible cost to keep the site from being overrun.",
+            "completion_instruction": "Show the consequence of too much noise: a fence bowing, a machine trapped, an injured worker, or a route lost. Then force the story toward a narrower escape plan rather than another open-ended fight.",
+            "while_active_guidance": "The noise has drawn too many infected, so the player must prevent the site from breaking open before escape is possible."
+          },
+          {
+            "id": "prepare-the-escape-route",
+            "title": "Prepare the Escape Route",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Use the crane's view to choose a route out: river road, upper deck bridge, or a vehicle push through the gate.",
+            "rewards": [
+              {
+                "type": "unlock_location",
+                "location_id": "river-access-road"
+              },
+              {
+                "type": "add_story_rule",
+                "rule_id": "escape-window-open",
+                "text": "A narrow escape window exists, but it will close if the crew hesitates or the crane is disabled."
+              }
+            ],
+            "requires": [
+              "execute-the-site-counterattack"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "choose-the-final-crane-risk",
+                "id": "prepare-the-escape-route-output-1",
+                "completion_instruction": "Let the chosen route become plausible but dangerous. Show who is moving, who is lagging behind, and why the crane may need one last risky operation.",
+                "rewards": [],
+                "target_input_group_id": "from-prepare-the-escape-route"
+              }
+            ],
+            "travel_location_id": "river-access-road",
+            "travel_location_name": "River Access Road",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player clearly chooses or prepares an escape route using what they can see from the crane.",
+            "completion_instruction": "Let the chosen route become plausible but dangerous. Show who is moving, who is lagging behind, and why the crane may need one last risky operation.",
+            "while_active_guidance": "Use the crane's view to choose a route out: river road, upper deck bridge, or a vehicle push through the gate."
+          },
+          {
+            "id": "choose-the-final-crane-risk",
+            "title": "Choose the Final Crane Risk",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Decide whether the crane is a rescue tool, a weapon, or the player's way down.",
+            "rewards": [],
+            "requires": [
+              "prepare-the-escape-route"
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "final-crane-risk",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "choice",
+            "completion_instruction": "Lock in the final approach and set up the ending scene around that decision.",
+            "choices": [
+              {
+                "id": "lift-survivors",
+                "title": "Use the Crane to Lift Survivors",
+                "summary": "",
+                "effects": [
+                  "morale +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "morale"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "final-lift-survivors",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "resolve-high-hook-ending",
+                "completion_instruction": "Lock in the final approach and set up the ending scene around that decision.",
+                "target_input_group_id": "from-choose-the-final-crane-risk"
+              },
+              {
+                "id": "sacrifice-crane",
+                "title": "Use the Crane as a Weapon",
+                "summary": "",
+                "effects": [
+                  "site_control +2"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 2,
+                    "field_path": [
+                      "site_control"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "final-crane-weapon",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "resolve-high-hook-ending",
+                "completion_instruction": "Lock in the final approach and set up the ending scene around that decision.",
+                "target_input_group_id": "from-choose-the-final-crane-risk"
+              },
+              {
+                "id": "climb-down",
+                "title": "Climb Down and Lead Them Out",
+                "summary": "",
+                "effects": [
+                  "injuries +1"
+                ],
+                "rewards": [
+                  {
+                    "type": "adjust_story_inventory",
+                    "amount": 1,
+                    "field_path": [
+                      "injuries"
+                    ],
+                    "operation": "add"
+                  },
+                  {
+                    "type": "add_state_list_item",
+                    "value": "final-climb-down",
+                    "field_path": [
+                      "story_inventory",
+                      "rule_flags"
+                    ]
+                  }
+                ],
+                "next_objective_id": "resolve-high-hook-ending",
+                "completion_instruction": "Lock in the final approach and set up the ending scene around that decision.",
+                "target_input_group_id": "from-choose-the-final-crane-risk"
+              }
+            ],
+            "while_active_guidance": "Decide whether the crane is a rescue tool, a weapon, or the player's way down."
+          },
+          {
+            "id": "resolve-high-hook-ending",
+            "title": "Resolve the High Hook Ending",
+            "type": "story",
+            "status": "hidden",
+            "summary": "Play out the final escape, sacrifice, or last stand created by the player's calls.",
+            "rewards": [
+              {
+                "type": "generate_story_image",
+                "id": "high-hook-final-escape",
+                "title": "Final Escape",
+                "prompt": "survivors escaping a zombie-overrun construction site at dusk, tower crane silhouetted above, workers in safety gear moving through barricades and heavy equipment, tense grounded cinematic horror",
+                "negative_prompt": "text, logo, watermark"
+              },
+              {
+                "type": "add_state_list_item",
+                "value": "ending-reached",
+                "field_path": [
+                  "story_inventory",
+                  "rule_flags"
+                ]
+              }
+            ],
+            "requires": [
+              "choose-the-final-crane-risk"
+            ],
+            "next_objectives": [
+              {
+                "id": "resolve-high-hook-ending-output-1",
+                "completion_instruction": "Choose the ending tone from the recorded state: high morale and site control produce a hard-won group escape; low morale or heavy injuries produce a smaller, haunted escape; a final crane weapon choice may strand or imperil the player; a climb-down choice makes the ending intimate and dangerous on the ground.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": "The construction site is no longer just a job. It is the place where the crew learned who could still listen, who could still lead, and what a crane operator could do from the sky."
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "The construction site is no longer just a job. It is the place where the crew learned who could still listen, who could still lead, and what a crane operator could do from the sky.",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has resolved the final escape or last stand and clearly shown the fate of the player, the surviving crew, and the crane.",
+            "completion_instruction": "Choose the ending tone from the recorded state: high morale and site control produce a hard-won group escape; low morale or heavy injuries produce a smaller, haunted escape; a final crane weapon choice may strand or imperil the player; a climb-down choice makes the ending intimate and dangerous on the ground.",
+            "while_active_guidance": "Play out the final escape, sacrifice, or last stand created by the player's calls."
+          },
+          {
+            "id": "side-check-the-muster-list",
+            "title": "Check the Muster List",
+            "type": "side",
+            "status": "hidden",
+            "summary": "Use the site roster to find out who is still missing before the final route is chosen.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "morale"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "add_state_list_item",
+                "value": "muster-list-checked",
+                "field_path": [
+                  "story_inventory",
+                  "rule_flags"
+                ]
+              }
+            ],
+            "requires": [
+              "recover-the-trailer-supplies"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "investigate-the-wrong-voice",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "investigate-the-wrong-voice"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-1",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "decide-how-to-handle-the-lure",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "decide-how-to-handle-the-lure"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-2",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "choose-the-site-weapon",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-the-site-weapon"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-3",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "execute-the-site-counterattack",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "execute-the-site-counterattack"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-4",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "contain-the-site-collapse",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "contain-the-site-collapse"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-5",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "prepare-the-escape-route",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "prepare-the-escape-route"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-6",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "choose-the-final-crane-risk",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-the-final-crane-risk"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-7",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              },
+              {
+                "objective_id": "resolve-high-hook-ending",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "resolve-high-hook-ending"
+                  }
+                ],
+                "id": "side-check-the-muster-list-output-8",
+                "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+                "rewards": [],
+                "target_input_group_id": "from-side-check-the-muster-list"
+              }
+            ],
+            "travel_location_id": "",
+            "travel_location_name": "",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player asks Priya, Darius, or the radio net to compare the recovered muster list against known survivors and missing workers.",
+            "completion_instruction": "Let the list reveal one missing worker or small group without adding a sprawling new cast. The crew gains focus, but the player must decide whether to spend time looking for them.",
+            "while_active_guidance": "Use the site roster to find out who is still missing before the final route is chosen.",
+            "completion_requirements": [
+              {
+                "path": "objectives.active_id",
+                "op": "truthy"
+              }
+            ]
+          },
+          {
+            "id": "side-cut-the-noise",
+            "title": "Cut the Noise",
+            "type": "side",
+            "status": "hidden",
+            "summary": "Coordinate Soren and nearby workers to silence alarms, idle machines, or clattering hazards.",
+            "rewards": [
+              {
+                "type": "adjust_story_inventory",
+                "amount": -2,
+                "field_path": [
+                  "noise"
+                ],
+                "operation": "add"
+              },
+              {
+                "type": "adjust_relationship",
+                "target": "Soren Bell",
+                "stats": {
+                  "trust": 1
+                }
+              }
+            ],
+            "requires": [
+              "investigate-the-wrong-voice"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "decide-how-to-handle-the-lure",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "decide-how-to-handle-the-lure"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-1",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              },
+              {
+                "objective_id": "choose-the-site-weapon",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-the-site-weapon"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-2",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              },
+              {
+                "objective_id": "execute-the-site-counterattack",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "execute-the-site-counterattack"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-3",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              },
+              {
+                "objective_id": "contain-the-site-collapse",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "contain-the-site-collapse"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-4",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              },
+              {
+                "objective_id": "prepare-the-escape-route",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "prepare-the-escape-route"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-5",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              },
+              {
+                "objective_id": "choose-the-final-crane-risk",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-the-final-crane-risk"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-6",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              },
+              {
+                "objective_id": "resolve-high-hook-ending",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "resolve-high-hook-ending"
+                  }
+                ],
+                "id": "side-cut-the-noise-output-7",
+                "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+                "rewards": [],
+                "target_input_group_id": "from-side-cut-the-noise"
+              }
+            ],
+            "travel_location_id": "electrical-room",
+            "travel_location_name": "Temporary Electrical Room",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "ai",
+            "completion_criteria": "Return yes only when the narrator has resolved an effort to reduce site noise by silencing alarms, shutting down equipment, or securing loose metal hazards.",
+            "completion_instruction": "Show the noise dropping enough to matter, but make the work tense because Soren is hurt and the electrical room is vulnerable.",
+            "while_active_guidance": "Coordinate Soren and nearby workers to silence alarms, idle machines, or clattering hazards.",
+            "completion_requirements": [
+              {
+                "path": "objectives.active_id",
+                "op": "truthy"
+              }
+            ]
+          },
+          {
+            "id": "side-give-mika-a-job",
+            "title": "Give Mika a Job",
+            "type": "side",
+            "status": "hidden",
+            "summary": "Give the frightened apprentice one concrete task that can change the site situation.",
+            "rewards": [
+              {
+                "type": "adjust_relationship",
+                "target": "Mika Voss",
+                "stats": {
+                  "trust": 2,
+                  "affection": 1
+                }
+              },
+              {
+                "type": "adjust_story_inventory",
+                "amount": 1,
+                "field_path": [
+                  "morale"
+                ],
+                "operation": "add"
+              }
+            ],
+            "requires": [
+              "route-the-separated-crews"
+            ],
+            "next_objectives": [
+              {
+                "objective_id": "choose-who-gets-the-clearest-route",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-who-gets-the-clearest-route"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-1",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "recover-the-trailer-supplies",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "recover-the-trailer-supplies"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-2",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "investigate-the-wrong-voice",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "investigate-the-wrong-voice"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-3",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "decide-how-to-handle-the-lure",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "decide-how-to-handle-the-lure"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-4",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "choose-the-site-weapon",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-the-site-weapon"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-5",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "execute-the-site-counterattack",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "execute-the-site-counterattack"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-6",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "contain-the-site-collapse",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "contain-the-site-collapse"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-7",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "prepare-the-escape-route",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "prepare-the-escape-route"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-8",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "choose-the-final-crane-risk",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "choose-the-final-crane-risk"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-9",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              },
+              {
+                "objective_id": "resolve-high-hook-ending",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "resolve-high-hook-ending"
+                  }
+                ],
+                "id": "side-give-mika-a-job-output-10",
+                "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+                "rewards": [],
+                "target_input_group_id": "from-side-give-mika-a-job"
+              }
+            ],
+            "travel_location_id": "level-twelve-deck",
+            "travel_location_name": "Level Twelve Deck",
+            "exclusive_group": "",
+            "selectable": true,
+            "available_now": false,
+            "blocked_reason": "",
+            "notes": [],
+            "completion_message": "",
+            "completion_control": "player",
+            "completion_criteria": "Return yes only when the player gives Mika a specific useful task such as carrying a battery, checking a stair, relaying a message, or marking a route.",
+            "completion_instruction": "Let Mika complete or attempt the task with visible fear and growing competence. Her success should make the crew feel more human and less like pieces on a board.",
+            "while_active_guidance": "Give the frightened apprentice one concrete task that can change the site situation.",
+            "completion_requirements": [
+              {
+                "path": "objectives.active_id",
+                "op": "truthy"
+              }
+            ]
+          }
+        ]
+      },
       "story_shops": {},
-      "recent_changes": []
+      "recent_changes": [],
+      "players": [],
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "2026-10-14 15:42"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
     },
     "messages": [
       {
-        "id": "opening-high-hook",
-        "entryId": "opening-high-hook",
         "role": "assistant",
         "speaker": "Narrator",
         "text": "The tower crane cab rocks gently in the October wind, high above Briarhook Tower's half-finished concrete decks. Below you, the job site is still ordinary for half a second: orange vests moving between rebar bundles, a forklift backing through the laydown yard, Darius Pike's white hard hat flashing on level twelve, Lena Ortiz waiting on a tag line near the suspended load.\n\nThen the service gate bows inward.\n\nYour radio spits static, panic, and fragments all at once. Someone yells about a delivery driver biting a flagger. Someone else shouts that the gate crew is down. Backup alarms keep beeping in different corners of the site, every one of them loud enough to pull more movement from the street.\n\nFrom up here you can see what no one on the ground can: the first infected are not spreading evenly. They are following sound, funnels, and open lanes between material stacks.\n\nThe hook hangs above a bundled steel load. The radio is in your hand. The whole site is waiting for a voice that can see.",
@@ -2122,10 +3132,17 @@
       "survivor workers"
     ],
     "title_card_image": {
-      "url": "",
-      "source": "none",
+      "id": "high-hook-title-card",
+      "title": "High Hook title card",
       "prompt": "cinematic cover art of a tower crane above a modern high-rise construction site during a zombie outbreak, workers in safety gear below, stormy afternoon light, grounded survival horror mood, no printed text",
-      "negative_prompt": "text, logo, watermark, signature"
+      "negativePrompt": "text, logo, watermark, signature",
+      "seed": 0,
+      "model": "",
+      "source": "none",
+      "url": "",
+      "hosted_url": "",
+      "html": "",
+      "favorite": false
     },
     "editor_data": {
       "story_tree": {
@@ -2209,7 +3226,9 @@
           "zoom": 0.75
         }
       }
-    }
+    },
+    "allow_any_player": false,
+    "any_player_starting_state": {}
   },
   "exportedAt": "2026-08-31T06:03:35.951Z"
 }
