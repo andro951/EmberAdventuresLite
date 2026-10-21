@@ -68,7 +68,22 @@ without that checkout use the bundled contract and Lite's import UI.
 
 ## Browser import
 
-Pending final verification through the published Lite UI. The Computer picker
-did not produce a usable chooser in the automation browser; use the existing
-GitHub import flow for the committed JSON instead. Import/start results will be
-recorded separately from schema validation and full story playthrough coverage.
+Verified through https://perchance.org/emberadventureslite using its existing
+GitHub import flow. The Computer picker did not produce a usable chooser in the
+automation browser. The final story uses a distinct import identity so the
+earlier local test imports cannot shadow it when the UI resolves a definition.
+
+Observed results:
+
+- Story Upload Complete; story displayed in the local Story Library.
+- Definition view shows five main objectives and one starting NPC.
+- Start Adventure offers Choose Rowan Reed and Open Character Library.
+- Choosing Rowan and Start Playing loads the authored opening, Rowan (29),
+  Mira Bellweather (46), and the active Examine the empty hook objective.
+- Scene panel shows Alder / Willow Vale / Bramble / Riverside / Bramble Bridge,
+  with Mira present and selected for images.
+
+The browser session was left at the playable opening. No AI text turn or full
+playthrough was run. Both branches have been checked structurally, not played
+through using a live model. Proof screenshot is saved in the task outputs as
+lite-story-import-start-proof.png.

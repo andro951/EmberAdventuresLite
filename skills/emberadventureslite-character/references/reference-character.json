@@ -213,7 +213,7 @@
         "source": "none",
         "seed": null,
         "prompt": "general-audience chest-up thumbnail of Aren Valehart, an adult rugged human monster tracker, broad practical build, dark brown wind-tossed hair and short beard, brown weatherproof coat, crouched beside animal tracks with a notebook, thoughtful steady expression, quiet woodland trail, no text, no logo",
-        "negative_prompt": "nudity, lingerie, sexualized pose, gore, extra people, text, logo, watermark",
+        "negative_prompt": "extra people, text, logo, watermark",
         "note": "Male presentation: tracker coat, notebook, and grounded pose establish his role.",
         "male": true
       },
@@ -223,7 +223,7 @@
         "source": "none",
         "seed": null,
         "prompt": "general-audience chest-up thumbnail of Arenna Valehart, an adult rugged human monster tracker, broad practical build, dark brown wind-tossed hair tied back, brown weatherproof coat, crouched beside animal tracks with a notebook, thoughtful steady expression, quiet woodland trail, no text, no logo",
-        "negative_prompt": "nudity, lingerie, sexualized pose, gore, extra people, text, logo, watermark",
+        "negative_prompt": "extra people, text, logo, watermark",
         "note": "Non-male presentation: tracker coat, notebook, and grounded pose establish the same character role.",
         "male": false
       }
