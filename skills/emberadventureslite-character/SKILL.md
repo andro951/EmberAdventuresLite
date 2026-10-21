@@ -5,7 +5,7 @@ description: Create, review, and repair EmberAdventuresLite character JSON, incl
 
 # EmberAdventuresLite Character
 
-Version: 1.0.1. Contract checked against Lite revision `907ba9c`.
+Version: 1.0.2. Contract checked against Lite revision `907ba9c`.
 
 Use this skill for Lite character definitions. It adapts the original character
 skill's character-depth, identity, field-purpose, clothing, and release workflow
@@ -48,8 +48,9 @@ The importer also supports the documented `characters` wrapper.
 ## Lite appearance and clothing
 
 Keep all writing, illustrations, clothing, and relationships suitable for
-general audiences. Focus on adventure, mystery, friendship, teamwork, and humor.
-Keep appearance descriptions ordinary and outfits practical and fully covered.
+general audiences. Adventure, mystery, friendship, humor, romance, flirting,
+and dating are welcome. Keep appearance descriptions ordinary and outfits
+practical and fully covered.
 
 Use `appearance.height` and a single `appearance.body_description` for overall
 build. Height accepts an integer from 0 through 20 or a concise custom string;

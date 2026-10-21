@@ -7,10 +7,11 @@
     "creation_tool": "Codex",
     "genres": [
       "fantasy",
-      "adventure"
+      "adventure",
+      "romance"
     ],
     "can_die": false,
-    "romanceable": false,
+    "romanceable": true,
     "gender": "male",
     "fallback_name": "Arenna Valehart",
     "fallback_outfits": [

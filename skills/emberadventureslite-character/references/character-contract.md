@@ -17,9 +17,8 @@ short descriptive `role`. `created_at` and `updated_at` are ISO strings.
 Use the approved editor genre strings, including `fantasy`, `adventure`,
 `mystery`, and `cozy` when appropriate; validate the actual combination.
 
-`can_die` and `romanceable` are booleans. The bundled reference uses
-`romanceable: false` and `starting_attraction: 0`. Story characters under 18
-must also use those values under the canonical validator.
+`can_die` and `romanceable` are booleans. Use adults for gentle romance; story
+characters under 18 must have `romanceable: false` and `starting_attraction: 0`.
 The primary `gender` is `male` or `female`. An optional `fallback_gender`
 declares the alternate presentation; do not invent a third profile slot.
 

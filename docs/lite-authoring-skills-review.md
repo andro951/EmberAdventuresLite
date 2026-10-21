@@ -98,3 +98,12 @@ alternate town skirt explicitly opaque and ankle-length. Required engine field
 names remain unchanged for valid imports. Repeated the full 82 authoring checks
 and both skill-format checks successfully. Installed copies and the download
 archive were refreshed and checked against the repository's skill files.
+
+## Clarification — skills 1.0.2
+
+Isaac clarified that romance, flirting, and dating are welcome; the requested
+boundary concerns explicit content, anatomy emphasis, and fetish material.
+Restored the relationship examples and the sample's romance genre/availability.
+Kept the fully covered outfits and ordinary portrait descriptions. Rechecked
+the complete skills for explicit material, repeated all 82 contract checks,
+and refreshed the installed skills and archive.

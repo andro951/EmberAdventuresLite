@@ -5,7 +5,7 @@ description: Create, review, and repair EmberAdventuresLite story-template JSON,
 
 # EmberAdventuresLite Story
 
-Version: 1.0.1. Contract checked against Lite revision `907ba9c`.
+Version: 1.0.2. Contract checked against Lite revision `907ba9c`.
 
 This skill adapts the original story skill's opening, player-agency, pacing,
 objective-handoff, hidden-information, and final-release workflow to Lite's
@@ -77,8 +77,8 @@ create a selection card. Keep that option identical to the default player.
 ## Lite content and state consistency
 
 Keep descriptions, clothing, images, dialogue, threats, and relationships
-suitable for general audiences. Focus on adventure, mystery, friendship,
-teamwork, and humor. Apply the Lite character skill's complete opaque
+suitable for general audiences. Adventure, mystery, friendship, humor, romance,
+flirting, and dating are welcome. Apply the Lite character skill's complete opaque
 clothing rule to every outfit, fallback presentation, starting pose, image
 instruction, and clothing-changing reward.
 
