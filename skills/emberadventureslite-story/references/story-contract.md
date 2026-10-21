@@ -56,7 +56,9 @@ supported collections for a coherent starting state.
   These scene arrays do not create missing character definitions.
 - `player`: full embedded character. `characters`: name-keyed party definitions,
   or `{}` for no party. `players` is an optional selectable-player array; when
-  used, its default option must match `player` exactly.
+  used, its default option must match `player` exactly. In library-enabled
+  stories, include the default character in this array if it should appear as
+  a selection card: the selector does not derive cards from `state.player`.
 - `npc_directory`: `{"locations": {"location-id": {"label": "...",
   "characters": {"Name": {...}}}}}`. A lightweight shell uses `id`, `name`,
   `gender`, integer `age`, `role`, `relationship`, `note`, `current_appearance`,

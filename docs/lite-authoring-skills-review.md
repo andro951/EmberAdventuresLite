@@ -38,7 +38,11 @@ private preference document at authoring time.
 4. Reviewed both paths for agency, one pending beat per objective, safe physical
    actions, present cast, fully covered outfits in both presentations, location
    consistency, converging branches, and a meaningful free-play ending.
-5. Tested optional library-only state and invalid shapes to ensure the helper
+5. The real UI accepted the first import, but its library-enabled character
+   selector correctly showed only the library tile: state.player alone does not
+   create a default selection card. Added the identical player to state.players,
+   documented this rule, and covered the production player-selection function.
+6. Tested optional library-only state and invalid shapes to ensure the helper
    enforces production rules rather than accepting its own examples blindly.
 
 ## Reproducible validation
@@ -49,7 +53,7 @@ Run from the repository:
 node tools/test-lite-authoring-skills.cjs
 ```
 
-Result: 81 checks pass. These cover production validation, all 67 bundled field
+Result: 82 checks pass. These cover production validation, all 67 bundled field
 sets, repeat validation without mutation, standalone/batch/embedded characters,
 library-only player fields, rejection regressions, and both authored ending
 paths. The graph traversal reviews authored references; it is not a second game

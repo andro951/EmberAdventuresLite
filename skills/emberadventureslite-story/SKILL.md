@@ -70,7 +70,9 @@ Embedded player, party, NPC `full_character`, and future-cast `full_character`
 records omit standalone-only `genres`, `catalog_hook`, `default_image_background`,
 and the four `chat_*` scenario fields. Their containing story owns those
 features. Use the bundled embedded field list rather than guessing omissions.
-Keep a default player and any selectable player option referencing it identical.
+When library characters are allowed and the default should also be selectable,
+include its full definition in `state.players`; `state.player` alone does not
+create a selection card. Keep that option identical to the default player.
 
 ## Lite content and state consistency
 

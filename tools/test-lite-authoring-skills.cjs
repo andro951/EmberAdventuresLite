@@ -50,6 +50,11 @@ check('documented character batch wrapper', 'validateCharacterExport', batch, tr
 const bytesBefore = JSON.stringify(story);
 check('repeat validation remains stable', 'validateStoryExport', story, true);
 assert.equal(JSON.stringify(story), bytesBefore, 'Validator mutated authored story');
+const playerOptions = validator.invoke('storyTemplatePlayerOptions', story.storyTemplate);
+assert.equal(playerOptions.length, 1);
+assert.equal(playerOptions[0].name, 'Rowan Reed');
+assert.deepEqual(story.storyTemplate.state.players[0], story.storyTemplate.state.player);
+checks++;
 
 //Contract parity checks use the actual production declarations, never a second validator.
 for (const kind of ['character', 'story']) {

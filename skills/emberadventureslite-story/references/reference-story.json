@@ -10,8 +10,8 @@
     "genres": [
       "fantasy"
     ],
-    "createdAt": "2026-10-21T22:56:25.193Z",
-    "updatedAt": "2026-10-21T22:56:25.193Z",
+    "createdAt": "2026-10-21T23:00:17.617Z",
+    "updatedAt": "2026-10-21T23:00:17.617Z",
     "allow_any_player": true,
     "any_player_starting_state": {
       "role": "A visitor helping the bridgekeeper"
@@ -218,10 +218,182 @@
           "image_ids": []
         },
         "voice": null,
-        "created_at": "2026-10-21T22:56:25.193Z",
-        "updated_at": "2026-10-21T22:56:25.193Z"
+        "created_at": "2026-10-21T23:00:17.617Z",
+        "updated_at": "2026-10-21T23:00:17.617Z"
       },
-      "players": [],
+      "players": [
+        {
+          "version": 1,
+          "id": "bramble-rowan-reed",
+          "name": "Rowan Reed",
+          "source": "Original",
+          "creation_tool": "Codex",
+          "can_die": false,
+          "romanceable": false,
+          "gender": "male",
+          "fallback_name": "Rowan Reed",
+          "fallback_outfits": [
+            {
+              "id": "fallback-default",
+              "name": "Everyday work clothes",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "opaque long-sleeved blue wool tunic",
+                "over_shirt": null,
+                "coat": null,
+                "back": "weatherproof courier satchel",
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "plain leather belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "full-length brown canvas trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": "gray wool socks",
+                "feet": "sturdy brown walking boots",
+                "other_accessory": null
+              }
+            }
+          ],
+          "fallback_starting_outfit_id": "fallback-default",
+          "age": 29,
+          "role": "Village courier",
+          "personality_description": "Patient and curious, Rowan remembers promises and notices practical details. He can mend a strap but is no expert craftsperson. He worries about disappointing neighbors and sometimes takes on too many errands.",
+          "speech_style": "Warm, plain-spoken sentences with occasional understated humor.",
+          "boldness": 5,
+          "starting_relationship_to_player": "self",
+          "starting_trust": 4,
+          "starting_attraction": 0,
+          "starting_affection": 1,
+          "starting_state_of_mind": "Concerned about the missing bridge lantern, but ready to help.",
+          "starting_physical_state": "Healthy and uninjured.",
+          "starting_pose": "Standing by the bridge railing.",
+          "appearance": {
+            "species": "human",
+            "height": "5 feet 9 inches tall",
+            "body_description": "A lean, wiry build accustomed to walking long distances.",
+            "skin_color": "warm brown",
+            "eye_color": "hazel",
+            "hair_color": "black",
+            "hair_length": "short",
+            "hair_type": "curly",
+            "extra_description": "A small pale scar at the left temple.",
+            "extra_description_lower_body": "",
+            "nonhuman_lower_body": false
+          },
+          "outfits": [
+            {
+              "id": "default",
+              "name": "Everyday work clothes",
+              "clothing": {
+                "hat": null,
+                "hair_accessory": null,
+                "face": null,
+                "ears": null,
+                "neck": null,
+                "shoulders": null,
+                "bra": null,
+                "undershirt": null,
+                "shirt": "opaque long-sleeved blue wool tunic",
+                "over_shirt": null,
+                "coat": null,
+                "back": "weatherproof courier satchel",
+                "hands": null,
+                "right_wrist": null,
+                "left_wrist": null,
+                "right_fingers": null,
+                "left_fingers": null,
+                "waist": "plain leather belt",
+                "belt_accessory": null,
+                "underwear": null,
+                "pants": "full-length brown canvas trousers",
+                "skirt": null,
+                "legwear": null,
+                "socks": "gray wool socks",
+                "feet": "sturdy brown walking boots",
+                "other_accessory": null
+              }
+            }
+          ],
+          "starting_outfit_id": "default",
+          "starting_held_items": {
+            "right_hand": null,
+            "left_hand": null
+          },
+          "starting_inventory": [
+            "A folded route map",
+            "A length of spare twine"
+          ],
+          "starting_known_facts": [
+            "Rowan carries messages between Bramble village and nearby farms.",
+            "Rowan grew up in Bramble and knows bridgekeeper Mira Bellweather.",
+            "Rowan promised to deliver the festival invitations before dusk."
+          ],
+          "default_seed": 0,
+          "image_prompt_config": {
+            "seed_enabled": true,
+            "seed": 0,
+            "style": "high detail fantasy RPG character art, cinematic lighting",
+            "profile_style": "",
+            "negative": "",
+            "negative_prompt": ""
+          },
+          "default_profile_image": {
+            "url": "",
+            "local_image_id": "",
+            "source": "none",
+            "seed": null,
+            "prompt": "Rowan Reed, A lean, wiry build accustomed to walking long distances. opaque long-sleeved blue wool tunic, full-length brown canvas trousers, sturdy brown walking boots. Warm illustrated fantasy village portrait.",
+            "negative_prompt": "",
+            "note": "",
+            "male": false
+          },
+          "profile_image_presentations": {
+            "male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "prompt": "Rowan Reed, A lean, wiry build accustomed to walking long distances. opaque long-sleeved blue wool tunic, full-length brown canvas trousers, sturdy brown walking boots. Warm illustrated fantasy village portrait.",
+              "seed": null,
+              "negative_prompt": "",
+              "note": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "local_image_id": "",
+              "source": "none",
+              "prompt": "Rowan Reed, A lean, wiry build accustomed to walking long distances. opaque long-sleeved blue wool tunic, full-length brown canvas trousers, sturdy brown walking boots. Warm illustrated fantasy village portrait.",
+              "seed": null,
+              "negative_prompt": "",
+              "note": "",
+              "male": false
+            }
+          },
+          "profile_images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "images": {
+            "active_image_id": "",
+            "image_ids": []
+          },
+          "voice": null,
+          "created_at": "2026-10-21T23:00:17.617Z",
+          "updated_at": "2026-10-21T23:00:17.617Z"
+        }
+      ],
       "characters": {},
       "future_cast": {
         "enabled": false,
@@ -422,8 +594,8 @@
                     "image_ids": []
                   },
                   "voice": null,
-                  "created_at": "2026-10-21T22:56:25.193Z",
-                  "updated_at": "2026-10-21T22:56:25.193Z"
+                  "created_at": "2026-10-21T23:00:17.617Z",
+                  "updated_at": "2026-10-21T23:00:17.617Z"
                 }
               }
             }
@@ -579,10 +751,10 @@
       {
         "role": "assistant",
         "speaker": "Narrator",
-        "at": "2026-10-21T22:56:25.193Z",
+        "at": "2026-10-21T23:00:17.617Z",
         "text": "The repaired lantern rests on Bramble Bridge. Mira places a fresh candle beside it. “Ready when you are,” she says, holding out a taper. Music drifts from the village square."
       }
     ]
   },
-  "exportedAt": "2026-10-21T22:56:25.193Z"
+  "exportedAt": "2026-10-21T23:00:17.617Z"
 }
