@@ -53,8 +53,8 @@ dump. It should normally introduce only:
 
 The opening may establish unavoidable starting circumstances, but it must
 preserve player agency. Do not write the player as already having made a
-meaningful choice, agreed to a relationship, submitted, attacked, flirted,
-forgiven someone, accepted a job, or committed to a moral path unless that is
+meaningful choice, joined a faction, attacked, forgiven someone, accepted a job,
+or committed to a moral path unless that is
 the explicit requested starting premise.
 
 Use grounded, actionable details before abstract setting mechanics. Avoid
@@ -84,7 +84,7 @@ Normal EmberAdventuresLite stories may move in and out of two complementary mode
 
 - **Authored scene sequence:** Use a tight chain of linked objectives when the
   story needs deliberate pacing, a sequence of reveals, political procedure,
-  investigation, training, negotiation, romance development, an emotional
+  investigation, training, negotiation, friendship development, an emotional
   confrontation, a social ritual, a trial, a mission briefing, or any scene
   where each response should establish the next beat. A tight chain is not
   limited to the opening. Enter it whenever the author needs to tell a
@@ -92,15 +92,15 @@ Normal EmberAdventuresLite stories may move in and out of two complementary mode
   that sequence has delivered its purpose.
 - **Open objective:** Use a larger objective when the player should control the
   method, order, tone, or amount of engagement: explore a city, earn access to
-  a faction, investigate a mystery, prepare for a journey, pursue optional
-  relationships, or solve a problem by any plausible approach. Do not create
+  a faction, investigate a mystery, prepare for a journey, build friendships,
+  or solve a problem by any plausible approach. Do not create
   artificial micro-objectives merely to force the player through an otherwise
   open situation.
 
 A strong story alternates deliberately. A broad objective can lead into a
 political hearing; the hearing can use a tight sequence of authored objectives;
 after the decision and consequences, the story can return to a broad objective.
-Freeform relationship time can lead into a tightly authored confession,
+Freeform conversation can lead into a tightly authored revelation,
 argument, invitation, boundary, or shared crisis, then return to free play.
 
 ## Required Objective-Handoff Pass
@@ -210,9 +210,9 @@ Use one of these three normal structures when a scene needs many things:
 2. **Open-ended scene with one player-controlled exit.** Put the optional
    topics, interactions, activities, and opportunities in the player-facing
    summary, but give the objective one unmistakable completion action such as
-   leaving the room, going to sleep, ending the date, departing the camp, or
+   leaving the room, going to sleep, departing the camp, or
    explicitly concluding the meeting. Use this mainly for flexible,
-   non-critical play such as dinner conversation, downtime, casual dates,
+   non-critical play such as dinner conversation, downtime, friendly games,
    socializing, or exploration where the listed activities do not all need to
    happen. Suggested content is not a hidden completion checklist.
 3. **Objective tree.** Branch into separate objectives when different player

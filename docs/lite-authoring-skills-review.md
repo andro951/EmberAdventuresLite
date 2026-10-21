@@ -87,3 +87,14 @@ The browser session was left at the playable opening. No AI text turn or full
 playthrough was run. Both branches have been checked structurally, not played
 through using a live model. Proof screenshot is saved in the task outputs as
 lite-story-import-start-proof.png.
+
+## Follow-up content review — skills 1.0.1
+
+Reviewed all skill instructions, reference prose, JSON examples, field lists,
+image prompts, UI metadata, and helper code. Removed copied romance/flirting/
+dating examples and the standalone example's romance genre/default. Simplified
+its portrait wording, left optional inner clothing slots empty, and made the
+alternate town skirt explicitly opaque and ankle-length. Required engine field
+names remain unchanged for valid imports. Repeated the full 82 authoring checks
+and both skill-format checks successfully. Installed copies and the download
+archive were refreshed and checked against the repository's skill files.

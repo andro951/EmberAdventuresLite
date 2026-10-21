@@ -19,7 +19,7 @@ fields. Examples of forbidden process leakage:
 
 - `source-faithful`, `current app compatible`, `clean export`;
 - `should not appear before X`, `introduce after objective Y`;
-- `future party member`, `will become romance partner`, `unlock reward`;
+- `future party member`, `will become an ally`, `unlock reward`;
 - `do not spoil`, `hide this from the player`, `use in prompt only`;
 - field explanations such as `this is the active outfit` or `used by image gen`.
 
