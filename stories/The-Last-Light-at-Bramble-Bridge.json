@@ -2,7 +2,7 @@
   "app": "EmberAdventures",
   "exportType": "story-template",
   "storyTemplate": {
-    "id": "the-last-light-at-bramble-bridge",
+    "id": "bramble-bridge-short-adventure",
     "title": "The Last Light at Bramble Bridge",
     "description": "The festival starts at dusk, but Bramble Bridge has lost its lantern. Help a stubborn bridgekeeper find a way to light the crossing.",
     "source": "Original",
