@@ -7744,7 +7744,17 @@
                     },
                 ]);
 
-                await app.persistence.submitOperations("runtime-mutation", []);
+                const nextChangeIdBeforeEmpty = app.persistence.activeSaveState.nextChangeId;
+                let emptyTransactionError = "";
+                try {
+                    await app.persistence.submitOperations("runtime-mutation", []);
+                }
+                catch (error) {
+                    emptyTransactionError = error.message;
+                }
+                devAssert(/from 1 through 500 domain operations/.test(emptyTransactionError) &&
+                    app.persistence.activeSaveState.nextChangeId === nextChangeIdBeforeEmpty,
+                    "empty transactions reject before consuming a change id");
                 await app.persistence.submitOperations("runtime-mutation", [
                     { type: "scene.member.remove", characterId: ally.id },
                 ]);

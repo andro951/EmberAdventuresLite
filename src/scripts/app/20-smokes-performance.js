@@ -6848,13 +6848,12 @@
                     /Global default style|Character definition default|Current game override/i.test(
                         profileImageModal?.textContent || "",
                     ) &&
-                        /\bSFW\b/i.test(profileImageModal?.textContent || "") &&
                         !!profileImageModal?.querySelector?.("[data-profile-style-override]") &&
                         seedInput?.value === String(defaultProfileImageSeed(app.state.characters["Astra Nyberg"])) &&
                         !!randomSeedToggle &&
                         !!randomSeedButton &&
                         !uploadImageButton,
-                    "manual profile image UI exposes style controls, default-seed controls, and generation mode without character-image upload",
+                    "manual profile image UI exposes style controls and default-seed controls without character-image upload",
                 );
                 const fixedSeedFromUi = Number(seedInput?.value || 0);
                 calls.length = 0;

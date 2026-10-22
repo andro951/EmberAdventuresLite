@@ -1,5 +1,5 @@
 {
-  "phase": "smoke-fixes-awaiting-browser-verification",
+  "phase": "failed-smokes-passed-awaiting-user-full-suite",
   "readyToBuild": true,
   "normalBaselineCommit": "d8b7418",
   "backupDirectory": "C:/Users/isaac/Documents/Codex/2026-09-07/i/work/lite-before-rebuild-20261022",
@@ -9,14 +9,14 @@
   "directHttpsIntegrated": true,
   "archiveRetentionFixIntegrated": true,
   "pending": [
-    "Browser smoke rerun on the corrected build."
+    "User will run the full smoke suite on the updated published build."
   ],
   "sharedPresentationPolicy": "Use each normal SFW futanari character's required authored fallback_gender. Preserve IDs and sliders; switch alternate name/outfits/profile when male. Missing fallbacks reject unchanged. Ordinary transgender/nonbinary labels remain supported.",
   "normalLiteImportCommit": "ad45dbf",
   "sharedImportConversionIntegrated": true,
   "normalMarkedLiteImportIntegrated": true,
   "publicSearchScopeIntegrated": true,
-  "browserSmokesRun": false,
+  "browserSmokesRun": true,
   "contentInventory": {
     "standaloneCharacters": 41,
     "storyFiles": 55,
@@ -34,13 +34,14 @@
   "pythonChecksPassed": 10,
   "pythonChecksSkipped": 1,
   "verificationLimits": [
-    "Current browser/runtime suite has not been executed.",
+    "Only the five reported failures were rerun in isolated local Edge, using mocked providers/public-library responses.",
+    "The user will run the complete suite on the published Perchance build.",
     "Actual published-page HTTPS workers and live Supabase workflows have not been verified."
   ],
   "completedAt": "2026-10-22",
-  "releaseBuild": "ea-267f51b881a872ae",
-  "releaseSourceHash": "267f51b881a872ae1b60e1bb26ccb77d7581408e697909db95d97f02f63e16bc",
-  "privateBuild": "ea-fc47f46ec83c0a8b",
+  "releaseBuild": "ea-46eaf28bfc498d2d",
+  "releaseSourceHash": "46eaf28bfc498d2d34287ca6f6dcacdb8e02f8ce1b91bf69cd78b5202ea97359",
+  "privateBuild": "ea-76e090f4dc4e9396",
   "contentExportsValidated": 100,
   "smokeScenariosRegistered": 163,
   "skillArchiveChecksPassed": 5,
@@ -56,20 +57,71 @@
     "failed": 0
   },
   "receivedBrowserSmokeReport": {
-    "build": "ea-7edd2543a90132e9",
+    "build": "ea-2163b3b283772f3e",
     "executed": 160,
-    "passed": 127,
-    "failed": 26,
+    "passed": 148,
+    "failed": 5,
     "skipped": 7,
-    "fixReview": "smoke-report-20261022-fixes.md",
-    "correctedBrowserBuildVerified": false
+    "fixReview": "failed-smokes-20261022.md",
+    "failedNumbers": [
+      15,
+      22,
+      33,
+      86,
+      152
+    ]
   },
   "smokeRegressionNodeChecksPassed": 9,
   "lastTargetedNodeTestRun": {
-    "build": "ea-267f51b881a872ae",
-    "scope": "Automatic default profile, profile UI, settings contracts and ordinary runtime cleanup",
-    "passed": 26,
+    "build": "ea-46eaf28bfc498d2d",
+    "scope": "Player patch routing regression only",
+    "passed": 1,
     "failed": 0
   },
-  "defaultProfilePolicy": "Create and select Default after valid storage hydration when no profiles exist. Reuse an existing selected profile or the first existing profile; story selection and world setup do not require profile dialogs."
+  "defaultProfilePolicy": "Create and select Default after valid storage hydration when no profiles exist. Reuse an existing selected profile or the first existing profile; story selection and world setup do not require profile dialogs.",
+  "lastBrowserSmokeRun": {
+    "releaseBuild": "ea-46eaf28bfc498d2d",
+    "releaseSourceHash": "46eaf28bfc498d2d34287ca6f6dcacdb8e02f8ce1b91bf69cd78b5202ea97359",
+    "privateBuild": "ea-76e090f4dc4e9396",
+    "context": "Isolated headless Edge against the assembled local app; external network blocked; mocked providers and public library",
+    "startedAt": "2026-10-22T19:11:15.374Z",
+    "finishedAt": "2026-10-22T19:11:51.439Z",
+    "requestedNumbers": [
+      15,
+      22,
+      33,
+      86,
+      152
+    ],
+    "fullSuiteRun": false,
+    "passed": 5,
+    "failed": 0,
+    "results": [
+      {
+        "number": 15,
+        "status": "PASS",
+        "durationMs": 924
+      },
+      {
+        "number": 22,
+        "status": "PASS",
+        "durationMs": 1133
+      },
+      {
+        "number": 33,
+        "status": "PASS",
+        "durationMs": 1566
+      },
+      {
+        "number": 86,
+        "status": "PASS",
+        "durationMs": 1388
+      },
+      {
+        "number": 152,
+        "status": "PASS",
+        "durationMs": 1714
+      }
+    ]
+  }
 }

@@ -5076,7 +5076,7 @@ After the skill instructions are available, ask what character I want to make. W
             return removed;
         }
 
-        async function devCleanupAbandonedSmokeArtifactsBeforeSuite() {
+        async function devCleanupAbandonedSmokeArtifactsBeforeSuite({ saveIds = [] } = {}) {
             // A smoke can queue a library save immediately before cleanup. Let
             // every pending write land first so deletion is the final operation.
             await flushLargeSaves();
@@ -5306,10 +5306,14 @@ After the skill instructions are available, ask what character I want to make. W
             const storedSavePage = app.persistence?.started
                 ? await app.persistence.listSaves({  })
                 : { entries: saveIndexRecords() };
-            const smokeSaveIds = (storedSavePage?.entries || [])
-                .filter(isSmokeSaveIndexArtifact)
-                .map((record) => String(record?.saveId || "").trim())
-                .filter(Boolean);
+            //Save IDs are assigned by IndexedDB; callers declare owned synthetic IDs explicitly.
+            const smokeSaveIds = new Set([
+                ...(storedSavePage?.entries || [])
+                    .filter(isSmokeSaveIndexArtifact)
+                    .map((record) => String(record?.saveId || "").trim())
+                    .filter(Boolean),
+                ...saveIds,
+            ]);
             for (const saveId of smokeSaveIds) await deleteSaveStorage(saveId);
             if (app.persistence?.started) await loadSaveIndexRecords();
 

@@ -252,8 +252,6 @@
                             ...next.player,
                             ...extractPlayer(charPatch, next.player),
                         };
-                        if (selectedOutfitIdFromPatch(charPatch))
-
                         continue;
                     }
                     mutableRoot("characters");
@@ -7005,6 +7003,8 @@ JSON:`;
         }
 
         async function devRunSmokeSuiteRunnerSmokeTest() {
+            const saveSnapshot = devSaveLibrarySnapshotForSmoke();
+            try {
             devTestLog("Scenario start: smoke-suite-runner-smoke");
             const scenarios = devSmokeScenarioRegistry();
             const quickScenarios = devSmokeScenariosForMode("quick");
@@ -7690,19 +7690,18 @@ JSON:`;
             cleanupState.player = devSmokeRuntimeCharacter("Smoke Cleanup Player", {
                 role: "smoke cleanup tester",
             });
-            await createNewActiveSave("smoke cleanup aggregate added", {
-                saveId: cleanupId,
+            const cleanupSaveId = await createNewActiveSave("smoke cleanup aggregate added", {
                 state: cleanupState,
                 images: [{ id: cleanupId, title: "Smoke Cleanup Image" }],
             });
             await flushLargeSaves();
-            await devCleanupAbandonedSmokeArtifactsBeforeSuite();
+            await devCleanupAbandonedSmokeArtifactsBeforeSuite({ saveIds: [cleanupSaveId] });
             await flushLargeSaves();
             const remainingNormalizedSaves = await app.persistence.listSaves({
 
             });
             const cleanupSaveExists = (remainingNormalizedSaves?.entries || []).some(
-                (record) => String(record?.saveId || "") === cleanupId,
+                (record) => String(record?.saveId || "") === cleanupSaveId,
             );
             devAssert(
                     !storyTemplateById(cleanupId) &&
@@ -7710,7 +7709,7 @@ JSON:`;
                     !(app.characterDefinitions || []).some((item) => item.id === cleanupId) &&
                     !(app.userProfiles || []).some((profile) => profile.id === cleanupId) &&
                     !(app.profileImages || []).some((image) => image.id === cleanupId) &&
-                    !findSaveIndexRecord(cleanupId) &&
+                    !findSaveIndexRecord(cleanupSaveId) &&
                     !cleanupSaveExists &&
                     localStorage.getItem(`emberadventureslite-smoke-cleanup-${cleanupId}`) == null,
                 "smoke cleanup removes smoke-created library records, normalized saves, images, profiles, and localStorage",
@@ -7731,6 +7730,10 @@ JSON:`;
             scheduleActiveGameSave();
             render();
             devTestLog("Scenario complete: smoke-suite-runner-smoke");
+            }
+            finally {
+                await devRestoreSaveLibrarySnapshotForSmoke(saveSnapshot);
+            }
         }
 
         async function devRunSimplePopupKeyCloseSmokeTest() {

@@ -1,0 +1,45 @@
+{
+  "releaseBuild": "ea-46eaf28bfc498d2d",
+  "releaseSourceHash": "46eaf28bfc498d2d34287ca6f6dcacdb8e02f8ce1b91bf69cd78b5202ea97359",
+  "privateBuild": "ea-76e090f4dc4e9396",
+  "context": "Isolated headless Edge against the assembled local app; external network blocked; mocked providers and public library",
+  "startedAt": "2026-10-22T19:11:15.374Z",
+  "finishedAt": "2026-10-22T19:11:51.439Z",
+  "requestedNumbers": [
+    15,
+    22,
+    33,
+    86,
+    152
+  ],
+  "fullSuiteRun": false,
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "number": 15,
+      "status": "PASS",
+      "durationMs": 924
+    },
+    {
+      "number": 22,
+      "status": "PASS",
+      "durationMs": 1133
+    },
+    {
+      "number": 33,
+      "status": "PASS",
+      "durationMs": 1566
+    },
+    {
+      "number": 86,
+      "status": "PASS",
+      "durationMs": 1388
+    },
+    {
+      "number": 152,
+      "status": "PASS",
+      "durationMs": 1714
+    }
+  ]
+}

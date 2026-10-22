@@ -220,3 +220,25 @@ test("message deletion restores processing-state backups and leaves untouched pe
         assert(cancelled);
     }
 });
+
+test("player patches routed through characters retain exact player ownership and structural sharing",()=>{
+    const p = production();
+    p.context.log = ()=>{};
+    const state = p.context.app.state;
+    state.player.name = "Smoke Routed Player";
+    state.player.id = "smoke-routed-player";
+    state.characters = {"Smoke Routed Ally":{...structuredClone(state.player),id:"smoke-routed-ally",name:"Smoke Routed Ally"}};
+    const patch = {characters:{[state.player.name]:{role:"Route fixture player"}}};
+    const result = p.invoke("applyStatePatch",state,patch,{currentState:state,targeted:true,source:"Node player ownership regression"});
+    assert.deepEqual(Array.from(result.__runtimePatchRoots),["player"]);
+    assert.deepEqual(Array.from(result.__runtimePatchCharacterKeys),[]);
+    assert.equal(result.characters,state.characters);
+    assert.equal(result.player.role,"Route fixture player");
+    assert(!Object.hasOwn(result.characters,state.player.name));
+    assert.notEqual(state.player.role,"Route fixture player");
+    patch.characters["Smoke Routed Ally"] = {role:"Route fixture ally"};
+    const mixed = p.invoke("applyStatePatch",state,patch,{currentState:state,targeted:true,source:"Node mixed ownership regression"});
+    assert.deepEqual(Array.from(mixed.__runtimePatchCharacterKeys),["Smoke Routed Ally"]);
+    assert.equal(mixed.player.role,"Route fixture player");
+    assert.equal(mixed.characters["Smoke Routed Ally"].role,"Route fixture ally");
+});

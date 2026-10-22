@@ -906,11 +906,13 @@
                 await devWaitFor(
                     () =>
                         /Featured Alpha/i.test(liveFeaturedCharacterRailText()) &&
-                        !/Featured Alpha Alternate/i.test(liveFeaturedCharacterRailText()) &&
+                        /Featured Alpha Alternate/i.test(liveFeaturedCharacterRailText()) &&
                         /Featured Beta/i.test(liveFeaturedCharacterRailText()),
                     3000,
-                    "featured characters to rerender for no active profile",
+                    "featured characters to retain current presentation settings without an active profile",
                 );
+                devAssert(!activeUserProfile() && app.settings.preferredCharacterGender === "male",
+                    "clearing a profile selection preserves the current presentation setting");
 
                 hydrateUserProfileRuntime(malePreferenceProfile, { includeSettings: true });
                 await refreshUnifiedLibraryAfterProfileChange();
@@ -1033,7 +1035,13 @@
                         initialVersionRows[1]?.querySelector?.(".public-version-hide-button")?.textContent?.includes("✓") &&
                         initialVersionRows[2]?.querySelector?.(".public-version-show-button")?.getAttribute("aria-pressed") === "true",
                     "compact visibility mask maps version bits and clearly marks the selected fixed-color control",
-                    { rows: initialVersionRows.map((row) => row.textContent || "") },
+                    { rows: initialVersionRows.map((row) => ({
+                        text: row.textContent || "",
+                        showPressed: row.querySelector(".public-version-show-button")?.getAttribute("aria-pressed"),
+                        hidePressed: row.querySelector(".public-version-hide-button")?.getAttribute("aria-pressed"),
+                        showText: row.querySelector(".public-version-show-button")?.textContent,
+                        hideText: row.querySelector(".public-version-hide-button")?.textContent,
+                    })) },
                 );
                 await openOwnedPublicLibraryVersionManager("public-char-library-smoke");
                 devAssert(

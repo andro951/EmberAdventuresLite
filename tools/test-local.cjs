@@ -6,6 +6,7 @@ const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
 const output = path.join(root, "test-output");
 fs.mkdirSync(output, { recursive: true });
+execFileSync(process.execPath, ["build_bottom_compressed.js"], { cwd: root, stdio: "inherit" });
 execFileSync(process.execPath, ["build_bottom_compressed.js", "--private-tests"], { cwd: root, stdio: "inherit" });
 const registrySource = fs.readFileSync(path.join(root, "src/scripts/app/23-smokes-profiles.js"), "utf8").split("function devSmokeScenarioRegistry()")[1].split("function devRunLiveTestScenario()")[0];
 const scenarios = [...registrySource.matchAll(/id: "([^"]+)"/g)].map((match, index) => ({ number: index + 1, id: match[1] }));
@@ -15,7 +16,7 @@ const report = { startedAt: new Date().toISOString(), runtime: null, smokes: [],
 const server = http.createServer((request, response) => {
   const file = path.resolve(root, "." + decodeURIComponent(new URL(request.url, "http://local").pathname));
   if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { response.writeHead(404); response.end(); return; }
-  response.setHeader("Content-Type", ({ ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".png": "image/png" })[path.extname(file)] || "application/octet-stream");
+  response.setHeader("Content-Type", ({ ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".png": "image/png" })[path.extname(file)] || "application/octet-stream");
   fs.createReadStream(file).pipe(response);
 });
 function save() { fs.writeFileSync(path.join(output, "local-tests.json"), JSON.stringify(report, null, 2)); }
@@ -31,9 +32,8 @@ function save() { fs.writeFileSync(path.join(output, "local-tests.json"), JSON.s
     const page = await context.newPage();
     await page.goto(base + "/bottom.runtime-tests.html");
     await page.waitForFunction(() => globalThis.EmberAdventures?.isReady?.(), null, { timeout: 45000 });
-    // The worker APIs become available before startup binds and paints the library.
-    // Wait for that real UI boundary instead of guessing a startup delay.
-    await page.waitForSelector("[data-library-home]", { state: "visible", timeout: 45000 });
+    //Startup opens the main menu; the library opens only after a player action.
+    await page.waitForSelector("#mainMenu", { state: "visible", timeout: 45000 });
     await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     return { context, page };
   }
