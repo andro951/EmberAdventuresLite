@@ -94,18 +94,66 @@ test("profile form contains ordinary controls and submits without the retired on
     assert(f.events.some(event=>event[0]==="library"));
     assert(!/adult|NSFW|spic|kink/.test(f.nodes.map(node=>node.textContent).join(" ")));
 });
-test("new adventures still offer profile creation or selection before the story library",()=>{
+test("automatic profiles use current defaults, validate, persist once and are reused",()=>{
     const f=fixture();
-    f.context.openProfileCreationModal=options=>f.events.push(["create-form",options]);
-    f.context.openMainMenuProfiles=options=>f.events.push(["profile-list",options]);
-    f.invoke("beginNewAdventureStorySelection");
-    assert.equal(f.events[0][0],"create-form");
-    f.invoke("createUserProfileFromForm","Fixture Profile","");
+    f.context.app.settings.narratorVoiceName="Fixture Voice";
+    f.context.app.settings.aiMessageLength="short";
+    const before=plain(f.invoke("profileSettingsFromCurrent"));
+    const profile=f.invoke("ensureDefaultUserProfile");
+    assert.equal(profile.name,"Default");
+    assert.equal(profile.settings.preferredCharacterGender,"");
+    assert.deepEqual(plain(profile.settings),before);
+    assert.equal(f.invoke("validateUserProfileDefinition",profile).ok,true);
+    assert.equal(f.context.app.settings.activeUserProfileId,profile.id);
+    assert.deepEqual(f.events.map(event=>event[0]),["settings","profiles"]);
     f.events.length=0;
-    f.invoke("beginNewAdventureStorySelection");
-    assert.equal(f.events[0][0],"profile-list");
-    assert.equal(f.events[0][1].after,"story_library");
+    assert.equal(f.invoke("ensureDefaultUserProfile").id,profile.id);
+    assert.equal(f.context.app.userProfiles.length,1);
+    assert.equal(f.events.length,0);
 });
+
+test("automatic selection preserves the chosen profile and reuses existing profiles when none is active",()=>{
+    const f=fixture();
+    const first=f.invoke("createUserProfileFromForm","Fixture First","female");
+    const second=f.invoke("createUserProfileFromForm","Fixture Second","male");
+    f.events.length=0;
+    assert.equal(f.invoke("ensureDefaultUserProfile").id,second.id);
+    assert.equal(f.events.length,0);
+    f.context.app.settings.activeUserProfileId="";
+    assert.equal(f.invoke("ensureDefaultUserProfile").id,first.id);
+    assert.equal(f.context.app.settings.preferredCharacterGender,"female");
+    assert.equal(f.context.app.userProfiles.length,2);
+    assert(!f.events.some(event=>event[0]==="profiles"));
+});
+
+test("new adventures open the story library directly and never duplicate the default profile",()=>{
+    const f=fixture();
+    f.context.openProfileCreationModal=()=>assert.fail("unexpected profile setup");
+    f.context.openMainMenuProfiles=()=>assert.fail("unexpected profile picker");
+    f.invoke("beginNewAdventureStorySelection");
+    const id=f.context.app.settings.activeUserProfileId;
+    const opened=f.events.find(event=>event[0]==="library");
+    assert.equal(opened[1].type,"story");
+    assert.equal(opened[1].tab,"public");
+    assert.equal(f.context.app.mainMenuOpen,false);
+    assert.equal(f.context.app.userProfiles[0].name,"Default");
+    f.invoke("beginNewAdventureStorySelection");
+    assert.equal(f.context.app.userProfiles.length,1);
+    assert.equal(f.context.app.settings.activeUserProfileId,id);
+});
+
+test("world generation automatically creates a profile and starts at story configuration",()=>{
+    const f=fixture();
+    f.context.openProfileCreationModal=()=>assert.fail("unexpected profile setup");
+    f.context.openMainMenuProfiles=()=>assert.fail("unexpected profile picker");
+    f.context.renderMainMenu=()=>{};
+    f.context.renderOnboardingStep=()=>f.events.push(["world-setup"]);
+    f.invoke("beginOnboardingWorldSetup");
+    assert.equal(f.context.app.onboardingDraft.step,6);
+    assert.equal(f.context.app.userProfiles[0].name,"Default");
+    assert(f.events.some(event=>event[0]==="world-setup"));
+});
+
 test("boldness retains romance and social initiative without sexual escalation guidance",()=>{
     const f=createProductionContext();
     f.load("CHARACTER_BOLDNESS_PHRASES");

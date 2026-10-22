@@ -1,7 +1,7 @@
 # Verification — October 22, 2026 rebuild
 
-Release build: `ea-2163b3b283772f3e`.
-Private-test build: `ea-3ab5003212f8079a`.
+Release build: `ea-267f51b881a872ae`.
+Private-test build: `ea-fc47f46ec83c0a8b`.
 
 Both builds passed deterministic assembly, JavaScript parsing, and gzip round-trip checks. The generated release page matches `src/`. The current persistence contract has 77 stores, and the smoke index lists 163 scenarios without executing them.
 
@@ -21,4 +21,5 @@ Live Supabase account/publication flows and the published Perchance page's conne
 
 Detailed final Node totals and verification limits are recorded in `rebuild/status.json`. Disposable diagnostic inventories are archived in the task workspace, outside the release repository.
 
-ZIP distribution follow-up: five package/reference/link checks passed, the 91-check authoring gate passed from packaged resources, and canonical content validation passed 98/98 after pulling the new merchant character. The final complete Node gate passes 124 tests with one skipped and zero failures, including nine new smoke-regression checks. Authoring, routing and content checks also pass. Browser smokes were updated but not run on the corrected build.
+ZIP distribution follow-up: five package/reference/link checks passed, the 91-check authoring gate passed from packaged resources, and canonical content validation passed 98/98 after pulling the new merchant character. The complete Node gate for `ea-2163b3b283772f3e` passed 124 tests with one skipped and zero failures, including nine new smoke-regression checks. Authoring, routing and content checks also pass. Browser smokes were updated but not run on the corrected build.
+Automatic-profile follow-up: Lite creates and selects a profile named Default after storage hydration when no profile exists. Existing profiles and the selected profile are preserved. New Adventure opens the story library directly, and world setup starts at story configuration. The profile/settings/runtime Node checks pass 26/26 on the current build; smoke 9 was extended to check persistence and reuse but was not executed.

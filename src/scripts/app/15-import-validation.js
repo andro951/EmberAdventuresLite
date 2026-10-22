@@ -6248,12 +6248,22 @@ RELEVANT STATE EVIDENCE: ${JSON.stringify(evidenceState)}`;
 
         function beginNewAdventureStorySelection() {
             clearSetupModalScrollPositions();
-            if (!(app.userProfiles || []).length) {
-                openProfileCreationModal({after: "story_library"});
-                return;
+            ensureDefaultUserProfile();
+            app.mainMenuOpen = false;
+            openUnifiedLibrary({type: "story", tab: "public", returnToMainMenuOnEscape: true});
+        }
+
+        function ensureDefaultUserProfile() {
+            const active = activeUserProfile();
+            if (active) return active;
+
+            const existing = validatedUserProfiles(app.userProfiles)[0];
+            if (existing) {
+                applyUserProfile(existing);
+                return existing;
             }
 
-            openMainMenuProfiles({after: "story_library"});
+            return createUserProfileFromForm("Default", app.settings.preferredCharacterGender);
         }
 
         function createUserProfileFromForm(name, gender) {
@@ -6327,11 +6337,7 @@ RELEVANT STATE EVIDENCE: ${JSON.stringify(evidenceState)}`;
         }
 
         function beginOnboardingWorldSetup() {
-    if (!activeUserProfile()) {
-        if ((app.userProfiles || []).length) openMainMenuProfiles({onSelected:beginOnboardingWorldSetup});
-        else openProfileCreationModal({onCreated:beginOnboardingWorldSetup});
-        return;
-    }
+    ensureDefaultUserProfile();
     clearSetupModalScrollPositions();
     app.onboardingDraft = {
         step:6,story_mode:"original",story_title:"",story_description:"",story_modifications:"",

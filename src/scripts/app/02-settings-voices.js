@@ -292,6 +292,7 @@
                     includeSettings: true,
                     includeGameState: false,
                 });
+                ensureDefaultUserProfile();
                 perfTimed("clean stale library image requests", cleanupStartupStaleLibraryImageRequests);
                 app.snapshots = Array.isArray(app.snapshots) ? app.snapshots : [];
             } finally {

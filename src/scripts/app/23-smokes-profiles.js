@@ -7,6 +7,15 @@
                 devResetForLiveTest("profile-library-workflow-smoke");
                 app.userProfiles = [];
                 app.settings.activeUserProfileId = "";
+                const automatic = ensureDefaultUserProfile();
+                await app.work.flush();
+                devAssert(automatic.name === "Default" && activeUserProfile()?.id === automatic.id &&
+                    validateUserProfileDefinition(automatic).ok && ensureDefaultUserProfile().id === automatic.id &&
+                    app.userProfiles.length === 1,
+                    "a fresh Lite library creates and selects one canonical default profile without opening setup");
+                const storedProfiles = await loadLargeJson(USER_PROFILE_KEY, []);
+                devAssert(storedProfiles.some(profile => profile.id === automatic.id),
+                    "the automatic default profile persists through the normal profile store");
                 const first = createUserProfileFromForm("Smoke Library First", "female");
                 const second = createUserProfileFromForm("Smoke Library Second", "male");
                 await app.work.flush();
