@@ -1,0 +1,306 @@
+{
+  "app": "EmberAdventures",
+  "exportType": "story-template",
+  "storyTemplate": {
+    "id": "smoke-fixture-story-1792662750119",
+    "title": "Smoke Fixture Story",
+    "description": "A fake smoke fixture story.",
+    "source": "Original",
+    "creation_tool": "debug harness",
+    "genres": [
+      "fantasy"
+    ],
+    "createdAt": "2026-10-22T09:52:30.119Z",
+    "updatedAt": "2026-10-22T09:52:30.119Z",
+    "allow_any_player": false,
+    "any_player_starting_state": {},
+    "app": "EmberAdventures",
+    "templateType": "story",
+    "default_image_model": "fantasy-rpg",
+    "title_card_subjects": [
+      "Smoke Fixture Story"
+    ],
+    "title_card_image": {
+      "id": "smoke-fixture-story-title-card",
+      "title": "Smoke Fixture Story title card",
+      "prompt": "Smoke title card for Smoke Fixture Story.",
+      "negativePrompt": "text, logo, watermark",
+      "seed": 0,
+      "model": "fantasy-rpg",
+      "source": "hosted",
+      "url": "https://example.com/emberadventures-smoke-story-title-card-Smoke-Fixture-Story.png",
+      "hosted_url": "https://example.com/emberadventures-smoke-story-title-card-Smoke-Fixture-Story.png",
+      "html": "",
+      "favorite": false
+    },
+    "state": {
+      "meta": {
+        "app": "EmberAdventures",
+        "genres": [
+          "fantasy"
+        ],
+        "story_guidance": "Fake smoke fixture story guidance.",
+        "story_source": {
+          "mode": "original",
+          "title": "Smoke Fixture Story",
+          "description": "A fake smoke fixture story.",
+          "modifications": []
+        },
+        "default_image_model": "fantasy-rpg"
+      },
+      "player": {
+        "version": 1,
+        "id": "smoke-character-smoke-player",
+        "name": "Smoke Player",
+        "source": "Player",
+        "creation_tool": "EmberAdventures (Perchance)",
+        "can_die": true,
+        "romanceable": true,
+        "gender": "female",
+        "fallback_name": "Smoke Player Alternate",
+        "fallback_outfits": [
+          {
+            "id": "fallback-default",
+            "name": "Alternate Default Outfit",
+            "clothing": {
+              "shirt": "plain alternate shirt",
+              "pants": "plain alternate trousers",
+              "feet": "plain alternate shoes"
+            }
+          }
+        ],
+        "fallback_starting_outfit_id": "fallback-default",
+        "age": 28,
+        "role": "fake smoke-test player",
+        "personality_description": "Smoke Player is a distinct adult character whose deeper personality should remain consistent across scenes.",
+        "speech_style": "Direct smoke-test dialogue.",
+        "boldness": 5,
+        "starting_relationship_to_player": "smoke-test acquaintance",
+        "starting_trust": 0,
+        "starting_attraction": 0,
+        "starting_affection": 0,
+        "starting_state_of_mind": "focused",
+        "starting_physical_state": "healthy",
+        "starting_pose": "standing",
+        "appearance": {
+          "species": "human",
+          "height": 10,
+          "shoulder_width": 10,
+          "chest": 13,
+          "upper_body_build": 8,
+          "midsection_build": 8,
+          "hip_width": 10,
+          "butt_build": 8,
+          "lower_body_build": 8,
+          "arm_length": 10,
+          "leg_length": 10,
+          "skin_color": "",
+          "eye_color": "",
+          "hair_color": "",
+          "hair_length": "",
+          "hair_type": "",
+          "extra_description": "",
+          "extra_description_lower_body": "",
+          "nonhuman_lower_body": false
+        },
+        "outfits": [
+          {
+            "id": "default",
+            "name": "Default",
+            "clothing": {
+              "shirt": "plain smoke-test tunic",
+              "pants": "plain smoke-test trousers",
+              "feet": "plain smoke-test boots"
+            }
+          }
+        ],
+        "starting_outfit_id": "default",
+        "starting_held_items": {
+          "right_hand": null,
+          "left_hand": null
+        },
+        "starting_inventory": [],
+        "starting_known_facts": [
+          "Smoke Player is an adult character."
+        ],
+        "default_seed": 0,
+        "image_prompt_config": {
+          "seed_enabled": true,
+          "seed": 0,
+          "style": "high detail fantasy RPG character art, cinematic lighting",
+          "profile_style": "",
+          "negative": "",
+          "negative_prompt": ""
+        },
+        "default_profile_image": {
+          "url": "https://example.com/emberadventures-smoke-character-profile-Smoke-Player.png",
+          "local_image_id": "",
+          "source": "hosted",
+          "seed": 0,
+          "prompt": "Smoke profile image for Smoke Player.",
+          "negative_prompt": "",
+          "note": "Smoke profile image fixture.",
+          "male": false
+        },
+        "profile_image_presentations": {
+          "male": {
+            "url": "https://example.com/emberadventures-smoke-character-profile-Smoke-Player-Male.png",
+            "local_image_id": "",
+            "source": "hosted",
+            "prompt": "Smoke profile image for Smoke Player Male.",
+            "seed": 0,
+            "negative_prompt": "",
+            "note": "Smoke profile image fixture.",
+            "male": true
+          },
+          "non_male": {
+            "url": "https://example.com/emberadventures-smoke-character-profile-Smoke-Player-Non-Male.png",
+            "local_image_id": "",
+            "source": "hosted",
+            "prompt": "Smoke profile image for Smoke Player Non-Male.",
+            "seed": 0,
+            "negative_prompt": "",
+            "note": "Smoke profile image fixture.",
+            "male": false
+          }
+        },
+        "profile_images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "images": {
+          "active_image_id": "",
+          "image_ids": []
+        },
+        "voice": null,
+        "created_at": "2026-10-22T09:52:30.117Z",
+        "updated_at": "2026-10-22T09:52:30.117Z",
+        "lite": true
+      },
+      "players": [],
+      "characters": {},
+      "future_cast": {
+        "enabled": false,
+        "items": {}
+      },
+      "location": {
+        "universe": "Smoke Fixture Universe",
+        "world": "Smoke Fixture World",
+        "continent": "Smoke Fixture Continent",
+        "region": "Smoke Fixture Region",
+        "settlement_type": "test settlement",
+        "settlement_name": "Smoke Fixture Settlement",
+        "district": "Smoke Fixture District",
+        "specific_place": "Smoke Fixture Room",
+        "npc_location_id": "smoke-fixture-room"
+      },
+      "npc_directory": {
+        "locations": {
+          "smoke-fixture-room": {
+            "label": "Smoke Fixture Room",
+            "characters": {}
+          }
+        }
+      },
+      "scene": {
+        "summary": "A fake smoke fixture scene.",
+        "party_members_present": [],
+        "image_characters": [],
+        "npcs_present": [],
+        "image_action": "standing in a fake smoke fixture scene"
+      },
+      "story_rules": [],
+      "story_inventory": {
+        "items": []
+      },
+      "world_flags": {},
+      "world_map": {
+        "current_location_id": "smoke-fixture-room",
+        "focus_location_id": "smoke-fixture-room",
+        "travel_history": [
+          "smoke-fixture-room"
+        ],
+        "locations": {
+          "smoke-fixture-room": {
+            "id": "smoke-fixture-room",
+            "name": "Smoke Fixture Room",
+            "type": "place",
+            "scale": "site",
+            "parent_id": "",
+            "x": 0,
+            "y": 0,
+            "discovered": true,
+            "travel_enabled": true,
+            "summary": "A clearly fake room for smoke tests.",
+            "detail": {},
+            "npcs": [],
+            "connections": []
+          }
+        }
+      },
+      "objectives": {
+        "active_id": "smoke-objective",
+        "no_current": false,
+        "items": [
+          {
+            "id": "smoke-objective",
+            "title": "Smoke Objective",
+            "type": "story",
+            "status": "active",
+            "summary": "Smoke Objective for a fake smoke-test story.",
+            "while_active_guidance": "Keep the fake smoke-test scene focused on Smoke Objective.",
+            "completion_control": "player",
+            "completion_criteria": "Complete Smoke Objective.",
+            "next_objectives": [
+              {
+                "id": "smoke-objective-ending",
+                "completion_instruction": "Resolve Smoke Objective.",
+                "rewards": [],
+                "ending_type": "freeplay",
+                "ending_message": ""
+              }
+            ],
+            "exclusive_group": "",
+            "completion_message": "",
+            "rewards": []
+          }
+        ]
+      },
+      "time": {
+        "year": 1,
+        "month": 1,
+        "day": 1,
+        "hour": 12,
+        "minute": 0
+      },
+      "story_memory": {
+        "world_notes": [],
+        "unresolved_threads": [],
+        "relationship_notes": [],
+        "rules_and_constraints": [],
+        "ai_private_notes": []
+      },
+      "recent_changes": [],
+      "story_clock": {
+        "elapsed_minutes": 0,
+        "label": "Day 1, 12:00 PM"
+      },
+      "story_pacing": {
+        "mode": "player_controlled",
+        "pending_event_id": "",
+        "timeline": {}
+      },
+      "timed_events": {}
+    },
+    "messages": [
+      {
+        "role": "assistant",
+        "speaker": "Narrator",
+        "text": "The fake smoke fixture begins.",
+        "at": "2026-10-22T09:52:30.119Z"
+      }
+    ],
+    "lite": true
+  },
+  "exportedAt": "2026-10-22T00:00:00.000Z"
+}

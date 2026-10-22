@@ -11,7 +11,7 @@ function readSourceFile(relativePath) {
   if (!fs.existsSync(absolutePath)) {
     throw new Error(`Missing source fragment: ${absolutePath}`);
   }
-  return fs.readFileSync(absolutePath, "utf8");
+  return fs.readFileSync(absolutePath, "utf8").replace(/\r\n?/g, "\n");
 }
 
 function loadSourceManifest() {
@@ -41,6 +41,10 @@ function loadSourceManifest() {
 }
 
 function assembleBottomSource(options = {}) {
+  const rebuildStatusPath = path.join(projectDir, "docs", "rebuild", "status.json");
+  if (fs.existsSync(rebuildStatusPath) && JSON.parse(fs.readFileSync(rebuildStatusPath, "utf8")).readyToBuild !== true)
+    throw new Error("The Lite rebuild is in progress. Finish its schema and content review before generating a publishable page.");
+
   const includeTests = options.includeTests === true;
   const manifest = loadSourceManifest();
   const styles = [
@@ -95,7 +99,6 @@ function assembleBottomSource(options = {}) {
     return `\n/*__EA_PRIVATE_TEST_SOURCE_BEGIN__*/\n${source}\n/*__EA_PRIVATE_TEST_SOURCE_END__*/\n`;
   }).join("");
   const tail = readSourceFile(manifest.tail);
-  const authoringGuides = Object.fromEntries(["character", "story"].map(kind => [kind, fs.readFileSync(path.join(projectDir, "docs", `${kind}-authoring.md`), "utf8")]));
 
   // Parsing the generated scripts here catches broken fragment order before a
   // compressed build can be copied into Perchance.
@@ -128,7 +131,6 @@ function assembleBottomSource(options = {}) {
     "</script>",
     scriptBridge,
     embeddedWorkerScript,
-    `<script>globalThis.__liteAuthoringGuides=${JSON.stringify(authoringGuides).replace(/</g, "\\u003c")};</script>`,
     "<script>",
     applicationScripts,
     "</script>",

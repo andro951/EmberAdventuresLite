@@ -9,7 +9,12 @@
   "shell": "shell/page.html",
   "dependencyScripts": [
     "vendor/brotli-compress-2.2.2.js",
-    "scripts/dependencies.js"
+    "scripts/dependencies.js",
+    "../tools/ollama-host/contract.js",
+    "../tools/ollama-host/window-client.js",
+    "../tools/ollama-host/player-connector-download.js",
+    "../tools/ollama-host/player-discovery.js",
+    "../tools/ollama-host/client.js"
   ],
   "workerScripts": [
     "persistence/schema-contract.js",
@@ -22,6 +27,7 @@
     "persistence/persistence-worker.js"
   ],
   "libraryWorkerScripts": [
+    "contracts/shared-library-format.js",
     "contracts/public-library-contract.js",
     "workers/library-worker.js"
   ],
@@ -30,7 +36,11 @@
   ],
   "scriptBridge": "shell/between-scripts.html",
   "applicationScripts": [
+    "contracts/appearance-scales.js",
+    "contracts/shared-library-format.js",
     "contracts/generation-contract.js",
+    "contracts/direct-hosting-contract.js",
+    "scripts/integration/direct-hosting-client.js",
     "contracts/public-library-contract.js",
     "persistence/domain-operation-contract.js",
     "scripts/integration/00-runtime-bridge.js",
@@ -66,8 +76,8 @@
     "scripts/app/23-smokes-profiles.js",
     "scripts/app/24-story-builder-graph.js",
     "scripts/app/25-story-builder-validation.js",
+    "scripts/app/29-ollama-settings.js",
     "scripts/app/26-objective-suggestions.js",
-    "scripts/app/28-dev-playtest-profile-compat.js",
     "scripts/app/27-hosted-images-startup.js"
   ],
   "testApplicationInsertAfter": "scripts/app/03-messages-saves.js",

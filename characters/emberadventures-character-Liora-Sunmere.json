@@ -47,7 +47,6 @@
     "appearance": {
       "species": "coastal lowland human",
       "height": 11,
-      "body_description": "An athletic build.",
       "skin_color": "warm sun-browned skin",
       "eye_color": "hazel",
       "hair_color": "deep chestnut brown",
@@ -55,7 +54,16 @@
       "hair_type": "thick and lightly wavy",
       "extra_description": "A composed adult knight with a small scar through one eyebrow, callused hands, and an easy half-smile that appears whenever someone surprises her.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
     },
     "outfits": [
       {
@@ -140,6 +148,7 @@
     },
     "voice": null,
     "created_at": "2026-08-31T00:00:00.000Z",
-    "updated_at": "2026-09-03T06:16:19.219Z"
+    "updated_at": "2026-09-03T06:16:19.219Z",
+    "lite": true
   }
 }

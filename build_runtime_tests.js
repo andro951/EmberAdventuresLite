@@ -7,7 +7,7 @@ childProcess.execFileSync(process.execPath, [
   "--output",
   path.join(__dirname, "src", "persistence", "schema-contract.js"),
   "--database-name",
-  "EmberAdventuresLiteRuntimeV1",
+  "EmberAdventuresLiteRuntimeV2",
 ], { stdio: "inherit" });
 childProcess.execFileSync(process.execPath, [
   path.join(__dirname, "save-storage-diagnostic", "build-schema-contract.js"),

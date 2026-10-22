@@ -1,0 +1,5726 @@
+[
+  {
+    "file": "stories/Sandbox stories/Sandbox Action Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "dante-knox",
+    "name": "Dante Knox",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Action Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "dante-knox",
+    "name": "Dante Knox",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Action Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "kara-finch",
+    "name": "Kara Finch",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Action Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rin-calder",
+    "name": "Rin Calder",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Action Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-action-story-job-board-owner.full_character",
+    "id": "story-sandbox-action-story-job-board-owner",
+    "name": "Action Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Action Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-action-story-job-client.full_character",
+    "id": "story-sandbox-action-story-job-client",
+    "name": "Action Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Adventure Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "gareth-pike",
+    "name": "Gareth Pike",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Adventure Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "gareth-pike",
+    "name": "Gareth Pike",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Adventure Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mina-cross",
+    "name": "Mina Cross",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Adventure Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "ari-fenlow",
+    "name": "Ari Fenlow",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Adventure Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-adventure-story-job-board-owner.full_character",
+    "id": "story-sandbox-adventure-story-job-board-owner",
+    "name": "Adventure Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Adventure Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-adventure-story-job-client.full_character",
+    "id": "story-sandbox-adventure-story-job-client",
+    "name": "Adventure Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Comedy Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "milo-hart",
+    "name": "Milo Hart",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Comedy Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "milo-hart",
+    "name": "Milo Hart",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Comedy Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "penny-vale",
+    "name": "Penny Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Comedy Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "quinn-bell",
+    "name": "Quinn Bell",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Comedy Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-comedy-story-job-board-owner.full_character",
+    "id": "story-sandbox-comedy-story-job-board-owner",
+    "name": "Comedy Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Comedy Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-comedy-story-job-client.full_character",
+    "id": "story-sandbox-comedy-story-job-client",
+    "name": "Comedy Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cozy Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "tobin-vale",
+    "name": "Tobin Vale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cozy Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "tobin-vale",
+    "name": "Tobin Vale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cozy Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "lila-green",
+    "name": "Lila Green",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cozy Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "sage-linden",
+    "name": "Sage Linden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cozy Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-cozy-story-job-board-owner.full_character",
+    "id": "story-sandbox-cozy-story-job-board-owner",
+    "name": "Cozy Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cozy Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-cozy-story-job-client.full_character",
+    "id": "story-sandbox-cozy-story-job-client",
+    "name": "Cozy Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Crime Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "cassian-vale",
+    "name": "Cassian Vale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Crime Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "cassian-vale",
+    "name": "Cassian Vale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Crime Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "lyra-stone",
+    "name": "Lyra Stone",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Crime Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-sable",
+    "name": "Rowan Sable",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Crime Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-crime-story-job-board-owner.full_character",
+    "id": "story-sandbox-crime-story-job-board-owner",
+    "name": "Crime Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Crime Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-crime-story-job-client.full_character",
+    "id": "story-sandbox-crime-story-job-client",
+    "name": "Crime Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cyberpunk Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "darren-knox",
+    "name": "Darren Knox",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cyberpunk Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "darren-knox",
+    "name": "Darren Knox",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cyberpunk Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mara-cross",
+    "name": "Mara Cross",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cyberpunk Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "nyx-arden",
+    "name": "Nyx Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cyberpunk Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-cyberpunk-story-job-board-owner.full_character",
+    "id": "story-sandbox-cyberpunk-story-job-board-owner",
+    "name": "Cyberpunk Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Cyberpunk Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-cyberpunk-story-job-client.full_character",
+    "id": "story-sandbox-cyberpunk-story-job-client",
+    "name": "Cyberpunk Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Dark Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "lucien-vey",
+    "name": "Lucien Vey",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Dark Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "lucien-vey",
+    "name": "Lucien Vey",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Dark Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "vera-thorn",
+    "name": "Vera Thorn",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Dark Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "noa-wraith",
+    "name": "Noa Wraith",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Dark Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-dark-story-job-board-owner.full_character",
+    "id": "story-sandbox-dark-story-job-board-owner",
+    "name": "Dark Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Dark Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-dark-story-job-client.full_character",
+    "id": "story-sandbox-dark-story-job-client",
+    "name": "Dark Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Drama Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "daniel-mercer",
+    "name": "Daniel Mercer",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Drama Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "daniel-mercer",
+    "name": "Daniel Mercer",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Drama Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "iris-hale",
+    "name": "Iris Hale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Drama Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "eden-vale",
+    "name": "Eden Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Drama Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-drama-story-job-board-owner.full_character",
+    "id": "story-sandbox-drama-story-job-board-owner",
+    "name": "Drama Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Drama Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-drama-story-job-client.full_character",
+    "id": "story-sandbox-drama-story-job-client",
+    "name": "Drama Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Ensemble Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "orin-voss",
+    "name": "Orin Voss",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Ensemble Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "orin-voss",
+    "name": "Orin Voss",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Ensemble Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "talia-wren",
+    "name": "Talia Wren",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Ensemble Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "sable-thorn",
+    "name": "Sable Thorn",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Ensemble Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-ensemble-story-job-board-owner.full_character",
+    "id": "story-sandbox-ensemble-story-job-board-owner",
+    "name": "Ensemble Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Ensemble Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-ensemble-story-job-client.full_character",
+    "id": "story-sandbox-ensemble-story-job-client",
+    "name": "Ensemble Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Fantasy Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "kael-rowan",
+    "name": "Kael Rowan",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Fantasy Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "kael-rowan",
+    "name": "Kael Rowan",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Fantasy Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mira-stone",
+    "name": "Mira Stone",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Fantasy Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ash",
+    "name": "Rowan Ash",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Fantasy Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-fantasy-story-job-board-owner.full_character",
+    "id": "story-sandbox-fantasy-story-job-board-owner",
+    "name": "Fantasy Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Fantasy Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-fantasy-story-job-client.full_character",
+    "id": "story-sandbox-fantasy-story-job-client",
+    "name": "Fantasy Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Historical Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "thomas-reed",
+    "name": "Thomas Reed",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Historical Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "thomas-reed",
+    "name": "Thomas Reed",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Historical Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "clara-bennett",
+    "name": "Clara Bennett",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Historical Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "ellis-whitford",
+    "name": "Ellis Whitford",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Historical Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-historical-story-job-board-owner.full_character",
+    "id": "story-sandbox-historical-story-job-board-owner",
+    "name": "Historical Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Historical Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-historical-story-job-client.full_character",
+    "id": "story-sandbox-historical-story-job-client",
+    "name": "Historical Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Horror Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-harker",
+    "name": "Caleb Harker",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Horror Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-harker",
+    "name": "Caleb Harker",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Horror Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mara-vane",
+    "name": "Mara Vane",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Horror Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "riven-crowe",
+    "name": "Riven Crowe",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Horror Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-horror-story-job-board-owner.full_character",
+    "id": "story-sandbox-horror-story-job-board-owner",
+    "name": "Horror Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Horror Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-horror-story-job-client.full_character",
+    "id": "story-sandbox-horror-story-job-client",
+    "name": "Horror Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Isekai Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "nolan-reed",
+    "name": "Nolan Reed",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Isekai Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "nolan-reed",
+    "name": "Nolan Reed",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Isekai Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "yuna-cross",
+    "name": "Yuna Cross",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Isekai Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "kai-moren",
+    "name": "Kai Moren",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Isekai Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-isekai-story-job-board-owner.full_character",
+    "id": "story-sandbox-isekai-story-job-board-owner",
+    "name": "Isekai Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Isekai Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-isekai-story-job-client.full_character",
+    "id": "story-sandbox-isekai-story-job-client",
+    "name": "Isekai Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Modern Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "marcus-hale",
+    "name": "Marcus Hale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Modern Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "marcus-hale",
+    "name": "Marcus Hale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Modern Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "dana-brooks",
+    "name": "Dana Brooks",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Modern Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "taylor-reed",
+    "name": "Taylor Reed",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Modern Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-modern-story-job-board-owner.full_character",
+    "id": "story-sandbox-modern-story-job-board-owner",
+    "name": "Modern Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Modern Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-modern-story-job-client.full_character",
+    "id": "story-sandbox-modern-story-job-client",
+    "name": "Modern Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mystery Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "edgar-vale",
+    "name": "Edgar Vale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mystery Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "edgar-vale",
+    "name": "Edgar Vale",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mystery Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "viola-marsh",
+    "name": "Viola Marsh",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mystery Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "morgan-rook",
+    "name": "Morgan Rook",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mystery Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-mystery-story-job-board-owner.full_character",
+    "id": "story-sandbox-mystery-story-job-board-owner",
+    "name": "Mystery Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mystery Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-mystery-story-job-client.full_character",
+    "id": "story-sandbox-mystery-story-job-client",
+    "name": "Mystery Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mythology Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "miles-ward",
+    "name": "Miles Ward",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mythology Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "miles-ward",
+    "name": "Miles Ward",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mythology Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "rhea-moss",
+    "name": "Rhea Moss",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mythology Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "sol-arden",
+    "name": "Sol Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mythology Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-mythology-story-job-board-owner.full_character",
+    "id": "story-sandbox-mythology-story-job-board-owner",
+    "name": "Mythology Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Mythology Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-mythology-story-job-client.full_character",
+    "id": "story-sandbox-mythology-story-job-client",
+    "name": "Mythology Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Political Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "victor-shaw",
+    "name": "Victor Shaw",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Political Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "victor-shaw",
+    "name": "Victor Shaw",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Political Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mara-vale",
+    "name": "Mara Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Political Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "remy-cross",
+    "name": "Remy Cross",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Political Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-political-story-job-board-owner.full_character",
+    "id": "story-sandbox-political-story-job-board-owner",
+    "name": "Political Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Political Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-political-story-job-client.full_character",
+    "id": "story-sandbox-political-story-job-client",
+    "name": "Political Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Post-Apocalyptic Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "dax-rourke",
+    "name": "Dax Rourke",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Post-Apocalyptic Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "dax-rourke",
+    "name": "Dax Rourke",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Post-Apocalyptic Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "nyra-vale",
+    "name": "Nyra Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Post-Apocalyptic Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "ash-calder",
+    "name": "Ash Calder",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Post-Apocalyptic Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-post-apocalyptic-story-job-board-owner.full_character",
+    "id": "story-sandbox-post-apocalyptic-story-job-board-owner",
+    "name": "Post-Apocalyptic Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Post-Apocalyptic Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-post-apocalyptic-story-job-client.full_character",
+    "id": "story-sandbox-post-apocalyptic-story-job-client",
+    "name": "Post-Apocalyptic Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Romance Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "julian-marlow",
+    "name": "Julian Marlow",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Romance Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "julian-marlow",
+    "name": "Julian Marlow",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Romance Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "sofia-lane",
+    "name": "Sofia Lane",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Romance Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "robin-hart",
+    "name": "Robin Hart",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Romance Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-romance-story-job-board-owner.full_character",
+    "id": "story-sandbox-romance-story-job-board-owner",
+    "name": "Romance Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Romance Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-romance-story-job-client.full_character",
+    "id": "story-sandbox-romance-story-job-client",
+    "name": "Romance Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox School Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "elias-ford",
+    "name": "Elias Ford",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox School Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "elias-ford",
+    "name": "Elias Ford",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox School Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mina-vale",
+    "name": "Mina Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox School Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "casey-morita",
+    "name": "Casey Morita",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox School Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-school-story-job-board-owner.full_character",
+    "id": "story-sandbox-school-story-job-board-owner",
+    "name": "School Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox School Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-school-story-job-client.full_character",
+    "id": "story-sandbox-school-story-job-client",
+    "name": "School Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Sci-Fi Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "orin-voss",
+    "name": "Orin Voss",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Sci-Fi Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "orin-voss",
+    "name": "Orin Voss",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Sci-Fi Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "talia-wren",
+    "name": "Talia Wren",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Sci-Fi Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "avery-sol",
+    "name": "Avery Sol",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Sci-Fi Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-sci-fi-story-job-board-owner.full_character",
+    "id": "story-sandbox-sci-fi-story-job-board-owner",
+    "name": "Sci-Fi Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Sci-Fi Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-sci-fi-story-job-client.full_character",
+    "id": "story-sandbox-sci-fi-story-job-client",
+    "name": "Sci-Fi Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Slice of Life Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "ren-sato",
+    "name": "Ren Sato",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Slice of Life Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "ren-sato",
+    "name": "Ren Sato",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Slice of Life Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "hana-vale",
+    "name": "Hana Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Slice of Life Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "jamie-lin",
+    "name": "Jamie Lin",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Slice of Life Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-slice-of-life-story-job-board-owner.full_character",
+    "id": "story-sandbox-slice-of-life-story-job-board-owner",
+    "name": "Slice Of Life Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Slice of Life Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-slice-of-life-story-job-client.full_character",
+    "id": "story-sandbox-slice-of-life-story-job-client",
+    "name": "Slice Of Life Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Steampunk Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "leo-hart",
+    "name": "Leo Hart",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Steampunk Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "leo-hart",
+    "name": "Leo Hart",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Steampunk Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mira-rose",
+    "name": "Mira Rose",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Steampunk Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "perrin-locke",
+    "name": "Perrin Locke",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Steampunk Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-steampunk-story-job-board-owner.full_character",
+    "id": "story-sandbox-steampunk-story-job-board-owner",
+    "name": "Steampunk Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Steampunk Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-steampunk-story-job-client.full_character",
+    "id": "story-sandbox-steampunk-story-job-client",
+    "name": "Steampunk Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Supernatural Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "cole-rivers",
+    "name": "Cole Rivers",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Supernatural Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "cole-rivers",
+    "name": "Cole Rivers",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Supernatural Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mara-west",
+    "name": "Mara West",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Supernatural Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "vale-rowan",
+    "name": "Vale Rowan",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Supernatural Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-supernatural-story-job-board-owner.full_character",
+    "id": "story-sandbox-supernatural-story-job-board-owner",
+    "name": "Supernatural Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Supernatural Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-supernatural-story-job-client.full_character",
+    "id": "story-sandbox-supernatural-story-job-client",
+    "name": "Supernatural Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Superpower Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "victor-gray",
+    "name": "Victor Gray",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Superpower Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "victor-gray",
+    "name": "Victor Gray",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Superpower Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "aria-vale",
+    "name": "Aria Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Superpower Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "riley-quinn",
+    "name": "Riley Quinn",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Superpower Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-superpower-story-job-board-owner.full_character",
+    "id": "story-sandbox-superpower-story-job-board-owner",
+    "name": "Superpower Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Superpower Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-superpower-story-job-client.full_character",
+    "id": "story-sandbox-superpower-story-job-client",
+    "name": "Superpower Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Thriller Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "miles-archer",
+    "name": "Miles Archer",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Thriller Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "miles-archer",
+    "name": "Miles Archer",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Thriller Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "selene-rowe",
+    "name": "Selene Rowe",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Thriller Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "blair-voss",
+    "name": "Blair Voss",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Thriller Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-thriller-story-job-board-owner.full_character",
+    "id": "story-sandbox-thriller-story-job-board-owner",
+    "name": "Thriller Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Thriller Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-thriller-story-job-client.full_character",
+    "id": "story-sandbox-thriller-story-job-client",
+    "name": "Thriller Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox War Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "owen-graves",
+    "name": "Owen Graves",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox War Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "owen-graves",
+    "name": "Owen Graves",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox War Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "selene-vale",
+    "name": "Selene Vale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox War Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "aden-cross",
+    "name": "Aden Cross",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox War Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-war-story-job-board-owner.full_character",
+    "id": "story-sandbox-war-story-job-board-owner",
+    "name": "War Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox War Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-war-story-job-client.full_character",
+    "id": "story-sandbox-war-story-job-client",
+    "name": "War Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Western Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "bram-cogwell",
+    "name": "Bram Cogwell",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Western Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "bram-cogwell",
+    "name": "Bram Cogwell",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Western Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "clara-gear",
+    "name": "Clara Gear",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Western Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rory-brass",
+    "name": "Rory Brass",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Western Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-western-story-job-board-owner.full_character",
+    "id": "story-sandbox-western-story-job-board-owner",
+    "name": "Western Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Western Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-western-story-job-client.full_character",
+    "id": "story-sandbox-western-story-job-client",
+    "name": "Western Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Workplace Story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "graham-pike",
+    "name": "Graham Pike",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Workplace Story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "graham-pike",
+    "name": "Graham Pike",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Workplace Story.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "clara-voss",
+    "name": "Clara Voss",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Workplace Story.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "sky-morgan",
+    "name": "Sky Morgan",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Workplace Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-workplace-story-job-board-owner.full_character",
+    "id": "story-sandbox-workplace-story-job-board-owner",
+    "name": "Workplace Guild Clerk",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Sandbox stories/Sandbox Workplace Story.json",
+    "path": "$.storyTemplate.state.future_cast.items.story-sandbox-workplace-story-job-client.full_character",
+    "id": "story-sandbox-workplace-story-job-client",
+    "name": "Workplace Job Client",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Ash-Road-Patrol.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Ash-Road-Patrol.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Ash-Road-Patrol.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Ash-Road-Patrol.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Ash-Road-Patrol.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-ash-road-patrol-start.characters.mara-holt.full_character",
+    "id": "mara-holt",
+    "name": "Mara Holt",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Brass-Ballot.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Brass-Ballot.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Brass-Ballot.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Brass-Ballot.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Brass-Ballot.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-brass-ballot-start.characters.mira-caldane.full_character",
+    "id": "mira-caldane",
+    "name": "Mira Caldane",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cinder-Crown.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cinder-Crown.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cinder-Crown.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cinder-Crown.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cinder-Crown.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-cinder-crown-start.characters.darian-holt.full_character",
+    "id": "darian-holt",
+    "name": "Darian Holt",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Classroom-Dragon.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Classroom-Dragon.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Classroom-Dragon.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Classroom-Dragon.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Classroom-Dragon.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-classroom-dragon-start.characters.nell-harrow.full_character",
+    "id": "nell-harrow",
+    "name": "Nell Harrow",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cloud-Nine-Tenants.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cloud-Nine-Tenants.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cloud-Nine-Tenants.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cloud-Nine-Tenants.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cloud-Nine-Tenants.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-cloud-nine-tenants-start.characters.nadia-bell.full_character",
+    "id": "nadia-bell",
+    "name": "Nadia Bell",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cold-Case-Cafe.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cold-Case-Cafe.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cold-Case-Cafe.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cold-Case-Cafe.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Cold-Case-Cafe.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-cold-case-cafe-start.characters.iris-bellamy.full_character",
+    "id": "iris-bellamy",
+    "name": "Iris Bellamy",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Crownline-Carriage.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Crownline-Carriage.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Crownline-Carriage.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Crownline-Carriage.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Crownline-Carriage.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-crownline-carriage-start.characters.julian-vey.full_character",
+    "id": "julian-vey",
+    "name": "Julian Vey",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dock-Nine-Repair.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dock-Nine-Repair.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dock-Nine-Repair.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dock-Nine-Repair.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dock-Nine-Repair.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-dock-nine-repair-start.characters.anika-solen.full_character",
+    "id": "anika-solen",
+    "name": "Anika Solen",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dry-Creek-Deputy.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dry-Creek-Deputy.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dry-Creek-Deputy.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dry-Creek-Deputy.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Dry-Creek-Deputy.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-dry-creek-deputy-start.characters.clara-whitlock.full_character",
+    "id": "clara-whitlock",
+    "name": "Clara Whitlock",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Morning-Star-Couriers.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Morning-Star-Couriers.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Morning-Star-Couriers.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Morning-Star-Couriers.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Morning-Star-Couriers.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-morning-star-couriers-start.characters.pella-greenwick.full_character",
+    "id": "pella-greenwick",
+    "name": "Pella Greenwick",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Neon-Debt.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Neon-Debt.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Neon-Debt.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Neon-Debt.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Neon-Debt.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-neon-debt-start.characters.juno-marr.full_character",
+    "id": "juno-marr",
+    "name": "Juno Marr",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Quiet-Romance-Bookshop.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Quiet-Romance-Bookshop.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Quiet-Romance-Bookshop.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Quiet-Romance-Bookshop.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Quiet-Romance-Bookshop.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-quiet-romance-bookshop-start.characters.june-alder.full_character",
+    "id": "june-alder",
+    "name": "June Alder",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Red-Lantern-Rescue.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Red-Lantern-Rescue.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Red-Lantern-Rescue.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Red-Lantern-Rescue.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Red-Lantern-Rescue.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-red-lantern-rescue-start.characters.tessa-rowe.full_character",
+    "id": "tessa-rowe",
+    "name": "Tessa Rowe",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Small-Hero-Permit.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Small-Hero-Permit.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Small-Hero-Permit.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Small-Hero-Permit.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Small-Hero-Permit.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-small-hero-permit-start.characters.gina-park.full_character",
+    "id": "gina-park",
+    "name": "Gina Park",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Temple-of-the-Quiet-Star.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Temple-of-the-Quiet-Star.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Temple-of-the-Quiet-Star.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Temple-of-the-Quiet-Star.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/Temple-of-the-Quiet-Star.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-temple-of-the-quiet-star-start.characters.thalia-nereon.full_character",
+    "id": "thalia-nereon",
+    "name": "Thalia Nereon",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Orchard-Account.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Orchard-Account.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Orchard-Account.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Orchard-Account.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Orchard-Account.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-the-orchard-account-start.characters.eleanor-pike.full_character",
+    "id": "eleanor-pike",
+    "name": "Eleanor Pike",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Quiet-Watch.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Quiet-Watch.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-arden",
+    "name": "Caleb Arden",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Quiet-Watch.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "maya-rivers",
+    "name": "Maya Rivers",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Quiet-Watch.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Simple stories/The-Quiet-Watch.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-the-quiet-watch-start.characters.owen-hale.full_character",
+    "id": "owen-hale",
+    "name": "Owen Hale",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "roland",
+    "name": "Roland",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "roland",
+    "name": "Roland",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "lilith",
+    "name": "Lilith",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "mordecai",
+    "name": "Mordecai",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.players.3",
+    "id": "brick",
+    "name": "Brick",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": 16,
+      "chest": 17,
+      "upper_body_build": 18,
+      "midsection_build": 17,
+      "hip_width": 12,
+      "butt_build": 15,
+      "lower_body_build": 17,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.fyrestone-bus-stop.characters.cl4p-tp.full_character",
+    "id": "cl4p-tp",
+    "name": "CL4P-TP",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": "Narrow mechanical frame",
+      "chest": "Compact metal torso",
+      "upper_body_build": "Light metal chassis",
+      "midsection_build": "Single-wheeled chassis",
+      "hip_width": "Narrow chassis",
+      "butt_build": "Mechanical lower housing",
+      "lower_body_build": "Single driven wheel",
+      "arm_length": "Short articulated arms",
+      "leg_length": "No legs; one wheel"
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.guardian-angel.full_character",
+    "id": "guardian-angel",
+    "name": "Guardian Angel",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.dr-zed.full_character",
+    "id": "dr-zed",
+    "name": "Dr. Zed",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.tk-baha.full_character",
+    "id": "tk-baha",
+    "name": "T.K. Baha",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.nine-toes.full_character",
+    "id": "nine-toes",
+    "name": "Nine-Toes",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.marcus-kincaid.full_character",
+    "id": "marcus-kincaid",
+    "name": "Marcus Kincaid",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 6,
+      "upper_body_build": 6,
+      "midsection_build": 5,
+      "hip_width": 12,
+      "butt_build": 6,
+      "lower_body_build": 7,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.bone-head.full_character",
+    "id": "bone-head",
+    "name": "Bone Head",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.scooter.full_character",
+    "id": "scooter",
+    "name": "Scooter",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.shep-sanders.full_character",
+    "id": "shep-sanders",
+    "name": "Shep Sanders",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.sledge.full_character",
+    "id": "sledge",
+    "name": "Sledge",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": 16,
+      "chest": 17,
+      "upper_body_build": 18,
+      "midsection_build": 17,
+      "hip_width": 12,
+      "butt_build": 15,
+      "lower_body_build": 17,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.moe.full_character",
+    "id": "moe",
+    "name": "Moe",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": "Broad creature shoulders",
+      "chest": "Broad armored creature torso",
+      "upper_body_build": "Heavy armored upper body",
+      "midsection_build": "Stout creature body",
+      "hip_width": "Broad quadruped body",
+      "butt_build": "Armored hindquarters",
+      "lower_body_build": "Powerful four-legged stance",
+      "arm_length": "Thick forelimbs",
+      "leg_length": "Short powerful hind legs"
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.marley.full_character",
+    "id": "marley",
+    "name": "Marley",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": "Broad creature shoulders",
+      "chest": "Broad armored creature torso",
+      "upper_body_build": "Heavy armored upper body",
+      "midsection_build": "Stout creature body",
+      "hip_width": "Broad quadruped body",
+      "butt_build": "Armored hindquarters",
+      "lower_body_build": "Powerful four-legged stance",
+      "arm_length": "Thick forelimbs",
+      "leg_length": "Short powerful hind legs"
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.roid-rage-psycho.full_character",
+    "id": "roid-rage-psycho",
+    "name": "Roid Rage Psycho",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": 16,
+      "chest": 17,
+      "upper_body_build": 18,
+      "midsection_build": 17,
+      "hip_width": 12,
+      "butt_build": 15,
+      "lower_body_build": 17,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.lucky-zaford.full_character",
+    "id": "lucky-zaford",
+    "name": "Lucky Zaford",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.mad-mel.full_character",
+    "id": "mad-mel",
+    "name": "Mad Mel",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.helena-pierce.full_character",
+    "id": "helena-pierce",
+    "name": "Helena Pierce",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.patricia-tannis.full_character",
+    "id": "patricia-tannis",
+    "name": "Patricia Tannis",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.crazy-earl.full_character",
+    "id": "crazy-earl",
+    "name": "Crazy Earl",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.krom.full_character",
+    "id": "krom",
+    "name": "Krom",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.jaynistown-claptrap.full_character",
+    "id": "jaynistown-claptrap",
+    "name": "Jaynistown Claptrap",
+    "old": "A slender build.",
+    "appearance": {
+      "shoulder_width": "Narrow mechanical frame",
+      "chest": "Compact metal torso",
+      "upper_body_build": "Light metal chassis",
+      "midsection_build": "Single-wheeled chassis",
+      "hip_width": "Narrow chassis",
+      "butt_build": "Mechanical lower housing",
+      "lower_body_build": "Single driven wheel",
+      "arm_length": "Short articulated arms",
+      "leg_length": "No legs; one wheel"
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.jaynistown-boss.full_character",
+    "id": "jaynistown-boss",
+    "name": "Jaynis Kobb",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.taylor-kobb.full_character",
+    "id": "taylor-kobb",
+    "name": "Taylor Kobb",
+    "old": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.rakk-hive.full_character",
+    "id": "rakk-hive",
+    "name": "Rakk Hive",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": "Massive creature shoulders",
+      "chest": "Broad plated creature torso",
+      "upper_body_build": "Massive plated upper body",
+      "midsection_build": "Huge quadruped body",
+      "hip_width": "Broad quadruped body",
+      "butt_build": "Heavy plated hindquarters",
+      "lower_body_build": "Massive four-legged stance",
+      "arm_length": "Pillar-like forelimbs",
+      "leg_length": "Pillar-like hind legs"
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.baron-flynt.full_character",
+    "id": "baron-flynt",
+    "name": "Baron Flynt",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": 16,
+      "chest": 17,
+      "upper_body_build": 18,
+      "midsection_build": 17,
+      "hip_width": 12,
+      "butt_build": 15,
+      "lower_body_build": 17,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.commandant-steele.full_character",
+    "id": "commandant-steele",
+    "name": "Commandant Steele",
+    "old": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Borderlands-The-First-Vault-Hunt.json",
+    "path": "$.storyTemplate.state.future_cast.items.the-destroyer.full_character",
+    "id": "the-destroyer",
+    "name": "The Destroyer",
+    "old": "A powerful, muscular build.",
+    "appearance": {
+      "shoulder_width": "Broad alien upper body",
+      "chest": "Broad alien torso",
+      "upper_body_build": "Powerful alien upper body",
+      "midsection_build": "Massive alien body",
+      "hip_width": "Broad alien base",
+      "butt_build": "Alien lower body",
+      "lower_body_build": "Tentacled lower body",
+      "arm_length": "Long tentacles",
+      "leg_length": "Tentacles rather than legs"
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "player-misaki-ayuzawa",
+    "name": "Misaki Ayuzawa",
+    "old": "lean and athletic from constant work",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 12,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.loc-student-council-room.characters.npc-shouichirou-yukimura.full_character",
+    "id": "npc-shouichirou-yukimura",
+    "name": "Shouichirou Yukimura",
+    "old": "slight build",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": "Slight, straight chest",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-takumi-usui.full_character",
+    "id": "npc-takumi-usui",
+    "name": "Takumi Usui",
+    "old": "lean athletic",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": "Lean, lightly defined chest",
+      "upper_body_build": 13,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-satsuki-hyoudou.full_character",
+    "id": "npc-satsuki-hyoudou",
+    "name": "Satsuki Hyoudou",
+    "old": "petite soft build",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 12,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 9,
+      "leg_length": 9
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-honoka.full_character",
+    "id": "npc-honoka",
+    "name": "Honoka",
+    "old": "slender",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-erika.full_character",
+    "id": "npc-erika",
+    "name": "Erika",
+    "old": "soft average build",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-subaru.full_character",
+    "id": "npc-subaru",
+    "name": "Subaru",
+    "old": "slender",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-shirokawa.full_character",
+    "id": "npc-shirokawa",
+    "name": "Naoya Shirokawa",
+    "old": "average delinquent-student build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-sarashina.full_character",
+    "id": "npc-sarashina",
+    "name": "Ikuto Sarashina",
+    "old": "lean high-school build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-kurosaki.full_character",
+    "id": "npc-kurosaki",
+    "name": "Ryuunosuke Kurosaki",
+    "old": "stockier high-school build",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": "Broad chest beneath school clothing",
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-sakura-hanazono.full_character",
+    "id": "npc-sakura-hanazono",
+    "name": "Sakura Hanazono",
+    "old": "slender",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 10,
+      "midsection_build": 10,
+      "hip_width": 10,
+      "butt_build": 10,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-shizuko-kaga.full_character",
+    "id": "npc-shizuko-kaga",
+    "name": "Shizuko Kaga",
+    "old": "average",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 10,
+      "midsection_build": 10,
+      "hip_width": 10,
+      "butt_build": 10,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-aoi-hyoudou.full_character",
+    "id": "npc-aoi-hyoudou",
+    "name": "Aoi Hyoudou",
+    "old": "small adolescent build",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": "Slight, straight chest",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-soutarou-kanou.full_character",
+    "id": "npc-soutarou-kanou",
+    "name": "Soutarou Kanou",
+    "old": "slim",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": "Slight, straight chest",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-tora-igarashi.full_character",
+    "id": "npc-tora-igarashi",
+    "name": "Tora Igarashi",
+    "old": "slender polished build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-kanade-maki.full_character",
+    "id": "npc-kanade-maki",
+    "name": "Kanade Maki",
+    "old": "slender polished build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-hinata-shintani.full_character",
+    "id": "npc-hinata-shintani",
+    "name": "Hinata Shintani",
+    "old": "athletic high-school build",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": "Lean, lightly defined chest",
+      "upper_body_build": 13,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-kuga-sakurai.full_character",
+    "id": "npc-kuga-sakurai",
+    "name": "Kuga Sakurai",
+    "old": "slender performer build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-minako-ayuzawa.full_character",
+    "id": "npc-minako-ayuzawa",
+    "name": "Minako Ayuzawa",
+    "old": "slender tired adult build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-suzuna-ayuzawa.full_character",
+    "id": "npc-suzuna-ayuzawa",
+    "name": "Suzuna Ayuzawa",
+    "old": "slim adolescent build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 10,
+      "midsection_build": 10,
+      "hip_width": 10,
+      "butt_build": 10,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-maria-miyazono.full_character",
+    "id": "npc-maria-miyazono",
+    "name": "Maria Miyazono",
+    "old": "slender adult build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-gerald-walker.full_character",
+    "id": "npc-gerald-walker",
+    "name": "Gerald Walker",
+    "old": "tall aristocratic young-adult build",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-cedric-morris.full_character",
+    "id": "npc-cedric-morris",
+    "name": "Cedric Morris",
+    "old": "lean adult build",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-patricia-walker.full_character",
+    "id": "npc-patricia-walker",
+    "name": "Patricia Walker",
+    "old": "elegant adult build",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-sakuya-ayuzawa.full_character",
+    "id": "npc-sakuya-ayuzawa",
+    "name": "Sakuya Ayuzawa",
+    "old": "worn adult build",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Source stories/Maid-Sama.json",
+    "path": "$.storyTemplate.state.future_cast.items.npc-kaon-umekoji.full_character",
+    "id": "npc-kaon-umekoji",
+    "name": "Kaon Umekoji",
+    "old": "slender high-school build",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": "Ordinary chest beneath school clothing",
+      "upper_body_build": 10,
+      "midsection_build": 10,
+      "hip_width": 10,
+      "butt_build": 10,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "docs/examples/aren-valehart.json",
+    "path": "$.character_definition",
+    "id": "character-aren-valehart",
+    "name": "Aren Valehart",
+    "old": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "docs/examples/lantern-road.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "character-village-courier",
+    "name": "Village Courier",
+    "old": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Ordinary chest beneath travel clothing",
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  }
+]

@@ -10,17 +10,20 @@ is invalid; do not add aliases or fields from another format.
 
 A single export has exactly `{"character_definition": {...}}`. A combined
 import has exactly `{"characters": [{"character_definition": {...}}, ...]}`.
-Do not mix wrappers or add top-level timestamps. Standalone definitions require
+Do not mix wrappers or add top-level timestamps. Standalone definitions require `lite: true`,
 `genres`, `source`, `creation_tool`, and all `CHARACTER_REQUIRED_FIELDS`.
 Use a unique nonempty `id` and `name`, integer `version` of at least 1, and a
 short descriptive `role`. `created_at` and `updated_at` are ISO strings.
 Use the approved editor genre strings, including `fantasy`, `adventure`,
 `mystery`, and `cozy` when appropriate; validate the actual combination.
 
-`can_die` and `romanceable` are booleans. Use adults for gentle romance; story
-characters under 18 must have `romanceable: false` and `starting_attraction: 0`.
-The primary `gender` is `male` or `female`. An optional `fallback_gender`
-declares the alternate presentation; do not invent a third profile slot.
+`can_die` and `romanceable` are booleans. Standalone humanoid characters require
+an integer age of at least 18. Embedded story characters may have a nonnegative
+integer age; those under 18 require `romanceable: false` and
+`starting_attraction: 0`. Animal ages follow their own contract.
+Supported ordinary gender tags include `male`, `female`,
+`non-binary`, `trans male`, `trans female`, and `trans non-binary`.
+Keep both male and non-male profile-image buckets complete.
 
 ## Identity, behavior, and starting state
 
@@ -45,18 +48,22 @@ and plain prose avoid unnecessary cross-character reference dependencies.
 
 ## Appearance
 
-Required keys are `species`, `height`, `body_description`, `skin_color`,
-`eye_color`, `hair_color`, `hair_length`, `hair_type`, `extra_description`,
-`extra_description_lower_body`, and `nonhuman_lower_body`.
+Required scales are `height`, `shoulder_width`, `chest`, `upper_body_build`,
+`midsection_build`, `hip_width`, `butt_build`, `lower_body_build`,
+`arm_length`, and `leg_length`. Each is an integer from 0 through 20 or a
+nonempty custom description. The exact value-to-description tables are in
+[appearance-scales.json](appearance-scales.json). Chest uses the appropriate
+presentation table; keep authored numeric values unchanged when sharing files.
 
-- `height`: integer 0–20 or nonempty concise custom description.
-- `nonhuman_lower_body`: boolean.
-- All other required appearance fields: text, including empty strings when
-  the feature is intentionally unspecified.
-- Optional `male_only_extra_description` and
-  `non_male_only_extra_description`: text for presentation-specific permanent
-  visible traits. Keep clothing, personality, and current poses elsewhere.
-- `body_description` describes overall build in one field, not a numeric scale.
+Also include `species`, `skin_color`, `eye_color`, `hair_color`,
+`hair_length`, `hair_type`, `extra_description`,
+`extra_description_lower_body`, and boolean `nonhuman_lower_body`.
+Text fields may be empty when intentionally unspecified. Optional
+`male_only_extra_description` and `non_male_only_extra_description` are
+text for permanent visible traits. Keep clothing, personality and current poses
+elsewhere. For a nonhuman lower body, describe its actual structure in
+`extra_description_lower_body`; image prompts use that description instead
+of human leg proportions.
 
 Use a bare color phrase for skin. Permanent hair color, length, and texture
 belong here; temporary styling and worn accessories must not overwrite them.

@@ -47,7 +47,6 @@
     "appearance": {
       "species": "highland wind-harpy harpy",
       "height": 10,
-      "body_description": "A naturally soft build.",
       "skin_color": "warm tawny skin",
       "eye_color": "bright turquoise",
       "hair_color": "golden brown",
@@ -55,7 +54,16 @@
       "hair_type": "wind-swept and feathery",
       "extra_description": "Large russet wings fold behind the shoulders, small feather crests frame the ears, and the hands end in nimble climbing talons.",
       "extra_description_lower_body": "The lower legs are lightly feathered and end in strong birdlike feet adapted for perching and landing.",
-      "nonhuman_lower_body": true
+      "nonhuman_lower_body": true,
+      "shoulder_width": 11,
+      "chest": 8,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 11,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -140,6 +148,7 @@
     },
     "voice": null,
     "created_at": "2026-08-31T00:00:00.000Z",
-    "updated_at": "2026-09-03T06:16:19.219Z"
+    "updated_at": "2026-09-03T06:16:19.219Z",
+    "lite": true
   }
 }

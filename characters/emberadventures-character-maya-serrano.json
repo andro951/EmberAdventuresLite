@@ -67,7 +67,6 @@
     "appearance": {
       "species": "Puerto Rican-American human",
       "height": 11,
-      "body_description": "An athletic build.",
       "skin_color": "Warm medium-tan skin.",
       "eye_color": "Dark brown.",
       "hair_color": "Black",
@@ -75,7 +74,16 @@
       "hair_type": "Thick curls gathered into a messy bun.",
       "extra_description": "A few small tool scars mark the hands and forearms.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -188,6 +196,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T07:59:09.879805Z",
-    "updated_at": "2026-09-08T18:58:39Z"
+    "updated_at": "2026-09-08T18:58:39Z",
+    "lite": true
   }
 }

@@ -5,18 +5,14 @@
   "scripts": {
     "build": "node build_bottom_compressed.js",
     "build:tests": "node build_bottom_compressed.js --private-tests",
-    "test": "node tools/test-settings.cjs && node tools/test-appearance.cjs && node tools/test-content-references.cjs && node tools/test-image-safety.cjs && node tools/test-local.cjs && node tools/validate-content.cjs --include-stories",
+    "test": "node --test tools/test-direct-hosting.cjs tools/test-hosted-generation.cjs tools/test-lite-definition-contracts.cjs tools/test-lite-library-worker.cjs tools/test-lite-library-workflows.cjs tools/test-lite-persistence.cjs tools/test-lite-profile-ui.cjs tools/test-lite-rebuild-foundation.cjs tools/test-lite-runtime-cleanup.cjs tools/test-lite-settings-contracts.cjs tools/test-lite-turn-state.cjs tools/test-public-story-age-policy.cjs tools/test-shared-library-format.cjs tools/test_log_retention_smoke.cjs tools/test-image-safety.cjs tools/test-private-fixtures.cjs && node tools/test-lite-authoring-skills.cjs && node tools/test-repaired-stories.cjs && node tools/test-content-references.cjs && node tools/validate-content.cjs",
     "test:settings": "node tools/test-settings.cjs",
     "test:runtime": "node tools/test-local.cjs --runtime",
     "test:smokes": "node tools/test-local.cjs --smokes",
-    "test:content": "node tools/validate-content.cjs --include-stories",
+    "test:content": "node tools/validate-content.cjs",
     "test:appearance": "node tools/test-appearance.cjs",
-    "test:legacy-stories": "node tools/validate-content.cjs --include-stories",
-    "hosting": "node hosting/server.cjs",
-    "test:hosting": "node --test tools/test-hosting.cjs",
-    "test:hosting-ui": "node tools/test-hosting-ui.cjs",
-    "test:hosting-setup": "node --test tools/test-hosting-setup.cjs",
-    "test:hosting-setup-ui": "node tools/test-hosting-setup-ui.cjs"
+    "test:legacy-stories": "node tools/validate-content.cjs",
+    "test:repaired-stories": "node tools/test-repaired-stories.cjs"
   },
   "devDependencies": {
     "dexie": "4.0.11",

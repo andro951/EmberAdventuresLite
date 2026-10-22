@@ -434,7 +434,6 @@
         "appearance": {
           "species": "Japanese human",
           "height": "average height",
-          "body_description": "lean and athletic from constant work",
           "skin_color": "fair",
           "eye_color": "amber-brown",
           "hair_color": "dark brown",
@@ -442,7 +441,16 @@
           "hair_type": "straight, usually tied back neatly",
           "extra_description": "Strict, athletic Japanese high-school girl with long dark brown hair and amber-brown eyes; source-faithful Misaki Ayuzawa; serious sharp-eyed expression, student council armband, guarded blush when flustered",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 9,
+          "chest": "Ordinary chest beneath school clothing",
+          "upper_body_build": 12,
+          "midsection_build": 12,
+          "hip_width": 9,
+          "butt_build": 11,
+          "lower_body_build": 12,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "personality_description": "Disciplined, blunt, proud, protective, easily flustered by sincere affection, and unwilling to let unfairness stand. She is strongest when forced to balance authority, embarrassment, debt, friendship, and kindness at the same time.",
         "boldness": 8,
@@ -716,7 +724,8 @@
           "image_ids": []
         },
         "created_at": "2026-06-04T20:21:08.209Z",
-        "updated_at": "2026-06-04T20:21:08.209Z"
+        "updated_at": "2026-06-04T20:21:08.209Z",
+        "lite": true
       },
       "players": [],
       "characters": {},
@@ -748,7 +757,6 @@
                   "appearance": {
                     "species": "Japanese human",
                     "height": "shorter than many male classmates",
-                    "body_description": "slight build",
                     "skin_color": "fair",
                     "eye_color": "dark",
                     "hair_color": "dark",
@@ -756,7 +764,16 @@
                     "hair_type": "straight and neat",
                     "extra_description": "Timid Japanese high-school boy with glasses and a slight frame; round glasses and nervous posture",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 8,
+                    "chest": "Slight, straight chest",
+                    "upper_body_build": 11,
+                    "midsection_build": 11,
+                    "hip_width": 8,
+                    "butt_build": 10,
+                    "lower_body_build": 11,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "personality_description": "Polite, anxious, rule-conscious, and more resilient than he first appears.",
                   "boldness": 2,
@@ -965,7 +982,8 @@
                     "image_ids": []
                   },
                   "created_at": "2026-06-04T20:21:08.209Z",
-                  "updated_at": "2026-06-04T20:21:08.209Z"
+                  "updated_at": "2026-06-04T20:21:08.209Z",
+                  "lite": true
                 }
               }
             }
@@ -7086,7 +7104,6 @@
               "appearance": {
                 "species": "mixed Japanese and English family background Japanese-English human",
                 "height": "tall",
-                "body_description": "lean athletic",
                 "skin_color": "fair",
                 "eye_color": "green",
                 "hair_color": "blond",
@@ -7094,7 +7111,16 @@
                 "hair_type": "messy straight hair",
                 "extra_description": "Tall blond green-eyed source-faithful Takumi Usui with a lean athletic build; relaxed unreadable smile and unusually composed posture",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 11,
+                "chest": "Lean, lightly defined chest",
+                "upper_body_build": 13,
+                "midsection_build": 12,
+                "hip_width": 9,
+                "butt_build": 11,
+                "lower_body_build": 13,
+                "arm_length": 10,
+                "leg_length": 11
               },
               "personality_description": "Calm, mischievous, protective, athletic, emotionally guarded, and intensely focused on Misaki once she matters to him.",
               "boldness": 4,
@@ -7431,7 +7457,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 1,
@@ -7458,7 +7485,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "short adult height",
-                "body_description": "petite soft build",
                 "skin_color": "fair",
                 "eye_color": "warm brown",
                 "hair_color": "light brown",
@@ -7466,7 +7492,16 @@
                 "hair_type": "softly styled",
                 "extra_description": "Petite cheerful adult Maid Latte manager with light brown hair; cheerful manager smile and theatrical cafe poise",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 8,
+                "chest": 12,
+                "upper_body_build": 7,
+                "midsection_build": 7,
+                "hip_width": 10,
+                "butt_build": 8,
+                "lower_body_build": 8,
+                "arm_length": 9,
+                "leg_length": 9
               },
               "personality_description": "Playful, perceptive, theatrical, business-minded, and quietly protective of her staff.",
               "boldness": 4,
@@ -7675,7 +7710,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 2,
@@ -7702,7 +7738,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "dark",
@@ -7710,7 +7745,16 @@
                 "hair_type": "neatly styled for work",
                 "extra_description": "Slender adult Maid Latte worker with dark neatly kept hair; controlled customer-service smile",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 9,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 9,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Sharp-tongued, professional, practical, teasing, and serious about doing cafe work correctly.",
               "boldness": 4,
@@ -7855,7 +7899,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 3,
@@ -7882,7 +7927,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "soft average build",
                 "skin_color": "fair",
                 "eye_color": "brown",
                 "hair_color": "brown",
@@ -7890,7 +7934,16 @@
                 "hair_type": "cute styled hair",
                 "extra_description": "Friendly adult Maid Latte worker with cute brown hair; friendly approachable smile",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 13,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 11,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Warm, upbeat, social, and quick to cover for coworkers when service gets strange.",
               "boldness": 4,
@@ -8035,7 +8088,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 4,
@@ -8062,7 +8116,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "dark",
@@ -8070,7 +8123,16 @@
                 "hair_type": "straight",
                 "extra_description": "Calm adult Maid Latte worker with long straight dark hair; calm composed service posture",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 9,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 9,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Gentle, reliable, observant, and quietly amused by romantic chaos.",
               "boldness": 4,
@@ -8215,7 +8277,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 5,
@@ -8242,7 +8305,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "average delinquent-student build",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "light dyed blond",
@@ -8250,7 +8312,16 @@
                 "hair_type": "messy delinquent styling",
                 "extra_description": "Loud former-delinquent Seika student with light dyed hair; loud expressions and former-delinquent energy",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Noisy, excitable, surprisingly loyal, and easily swept up in group panic.",
               "boldness": 4,
@@ -8523,7 +8594,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 6,
@@ -8550,7 +8622,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "lean high-school build",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "dark",
@@ -8558,7 +8629,16 @@
                 "hair_type": "styled",
                 "extra_description": "Energetic Seika student with styled dark hair; dramatic restless expressions",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Dramatic, goofy, impulsive, and devoted to the trio's latest obsession.",
               "boldness": 4,
@@ -8831,7 +8911,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 7,
@@ -8858,7 +8939,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "stockier high-school build",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "dark",
@@ -8866,7 +8946,16 @@
                 "hair_type": "short and rough",
                 "extra_description": "Stockier Seika student with a rough delinquent look; gruff delinquent posture softened by comic panic",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 11,
+                "chest": "Broad chest beneath school clothing",
+                "upper_body_build": 7,
+                "midsection_build": 7,
+                "hip_width": 10,
+                "butt_build": 8,
+                "lower_body_build": 8,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Gruff, reactive, loyal to friends, and more sentimental than he admits.",
               "boldness": 4,
@@ -9139,7 +9228,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 8,
@@ -9166,7 +9256,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender",
                 "skin_color": "fair",
                 "eye_color": "brown",
                 "hair_color": "light brown",
@@ -9174,7 +9263,16 @@
                 "hair_type": "cute fashionable styling",
                 "extra_description": "Fashionable Japanese high-school girl with light brown hair; fashionable details and expressive romantic reactions",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 10,
+                "midsection_build": 10,
+                "hip_width": 10,
+                "butt_build": 10,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Romantic, cheerful, sensitive, and brave when her feelings are on the line.",
               "boldness": 4,
@@ -9319,7 +9417,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 9,
@@ -9346,7 +9445,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "average",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "dark",
@@ -9354,7 +9452,16 @@
                 "hair_type": "plain straight hair",
                 "extra_description": "Practical Japanese high-school girl with plain dark hair; calm no-nonsense expression",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 10,
+                "midsection_build": 10,
+                "hip_width": 10,
+                "butt_build": 10,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Studious, blunt, observant, loyal, and good at cutting through nonsense.",
               "boldness": 4,
@@ -9499,7 +9606,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 10,
@@ -9526,7 +9634,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "short adolescent height",
-                "body_description": "small adolescent build",
                 "skin_color": "fair",
                 "eye_color": "dark",
                 "hair_color": "dark",
@@ -9534,7 +9641,16 @@
                 "hair_type": "styled to match performance outfit",
                 "extra_description": "Young Japanese net idol performer; underage and nonsexual; polished cute idol presentation while performing",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 8,
+                "chest": "Slight, straight chest",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 8,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Proud, dramatic, lonely under the performance, and sharper than his cute public act suggests.",
               "boldness": 4,
@@ -9743,7 +9859,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 11,
@@ -9770,7 +9887,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slim",
                 "skin_color": "fair",
                 "eye_color": "guarded dark eyes",
                 "hair_color": "dark",
@@ -9778,7 +9894,16 @@
                 "hair_type": "straight hair partly covering his face",
                 "extra_description": "Withdrawn Japanese high-school boy with dark hair partly covering his face; quiet guarded stare",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 8,
+                "chest": "Slight, straight chest",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 8,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Withdrawn, suspicious, clever, lonely, and capable of real change after being confronted.",
               "boldness": 4,
@@ -9987,7 +10112,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 12,
@@ -10014,7 +10140,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "tall",
-                "body_description": "slender polished build",
                 "skin_color": "fair",
                 "eye_color": "pale sharp eyes",
                 "hair_color": "blond",
@@ -10022,7 +10147,16 @@
                 "hair_type": "elegantly styled",
                 "extra_description": "Tall polished Miyabigaoka president with blond hair and sharp eyes; predatory aristocratic smile",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Charming, arrogant, calculating, provocative, and sometimes helpful only when it benefits his game.",
               "boldness": 4,
@@ -10295,7 +10429,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 13,
@@ -10322,7 +10457,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender polished build",
                 "skin_color": "fair",
                 "eye_color": "confident dark eyes",
                 "hair_color": "dark",
@@ -10330,7 +10464,16 @@
                 "hair_type": "neatly styled",
                 "extra_description": "Polished Miyabigaoka student and cafe heir; well-bred posture",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Polished, competitive, business-minded, and fond of theatrical cafe ideas.",
               "boldness": 4,
@@ -10538,7 +10681,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 14,
@@ -10565,7 +10709,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "athletic high-school build",
                 "skin_color": "fair",
                 "eye_color": "bright brown",
                 "hair_color": "light brown",
@@ -10573,7 +10716,16 @@
                 "hair_type": "softly messy",
                 "extra_description": "Friendly athletic Japanese high-school boy with light brown hair; open smile and energetic posture",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 11,
+                "chest": "Lean, lightly defined chest",
+                "upper_body_build": 13,
+                "midsection_build": 12,
+                "hip_width": 9,
+                "butt_build": 11,
+                "lower_body_build": 13,
+                "arm_length": 10,
+                "leg_length": 11
               },
               "personality_description": "Warm, hungry, direct, nostalgic, stubborn, and emotionally honest.",
               "boldness": 4,
@@ -10846,7 +10998,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 15,
@@ -10873,7 +11026,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender performer build",
                 "skin_color": "fair",
                 "eye_color": "confident dark eyes",
                 "hair_color": "styled stage hair",
@@ -10881,7 +11033,16 @@
                 "hair_type": "stage-styled",
                 "extra_description": "Stylish indie band vocalist; rock-band styling",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Cool, blunt, self-involved at first, and more considerate once forced to face Sakura's sincerity.",
               "boldness": 4,
@@ -11089,7 +11250,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 16,
@@ -11116,7 +11278,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender tired adult build",
                 "skin_color": "fair",
                 "eye_color": "kind dark eyes",
                 "hair_color": "dark",
@@ -11124,7 +11285,16 @@
                 "hair_type": "simple practical styling",
                 "extra_description": "Gentle Japanese adult woman and hardworking nurse; gentle tired expression",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 9,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 9,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Gentle, apologetic, resilient, practical, and quietly supportive of Misaki enjoying youth instead of carrying everything alone.",
               "boldness": 4,
@@ -11269,7 +11439,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 17,
@@ -11296,7 +11467,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "short adolescent height",
-                "body_description": "slim adolescent build",
                 "skin_color": "fair",
                 "eye_color": "calm dark eyes",
                 "hair_color": "dark",
@@ -11304,7 +11474,16 @@
                 "hair_type": "straight",
                 "extra_description": "Misaki's calm deadpan younger sister; underage and nonsexual; deadpan expression and unhurried movements",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 10,
+                "midsection_build": 10,
+                "hip_width": 10,
+                "butt_build": 10,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Deadpan, quiet, thrifty, eccentric, and observant in a way that catches people off guard.",
               "boldness": 4,
@@ -11449,7 +11628,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 18,
@@ -11476,7 +11656,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender adult build",
                 "skin_color": "fair",
                 "eye_color": "gentle light eyes",
                 "hair_color": "light",
@@ -11484,7 +11663,16 @@
                 "hair_type": "soft straight hair",
                 "extra_description": "Elegant adult teacher with long light hair; graceful teacherly presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 9,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 9,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Soft-spoken, elegant, observant, and unintentionally disruptive because of how others project onto her.",
               "boldness": 4,
@@ -11629,7 +11817,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 19,
@@ -11656,7 +11845,6 @@
               "appearance": {
                 "species": "Walker family aristocracy English human",
                 "height": "tall",
-                "body_description": "tall aristocratic young-adult build",
                 "skin_color": "fair",
                 "eye_color": "greenish",
                 "hair_color": "light",
@@ -11664,7 +11852,16 @@
                 "hair_type": "refined styling",
                 "extra_description": "Tall English aristocratic young man tied to Usui's family; family resemblance to Usui filtered through aristocratic discipline",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Cultured, guarded, conflicted, and shaped by family expectations.",
               "boldness": 4,
@@ -11872,7 +12069,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 20,
@@ -11899,7 +12097,6 @@
               "appearance": {
                 "species": "English human",
                 "height": "average height",
-                "body_description": "lean adult build",
                 "skin_color": "fair",
                 "eye_color": "watchful dark eyes",
                 "hair_color": "dark",
@@ -11907,7 +12104,16 @@
                 "hair_type": "neatly combed",
                 "extra_description": "Formal Walker family agent with a watchful presence; professional stillness",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Formal, dutiful, intrusive, and not always as unreadable as he tries to be.",
               "boldness": 4,
@@ -12115,7 +12321,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 21,
@@ -12142,7 +12349,6 @@
               "appearance": {
                 "species": "English human",
                 "height": "average height",
-                "body_description": "elegant adult build",
                 "skin_color": "fair",
                 "eye_color": "soft pale eyes",
                 "hair_color": "light",
@@ -12150,7 +12356,16 @@
                 "hair_type": "formal aristocratic styling",
                 "extra_description": "Elegant English aristocratic woman in Usui's family history; melancholy aristocratic grace",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 13,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 11,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Gentle in memory, constrained by family expectations, and important to understanding Usui's isolation.",
               "boldness": 4,
@@ -12294,7 +12509,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 22,
@@ -12321,7 +12537,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "worn adult build",
                 "skin_color": "fair",
                 "eye_color": "tired dark eyes",
                 "hair_color": "dark",
@@ -12329,7 +12544,16 @@
                 "hair_type": "messy",
                 "extra_description": "Misaki's absent father with a worn, unreliable adult look; unreliable smile and rumpled look",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Careless, evasive, regretful in pieces, and hard for Misaki to forgive.",
               "boldness": 4,
@@ -12474,7 +12698,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 23,
@@ -12501,7 +12726,6 @@
               "appearance": {
                 "species": "Japanese human",
                 "height": "average height",
-                "body_description": "slender high-school build",
                 "skin_color": "fair",
                 "eye_color": "sharp dark eyes",
                 "hair_color": "dark",
@@ -12509,7 +12733,16 @@
                 "hair_type": "polished elite-school styling",
                 "extra_description": "Polished late-story Miyabigaoka student; composed elite-school presentation",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": "Ordinary chest beneath school clothing",
+                "upper_body_build": 10,
+                "midsection_build": 10,
+                "hip_width": 10,
+                "butt_build": 10,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "personality_description": "Composed, competitive, socially sharp, and drawn into the rivalry structure of the later arcs.",
               "boldness": 4,
@@ -12717,7 +12950,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-04T20:21:08.209Z",
-              "updated_at": "2026-06-04T20:21:08.209Z"
+              "updated_at": "2026-06-04T20:21:08.209Z",
+              "lite": true
             },
             "can_die": false,
             "canonical_order": 24,
@@ -12801,7 +13035,8 @@
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-06-04T20:21:08.209Z"
 }

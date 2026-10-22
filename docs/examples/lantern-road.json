@@ -85,7 +85,6 @@
         "appearance": {
           "species": "human",
           "height": 10,
-          "body_description": "A naturally soft build.",
           "skin_color": "",
           "eye_color": "",
           "hair_color": "",
@@ -93,7 +92,16 @@
           "hair_type": "",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 10,
+          "chest": "Ordinary chest beneath travel clothing",
+          "upper_body_build": 7,
+          "midsection_build": 7,
+          "hip_width": 10,
+          "butt_build": 8,
+          "lower_body_build": 8,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -166,7 +174,8 @@
         },
         "voice": null,
         "created_at": "2026-09-18T03:49:28.288Z",
-        "updated_at": "2026-09-18T03:49:28.288Z"
+        "updated_at": "2026-09-18T03:49:28.288Z",
+        "lite": true
       },
       "players": [],
       "characters": {},
@@ -290,7 +299,8 @@
         "text": "The village bell rings as you reach the lantern-lit road.",
         "at": "2026-09-18T03:49:28.290Z"
       }
-    ]
+    ],
+    "lite": true
   },
   "exportedAt": "2026-09-18T03:49:28.298Z"
 }

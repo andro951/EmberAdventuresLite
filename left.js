@@ -9,4 +9,4 @@ commentsPlugin = {import:comments-plugin}
 $meta
   header = minimal
   title = EmberAdventuresLite - AI RPG Stories
-  description = Family-friendly AI RPG stories and character chat with persistent worlds, Auto mode, objectives, voices, images, custom characters, shops, and editable game state.
+  description = Free online AI RPG and character chat for general audiences, with no sign-up, persistent stories, editable characters, images, voices, objectives, shops, maps, and Auto Story mode. Play adventures or create your own worlds with Perchance, local Ollama, or hosted models.

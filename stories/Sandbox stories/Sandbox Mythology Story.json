@@ -116,7 +116,6 @@
         "appearance": {
           "species": "adult white human",
           "height": 6,
-          "body_description": "A strong, athletic build.",
           "skin_color": "light skin",
           "eye_color": "brown eyes",
           "hair_color": "brown hair",
@@ -124,7 +123,16 @@
           "hair_type": "practical hair",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 12,
+          "chest": 14,
+          "upper_body_build": 14,
+          "midsection_build": 13,
+          "hip_width": 10,
+          "butt_build": 12,
+          "lower_body_build": 14,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -465,7 +473,8 @@
           "image_ids": []
         },
         "created_at": "2026-06-26T00:00:00.000Z",
-        "updated_at": "2026-06-30T12:03:07.011Z"
+        "updated_at": "2026-06-30T12:03:07.011Z",
+        "lite": true
       },
       "players": [
         {
@@ -483,7 +492,6 @@
           "appearance": {
             "species": "adult white human",
             "height": 6,
-            "body_description": "A strong, athletic build.",
             "skin_color": "light skin",
             "eye_color": "brown eyes",
             "hair_color": "brown hair",
@@ -491,7 +499,16 @@
             "hair_type": "practical hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 12,
+            "chest": 14,
+            "upper_body_build": 14,
+            "midsection_build": 13,
+            "hip_width": 10,
+            "butt_build": 12,
+            "lower_body_build": 14,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -832,7 +849,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-26T00:00:00.000Z",
-          "updated_at": "2026-06-30T12:03:07.011Z"
+          "updated_at": "2026-06-30T12:03:07.011Z",
+          "lite": true
         },
         {
           "name": "Rhea Moss",
@@ -849,7 +867,6 @@
           "appearance": {
             "species": "adult East Asian human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "light warm skin",
             "eye_color": "dark eyes",
             "hair_color": "black hair",
@@ -857,7 +874,16 @@
             "hair_type": "straight hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 13,
+            "upper_body_build": 8,
+            "midsection_build": 8,
+            "hip_width": 11,
+            "butt_build": 8,
+            "lower_body_build": 9,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1134,7 +1160,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-26T00:00:00.000Z",
-          "updated_at": "2026-06-30T12:03:07.011Z"
+          "updated_at": "2026-06-30T12:03:07.011Z",
+          "lite": true
         },
         {
           "name": "Sol Arden",
@@ -1151,7 +1178,6 @@
           "appearance": {
             "species": "adult Mediterranean human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "olive skin",
             "eye_color": "gold-brown eyes",
             "hair_color": "dark curly hair",
@@ -1159,7 +1185,16 @@
             "hair_type": "practical styled hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": "Average, lightly defined chest",
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1500,7 +1535,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-26T00:00:00.000Z",
-          "updated_at": "2026-06-30T12:03:07.011Z"
+          "updated_at": "2026-06-30T12:03:07.011Z",
+          "lite": true
         }
       ],
       "characters": {},
@@ -1578,7 +1614,6 @@
               "appearance": {
                 "species": "adult human woman",
                 "height": 4,
-                "body_description": "A slender build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
@@ -1586,7 +1621,16 @@
                 "hair_type": "",
                 "extra_description": "Genre-appropriate job board owner with a clear readable silhouette for a job-board hub.",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -1794,7 +1838,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-26T00:00:00.000Z",
-              "updated_at": "2026-06-30T12:03:07.011Z"
+              "updated_at": "2026-06-30T12:03:07.011Z",
+              "lite": true
             },
             "canonical_order": 1,
             "introduce_as": "npc",
@@ -1824,7 +1869,6 @@
               "appearance": {
                 "species": "adult human woman",
                 "height": 4,
-                "body_description": "A slender build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
@@ -1832,7 +1876,16 @@
                 "hair_type": "",
                 "extra_description": "Genre-appropriate curated job client with a clear readable silhouette for a job-board hub.",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -2168,7 +2221,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-26T00:00:00.000Z",
-              "updated_at": "2026-06-30T12:03:07.011Z"
+              "updated_at": "2026-06-30T12:03:07.011Z",
+              "lite": true
             },
             "canonical_order": 2,
             "introduce_as": "npc",
@@ -2270,6 +2324,7 @@
     "default_image_model": "",
     "title_card_subjects": [
       "Sandbox Mythology Story"
-    ]
+    ],
+    "lite": true
   }
 }

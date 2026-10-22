@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Dominican-Chinese orbital human",
       "height": 11,
-      "body_description": "A naturally soft build.",
       "skin_color": "Medium-dark brown skin with warm undertones and faint sun-darkened patches.",
       "eye_color": "Dark brown with amber flecks.",
       "hair_color": "Very dark brown",
@@ -107,7 +106,16 @@
       "hair_type": "Close natural curls with slightly longer textured top.",
       "extra_description": "Fine lines at the eyes and a small old scar near the left forearm.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 7,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -415,7 +423,8 @@
         "upload_attested_by": "",
         "upload_attested_at": "",
         "upload_attestation_policy_version": 0
-      }
+      },
+      "lite": true
     },
     "default_seed": 0,
     "image_prompt_config": {
@@ -468,6 +477,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T13:52:00.841155Z",
-    "updated_at": "2026-09-07T16:51:01Z"
+    "updated_at": "2026-09-07T16:51:01Z",
+    "lite": true
   }
 }

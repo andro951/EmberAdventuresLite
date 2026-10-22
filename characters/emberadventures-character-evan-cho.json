@@ -68,7 +68,6 @@
     "appearance": {
       "species": "Korean-American human",
       "height": 10,
-      "body_description": "An athletic build.",
       "skin_color": "Light-medium skin with mild tan-line contrast.",
       "eye_color": "Dark brown.",
       "hair_color": "Black.",
@@ -76,7 +75,16 @@
       "hair_type": "Straight thick hair swept back with a slightly tousled finish.",
       "extra_description": "",
       "extra_description_lower_body": "Faint scar at the right knee.",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -190,6 +198,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T13:51:28Z",
-    "updated_at": "2026-09-08T20:36:56Z"
+    "updated_at": "2026-09-08T20:36:56Z",
+    "lite": true
   }
 }

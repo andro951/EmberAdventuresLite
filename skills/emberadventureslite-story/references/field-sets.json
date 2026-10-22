@@ -6,6 +6,7 @@
     "exportedAt"
   ],
   "STORY_TEMPLATE_FIELDS": [
+    "lite",
     "id",
     "title",
     "description",
@@ -26,6 +27,7 @@
     "title_card_image"
   ],
   "STORY_TEMPLATE_REQUIRED_FIELDS": [
+    "lite",
     "id",
     "title",
     "description",
@@ -472,6 +474,7 @@
     "quest_items_rejected"
   ],
   "STORY_EMBEDDED_CHARACTER_FIELDS": [
+    "lite",
     "version",
     "id",
     "name",
@@ -480,7 +483,6 @@
     "can_die",
     "romanceable",
     "gender",
-    "fallback_gender",
     "fallback_name",
     "fallback_outfits",
     "fallback_starting_outfit_id",
@@ -514,6 +516,7 @@
     "updated_at"
   ],
   "STORY_EMBEDDED_CHARACTER_REQUIRED_FIELDS": [
+    "lite",
     "version",
     "id",
     "name",
@@ -552,5 +555,66 @@
     "voice",
     "created_at",
     "updated_at"
+  ],
+  "STORY_INVENTORY_ITEM_FIELDS": [
+    "id",
+    "name",
+    "type",
+    "quantity",
+    "value",
+    "sellable",
+    "quest_item",
+    "description",
+    "image_prompt",
+    "image_id",
+    "image"
+  ],
+  "STORY_TITLE_CARD_STORE_FIELDS": [
+    "id",
+    "at",
+    "source",
+    "reason",
+    "title",
+    "prompt",
+    "negativePrompt",
+    "seed",
+    "model",
+    "html",
+    "url",
+    "hosted_url",
+    "favorite",
+    "pending",
+    "error",
+    "smoke_test_artifact",
+    "story_key",
+    "story_id",
+    "story_title",
+    "story_source",
+    "upload_attestation_classification",
+    "upload_attested_by",
+    "upload_attested_at",
+    "upload_attestation_policy_version"
+  ],
+  "STORY_TITLE_CARD_STORE_REQUIRED_FIELDS": [
+    "id",
+    "at",
+    "source",
+    "reason",
+    "title",
+    "prompt",
+    "negativePrompt",
+    "seed",
+    "model",
+    "html",
+    "url",
+    "hosted_url",
+    "favorite",
+    "pending",
+    "error",
+    "smoke_test_artifact",
+    "story_key",
+    "story_id",
+    "story_title",
+    "story_source"
   ]
 }

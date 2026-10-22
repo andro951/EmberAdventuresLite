@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Korean-Filipino lunar-born human",
       "height": 10,
-      "body_description": "A broad, soft build.",
       "skin_color": "Warm light-brown skin with a few sunlamp freckles.",
       "eye_color": "Dark brown.",
       "hair_color": "Predominantly black, with two broad silver-white streaks at the temples/front and scattered silver strands through the rest.",
@@ -107,7 +106,16 @@
       "hair_type": "Straight layered bob with face-framing front sections.",
       "extra_description": "Fine age lines.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 12,
+      "chest": 5,
+      "upper_body_build": 5,
+      "midsection_build": 5,
+      "hip_width": 13,
+      "butt_build": 5,
+      "lower_body_build": 6,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -253,6 +261,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T13:52:00.841155Z",
-    "updated_at": "2026-09-08T20:36:56Z"
+    "updated_at": "2026-09-08T20:36:56Z",
+    "lite": true
   }
 }

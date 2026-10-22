@@ -31,7 +31,7 @@
         "settlement_name": "Orison City",
         "district": "Old Central Line",
         "specific_place": "Orison Station night desk",
-        "npc_location_id": "loc-night-desk"
+        "npc_location_id": "orison-station-night-desk"
       },
       "world_map": {
         "current_location_id": "loc-night-desk",
@@ -306,7 +306,6 @@
         "appearance": {
           "species": "white human",
           "height": 5,
-          "body_description": "An average build.",
           "skin_color": "fair skin",
           "eye_color": "gray eyes",
           "hair_color": "dark brown hair",
@@ -314,7 +313,16 @@
           "hair_type": "straight hair",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 10,
+          "chest": 13,
+          "upper_body_build": 8,
+          "midsection_build": 7,
+          "hip_width": 11,
+          "butt_build": 8,
+          "lower_body_build": 8,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -467,17 +475,28 @@
         },
         "default_profile_image": {
           "url": "",
-          "local_image_id": "",
           "source": "none",
-          "seed": null,
+          "seed": 0,
           "prompt": "",
           "negative_prompt": "",
           "note": "",
+          "local_image_id": "",
           "male": false
         },
         "voice": null,
         "version": 1,
         "romanceable": true,
+        "starting_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "Mara works the quiet overnight shift at Orison Station.",
+          "She knows the normal platform schedule, ticket ledger, announcement booth, lost-property room, and signal access rules.",
+          "She is not a police officer and has limited authority outside the station.",
+          "She notices small discrepancies in records, timestamps, and passenger behavior.",
+          "She starts with a station key ring, a pocket radio, a ledger pencil, and enough confidence to question an impossible ticket.",
+          "Her choices can make her more official, more secretive, or more protective of stranded passengers."
+        ],
+        "created_at": "2026-06-29T00:00:00.000Z",
+        "updated_at": "2026-06-29T00:00:00.000Z",
         "fallback_name": "Mara Elloway",
         "fallback_outfits": [
           {
@@ -610,34 +629,25 @@
           }
         ],
         "fallback_starting_outfit_id": "night-uniform",
-        "starting_known_facts": [
-          "This is one of three selectable player characters for the story.",
-          "Mara works the quiet overnight shift at Orison Station.",
-          "She knows the normal platform schedule, ticket ledger, announcement booth, lost-property room, and signal access rules.",
-          "She is not a police officer and has limited authority outside the station.",
-          "She notices small discrepancies in records, timestamps, and passenger behavior.",
-          "She starts with a station key ring, a pocket radio, a ledger pencil, and enough confidence to question an impossible ticket.",
-          "Her choices can make her more official, more secretive, or more protective of stranded passengers."
-        ],
         "profile_image_presentations": {
           "male": {
             "url": "",
-            "local_image_id": "",
-            "source": "hosted",
+            "source": "none",
             "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": true
           },
           "non_male": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           }
         },
@@ -649,8 +659,7 @@
           "active_image_id": "",
           "image_ids": []
         },
-        "created_at": "2026-06-29T00:00:00.000Z",
-        "updated_at": "2026-08-31T06:03:35.951Z"
+        "lite": true
       },
       "players": [
         {
@@ -675,7 +684,6 @@
           "appearance": {
             "species": "white human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "fair skin",
             "eye_color": "gray eyes",
             "hair_color": "dark brown hair",
@@ -683,7 +691,16 @@
             "hair_type": "straight hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 13,
+            "upper_body_build": 8,
+            "midsection_build": 7,
+            "hip_width": 11,
+            "butt_build": 8,
+            "lower_body_build": 8,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -836,17 +853,28 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "Mara works the quiet overnight shift at Orison Station.",
+            "She knows the normal platform schedule, ticket ledger, announcement booth, lost-property room, and signal access rules.",
+            "She is not a police officer and has limited authority outside the station.",
+            "She notices small discrepancies in records, timestamps, and passenger behavior.",
+            "She starts with a station key ring, a pocket radio, a ledger pencil, and enough confidence to question an impossible ticket.",
+            "Her choices can make her more official, more secretive, or more protective of stranded passengers."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Mara Elloway",
           "fallback_outfits": [
             {
@@ -979,34 +1007,25 @@
             }
           ],
           "fallback_starting_outfit_id": "night-uniform",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "Mara works the quiet overnight shift at Orison Station.",
-            "She knows the normal platform schedule, ticket ledger, announcement booth, lost-property room, and signal access rules.",
-            "She is not a police officer and has limited authority outside the station.",
-            "She notices small discrepancies in records, timestamps, and passenger behavior.",
-            "She starts with a station key ring, a pocket radio, a ledger pencil, and enough confidence to question an impossible ticket.",
-            "Her choices can make her more official, more secretive, or more protective of stranded passengers."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1018,8 +1037,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "jonah-mercer",
@@ -1043,7 +1061,6 @@
           "appearance": {
             "species": "Black human",
             "height": 6,
-            "body_description": "An average build.",
             "skin_color": "medium dark brown skin",
             "eye_color": "dark brown eyes",
             "hair_color": "black hair",
@@ -1051,7 +1068,16 @@
             "hair_type": "coiled hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 11,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1236,17 +1262,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": true
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "Jonah works the quiet overnight shift at Orison Station.",
+            "He knows the platform schedule, signal procedures, station key rules, and how reports move through transit bureaucracy.",
+            "He is not a police officer and must rely on evidence, witnesses, and station access instead of authority.",
+            "He tends to protect frightened passengers first and ask procedural questions second.",
+            "He starts with a station key ring, a pocket radio, a ledger pencil, and a strong instinct for when paperwork has been altered."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Jonah Mercer",
           "fallback_outfits": [
             {
@@ -1411,33 +1447,25 @@
             }
           ],
           "fallback_starting_outfit_id": "night-uniform",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "Jonah works the quiet overnight shift at Orison Station.",
-            "He knows the platform schedule, signal procedures, station key rules, and how reports move through transit bureaucracy.",
-            "He is not a police officer and must rely on evidence, witnesses, and station access instead of authority.",
-            "He tends to protect frightened passengers first and ask procedural questions second.",
-            "He starts with a station key ring, a pocket radio, a ledger pencil, and a strong instinct for when paperwork has been altered."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
-              "prompt": "",
-              "negative_prompt": "",
-              "note": "",
-              "male": true
-            },
-            "non_male": {
-              "url": "",
-              "local_image_id": "",
-              "source": "hosted",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "source": "none",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1449,8 +1477,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "riley-ashford",
@@ -1474,7 +1501,6 @@
           "appearance": {
             "species": "mixed-race human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "warm tan skin",
             "eye_color": "hazel eyes",
             "hair_color": "dark auburn hair",
@@ -1482,7 +1508,16 @@
             "hair_type": "wavy hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": "Average, lightly defined chest",
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1667,17 +1702,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "Riley works the quiet overnight shift at Orison Station.",
+            "They know the ticket printer, announcement booth, lost-property logs, and the small access rules most passengers never notice.",
+            "They are not a police officer and need evidence before anyone important will listen.",
+            "They are good at noticing when a familiar place has one extra door, one wrong sound, or one impossible timestamp.",
+            "They start with a station key ring, a pocket radio, a ledger pencil, and a habit of writing down contradictions."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Riley Ashford",
           "fallback_outfits": [
             {
@@ -1842,33 +1887,25 @@
             }
           ],
           "fallback_starting_outfit_id": "night-uniform",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "Riley works the quiet overnight shift at Orison Station.",
-            "They know the ticket printer, announcement booth, lost-property logs, and the small access rules most passengers never notice.",
-            "They are not a police officer and need evidence before anyone important will listen.",
-            "They are good at noticing when a familiar place has one extra door, one wrong sound, or one impossible timestamp.",
-            "They start with a station key ring, a pocket radio, a ledger pencil, and a habit of writing down contradictions."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1880,8 +1917,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         }
       ],
       "characters": {},
@@ -1890,17 +1926,16 @@
           "orison-station-night-desk": {
             "label": "Orison Station night desk",
             "characters": {
-              "veda-coll": {
+              "Veda Coll": {
                 "id": "veda-coll",
                 "name": "Veda Coll",
-                "can_die": false,
                 "gender": "female",
                 "age": 46,
                 "role": "Day-shift dispatcher",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "veda-coll",
                   "name": "Veda Coll",
@@ -1923,7 +1958,6 @@
                   "appearance": {
                     "species": "human Black",
                     "height": 5,
-                    "body_description": "An average build.",
                     "skin_color": "deep brown skin",
                     "eye_color": "dark brown eyes",
                     "hair_color": "black hair",
@@ -1931,7 +1965,16 @@
                     "hair_type": "tight natural curls",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 10,
+                    "chest": 13,
+                    "upper_body_build": 8,
+                    "midsection_build": 8,
+                    "hip_width": 11,
+                    "butt_build": 8,
+                    "lower_body_build": 9,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -1941,7 +1984,8 @@
                         "shirt": "cream button-up shirt",
                         "pants": "dark work slacks",
                         "feet": "black practical shoes",
-                        "other_accessory": "silver whistle on a cord"
+                        "other_accessory": "silver whistle on a cord",
+                        "coat": "gray transit dispatcher coat"
                       }
                     }
                   ],
@@ -1962,17 +2006,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": false
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Veda is the last day-shift employee leaving when the story begins.",
+                    "She has heard rumors of old route numbers being erased from station records.",
+                    "She dislikes panic and will demand proof before accepting impossible claims.",
+                    "She can help interpret dispatch logs, staff memories, and old transit protocols.",
+                    "If trusted, she becomes Mara's safest living witness before dawn."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Veda Coll",
                   "fallback_outfits": [
                     {
@@ -1982,37 +2035,31 @@
                         "shirt": "cream button-up shirt",
                         "pants": "dark work slacks",
                         "feet": "black practical shoes",
-                        "other_accessory": "silver whistle on a cord"
+                        "other_accessory": "silver whistle on a cord",
+                        "coat": "gray transit dispatcher coat"
                       }
                     }
                   ],
                   "fallback_starting_outfit_id": "dispatcher-coat",
-                  "starting_known_facts": [
-                    "Veda is the last day-shift employee leaving when the story begins.",
-                    "She has heard rumors of old route numbers being erased from station records.",
-                    "She dislikes panic and will demand proof before accepting impossible claims.",
-                    "She can help interpret dispatch logs, staff memories, and old transit protocols.",
-                    "If trusted, she becomes Mara's safest living witness before dawn."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
+                      "source": "none",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": true
                     },
                     "non_male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
+                      "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2024,17 +2071,12 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               }
             }
           },
-          "loc-night-desk": {
-            "label": "Night Desk",
-            "characters": {}
-          },
-          "loc-platform-four": {
+          "platform-four": {
             "label": "Platform Four",
             "characters": {}
           },
@@ -2062,6 +2104,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -2103,11 +2146,11 @@
             "while_active_guidance": "A ticket has printed for a platform Orison Station does not have.",
             "next_objectives": [
               {
-                "objective_id": "find-platform-four",
                 "id": "check-unlisted-ticket-output-1",
-                "completion_instruction": "Show that the ticket names Platform Four and a route called the Neverline, then make the next concrete action finding where the platform announcement came from.",
                 "rewards": [],
-                "target_input_group_id": "from-check-unlisted-ticket"
+                "completion_instruction": "Show that the ticket names Platform Four and a route called the Neverline, then make the next concrete action finding where the platform announcement came from.",
+                "objective_id": "find-platform-four",
+                "target_input_group_id": "find-platform-four-from-check-unlisted-ticket"
               }
             ]
           },
@@ -2155,11 +2198,11 @@
             "while_active_guidance": "The announcement claims a train is boarding from a platform that should not exist.",
             "next_objectives": [
               {
-                "objective_id": "inspect-impossible-platform",
                 "id": "find-platform-four-output-1",
-                "completion_instruction": "Reveal a service stair that was not on the normal station map and lead the player to an unused platform sign marked Four.",
                 "rewards": [],
-                "target_input_group_id": "from-find-platform-four"
+                "completion_instruction": "Reveal a service stair that was not on the normal station map and lead the player to an unused platform sign marked Four.",
+                "objective_id": "inspect-impossible-platform",
+                "target_input_group_id": "inspect-impossible-platform-from-find-platform-four"
               }
             ]
           },
@@ -2175,12 +2218,7 @@
                 "character_id": "ira_noll",
                 "scene_presence": "active",
                 "reason": "Ira Noll is waiting on Platform Four with an impossible return ticket.",
-                "npc_location_id": "loc-platform-four"
-              },
-              {
-                "type": "generate_profile_image",
-                "target": "Ira Noll",
-                "reason": "Ira Noll is waiting on Platform Four with an impossible return ticket."
+                "npc_location_id": "platform-four"
               },
               {
                 "type": "add_state_list_item",
@@ -2193,6 +2231,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -2216,11 +2255,11 @@
             "while_active_guidance": "The hidden platform is real enough to stand on, but its signs do not match the station.",
             "next_objectives": [
               {
-                "objective_id": "question-ira-noll",
                 "id": "inspect-impossible-platform-output-1",
-                "completion_instruction": "Let the platform feel physically real and reveal Ira Noll as the first stranded passenger without explaining the whole mystery.",
                 "rewards": [],
-                "target_input_group_id": "from-inspect-impossible-platform"
+                "completion_instruction": "Let the platform feel physically real and reveal Ira Noll as the first stranded passenger without explaining the whole mystery.",
+                "objective_id": "question-ira-noll",
+                "target_input_group_id": "question-ira-noll-from-inspect-impossible-platform"
               }
             ]
           },
@@ -2264,11 +2303,11 @@
             "while_active_guidance": "The stranded passenger may know where the impossible route began.",
             "next_objectives": [
               {
-                "objective_id": "decide-first-report",
                 "id": "question-ira-noll-output-1",
-                "completion_instruction": "Have Ira describe buying coffee at a station no city map contains, then make the report-or-hide decision feel immediate.",
                 "rewards": [],
-                "target_input_group_id": "from-question-ira-noll"
+                "completion_instruction": "Have Ira describe buying coffee at a station no city map contains, then make the report-or-hide decision feel immediate.",
+                "objective_id": "decide-first-report",
+                "target_input_group_id": "decide-first-report-from-question-ira-noll"
               }
             ]
           },
@@ -2309,15 +2348,16 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "suspicion"
                     ],
                     "amount": 1,
                     "operation": "add"
                   }
                 ],
+                "completion_instruction": "Resolve only the selected reporting stance and return to the ledger investigation. Honor the selected choice: File an Official Incident Report.",
                 "next_objective_id": "compare-ticket-ledger",
-                "completion_instruction": "Resolve only the selected reporting stance and return to the ledger investigation.",
-                "target_input_group_id": "from-decide-first-report"
+                "target_input_group_id": "compare-ticket-ledger-from-decide-first-report"
               },
               {
                 "id": "hide-report-for-now",
@@ -2335,15 +2375,16 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "suspicion"
                     ],
                     "amount": -1,
                     "operation": "add"
                   }
                 ],
+                "completion_instruction": "Resolve only the selected reporting stance and return to the ledger investigation. Honor the selected choice: Keep It Off the Books For Now.",
                 "next_objective_id": "compare-ticket-ledger",
-                "completion_instruction": "Resolve only the selected reporting stance and return to the ledger investigation.",
-                "target_input_group_id": "from-decide-first-report"
+                "target_input_group_id": "compare-ticket-ledger-from-decide-first-report"
               }
             ],
             "while_active_guidance": "Choose whether to make the incident official now or keep investigating quietly."
@@ -2358,6 +2399,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -2389,11 +2431,11 @@
             "while_active_guidance": "The normal station records may reveal whether this happened before.",
             "next_objectives": [
               {
-                "objective_id": "trace-announcement-wire",
                 "id": "compare-ticket-ledger-output-1",
-                "completion_instruction": "Reveal that several ordinary tickets were overwritten after midnight with route numbers that should not exist.",
                 "rewards": [],
-                "target_input_group_id": "from-compare-ticket-ledger"
+                "completion_instruction": "Reveal that several ordinary tickets were overwritten after midnight with route numbers that should not exist.",
+                "objective_id": "trace-announcement-wire",
+                "target_input_group_id": "trace-announcement-wire-from-compare-ticket-ledger"
               }
             ]
           },
@@ -2434,11 +2476,11 @@
             "while_active_guidance": "The platform call used the station speaker system, but no one made it from the booth.",
             "next_objectives": [
               {
-                "objective_id": "inspect-signal-room",
                 "id": "trace-announcement-wire-output-1",
-                "completion_instruction": "Show the announcement signal coming from the old signal room instead of the public booth, and unlock the signal room as the next place to inspect.",
                 "rewards": [],
-                "target_input_group_id": "from-trace-announcement-wire"
+                "completion_instruction": "Show the announcement signal coming from the old signal room instead of the public booth, and unlock the signal room as the next place to inspect.",
+                "objective_id": "inspect-signal-room",
+                "target_input_group_id": "inspect-signal-room-from-trace-announcement-wire"
               }
             ]
           },
@@ -2475,11 +2517,11 @@
             "while_active_guidance": "The old signal room may explain why the station called a train no one scheduled.",
             "next_objectives": [
               {
-                "objective_id": "keep-ira-calm",
                 "id": "inspect-signal-room-output-1",
-                "completion_instruction": "Reveal a blue track light pulsing for the 1:13 train and make Ira's fear of boarding or missing it part of the scene.",
                 "rewards": [],
-                "target_input_group_id": "from-inspect-signal-room"
+                "completion_instruction": "Reveal a blue track light pulsing for the 1:13 train and make Ira's fear of boarding or missing it part of the scene.",
+                "objective_id": "keep-ira-calm",
+                "target_input_group_id": "keep-ira-calm-from-inspect-signal-room"
               }
             ]
           },
@@ -2516,11 +2558,11 @@
             "while_active_guidance": "Ira may panic when the board announces another impossible arrival.",
             "next_objectives": [
               {
-                "objective_id": "let-the-113-arrive",
                 "id": "keep-ira-calm-output-1",
-                "completion_instruction": "Let Ira respond to how the player handles him, then bring the 1:13 train into the station.",
                 "rewards": [],
-                "target_input_group_id": "from-keep-ira-calm"
+                "completion_instruction": "Let Ira respond to how the player handles him, then bring the 1:13 train into the station.",
+                "objective_id": "let-the-113-arrive",
+                "target_input_group_id": "let-the-113-arrive-from-keep-ira-calm"
               }
             ]
           },
@@ -2536,12 +2578,7 @@
                 "character_id": "len_talver",
                 "scene_presence": "active",
                 "reason": "Len Talver steps off the 1:13 train with a stopped watch.",
-                "npc_location_id": "loc-platform-four"
-              },
-              {
-                "type": "generate_profile_image",
-                "target": "Len Talver",
-                "reason": "Len Talver steps off the 1:13 train with a stopped watch."
+                "npc_location_id": "platform-four"
               },
               {
                 "type": "add_state_list_item",
@@ -2554,6 +2591,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -2584,11 +2622,11 @@
             "while_active_guidance": "The hidden platform is calling in a train that should not be on the schedule.",
             "next_objectives": [
               {
-                "objective_id": "examine-lens-watch",
                 "id": "let-the-113-arrive-output-1",
-                "completion_instruction": "Have the train arrive without a driver visible and introduce Len Talver as a passenger stepping off with a stopped watch.",
                 "rewards": [],
-                "target_input_group_id": "from-let-the-113-arrive"
+                "completion_instruction": "Have the train arrive without a driver visible and introduce Len Talver as a passenger stepping off with a stopped watch.",
+                "objective_id": "examine-lens-watch",
+                "target_input_group_id": "examine-lens-watch-from-let-the-113-arrive"
               }
             ]
           },
@@ -2632,11 +2670,11 @@
             "while_active_guidance": "Len carries a watch that stopped at a time the station has not reached yet.",
             "next_objectives": [
               {
-                "objective_id": "decide-lens-train",
                 "id": "examine-lens-watch-output-1",
-                "completion_instruction": "Reveal that Len's watch stopped at 3:17 and that their delivery address is missing from current maps.",
                 "rewards": [],
-                "target_input_group_id": "from-examine-lens-watch"
+                "completion_instruction": "Reveal that Len's watch stopped at 3:17 and that their delivery address is missing from current maps.",
+                "objective_id": "decide-lens-train",
+                "target_input_group_id": "decide-lens-train-from-examine-lens-watch"
               }
             ]
           },
@@ -2685,15 +2723,16 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "evidence_count"
                     ],
                     "amount": 1,
                     "operation": "add"
                   }
                 ],
+                "completion_instruction": "Resolve whether Len stays under protest or boards with a recorded warning, then continue toward the lost-property search. Honor the selected choice: Stop Len From Boarding.",
                 "next_objective_id": "search-lost-property",
-                "completion_instruction": "Resolve whether Len stays under protest or boards with a recorded warning, then continue toward the lost-property search.",
-                "target_input_group_id": "from-decide-lens-train"
+                "target_input_group_id": "search-lost-property-from-decide-lens-train"
               },
               {
                 "id": "let-len-board-with-warning",
@@ -2724,9 +2763,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Resolve whether Len stays under protest or boards with a recorded warning, then continue toward the lost-property search. Honor the selected choice: Let Len Board With a Warning.",
                 "next_objective_id": "search-lost-property",
-                "completion_instruction": "Resolve whether Len stays under protest or boards with a recorded warning, then continue toward the lost-property search.",
-                "target_input_group_id": "from-decide-lens-train"
+                "target_input_group_id": "search-lost-property-from-decide-lens-train"
               }
             ],
             "while_active_guidance": "Len wants to board the next impossible train before the station takes notice."
@@ -2748,11 +2787,6 @@
                 "scene_presence": "active",
                 "reason": "Mira Sorn arrives because the lost-property search disturbed evidence she has been watching.",
                 "npc_location_id": "station-concourse"
-              },
-              {
-                "type": "generate_profile_image",
-                "target": "Mira Sorn",
-                "reason": "Mira Sorn arrives because the lost-property search disturbed evidence she has been watching."
               },
               {
                 "type": "add_state_list_item",
@@ -2795,11 +2829,11 @@
             "while_active_guidance": "Objects left behind may prove the impossible route has been taking passengers for years.",
             "next_objectives": [
               {
-                "objective_id": "question-mira-sorn",
                 "id": "search-lost-property-output-1",
-                "completion_instruction": "Reveal a shelf of belongings tagged with dates that repeat every few years, then introduce Mira Sorn as someone who came for one of them.",
                 "rewards": [],
-                "target_input_group_id": "from-search-lost-property"
+                "completion_instruction": "Reveal a shelf of belongings tagged with dates that repeat every few years, then introduce Mira Sorn as someone who came for one of them.",
+                "objective_id": "question-mira-sorn",
+                "target_input_group_id": "question-mira-sorn-from-search-lost-property"
               }
             ]
           },
@@ -2843,11 +2877,11 @@
             "while_active_guidance": "The woman in the raincoat knows enough to be useful and enough to be dangerous.",
             "next_objectives": [
               {
-                "objective_id": "decide-whether-to-trust-mira",
                 "id": "question-mira-sorn-output-1",
-                "completion_instruction": "Let Mira reveal that the Neverline follows stations erased by disasters, scandals, or deliberate coverups, but keep her motives uncertain.",
                 "rewards": [],
-                "target_input_group_id": "from-question-mira-sorn"
+                "completion_instruction": "Let Mira reveal that the Neverline follows stations erased by disasters, scandals, or deliberate coverups, but keep her motives uncertain.",
+                "objective_id": "decide-whether-to-trust-mira",
+                "target_input_group_id": "decide-whether-to-trust-mira-from-question-mira-sorn"
               }
             ]
           },
@@ -2893,9 +2927,9 @@
                     }
                   }
                 ],
+                "completion_instruction": "Resolve the player's stance toward Mira without revealing all of her motives, then move to the maintenance-door investigation. Honor the selected choice: Share the Ledger With Mira.",
                 "next_objective_id": "open-maintenance-door",
-                "completion_instruction": "Resolve the player's stance toward Mira without revealing all of her motives, then move to the maintenance-door investigation.",
-                "target_input_group_id": "from-decide-whether-to-trust-mira"
+                "target_input_group_id": "open-maintenance-door-from-decide-whether-to-trust-mira"
               },
               {
                 "id": "keep-ledger-from-mira",
@@ -2921,15 +2955,16 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "suspicion"
                     ],
                     "amount": 1,
                     "operation": "add"
                   }
                 ],
+                "completion_instruction": "Resolve the player's stance toward Mira without revealing all of her motives, then move to the maintenance-door investigation. Honor the selected choice: Keep the Ledger From Mira.",
                 "next_objective_id": "open-maintenance-door",
-                "completion_instruction": "Resolve the player's stance toward Mira without revealing all of her motives, then move to the maintenance-door investigation.",
-                "target_input_group_id": "from-decide-whether-to-trust-mira"
+                "target_input_group_id": "open-maintenance-door-from-decide-whether-to-trust-mira"
               }
             ],
             "while_active_guidance": "Mira can guide the investigation, but trusting her may shape who controls the truth."
@@ -2971,11 +3006,11 @@
             "while_active_guidance": "The old map points to a service door behind the platform wall.",
             "next_objectives": [
               {
-                "objective_id": "walk-the-buried-passage",
                 "id": "open-maintenance-door-output-1",
-                "completion_instruction": "Unlock the maintenance passage and reveal that the Neverline is connected to a buried part of the station, not another city.",
                 "rewards": [],
-                "target_input_group_id": "from-open-maintenance-door"
+                "completion_instruction": "Unlock the maintenance passage and reveal that the Neverline is connected to a buried part of the station, not another city.",
+                "objective_id": "walk-the-buried-passage",
+                "target_input_group_id": "walk-the-buried-passage-from-open-maintenance-door"
               }
             ]
           },
@@ -2993,6 +3028,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -3016,11 +3052,11 @@
             "while_active_guidance": "The maintenance passage descends toward a part of Orison Station that should have been sealed.",
             "next_objectives": [
               {
-                "objective_id": "read-the-erased-notices",
                 "id": "walk-the-buried-passage-output-1",
-                "completion_instruction": "Show the lower concourse as a real abandoned station layer with old public notices and fresh footprints.",
                 "rewards": [],
-                "target_input_group_id": "from-walk-the-buried-passage"
+                "completion_instruction": "Show the lower concourse as a real abandoned station layer with old public notices and fresh footprints.",
+                "objective_id": "read-the-erased-notices",
+                "target_input_group_id": "read-the-erased-notices-from-walk-the-buried-passage"
               }
             ]
           },
@@ -3042,6 +3078,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -3065,11 +3102,11 @@
             "while_active_guidance": "Old public notices may explain why a whole station layer vanished from records.",
             "next_objectives": [
               {
-                "objective_id": "interview-veda-before-dawn",
                 "id": "read-the-erased-notices-output-1",
-                "completion_instruction": "Reveal that the lower station was closed after a crowd disappeared during an overnight service and the public record was altered.",
                 "rewards": [],
-                "target_input_group_id": "from-read-the-erased-notices"
+                "completion_instruction": "Reveal that the lower station was closed after a crowd disappeared during an overnight service and the public record was altered.",
+                "objective_id": "interview-veda-before-dawn",
+                "target_input_group_id": "interview-veda-before-dawn-from-read-the-erased-notices"
               }
             ]
           },
@@ -3113,11 +3150,11 @@
             "while_active_guidance": "Veda's memory of old dispatch rules may connect the lower station to the current night shift.",
             "next_objectives": [
               {
-                "objective_id": "assemble-route-pattern",
                 "id": "interview-veda-before-dawn-output-1",
-                "completion_instruction": "Have Veda confirm that older staff were told never to acknowledge Platform Four, then let her become a reliable witness if treated honestly.",
                 "rewards": [],
-                "target_input_group_id": "from-interview-veda-before-dawn"
+                "completion_instruction": "Have Veda confirm that older staff were told never to acknowledge Platform Four, then let her become a reliable witness if treated honestly.",
+                "objective_id": "assemble-route-pattern",
+                "target_input_group_id": "assemble-route-pattern-from-interview-veda-before-dawn"
               }
             ]
           },
@@ -3159,11 +3196,11 @@
             "while_active_guidance": "The ticket, watch, ledger, lost property, and old notices point to one rule.",
             "next_objectives": [
               {
-                "objective_id": "choose-who-hears-truth",
                 "id": "assemble-route-pattern-output-1",
-                "completion_instruction": "Let the player identify that the Neverline appears when the station hides a passenger's unfinished return, and make the next step deciding who hears the truth.",
                 "rewards": [],
-                "target_input_group_id": "from-assemble-route-pattern"
+                "completion_instruction": "Let the player identify that the Neverline appears when the station hides a passenger's unfinished return, and make the next step deciding who hears the truth.",
+                "objective_id": "choose-who-hears-truth",
+                "target_input_group_id": "choose-who-hears-truth-from-assemble-route-pattern"
               }
             ]
           },
@@ -3204,15 +3241,16 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "suspicion"
                     ],
                     "amount": 2,
                     "operation": "add"
                   }
                 ],
+                "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet. Honor the selected choice: Tell the Transit Authority.",
                 "next_objective_id": "ride-to-missing-stop",
-                "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet.",
-                "target_input_group_id": "from-choose-who-hears-truth"
+                "target_input_group_id": "ride-to-missing-stop-from-choose-who-hears-truth"
               },
               {
                 "id": "tell-stranded-passengers",
@@ -3243,9 +3281,9 @@
                     }
                   }
                 ],
+                "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet. Honor the selected choice: Tell the Stranded Passengers.",
                 "next_objective_id": "ride-to-missing-stop",
-                "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet.",
-                "target_input_group_id": "from-choose-who-hears-truth"
+                "target_input_group_id": "ride-to-missing-stop-from-choose-who-hears-truth"
               },
               {
                 "id": "keep-truth-until-proof",
@@ -3263,15 +3301,16 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "suspicion"
                     ],
                     "amount": -1,
                     "operation": "add"
                   }
                 ],
+                "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet. Honor the selected choice: Keep It Quiet Until Final Proof.",
                 "next_objective_id": "ride-to-missing-stop",
-                "completion_instruction": "Record who the player chooses to tell before the final ride without fully resolving the ending yet.",
-                "target_input_group_id": "from-choose-who-hears-truth"
+                "target_input_group_id": "ride-to-missing-stop-from-choose-who-hears-truth"
               }
             ],
             "while_active_guidance": "The evidence can protect people, expose the station, or disappear again."
@@ -3320,11 +3359,11 @@
             "while_active_guidance": "The only way to prove the rule is to board the impossible train and see where it stops.",
             "next_objectives": [
               {
-                "objective_id": "solve-orison-stations-rule",
                 "id": "ride-to-missing-stop-output-1",
-                "completion_instruction": "Take the player to the missing stop without making the ride feel like a random dream; tie every detail to earlier clues.",
                 "rewards": [],
-                "target_input_group_id": "from-ride-to-missing-stop"
+                "completion_instruction": "Take the player to the missing stop without making the ride feel like a random dream; tie every detail to earlier clues.",
+                "objective_id": "solve-orison-stations-rule",
+                "target_input_group_id": "solve-orison-stations-rule-from-ride-to-missing-stop"
               }
             ]
           },
@@ -3343,6 +3382,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "evidence_count"
                 ],
                 "amount": 1,
@@ -3366,11 +3406,11 @@
             "while_active_guidance": "The missing stop reveals why some passengers return and others are erased.",
             "next_objectives": [
               {
-                "objective_id": "decide-final-schedule",
                 "id": "solve-orison-stations-rule-output-1",
-                "completion_instruction": "Reveal that the station preserves unfinished returns until someone witnesses them honestly; then push toward the final decision about the schedule.",
                 "rewards": [],
-                "target_input_group_id": "from-solve-orison-stations-rule"
+                "completion_instruction": "Reveal that the station preserves unfinished returns until someone witnesses them honestly; then push toward the final decision about the schedule.",
+                "objective_id": "decide-final-schedule",
+                "target_input_group_id": "decide-final-schedule-from-solve-orison-stations-rule"
               }
             ]
           },
@@ -3419,9 +3459,8 @@
                     "value": "seal-platform-four"
                   }
                 ],
-                "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger. Honor the selected choice: Seal Platform Four.",
+                "ending_type": "freeplay"
               },
               {
                 "id": "keep-a-watched-return",
@@ -3447,9 +3486,8 @@
                     "value": "keep-a-watched-return"
                   }
                 ],
-                "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger. Honor the selected choice: Keep a Watched Return Route.",
+                "ending_type": "freeplay"
               },
               {
                 "id": "publish-the-record",
@@ -3475,9 +3513,8 @@
                     "value": "publish-the-record"
                   }
                 ],
-                "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen ending clearly and leave the result playable as an epilogue state rather than a vague cliffhanger. Honor the selected choice: Publish the Full Record.",
+                "ending_type": "freeplay"
               }
             ],
             "while_active_guidance": "Choose what Orison Station becomes after the truth is known."
@@ -3493,14 +3530,13 @@
             "status": "locked",
             "role": "Stranded passenger with an impossible return ticket",
             "meet_condition": "Introduced when the player inspects Platform Four.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Platform Four",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "A stranded passenger waits under the wrong platform sign.",
             "full_character": {
-              "id": "ira_noll",
+              "id": "ira-noll",
               "name": "Ira Noll",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -3521,7 +3557,6 @@
               "appearance": {
                 "species": "human East Asian",
                 "height": 5,
-                "body_description": "A slender build.",
                 "skin_color": "light warm skin",
                 "eye_color": "dark eyes",
                 "hair_color": "black hair",
@@ -3529,7 +3564,16 @@
                 "hair_type": "straight hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 11,
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -3710,17 +3754,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": true
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Ira appears after Platform Four is first discovered.",
+                "His ticket names a return route that no active schedule contains.",
+                "He remembers a station bell ringing under a street with no name.",
+                "He is not dangerous, but fear can make him try to board the next impossible train.",
+                "His memories are the first proof that passengers can return changed but alive."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Ira Noll",
               "fallback_outfits": [
                 {
@@ -3885,32 +3938,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "rumpled-commuter",
-              "starting_known_facts": [
-                "Ira appears after Platform Four is first discovered.",
-                "His ticket names a return route that no active schedule contains.",
-                "He remembers a station bell ringing under a street with no name.",
-                "He is not dangerous, but fear can make him try to board the next impossible train.",
-                "His memories are the first proof that passengers can return changed but alive."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": "",
-                  "male": true
-                },
-                "non_male": {
-                  "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "source": "none",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -3922,15 +3968,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 1,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
-            "npc_location_id": "loc-platform-four",
-            "note": "Ira should appear frightened but coherent, holding a return ticket from a route the station does not run."
+            "scene_presence": "active",
+            "npc_location_id": "platform-four",
+            "note": "Ira should appear frightened but coherent, holding a return ticket from a route the station does not run.",
+            "on_unlock": {
+              "greeting": "A stranded passenger waits under the wrong platform sign."
+            }
           },
           "len_talver": {
             "id": "len_talver",
@@ -3938,14 +3984,13 @@
             "status": "locked",
             "role": "Passenger carrying a stopped watch",
             "meet_condition": "Introduced when the 1:13 impossible train arrives.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Platform Four",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "A courier steps off the train with a stopped watch.",
             "full_character": {
-              "id": "len_talver",
+              "id": "len-talver",
               "name": "Len Talver",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -3966,7 +4011,6 @@
               "appearance": {
                 "species": "human mixed",
                 "height": 4,
-                "body_description": "An average build.",
                 "skin_color": "tan skin",
                 "eye_color": "hazel eyes",
                 "hair_color": "copper hair",
@@ -3974,7 +4018,16 @@
                 "hair_type": "messy wavy hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": "Average, lightly defined chest",
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -4155,17 +4208,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": false
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Len arrives on the 1:13 train after the announcement wire is traced.",
+                "Their watch stopped at a time that has not happened yet tonight.",
+                "They know a delivery address that is not on any current map.",
+                "They resist authority but respond to honest bargaining.",
+                "Their route gives the player a choice between preventing a dangerous boarding and learning a stronger clue."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Len Talver",
               "fallback_outfits": [
                 {
@@ -4330,32 +4392,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "courier-layers",
-              "starting_known_facts": [
-                "Len arrives on the 1:13 train after the announcement wire is traced.",
-                "Their watch stopped at a time that has not happened yet tonight.",
-                "They know a delivery address that is not on any current map.",
-                "They resist authority but respond to honest bargaining.",
-                "Their route gives the player a choice between preventing a dangerous boarding and learning a stronger clue."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
+                  "source": "none",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": true
                 },
                 "non_male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
+                  "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -4367,15 +4422,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 2,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
-            "npc_location_id": "loc-platform-four",
-            "note": "Len should arrive defensive, confused, and eager to leave before anyone examines the stopped watch."
+            "scene_presence": "active",
+            "npc_location_id": "platform-four",
+            "note": "Len should arrive defensive, confused, and eager to leave before anyone examines the stopped watch.",
+            "on_unlock": {
+              "greeting": "A courier steps off the train with a stopped watch."
+            }
           },
           "mira_sorn": {
             "id": "mira_sorn",
@@ -4383,14 +4438,13 @@
             "status": "locked",
             "role": "Woman in the raincoat",
             "meet_condition": "Introduced after the lost-property room proves the pattern repeats.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Station Concourse",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "A woman in a raincoat waits by the closed ticket gates.",
             "full_character": {
-              "id": "mira_sorn",
+              "id": "mira-sorn",
               "name": "Mira Sorn",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -4411,7 +4465,6 @@
               "appearance": {
                 "species": "human white",
                 "height": 6,
-                "body_description": "An average build.",
                 "skin_color": "pale skin",
                 "eye_color": "green eyes",
                 "hair_color": "black hair",
@@ -4419,7 +4472,16 @@
                 "hair_type": "straight hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 13,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 11,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -4517,9 +4579,41 @@
                     "feet": "simple house slippers",
                     "other_accessory": null
                   }
+                },
+                {
+                  "id": "story-opening",
+                  "name": "Story Opening Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "cream knit top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": null,
+                    "skirt": "Opaque ankle-length skirt without openings",
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "brown ankle boots",
+                    "other_accessory": "old transit map folded into a triangle"
+                  }
                 }
               ],
-              "starting_outfit_id": "casual",
+              "starting_outfit_id": "story-opening",
               "starting_held_items": {
                 "right_hand": null,
                 "left_hand": null
@@ -4536,17 +4630,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": false
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Mira appears after the lost-property room reveals evidence of repeated impossible arrivals.",
+                "She knows the phrase 'Neverline' but avoids saying who taught it to her.",
+                "She can guide the player toward the maintenance door if trusted.",
+                "She may be a survivor, a witness, or someone protecting the station from worse exposure.",
+                "Her advice is useful but incomplete, forcing the player to decide whether to trust her."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Mira Sorn",
               "fallback_outfits": [
                 {
@@ -4644,35 +4747,60 @@
                     "feet": "simple house slippers",
                     "other_accessory": null
                   }
+                },
+                {
+                  "id": "story-opening",
+                  "name": "Story Opening Outfit",
+                  "clothing": {
+                    "hat": null,
+                    "hair_accessory": null,
+                    "face": null,
+                    "ears": null,
+                    "neck": null,
+                    "shoulders": null,
+                    "bra": null,
+                    "undershirt": null,
+                    "shirt": "cream knit top",
+                    "over_shirt": null,
+                    "coat": null,
+                    "back": null,
+                    "hands": null,
+                    "right_wrist": null,
+                    "left_wrist": null,
+                    "right_fingers": null,
+                    "left_fingers": null,
+                    "waist": null,
+                    "belt_accessory": null,
+                    "underwear": null,
+                    "pants": null,
+                    "skirt": "Opaque ankle-length skirt without openings",
+                    "legwear": null,
+                    "socks": null,
+                    "feet": "brown ankle boots",
+                    "other_accessory": "old transit map folded into a triangle"
+                  }
                 }
               ],
-              "fallback_starting_outfit_id": "casual",
-              "starting_known_facts": [
-                "Mira appears after the lost-property room reveals evidence of repeated impossible arrivals.",
-                "She knows the phrase 'Neverline' but avoids saying who taught it to her.",
-                "She can guide the player toward the maintenance door if trusted.",
-                "She may be a survivor, a witness, or someone protecting the station from worse exposure.",
-                "Her advice is useful but incomplete, forcing the player to decide whether to trust her."
-              ],
+              "fallback_starting_outfit_id": "story-opening",
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
+                  "source": "none",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": true
                 },
                 "non_male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
+                  "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -4684,15 +4812,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 3,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
+            "scene_presence": "active",
             "npc_location_id": "station-concourse",
-            "note": "Mira should enter quietly with an old transit map and act like she knows which questions are dangerous."
+            "note": "Mira should enter quietly with an old transit map and act like she knows which questions are dangerous.",
+            "on_unlock": {
+              "greeting": "A woman in a raincoat waits by the closed ticket gates."
+            }
           }
         }
       },
@@ -4723,7 +4851,6 @@
         "evidence_count": 0,
         "suspicion": 0,
         "clues": [],
-        "final_schedule": "",
         "items": []
       },
       "story_shops": {},
@@ -4734,7 +4861,7 @@
       "recent_changes": [],
       "story_clock": {
         "elapsed_minutes": 0,
-        "label": "2026-10-14 00:47"
+        "label": "Day 14, 00:47"
       },
       "story_pacing": {
         "mode": "player_controlled",
@@ -4765,20 +4892,21 @@
       "hidden train platform"
     ],
     "title_card_image": {
-      "id": "after-hours-at-orison-station-title-card",
-      "title": "After Hours at Orison Station title card",
+      "url": "",
+      "source": "none",
+      "seed": 0,
       "prompt": "",
       "negativePrompt": "",
-      "seed": 0,
+      "id": "after-hours-at-orison-station-title-card",
+      "title": "After Hours at Orison Station",
       "model": "",
-      "source": "none",
-      "url": "",
       "hosted_url": "",
       "html": "",
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-08-31T06:03:35.951Z"
 }

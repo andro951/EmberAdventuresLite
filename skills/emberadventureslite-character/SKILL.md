@@ -5,7 +5,7 @@ description: Create, review, and repair EmberAdventuresLite character JSON, incl
 
 # EmberAdventuresLite Character
 
-Version: 1.0.2. Contract checked against Lite revision `907ba9c`.
+Version: 2.0.0. Contract checked against the current Lite source on October 22, 2026.
 
 Use this skill for Lite character definitions. It adapts the original character
 skill's character-depth, identity, field-purpose, clothing, and release workflow
@@ -31,6 +31,7 @@ owns the differences between standalone exports and embedded definitions.
    usefulness, limitations, and concrete durable facts. Describe the character
    at the opening moment, rather than scripting their future development.
 3. Write the canonical `character_definition` envelope from the reference.
+   Include `lite: true` on the definition.
    Replace example identities and timestamps. `creation_tool` identifies the
    actual tool used; `source` is `Original` for an invented character. Do not
    invent creator ownership fields.
@@ -52,10 +53,12 @@ general audiences. Adventure, mystery, friendship, humor, romance, flirting,
 and dating are welcome. Keep appearance descriptions ordinary and outfits
 practical and fully covered.
 
-Use `appearance.height` and a single `appearance.body_description` for overall
-build. Height accepts an integer from 0 through 20 or a concise custom string;
-`body_description` is always text, including an empty string when unspecified.
-Use natural descriptions such as slender, stocky, or athletic. Only emit
+Use all ten appearance scales: height, shoulder width, chest, upper-body build,
+midsection build, hip width, butt build, lower-body build, arm length, and leg
+length. Each accepts an integer from 0 through 20 or a concise custom description.
+Choose intentional values matching the character rather than assuming the
+midpoint means an average build. See [appearance-scales.json](references/appearance-scales.json)
+for the exact wording, including the separate chest descriptions. Keep only the
 appearance keys listed in the contract.
 
 All humanoid outfits must cover the torso, shoulders, chest, and legs with

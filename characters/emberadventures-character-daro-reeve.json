@@ -67,7 +67,6 @@
     "appearance": {
       "species": "Goblin",
       "height": 7,
-      "body_description": "A slender build.",
       "skin_color": "Olive green with warmer brown undertone at face, palms, and ear interiors.",
       "eye_color": "Amber-gold with dark pupils.",
       "hair_color": "Black.",
@@ -75,7 +74,16 @@
       "hair_type": "Messy swept-back undercut shaped clear of the ears.",
       "extra_description": "Long pointed ears, angular facial structure, sharp canines, one tiny notch in the left ear, and large eyes.",
       "extra_description_lower_body": "Slightly broad humanoid toes.",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 12,
+      "hip_width": 8,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 11
     },
     "outfits": [
       {
@@ -192,6 +200,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T07:52:29.724912Z",
-    "updated_at": "2026-09-08T18:55:43Z"
+    "updated_at": "2026-09-08T18:55:43Z",
+    "lite": true
   }
 }

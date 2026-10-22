@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Human",
       "height": 10,
-      "body_description": "An athletic build.",
       "skin_color": "Sun-browned medium tan with faint glove-line differences at wrists.",
       "eye_color": "Dark green-brown.",
       "hair_color": "Deep chestnut brown.",
@@ -107,7 +106,16 @@
       "hair_type": "Single braid.",
       "extra_description": "Small pale talon scar on the back of the left hand and a narrow wrist-guard mark.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -224,6 +232,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T16:55:19.032Z",
-    "updated_at": "2026-09-07T16:51:01Z"
+    "updated_at": "2026-09-07T16:51:01Z",
+    "lite": true
   }
 }

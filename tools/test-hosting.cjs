@@ -6,6 +6,7 @@ const path = require("node:path");
 const http = require("node:http");
 const vm = require("node:vm");
 const contract = require("../src/contracts/generation-contract.js");
+const directContract = require("../src/contracts/direct-hosting-contract.js");
 const {createAdapters, validateConfig, workflow} = require("../hosting/adapters.cjs");
 const {createServer} = require("../hosting/server.cjs");
 const disabled = () => ({kind: "disabled"});
@@ -32,7 +33,7 @@ test("strict shared boundaries reject unknown fields, credentials and unsafe ima
 test("explicit live-site launch selects both hosted roles without changing stored preferences", () => {
   const saved = {text:"perchance", image:"perchance", proxyUrl:"http://127.0.0.1:51840"};
   const source = fs.readFileSync(path.join(__dirname,"../src/scripts/app/02a-generation-providers.js"),"utf8");
-  const context = {app:{}, EmberGenerationContract:contract,
+  const context = {app:{}, EmberGenerationContract:contract,EmberDirectHostingContract:directContract,URL,URLSearchParams,
     window:{location:{search:"?emberHosting=http%3A%2F%2F127.0.0.1%3A51840"}},
     localStorage:{getItem:()=>JSON.stringify(saved),setItem:()=>{throw Error("Launch must not persist preferences");}}};
   const value = vm.runInNewContext(source+"\ngenerationPreferences();",context);
@@ -40,7 +41,7 @@ test("explicit live-site launch selects both hosted roles without changing store
   assert.equal(value.proxyUrl,"http://127.0.0.1:51840");
   assert.equal(saved.text,"perchance");
   context.app={};context.window.location.search="";
-  const normal=vm.runInNewContext(source+"\ngenerationPreferences();",context);
+  const normal=vm.runInContext("generationPreferences();",context);
   assert.equal(normal.text,"perchance");assert.equal(normal.image,"perchance");
 });
 
@@ -124,11 +125,11 @@ test("HTTP errors and uncertain submissions do not resubmit or leak provider bod
     const calls=[];const g=createAdapters({text:chat,image:disabled()},{env:{TEST_AUTH:"Bearer fake"},fetch:mock([response],calls)});await assert.rejects(g("text",text),e=>!e.message.includes("secret"));assert.equal(calls.length,1);
   }
 });
-test("browser runtime restores independent choices, applies prefix, image HTML and final callback",async()=>{
-  const state=new Map();const context=vm.createContext({EmberGenerationContract:contract,URL,AbortController,setInterval,clearInterval,localStorage:{getItem:k=>state.get(k)??null,setItem:(k,v)=>state.set(k,v)},app:{},escapeHtml:s=>s.replace(/&/g,"&amp;").replace(/"/g,"&quot;"),normalizeAiTextOutput:s=>s,log:()=>{},performance,fetch:async(url)=>new Response(JSON.stringify(url.endsWith("text")?{text:"A forest"}:{image:"https://assets.example/f.png?a=1&b=2"}))});
-  vm.runInContext(fs.readFileSync(path.join(__dirname,"../src/scripts/app/02a-generation-providers.js"),"utf8")+";globalThis.subject={generationPreferences,runHostedText,generateHostedImageHtml,generationSettingsHtml};",context);
-  assert.equal(context.subject.generationPreferences().text,"perchance");context.app.generationPreferences={text:"hosting-proxy",image:"perchance",proxyUrl:"http://127.0.0.1:51840"};
-  const streams=[];assert.equal(await context.subject.runHostedText("x",{startWith:"Prefix ",onStream:(...a)=>streams.push(a)},null,()=>false),"Prefix A forest");assert.equal(streams[0][2],true);assert.match(await context.subject.generateHostedImageHtml("forest","",42),/a=1&amp;b=2/);assert.match(context.subject.generationSettingsHtml(),/generation-image/);
+test("runtime provider functions restore independent choices, prefix and final callback",async()=>{
+  const state=new Map();const context=vm.createContext({EmberGenerationContract:contract,EmberDirectHostingContract:directContract,URL,URLSearchParams,AbortController,setInterval,clearInterval,window:{location:{search:""}},localStorage:{getItem:k=>state.get(k)??null,setItem:(k,v)=>state.set(k,v)},app:{},document:{createElement:()=>({src:"",get outerHTML(){return this.src;}})},normalizeAiTextOutput:s=>s,log:()=>{},performance,fetch:async(url)=>new Response(JSON.stringify(url.endsWith("text")?{text:"A forest"}:{image:"https://assets.example/f.png?a=1&b=2"}))});
+  vm.runInContext(fs.readFileSync(path.join(__dirname,"../src/scripts/app/02a-generation-providers.js"),"utf8")+";globalThis.subject={generationPreferences,runHostedText,generateHostedImageHtml};",context);
+  assert.equal(context.subject.generationPreferences().text,"game");state.set("emberadventureslite-generation-v1",JSON.stringify({text:"hosting-proxy",image:"perchance",proxyUrl:"http://127.0.0.1:51840"}));
+  const streams=[];assert.equal(await context.subject.runHostedText("x",{startWith:"Prefix ",onStream:(...a)=>streams.push(a)},null,()=>false),"Prefix A forest");assert.equal(streams[0][2],true);assert.equal(context.subject.generationPreferences().image,"perchance");assert.match(await context.subject.generateHostedImageHtml("forest","",42),/a=1&b=2/);
 });
 test("loopback server rejects bad origin, DNS rebind, non-JSON, config reads and traversal",async(t)=>{
   let calls=0;const s=http.createServer(createServer({text:disabled(),image:disabled()},{generate:async()=>{calls++;return{text:"ok"};}}));await new Promise(r=>s.listen(0,"127.0.0.1",r));t.after(()=>s.close());const base=`http://127.0.0.1:${s.address().port}`;

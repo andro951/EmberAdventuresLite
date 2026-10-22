@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Dragonborn",
       "height": 7,
-      "body_description": "A slender build.",
       "skin_color": "Smoky plum scales with lighter bronze plates along the throat, sternum, and abdomen.",
       "eye_color": "Bright amber-gold.",
       "hair_color": "",
@@ -107,7 +106,16 @@
       "hair_type": "",
       "extra_description": "Small backward-swept bronze horn ridges, compact draconic muzzle, and fine scale patterning around the eyes; unmistakably adult dragonborn despite very small stature.",
       "extra_description_lower_body": "Compact digitigrade dragonborn legs with plum scales, bronze underside plates, small dark claws, and a long narrow tail.",
-      "nonhuman_lower_body": true
+      "nonhuman_lower_body": true,
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -254,6 +262,7 @@
     },
     "voice": null,
     "created_at": "2026-09-07T16:51:01Z",
-    "updated_at": "2026-09-08T19:01:27Z"
+    "updated_at": "2026-09-08T19:01:27Z",
+    "lite": true
   }
 }

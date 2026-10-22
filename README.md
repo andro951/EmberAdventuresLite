@@ -1,52 +1,48 @@
 # EmberAdventuresLite
 
-A standalone, general-audience fantasy RPG and character-chat application.
+A general-audience RPG and character-chat game with authored stories, free play, editable characters, persistent state, and optional romance.
 
-## Run
+## Build and play
 
-1. Install Node.js and run `npm install` once.
+1. Run `npm install` once for the optional browser test dependencies.
 2. Run **Build bottom_compressed.bat**.
-3. In a separate Perchance generator, paste `left.js` into the left editor and `bottom_compressed.html` into the bottom editor, then reload.
+3. Paste `left.js` and `bottom_compressed.html` into the matching Perchance editor panes.
 
-The game uses Perchance for live AI text and images. A direct local preview is useful for editors and deterministic tests, but does not provide those hosted plugins. `perchance-live-bottom-loader.html` is optional; if the browser blocks localhost requests from Perchance, use the compressed bottom pane directly.
-
-Text and image generation can also be selected independently through a safe local hosting proxy. See [hosting setup, Krea image container, provider adapters, tests and limitations](hosting/README.md). Perchance remains the default. No paid resources or credentials are configured automatically.
-
-For an already prepared text endpoint, double-click **Start Hosted Lite.bat**. It guides URL/configuration entry, asks for new session keys with input hidden, and opens a local page with **Open Lite with hosted text**. Python 3 and Node 20+ are required; Isaac-PC's existing bundled Node is detected. No PowerShell entry is needed. The separate demo's **Start Hosting Setup.bat → Demo & Ember Lite → Launch Lite** flow also remains compatible; see the [handoff and launch instructions](hosting/HANDOFF.md). Real paid text/image service behavior remains unverified.
-
-The game has its own `EmberAdventuresLiteRuntimeV1` database. Export backups through the main menu Tools before clearing browser data.
+The public destination is [EmberAdventuresLite](https://perchance.org/emberadventureslite). Maintainable game code lives in `src/`; the bottom-pane files are generated artifacts. Perchance supplies its text/image plugins on the hosted page. A local page can exercise editors and isolated fixtures but does not supply those plugins.
 
 ## Included systems
 
-- AI conversations, authored stories, branching objectives, choices, timers, and story memory.
-- Player selection, parties, NPCs, relationships, character creation/editing, outfits, equipment, and inventory.
-- Local character/story libraries, settings, import/export, save/load, backups, and image management.
-- Shops, character recruitment/services, jobs, travel, maps, and world generation.
-- Auto mode, Continue, text-to-speech, image generation, image styles, portraits, and developer tools.
+- Stories, branching objectives, choices, rewards, clocks, timelines, memory, and world generation.
+- Character chat, party/NPC management, relationships, character inspection, editing, equipment, and inventory.
+- Shops, recruitment, services, jobs, maps, travel, save/load, backups, and image management.
+- Profiles, accounts, shared public character/story libraries, ratings, reports, and publishing history.
+- Auto turns, Continue, voices, images, portraits, styles, prompt tools, diagnostics, and always-available developer tools.
+- Perchance, local or Tailscale-connected Ollama, and hosted text/image providers. Settings save as they change.
 
-Public hosting is not configured. The application uses local libraries. External community links are not configured.
+Profiles contain ordinary storytelling, voice, image, and presentation preferences. Lite owns separate runtime/application databases and settings; normal-game saves and profiles are not migrated.
 
-## Included characters
+## Models and hosting
 
-The standalone roster contains **40 characters: 20 male and 20 female**, selected for practical clothing, ordinary proportions, and varied story hooks. See [the roster](docs/character-roster.md).
+For local models, see [the Ollama host guide](tools/ollama-host/README.md). Copy the host and player connector folders together. The host panel handles model-folder selection and Start/Stop status; model selection, refresh, reasoning, and tuning controls live in the game.
 
-## Authoring
+For RunPod or another cloud worker, use [direct HTTPS hosting](hosting/DIRECT_HTTPS_HANDOFF.md). An external launcher prepares the workers and opens Lite with a one-use endpoint ticket. No paid resources start automatically. The published-page connection to real workers still needs separate verification before paid use.
 
-See `docs/character-authoring.md` and `docs/story-authoring.md`. `docs/examples/` contains current-schema examples. All 54 JSON files in `stories/`, including its sandbox, simple, and source-story subfolders, use the current strict import schema. These stories are imported manually and are not automatically loaded into a new library.
+## Shared library and files
 
-## Tests
+Lite uses the same public-library project and publishing identity as EmberAdventures. Its queries request only the shared general-audience subset. Shared imports use an explicit format boundary; the game retains only its own canonical fields. Characters with an alternate required gender presentation use that authored fallback when needed, preserving IDs and numeric sliders.
 
-Run **Run Automated Tests.bat** or `npm test`. The local runner blocks external requests, uses fresh browser contexts, and records results in `test-output/local-tests.json`.
+Lite character, animal, and story definitions carry `lite: true`. Normal game definitions omit that marker. Marked Lite imports into EmberAdventures receive the approved format defaults. Existing numeric body values are preserved between games, even when their descriptive scales differ.
 
-Tests **48, 49, and 110** require actual Perchance plugins and are reported separately. Build the private test pane with **Build bottom_compressed_private_tests.bat**, then `node tools/build-live-acceptance.cjs` to create `test-output/perchance-acceptance.html`. Paste that artifact into an isolated Perchance test generator to run those three checks automatically. It makes real text and image requests and displays its results in the page.
+Valid general-audience stories retain their authored character ages when published. Canonical relationship safeguards for younger characters and the existing original-content/real-person publishing policies remain. Backend availability and actual publication require a live account/service connection.
 
-See `docs/review-decisions.md` for content boundaries and `docs/verification.md` for verification results.
+## Content and authoring
 
+The bundled standalone roster has 40 characters, 20 male and 20 female. There are 55 stories across the complete `stories/` tree. Story files are imported manually. Outfits use complete opaque coverage; romance, flirting, dating, ordinary body customization, and inner clothing slots remain supported.
 
-## Preferences
+Use [character authoring](docs/character-authoring.md), [story authoring](docs/story-authoring.md), and the two bundled Lite skills. Appearances use ten scales; the grouped body-description field is not part of this format. `docs/examples/` and the skill reference exports pass the canonical validators.
 
-All player preferences are saved directly through Settings; there is no user-profile selection or creation step. Character portraits remain separate image records. Global chest-size bounds have been removed; characters retain their own authored appearance values.
+## Verification
 
-Settings use `emberadventures-lite-settings-v2`. New installs use ordinary defaults. Older profile records are not read or imported; existing current-format settings remain unchanged.
+`npm test` runs current-source Node checks and canonical content validation without opening a browser or generating paid content. Browser runtime tests and smokes are separate, explicitly requested checks. Their current numbering is in [the smoke index](EMBERADVENTURES_SMOKE_INDEX.md).
 
-Run `npm run test:settings` for the standalone storage-contract tests without opening a browser.
+See [verification details](docs/verification.md) for the current build's actual evidence and remaining live checks.

@@ -93,7 +93,8 @@
     gap: 8px;
 }
 
-.runtime-test-summary, .runtime-test-empty {
+.runtime-test-summary,
+.runtime-test-empty {
     margin: 0;
     color: var(--muted, #aaa);
 }

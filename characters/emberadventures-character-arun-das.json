@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Bengali Indian human",
       "height": 11,
-      "body_description": "A slender build.",
       "skin_color": "Medium-brown skin with warm undertones.",
       "eye_color": "Dark brown.",
       "hair_color": "Black",
@@ -107,7 +106,16 @@
       "hair_type": "Thick straight-to-wavy hair with a neat part.",
       "extra_description": "",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 11
     },
     "outfits": [
       {
@@ -468,7 +476,8 @@
         "upload_attested_by": "",
         "upload_attested_at": "",
         "upload_attestation_policy_version": 0
-      }
+      },
+      "lite": true
     },
     "default_seed": 0,
     "image_prompt_config": {
@@ -521,6 +530,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T14:04:30.483777Z",
-    "updated_at": "2026-09-08T21:21:12Z"
+    "updated_at": "2026-09-08T21:21:12Z",
+    "lite": true
   }
 }

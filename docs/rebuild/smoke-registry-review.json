@@ -1,0 +1,1632 @@
+[
+  {
+    "number": 1,
+    "id": "tessa-objective-chain-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second with a synthetic fake objective-chain fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 2,
+    "id": "left-panel-group-tessa-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second with a synthetic fake objective-chain fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 3,
+    "id": "world-generation-progress-monotonic-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 4,
+    "id": "runtime-narrow-sanitize-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 5,
+    "id": "story-economy-shops-jobs-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 6,
+    "id": "image-profile-ui",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 7,
+    "id": "manage-images-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 8,
+    "id": "manage-characters-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 9,
+    "id": "profile-library-workflow-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 10,
+    "id": "profile-category-ui",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 11,
+    "id": "story-template-start-ui",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; verifies new-story chat starts at the top after the opening image request, plus canceled opening read then same-template restart auto-read",
+    "expectedMs": 8000
+  },
+  {
+    "number": 12,
+    "id": "story-player-select-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 13,
+    "id": "borderlands-player-select-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds with a synthetic fake player-select fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 14,
+    "id": "saved-games-restore-ui",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 15,
+    "id": "save-storage-isolation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 16,
+    "id": "worker-task-scheduling-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 17,
+    "id": "performance-rendering-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 18,
+    "id": "scene-image-action-scope-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 19,
+    "id": "save-scheduler-timing-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 7 seconds; waits through one real 5 second save and one real 0.5 second urgent save",
+    "expectedMs": 8000
+  },
+  {
+    "number": 20,
+    "id": "save-scheduler-actions-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 21,
+    "id": "save-session-lifecycle-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 22,
+    "id": "smoke-suite-runner-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 23,
+    "id": "state-conflict-guard",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 24,
+    "id": "toolbar-modals-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 5 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 25,
+    "id": "quick-actions-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 26,
+    "id": "scene-character-controls-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 27,
+    "id": "state-editor-autosave-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 28,
+    "id": "settings-persistence-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 5 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 29,
+    "id": "image-viewer-lab-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; verifies normal Image Lab output stays normal and profile-source Image Lab output is stored as a profile image",
+    "expectedMs": 8000
+  },
+  {
+    "number": 30,
+    "id": "story-surfaces-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 31,
+    "id": "story-library-ui-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 32,
+    "id": "character-library-cast-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 8 seconds; includes authored character Chat defaults, inspection, override, and save reload",
+    "expectedMs": 8000
+  },
+  {
+    "number": 33,
+    "id": "character-library-public-search-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 34,
+    "id": "character-library-local-pagination-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 35,
+    "id": "character-library-tab-switch-deferred-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 36,
+    "id": "ai-character-generation-contract-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 37,
+    "id": "manual-character-editor-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 38,
+    "id": "prompt-editor-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 39,
+    "id": "release-polish-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 40,
+    "id": "prompt-guidance-devtools-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 41,
+    "id": "turn-source-parity-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 42,
+    "id": "continue-objective-control-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 43,
+    "id": "objective-completion-timing-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 44,
+    "id": "no-agency-retry-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 45,
+    "id": "ai-priority-state-sync-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 46,
+    "id": "ai-timing-log-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 47,
+    "id": "ollama-provider-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 48,
+    "id": "exact-objective-ai-timing-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 3 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 49,
+    "id": "real-perchance-streaming-regenerate-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "about 15-60 seconds",
+    "expectedMs": 45000
+  },
+  {
+    "number": 50,
+    "id": "find-character-turn-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 51,
+    "id": "ai-command-direct-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 52,
+    "id": "inspect-npc-direct-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 53,
+    "id": "npc-inspect-invite-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "up to 6 minutes",
+    "expectedMs": 8000
+  },
+  {
+    "number": 54,
+    "id": "template-migration-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 55,
+    "id": "immutable-definition-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 56,
+    "id": "large-objective-runtime-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds with a synthetic 7,000-objective fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 57,
+    "id": "story-template-import-export-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 58,
+    "id": "canonical-story-state-preservation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 59,
+    "id": "objective-rewards-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 60,
+    "id": "story-timeline-pacing-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 61,
+    "id": "ai-outcome-routing-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 62,
+    "id": "future-cast-unlock-discipline-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 63,
+    "id": "speaker-npc-repair-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 64,
+    "id": "message-actions-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 4 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 65,
+    "id": "runtime-display-reference-map-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 66,
+    "id": "voice-segment-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; includes Start Playing opening-message auto-read and canceled opening id reuse",
+    "expectedMs": 8000
+  },
+  {
+    "number": 67,
+    "id": "voice-gating-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 68,
+    "id": "voice-browser-compatibility-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 69,
+    "id": "voice-resolution-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; validates cached installed voices and stable cross-platform character voice repair",
+    "expectedMs": 8000
+  },
+  {
+    "number": 70,
+    "id": "age-diversity-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 71,
+    "id": "export-storage-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 72,
+    "id": "character-editor-autosave-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 73,
+    "id": "future-character-prompt-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 74,
+    "id": "render-focus-preservation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 75,
+    "id": "targeted-refresh-redraw-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 76,
+    "id": "character-import-export-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 77,
+    "id": "character-metadata-repair-import-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 78,
+    "id": "character-profile-import-edge-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds; includes profile and normal image deletion persistence across character delete/re-import",
+    "expectedMs": 8000
+  },
+  {
+    "number": 79,
+    "id": "character-card-action-refresh-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 80,
+    "id": "image-profile-isolation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 81,
+    "id": "profile-image-trigger-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 82,
+    "id": "profile-image-presentation-pointer-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 83,
+    "id": "story-player-select-gender-profile-image-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 84,
+    "id": "preferred-gender-scene-presence-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 85,
+    "id": "profile-image-rules-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 86,
+    "id": "profile-image-prompt-style-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 87,
+    "id": "profile-image-refresh-preserve-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 88,
+    "id": "character-card-export-layout-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 89,
+    "id": "logging-settings-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 4 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 90,
+    "id": "npc-full-preservation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 91,
+    "id": "image-target-validation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 92,
+    "id": "gender-adapted-scene-save-projection-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 93,
+    "id": "harem-objective-graph-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 6 seconds with a synthetic fake objective fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 94,
+    "id": "harem-objective-schema-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second with a synthetic fake objective fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 95,
+    "id": "story-files-schema-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second with synthetic fake story fixtures",
+    "expectedMs": 8000
+  },
+  {
+    "number": 96,
+    "id": "venis-model-branch-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 97,
+    "id": "harem-objective-flow-report",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 12 seconds with a synthetic fake objective fixture",
+    "expectedMs": 8000
+  },
+  {
+    "number": 98,
+    "id": "map-travel-objective-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 99,
+    "id": "location-hydration-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 100,
+    "id": "objective-picker-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 101,
+    "id": "turn-scene-image-collector-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 102,
+    "id": "clothing-image-target-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 103,
+    "id": "outfit-swap-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 104,
+    "id": "story-builder-edit-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 105,
+    "id": "library-metadata-validation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 106,
+    "id": "creator-identity-ownership-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 107,
+    "id": "json-editor-access-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 108,
+    "id": "story-builder-metadata-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 109,
+    "id": "real-perchance-image-generation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "about 2m 0s per image request; waits for finished real Perchance scene/profile images",
+    "expectedMs": 45000
+  },
+  {
+    "number": 110,
+    "id": "real-profile-start-player-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic started-player profile generation through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 111,
+    "id": "real-profile-start-character-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic started-party-character profile generation through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 112,
+    "id": "real-profile-start-npc-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic started-NPC profile generation through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 113,
+    "id": "real-profile-manual-refresh-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic manual profile refresh through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 114,
+    "id": "real-profile-scene-entry-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic scene-entry profile generation through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 115,
+    "id": "real-profile-objective-reward-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic objective-reward profile generation through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 116,
+    "id": "real-profile-editor-refresh-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic editor-close profile refresh through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 117,
+    "id": "real-profile-import-small-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "imports a complete character profile presentation without starting generation",
+    "expectedMs": 45000
+  },
+  {
+    "number": 118,
+    "id": "real-maid-sama-start-images-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic opening normal and player-profile generation through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 119,
+    "id": "real-borderlands-player-select-images-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "deterministic player-select profile queue coverage through the production completion path",
+    "expectedMs": 45000
+  },
+  {
+    "number": 120,
+    "id": "simple-popup-key-close-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 121,
+    "id": "reserved-creator-name-client-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 122,
+    "id": "supabase-client-config-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds; read-only live Supabase config and schema check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 123,
+    "id": "supabase-auth-session-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; read-only live Supabase signed-in session check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 124,
+    "id": "supabase-public-browse-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; read-only live Supabase public story/character browse check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 125,
+    "id": "supabase-auth-ui-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; mocked Supabase auth UI and request wiring check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 126,
+    "id": "supabase-public-download-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 3 seconds; mocked public payload download/import check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 127,
+    "id": "supabase-public-update-version-mock-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; mocked Supabase owned item update/versioning check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 128,
+    "id": "supabase-public-import-failure-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; mocked public download failure handling check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 129,
+    "id": "supabase-public-empty-browse-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; mocked empty public browse UI check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 130,
+    "id": "supabase-public-search-paging-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 3 seconds; mocked explicit search, pagination, and request logging check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 131,
+    "id": "supabase-public-version-history-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; mocked lazy single-item version history check",
+    "expectedMs": 8000
+  },
+  {
+    "number": 132,
+    "id": "supabase-public-filter-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 3 seconds; mocked explicit public-library filters without fetch while editing",
+    "expectedMs": 8000
+  },
+  {
+    "number": 133,
+    "id": "supabase-public-version-download-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; mocked selected old-version download/import path",
+    "expectedMs": 8000
+  },
+  {
+    "number": 134,
+    "id": "perchance-test-upload-delete-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "about 30 seconds; live Perchance tiny text upload, delete, and deletion verification",
+    "expectedMs": 45000
+  },
+  {
+    "number": 135,
+    "id": "supabase-live-reserved-creator-name-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Medium",
+    "tierClass": "medium",
+    "expectedText": "about 15-60 seconds",
+    "expectedMs": 45000
+  },
+  {
+    "number": 136,
+    "id": "supabase-live-story-publish-cleanup-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 3 seconds; live authenticated story publish, anonymous read, Supabase cleanup, and Perchance cleanup",
+    "expectedMs": 8000
+  },
+  {
+    "number": 137,
+    "id": "supabase-live-character-publish-cleanup-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 4 seconds; live authenticated character publish, anonymous read, Supabase cleanup, and Perchance cleanup",
+    "expectedMs": 8000
+  },
+  {
+    "number": 138,
+    "id": "supabase-live-update-version-cleanup-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 6 seconds; live authenticated two-version update, lazy version read, Supabase cleanup, and Perchance cleanup",
+    "expectedMs": 8000
+  },
+  {
+    "number": 139,
+    "id": "supabase-live-feedback-cleanup-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 4 seconds; live authenticated rating/report/tag feedback, anonymous feedback read, and cleanup",
+    "expectedMs": 8000
+  },
+  {
+    "number": 140,
+    "id": "supabase-live-download-import-cleanup-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 5 seconds; live public browse result downloads a temporary Perchance payload, imports it, and cleans up",
+    "expectedMs": 8000
+  },
+  {
+    "number": 141,
+    "id": "supabase-live-visibility-cleanup-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 4 seconds; live hide/unpublish behavior with anonymous and owner read checks",
+    "expectedMs": 8000
+  },
+  {
+    "number": 142,
+    "id": "public-library-ui-feedback-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 2 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 143,
+    "id": "public-library-publish-mock-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 144,
+    "id": "public-library-beta-contract-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "less than 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 145,
+    "id": "developer-issue-submit-contract-smoke",
+    "runAll": true,
+    "group": "public-hosting",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 146,
+    "id": "character-stats-integer-validation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "less than 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 147,
+    "id": "reference-integer-reward-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "less than 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 148,
+    "id": "character-gender-adaptation-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 149,
+    "id": "reverse-delta-snapshot-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 150,
+    "id": "ai-reply-transaction-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 151,
+    "id": "chat-image-scroll-stability-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 152,
+    "id": "runtime-patch-persistence-matrix-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 153,
+    "id": "player-select-scroll-image-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 154,
+    "id": "ui-action-loading-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 155,
+    "id": "guided-objective-editor-matrix-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 156,
+    "id": "objective-output-runtime-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 157,
+    "id": "reusable-reward-builder-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 158,
+    "id": "batch-character-image-tool-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1-15 seconds",
+    "expectedMs": 8000
+  },
+  {
+    "number": 159,
+    "id": "image-timeout-retry-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second; uses short synthetic timeouts and no live image calls",
+    "expectedMs": 8000
+  },
+  {
+    "number": 160,
+    "id": "objective-requirement-routing-smoke",
+    "runAll": true,
+    "group": "",
+    "tier": "Short",
+    "tierClass": "short",
+    "expectedText": "about 1 second",
+    "expectedMs": 8000
+  },
+  {
+    "number": 161,
+    "id": "extensive-supabase-publish-failures-smoke",
+    "runAll": false,
+    "group": "extensive-supabase",
+    "tier": "Extensive",
+    "tierClass": "long",
+    "expectedText": "about 1-3 minutes; publish failure boundaries and cleanup",
+    "expectedMs": 180000
+  },
+  {
+    "number": 162,
+    "id": "extensive-supabase-revision-lifecycle-smoke",
+    "runAll": false,
+    "group": "extensive-supabase",
+    "tier": "Extensive",
+    "tierClass": "long",
+    "expectedText": "about 2-5 minutes; revisions, visibility, imports, caches, and cleanup",
+    "expectedMs": 180000
+  },
+  {
+    "number": 163,
+    "id": "extensive-supabase-concurrent-publishing-smoke",
+    "runAll": false,
+    "group": "extensive-supabase",
+    "tier": "Extensive",
+    "tierClass": "long",
+    "expectedText": "about 1-3 minutes; concurrent revisions and cleanup",
+    "expectedMs": 180000
+  }
+]

@@ -47,7 +47,6 @@
     "appearance": {
       "species": "deep-hall dwarf",
       "height": 7,
-      "body_description": "Compact, stocky, and exceptionally sturdy.",
       "skin_color": "deep copper-brown skin",
       "eye_color": "steel gray",
       "hair_color": "black with iron-gray strands",
@@ -55,7 +54,16 @@
       "hair_type": "thick and tightly braided",
       "extra_description": "A compact, exceptionally sturdy adult with a square jaw, a carefully braided beard, and a heavy iron measuring chain worn like a sash.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 14,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 7,
+      "hip_width": 12,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 9,
+      "leg_length": 9
     },
     "outfits": [
       {
@@ -141,6 +149,7 @@
     },
     "voice": null,
     "created_at": "2026-08-31T00:00:00.000Z",
-    "updated_at": "2026-09-03T06:16:19.219Z"
+    "updated_at": "2026-09-03T06:16:19.219Z",
+    "lite": true
   }
 }

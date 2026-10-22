@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EmberAdventures Persistence Diagnostic</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div>
+            <h1>Persistence Diagnostic</h1>
+            <p>Normalized IndexedDB worker skeleton</p>
+        </div>
+        <div class="worker-state" id="worker-state" data-state="loading">
+            <span class="spinner" aria-hidden="true"></span>
+            <span id="worker-state-text">Starting</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="summary-band" aria-label="Persistence status">
+            <div>
+                <span class="label">Stores</span>
+                <strong id="store-count">-</strong>
+            </div>
+            <div>
+                <span class="label">Worker</span>
+                <strong id="worker-generation">-</strong>
+            </div>
+            <div>
+                <span class="label">Save</span>
+                <strong id="active-save">None</strong>
+            </div>
+            <div>
+                <span class="label">Session</span>
+                <strong id="active-session">-</strong>
+            </div>
+            <div>
+                <span class="label">Committed</span>
+                <strong id="committed-change">-</strong>
+            </div>
+            <div>
+                <span class="label">Phase</span>
+                <strong id="worker-phase">idle</strong>
+            </div>
+        </section>
+
+        <section class="toolbar" aria-label="Diagnostic commands">
+            <button class="primary" id="run-all-button" type="button">
+                <span class="button-spinner" aria-hidden="true"></span>
+                <span>Run all tests</span>
+            </button>
+            <button id="reset-button" type="button">Reset database</button>
+            <button id="inspect-button" type="button">Inspect schema</button>
+            <button id="restart-button" type="button">Replace worker</button>
+        </section>
+
+        <div class="content-grid">
+            <section class="test-section" aria-labelledby="tests-title">
+                <div class="section-heading">
+                    <div>
+                        <h2 id="tests-title">Persistence tests</h2>
+                        <p id="test-summary">Not run</p>
+                    </div>
+                    <progress id="test-progress" value="0" max="15"></progress>
+                </div>
+                <div class="test-list" id="test-list"></div>
+            </section>
+
+            <aside class="log-section" aria-labelledby="log-title">
+                <div class="section-heading">
+                    <div>
+                        <h2 id="log-title">Event log</h2>
+                        <p>Worker and transaction boundaries</p>
+                    </div>
+                    <button class="icon-button" id="clear-log-button" type="button" title="Clear log" aria-label="Clear log">×</button>
+                </div>
+                <pre id="event-log" aria-live="polite"></pre>
+            </aside>
+        </div>
+    </main>
+
+    <script src="./schema-contract.js"></script>
+    <script src="./persistence-controller.js"></script>
+    <script src="./diagnostic-tests.js"></script>
+    <script src="./diagnostic-app.js"></script>
+</body>
+</html>

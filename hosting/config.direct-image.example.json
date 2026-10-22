@@ -1,0 +1,11 @@
+{
+  "text": {"kind": "disabled"},
+  "image": {
+    "kind": "sglang-images",
+    "baseUrl": "http://127.0.0.1:8000/v1",
+    "authorizationEnv": "EMBER_IMAGE_AUTHORIZATION",
+    "model": "krea/Krea-2-Turbo",
+    "steps": 8,
+    "guidanceScale": 1.0
+  }
+}

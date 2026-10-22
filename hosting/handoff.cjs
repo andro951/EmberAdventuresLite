@@ -13,7 +13,7 @@ function validateHandoff(value){
 function applyHandoff(config,handoff){
   validateConfig(config);validateHandoff(handoff);
   const url=new URL(handoff.url);url.pathname=url.pathname.slice(0,-"/chat/completions".length);
-  const sampling=config.text.kind==="disabled"?{maxTokens:800,temperature:0.7,topP:0.8,topK:20,enableThinking:null}:Object.fromEntries(["maxTokens","temperature","topP","topK","enableThinking"].map(key=>[key,config.text[key]]));
+  const sampling=config.text.kind==="disabled"?{maxTokens:16384,temperature:0.7,topP:0.8,topK:20,enableThinking:false}:Object.fromEntries(["maxTokens","temperature","topP","topK","enableThinking"].map(key=>[key,config.text[key]]));
   const text={kind:"openai-chat",baseUrl:url.href.replace(/\/$/,""),authorizationEnv:"EMBER_LAUNCH_AUTHORIZATION",model:handoff.model,...sampling};
   if(handoff.provider==="runpod_lb")text.inferenceKeyEnv="EMBER_LAUNCH_GATEWAY_KEY";
   return validateConfig({text,image:config.image});

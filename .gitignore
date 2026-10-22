@@ -12,3 +12,9 @@ hosting/*.local.json
 hosting/__pycache__/
 hosting/**/*.local.json
 hosting/**/__pycache__/
+
+tools/ollama-host/host-config.json
+tools/ollama-host/*.cer
+tools/ollama-host/host.*.log
+tools/ollama-host/sessions/
+tools/ollama-host/node-runtime-path.txt

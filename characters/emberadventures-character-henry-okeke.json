@@ -98,7 +98,6 @@
     "appearance": {
       "species": "Nigerian-American human",
       "height": 11,
-      "body_description": "An athletic build.",
       "skin_color": "Deep brown skin with warm undertones.",
       "eye_color": "Dark brown.",
       "hair_color": "Black",
@@ -106,9 +105,18 @@
       "hair_type": "Neat styled waves.",
       "extra_description": "Long hands.",
       "male_only_extra_description": "Clean mustache.",
-      "non_male_only_extra_description": null,
+      "non_male_only_extra_description": "",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 15,
+      "arm_length": 11,
+      "leg_length": 11
     },
     "outfits": [
       {
@@ -222,6 +230,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T14:04:30.483777Z",
-    "updated_at": "2026-09-08T18:55:43Z"
+    "updated_at": "2026-09-08T18:55:43Z",
+    "lite": true
   }
 }

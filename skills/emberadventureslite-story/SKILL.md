@@ -5,7 +5,7 @@ description: Create, review, and repair EmberAdventuresLite story-template JSON,
 
 # EmberAdventuresLite Story
 
-Version: 1.0.2. Contract checked against Lite revision `907ba9c`.
+Version: 2.0.0. Contract checked against the current Lite source on October 22, 2026.
 
 This skill adapts the original story skill's opening, player-agency, pacing,
 objective-handoff, hidden-information, and final-release workflow to Lite's
@@ -82,8 +82,11 @@ flirting, and dating are welcome. Apply the Lite character skill's complete opaq
 clothing rule to every outfit, fallback presentation, starting pose, image
 instruction, and clothing-changing reward.
 
-All character appearances use height plus `body_description`, never separate
-body-part scales. The scene contains only the fields in the Lite contract.
+All humanoid character appearances use the ten scales in the Lite character
+contract. Preserve numeric values when sharing files; the other game may describe
+the same value differently. Include `lite: true` on the story template and each
+embedded character or animal definition. The scene contains only the fields in
+the Lite contract.
 Who is present, who is visible in images, and who can speak must agree with the
 opening. NPC directory locations and world-map IDs must resolve, even for cast
 members who are elsewhere. Uninspected NPC shells are not full character records.

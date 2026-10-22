@@ -4,7 +4,7 @@
     "baseUrl": "https://api.runpod.ai/v2/YOUR_TEXT_ENDPOINT_ID",
     "authorizationEnv": "RUNPOD_AUTHORIZATION",
     "model": "ember-qwen-27b",
-    "maxTokens": 800,
+    "maxTokens": 16384,
     "temperature": 0.7,
     "pollIntervalMs": 1500,
     "topP": 0.8,

@@ -1,8 +1,12 @@
+# Optional local developer bridge
+
+The current direct HTTPS path is documented in [DIRECT_HTTPS_HANDOFF.md](DIRECT_HTTPS_HANDOFF.md). The following retained launcher requires local-network browser permission. It is a separate integration for developer use.
+
 # Local endpoint handoff and session launch
 
 ## Preferred user flows
 
-For a direct, already prepared endpoint, double-click **Start Hosted Lite.bat**. Paste/drop a non-secret handoff path, or press Enter for guided provider/URL/model entry. A handoff file can also be dragged onto the batch file. Python 3 and Node 20+ are required; Isaac-PC's bundled Node is detected. Enter fresh keys at hidden prompts, then click **Open Lite with hosted text** on the local landing page.
+For an explicitly selected local developer bridge, double-click **Start Hosted Lite.bat**. Paste/drop a non-secret handoff path, or press Enter for guided provider/URL/model entry. A handoff file can also be dragged onto the batch file. Python 3 and Node 20+ are required; bundled Node is detected. Enter fresh keys at hidden prompts. The launcher opens the published Lite page with the bridge address for that session.
 
 For the separate demo's relay, use its **Start Hosting Setup.bat → Demo & Ember Lite → Launch Lite** button. It supplies its newly generated local relay key in memory to the existing Lite `hosting/server.cjs` CLI. In the game, select hosted text in Settings → Generation hosting, use `http://127.0.0.1:51840`, and save. The demo's launched configuration disables images. Do not run both launchers on port 51840 simultaneously.
 

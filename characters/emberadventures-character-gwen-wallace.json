@@ -99,7 +99,6 @@
     "appearance": {
       "species": "White American human",
       "height": 10,
-      "body_description": "An athletic build.",
       "skin_color": "Fair skin with freckles and sun spots.",
       "eye_color": "Blue-gray.",
       "hair_color": "Silver-white with a few darker strands at the nape.",
@@ -107,7 +106,16 @@
       "hair_type": "Textured pixie cut with a slightly longer top.",
       "extra_description": "Strong veined hands, an old thin saw nick at the left thumb, faint tan lines, pronounced crow's-feet and forehead lines, and a softened mature jawline. Small old work scars mark the hands and forearms.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 12,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -254,6 +262,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T13:51:31.483262Z",
-    "updated_at": "2026-09-08T20:36:56Z"
+    "updated_at": "2026-09-08T20:36:56Z",
+    "lite": true
   }
 }

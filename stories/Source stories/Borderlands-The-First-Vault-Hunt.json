@@ -662,7 +662,6 @@
         "appearance": {
           "species": "Black human",
           "height": 6,
-          "body_description": "A strong, athletic build.",
           "skin_color": "brown",
           "eye_color": "dark brown",
           "hair_color": "black",
@@ -670,7 +669,16 @@
           "hair_type": "closely cropped",
           "extra_description": "Source-faithful cel-shaded Borderlands character design; military bearing and tactical combat kit",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 12,
+          "chest": 14,
+          "upper_body_build": 14,
+          "midsection_build": 13,
+          "hip_width": 10,
+          "butt_build": 12,
+          "lower_body_build": 14,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -809,7 +817,8 @@
           "image_ids": []
         },
         "created_at": "2026-06-27T00:00:00.000Z",
-        "updated_at": "2026-06-27T14:26:42.555Z"
+        "updated_at": "2026-06-27T14:26:42.555Z",
+        "lite": true
       },
       "players": [
         {
@@ -834,7 +843,6 @@
           "appearance": {
             "species": "Black human",
             "height": 6,
-            "body_description": "A strong, athletic build.",
             "skin_color": "brown",
             "eye_color": "dark brown",
             "hair_color": "black",
@@ -842,7 +850,16 @@
             "hair_type": "closely cropped",
             "extra_description": "Source-faithful cel-shaded Borderlands character design; military bearing and tactical combat kit",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 12,
+            "chest": 14,
+            "upper_body_build": 14,
+            "midsection_build": 13,
+            "hip_width": 10,
+            "butt_build": 12,
+            "lower_body_build": 14,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -981,7 +998,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-27T00:00:00.000Z",
-          "updated_at": "2026-06-27T14:26:42.555Z"
+          "updated_at": "2026-06-27T14:26:42.555Z",
+          "lite": true
         },
         {
           "name": "Lilith",
@@ -1005,7 +1023,6 @@
           "appearance": {
             "species": "white human Siren",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "fair",
             "eye_color": "blue",
             "hair_color": "red",
@@ -1013,7 +1030,16 @@
             "hair_type": "choppy bob",
             "extra_description": "Source-faithful cel-shaded Borderlands character design; blue Siren tattoos across her left side and arm",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 13,
+            "upper_body_build": 8,
+            "midsection_build": 8,
+            "hip_width": 11,
+            "butt_build": 8,
+            "lower_body_build": 9,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1152,7 +1178,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-27T00:00:00.000Z",
-          "updated_at": "2026-06-27T14:26:42.555Z"
+          "updated_at": "2026-06-27T14:26:42.555Z",
+          "lite": true
         },
         {
           "name": "Mordecai",
@@ -1176,7 +1203,6 @@
           "appearance": {
             "species": "Latino human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "tan",
             "eye_color": "brown",
             "hair_color": "dark",
@@ -1184,7 +1210,16 @@
             "hair_type": "messy under headwrap",
             "extra_description": "Source-faithful cel-shaded Borderlands character design; thin mustache, hunter goggles, bird-handler gear",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1324,7 +1359,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-27T00:00:00.000Z",
-          "updated_at": "2026-06-27T14:26:42.555Z"
+          "updated_at": "2026-06-27T14:26:42.555Z",
+          "lite": true
         },
         {
           "name": "Brick",
@@ -1348,7 +1384,6 @@
           "appearance": {
             "species": "white human",
             "height": 8,
-            "body_description": "A powerful, muscular build.",
             "skin_color": "light",
             "eye_color": "dark",
             "hair_color": "brown",
@@ -1356,7 +1391,16 @@
             "hair_type": "shaved or very short",
             "extra_description": "Source-faithful cel-shaded Borderlands character design; massive bruiser frame, heavy fists, brawler tattoos",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 16,
+            "chest": 17,
+            "upper_body_build": 18,
+            "midsection_build": 17,
+            "hip_width": 12,
+            "butt_build": 15,
+            "lower_body_build": 17,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1495,7 +1539,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-27T00:00:00.000Z",
-          "updated_at": "2026-06-27T14:26:42.555Z"
+          "updated_at": "2026-06-27T14:26:42.555Z",
+          "lite": true
         }
       ],
       "characters": {},
@@ -1537,7 +1582,6 @@
                   "appearance": {
                     "species": "yellow Claptrap robot",
                     "height": 2,
-                    "body_description": "A slender build.",
                     "skin_color": "yellow metal",
                     "eye_color": "blue optic",
                     "hair_color": "",
@@ -1545,7 +1589,16 @@
                     "hair_type": "",
                     "extra_description": "Source-faithful cel-shaded Borderlands character design; single wheel, boxy yellow chassis, one blue optic, small manipulator arms",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": "Narrow mechanical frame",
+                    "chest": "Compact metal torso",
+                    "upper_body_build": "Light metal chassis",
+                    "midsection_build": "Single-wheeled chassis",
+                    "hip_width": "Narrow chassis",
+                    "butt_build": "Mechanical lower housing",
+                    "lower_body_build": "Single driven wheel",
+                    "arm_length": "Short articulated arms",
+                    "leg_length": "No legs; one wheel"
                   },
                   "outfits": [
                     {
@@ -1680,7 +1733,8 @@
                     "image_ids": []
                   },
                   "created_at": "2026-06-27T00:00:00.000Z",
-                  "updated_at": "2026-06-27T14:26:42.555Z"
+                  "updated_at": "2026-06-27T14:26:42.555Z",
+                  "lite": true
                 },
                 "id": "cl4p-tp",
                 "can_die": false
@@ -8622,7 +8676,6 @@
               "appearance": {
                 "species": "white human Siren projection",
                 "height": 5,
-                "body_description": "A slender build.",
                 "skin_color": "pale blue holographic glow",
                 "eye_color": "blue",
                 "hair_color": "blonde",
@@ -8630,7 +8683,16 @@
                 "hair_type": "straight",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; blue-tinted ECHO projection with Siren presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 9,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 9,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -8765,7 +8827,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "the first ECHO guidance after the opening gate fight",
             "join_condition": "",
@@ -8810,7 +8873,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "weathered light",
                 "eye_color": "",
                 "hair_color": "brown",
@@ -8818,7 +8880,16 @@
                 "hair_type": "messy",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; mustache, medical mask, stained doctor gear",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -8953,7 +9024,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "The Doctor Is In",
             "join_condition": "",
@@ -8998,7 +9070,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "sun-weathered",
                 "eye_color": "covered",
                 "hair_color": "gray",
@@ -9006,7 +9077,16 @@
                 "hair_type": "scruffy",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; blind eyes covered by goggles or wrap, rough farm survival gear",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -9141,7 +9221,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Nine-Toes: Meet T.K. Baha",
             "join_condition": "",
@@ -9186,7 +9267,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 6,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "pale tattooed",
                 "eye_color": "",
                 "hair_color": "dark",
@@ -9194,7 +9274,16 @@
                 "hair_type": "rough",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; bandit mask, missing toe joke, skag companions Pinky and Digit",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 12,
+                "chest": 14,
+                "upper_body_build": 14,
+                "midsection_build": 13,
+                "hip_width": 10,
+                "butt_build": 12,
+                "lower_body_build": 14,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -9329,7 +9418,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Nine-Toes: Take Him Down",
             "join_condition": "",
@@ -9374,7 +9464,6 @@
               "appearance": {
                 "species": "Middle Eastern human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "tan",
                 "eye_color": "dark",
                 "hair_color": "black",
@@ -9382,7 +9471,16 @@
                 "hair_type": "receding",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; thick mustache, heavy merchant build",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 12,
+                "chest": 6,
+                "upper_body_build": 6,
+                "midsection_build": 5,
+                "hip_width": 12,
+                "butt_build": 6,
+                "lower_body_build": 7,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -9517,7 +9615,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Got Grenades?",
             "join_condition": "",
@@ -9562,7 +9661,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 6,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "scarred pale",
                 "eye_color": "",
                 "hair_color": "",
@@ -9570,7 +9668,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; bone-themed bandit gear and heavy weapon posture",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 12,
+                "chest": 14,
+                "upper_body_build": 14,
+                "midsection_build": 13,
+                "hip_width": 10,
+                "butt_build": 12,
+                "lower_body_build": 14,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -9704,7 +9811,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Bone Head's Theft",
             "join_condition": "",
@@ -9749,7 +9857,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "light",
                 "eye_color": "",
                 "hair_color": "brown",
@@ -9757,7 +9864,16 @@
                 "hair_type": "messy under cap",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; baseball cap, grease stains, mechanic grin",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -9892,7 +10008,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Catch-A-Ride",
             "join_condition": "",
@@ -9937,7 +10054,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "sun-baked",
                 "eye_color": "",
                 "hair_color": "brown",
@@ -9945,7 +10061,16 @@
                 "hair_type": "rough",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; frontier scavenger look",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -10079,7 +10204,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Sledge: Meet Shep",
             "join_condition": "",
@@ -10124,7 +10250,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 8,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "scarred pale",
                 "eye_color": "",
                 "hair_color": "",
@@ -10132,7 +10257,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; huge armored bandit frame, mask, giant hammer-like presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 16,
+                "chest": 17,
+                "upper_body_build": 18,
+                "midsection_build": 17,
+                "hip_width": 12,
+                "butt_build": 15,
+                "lower_body_build": 17,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -10267,7 +10401,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Sledge: Battle For The Badlands",
             "join_condition": "",
@@ -10312,7 +10447,6 @@
               "appearance": {
                 "species": "alpha skag",
                 "height": 4,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "rough skag hide",
                 "eye_color": "",
                 "hair_color": "",
@@ -10320,7 +10454,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; large skag mouth, plated hide, alpha predator build",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": "Broad creature shoulders",
+                "chest": "Broad armored creature torso",
+                "upper_body_build": "Heavy armored upper body",
+                "midsection_build": "Stout creature body",
+                "hip_width": "Broad quadruped body",
+                "butt_build": "Armored hindquarters",
+                "lower_body_build": "Powerful four-legged stance",
+                "arm_length": "Thick forelimbs",
+                "leg_length": "Short powerful hind legs"
               },
               "outfits": [
                 {
@@ -10454,7 +10597,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "The Legend Of Moe and Marley",
             "join_condition": "",
@@ -10499,7 +10643,6 @@
               "appearance": {
                 "species": "alpha skag",
                 "height": 4,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "rough skag hide",
                 "eye_color": "",
                 "hair_color": "",
@@ -10507,7 +10650,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; large skag mouth, plated hide, alpha predator build",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": "Broad creature shoulders",
+                "chest": "Broad armored creature torso",
+                "upper_body_build": "Heavy armored upper body",
+                "midsection_build": "Stout creature body",
+                "hip_width": "Broad quadruped body",
+                "butt_build": "Armored hindquarters",
+                "lower_body_build": "Powerful four-legged stance",
+                "arm_length": "Thick forelimbs",
+                "leg_length": "Short powerful hind legs"
               },
               "outfits": [
                 {
@@ -10641,7 +10793,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "The Legend Of Moe and Marley",
             "join_condition": "",
@@ -10686,7 +10839,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 7,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "scarred pale",
                 "eye_color": "",
                 "hair_color": "",
@@ -10694,7 +10846,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; huge psycho body, mask, pumped-up arena presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 16,
+                "chest": 17,
+                "upper_body_build": 18,
+                "midsection_build": 17,
+                "hip_width": 12,
+                "butt_build": 15,
+                "lower_body_build": 17,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -10828,7 +10989,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Circle Of Death: Final Round",
             "join_condition": "",
@@ -10873,7 +11035,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "light",
                 "eye_color": "",
                 "hair_color": "brown",
@@ -10881,7 +11042,16 @@
                 "hair_type": "messy",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; mechanic gear and Dahl Headlands dust",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -11016,7 +11186,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Getting Lucky",
             "join_condition": "",
@@ -11061,7 +11232,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 6,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "weathered",
                 "eye_color": "",
                 "hair_color": "",
@@ -11069,7 +11239,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; vehicle-gang bandit styling and road-warrior posture",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 12,
+                "chest": 14,
+                "upper_body_build": 14,
+                "midsection_build": 13,
+                "hip_width": 10,
+                "butt_build": 12,
+                "lower_body_build": 14,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -11203,7 +11382,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Road Warriors: Bandit Apocalypse",
             "join_condition": "",
@@ -11248,7 +11428,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "light",
                 "eye_color": "blue",
                 "hair_color": "gray-blonde",
@@ -11256,7 +11435,16 @@
                 "hair_type": "practical",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; mature frontier authority and New Haven command presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 13,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 11,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -11391,7 +11579,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Power To The People",
             "join_condition": "",
@@ -11436,7 +11625,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "A slender build.",
                 "skin_color": "pale",
                 "eye_color": "brown",
                 "hair_color": "brown",
@@ -11444,7 +11632,16 @@
                 "hair_type": "messy",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; tired eyes, scientific gear, isolated researcher look",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 9,
+                "chest": 12,
+                "upper_body_build": 9,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 9,
+                "lower_body_build": 10,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -11579,7 +11776,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Seek Out Tannis",
             "join_condition": "",
@@ -11624,7 +11822,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "weathered",
                 "eye_color": "",
                 "hair_color": "gray",
@@ -11632,7 +11829,16 @@
                 "hair_type": "scraggly",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; scrapyard hermit presence, hidden behind barricades",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -11767,7 +11973,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Meet 'Crazy' Earl",
             "join_condition": "",
@@ -11812,7 +12019,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 6,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "scarred",
                 "eye_color": "",
                 "hair_color": "",
@@ -11820,7 +12026,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; bandit commander armor, canyon turret position",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 12,
+                "chest": 14,
+                "upper_body_build": 14,
+                "midsection_build": 13,
+                "hip_width": 10,
+                "butt_build": 12,
+                "lower_body_build": 14,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -11954,7 +12169,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "The Next Piece",
             "join_condition": "",
@@ -11999,7 +12215,6 @@
               "appearance": {
                 "species": "yellow Claptrap robot",
                 "height": 2,
-                "body_description": "A slender build.",
                 "skin_color": "yellow metal",
                 "eye_color": "blue optic",
                 "hair_color": "",
@@ -12007,7 +12222,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; single wheel, boxy yellow chassis, company-town wear and dust",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": "Narrow mechanical frame",
+                "chest": "Compact metal torso",
+                "upper_body_build": "Light metal chassis",
+                "midsection_build": "Single-wheeled chassis",
+                "hip_width": "Narrow chassis",
+                "butt_build": "Mechanical lower housing",
+                "lower_body_build": "Single driven wheel",
+                "arm_length": "Short articulated arms",
+                "leg_length": "No legs; one wheel"
               },
               "outfits": [
                 {
@@ -12141,7 +12365,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Jaynistown: Secret Rendezvous",
             "join_condition": "",
@@ -12186,7 +12411,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "light",
                 "eye_color": "",
                 "hair_color": "brown",
@@ -12194,7 +12418,16 @@
                 "hair_type": "rough",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; company-town boss styling",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 12,
+                "midsection_build": 11,
+                "hip_width": 10,
+                "butt_build": 11,
+                "lower_body_build": 12,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -12328,7 +12561,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Jaynistown: A Brother's Love",
             "join_condition": "",
@@ -12373,7 +12607,6 @@
               "appearance": {
                 "species": "white human",
                 "height": 6,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "light",
                 "eye_color": "",
                 "hair_color": "",
@@ -12381,7 +12614,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; hostile town-rival gear",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 12,
+                "chest": 14,
+                "upper_body_build": 14,
+                "midsection_build": 13,
+                "hip_width": 10,
+                "butt_build": 12,
+                "lower_body_build": 14,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -12515,7 +12757,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Jaynistown: Unintended Consequences",
             "join_condition": "",
@@ -12560,7 +12803,6 @@
               "appearance": {
                 "species": "giant Rakk Hive alien beast",
                 "height": 10,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "chitinous tan and gray",
                 "eye_color": "",
                 "hair_color": "",
@@ -12568,7 +12810,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; enormous hive body, glowing weak spots, rakk swarm presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": "Massive creature shoulders",
+                "chest": "Broad plated creature torso",
+                "upper_body_build": "Massive plated upper body",
+                "midsection_build": "Huge quadruped body",
+                "hip_width": "Broad quadruped body",
+                "butt_build": "Heavy plated hindquarters",
+                "lower_body_build": "Massive four-legged stance",
+                "arm_length": "Pillar-like forelimbs",
+                "leg_length": "Pillar-like hind legs"
               },
               "outfits": [
                 {
@@ -12702,7 +12953,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Another Piece Of The Puzzle",
             "join_condition": "",
@@ -12747,7 +12999,6 @@
               "appearance": {
                 "species": "Pandoran bandit human",
                 "height": 7,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "scarred",
                 "eye_color": "",
                 "hair_color": "",
@@ -12755,7 +13006,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; large bandit-lord silhouette, heavy armor, savage command presence",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 16,
+                "chest": 17,
+                "upper_body_build": 18,
+                "midsection_build": 17,
+                "hip_width": 12,
+                "butt_build": 15,
+                "lower_body_build": 17,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -12889,7 +13149,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "The Final Piece",
             "join_condition": "",
@@ -12934,7 +13195,6 @@
               "appearance": {
                 "species": "white human Siren",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "fair",
                 "eye_color": "blue",
                 "hair_color": "blonde",
@@ -12942,7 +13202,16 @@
                 "hair_type": "military-styled",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; Siren tattoos, Crimson Lance officer bearing",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 13,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 11,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -13077,7 +13346,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Find Steele",
             "join_condition": "",
@@ -13122,7 +13392,6 @@
               "appearance": {
                 "species": "Vault monster ancient alien monster",
                 "height": 10,
-                "body_description": "A powerful, muscular build.",
                 "skin_color": "dark alien flesh",
                 "eye_color": "",
                 "hair_color": "",
@@ -13130,7 +13399,16 @@
                 "hair_type": "",
                 "extra_description": "Source-faithful cel-shaded Borderlands character design; massive tentacles, central eye, grotesque Vault horror body",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": "Broad alien upper body",
+                "chest": "Broad alien torso",
+                "upper_body_build": "Powerful alien upper body",
+                "midsection_build": "Massive alien body",
+                "hip_width": "Broad alien base",
+                "butt_build": "Alien lower body",
+                "lower_body_build": "Tentacled lower body",
+                "arm_length": "Long tentacles",
+                "leg_length": "Tentacles rather than legs"
               },
               "outfits": [
                 {
@@ -13265,7 +13543,8 @@
                 "image_ids": []
               },
               "created_at": "2026-06-27T00:00:00.000Z",
-              "updated_at": "2026-06-27T14:26:42.555Z"
+              "updated_at": "2026-06-27T14:26:42.555Z",
+              "lite": true
             },
             "meet_condition": "Destroy The Destroyer",
             "join_condition": "",
@@ -13370,7 +13649,8 @@
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-06-27T14:26:42.555Z"
 }

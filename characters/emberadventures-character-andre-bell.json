@@ -98,7 +98,6 @@
     "appearance": {
       "species": "Black American human",
       "height": 12,
-      "body_description": "A naturally soft build.",
       "skin_color": "Deep brown skin with warm undertones.",
       "eye_color": "Dark brown.",
       "hair_color": "Black",
@@ -106,9 +105,18 @@
       "hair_type": "Natural curls with a close-cropped finish.",
       "extra_description": "Telescope-callused fingertips.",
       "male_only_extra_description": "Close-trimmed beard.",
-      "non_male_only_extra_description": null,
+      "non_male_only_extra_description": "",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 11,
+      "chest": 7,
+      "upper_body_build": 7,
+      "midsection_build": 6,
+      "hip_width": 11,
+      "butt_build": 7,
+      "lower_body_build": 7,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -253,6 +261,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T13:51:31.483262Z",
-    "updated_at": "2026-09-07T16:51:01Z"
+    "updated_at": "2026-09-07T16:51:01Z",
+    "lite": true
   }
 }

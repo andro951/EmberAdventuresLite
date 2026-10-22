@@ -47,7 +47,6 @@
     "appearance": {
       "species": "river-road halfling",
       "height": 7,
-      "body_description": "Compact with a naturally soft build.",
       "skin_color": "warm golden-brown skin",
       "eye_color": "bright hazel",
       "hair_color": "dark auburn",
@@ -55,7 +54,16 @@
       "hair_type": "curly and springy",
       "extra_description": "A compact adult with expressive eyebrows, a dimpled grin, and a copper streak painted into one curl; her belt jingles with labeled tools.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 12,
+      "butt_build": 7,
+      "lower_body_build": 8,
+      "arm_length": 9,
+      "leg_length": 9
     },
     "outfits": [
       {
@@ -142,6 +150,7 @@
     },
     "voice": null,
     "created_at": "2026-08-31T00:00:00.000Z",
-    "updated_at": "2026-09-03T06:16:19.219Z"
+    "updated_at": "2026-09-03T06:16:19.219Z",
+    "lite": true
   }
 }

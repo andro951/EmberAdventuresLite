@@ -31,7 +31,7 @@
         "settlement_name": "Bellwether Township",
         "district": "town center",
         "specific_place": "Bellwether Town Hall",
-        "npc_location_id": "loc-town-hall"
+        "npc_location_id": "bellwether-town-hall"
       },
       "world_map": {
         "current_location_id": "loc-town-hall",
@@ -176,7 +176,6 @@
         "appearance": {
           "species": "adult white human",
           "height": 6,
-          "body_description": "An average build.",
           "skin_color": "light skin",
           "eye_color": "brown eyes",
           "hair_color": "brown hair",
@@ -184,7 +183,16 @@
           "hair_type": "straight hair",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 11,
+          "chest": 12,
+          "upper_body_build": 12,
+          "midsection_build": 11,
+          "hip_width": 10,
+          "butt_build": 11,
+          "lower_body_build": 12,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -365,17 +373,27 @@
         },
         "default_profile_image": {
           "url": "",
-          "local_image_id": "",
           "source": "none",
-          "seed": null,
+          "seed": 0,
           "prompt": "",
           "negative_prompt": "",
           "note": "",
+          "local_image_id": "",
           "male": true
         },
         "voice": null,
         "version": 1,
         "romanceable": true,
+        "starting_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "They were hired as short-term administrative help for Bellwether Township.",
+          "They arrived the morning after an election with a disputed write-in result.",
+          "They have no obligation to respect the town's absurd politics unless the player chooses to.",
+          "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
+          "Evan looks like someone who expected filing cabinets, not constitutional goose law."
+        ],
+        "created_at": "2026-06-29T00:00:00.000Z",
+        "updated_at": "2026-06-29T00:00:00.000Z",
         "fallback_name": "Evan Mercer",
         "fallback_outfits": [
           {
@@ -540,33 +558,25 @@
           }
         ],
         "fallback_starting_outfit_id": "first-day-town-hall",
-        "starting_known_facts": [
-          "This is one of three selectable player characters for the story.",
-          "They were hired as short-term administrative help for Bellwether Township.",
-          "They arrived the morning after an election with a disputed write-in result.",
-          "They have no obligation to respect the town's absurd politics unless the player chooses to.",
-          "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
-          "Evan looks like someone who expected filing cabinets, not constitutional goose law."
-        ],
         "profile_image_presentations": {
           "male": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
-            "prompt": "",
-            "negative_prompt": "",
-            "note": "",
-            "male": true
-          },
-          "non_male": {
-            "url": "",
-            "local_image_id": "",
-            "source": "hosted",
             "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "source": "none",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "local_image_id": "",
             "male": false
           }
         },
@@ -578,8 +588,7 @@
           "active_image_id": "",
           "image_ids": []
         },
-        "created_at": "2026-06-29T00:00:00.000Z",
-        "updated_at": "2026-08-31T06:03:35.951Z"
+        "lite": true
       },
       "players": [
         {
@@ -604,7 +613,6 @@
           "appearance": {
             "species": "adult white human",
             "height": 6,
-            "body_description": "An average build.",
             "skin_color": "light skin",
             "eye_color": "brown eyes",
             "hair_color": "brown hair",
@@ -612,7 +620,16 @@
             "hair_type": "straight hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 11,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -793,17 +810,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": true
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They were hired as short-term administrative help for Bellwether Township.",
+            "They arrived the morning after an election with a disputed write-in result.",
+            "They have no obligation to respect the town's absurd politics unless the player chooses to.",
+            "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
+            "Evan looks like someone who expected filing cabinets, not constitutional goose law."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Evan Mercer",
           "fallback_outfits": [
             {
@@ -968,33 +995,25 @@
             }
           ],
           "fallback_starting_outfit_id": "first-day-town-hall",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They were hired as short-term administrative help for Bellwether Township.",
-            "They arrived the morning after an election with a disputed write-in result.",
-            "They have no obligation to respect the town's absurd politics unless the player chooses to.",
-            "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
-            "Evan looks like someone who expected filing cabinets, not constitutional goose law."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
-              "prompt": "",
-              "negative_prompt": "",
-              "note": "",
-              "male": true
-            },
-            "non_male": {
-              "url": "",
-              "local_image_id": "",
-              "source": "hosted",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "source": "none",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1006,8 +1025,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "nina-bell",
@@ -1031,7 +1049,6 @@
           "appearance": {
             "species": "adult Black human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "deep brown skin",
             "eye_color": "dark brown eyes",
             "hair_color": "black hair",
@@ -1039,7 +1056,16 @@
             "hair_type": "natural curls",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 12,
+            "upper_body_build": 8,
+            "midsection_build": 8,
+            "hip_width": 10,
+            "butt_build": 8,
+            "lower_body_build": 9,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1124,17 +1150,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They were hired as short-term administrative help for Bellwether Township.",
+            "They arrived the morning after an election with a disputed write-in result.",
+            "They have no obligation to respect the town's absurd politics unless the player chooses to.",
+            "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
+            "Nina has the calm expression of someone who can make a disaster look organized for at least six minutes."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Nina Bell",
           "fallback_outfits": [
             {
@@ -1203,33 +1239,25 @@
             }
           ],
           "fallback_starting_outfit_id": "first-day-town-hall",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They were hired as short-term administrative help for Bellwether Township.",
-            "They arrived the morning after an election with a disputed write-in result.",
-            "They have no obligation to respect the town's absurd politics unless the player chooses to.",
-            "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
-            "Nina has the calm expression of someone who can make a disaster look organized for at least six minutes."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1241,8 +1269,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "riley-quinn",
@@ -1266,7 +1293,6 @@
           "appearance": {
             "species": "adult mixed human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "medium tan skin",
             "eye_color": "hazel eyes",
             "hair_color": "dark brown hair",
@@ -1274,7 +1300,16 @@
             "hair_type": "wavy hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": "Average, lightly defined chest",
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1455,17 +1490,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They were hired as short-term administrative help for Bellwether Township.",
+            "They arrived the morning after an election with a disputed write-in result.",
+            "They have no obligation to respect the town's absurd politics unless the player chooses to.",
+            "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
+            "Riley is observant enough to notice when a joke has become legally binding."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Riley Quinn",
           "fallback_outfits": [
             {
@@ -1630,33 +1675,25 @@
             }
           ],
           "fallback_starting_outfit_id": "first-day-town-hall",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They were hired as short-term administrative help for Bellwether Township.",
-            "They arrived the morning after an election with a disputed write-in result.",
-            "They have no obligation to respect the town's absurd politics unless the player chooses to.",
-            "Their job gives them access to town records, public meetings, filing cabinets, and the mayor's office.",
-            "Riley is observant enough to notice when a joke has become legally binding."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1668,28 +1705,27 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         }
       ],
       "characters": {},
       "npc_directory": {
         "locations": {
-          "loc-town-hall": {
+          "bellwether-town-hall": {
             "label": "Bellwether Town Hall",
             "characters": {
-              "goostave-honkington": {
+              "Goostave Honkington": {
                 "id": "goostave-honkington",
                 "name": "Goostave Honkington",
-                "can_die": false,
                 "gender": "male",
                 "age": 4,
                 "role": "legally elected goose mayor",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
-                "full_character": {
+                "inspected": false,
+                "animal_definition": {
+                  "version": 1,
                   "id": "goostave-honkington",
                   "name": "Goostave Honkington",
                   "source": "Player",
@@ -1699,43 +1735,22 @@
                   "age": 4,
                   "role": "legally elected goose mayor",
                   "personality_description": "An imperious domestic goose with perfect comic timing, no human language, and a terrifying confidence around podiums, paperwork, and unattended bread. His honks are not words, but townspeople keep treating them like policy.",
-                  "speech_style": "Honks, hisses, wing flaps, aggressive waddling, and meaningful silence.",
-                  "boldness": 5,
                   "starting_relationship_to_player": "none",
                   "starting_trust": 0,
-                  "starting_attraction": 0,
                   "starting_affection": 0,
                   "starting_state_of_mind": "alert",
                   "starting_physical_state": "healthy",
                   "starting_pose": "standing naturally",
-                  "appearance": {
-                    "species": "large white domestic goose",
-                    "height": "short goose height",
-                    "body_description": "sturdy goose body",
-                    "skin_color": "white feathers with orange beak and feet",
-                    "eye_color": "small black eyes",
-                    "hair_color": "",
-                    "hair_length": "",
-                    "hair_type": "",
-                    "extra_description": "Orange beak, white feathers, long neck, webbed feet, and an unsettling mayoral posture.",
-                    "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
-                  },
-                  "outfits": [
-                    {
-                      "id": "mayor-sash",
-                      "name": "Mayor Sash",
-                      "clothing": {
-                        "other_accessory": "tiny blue mayoral sash reading MAYOR"
-                      }
-                    }
+                  "starting_known_facts": [
+                    "Goostave won the mayoral election through a write-in campaign that nobody formally challenged before the deadline.",
+                    "He cannot speak human language, but his reactions can still drive public meetings into chaos.",
+                    "He is fond of bread, shiny keys, the mayor's chair, and biting anyone who reaches for his sash.",
+                    "The town charter contains no species requirement for mayor.",
+                    "The player may interpret, manage, exploit, or undermine Goostave's mayoral authority.",
+                    "Goostave should remain a goose; do not reveal secret intelligence, magic, or hidden human speech behind the joke."
                   ],
-                  "starting_outfit_id": "mayor-sash",
-                  "starting_held_items": {
-                    "right_hand": null,
-                    "left_hand": null
-                  },
-                  "starting_inventory": [],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "default_seed": 0,
                   "image_prompt_config": {
                     "seed_enabled": true,
@@ -1747,55 +1762,33 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": true
                   },
-                  "voice": null,
-                  "version": 1,
-                  "romanceable": false,
-                  "fallback_name": "Goostave Honkington",
-                  "fallback_outfits": [
-                    {
-                      "id": "mayor-sash",
-                      "name": "Mayor Sash",
-                      "clothing": {
-                        "other_accessory": "tiny blue mayoral sash reading MAYOR"
-                      }
-                    }
-                  ],
-                  "fallback_starting_outfit_id": "mayor-sash",
-                  "starting_known_facts": [
-                    "Goostave won the mayoral election through a write-in campaign that nobody formally challenged before the deadline.",
-                    "He cannot speak human language, but his reactions can still drive public meetings into chaos.",
-                    "He is fond of bread, shiny keys, the mayor's chair, and biting anyone who reaches for his sash.",
-                    "The town charter contains no species requirement for mayor.",
-                    "The player may interpret, manage, exploit, or undermine Goostave's mayoral authority.",
-                    "Goostave should remain a goose; do not reveal secret intelligence, magic, or hidden human speech behind the joke."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
-                      "prompt": "",
-                      "negative_prompt": "",
-                      "note": "",
-                      "male": true
-                    },
-                    "non_male": {
-                      "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "source": "none",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -1807,21 +1800,23 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "voice": null,
+                  "species": "large white domestic goose",
+                  "physical_description": "A sturdy white domestic goose with a long neck, orange beak, black eyes and orange webbed feet, wearing a tiny blue mayoral sash.",
+                  "communication_style": "Honks, hisses, wing flaps, aggressive waddling, and meaningful silence.",
+                  "lite": true
                 }
               },
-              "maribel-pruitt": {
+              "Maribel Pruitt": {
                 "id": "maribel-pruitt",
                 "name": "Maribel Pruitt",
-                "can_die": false,
                 "gender": "female",
                 "age": 52,
                 "role": "defeated incumbent mayor",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "maribel-pruitt",
                   "name": "Maribel Pruitt",
@@ -1844,7 +1839,6 @@
                   "appearance": {
                     "species": "adult white human",
                     "height": 5,
-                    "body_description": "An average build.",
                     "skin_color": "fair skin",
                     "eye_color": "blue eyes",
                     "hair_color": "silver-blonde hair",
@@ -1852,7 +1846,16 @@
                     "hair_type": "neatly styled hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 11,
+                    "chest": 6,
+                    "upper_body_build": 6,
+                    "midsection_build": 6,
+                    "hip_width": 12,
+                    "butt_build": 6,
+                    "lower_body_build": 7,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -1861,7 +1864,8 @@
                       "clothing": {
                         "shirt": "cream blouse",
                         "skirt": "Opaque ankle-length skirt without openings",
-                        "feet": "low black heels"
+                        "feet": "low black heels",
+                        "coat": "navy blazer with campaign pin"
                       }
                     }
                   ],
@@ -1882,17 +1886,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": false
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Maribel Pruitt lost the mayoral election to Goostave because nobody filed a valid challenge in time.",
+                    "She wants the player to help find a legal way to undo the result.",
+                    "She knows the town charter better than almost anyone.",
+                    "She can become an ally if the player values order, or a recurring antagonist if the player embraces the goose administration.",
+                    "Her pride makes her overreact to public embarrassment."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Maribel Pruitt",
                   "fallback_outfits": [
                     {
@@ -1901,37 +1914,31 @@
                       "clothing": {
                         "shirt": "cream blouse",
                         "skirt": "Opaque ankle-length skirt without openings",
-                        "feet": "low black heels"
+                        "feet": "low black heels",
+                        "coat": "navy blazer with campaign pin"
                       }
                     }
                   ],
                   "fallback_starting_outfit_id": "campaign-suit",
-                  "starting_known_facts": [
-                    "Maribel Pruitt lost the mayoral election to Goostave because nobody filed a valid challenge in time.",
-                    "She wants the player to help find a legal way to undo the result.",
-                    "She knows the town charter better than almost anyone.",
-                    "She can become an ally if the player values order, or a recurring antagonist if the player embraces the goose administration.",
-                    "Her pride makes her overreact to public embarrassment."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
+                      "source": "none",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": true
                     },
                     "non_male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
+                      "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -1943,21 +1950,19 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               },
-              "otis-crumb": {
+              "Otis Crumb": {
                 "id": "otis-crumb",
                 "name": "Otis Crumb",
-                "can_die": false,
                 "gender": "male",
                 "age": 39,
                 "role": "bakery owner and accidental campaign manager",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "otis-crumb",
                   "name": "Otis Crumb",
@@ -1980,7 +1985,6 @@
                   "appearance": {
                     "species": "adult white human",
                     "height": 6,
-                    "body_description": "A strong, athletic build.",
                     "skin_color": "ruddy light skin",
                     "eye_color": "green eyes",
                     "hair_color": "red hair",
@@ -1988,7 +1992,16 @@
                     "hair_type": "messy hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 13,
+                    "chest": 15,
+                    "upper_body_build": 15,
+                    "midsection_build": 14,
+                    "hip_width": 11,
+                    "butt_build": 14,
+                    "lower_body_build": 15,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -1997,7 +2010,8 @@
                       "clothing": {
                         "shirt": "rolled-sleeve work shirt",
                         "pants": "brown work pants",
-                        "feet": "flour-dusted boots"
+                        "feet": "flour-dusted boots",
+                        "other_accessory": "white bakery apron"
                       }
                     }
                   ],
@@ -2018,17 +2032,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": true
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Otis Crumb printed the original Goostave campaign flyers.",
+                    "He believes the town needs joy more than competent administration.",
+                    "His bakery is now the unofficial headquarters of the goose mayor movement.",
+                    "He keeps bribing Goostave with bread, which creates policy confusion.",
+                    "He can help the player rally public support or make every problem louder."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Otis Crumb",
                   "fallback_outfits": [
                     {
@@ -2037,37 +2060,31 @@
                       "clothing": {
                         "shirt": "rolled-sleeve work shirt",
                         "pants": "brown work pants",
-                        "feet": "flour-dusted boots"
+                        "feet": "flour-dusted boots",
+                        "other_accessory": "white bakery apron"
                       }
                     }
                   ],
                   "fallback_starting_outfit_id": "flour-apron",
-                  "starting_known_facts": [
-                    "Otis Crumb printed the original Goostave campaign flyers.",
-                    "He believes the town needs joy more than competent administration.",
-                    "His bakery is now the unofficial headquarters of the goose mayor movement.",
-                    "He keeps bribing Goostave with bread, which creates policy confusion.",
-                    "He can help the player rally public support or make every problem louder."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
-                      "prompt": "",
-                      "negative_prompt": "",
-                      "note": "",
-                      "male": true
-                    },
-                    "non_male": {
-                      "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "source": "none",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2079,21 +2096,19 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               },
-              "beatrice-rowley": {
+              "Beatrice Rowley": {
                 "id": "beatrice-rowley",
                 "name": "Beatrice Rowley",
-                "can_die": false,
                 "gender": "female",
                 "age": 34,
                 "role": "local reporter",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "beatrice-rowley",
                   "name": "Beatrice Rowley",
@@ -2116,7 +2131,6 @@
                   "appearance": {
                     "species": "adult Latina human",
                     "height": 5,
-                    "body_description": "An average build.",
                     "skin_color": "warm brown skin",
                     "eye_color": "brown eyes",
                     "hair_color": "dark brown hair",
@@ -2124,7 +2138,16 @@
                     "hair_type": "wavy hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 10,
+                    "chest": 13,
+                    "upper_body_build": 8,
+                    "midsection_build": 7,
+                    "hip_width": 11,
+                    "butt_build": 8,
+                    "lower_body_build": 8,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -2134,7 +2157,8 @@
                         "shirt": "soft white blouse",
                         "pants": "dark jeans",
                         "feet": "ankle boots",
-                        "other_accessory": "notebook and press badge"
+                        "other_accessory": "notebook and press badge",
+                        "coat": "tan field reporter jacket"
                       }
                     }
                   ],
@@ -2155,17 +2179,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": false
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Beatrice Rowley covers Bellwether Township for the county paper.",
+                    "She is delighted by the goose mayor story but suspicious of anyone trying to quietly erase it.",
+                    "She can amplify the player's interpretation of events.",
+                    "She respects competence even when the situation is ridiculous.",
+                    "Her coverage can make Bellwether famous or humiliate it beyond repair."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Beatrice Rowley",
                   "fallback_outfits": [
                     {
@@ -2175,37 +2208,31 @@
                         "shirt": "soft white blouse",
                         "pants": "dark jeans",
                         "feet": "ankle boots",
-                        "other_accessory": "notebook and press badge"
+                        "other_accessory": "notebook and press badge",
+                        "coat": "tan field reporter jacket"
                       }
                     }
                   ],
                   "fallback_starting_outfit_id": "reporter-jacket",
-                  "starting_known_facts": [
-                    "Beatrice Rowley covers Bellwether Township for the county paper.",
-                    "She is delighted by the goose mayor story but suspicious of anyone trying to quietly erase it.",
-                    "She can amplify the player's interpretation of events.",
-                    "She respects competence even when the situation is ridiculous.",
-                    "Her coverage can make Bellwether famous or humiliate it beyond repair."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
+                      "source": "none",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": true
                     },
                     "non_male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
+                      "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2217,21 +2244,19 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               },
-              "harold-finch": {
+              "Harold Finch": {
                 "id": "harold-finch",
                 "name": "Harold Finch",
-                "can_die": false,
                 "gender": "male",
                 "age": 68,
                 "role": "town clerk",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "harold-finch",
                   "name": "Harold Finch",
@@ -2254,7 +2279,6 @@
                   "appearance": {
                     "species": "adult white human",
                     "height": 5,
-                    "body_description": "A slender build.",
                     "skin_color": "pale skin",
                     "eye_color": "gray eyes",
                     "hair_color": "white hair",
@@ -2262,7 +2286,16 @@
                     "hair_type": "thinning hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 9,
+                    "chest": 11,
+                    "upper_body_build": 11,
+                    "midsection_build": 11,
+                    "hip_width": 9,
+                    "butt_build": 10,
+                    "lower_body_build": 11,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -2272,7 +2305,8 @@
                         "shirt": "pale button-up shirt",
                         "pants": "gray slacks",
                         "feet": "old loafers",
-                        "other_accessory": "reading glasses on a chain"
+                        "other_accessory": "reading glasses on a chain",
+                        "over_shirt": "brown cardigan"
                       }
                     }
                   ],
@@ -2293,17 +2327,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": true
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Harold Finch is the official town clerk and the player's direct supervisor.",
+                    "He certified the election because the paperwork was technically correct.",
+                    "He wants the town to function even if that means learning goose-administration procedure.",
+                    "He knows where the charter, meeting rules, emergency forms, and ceremonial ribbon scissors are stored.",
+                    "He becomes calmer when the player solves problems without inventing extra paperwork."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Harold Finch",
                   "fallback_outfits": [
                     {
@@ -2313,37 +2356,31 @@
                         "shirt": "pale button-up shirt",
                         "pants": "gray slacks",
                         "feet": "old loafers",
-                        "other_accessory": "reading glasses on a chain"
+                        "other_accessory": "reading glasses on a chain",
+                        "over_shirt": "brown cardigan"
                       }
                     }
                   ],
                   "fallback_starting_outfit_id": "clerk-cardigan",
-                  "starting_known_facts": [
-                    "Harold Finch is the official town clerk and the player's direct supervisor.",
-                    "He certified the election because the paperwork was technically correct.",
-                    "He wants the town to function even if that means learning goose-administration procedure.",
-                    "He knows where the charter, meeting rules, emergency forms, and ceremonial ribbon scissors are stored.",
-                    "He becomes calmer when the player solves problems without inventing extra paperwork."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
-                      "prompt": "",
-                      "negative_prompt": "",
-                      "note": "",
-                      "male": true
-                    },
-                    "non_male": {
-                      "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "source": "none",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2355,8 +2392,7 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               }
             }
@@ -2388,6 +2424,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "town_confusion"
                 ],
                 "amount": 1,
@@ -2404,11 +2441,11 @@
             "requires": [],
             "next_objectives": [
               {
-                "objective_id": "inspect-election-paperwork",
                 "id": "report-to-town-hall-output-1",
-                "completion_instruction": "Introduce Harold Finch, Maribel Pruitt, Otis Crumb, Beatrice Rowley, and Mayor Goostave as already present in town hall. Keep the absurdity concrete: the election paperwork is real, the goose is a goose, and nobody knows what to do next.",
                 "rewards": [],
-                "target_input_group_id": "from-report-to-town-hall"
+                "completion_instruction": "Introduce Harold Finch, Maribel Pruitt, Otis Crumb, Beatrice Rowley, and Mayor Goostave as already present in town hall. Keep the absurdity concrete: the election paperwork is real, the goose is a goose, and nobody knows what to do next.",
+                "objective_id": "inspect-election-paperwork",
+                "target_input_group_id": "inspect-election-paperwork-from-report-to-town-hall"
               }
             ],
             "travel_location_id": "",
@@ -2439,6 +2476,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "goose_legitimacy"
                 ],
                 "amount": 2,
@@ -2457,11 +2495,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-first-interpretation",
                 "id": "inspect-election-paperwork-output-1",
-                "completion_instruction": "Reveal that Goostave's write-in votes were legally certified because no valid challenge was filed before the deadline. The charter has no species requirement.",
                 "rewards": [],
-                "target_input_group_id": "from-inspect-election-paperwork"
+                "completion_instruction": "Reveal that Goostave's write-in votes were legally certified because no valid challenge was filed before the deadline. The charter has no species requirement.",
+                "objective_id": "choose-first-interpretation",
+                "target_input_group_id": "choose-first-interpretation-from-inspect-election-paperwork"
               }
             ],
             "travel_location_id": "",
@@ -2510,6 +2548,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "goose_legitimacy"
                     ],
                     "amount": 2,
@@ -2518,6 +2557,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "town_confusion"
                     ],
                     "amount": 1,
@@ -2529,9 +2569,9 @@
                     "text": "The player publicly treated Goostave's honks as mayoral intent."
                   }
                 ],
+                "completion_instruction": "Resolve the player's first public interpretation of Goostave's honk and let the town react. Honor the selected choice: Declare It an Official Order.",
                 "next_objective_id": "survive-first-council-meeting",
-                "completion_instruction": "Resolve the player's first public interpretation of Goostave's honk and let the town react.",
-                "target_input_group_id": "from-choose-first-interpretation"
+                "target_input_group_id": "survive-first-council-meeting-from-choose-first-interpretation"
               },
               {
                 "id": "interpret-as-delay",
@@ -2544,6 +2584,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "town_confusion"
                     ],
                     "amount": -1,
@@ -2562,9 +2603,9 @@
                     "text": "The player used procedure to slow down the first goose-administration decision."
                   }
                 ],
+                "completion_instruction": "Resolve the player's first public interpretation of Goostave's honk and let the town react. Honor the selected choice: Call for a Procedural Delay.",
                 "next_objective_id": "survive-first-council-meeting",
-                "completion_instruction": "Resolve the player's first public interpretation of Goostave's honk and let the town react.",
-                "target_input_group_id": "from-choose-first-interpretation"
+                "target_input_group_id": "survive-first-council-meeting-from-choose-first-interpretation"
               },
               {
                 "id": "interpret-as-snack",
@@ -2578,6 +2619,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "goose_legitimacy"
                     ],
                     "amount": -1,
@@ -2586,6 +2628,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "public_amusement"
                     ],
                     "amount": 2,
@@ -2604,9 +2647,9 @@
                     "text": "The player publicly admitted one mayoral honk probably meant Goostave wanted bread."
                   }
                 ],
+                "completion_instruction": "Resolve the player's first public interpretation of Goostave's honk and let the town react. Honor the selected choice: Admit He Wants Bread.",
                 "next_objective_id": "survive-first-council-meeting",
-                "completion_instruction": "Resolve the player's first public interpretation of Goostave's honk and let the town react.",
-                "target_input_group_id": "from-choose-first-interpretation"
+                "target_input_group_id": "survive-first-council-meeting-from-choose-first-interpretation"
               }
             ],
             "while_active_guidance": "The new mayor honks at the room. Someone has to decide what that means."
@@ -2621,6 +2664,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "goose_legitimacy"
                 ],
                 "amount": 1,
@@ -2644,7 +2688,6 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "survive-first-council-meeting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2652,13 +2695,13 @@
                     "value": "survive-first-council-meeting"
                   }
                 ],
-                "id": "side-check-town-charter-output-1",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-5",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "survive-first-council-meeting",
+                "target_input_group_id": "survive-first-council-meeting-from-side-check-town-charter"
               },
               {
-                "objective_id": "handle-bakery-petition",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2666,13 +2709,13 @@
                     "value": "handle-bakery-petition"
                   }
                 ],
-                "id": "side-check-town-charter-output-2",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-6",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "handle-bakery-petition",
+                "target_input_group_id": "handle-bakery-petition-from-side-check-town-charter"
               },
               {
-                "objective_id": "choose-petition-ruling",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2680,13 +2723,13 @@
                     "value": "choose-petition-ruling"
                   }
                 ],
-                "id": "side-check-town-charter-output-3",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-7",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "choose-petition-ruling",
+                "target_input_group_id": "choose-petition-ruling-from-side-check-town-charter"
               },
               {
-                "objective_id": "prepare-ribbon-cutting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2694,13 +2737,13 @@
                     "value": "prepare-ribbon-cutting"
                   }
                 ],
-                "id": "side-check-town-charter-output-4",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-9",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "prepare-ribbon-cutting",
+                "target_input_group_id": "prepare-ribbon-cutting-from-side-check-town-charter"
               },
               {
-                "objective_id": "choose-ribbon-strategy",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2708,13 +2751,13 @@
                     "value": "choose-ribbon-strategy"
                   }
                 ],
-                "id": "side-check-town-charter-output-5",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-10",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "choose-ribbon-strategy",
+                "target_input_group_id": "choose-ribbon-strategy-from-side-check-town-charter"
               },
               {
-                "objective_id": "resolve-ribbon-cutting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2722,13 +2765,41 @@
                     "value": "resolve-ribbon-cutting"
                   }
                 ],
-                "id": "side-check-town-charter-output-6",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-11",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "resolve-ribbon-cutting",
+                "target_input_group_id": "resolve-ribbon-cutting-from-side-check-town-charter"
               },
               {
-                "objective_id": "beatrice-wants-interview",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "maribel-files-challenge"
+                  }
+                ],
+                "id": "side-check-town-charter-output-12",
+                "rewards": [],
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "maribel-files-challenge",
+                "target_input_group_id": "maribel-files-challenge-from-side-check-town-charter"
+              },
+              {
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "county-calls-town-hall"
+                  }
+                ],
+                "id": "side-check-town-charter-output-13",
+                "rewards": [],
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "county-calls-town-hall",
+                "target_input_group_id": "county-calls-town-hall-from-side-check-town-charter"
+              },
+              {
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2736,13 +2807,13 @@
                     "value": "beatrice-wants-interview"
                   }
                 ],
-                "id": "side-check-town-charter-output-7",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-14",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "beatrice-wants-interview",
+                "target_input_group_id": "beatrice-wants-interview-from-side-check-town-charter"
               },
               {
-                "objective_id": "choose-public-message",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2750,13 +2821,13 @@
                     "value": "choose-public-message"
                   }
                 ],
-                "id": "side-check-town-charter-output-8",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-15",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "choose-public-message",
+                "target_input_group_id": "choose-public-message-from-side-check-town-charter"
               },
               {
-                "objective_id": "prepare-final-town-meeting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2764,13 +2835,13 @@
                     "value": "prepare-final-town-meeting"
                   }
                 ],
-                "id": "side-check-town-charter-output-9",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-16",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "prepare-final-town-meeting",
+                "target_input_group_id": "prepare-final-town-meeting-from-side-check-town-charter"
               },
               {
-                "objective_id": "choose-goostave-future",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -2778,10 +2849,17 @@
                     "value": "choose-goostave-future"
                   }
                 ],
-                "id": "side-check-town-charter-output-10",
-                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "id": "side-check-town-charter-output-17",
                 "rewards": [],
-                "target_input_group_id": "from-side-check-town-charter"
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
+                "objective_id": "choose-goostave-future",
+                "target_input_group_id": "choose-goostave-future-from-side-check-town-charter"
+              },
+              {
+                "ending_type": "freeplay",
+                "id": "side-check-town-charter-output-13",
+                "rewards": [],
+                "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone."
               }
             ],
             "travel_location_id": "",
@@ -2795,13 +2873,7 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player checks the town charter, asks Harold about the rules, finds a loophole, or confirms the legal basis for the goose mayor.",
             "completion_instruction": "Keep this as practical paper-comedy. The charter should make the situation worse by being technically clear enough to help and ridiculous enough to embarrass everyone.",
-            "while_active_guidance": "Look through Bellwether's charter for loopholes before the first council meeting gets completely away from everyone.",
-            "completion_requirements": [
-              {
-                "path": "objectives.active_id",
-                "op": "truthy"
-              }
-            ]
+            "while_active_guidance": "Look through Bellwether's charter for loopholes before the first council meeting gets completely away from everyone."
           },
           {
             "id": "survive-first-council-meeting",
@@ -2813,6 +2885,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "town_confusion"
                 ],
                 "amount": 1,
@@ -2821,6 +2894,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "public_amusement"
                 ],
                 "amount": 1,
@@ -2839,11 +2913,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "handle-bakery-petition",
                 "id": "survive-first-council-meeting-output-1",
-                "completion_instruction": "Run the meeting as civic comedy. Maribel pushes legality, Otis pushes goose democracy, Harold pushes procedure, Beatrice takes notes, and Goostave interrupts at the worst possible time.",
                 "rewards": [],
-                "target_input_group_id": "from-survive-first-council-meeting"
+                "completion_instruction": "Run the meeting as civic comedy. Maribel pushes legality, Otis pushes goose democracy, Harold pushes procedure, Beatrice takes notes, and Goostave interrupts at the worst possible time.",
+                "objective_id": "handle-bakery-petition",
+                "target_input_group_id": "handle-bakery-petition-from-survive-first-council-meeting"
               }
             ],
             "travel_location_id": "",
@@ -2876,6 +2950,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "public_amusement"
                 ],
                 "amount": 1,
@@ -2887,11 +2962,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-petition-ruling",
                 "id": "handle-bakery-petition-output-1",
-                "completion_instruction": "Make the petition silly but practical: permits, crumbs, parking, duck exclusion language, and whether Goostave keeps eating the evidence.",
                 "rewards": [],
-                "target_input_group_id": "from-handle-bakery-petition"
+                "completion_instruction": "Make the petition silly but practical: permits, crumbs, parking, duck exclusion language, and whether Goostave keeps eating the evidence.",
+                "objective_id": "choose-petition-ruling",
+                "target_input_group_id": "choose-petition-ruling-from-handle-bakery-petition"
               }
             ],
             "travel_location_id": "",
@@ -2940,6 +3015,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "public_amusement"
                     ],
                     "amount": 2,
@@ -2948,6 +3024,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "town_confusion"
                     ],
                     "amount": 1,
@@ -2959,9 +3036,9 @@
                     "text": "Bellwether officially approved a bread festival under Mayor Goostave."
                   }
                 ],
+                "completion_instruction": "Resolve the bread petition and keep the town politics moving. Honor the selected choice: Approve the Bread Festival.",
                 "next_objective_id": "prepare-ribbon-cutting",
-                "completion_instruction": "Resolve the bread petition and keep the town politics moving.",
-                "target_input_group_id": "from-choose-petition-ruling"
+                "target_input_group_id": "prepare-ribbon-cutting-from-choose-petition-ruling"
               },
               {
                 "id": "table-for-review",
@@ -2974,6 +3051,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "town_confusion"
                     ],
                     "amount": -1,
@@ -2992,9 +3070,9 @@
                     "text": "The bread festival petition was delayed for procedural review."
                   }
                 ],
+                "completion_instruction": "Resolve the bread petition and keep the town politics moving. Honor the selected choice: Table It for Review.",
                 "next_objective_id": "prepare-ribbon-cutting",
-                "completion_instruction": "Resolve the bread petition and keep the town politics moving.",
-                "target_input_group_id": "from-choose-petition-ruling"
+                "target_input_group_id": "prepare-ribbon-cutting-from-choose-petition-ruling"
               },
               {
                 "id": "make-it-a-charity-event",
@@ -3008,6 +3086,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "public_amusement"
                     ],
                     "amount": 1,
@@ -3016,6 +3095,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "goose_legitimacy"
                     ],
                     "amount": 1,
@@ -3034,9 +3114,9 @@
                     "text": "The player redirected the bread festival into a charity event, making the goose administration look almost useful."
                   }
                 ],
+                "completion_instruction": "Resolve the bread petition and keep the town politics moving. Honor the selected choice: Turn It Into a Charity Event.",
                 "next_objective_id": "prepare-ribbon-cutting",
-                "completion_instruction": "Resolve the bread petition and keep the town politics moving.",
-                "target_input_group_id": "from-choose-petition-ruling"
+                "target_input_group_id": "prepare-ribbon-cutting-from-choose-petition-ruling"
               }
             ],
             "while_active_guidance": "Decide whether Bellwether officially becomes more bread-focused."
@@ -3051,6 +3131,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "public_amusement"
                 ],
                 "amount": 1,
@@ -3081,7 +3162,6 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "prepare-ribbon-cutting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3089,13 +3169,13 @@
                     "value": "prepare-ribbon-cutting"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-1",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-9",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "prepare-ribbon-cutting",
+                "target_input_group_id": "prepare-ribbon-cutting-from-side-secure-mayoral-bread"
               },
               {
-                "objective_id": "choose-ribbon-strategy",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3103,13 +3183,13 @@
                     "value": "choose-ribbon-strategy"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-2",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-10",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "choose-ribbon-strategy",
+                "target_input_group_id": "choose-ribbon-strategy-from-side-secure-mayoral-bread"
               },
               {
-                "objective_id": "resolve-ribbon-cutting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3117,13 +3197,41 @@
                     "value": "resolve-ribbon-cutting"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-3",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-11",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "resolve-ribbon-cutting",
+                "target_input_group_id": "resolve-ribbon-cutting-from-side-secure-mayoral-bread"
               },
               {
-                "objective_id": "beatrice-wants-interview",
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "maribel-files-challenge"
+                  }
+                ],
+                "id": "side-secure-mayoral-bread-output-12",
+                "rewards": [],
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "maribel-files-challenge",
+                "target_input_group_id": "maribel-files-challenge-from-side-secure-mayoral-bread"
+              },
+              {
+                "requirements": [
+                  {
+                    "path": "objectives.active_id",
+                    "op": "==",
+                    "value": "county-calls-town-hall"
+                  }
+                ],
+                "id": "side-secure-mayoral-bread-output-13",
+                "rewards": [],
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "county-calls-town-hall",
+                "target_input_group_id": "county-calls-town-hall-from-side-secure-mayoral-bread"
+              },
+              {
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3131,13 +3239,13 @@
                     "value": "beatrice-wants-interview"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-4",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-14",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "beatrice-wants-interview",
+                "target_input_group_id": "beatrice-wants-interview-from-side-secure-mayoral-bread"
               },
               {
-                "objective_id": "choose-public-message",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3145,13 +3253,13 @@
                     "value": "choose-public-message"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-5",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-15",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "choose-public-message",
+                "target_input_group_id": "choose-public-message-from-side-secure-mayoral-bread"
               },
               {
-                "objective_id": "prepare-final-town-meeting",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3159,13 +3267,13 @@
                     "value": "prepare-final-town-meeting"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-6",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-16",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "prepare-final-town-meeting",
+                "target_input_group_id": "prepare-final-town-meeting-from-side-secure-mayoral-bread"
               },
               {
-                "objective_id": "choose-goostave-future",
                 "requirements": [
                   {
                     "path": "objectives.active_id",
@@ -3173,10 +3281,17 @@
                     "value": "choose-goostave-future"
                   }
                 ],
-                "id": "side-secure-mayoral-bread-output-7",
-                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "id": "side-secure-mayoral-bread-output-17",
                 "rewards": [],
-                "target_input_group_id": "from-side-secure-mayoral-bread"
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
+                "objective_id": "choose-goostave-future",
+                "target_input_group_id": "choose-goostave-future-from-side-secure-mayoral-bread"
+              },
+              {
+                "ending_type": "freeplay",
+                "id": "side-secure-mayoral-bread-output-10",
+                "rewards": [],
+                "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose."
               }
             ],
             "travel_location_id": "loc-crumb-bakery",
@@ -3190,13 +3305,7 @@
             "completion_control": "player",
             "completion_criteria": "Return yes only when the player arranges a bread supply with Otis, buys bread, negotiates bread rules, or otherwise prepares safe snacks for Goostave.",
             "completion_instruction": "Make the bread errand useful and silly. It should feel like normal event planning warped by the fact that the public official is a goose.",
-            "while_active_guidance": "Make sure the mayor has enough bread to survive public appearances without turning policy into a pecking incident.",
-            "completion_requirements": [
-              {
-                "path": "objectives.active_id",
-                "op": "truthy"
-              }
-            ]
+            "while_active_guidance": "Make sure the mayor has enough bread to survive public appearances without turning policy into a pecking incident."
           },
           {
             "id": "prepare-ribbon-cutting",
@@ -3210,11 +3319,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-ribbon-strategy",
                 "id": "prepare-ribbon-cutting-output-1",
-                "completion_instruction": "Turn preparation into physical comedy without making it random: sash wrangling, ceremonial scissors, crowd control, and Maribel trying not to be photographed near the goose.",
                 "rewards": [],
-                "target_input_group_id": "from-prepare-ribbon-cutting"
+                "completion_instruction": "Turn preparation into physical comedy without making it random: sash wrangling, ceremonial scissors, crowd control, and Maribel trying not to be photographed near the goose.",
+                "objective_id": "choose-ribbon-strategy",
+                "target_input_group_id": "choose-ribbon-strategy-from-prepare-ribbon-cutting"
               }
             ],
             "travel_location_id": "",
@@ -3262,6 +3371,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "public_amusement"
                     ],
                     "amount": 2,
@@ -3273,9 +3383,9 @@
                     "text": "The player planned to have Goostave bite through the ceremonial ribbon."
                   }
                 ],
+                "completion_instruction": "Resolve the strategy and move into the public event. Honor the selected choice: Let Goostave Bite the Ribbon.",
                 "next_objective_id": "resolve-ribbon-cutting",
-                "completion_instruction": "Resolve the strategy and move into the public event.",
-                "target_input_group_id": "from-choose-ribbon-strategy"
+                "target_input_group_id": "resolve-ribbon-cutting-from-choose-ribbon-strategy"
               },
               {
                 "id": "human-assistant",
@@ -3288,6 +3398,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "goose_legitimacy"
                     ],
                     "amount": -1,
@@ -3306,9 +3417,9 @@
                     "text": "The player arranged for a human assistant to handle the ribbon cutting on Goostave's behalf."
                   }
                 ],
+                "completion_instruction": "Resolve the strategy and move into the public event. Honor the selected choice: Use a Human Assistant.",
                 "next_objective_id": "resolve-ribbon-cutting",
-                "completion_instruction": "Resolve the strategy and move into the public event.",
-                "target_input_group_id": "from-choose-ribbon-strategy"
+                "target_input_group_id": "resolve-ribbon-cutting-from-choose-ribbon-strategy"
               },
               {
                 "id": "stage-photo-op",
@@ -3322,6 +3433,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "goose_legitimacy"
                     ],
                     "amount": 1,
@@ -3330,6 +3442,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "public_amusement"
                     ],
                     "amount": 1,
@@ -3348,9 +3461,9 @@
                     "text": "The player staged the ribbon cutting as a photo-friendly goose mayor moment."
                   }
                 ],
+                "completion_instruction": "Resolve the strategy and move into the public event. Honor the selected choice: Stage a Perfect Photo Op.",
                 "next_objective_id": "resolve-ribbon-cutting",
-                "completion_instruction": "Resolve the strategy and move into the public event.",
-                "target_input_group_id": "from-choose-ribbon-strategy"
+                "target_input_group_id": "resolve-ribbon-cutting-from-choose-ribbon-strategy"
               }
             ],
             "while_active_guidance": "Decide how to get a goose through a mayoral ribbon cutting."
@@ -3365,6 +3478,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "public_amusement"
                 ],
                 "amount": 1,
@@ -3383,7 +3497,6 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "maribel-files-challenge",
                 "requirements": [
                   {
                     "path": "story_inventory.goose_legitimacy",
@@ -3392,12 +3505,12 @@
                   }
                 ],
                 "id": "resolve-ribbon-cutting-output-1",
-                "completion_instruction": "Resolve the event according to the chosen strategy and current town mood. Let it succeed badly, fail memorably, or somehow become beloved.",
                 "rewards": [],
-                "target_input_group_id": "from-resolve-ribbon-cutting"
+                "completion_instruction": "Resolve the event according to the chosen strategy and current town mood. Let it succeed badly, fail memorably, or somehow become beloved.",
+                "objective_id": "maribel-files-challenge",
+                "target_input_group_id": "maribel-files-challenge-from-resolve-ribbon-cutting"
               },
               {
-                "objective_id": "county-calls-town-hall",
                 "requirements": [
                   {
                     "path": "story_inventory.town_confusion",
@@ -3406,16 +3519,17 @@
                   }
                 ],
                 "id": "resolve-ribbon-cutting-output-2",
-                "completion_instruction": "Resolve the event according to the chosen strategy and current town mood. Let it succeed badly, fail memorably, or somehow become beloved.",
                 "rewards": [],
-                "target_input_group_id": "from-resolve-ribbon-cutting"
+                "completion_instruction": "Resolve the event according to the chosen strategy and current town mood. Let it succeed badly, fail memorably, or somehow become beloved.",
+                "objective_id": "county-calls-town-hall",
+                "target_input_group_id": "county-calls-town-hall-from-resolve-ribbon-cutting"
               },
               {
-                "objective_id": "beatrice-wants-interview",
                 "id": "resolve-ribbon-cutting-output-3",
-                "completion_instruction": "Resolve the event according to the chosen strategy and current town mood. Let it succeed badly, fail memorably, or somehow become beloved.",
                 "rewards": [],
-                "target_input_group_id": "from-resolve-ribbon-cutting"
+                "completion_instruction": "Resolve the event according to the chosen strategy and current town mood. Let it succeed badly, fail memorably, or somehow become beloved.",
+                "objective_id": "beatrice-wants-interview",
+                "target_input_group_id": "beatrice-wants-interview-from-resolve-ribbon-cutting"
               }
             ],
             "travel_location_id": "",
@@ -3434,7 +3548,7 @@
           {
             "id": "maribel-files-challenge",
             "title": "Answer Maribel's Challenge",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Maribel sees weakness in the goose administration and files a formal challenge.",
             "rewards": [
@@ -3458,11 +3572,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "beatrice-wants-interview",
                 "id": "maribel-files-challenge-output-1",
-                "completion_instruction": "Make Maribel's challenge legally plausible but personally ridiculous. She should be trying to reclaim dignity as much as office.",
                 "rewards": [],
-                "target_input_group_id": "from-maribel-files-challenge"
+                "completion_instruction": "Make Maribel's challenge legally plausible but personally ridiculous. She should be trying to reclaim dignity as much as office.",
+                "objective_id": "beatrice-wants-interview",
+                "target_input_group_id": "beatrice-wants-interview-from-maribel-files-challenge"
               }
             ],
             "travel_location_id": "",
@@ -3481,13 +3595,14 @@
           {
             "id": "county-calls-town-hall",
             "title": "Handle the County Call",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "The county government wants to know why Bellwether's mayor is on the news biting ceremonial fabric.",
             "rewards": [
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "town_confusion"
                 ],
                 "amount": -1,
@@ -3506,11 +3621,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "beatrice-wants-interview",
                 "id": "county-calls-town-hall-output-1",
-                "completion_instruction": "Make the county call bureaucratic comedy, not a rescue. The county wants forms, legal basis, and reassurance that nobody is letting a goose sign checks.",
                 "rewards": [],
-                "target_input_group_id": "from-county-calls-town-hall"
+                "completion_instruction": "Make the county call bureaucratic comedy, not a rescue. The county wants forms, legal basis, and reassurance that nobody is letting a goose sign checks.",
+                "objective_id": "beatrice-wants-interview",
+                "target_input_group_id": "beatrice-wants-interview-from-county-calls-town-hall"
               }
             ],
             "travel_location_id": "",
@@ -3546,11 +3661,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-public-message",
                 "id": "beatrice-wants-interview-output-1",
-                "completion_instruction": "Let Beatrice ask sharp but funny questions. The player's answers should shape whether Bellwether looks charming, incompetent, or quietly functional.",
                 "rewards": [],
-                "target_input_group_id": "from-beatrice-wants-interview"
+                "completion_instruction": "Let Beatrice ask sharp but funny questions. The player's answers should shape whether Bellwether looks charming, incompetent, or quietly functional.",
+                "objective_id": "choose-public-message",
+                "target_input_group_id": "choose-public-message-from-beatrice-wants-interview"
               }
             ],
             "travel_location_id": "",
@@ -3598,6 +3713,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "goose_legitimacy"
                     ],
                     "amount": 2,
@@ -3609,9 +3725,9 @@
                     "text": "The public message is that Bellwether is honoring a weird but legitimate democratic outcome."
                   }
                 ],
+                "completion_instruction": "Record the public message and let it shape the town's final comedy crisis. Honor the selected choice: Democracy Is Weird But Real.",
                 "next_objective_id": "prepare-final-town-meeting",
-                "completion_instruction": "Record the public message and let it shape the town's final comedy crisis.",
-                "target_input_group_id": "from-choose-public-message"
+                "target_input_group_id": "prepare-final-town-meeting-from-choose-public-message"
               },
               {
                 "id": "temporary-goose-crisis",
@@ -3624,6 +3740,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "town_confusion"
                     ],
                     "amount": -1,
@@ -3635,9 +3752,9 @@
                     "text": "The public message is that Bellwether is managing a temporary goose-related civic crisis."
                   }
                 ],
+                "completion_instruction": "Record the public message and let it shape the town's final comedy crisis. Honor the selected choice: This Is a Temporary Goose Crisis.",
                 "next_objective_id": "prepare-final-town-meeting",
-                "completion_instruction": "Record the public message and let it shape the town's final comedy crisis.",
-                "target_input_group_id": "from-choose-public-message"
+                "target_input_group_id": "prepare-final-town-meeting-from-choose-public-message"
               },
               {
                 "id": "tourism-opportunity",
@@ -3650,6 +3767,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "public_amusement"
                     ],
                     "amount": 3,
@@ -3682,9 +3800,9 @@
                     }
                   }
                 ],
+                "completion_instruction": "Record the public message and let it shape the town's final comedy crisis. Honor the selected choice: Turn It Into Tourism.",
                 "next_objective_id": "prepare-final-town-meeting",
-                "completion_instruction": "Record the public message and let it shape the town's final comedy crisis.",
-                "target_input_group_id": "from-choose-public-message"
+                "target_input_group_id": "prepare-final-town-meeting-from-choose-public-message"
               }
             ],
             "while_active_guidance": "Decide how Bellwether explains itself to the outside world."
@@ -3709,11 +3827,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-goostave-future",
                 "id": "prepare-final-town-meeting-output-1",
-                "completion_instruction": "Let preparation pull in the player's allies and enemies. If side work was completed, use the charter loopholes, county call, Maribel challenge, or mayoral bread as concrete advantages. The agenda should include practical government concerns and one deeply stupid goose-specific clause.",
                 "rewards": [],
-                "target_input_group_id": "from-prepare-final-town-meeting"
+                "completion_instruction": "Let preparation pull in the player's allies and enemies. If side work was completed, use the charter loopholes, county call, Maribel challenge, or mayoral bread as concrete advantages. The agenda should include practical government concerns and one deeply stupid goose-specific clause.",
+                "objective_id": "choose-goostave-future",
+                "target_input_group_id": "choose-goostave-future-from-prepare-final-town-meeting"
               }
             ],
             "travel_location_id": "",
@@ -3762,9 +3880,8 @@
                     "text": "Ending path: Goostave remains symbolic mayor while human officers handle daily administration under public rules."
                   }
                 ],
-                "completion_instruction": "Resolve the chosen future as the story's ending direction.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen future as the story's ending direction. Honor the selected choice: Keep Goostave as Symbolic Mayor.",
+                "ending_type": "freeplay"
               },
               {
                 "id": "special-election",
@@ -3778,9 +3895,8 @@
                     "text": "Ending path: Bellwether calls a special election while honoring the absurdity that exposed its broken charter."
                   }
                 ],
-                "completion_instruction": "Resolve the chosen future as the story's ending direction.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen future as the story's ending direction. Honor the selected choice: Call a Special Election.",
+                "ending_type": "freeplay"
               },
               {
                 "id": "embrace-goose-town",
@@ -3794,9 +3910,8 @@
                     "text": "Ending path: Bellwether embraces Mayor Goostave as a civic identity and tourism engine."
                   }
                 ],
-                "completion_instruction": "Resolve the chosen future as the story's ending direction.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen future as the story's ending direction. Honor the selected choice: Embrace Goose Town.",
+                "ending_type": "freeplay"
               },
               {
                 "id": "let-goose-rule",
@@ -3810,9 +3925,8 @@
                     "text": "Ending path: Bellwether commits fully to interpreting Goostave's honks as mayoral direction, consequences included."
                   }
                 ],
-                "completion_instruction": "Resolve the chosen future as the story's ending direction.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the chosen future as the story's ending direction. Honor the selected choice: Let the Goose Rule.",
+                "ending_type": "freeplay"
               }
             ],
             "while_active_guidance": "Decide what Bellwether does with its legally elected goose mayor."
@@ -3862,14 +3976,10 @@
       "story_job_offer_history": [],
       "active_generated_jobs": {},
       "story_generated_npc_pool": {},
-      "recent_changes": [
-        "{\"at\":\"2026-06-30T01:26:30.628Z\",\"note\":\"Improved Mayor Goostave with stronger side beats, story images, varied player ages, and a non-template reporter surname.\"}",
-        "{\"at\":\"2026-06-30T01:25:44.441Z\",\"note\":\"Improved Mayor Goostave with stronger side beats, story images, varied player ages, and a non-template reporter surname.\"}",
-        "{\"at\":\"2026-06-30T01:24:55.424Z\",\"note\":\"Improved Mayor Goostave with stronger side beats, story images, varied player ages, and a non-template reporter surname.\"}"
-      ],
+      "recent_changes": [],
       "story_clock": {
         "elapsed_minutes": 0,
-        "label": "2026-11-04 08:45"
+        "label": "Day 4, 08:45"
       },
       "story_pacing": {
         "mode": "player_controlled",
@@ -3900,20 +4010,21 @@
       "blue mayoral sash"
     ],
     "title_card_image": {
-      "id": "mayor-goostave-title-card",
-      "title": "Mayor Goostave title card",
+      "url": "",
+      "source": "generated",
+      "seed": 0,
       "prompt": "small American town hall office, white goose wearing a tiny blue mayor sash on the counter, election folders and municipal paperwork nearby, grounded bright civic comedy mood, no people",
       "negativePrompt": "text, readable text, logo, watermark, signature",
-      "seed": 0,
+      "id": "mayor-goostave-title-card",
+      "title": "Mayor Goostave",
       "model": "",
-      "source": "generated",
-      "url": "",
       "hosted_url": "",
       "html": "",
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-08-31T06:03:35.951Z"
 }

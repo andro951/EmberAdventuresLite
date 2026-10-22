@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Human",
       "height": 11,
-      "body_description": "An athletic build.",
       "skin_color": "Warm olive-brown skin.",
       "eye_color": "Left iris dark hazel; right iris clouded pale gray-blue.",
       "hair_color": "Near-black",
@@ -107,7 +106,16 @@
       "hair_type": "Straight hair swept back from the face.",
       "extra_description": "Faint silver ward-burn lines mark the right temple.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -470,7 +478,8 @@
         "upload_attested_by": "",
         "upload_attested_at": "",
         "upload_attestation_policy_version": 0
-      }
+      },
+      "lite": true
     },
     "default_seed": 0,
     "image_prompt_config": {
@@ -523,6 +532,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T07:52:42Z",
-    "updated_at": "2026-09-08T18:58:39Z"
+    "updated_at": "2026-09-08T18:58:39Z",
+    "lite": true
   }
 }

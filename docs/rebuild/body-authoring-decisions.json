@@ -1,0 +1,1784 @@
+[
+  {
+    "file": "characters/emberadventures-character-adrian-crowe.json",
+    "path": "$.character_definition",
+    "id": "adrian-crowe",
+    "name": "Adrian Crowe",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-andre-bell.json",
+    "path": "$.character_definition",
+    "id": "andre-bell",
+    "name": "Andre Bell",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 7,
+      "upper_body_build": 7,
+      "midsection_build": 6,
+      "hip_width": 11,
+      "butt_build": 7,
+      "lower_body_build": 7,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Aren-Valehart.json",
+    "path": "$.character_definition",
+    "id": "character-aren-valehart",
+    "name": "Aren Valehart",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-arun-das.json",
+    "path": "$.character_definition",
+    "id": "arun-das",
+    "name": "Arun Das",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-aurelia-kintsu.json",
+    "path": "$.character_definition",
+    "id": "aurelia-kintsu",
+    "name": "Aurelia Kintsu",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-aveline-thorn.json",
+    "path": "$.character_definition",
+    "id": "aveline-thorn",
+    "name": "Aveline Thorn",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 13,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 7,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-beatrice-lowe.json",
+    "path": "$.character_definition",
+    "id": "beatrice-lowe",
+    "name": "Beatrice Lowe",
+    "previousBodyDescription": "A broad, soft build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 6,
+      "upper_body_build": 5,
+      "midsection_build": 5,
+      "hip_width": 13,
+      "butt_build": 5,
+      "lower_body_build": 6,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-bram-ashford.json",
+    "path": "$.character_definition",
+    "id": "bram-ashford",
+    "name": "Bram Ashford",
+    "previousBodyDescription": "A sturdy, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Brannok-Ironroot.json",
+    "path": "$.character_definition",
+    "id": "character-brannok-ironroot",
+    "name": "Brannok Ironroot",
+    "previousBodyDescription": "Compact, stocky, and exceptionally sturdy.",
+    "appearance": {
+      "shoulder_width": 14,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 7,
+      "hip_width": 12,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 9,
+      "leg_length": 9
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-cala-rune.json",
+    "path": "$.character_definition",
+    "id": "cala-rune",
+    "name": "Cala Rune",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-caleb-rowe.json",
+    "path": "$.character_definition",
+    "id": "caleb-rowe",
+    "name": "Caleb Rowe",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 11,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-dana-xu.json",
+    "path": "$.character_definition",
+    "id": "dana-xu",
+    "name": "Dana Xu",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-daro-reeve.json",
+    "path": "$.character_definition",
+    "id": "daro-reeve",
+    "name": "Daro Reeve",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 12,
+      "hip_width": 8,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-elias-wren.json",
+    "path": "$.character_definition",
+    "id": "elias-wren",
+    "name": "Elias Wren",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 11,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-evan-cho.json",
+    "path": "$.character_definition",
+    "id": "evan-cho",
+    "name": "Evan Cho",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-gwen-wallace.json",
+    "path": "$.character_definition",
+    "id": "gwen-wallace",
+    "name": "Gwen Wallace",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-hana-mori.json",
+    "path": "$.character_definition",
+    "id": "hana-mori",
+    "name": "Hana Mori",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-henry-okeke.json",
+    "path": "$.character_definition",
+    "id": "henry-okeke",
+    "name": "Henry Okeke",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 15,
+      "arm_length": 11,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-hima-ro.json",
+    "path": "$.character_definition",
+    "id": "hima-ro",
+    "name": "Hima Ro",
+    "previousBodyDescription": "A broad, soft build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 5,
+      "upper_body_build": 5,
+      "midsection_build": 5,
+      "hip_width": 13,
+      "butt_build": 5,
+      "lower_body_build": 6,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-joren-pike.json",
+    "path": "$.character_definition",
+    "id": "joren-pike",
+    "name": "Joren Pike",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-jun-seo.json",
+    "path": "$.character_definition",
+    "id": "jun-seo",
+    "name": "Jun Seo",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 8,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-kaia-vellum.json",
+    "path": "$.character_definition",
+    "id": "kaia-vellum",
+    "name": "Kaia Vellum",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Kaiva-Stormscale.json",
+    "path": "$.character_definition",
+    "id": "character-kaiva-stormscale",
+    "name": "Kaiva Stormscale",
+    "previousBodyDescription": "A strong, muscular build.",
+    "appearance": {
+      "shoulder_width": 14,
+      "chest": 14,
+      "upper_body_build": 17,
+      "midsection_build": 16,
+      "hip_width": 12,
+      "butt_build": 14,
+      "lower_body_build": 16,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-kes.json",
+    "path": "$.character_definition",
+    "id": "kes",
+    "name": "Kes",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 13,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-lian-mora.json",
+    "path": "$.character_definition",
+    "id": "lian-mora",
+    "name": "Lian Mora",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 7,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Liora-Sunmere.json",
+    "path": "$.character_definition",
+    "id": "character-liora-sunmere-featured",
+    "name": "Liora Sunmere",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-mara-veyne.json",
+    "path": "$.character_definition",
+    "id": "mara-veyne",
+    "name": "Mara Veyne",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-maya-serrano.json",
+    "path": "$.character_definition",
+    "id": "maya-serrano",
+    "name": "Maya Serrano",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Mirelle-Vesper.json",
+    "path": "$.character_definition",
+    "id": "character-mirelle-vesper",
+    "name": "Mirelle Vesper",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 14,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 12,
+      "butt_build": 7,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-nadiya-kestrel.json",
+    "path": "$.character_definition",
+    "id": "nadiya-kestrel",
+    "name": "Nadiya Kestrel",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 11,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-nessa-vorn.json",
+    "path": "$.character_definition",
+    "id": "nessa-vorn",
+    "name": "Nessa Vorn",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 8,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-odelia-crest.json",
+    "path": "$.character_definition",
+    "id": "odelia-crest",
+    "name": "Odelia Crest",
+    "previousBodyDescription": "An athletic build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 13,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-omar-salim.json",
+    "path": "$.character_definition",
+    "id": "omar-salim",
+    "name": "Omar Salim",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Orin-Tideglass.json",
+    "path": "$.character_definition",
+    "id": "character-orin-tideglass",
+    "name": "Orin Tideglass",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 8,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-orren-durn.json",
+    "path": "$.character_definition",
+    "id": "orren-durn",
+    "name": "Orren Durn",
+    "previousBodyDescription": "Compact and lean.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 9,
+      "leg_length": 9
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Pippa-Copperkettle.json",
+    "path": "$.character_definition",
+    "id": "character-pippa-copperkettle",
+    "name": "Pippa Copperkettle",
+    "previousBodyDescription": "Compact with a naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 7,
+      "midsection_build": 7,
+      "hip_width": 12,
+      "butt_build": 7,
+      "lower_body_build": 8,
+      "arm_length": 9,
+      "leg_length": 9
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Sylren-Moonwake.json",
+    "path": "$.character_definition",
+    "id": "character-sylren-moonwake",
+    "name": "Sylren Moonwake",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 8,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Tavian-Zephyr.json",
+    "path": "$.character_definition",
+    "id": "character-tavian-zephyr",
+    "name": "Tavian Zephyr",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 8,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 11,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-teros-valehorn.json",
+    "path": "$.character_definition",
+    "id": "teros-valehorn",
+    "name": "Teros Valehorn",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "characters/emberadventures-character-Thessara-Mossglint.json",
+    "path": "$.character_definition",
+    "id": "character-thessara-mossglint",
+    "name": "Thessara Mossglint",
+    "previousBodyDescription": "A naturally soft build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "mara-elloway",
+    "name": "Mara Elloway",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "mara-elloway",
+    "name": "Mara Elloway",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "jonah-mercer",
+    "name": "Jonah Mercer",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "riley-ashford",
+    "name": "Riley Ashford",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.orison-station-night-desk.characters.Veda Coll.full_character",
+    "id": "veda-coll",
+    "name": "Veda Coll",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.future_cast.items.ira_noll.full_character",
+    "id": "ira-noll",
+    "name": "Ira Noll",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.future_cast.items.len_talver.full_character",
+    "id": "len-talver",
+    "name": "Len Talver",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/After-Hours-at-Orison-Station.json",
+    "path": "$.storyTemplate.state.future_cast.items.mira_sorn.full_character",
+    "id": "mira-sorn",
+    "name": "Mira Sorn",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "case-mercer",
+    "name": "Case Mercer",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.laydown-yard.characters.Lena Ortiz.full_character",
+    "id": "lena-ortiz",
+    "name": "Lena Ortiz",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 13,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.laydown-yard.characters.Brooks Kane.full_character",
+    "id": "brooks-kane",
+    "name": "Brooks Kane",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.level-twelve-deck.characters.Darius Pike.full_character",
+    "id": "darius-pike",
+    "name": "Darius Pike",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.level-twelve-deck.characters.Mika Voss.full_character",
+    "id": "mika-voss",
+    "name": "Mika Voss",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.electrical-room.characters.Soren Bell.full_character",
+    "id": "soren-bell",
+    "name": "Soren Bell",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/high-hook-emberadventures-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.trailer-row.characters.Priya Nair.full_character",
+    "id": "priya-nair",
+    "name": "Priya Nair",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "mason-price",
+    "name": "Mason Price",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "mason-price",
+    "name": "Mason Price",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "tessa-kim",
+    "name": "Tessa Kim",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ellis",
+    "name": "Rowan Ellis",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.alder-hall-move-in-desk.characters.Lina Park.full_character",
+    "id": "lina-park",
+    "name": "Lina Park",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.theo_benton.full_character",
+    "id": "theo-benton",
+    "name": "Theo Benton",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.maya_serrano.full_character",
+    "id": "maya-serrano",
+    "name": "Maya Serrano",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.blair_huxley.full_character",
+    "id": "blair-huxley",
+    "name": "Blair Huxley",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 14,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 12,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.dr_elian_graves.full_character",
+    "id": "dr-elian-graves",
+    "name": "Dr. Elian Graves",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 10,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.nadia_frost.full_character",
+    "id": "nadia-frost",
+    "name": "Nadia Frost",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 12,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.silas_vorne.full_character",
+    "id": "silas-vorne",
+    "name": "Silas Vorne",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Horizon-University.json",
+    "path": "$.storyTemplate.state.future_cast.items.rina_cho.full_character",
+    "id": "rina-cho",
+    "name": "Rina Cho",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "evan-mercer",
+    "name": "Evan Mercer",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "evan-mercer",
+    "name": "Evan Mercer",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "nina-bell",
+    "name": "Nina Bell",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "riley-quinn",
+    "name": "Riley Quinn",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.bellwether-town-hall.characters.Maribel Pruitt.full_character",
+    "id": "maribel-pruitt",
+    "name": "Maribel Pruitt",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 6,
+      "upper_body_build": 6,
+      "midsection_build": 6,
+      "hip_width": 12,
+      "butt_build": 6,
+      "lower_body_build": 7,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.bellwether-town-hall.characters.Otis Crumb.full_character",
+    "id": "otis-crumb",
+    "name": "Otis Crumb",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.bellwether-town-hall.characters.Beatrice Rowley.full_character",
+    "id": "beatrice-rowley",
+    "name": "Beatrice Rowley",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/Mayor-Goostave.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.bellwether-town-hall.characters.Harold Finch.full_character",
+    "id": "harold-finch",
+    "name": "Harold Finch",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 9,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Last-Light-at-Bramble-Bridge.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "bramble-rowan-reed",
+    "name": "Rowan Reed",
+    "previousBodyDescription": "A lean, wiry build accustomed to walking long distances.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/The-Last-Light-at-Bramble-Bridge.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "bramble-rowan-reed",
+    "name": "Rowan Reed",
+    "previousBodyDescription": "A lean, wiry build accustomed to walking long distances.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "stories/The-Last-Light-at-Bramble-Bridge.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.bramble-bridge.characters.Mira Bellweather.full_character",
+    "id": "bramble-mira-bellweather",
+    "name": "Mira Bellweather",
+    "previousBodyDescription": "A stocky, sturdy build with a relaxed, practical bearing.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 6,
+      "hip_width": 12,
+      "butt_build": 7,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "eli-mercer",
+    "name": "Eli Mercer",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "eli-mercer",
+    "name": "Eli Mercer",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mina-brooks",
+    "name": "Mina Brooks",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "avery-lin",
+    "name": "Avery Lin",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.brightleaf-analytics-reception.characters.Rika Sato.full_character",
+    "id": "rika-sato",
+    "name": "Rika Sato",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 9,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 9,
+      "lower_body_build": 10,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.future_cast.items.hana_morikawa.full_character",
+    "id": "hana-morikawa",
+    "name": "Hana Morikawa",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.future_cast.items.claire_bennett.full_character",
+    "id": "claire-bennett",
+    "name": "Claire Bennett",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 7,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.future_cast.items.marcus_cho.full_character",
+    "id": "marcus-cho",
+    "name": "Marcus Cho",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.future_cast.items.sophie_reed.full_character",
+    "id": "sophie-reed",
+    "name": "Sophie Reed",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 10,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Office-Wallflower.json",
+    "path": "$.storyTemplate.state.future_cast.items.nolan_price.full_character",
+    "id": "nolan-price",
+    "name": "Nolan Price",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "caleb-ward",
+    "name": "Caleb Ward",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "caleb-ward",
+    "name": "Caleb Ward",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.players.1",
+    "id": "mara-ward",
+    "name": "Mara Ward",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.players.2",
+    "id": "rowan-ward",
+    "name": "Rowan Ward",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": "Average, lightly defined chest",
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.grandparents-inherited-house.characters.Celia Brandt.full_character",
+    "id": "celia-brandt",
+    "name": "Celia Brandt",
+    "previousBodyDescription": "An average build.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.grandparents-inherited-house.characters.Deacon Miles.full_character",
+    "id": "deacon-miles",
+    "name": "Deacon Miles",
+    "previousBodyDescription": "A strong, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 15,
+      "upper_body_build": 15,
+      "midsection_build": 14,
+      "hip_width": 11,
+      "butt_build": 14,
+      "lower_body_build": 15,
+      "arm_length": 11,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "stories/The-Unwanted-Inheritance.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.grandparents-inherited-house.characters.June Harlan.full_character",
+    "id": "june-harlan",
+    "name": "June Harlan",
+    "previousBodyDescription": "A slender build.",
+    "appearance": {
+      "shoulder_width": 8,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  },
+  {
+    "file": "skills/emberadventureslite-character/references/reference-character.json",
+    "path": "$.character_definition",
+    "id": "character-aren-valehart",
+    "name": "Aren Valehart",
+    "previousBodyDescription": "A sturdy, athletic build.",
+    "appearance": {
+      "shoulder_width": 13,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 11,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "skills/emberadventureslite-story/references/reference-story.json",
+    "path": "$.storyTemplate.state.player",
+    "id": "bramble-rowan-reed",
+    "name": "Rowan Reed",
+    "previousBodyDescription": "A lean, wiry build accustomed to walking long distances.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "skills/emberadventureslite-story/references/reference-story.json",
+    "path": "$.storyTemplate.state.players.0",
+    "id": "bramble-rowan-reed",
+    "name": "Rowan Reed",
+    "previousBodyDescription": "A lean, wiry build accustomed to walking long distances.",
+    "appearance": {
+      "shoulder_width": 10,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 12,
+      "hip_width": 9,
+      "butt_build": 11,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
+    }
+  },
+  {
+    "file": "skills/emberadventureslite-story/references/reference-story.json",
+    "path": "$.storyTemplate.state.npc_directory.locations.bramble-bridge.characters.Mira Bellweather.full_character",
+    "id": "bramble-mira-bellweather",
+    "name": "Mira Bellweather",
+    "previousBodyDescription": "A stocky, sturdy build with a relaxed, practical bearing.",
+    "appearance": {
+      "shoulder_width": 12,
+      "chest": 13,
+      "upper_body_build": 8,
+      "midsection_build": 6,
+      "hip_width": 12,
+      "butt_build": 7,
+      "lower_body_build": 9,
+      "arm_length": 10,
+      "leg_length": 10
+    }
+  }
+]

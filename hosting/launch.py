@@ -158,7 +158,7 @@ def main():
         secrets = collect_secrets(value["credentials"])
         process, url = start_session(node, value["config"], secrets)
         print("Local proxy started. Secrets are session-only; image live validation remains pending.")
-        print("In the browser, click 'Open Lite with hosted text'.")
+        print("Opening Lite with hosted text in your browser.")
         webbrowser.open(url)
         print("If the browser did not open:", url)
         input("Press Enter here to stop the LOCAL proxy (paid endpoints require the demo's separate shutdown): ")

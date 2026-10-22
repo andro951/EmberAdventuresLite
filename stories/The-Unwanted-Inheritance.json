@@ -31,7 +31,7 @@
         "settlement_name": "Grayling",
         "district": "old county road",
         "specific_place": "grandparents' inherited house",
-        "npc_location_id": "loc-inherited-house"
+        "npc_location_id": "grandparents-inherited-house"
       },
       "world_map": {
         "current_location_id": "loc-inherited-house",
@@ -265,7 +265,6 @@
         "appearance": {
           "species": "adult white human",
           "height": 6,
-          "body_description": "An average build.",
           "skin_color": "light skin",
           "eye_color": "brown eyes",
           "hair_color": "brown hair",
@@ -273,7 +272,16 @@
           "hair_type": "straight hair",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 11,
+          "chest": 12,
+          "upper_body_build": 12,
+          "midsection_build": 11,
+          "hip_width": 10,
+          "butt_build": 11,
+          "lower_body_build": 12,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -459,17 +467,27 @@
         },
         "default_profile_image": {
           "url": "",
-          "local_image_id": "",
           "source": "none",
-          "seed": null,
+          "seed": 0,
           "prompt": "",
           "negative_prompt": "",
           "note": "",
+          "local_image_id": "",
           "male": true
         },
         "voice": null,
         "version": 1,
         "romanceable": true,
+        "starting_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "They inherited their grandparents' old rural house after probate finished.",
+          "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+          "They remember visiting the house as a child and having warm daytime memories there.",
+          "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+          "Caleb's twin brother was named Noah."
+        ],
+        "created_at": "2026-06-29T00:00:00.000Z",
+        "updated_at": "2026-06-29T00:00:00.000Z",
         "fallback_name": "Caleb Ward",
         "fallback_outfits": [
           {
@@ -634,33 +652,25 @@
           }
         ],
         "fallback_starting_outfit_id": "arrival-clothes",
-        "starting_known_facts": [
-          "This is one of three selectable player characters for the story.",
-          "They inherited their grandparents' old rural house after probate finished.",
-          "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
-          "They remember visiting the house as a child and having warm daytime memories there.",
-          "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
-          "Caleb's twin brother was named Noah."
-        ],
         "profile_image_presentations": {
           "male": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
-            "prompt": "",
-            "negative_prompt": "",
-            "note": "",
-            "male": true
-          },
-          "non_male": {
-            "url": "",
-            "local_image_id": "",
-            "source": "hosted",
             "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "source": "none",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "local_image_id": "",
             "male": false
           }
         },
@@ -672,8 +682,7 @@
           "active_image_id": "",
           "image_ids": []
         },
-        "created_at": "2026-06-29T00:00:00.000Z",
-        "updated_at": "2026-08-31T06:03:35.951Z"
+        "lite": true
       },
       "players": [
         {
@@ -698,7 +707,6 @@
           "appearance": {
             "species": "adult white human",
             "height": 6,
-            "body_description": "An average build.",
             "skin_color": "light skin",
             "eye_color": "brown eyes",
             "hair_color": "brown hair",
@@ -706,7 +714,16 @@
             "hair_type": "straight hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 11,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -892,17 +909,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": true
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They inherited their grandparents' old rural house after probate finished.",
+            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+            "They remember visiting the house as a child and having warm daytime memories there.",
+            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+            "Caleb's twin brother was named Noah."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Caleb Ward",
           "fallback_outfits": [
             {
@@ -1067,33 +1094,25 @@
             }
           ],
           "fallback_starting_outfit_id": "arrival-clothes",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They inherited their grandparents' old rural house after probate finished.",
-            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
-            "They remember visiting the house as a child and having warm daytime memories there.",
-            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
-            "Caleb's twin brother was named Noah."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
-              "prompt": "",
-              "negative_prompt": "",
-              "note": "",
-              "male": true
-            },
-            "non_male": {
-              "url": "",
-              "local_image_id": "",
-              "source": "hosted",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "source": "none",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1105,8 +1124,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "mara-ward",
@@ -1130,7 +1148,6 @@
           "appearance": {
             "species": "adult Black human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "deep brown skin",
             "eye_color": "dark brown eyes",
             "hair_color": "black hair",
@@ -1138,7 +1155,16 @@
             "hair_type": "natural curls",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 13,
+            "upper_body_build": 8,
+            "midsection_build": 8,
+            "hip_width": 11,
+            "butt_build": 8,
+            "lower_body_build": 9,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1292,17 +1318,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They inherited their grandparents' old rural house after probate finished.",
+            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+            "They remember visiting the house as a child and having warm daytime memories there.",
+            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+            "Mara's twin sister was named Nora."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Mara Ward",
           "fallback_outfits": [
             {
@@ -1435,33 +1471,25 @@
             }
           ],
           "fallback_starting_outfit_id": "arrival-clothes",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They inherited their grandparents' old rural house after probate finished.",
-            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
-            "They remember visiting the house as a child and having warm daytime memories there.",
-            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
-            "Mara's twin sister was named Nora."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1473,8 +1501,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "rowan-ward",
@@ -1498,7 +1525,6 @@
           "appearance": {
             "species": "adult mixed human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "medium tan skin",
             "eye_color": "hazel eyes",
             "hair_color": "dark brown hair",
@@ -1506,7 +1532,16 @@
             "hair_type": "wavy hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": "Average, lightly defined chest",
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1692,17 +1727,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They inherited their grandparents' old rural house after probate finished.",
+            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
+            "They remember visiting the house as a child and having warm daytime memories there.",
+            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
+            "Rowan's twin was named Ellis."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Rowan Ward",
           "fallback_outfits": [
             {
@@ -1867,33 +1912,25 @@
             }
           ],
           "fallback_starting_outfit_id": "arrival-clothes",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They inherited their grandparents' old rural house after probate finished.",
-            "They accepted a job at a local hardware store and plan to live in the house while deciding whether to keep or sell it.",
-            "They remember visiting the house as a child and having warm daytime memories there.",
-            "They remember having a twin who died young and was supposedly cremated; the twin's urn sits on the fireplace.",
-            "Rowan's twin was named Ellis."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1905,8 +1942,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         }
       ],
       "characters": {},
@@ -1915,17 +1951,16 @@
           "grandparents-inherited-house": {
             "label": "grandparents' inherited house",
             "characters": {
-              "celia-brandt": {
+              "Celia Brandt": {
                 "id": "celia-brandt",
                 "name": "Celia Brandt",
-                "can_die": false,
                 "gender": "female",
                 "age": 58,
                 "role": "probate lawyer",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "celia-brandt",
                   "name": "Celia Brandt",
@@ -1948,7 +1983,6 @@
                   "appearance": {
                     "species": "adult white human",
                     "height": 5,
-                    "body_description": "An average build.",
                     "skin_color": "fair skin",
                     "eye_color": "gray eyes",
                     "hair_color": "silver hair",
@@ -1956,7 +1990,16 @@
                     "hair_type": "neatly styled hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 10,
+                    "chest": 13,
+                    "upper_body_build": 8,
+                    "midsection_build": 8,
+                    "hip_width": 11,
+                    "butt_build": 8,
+                    "lower_body_build": 9,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -1992,17 +2035,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": false
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Celia Brandt handled the transfer of the grandparents' house to the player.",
+                    "She knows the estate paperwork but does not know the full cellar truth.",
+                    "She can answer questions about the will, property records, insurance requirements, and legal deadlines.",
+                    "She remembers that several relatives refused or ignored the inheritance before it passed to the player.",
+                    "She avoids family gossip unless pushed with evidence."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Celia Brandt",
                   "fallback_outfits": [
                     {
@@ -2017,32 +2069,25 @@
                     }
                   ],
                   "fallback_starting_outfit_id": "arrival-clothes",
-                  "starting_known_facts": [
-                    "Celia Brandt handled the transfer of the grandparents' house to the player.",
-                    "She knows the estate paperwork but does not know the full cellar truth.",
-                    "She can answer questions about the will, property records, insurance requirements, and legal deadlines.",
-                    "She remembers that several relatives refused or ignored the inheritance before it passed to the player.",
-                    "She avoids family gossip unless pushed with evidence."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
+                      "source": "none",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": true
                     },
                     "non_male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
+                      "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2054,21 +2099,19 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               },
-              "deacon-miles": {
+              "Deacon Miles": {
                 "id": "deacon-miles",
                 "name": "Deacon Miles",
-                "can_die": false,
                 "gender": "male",
                 "age": 41,
                 "role": "hardware store owner",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "deacon-miles",
                   "name": "Deacon Miles",
@@ -2091,7 +2134,6 @@
                   "appearance": {
                     "species": "adult Black human",
                     "height": 6,
-                    "body_description": "A strong, athletic build.",
                     "skin_color": "dark brown skin",
                     "eye_color": "dark eyes",
                     "hair_color": "black hair",
@@ -2099,7 +2141,16 @@
                     "hair_type": "close-cropped hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 13,
+                    "chest": 15,
+                    "upper_body_build": 15,
+                    "midsection_build": 14,
+                    "hip_width": 11,
+                    "butt_build": 14,
+                    "lower_body_build": 15,
+                    "arm_length": 11,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -2135,17 +2186,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": true
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Deacon Miles owns Grayling Hardware and hired the player for steady work.",
+                    "He knew the grandparents as careful customers who bought locks, chain, salt, batteries, and repair supplies with strange regularity.",
+                    "He gives the player a normal daytime anchor outside the house.",
+                    "He can provide tools, gossip, and warnings without understanding the full haunting.",
+                    "He is more useful when the player asks concrete questions instead of sounding panicked."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Deacon Miles",
                   "fallback_outfits": [
                     {
@@ -2160,32 +2220,25 @@
                     }
                   ],
                   "fallback_starting_outfit_id": "arrival-clothes",
-                  "starting_known_facts": [
-                    "Deacon Miles owns Grayling Hardware and hired the player for steady work.",
-                    "He knew the grandparents as careful customers who bought locks, chain, salt, batteries, and repair supplies with strange regularity.",
-                    "He gives the player a normal daytime anchor outside the house.",
-                    "He can provide tools, gossip, and warnings without understanding the full haunting.",
-                    "He is more useful when the player asks concrete questions instead of sounding panicked."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
-                      "prompt": "",
-                      "negative_prompt": "",
-                      "note": "",
-                      "male": true
-                    },
-                    "non_male": {
-                      "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
+                      "male": true
+                    },
+                    "non_male": {
+                      "url": "",
+                      "source": "none",
+                      "seed": 0,
+                      "prompt": "",
+                      "negative_prompt": "",
+                      "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2197,21 +2250,19 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               },
-              "june-harlan": {
+              "June Harlan": {
                 "id": "june-harlan",
                 "name": "June Harlan",
-                "can_die": false,
                 "gender": "female",
                 "age": 72,
                 "role": "neighbor across the road",
-                "voice": null,
+                "can_die": false,
                 "relationship": "none",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "june-harlan",
                   "name": "June Harlan",
@@ -2234,7 +2285,6 @@
                   "appearance": {
                     "species": "adult white human",
                     "height": 4,
-                    "body_description": "A slender build.",
                     "skin_color": "pale wrinkled skin",
                     "eye_color": "blue eyes",
                     "hair_color": "white hair",
@@ -2242,7 +2292,16 @@
                     "hair_type": "thin curled hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 8,
+                    "chest": 11,
+                    "upper_body_build": 11,
+                    "midsection_build": 11,
+                    "hip_width": 9,
+                    "butt_build": 10,
+                    "lower_body_build": 11,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -2278,17 +2337,26 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": false
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "June Harlan lives across the road from the inherited house.",
+                    "She remembers the player visiting as a child but never staying overnight.",
+                    "She remembers the night the twin died, though not every detail.",
+                    "She knows the grandparents changed after the death and bought heavy locks soon after.",
+                    "She may tell the truth if the player brings enough evidence or if the house pressure becomes impossible to ignore."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "June Harlan",
                   "fallback_outfits": [
                     {
@@ -2303,32 +2371,25 @@
                     }
                   ],
                   "fallback_starting_outfit_id": "arrival-clothes",
-                  "starting_known_facts": [
-                    "June Harlan lives across the road from the inherited house.",
-                    "She remembers the player visiting as a child but never staying overnight.",
-                    "She remembers the night the twin died, though not every detail.",
-                    "She knows the grandparents changed after the death and bought heavy locks soon after.",
-                    "She may tell the truth if the player brings enough evidence or if the house pressure becomes impossible to ignore."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
+                      "source": "none",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": true
                     },
                     "non_male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
+                      "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -2340,15 +2401,10 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               }
             }
-          },
-          "loc-inherited-house": {
-            "label": "Inherited House",
-            "characters": {}
           }
         }
       },
@@ -2378,11 +2434,11 @@
             "requires": [],
             "next_objectives": [
               {
-                "objective_id": "walk-through-familiar-rooms",
                 "id": "take-possession-of-the-house-output-1",
-                "completion_instruction": "Keep the opening grounded and ordinary. The house should feel old, quiet, familiar, and a little too still, not openly haunted yet.",
                 "rewards": [],
-                "target_input_group_id": "from-take-possession-of-the-house"
+                "completion_instruction": "Keep the opening grounded and ordinary. The house should feel old, quiet, familiar, and a little too still, not openly haunted yet.",
+                "objective_id": "walk-through-familiar-rooms",
+                "target_input_group_id": "walk-through-familiar-rooms-from-take-possession-of-the-house"
               }
             ],
             "travel_location_id": "",
@@ -2418,11 +2474,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "start-work-at-grayling-hardware",
                 "id": "walk-through-familiar-rooms-output-1",
-                "completion_instruction": "Describe ordinary family memories tied to house objects. Include the fireplace urn as familiar and sad, not suspicious yet. Do not reveal the cellar truth.",
                 "rewards": [],
-                "target_input_group_id": "from-walk-through-familiar-rooms"
+                "completion_instruction": "Describe ordinary family memories tied to house objects. Include the fireplace urn as familiar and sad, not suspicious yet. Do not reveal the cellar truth.",
+                "objective_id": "start-work-at-grayling-hardware",
+                "target_input_group_id": "start-work-at-grayling-hardware-from-walk-through-familiar-rooms"
               }
             ],
             "travel_location_id": "",
@@ -2455,6 +2511,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "normal_life"
                 ],
                 "amount": 1,
@@ -2466,11 +2523,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "settle-in-for-the-first-night",
                 "id": "start-work-at-grayling-hardware-output-1",
-                "completion_instruction": "Introduce Deacon Miles as the player's normal daytime anchor. Let the job involve practical supplies, small-town gossip, and ordinary house repair needs.",
                 "rewards": [],
-                "target_input_group_id": "from-start-work-at-grayling-hardware"
+                "completion_instruction": "Introduce Deacon Miles as the player's normal daytime anchor. Let the job involve practical supplies, small-town gossip, and ordinary house repair needs.",
+                "objective_id": "settle-in-for-the-first-night",
+                "target_input_group_id": "settle-in-for-the-first-night-from-start-work-at-grayling-hardware"
               }
             ],
             "travel_location_id": "",
@@ -2501,6 +2558,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "house_pressure"
                 ],
                 "amount": 1,
@@ -2512,11 +2570,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "wake-to-the-first-noise",
                 "id": "settle-in-for-the-first-night-output-1",
-                "completion_instruction": "As the player settles in, let them naturally remember that they visited this house often but never actually slept here before. Keep the thought brief and dismissible.",
                 "rewards": [],
-                "target_input_group_id": "from-settle-in-for-the-first-night"
+                "completion_instruction": "As the player settles in, let them naturally remember that they visited this house often but never actually slept here before. Keep the thought brief and dismissible.",
+                "objective_id": "wake-to-the-first-noise",
+                "target_input_group_id": "wake-to-the-first-noise-from-settle-in-for-the-first-night"
               }
             ],
             "travel_location_id": "",
@@ -2552,11 +2610,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-first-noise-response",
                 "id": "wake-to-the-first-noise-output-1",
-                "completion_instruction": "Make the sound specific and grounded: dragging, small knocks, wet tapping, or a child's faint movement outside. Do not answer what it is yet.",
                 "rewards": [],
-                "target_input_group_id": "from-wake-to-the-first-noise"
+                "completion_instruction": "Make the sound specific and grounded: dragging, small knocks, wet tapping, or a child's faint movement outside. Do not answer what it is yet.",
+                "objective_id": "choose-first-noise-response",
+                "target_input_group_id": "choose-first-noise-response-from-wake-to-the-first-noise"
               }
             ],
             "travel_location_id": "",
@@ -2604,6 +2662,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 1,
@@ -2615,9 +2674,9 @@
                     "text": "The player followed the first night noise and should discover it does not truly come from outside."
                   }
                 ],
+                "completion_instruction": "Resolve only the player's chosen first response and move to the consequences. Honor the selected choice: Go Outside and Check.",
                 "next_objective_id": "find-the-locked-cellar-door",
-                "completion_instruction": "Resolve only the player's chosen first response and move to the consequences.",
-                "target_input_group_id": "from-choose-first-noise-response"
+                "target_input_group_id": "find-the-locked-cellar-door-from-choose-first-noise-response"
               },
               {
                 "id": "lock-bedroom-door",
@@ -2630,6 +2689,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 2,
@@ -2641,9 +2701,9 @@
                     "text": "The player hid from the first night noise; the house pressure should escalate through sleep, dreams, and daytime unease."
                   }
                 ],
+                "completion_instruction": "Resolve only the player's chosen first response and move to the consequences. Honor the selected choice: Lock the Bedroom Door.",
                 "next_objective_id": "find-the-locked-cellar-door",
-                "completion_instruction": "Resolve only the player's chosen first response and move to the consequences.",
-                "target_input_group_id": "from-choose-first-noise-response"
+                "target_input_group_id": "find-the-locked-cellar-door-from-choose-first-noise-response"
               },
               {
                 "id": "go-back-to-sleep",
@@ -2656,6 +2716,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 3,
@@ -2667,9 +2728,9 @@
                     "text": "The player ignored the first night noise; the haunting should become more intrusive because the twin was not answered."
                   }
                 ],
+                "completion_instruction": "Resolve only the player's chosen first response and move to the consequences. Honor the selected choice: Go Back to Sleep.",
                 "next_objective_id": "find-the-locked-cellar-door",
-                "completion_instruction": "Resolve only the player's chosen first response and move to the consequences.",
-                "target_input_group_id": "from-choose-first-noise-response"
+                "target_input_group_id": "find-the-locked-cellar-door-from-choose-first-noise-response"
               }
             ],
             "while_active_guidance": "Decide whether to follow the noise, lock yourself in, or pretend it is nothing."
@@ -2691,6 +2752,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "cellar_progress"
                 ],
                 "amount": 1,
@@ -2702,11 +2764,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-cellar-commitment",
                 "id": "find-the-locked-cellar-door-output-1",
-                "completion_instruction": "Reveal that the sound resolves toward the cellar door. The door should imply warning through locks and chains only; no one should state a warning aloud.",
                 "rewards": [],
-                "target_input_group_id": "from-find-the-locked-cellar-door"
+                "completion_instruction": "Reveal that the sound resolves toward the cellar door. The door should imply warning through locks and chains only; no one should state a warning aloud.",
+                "objective_id": "choose-cellar-commitment",
+                "target_input_group_id": "choose-cellar-commitment-from-find-the-locked-cellar-door"
               }
             ],
             "travel_location_id": "",
@@ -2754,6 +2816,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "cellar_progress"
                     ],
                     "amount": 1,
@@ -2765,9 +2828,9 @@
                     "text": "The player has decided to search for a way into the locked cellar."
                   }
                 ],
+                "completion_instruction": "Record the player's stance and continue into daytime estate tasks. Honor the selected choice: Start Searching for the Key and Code.",
                 "next_objective_id": "sort-the-living-room",
-                "completion_instruction": "Record the player's stance and continue into daytime estate tasks.",
-                "target_input_group_id": "from-choose-cellar-commitment"
+                "target_input_group_id": "sort-the-living-room-from-choose-cellar-commitment"
               },
               {
                 "id": "leave-it-locked",
@@ -2780,6 +2843,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 2,
@@ -2791,9 +2855,9 @@
                     "text": "The player chose to leave the locked cellar alone for now; the twin spirit should keep pushing through objects, sleep, and noises."
                   }
                 ],
+                "completion_instruction": "Record the player's stance and continue into daytime estate tasks. Honor the selected choice: Leave It Locked for Now.",
                 "next_objective_id": "sort-the-living-room",
-                "completion_instruction": "Record the player's stance and continue into daytime estate tasks.",
-                "target_input_group_id": "from-choose-cellar-commitment"
+                "target_input_group_id": "sort-the-living-room-from-choose-cellar-commitment"
               },
               {
                 "id": "document-it",
@@ -2807,6 +2871,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "cellar_progress"
                     ],
                     "amount": 1,
@@ -2815,6 +2880,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "normal_life"
                     ],
                     "amount": 1,
@@ -2826,9 +2892,9 @@
                     "text": "The player documented the locked cellar door as part of the estate records."
                   }
                 ],
+                "completion_instruction": "Record the player's stance and continue into daytime estate tasks. Honor the selected choice: Photograph It for the Estate Records.",
                 "next_objective_id": "sort-the-living-room",
-                "completion_instruction": "Record the player's stance and continue into daytime estate tasks.",
-                "target_input_group_id": "from-choose-cellar-commitment"
+                "target_input_group_id": "sort-the-living-room-from-choose-cellar-commitment"
               }
             ],
             "while_active_guidance": "Decide whether to treat the locked cellar as a problem, a mystery, or something to leave alone."
@@ -2843,6 +2909,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "normal_life"
                 ],
                 "amount": 1,
@@ -2861,11 +2928,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "ask-around-at-work",
                 "id": "sort-the-living-room-output-1",
-                "completion_instruction": "Let the player find warm memories and one wrong detail: paired toys, cropped photos, or the urn being treated too carefully. Do not reveal the dirt yet unless the player directly opens it.",
                 "rewards": [],
-                "target_input_group_id": "from-sort-the-living-room"
+                "completion_instruction": "Let the player find warm memories and one wrong detail: paired toys, cropped photos, or the urn being treated too carefully. Do not reveal the dirt yet unless the player directly opens it.",
+                "objective_id": "ask-around-at-work",
+                "target_input_group_id": "ask-around-at-work-from-sort-the-living-room"
               }
             ],
             "travel_location_id": "",
@@ -2898,6 +2965,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "cellar_progress"
                 ],
                 "amount": 1,
@@ -2909,11 +2977,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "find-the-brass-key",
                 "id": "ask-around-at-work-output-1",
-                "completion_instruction": "Let Deacon remember practical purchase patterns: chains, locks, salt, candles, batteries, and regular repairs. Keep it mundane enough that the player can rationalize it.",
                 "rewards": [],
-                "target_input_group_id": "from-ask-around-at-work"
+                "completion_instruction": "Let Deacon remember practical purchase patterns: chains, locks, salt, candles, batteries, and regular repairs. Keep it mundane enough that the player can rationalize it.",
+                "objective_id": "find-the-brass-key",
+                "target_input_group_id": "find-the-brass-key-from-ask-around-at-work"
               }
             ],
             "travel_location_id": "",
@@ -2939,6 +3007,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "cellar_progress"
                 ],
                 "amount": 1,
@@ -2957,11 +3026,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "open-the-urn",
                 "id": "find-the-brass-key-output-1",
-                "completion_instruction": "Reveal the key through a normal object that carries a fond memory of a grandparent. Make the memory feel contaminated by what the key implies.",
                 "rewards": [],
-                "target_input_group_id": "from-find-the-brass-key"
+                "completion_instruction": "Reveal the key through a normal object that carries a fond memory of a grandparent. Make the memory feel contaminated by what the key implies.",
+                "objective_id": "open-the-urn",
+                "target_input_group_id": "open-the-urn-from-find-the-brass-key"
               }
             ],
             "travel_location_id": "",
@@ -2987,6 +3056,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "house_pressure"
                 ],
                 "amount": 2,
@@ -2995,6 +3065,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "cellar_progress"
                 ],
                 "amount": 1,
@@ -3018,11 +3089,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-after-urn",
                 "id": "open-the-urn-output-1",
-                "completion_instruction": "Reveal that the urn contains ordinary dirt, not ashes. The player should naturally think: if this is dirt, where is the twin, and did the parents know?",
                 "rewards": [],
-                "target_input_group_id": "from-open-the-urn"
+                "completion_instruction": "Reveal that the urn contains ordinary dirt, not ashes. The player should naturally think: if this is dirt, where is the twin, and did the parents know?",
+                "objective_id": "choose-after-urn",
+                "target_input_group_id": "choose-after-urn-from-open-the-urn"
               }
             ],
             "travel_location_id": "",
@@ -3070,6 +3141,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "family_doubt"
                     ],
                     "amount": 2,
@@ -3081,9 +3153,9 @@
                     "text": "The player called a parent after discovering dirt in the urn; the answer should be evasive, shaken, or incomplete rather than fully resolving the mystery."
                   }
                 ],
+                "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew. Honor the selected choice: Call a Parent.",
                 "next_objective_id": "learn-the-six-letter-code",
-                "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew.",
-                "target_input_group_id": "from-choose-after-urn"
+                "target_input_group_id": "learn-the-six-letter-code-from-choose-after-urn"
               },
               {
                 "id": "call-lawyer",
@@ -3096,6 +3168,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "normal_life"
                     ],
                     "amount": 1,
@@ -3114,9 +3187,9 @@
                     "text": "The player called Celia Brandt after discovering dirt in the urn and may press estate records for contradictions."
                   }
                 ],
+                "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew. Honor the selected choice: Call Celia Brandt.",
                 "next_objective_id": "learn-the-six-letter-code",
-                "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew.",
-                "target_input_group_id": "from-choose-after-urn"
+                "target_input_group_id": "learn-the-six-letter-code-from-choose-after-urn"
               },
               {
                 "id": "tell-no-one",
@@ -3129,6 +3202,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 1,
@@ -3140,9 +3214,9 @@
                     "text": "The player told no one after discovering dirt in the urn; the isolation should intensify the haunting."
                   }
                 ],
+                "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew. Honor the selected choice: Tell No One Yet.",
                 "next_objective_id": "learn-the-six-letter-code",
-                "completion_instruction": "Resolve the call or refusal without fully answering whether the parents knew.",
-                "target_input_group_id": "from-choose-after-urn"
+                "target_input_group_id": "learn-the-six-letter-code-from-choose-after-urn"
               }
             ],
             "while_active_guidance": "The urn proves someone lied, but calling the wrong person may bury the truth again."
@@ -3157,6 +3231,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "cellar_progress"
                 ],
                 "amount": 2,
@@ -3180,11 +3255,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-open-or-delay",
                 "id": "learn-the-six-letter-code-output-1",
-                "completion_instruction": "Reveal the code as a family word tied to the twin and the grandparents' bargain, not as a random puzzle answer. The player should understand enough to open the lock.",
                 "rewards": [],
-                "target_input_group_id": "from-learn-the-six-letter-code"
+                "completion_instruction": "Reveal the code as a family word tied to the twin and the grandparents' bargain, not as a random puzzle answer. The player should understand enough to open the lock.",
+                "objective_id": "choose-open-or-delay",
+                "target_input_group_id": "choose-open-or-delay-from-learn-the-six-letter-code"
               }
             ],
             "travel_location_id": "",
@@ -3232,6 +3307,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "cellar_progress"
                     ],
                     "amount": 2,
@@ -3243,9 +3319,9 @@
                     "text": "The player chose to open the cellar after finding the key and code."
                   }
                 ],
+                "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence. Honor the selected choice: Open It Now.",
                 "next_objective_id": "descend-the-cellar-stairs",
-                "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence.",
-                "target_input_group_id": "from-choose-open-or-delay"
+                "target_input_group_id": "descend-the-cellar-stairs-from-choose-open-or-delay"
               },
               {
                 "id": "sleep-on-it",
@@ -3258,6 +3334,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 4,
@@ -3269,9 +3346,9 @@
                     "text": "The player had the means to open the cellar but chose to delay; the twin spirit should escalate sharply overnight."
                   }
                 ],
+                "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence. Honor the selected choice: Sleep on It.",
                 "next_objective_id": "descend-the-cellar-stairs",
-                "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence.",
-                "target_input_group_id": "from-choose-open-or-delay"
+                "target_input_group_id": "descend-the-cellar-stairs-from-choose-open-or-delay"
               },
               {
                 "id": "leave-house",
@@ -3284,6 +3361,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 3,
@@ -3295,9 +3373,9 @@
                     "text": "The player left the house after gaining access to the cellar; the haunting may follow through dreams, calls, and objects."
                   }
                 ],
+                "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence. Honor the selected choice: Leave the House for the Night.",
                 "next_objective_id": "descend-the-cellar-stairs",
-                "completion_instruction": "Resolve only the chosen stance and move to the appropriate consequence.",
-                "target_input_group_id": "from-choose-open-or-delay"
+                "target_input_group_id": "descend-the-cellar-stairs-from-choose-open-or-delay"
               }
             ],
             "while_active_guidance": "The player has the key and the code. The locks can finally open."
@@ -3319,6 +3397,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "house_pressure"
                 ],
                 "amount": 1,
@@ -3330,11 +3409,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "find-the-burial-place",
                 "id": "descend-the-cellar-stairs-output-1",
-                "completion_instruction": "Show the cellar stairs as physically real and frightening. The spirit may pressure the player through fear, sensory distortion, and childhood memory, but do not make major choices for them.",
                 "rewards": [],
-                "target_input_group_id": "from-descend-the-cellar-stairs"
+                "completion_instruction": "Show the cellar stairs as physically real and frightening. The spirit may pressure the player through fear, sensory distortion, and childhood memory, but do not make major choices for them.",
+                "objective_id": "find-the-burial-place",
+                "target_input_group_id": "find-the-burial-place-from-descend-the-cellar-stairs"
               }
             ],
             "travel_location_id": "",
@@ -3360,6 +3439,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "cellar_progress"
                 ],
                 "amount": 2,
@@ -3383,11 +3463,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "uncover-the-bargain",
                 "id": "find-the-burial-place-output-1",
-                "completion_instruction": "Reveal the burial place without graphic gore. This is the emotional truth: the twin was buried under the house, and the cremation story was a lie.",
                 "rewards": [],
-                "target_input_group_id": "from-find-the-burial-place"
+                "completion_instruction": "Reveal the burial place without graphic gore. This is the emotional truth: the twin was buried under the house, and the cremation story was a lie.",
+                "objective_id": "uncover-the-bargain",
+                "target_input_group_id": "uncover-the-bargain-from-find-the-burial-place"
               }
             ],
             "travel_location_id": "",
@@ -3413,6 +3493,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "family_doubt"
                 ],
                 "amount": 3,
@@ -3436,11 +3517,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-what-to-do-with-truth",
                 "id": "uncover-the-bargain-output-1",
-                "completion_instruction": "Reveal that the grandparents made a desperate bargain in youth; when the debt came due, they chose one twin to die so the other would live. The active haunting is the dead twin's grudge spirit, not the old bargaining entity.",
                 "rewards": [],
-                "target_input_group_id": "from-uncover-the-bargain"
+                "completion_instruction": "Reveal that the grandparents made a desperate bargain in youth; when the debt came due, they chose one twin to die so the other would live. The active haunting is the dead twin's grudge spirit, not the old bargaining entity.",
+                "objective_id": "choose-what-to-do-with-truth",
+                "target_input_group_id": "choose-what-to-do-with-truth-from-uncover-the-bargain"
               }
             ],
             "travel_location_id": "",
@@ -3488,6 +3569,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "cellar_progress"
                     ],
                     "amount": 3,
@@ -3497,15 +3579,11 @@
                     "type": "add_story_rule",
                     "rule_id": "player-chose-rest",
                     "text": "The player chose to name the twin, acknowledge the truth, and try to lay the spirit to rest instead of preserving the family lie."
-                  },
-                  {
-                    "type": "start_objective",
-                    "objective_id": "perform-the-resting-rite"
                   }
                 ],
+                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending. Honor the selected choice: Name the Twin and Lay Them to Rest.",
                 "next_objective_id": "perform-the-resting-rite",
-                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending.",
-                "target_input_group_id": "from-choose-what-to-do-with-truth"
+                "target_input_group_id": "perform-the-resting-rite-from-choose-what-to-do-with-truth"
               },
               {
                 "id": "keep-family-secret",
@@ -3518,6 +3596,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 4,
@@ -3527,15 +3606,11 @@
                     "type": "add_story_rule",
                     "rule_id": "player-kept-family-secret",
                     "text": "The player chose to keep the family secret, continuing the conditions that made the twin's grudge stronger."
-                  },
-                  {
-                    "type": "start_objective",
-                    "objective_id": "bad-ending-backseat"
                   }
                 ],
-                "next_objective_id": "perform-the-resting-rite",
-                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending.",
-                "target_input_group_id": "from-choose-what-to-do-with-truth"
+                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending. Honor the selected choice: Keep the Family Secret.",
+                "next_objective_id": "bad-ending-backseat",
+                "target_input_group_id": "bad-ending-backseat-from-choose-what-to-do-with-truth"
               },
               {
                 "id": "burn-the-proof",
@@ -3548,6 +3623,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 5,
@@ -3557,15 +3633,11 @@
                     "type": "add_story_rule",
                     "rule_id": "player-burned-proof",
                     "text": "The player chose to destroy proof of the grandparents' crime; the twin spirit should treat this as betrayal."
-                  },
-                  {
-                    "type": "start_objective",
-                    "objective_id": "bad-ending-backseat"
                   }
                 ],
-                "next_objective_id": "perform-the-resting-rite",
-                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending.",
-                "target_input_group_id": "from-choose-what-to-do-with-truth"
+                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending. Honor the selected choice: Burn the Proof.",
+                "next_objective_id": "bad-ending-backseat",
+                "target_input_group_id": "bad-ending-backseat-from-choose-what-to-do-with-truth"
               },
               {
                 "id": "run-from-house",
@@ -3578,6 +3650,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "house_pressure"
                     ],
                     "amount": 6,
@@ -3587,15 +3660,11 @@
                     "type": "add_story_rule",
                     "rule_id": "player-ran-from-truth",
                     "text": "The player chose to flee the house after learning the truth; the twin spirit may follow."
-                  },
-                  {
-                    "type": "start_objective",
-                    "objective_id": "bad-ending-backseat"
                   }
                 ],
-                "next_objective_id": "perform-the-resting-rite",
-                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending.",
-                "target_input_group_id": "from-choose-what-to-do-with-truth"
+                "completion_instruction": "Record the player's ending route. Only the full naming/resting path should lead toward the happy ending. Honor the selected choice: Run From the House.",
+                "next_objective_id": "bad-ending-backseat",
+                "target_input_group_id": "bad-ending-backseat-from-choose-what-to-do-with-truth"
               }
             ],
             "while_active_guidance": "The truth can be named, buried again, burned, or fled from."
@@ -3629,7 +3698,6 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "happy-ending-leave-town",
                 "requirements": [
                   {
                     "path": "story_inventory.cellar_progress",
@@ -3638,16 +3706,17 @@
                   }
                 ],
                 "id": "perform-the-resting-rite-output-1",
-                "completion_instruction": "Allow this objective to complete only if the player is sincerely laying the twin to rest rather than hiding the truth again. Make it frightening but compassionate.",
                 "rewards": [],
-                "target_input_group_id": "from-perform-the-resting-rite"
+                "completion_instruction": "Allow this objective to complete only if the player is sincerely laying the twin to rest rather than hiding the truth again. Make it frightening but compassionate.",
+                "objective_id": "happy-ending-leave-town",
+                "target_input_group_id": "happy-ending-leave-town-from-perform-the-resting-rite"
               },
               {
-                "objective_id": "bad-ending-backseat",
                 "id": "perform-the-resting-rite-output-2",
-                "completion_instruction": "Allow this objective to complete only if the player is sincerely laying the twin to rest rather than hiding the truth again. Make it frightening but compassionate.",
                 "rewards": [],
-                "target_input_group_id": "from-perform-the-resting-rite"
+                "completion_instruction": "Allow this objective to complete only if the player is sincerely laying the twin to rest rather than hiding the truth again. Make it frightening but compassionate.",
+                "objective_id": "bad-ending-backseat",
+                "target_input_group_id": "bad-ending-backseat-from-perform-the-resting-rite"
               }
             ],
             "travel_location_id": "",
@@ -3675,11 +3744,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-rear-view",
                 "id": "bad-ending-backseat-output-1",
-                "completion_instruction": "Put the player in the car at night. Let them hear a small movement from the back seat and notice something in the rear-view mirror.",
                 "rewards": [],
-                "target_input_group_id": "from-bad-ending-backseat"
+                "completion_instruction": "Put the player in the car at night. Let them hear a small movement from the back seat and notice something in the rear-view mirror.",
+                "objective_id": "choose-rear-view",
+                "target_input_group_id": "choose-rear-view-from-bad-ending-backseat"
               }
             ],
             "travel_location_id": "",
@@ -3741,9 +3810,8 @@
                     "reason": "The bad ending catches the player in the car after failing to lay the twin to rest."
                   }
                 ],
-                "completion_instruction": "Resolve the selected bad ending. Either choice ends in death or disappearance; the difference is whether the player sees the spirit clearly.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the selected bad ending. Either choice ends in death or disappearance; the difference is whether the player sees the spirit clearly. Honor the selected choice: Look Behind You.",
+                "ending_type": "game_over"
               },
               {
                 "id": "keep-driving",
@@ -3770,9 +3838,8 @@
                     "reason": "The bad ending follows the player into the car after failing to lay the twin to rest."
                   }
                 ],
-                "completion_instruction": "Resolve the selected bad ending. Either choice ends in death or disappearance; the difference is whether the player sees the spirit clearly.",
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the selected bad ending. Either choice ends in death or disappearance; the difference is whether the player sees the spirit clearly. Honor the selected choice: Keep Driving.",
+                "ending_type": "game_over"
               }
             ],
             "while_active_guidance": "Something moves in the back seat. Looking and not looking are both too late."
@@ -3796,10 +3863,9 @@
             "next_objectives": [
               {
                 "id": "happy-ending-leave-town-output-1",
-                "completion_instruction": "Resolve the only happy ending: the player moves away, the false urn is gone, the twin has a real memorial, and the house no longer has a claim on them.",
                 "rewards": [],
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Resolve the only happy ending: the player moves away, the false urn is gone, the twin has a real memorial, and the house no longer has a claim on them.",
+                "ending_type": "freeplay"
               }
             ],
             "travel_location_id": "",
@@ -3871,7 +3937,7 @@
       "recent_changes": [],
       "story_clock": {
         "elapsed_minutes": 0,
-        "label": "2026-09-12 16:20"
+        "label": "Day 12, 16:20"
       },
       "story_pacing": {
         "mode": "player_controlled",
@@ -3902,20 +3968,21 @@
       "locked cellar door"
     ],
     "title_card_image": {
-      "id": "the-unwanted-inheritance-title-card",
-      "title": "The Unwanted Inheritance title card",
+      "url": "",
+      "source": "none",
+      "seed": 0,
       "prompt": "",
       "negativePrompt": "",
-      "seed": 0,
+      "id": "the-unwanted-inheritance-title-card",
+      "title": "The Unwanted Inheritance",
       "model": "",
-      "source": "none",
-      "url": "",
       "hosted_url": "",
       "html": "",
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-08-31T06:03:35.951Z"
 }

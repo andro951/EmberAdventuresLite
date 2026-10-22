@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Human-derived vampire",
       "height": 12,
-      "body_description": "An athletic build.",
       "skin_color": "Medium-light olive skin with cool undertone and slightly reduced flush.",
       "eye_color": "Dark brown.",
       "hair_color": "Black",
@@ -107,7 +106,16 @@
       "hair_type": "Close-cropped textured hair with slightly longer top.",
       "extra_description": "Small unobtrusive fangs and faint healed scars at one shoulder.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 12,
+      "lower_body_build": 13,
+      "arm_length": 10,
+      "leg_length": 11
     },
     "outfits": [
       {
@@ -255,6 +263,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T13:58:01.857Z",
-    "updated_at": "2026-09-08T18:52:34Z"
+    "updated_at": "2026-09-08T18:52:34Z",
+    "lite": true
   }
 }

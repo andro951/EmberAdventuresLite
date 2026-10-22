@@ -111,7 +111,6 @@
         "appearance": {
           "species": "human",
           "height": "5 feet 9 inches tall",
-          "body_description": "A lean, wiry build accustomed to walking long distances.",
           "skin_color": "warm brown",
           "eye_color": "hazel",
           "hair_color": "black",
@@ -119,7 +118,16 @@
           "hair_type": "curly",
           "extra_description": "A small pale scar at the left temple.",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 10,
+          "chest": 12,
+          "upper_body_build": 12,
+          "midsection_build": 12,
+          "hip_width": 9,
+          "butt_build": 11,
+          "lower_body_build": 13,
+          "arm_length": 10,
+          "leg_length": 11
         },
         "outfits": [
           {
@@ -220,7 +228,8 @@
         },
         "voice": null,
         "created_at": "2026-10-21T23:00:17.617Z",
-        "updated_at": "2026-10-21T23:00:17.617Z"
+        "updated_at": "2026-10-21T23:00:17.617Z",
+        "lite": true
       },
       "players": [
         {
@@ -283,7 +292,6 @@
           "appearance": {
             "species": "human",
             "height": "5 feet 9 inches tall",
-            "body_description": "A lean, wiry build accustomed to walking long distances.",
             "skin_color": "warm brown",
             "eye_color": "hazel",
             "hair_color": "black",
@@ -291,7 +299,16 @@
             "hair_type": "curly",
             "extra_description": "A small pale scar at the left temple.",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 12,
+            "hip_width": 9,
+            "butt_build": 11,
+            "lower_body_build": 13,
+            "arm_length": 10,
+            "leg_length": 11
           },
           "outfits": [
             {
@@ -392,7 +409,8 @@
           },
           "voice": null,
           "created_at": "2026-10-21T23:00:17.617Z",
-          "updated_at": "2026-10-21T23:00:17.617Z"
+          "updated_at": "2026-10-21T23:00:17.617Z",
+          "lite": true
         }
       ],
       "characters": {},
@@ -487,7 +505,6 @@
                   "appearance": {
                     "species": "human",
                     "height": "5 feet 4 inches tall",
-                    "body_description": "A stocky, sturdy build with a relaxed, practical bearing.",
                     "skin_color": "light brown",
                     "eye_color": "green",
                     "hair_color": "silver-gray",
@@ -495,7 +512,16 @@
                     "hair_type": "wavy",
                     "extra_description": "A scattering of freckles across her nose.",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 12,
+                    "chest": 13,
+                    "upper_body_build": 8,
+                    "midsection_build": 6,
+                    "hip_width": 12,
+                    "butt_build": 7,
+                    "lower_body_build": 9,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -596,7 +622,8 @@
                   },
                   "voice": null,
                   "created_at": "2026-10-21T23:00:17.617Z",
-                  "updated_at": "2026-10-21T23:00:17.617Z"
+                  "updated_at": "2026-10-21T23:00:17.617Z",
+                  "lite": true
                 }
               }
             }
@@ -848,7 +875,8 @@
         "at": "2026-10-21T23:00:17.617Z",
         "text": "Festival ribbons flutter above Bramble Bridge, their colors fading into the blue of early evening. From the village square comes the tentative squeak of a fiddle being tuned.\n\nBeside the bridge, Mira Bellweather studies an empty iron hook. Her rust-red sleeves are rolled neatly to her wrists; a folded canvas tool roll rests in one hand.\n\n“The one evening everyone needs the light,” she says, “and the lantern decides to take a holiday.” She glances toward the shallow stream, then at the workshop door. “I could use another pair of eyes.”"
       }
-    ]
+    ],
+    "lite": true
   },
   "exportedAt": "2026-10-21T23:00:17.617Z"
 }

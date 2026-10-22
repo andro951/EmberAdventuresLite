@@ -100,7 +100,6 @@
     "appearance": {
       "species": "Minotaur",
       "height": 11,
-      "body_description": "A slender build.",
       "skin_color": "Dark chestnut-brown hide with a cream muzzle and inner ears.",
       "eye_color": "Warm hazel-brown.",
       "hair_color": "Near-black",
@@ -108,7 +107,16 @@
       "hair_type": "Close fine crown hair between compact horn bases.",
       "extra_description": "Full bovine minotaur head with cream muzzle, rounded ears, compact black horns, short fine body fur, and humanlike hands; unusually small and slender for an adult minotaur.",
       "extra_description_lower_body": "Bipedal legs ending in small dark split hooves, with a short tail.",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 9,
+      "chest": 11,
+      "upper_body_build": 11,
+      "midsection_build": 11,
+      "hip_width": 9,
+      "butt_build": 10,
+      "lower_body_build": 11,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -255,6 +263,7 @@
     },
     "voice": null,
     "created_at": "2026-09-07T16:51:01Z",
-    "updated_at": "2026-09-08T19:03:27Z"
+    "updated_at": "2026-09-08T19:03:27Z",
+    "lite": true
   }
 }

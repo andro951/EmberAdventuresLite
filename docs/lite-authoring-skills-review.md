@@ -1,3 +1,9 @@
+# Current authoring skills — 2026-10-22
+
+Version 2.0.0 uses required Lite markers, ten appearance scales, complete covered outfits, current field-set snapshots, and manifest-based canonical validation. Both skill packages passed quick validation; 91 authoring/contract checks passed, including both short-story ending paths. The installed copies and public tools distribution were updated.
+
+The dated review below records the previous schema and is historical evidence, not current authoring instructions.
+
 # Lite authoring skills — 2026-10-21
 
 Pulled `origin/master` through `907ba9c` before authoring. Existing unrelated

@@ -99,7 +99,6 @@
     "appearance": {
       "species": "Human",
       "height": 11,
-      "body_description": "An athletic build.",
       "skin_color": "Medium-brown skin with mild sun-darkening across the face and forearms.",
       "eye_color": "Dark brown.",
       "hair_color": "Black.",
@@ -107,7 +106,16 @@
       "hair_type": "Loose curls.",
       "extra_description": "Thin pale rope-burn scar around the right palm and a small bite scar on the left forearm. Scattered old insect-bite scars mark the exposed skin.",
       "extra_description_lower_body": "",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 12,
+      "chest": 14,
+      "upper_body_build": 14,
+      "midsection_build": 13,
+      "hip_width": 10,
+      "butt_build": 13,
+      "lower_body_build": 14,
+      "arm_length": 10,
+      "leg_length": 11
     },
     "outfits": [
       {
@@ -474,7 +482,8 @@
         "upload_attested_at": "",
         "upload_attestation_policy_version": 0
       },
-      "allow_any_player": true
+      "allow_any_player": true,
+      "lite": true
     },
     "default_seed": 0,
     "image_prompt_config": {
@@ -527,6 +536,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T16:55:19.032Z",
-    "updated_at": "2026-09-08T20:36:56Z"
+    "updated_at": "2026-09-08T20:36:56Z",
+    "lite": true
   }
 }

@@ -8,6 +8,7 @@ import pathlib
 import sys
 import tempfile
 import unittest
+import urllib.parse
 from unittest.mock import patch
 
 file = pathlib.Path(__file__).resolve().parents[1] / "hosting/launch.py"
@@ -57,7 +58,10 @@ class LauncherTests(unittest.TestCase):
             self.assertNotIn("fake-session-value", capture.getvalue())
             self.assertEqual(json.loads(saved)["text"]["model"], "ember-qwen-27b")
             self.assertEqual(len(list(pathlib.Path(directory).iterdir())), 1)
-            self.assertTrue(browser.call_args.args[0].endswith("/launch"))
+            launched = urllib.parse.urlparse(browser.call_args.args[0])
+            self.assertEqual((launched.scheme, launched.netloc, launched.path), ("https", "perchance.org", "/emberadventureslite"))
+            local = urllib.parse.urlparse(urllib.parse.parse_qs(launched.query)["emberHosting"][0])
+            self.assertEqual((local.scheme, local.hostname), ("http", "127.0.0.1"))
 
     def test_invalid_handoff_is_rejected_before_secret_prompt(self):
         with self.assertRaises(RuntimeError):

@@ -1,12 +1,10 @@
-# Content review decisions
+# Content decisions
 
-- Keep ordinary romance, attraction, affection, friendship, and trust. These are part of character storytelling.
-- Keep body proportions, fantasy species, gender presentation, and normal layered clothing. Image prompts require fully clothed characters and opaque coverage.
-- Keep ordinary undergarment equipment slots as hidden clothing layers, rather than removing the equipment schema.
-- Keep non-graphic fantasy combat, danger, and horror. These are not a promise that every story suits young children.
-- Remove suggestive character definitions when the remaining text still centers on suggestive personal-service or relationship dynamics. Keep other reviewed definitions.
-- Clear bundled remote portrait/title-image references that were not independently verified. Players can generate new illustrations; image generation and image management remain available.
-- Keep negative image-prompt exclusions that prevent inappropriate imagery. They are safety instructions, not an optional content setting.
-- Leave public hosting and community destinations unconfigured. Local libraries, authoring, game systems, and backups remain available.
-
-Older authored story files are preserved as reference material rather than silently migrated or discarded for schema age. Use the current examples and strict authoring guides for new imports.
+- Keep romance, flirting, dating, attraction, affection, friendship, and trust.
+- Keep ten appearance scales, ordinary gender presentation, fantasy species, equipment, and inner clothing layers. Preserve numeric values when sharing definitions.
+- Use complete opaque outfit coverage and covered image prompts. Retain negative image exclusions as fixed instructions.
+- Keep ordinary adventure, non-graphic combat, danger, and horror. General-audience content is not a promise that every premise suits young children.
+- Keep profiles, accounts, shared public hosting, editors, diagnostics, and ordinary game features.
+- Shared imports use the explicit library-format boundary. Alternate required presentations preserve the character's identity and authored fallback. Native files remain strict and do not carry fields outside Lite's schema.
+- Valid general-audience stories may be published with authored character ages. Canonical younger-character safeguards and existing original-content/real-person restrictions remain.
+- All 40 standalone characters, 55 stories, two documentation examples, and both skill reference exports have been updated to the current format. No existing saved games are migrated.

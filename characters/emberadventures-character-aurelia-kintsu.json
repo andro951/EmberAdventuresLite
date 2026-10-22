@@ -98,7 +98,6 @@
     "appearance": {
       "species": "Living porcelain construct",
       "height": 11,
-      "body_description": "A naturally soft build.",
       "skin_color": "Ivory porcelain glaze with subtle warm translucency.",
       "eye_color": "Deep cobalt with tiny gold flecks.",
       "hair_color": "Black.",
@@ -106,7 +105,16 @@
       "hair_type": "Smooth glossy glazed-porcelain waves integrated into the head.",
       "extra_description": "Subtle glaze crazing across the porcelain surface; gold repair seams vary in width. Painted-glass eyes. Several narrow gold repair lines cross the left side of the sculpted porcelain hair.",
       "extra_description_lower_body": "Articulated leg joints with a visible gold repair seam around the right knee and thigh.",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 9,
+      "chest": 12,
+      "upper_body_build": 8,
+      "midsection_build": 8,
+      "hip_width": 11,
+      "butt_build": 8,
+      "lower_body_build": 8,
+      "arm_length": 10,
+      "leg_length": 10
     },
     "outfits": [
       {
@@ -436,7 +444,8 @@
         "upload_attested_by": "",
         "upload_attested_at": "",
         "upload_attestation_policy_version": 0
-      }
+      },
+      "lite": true
     },
     "default_seed": 0,
     "image_prompt_config": {
@@ -489,6 +498,7 @@
     },
     "voice": null,
     "created_at": "2026-09-02T14:04:30.483777Z",
-    "updated_at": "2026-09-08T21:21:12Z"
+    "updated_at": "2026-09-08T21:21:12Z",
+    "lite": true
   }
 }

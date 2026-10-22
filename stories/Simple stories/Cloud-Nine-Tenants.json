@@ -153,7 +153,6 @@
         "appearance": {
           "species": "white human",
           "height": 5,
-          "body_description": "An average build.",
           "skin_color": "",
           "eye_color": "",
           "hair_color": "",
@@ -161,7 +160,16 @@
           "hair_type": "",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 10,
+          "chest": 12,
+          "upper_body_build": 12,
+          "midsection_build": 11,
+          "hip_width": 10,
+          "butt_build": 11,
+          "lower_body_build": 12,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -552,7 +560,8 @@
           "image_ids": []
         },
         "created_at": "2026-06-30T00:49:17.712Z",
-        "updated_at": "2026-06-30T11:42:04.314Z"
+        "updated_at": "2026-06-30T11:42:04.314Z",
+        "lite": true
       },
       "players": [
         {
@@ -577,7 +586,6 @@
           "appearance": {
             "species": "white human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
@@ -585,7 +593,16 @@
             "hair_type": "",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -976,7 +993,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-30T00:49:17.712Z",
-          "updated_at": "2026-06-30T11:42:04.314Z"
+          "updated_at": "2026-06-30T11:42:04.314Z",
+          "lite": true
         },
         {
           "id": "maya-rivers",
@@ -1000,7 +1018,6 @@
           "appearance": {
             "species": "Black human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
@@ -1008,7 +1025,16 @@
             "hair_type": "",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 13,
+            "upper_body_build": 8,
+            "midsection_build": 8,
+            "hip_width": 11,
+            "butt_build": 8,
+            "lower_body_build": 9,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1335,7 +1361,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-30T00:49:17.712Z",
-          "updated_at": "2026-06-30T11:42:04.314Z"
+          "updated_at": "2026-06-30T11:42:04.314Z",
+          "lite": true
         },
         {
           "id": "rowan-ellis",
@@ -1359,7 +1386,6 @@
           "appearance": {
             "species": "mixed-race human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "",
             "eye_color": "",
             "hair_color": "",
@@ -1367,7 +1393,16 @@
             "hair_type": "",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": "Average, lightly defined chest",
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1758,7 +1793,8 @@
             "image_ids": []
           },
           "created_at": "2026-06-30T00:49:17.712Z",
-          "updated_at": "2026-06-30T11:42:04.314Z"
+          "updated_at": "2026-06-30T11:42:04.314Z",
+          "lite": true
         }
       ],
       "characters": {},
@@ -1803,7 +1839,6 @@
                   "appearance": {
                     "species": "Black human",
                     "height": 5,
-                    "body_description": "An average build.",
                     "skin_color": "",
                     "eye_color": "",
                     "hair_color": "",
@@ -1811,7 +1846,16 @@
                     "hair_type": "",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 10,
+                    "chest": 13,
+                    "upper_body_build": 8,
+                    "midsection_build": 8,
+                    "hip_width": 11,
+                    "butt_build": 8,
+                    "lower_body_build": 9,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -1902,7 +1946,8 @@
                     "image_ids": []
                   },
                   "created_at": "2026-06-30T00:49:17.712Z",
-                  "updated_at": "2026-06-30T11:42:04.314Z"
+                  "updated_at": "2026-06-30T11:42:04.314Z",
+                  "lite": true
                 }
               }
             }
@@ -2141,7 +2186,8 @@
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-06-30T11:42:04.314Z"
 }

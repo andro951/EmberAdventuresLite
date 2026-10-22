@@ -13,7 +13,7 @@ The wrapper has exactly `app: "EmberAdventures"`,
 string). The actual `app` discriminator deliberately does not have `Lite`
 appended to it.
 
-Required `storyTemplate` keys: `id`, `title`, `description`, `createdAt`,
+Required `storyTemplate` keys: `lite` (exactly true), `id`, `title`, `description`, `createdAt`,
 `updatedAt`, `allow_any_player`, `any_player_starting_state`, `state`,
 `messages`, `source`, `app`, `templateType`, `creation_tool`, `genres`,
 `default_image_model`, `title_card_subjects`, and `title_card_image`.
@@ -54,7 +54,7 @@ supported collections for a coherent starting state.
   `npcs_present`, and `image_action`; optional `speak_targets`. Presence/target
   fields are string arrays referencing the intended cast by supported name/ID.
   These scene arrays do not create missing character definitions.
-- `player`: full embedded character. `characters`: name-keyed party definitions,
+- `player`: full embedded character with `lite: true`. `characters`: name-keyed party definitions,
   or `{}` for no party. `players` is an optional selectable-player array; when
   used, its default option must match `player` exactly. In library-enabled
   stories, include the default character in this array if it should appear as
@@ -63,7 +63,7 @@ supported collections for a coherent starting state.
   "characters": {"Name": {...}}}}}`. A lightweight shell uses `id`, `name`,
   `gender`, integer `age`, `role`, `relationship`, `note`, `current_appearance`,
   boolean `inspected`, `voice: null`, and `full_character: null` when unused.
-  Inspected NPCs embed the complete character and share its stable ID. Use
+  Inspected NPCs embed the complete character with `lite: true` and share its stable ID. Use
   `STORY_NPC_FIELDS` for optional status/name-visibility fields.
 - `future_cast`: `enabled` (boolean), `items` (ID-keyed object). Unused:
   `{"enabled": true, "items": {}}`. Future people are not automatically present.

@@ -36,7 +36,7 @@
         "settlement_name": "Harbor City",
         "district": "downtown office district",
         "specific_place": "Brightleaf Analytics reception",
-        "npc_location_id": "loc-brightleaf-reception"
+        "npc_location_id": "brightleaf-analytics-reception"
       },
       "world_map": {
         "current_location_id": "loc-brightleaf-reception",
@@ -230,7 +230,6 @@
         "appearance": {
           "species": "adult white human",
           "height": 6,
-          "body_description": "An average build.",
           "skin_color": "light skin",
           "eye_color": "gray eyes",
           "hair_color": "brown hair",
@@ -238,7 +237,16 @@
           "hair_type": "soft straight hair",
           "extra_description": "",
           "extra_description_lower_body": "",
-          "nonhuman_lower_body": false
+          "nonhuman_lower_body": false,
+          "shoulder_width": 11,
+          "chest": 12,
+          "upper_body_build": 12,
+          "midsection_build": 11,
+          "hip_width": 10,
+          "butt_build": 11,
+          "lower_body_build": 12,
+          "arm_length": 10,
+          "leg_length": 10
         },
         "outfits": [
           {
@@ -419,17 +427,27 @@
         },
         "default_profile_image": {
           "url": "",
-          "local_image_id": "",
           "source": "none",
-          "seed": null,
+          "seed": 0,
           "prompt": "",
           "negative_prompt": "",
           "note": "",
+          "local_image_id": "",
           "male": true
         },
         "voice": null,
         "version": 1,
         "romanceable": true,
+        "starting_known_facts": [
+          "This is one of three selectable player characters for the story.",
+          "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+          "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+          "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+          "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+          "Eli has the kind of quiet good looks that make coworkers assume he is confident until he tries to speak."
+        ],
+        "created_at": "2026-06-29T00:00:00.000Z",
+        "updated_at": "2026-06-29T00:00:00.000Z",
         "fallback_name": "Eli Mercer",
         "fallback_outfits": [
           {
@@ -594,33 +612,25 @@
           }
         ],
         "fallback_starting_outfit_id": "first-day-office",
-        "starting_known_facts": [
-          "This is one of three selectable player characters for the story.",
-          "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
-          "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
-          "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
-          "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
-          "Eli has the kind of quiet good looks that make coworkers assume he is confident until he tries to speak."
-        ],
         "profile_image_presentations": {
           "male": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
-            "prompt": "",
-            "negative_prompt": "",
-            "note": "",
-            "male": true
-          },
-          "non_male": {
-            "url": "",
-            "local_image_id": "",
-            "source": "hosted",
             "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
+            "male": true
+          },
+          "non_male": {
+            "url": "",
+            "source": "none",
+            "seed": 0,
+            "prompt": "",
+            "negative_prompt": "",
+            "note": "",
+            "local_image_id": "",
             "male": false
           }
         },
@@ -632,8 +642,7 @@
           "active_image_id": "",
           "image_ids": []
         },
-        "created_at": "2026-06-29T00:00:00.000Z",
-        "updated_at": "2026-08-31T06:03:35.951Z"
+        "lite": true
       },
       "players": [
         {
@@ -658,7 +667,6 @@
           "appearance": {
             "species": "adult white human",
             "height": 6,
-            "body_description": "An average build.",
             "skin_color": "light skin",
             "eye_color": "gray eyes",
             "hair_color": "brown hair",
@@ -666,7 +674,16 @@
             "hair_type": "soft straight hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 11,
+            "chest": 12,
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -847,17 +864,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": true
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+            "Eli has the kind of quiet good looks that make coworkers assume he is confident until he tries to speak."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Eli Mercer",
           "fallback_outfits": [
             {
@@ -1022,33 +1049,25 @@
             }
           ],
           "fallback_starting_outfit_id": "first-day-office",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
-            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
-            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
-            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
-            "Eli has the kind of quiet good looks that make coworkers assume he is confident until he tries to speak."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
-              "prompt": "",
-              "negative_prompt": "",
-              "note": "",
-              "male": true
-            },
-            "non_male": {
-              "url": "",
-              "local_image_id": "",
-              "source": "hosted",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
+              "male": true
+            },
+            "non_male": {
+              "url": "",
+              "source": "none",
+              "seed": 0,
+              "prompt": "",
+              "negative_prompt": "",
+              "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1060,8 +1079,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "mina-brooks",
@@ -1085,7 +1103,6 @@
           "appearance": {
             "species": "adult Black human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "deep brown skin",
             "eye_color": "dark brown eyes",
             "hair_color": "black hair",
@@ -1093,7 +1110,16 @@
             "hair_type": "natural curls",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": 13,
+            "upper_body_build": 8,
+            "midsection_build": 8,
+            "hip_width": 11,
+            "butt_build": 8,
+            "lower_body_build": 9,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1178,17 +1204,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+            "Mina looks effortlessly put together until a compliment makes her forget how doors work."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Mina Brooks",
           "fallback_outfits": [
             {
@@ -1257,33 +1293,25 @@
             }
           ],
           "fallback_starting_outfit_id": "first-day-office",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
-            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
-            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
-            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
-            "Mina looks effortlessly put together until a compliment makes her forget how doors work."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1295,8 +1323,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         },
         {
           "id": "avery-lin",
@@ -1320,7 +1347,6 @@
           "appearance": {
             "species": "adult Chinese American human",
             "height": 5,
-            "body_description": "An average build.",
             "skin_color": "light warm skin",
             "eye_color": "dark brown eyes",
             "hair_color": "black hair",
@@ -1328,7 +1354,16 @@
             "hair_type": "neatly layered hair",
             "extra_description": "",
             "extra_description_lower_body": "",
-            "nonhuman_lower_body": false
+            "nonhuman_lower_body": false,
+            "shoulder_width": 10,
+            "chest": "Average, lightly defined chest",
+            "upper_body_build": 12,
+            "midsection_build": 11,
+            "hip_width": 10,
+            "butt_build": 11,
+            "lower_body_build": 12,
+            "arm_length": 10,
+            "leg_length": 10
           },
           "outfits": [
             {
@@ -1509,17 +1544,27 @@
           },
           "default_profile_image": {
             "url": "",
-            "local_image_id": "",
             "source": "none",
-            "seed": null,
+            "seed": 0,
             "prompt": "",
             "negative_prompt": "",
             "note": "",
+            "local_image_id": "",
             "male": false
           },
           "voice": null,
           "version": 1,
           "romanceable": true,
+          "starting_known_facts": [
+            "This is one of three selectable player characters for the story.",
+            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
+            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
+            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
+            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
+            "Avery is striking in a quiet way and has perfected the art of pretending not to notice people noticing them."
+          ],
+          "created_at": "2026-06-29T00:00:00.000Z",
+          "updated_at": "2026-06-29T00:00:00.000Z",
           "fallback_name": "Avery Lin",
           "fallback_outfits": [
             {
@@ -1684,33 +1729,25 @@
             }
           ],
           "fallback_starting_outfit_id": "first-day-office",
-          "starting_known_facts": [
-            "This is one of three selectable player characters for the story.",
-            "They are unusually attractive and frequently draw visual attention, compliments, and invitations even when trying to stay unnoticed.",
-            "They are extremely talented at office analysis, documentation, pattern-spotting, and practical problem solving.",
-            "They are socially awkward enough that early choice objectives intentionally offer several bad or embarrassing responses.",
-            "Their goal is to keep trying, build relationships, and eventually choose whether to ask one love interest to be their boyfriend or girlfriend.",
-            "Avery is striking in a quiet way and has perfected the art of pretending not to notice people noticing them."
-          ],
           "profile_image_presentations": {
             "male": {
               "url": "",
-              "local_image_id": "",
-              "source": "hosted",
+              "source": "none",
               "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": true
             },
             "non_male": {
               "url": "",
-              "local_image_id": "",
               "source": "none",
-              "seed": null,
+              "seed": 0,
               "prompt": "",
               "negative_prompt": "",
               "note": "",
+              "local_image_id": "",
               "male": false
             }
           },
@@ -1722,8 +1759,7 @@
             "active_image_id": "",
             "image_ids": []
           },
-          "created_at": "2026-06-29T00:00:00.000Z",
-          "updated_at": "2026-08-31T06:03:35.951Z"
+          "lite": true
         }
       ],
       "characters": {},
@@ -1732,17 +1768,16 @@
           "brightleaf-analytics-reception": {
             "label": "Brightleaf Analytics reception",
             "characters": {
-              "rika-sato": {
+              "Rika Sato": {
                 "id": "rika-sato",
                 "name": "Rika Sato",
-                "can_die": false,
                 "gender": "female",
                 "age": 27,
                 "role": "operations coordinator and self-appointed wing-woman",
-                "voice": null,
+                "can_die": false,
                 "relationship": "coworker",
                 "note": "",
-                "inspected": true,
+                "inspected": false,
                 "full_character": {
                   "id": "rika-sato",
                   "name": "Rika Sato",
@@ -1765,7 +1800,6 @@
                   "appearance": {
                     "species": "adult Japanese American human",
                     "height": 5,
-                    "body_description": "An average build.",
                     "skin_color": "light warm skin",
                     "eye_color": "dark eyes",
                     "hair_color": "black hair",
@@ -1773,7 +1807,16 @@
                     "hair_type": "straight hair",
                     "extra_description": "",
                     "extra_description_lower_body": "",
-                    "nonhuman_lower_body": false
+                    "nonhuman_lower_body": false,
+                    "shoulder_width": 10,
+                    "chest": 12,
+                    "upper_body_build": 9,
+                    "midsection_build": 8,
+                    "hip_width": 10,
+                    "butt_build": 9,
+                    "lower_body_build": 10,
+                    "arm_length": 10,
+                    "leg_length": 10
                   },
                   "outfits": [
                     {
@@ -1783,7 +1826,8 @@
                         "shirt": "cream blouse",
                         "skirt": "Opaque ankle-length skirt without openings",
                         "feet": "brown flats",
-                        "other_accessory": "planner covered in colored tabs"
+                        "other_accessory": "planner covered in colored tabs",
+                        "over_shirt": "soft green cardigan"
                       }
                     }
                   ],
@@ -1804,17 +1848,27 @@
                   },
                   "default_profile_image": {
                     "url": "",
-                    "local_image_id": "",
                     "source": "none",
-                    "seed": null,
+                    "seed": 0,
                     "prompt": "",
                     "negative_prompt": "",
                     "note": "",
+                    "local_image_id": "",
                     "male": false
                   },
                   "voice": null,
                   "version": 1,
                   "romanceable": true,
+                  "starting_known_facts": [
+                    "Rika is the guide character and wing-woman for the player.",
+                    "She coaches the player through small talk, lunch invitations, compliments, and workplace romcom disasters.",
+                    "She is not a romantic route by default; her role is support, comedy, and emotional grounding.",
+                    "She believes effort matters more than smoothness.",
+                    "She should regularly give practical but funny advice when the player makes an awkward choice.",
+                    "She knows the office social map and can point the player toward love interests without forcing a choice."
+                  ],
+                  "created_at": "2026-06-29T00:00:00.000Z",
+                  "updated_at": "2026-06-29T00:00:00.000Z",
                   "fallback_name": "Rika Sato",
                   "fallback_outfits": [
                     {
@@ -1824,38 +1878,31 @@
                         "shirt": "cream blouse",
                         "skirt": "Opaque ankle-length skirt without openings",
                         "feet": "brown flats",
-                        "other_accessory": "planner covered in colored tabs"
+                        "other_accessory": "planner covered in colored tabs",
+                        "over_shirt": "soft green cardigan"
                       }
                     }
                   ],
                   "fallback_starting_outfit_id": "office-cardigan",
-                  "starting_known_facts": [
-                    "Rika is the guide character and wing-woman for the player.",
-                    "She coaches the player through small talk, lunch invitations, compliments, and workplace romcom disasters.",
-                    "She is not a romantic route by default; her role is support, comedy, and emotional grounding.",
-                    "She believes effort matters more than smoothness.",
-                    "She should regularly give practical but funny advice when the player makes an awkward choice.",
-                    "She knows the office social map and can point the player toward love interests without forcing a choice."
-                  ],
                   "profile_image_presentations": {
                     "male": {
                       "url": "",
-                      "local_image_id": "",
-                      "source": "hosted",
+                      "source": "none",
                       "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": true
                     },
                     "non_male": {
                       "url": "",
-                      "local_image_id": "",
                       "source": "none",
-                      "seed": null,
+                      "seed": 0,
                       "prompt": "",
                       "negative_prompt": "",
                       "note": "",
+                      "local_image_id": "",
                       "male": false
                     }
                   },
@@ -1867,15 +1914,10 @@
                     "active_image_id": "",
                     "image_ids": []
                   },
-                  "created_at": "2026-06-29T00:00:00.000Z",
-                  "updated_at": "2026-08-31T06:03:35.951Z"
+                  "lite": true
                 }
               }
             }
-          },
-          "loc-brightleaf-reception": {
-            "label": "Reception",
-            "characters": {}
           },
           "brightleaf-analytics-office": {
             "label": "Brightleaf Analytics office",
@@ -1909,11 +1951,11 @@
             "requires": [],
             "next_objectives": [
               {
-                "objective_id": "meet-rika-the-wing-woman",
                 "id": "arrive-for-first-day-output-1",
-                "completion_instruction": "Introduce the office as pleasant, ordinary, and slightly anime-romcom in tone. Let the player immediately draw visual attention while keeping the scene friendly and respectful.",
                 "rewards": [],
-                "target_input_group_id": "from-arrive-for-first-day"
+                "completion_instruction": "Introduce the office as pleasant, ordinary, and slightly anime-romcom in tone. Let the player immediately draw visual attention while keeping the scene friendly and respectful.",
+                "objective_id": "meet-rika-the-wing-woman",
+                "target_input_group_id": "meet-rika-the-wing-woman-from-arrive-for-first-day"
               }
             ],
             "travel_location_id": "",
@@ -1950,11 +1992,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "survive-first-compliment",
                 "id": "meet-rika-the-wing-woman-output-1",
-                "completion_instruction": "Introduce Rika as funny, warm, and immediately aware that the player is both attractive and socially doomed without guidance.",
                 "rewards": [],
-                "target_input_group_id": "from-meet-rika-the-wing-woman"
+                "completion_instruction": "Introduce Rika as funny, warm, and immediately aware that the player is both attractive and socially doomed without guidance.",
+                "objective_id": "survive-first-compliment",
+                "target_input_group_id": "survive-first-compliment-from-meet-rika-the-wing-woman"
               }
             ],
             "travel_location_id": "",
@@ -2002,6 +2044,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "social_panic"
                     ],
                     "amount": 2,
@@ -2010,6 +2053,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "office_warmth"
                     ],
                     "amount": 1,
@@ -2021,9 +2065,9 @@
                     "text": "The player's first compliment response was freezing silently. Coworkers may find the awkwardness oddly endearing."
                   }
                 ],
+                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable. Honor the selected choice: Freeze Silently.",
                 "next_objective_id": "solve-the-first-work-problem",
-                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable.",
-                "target_input_group_id": "from-survive-first-compliment"
+                "target_input_group_id": "solve-the-first-work-problem-from-survive-first-compliment"
               },
               {
                 "id": "you-too",
@@ -2037,6 +2081,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "social_panic"
                     ],
                     "amount": 1,
@@ -2045,6 +2090,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "romance_momentum"
                     ],
                     "amount": 1,
@@ -2056,9 +2102,9 @@
                     "text": "The player's first compliment response was saying 'you too' when it made no sense."
                   }
                 ],
+                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable. Honor the selected choice: Say 'You Too' Incorrectly.",
                 "next_objective_id": "solve-the-first-work-problem",
-                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable.",
-                "target_input_group_id": "from-survive-first-compliment"
+                "target_input_group_id": "solve-the-first-work-problem-from-survive-first-compliment"
               },
               {
                 "id": "compliment-plant",
@@ -2071,6 +2117,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "office_warmth"
                     ],
                     "amount": 1,
@@ -2082,9 +2129,9 @@
                     "text": "The player redirected a compliment toward an office plant, creating a harmless running joke."
                   }
                 ],
+                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable. Honor the selected choice: Compliment the Office Plant.",
                 "next_objective_id": "solve-the-first-work-problem",
-                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable.",
-                "target_input_group_id": "from-survive-first-compliment"
+                "target_input_group_id": "solve-the-first-work-problem-from-survive-first-compliment"
               },
               {
                 "id": "flee-to-elevator",
@@ -2097,6 +2144,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "social_panic"
                     ],
                     "amount": 3,
@@ -2108,9 +2156,9 @@
                     "text": "The player fled a compliment during onboarding. Rika should coach them gently afterward."
                   }
                 ],
+                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable. Honor the selected choice: Flee Toward the Elevator.",
                 "next_objective_id": "solve-the-first-work-problem",
-                "completion_instruction": "Resolve the awkward response in a cozy romcom way. No option should be smooth; all should be bad but survivable.",
-                "target_input_group_id": "from-survive-first-compliment"
+                "target_input_group_id": "solve-the-first-work-problem-from-survive-first-compliment"
               }
             ],
             "while_active_guidance": "Someone compliments the player's appearance before the workday has even started."
@@ -2125,6 +2173,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "competence_reputation"
                 ],
                 "amount": 2,
@@ -2133,6 +2182,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "romance_momentum"
                 ],
                 "amount": 1,
@@ -2151,11 +2201,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "meet-the-team",
                 "id": "solve-the-first-work-problem-output-1",
-                "completion_instruction": "Let the player be genuinely talented. Their solution should be useful enough that coworkers notice, which creates new attention and more social pressure.",
                 "rewards": [],
-                "target_input_group_id": "from-solve-the-first-work-problem"
+                "completion_instruction": "Let the player be genuinely talented. Their solution should be useful enough that coworkers notice, which creates new attention and more social pressure.",
+                "objective_id": "meet-the-team",
+                "target_input_group_id": "meet-the-team-from-solve-the-first-work-problem"
               }
             ],
             "travel_location_id": "",
@@ -2186,21 +2236,11 @@
                 "npc_location_id": "brightleaf-analytics-office"
               },
               {
-                "type": "generate_profile_image",
-                "target": "Hana Morikawa",
-                "reason": "Hana Morikawa joins the first team scene after seeing the player's careful work."
-              },
-              {
                 "type": "introduce_future_character",
                 "character_id": "claire_bennett",
                 "scene_presence": "active",
                 "reason": "Claire Bennett notices the player's useful fix and social panic.",
                 "npc_location_id": "brightleaf-analytics-office"
-              },
-              {
-                "type": "generate_profile_image",
-                "target": "Claire Bennett",
-                "reason": "Claire Bennett notices the player's useful fix and social panic."
               },
               {
                 "type": "introduce_future_character",
@@ -2210,11 +2250,6 @@
                 "npc_location_id": "brightleaf-analytics-office"
               },
               {
-                "type": "generate_profile_image",
-                "target": "Marcus Cho",
-                "reason": "Marcus Cho recognizes the player's analytical talent."
-              },
-              {
                 "type": "introduce_future_character",
                 "character_id": "sophie_reed",
                 "scene_presence": "active",
@@ -2222,21 +2257,11 @@
                 "npc_location_id": "brightleaf-analytics-office"
               },
               {
-                "type": "generate_profile_image",
-                "target": "Sophie Reed",
-                "reason": "Sophie Reed handles onboarding and tries to include the player."
-              },
-              {
                 "type": "introduce_future_character",
                 "character_id": "nolan_price",
                 "scene_presence": "active",
                 "reason": "Nolan Price becomes aware that the new hire may help with a difficult project.",
                 "npc_location_id": "brightleaf-analytics-office"
-              },
-              {
-                "type": "generate_profile_image",
-                "target": "Nolan Price",
-                "reason": "Nolan Price becomes aware that the new hire may help with a difficult project."
               },
               {
                 "type": "generate_story_image",
@@ -2251,11 +2276,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-first-lunch-disaster",
                 "id": "meet-the-team-output-1",
-                "completion_instruction": "Introduce Hana, Claire, Marcus, Sophie, and Nolan through future-cast rewards as coworkers, not as a sudden ensemble pile-on. Each should have a distinct first impression.",
                 "rewards": [],
-                "target_input_group_id": "from-meet-the-team"
+                "completion_instruction": "Introduce Hana, Claire, Marcus, Sophie, and Nolan through future-cast rewards as coworkers, not as a sudden ensemble pile-on. Each should have a distinct first impression.",
+                "objective_id": "choose-first-lunch-disaster",
+                "target_input_group_id": "choose-first-lunch-disaster-from-meet-the-team"
               }
             ],
             "travel_location_id": "",
@@ -2311,6 +2336,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "social_panic"
                     ],
                     "amount": 1,
@@ -2322,9 +2348,9 @@
                     "text": "The player answered a lunch invitation with 'I have eaten before.'"
                   }
                 ],
+                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward. Honor the selected choice: Say 'I Have Eaten Before'.",
                 "next_objective_id": "rika-coaching-session-one",
-                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward.",
-                "target_input_group_id": "from-choose-first-lunch-disaster"
+                "target_input_group_id": "rika-coaching-session-one-from-choose-first-lunch-disaster"
               },
               {
                 "id": "overexplain-diet",
@@ -2345,6 +2371,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "social_panic"
                     ],
                     "amount": 1,
@@ -2356,9 +2383,9 @@
                     "text": "The player overexplained their food history during the first lunch invitation."
                   }
                 ],
+                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward. Honor the selected choice: Overexplain Your Entire Food History.",
                 "next_objective_id": "rika-coaching-session-one",
-                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward.",
-                "target_input_group_id": "from-choose-first-lunch-disaster"
+                "target_input_group_id": "rika-coaching-session-one-from-choose-first-lunch-disaster"
               },
               {
                 "id": "accidentally-accept-date",
@@ -2371,6 +2398,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "romance_momentum"
                     ],
                     "amount": 2,
@@ -2389,9 +2417,9 @@
                     "text": "The player accidentally made the lunch invitation sound romantic."
                   }
                 ],
+                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward. Honor the selected choice: Accidentally Make It Sound Like a Date.",
                 "next_objective_id": "rika-coaching-session-one",
-                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward.",
-                "target_input_group_id": "from-choose-first-lunch-disaster"
+                "target_input_group_id": "rika-coaching-session-one-from-choose-first-lunch-disaster"
               },
               {
                 "id": "hide-behind-rika",
@@ -2411,6 +2439,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "social_panic"
                     ],
                     "amount": 2,
@@ -2422,9 +2451,9 @@
                     "text": "The player used Rika as a social shield during the lunch invitation."
                   }
                 ],
+                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward. Honor the selected choice: Hide Behind Rika.",
                 "next_objective_id": "rika-coaching-session-one",
-                "completion_instruction": "Resolve the bad response as cozy workplace romcom. Rika may privately coach the player afterward.",
-                "target_input_group_id": "from-choose-first-lunch-disaster"
+                "target_input_group_id": "rika-coaching-session-one-from-choose-first-lunch-disaster"
               }
             ],
             "while_active_guidance": "A coworker invites the player to lunch. Every response is somehow wrong."
@@ -2447,6 +2476,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -2459,10 +2489,38 @@
             "next_objectives": [
               {
                 "id": "rika-coaching-session-one-output-1",
-                "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
                 "rewards": [],
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
+                "objective_id": "work-with-hana",
+                "target_input_group_id": "work-with-hana-from-rika-coaching-session-one"
+              },
+              {
+                "id": "rika-coaching-session-one-output-2",
+                "rewards": [],
+                "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
+                "objective_id": "help-claire-client-call",
+                "target_input_group_id": "help-claire-client-call-from-rika-coaching-session-one"
+              },
+              {
+                "id": "rika-coaching-session-one-output-3",
+                "rewards": [],
+                "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
+                "objective_id": "review-data-with-marcus",
+                "target_input_group_id": "review-data-with-marcus-from-rika-coaching-session-one"
+              },
+              {
+                "id": "rika-coaching-session-one-output-4",
+                "rewards": [],
+                "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
+                "objective_id": "join-sophies-welcome-lunch",
+                "target_input_group_id": "join-sophies-welcome-lunch-from-rika-coaching-session-one"
+              },
+              {
+                "id": "rika-coaching-session-one-output-5",
+                "rewards": [],
+                "completion_instruction": "Let Rika be funny and useful. She should coach the player without making them magically confident.",
+                "objective_id": "assist-nolans-project",
+                "target_input_group_id": "assist-nolans-project-from-rika-coaching-session-one"
               }
             ],
             "travel_location_id": "",
@@ -2481,7 +2539,7 @@
           {
             "id": "work-with-hana",
             "title": "Work With Hana",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Help Hana polish a design review and get to know her quieter side.",
             "rewards": [
@@ -2497,6 +2555,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -2508,11 +2567,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "help-claire-client-call",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-claire-client-call"
+                  }
+                ],
                 "id": "work-with-hana-output-1",
-                "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
                 "rewards": [],
-                "target_input_group_id": "from-work-with-hana"
+                "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
+                "objective_id": "help-claire-client-call",
+                "target_input_group_id": "help-claire-client-call-from-work-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-data-with-marcus"
+                  }
+                ],
+                "id": "work-with-hana-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
+                "objective_id": "review-data-with-marcus",
+                "target_input_group_id": "review-data-with-marcus-from-work-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  }
+                ],
+                "id": "work-with-hana-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
+                "objective_id": "join-sophies-welcome-lunch",
+                "target_input_group_id": "join-sophies-welcome-lunch-from-work-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "work-with-hana-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
+                "objective_id": "assist-nolans-project",
+                "target_input_group_id": "assist-nolans-project-from-work-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "help-claire-client-call"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-data-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "work-with-hana-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Hana's route through quiet attention, shared competence, and gentle awkwardness.",
+                "objective_id": "finish-first-week",
+                "target_input_group_id": "finish-first-week-from-work-with-hana"
               }
             ],
             "travel_location_id": "",
@@ -2531,7 +2660,7 @@
           {
             "id": "help-claire-client-call",
             "title": "Help Claire's Client Call",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Claire pulls the player into a client call where competence and flirting become hard to separate.",
             "rewards": [
@@ -2547,6 +2676,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "competence_reputation"
                 ],
                 "amount": 1,
@@ -2558,11 +2688,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "review-data-with-marcus",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "work-with-hana"
+                  }
+                ],
                 "id": "help-claire-client-call-output-1",
-                "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
                 "rewards": [],
-                "target_input_group_id": "from-help-claire-client-call"
+                "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
+                "objective_id": "work-with-hana",
+                "target_input_group_id": "work-with-hana-from-help-claire-client-call"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-data-with-marcus"
+                  }
+                ],
+                "id": "help-claire-client-call-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
+                "objective_id": "review-data-with-marcus",
+                "target_input_group_id": "review-data-with-marcus-from-help-claire-client-call"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  }
+                ],
+                "id": "help-claire-client-call-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
+                "objective_id": "join-sophies-welcome-lunch",
+                "target_input_group_id": "join-sophies-welcome-lunch-from-help-claire-client-call"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "help-claire-client-call-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
+                "objective_id": "assist-nolans-project",
+                "target_input_group_id": "assist-nolans-project-from-help-claire-client-call"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "work-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-data-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "help-claire-client-call-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Claire's route through playful pressure, respect for talent, and the player trying despite panic.",
+                "objective_id": "finish-first-week",
+                "target_input_group_id": "finish-first-week-from-help-claire-client-call"
               }
             ],
             "travel_location_id": "",
@@ -2581,7 +2781,7 @@
           {
             "id": "review-data-with-marcus",
             "title": "Review Data With Marcus",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Marcus gives the player quiet space to do good work without making a spectacle of them.",
             "rewards": [
@@ -2597,6 +2797,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -2608,11 +2809,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "join-sophies-welcome-lunch",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "work-with-hana"
+                  }
+                ],
                 "id": "review-data-with-marcus-output-1",
-                "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
                 "rewards": [],
-                "target_input_group_id": "from-review-data-with-marcus"
+                "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
+                "objective_id": "work-with-hana",
+                "target_input_group_id": "work-with-hana-from-review-data-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-claire-client-call"
+                  }
+                ],
+                "id": "review-data-with-marcus-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
+                "objective_id": "help-claire-client-call",
+                "target_input_group_id": "help-claire-client-call-from-review-data-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  }
+                ],
+                "id": "review-data-with-marcus-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
+                "objective_id": "join-sophies-welcome-lunch",
+                "target_input_group_id": "join-sophies-welcome-lunch-from-review-data-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "review-data-with-marcus-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
+                "objective_id": "assist-nolans-project",
+                "target_input_group_id": "assist-nolans-project-from-review-data-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "work-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-claire-client-call"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "review-data-with-marcus-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Marcus's route through respect, calm, understated humor, and trust.",
+                "objective_id": "finish-first-week",
+                "target_input_group_id": "finish-first-week-from-review-data-with-marcus"
               }
             ],
             "travel_location_id": "",
@@ -2631,7 +2902,7 @@
           {
             "id": "join-sophies-welcome-lunch",
             "title": "Join Sophie's Welcome Lunch",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Sophie tries to make the player feel included without scaring them off.",
             "rewards": [
@@ -2647,6 +2918,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "office_warmth"
                 ],
                 "amount": 1,
@@ -2658,11 +2930,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "assist-nolans-project",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "work-with-hana"
+                  }
+                ],
                 "id": "join-sophies-welcome-lunch-output-1",
-                "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
                 "rewards": [],
-                "target_input_group_id": "from-join-sophies-welcome-lunch"
+                "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
+                "objective_id": "work-with-hana",
+                "target_input_group_id": "work-with-hana-from-join-sophies-welcome-lunch"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-claire-client-call"
+                  }
+                ],
+                "id": "join-sophies-welcome-lunch-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
+                "objective_id": "help-claire-client-call",
+                "target_input_group_id": "help-claire-client-call-from-join-sophies-welcome-lunch"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-data-with-marcus"
+                  }
+                ],
+                "id": "join-sophies-welcome-lunch-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
+                "objective_id": "review-data-with-marcus",
+                "target_input_group_id": "review-data-with-marcus-from-join-sophies-welcome-lunch"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "join-sophies-welcome-lunch-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
+                "objective_id": "assist-nolans-project",
+                "target_input_group_id": "assist-nolans-project-from-join-sophies-welcome-lunch"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "work-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-claire-client-call"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-data-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "assist-nolans-project"
+                  }
+                ],
+                "id": "join-sophies-welcome-lunch-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Sophie's route through warmth, inclusion, and the player learning that kindness is not a trap.",
+                "objective_id": "finish-first-week",
+                "target_input_group_id": "finish-first-week-from-join-sophies-welcome-lunch"
               }
             ],
             "travel_location_id": "",
@@ -2681,7 +3023,7 @@
           {
             "id": "assist-nolans-project",
             "title": "Assist Nolan's Project",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Nolan asks the player for help on a project that matters more than office gossip.",
             "rewards": [
@@ -2697,6 +3039,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "competence_reputation"
                 ],
                 "amount": 1,
@@ -2708,11 +3051,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "finish-first-week",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "work-with-hana"
+                  }
+                ],
                 "id": "assist-nolans-project-output-1",
-                "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
                 "rewards": [],
-                "target_input_group_id": "from-assist-nolans-project"
+                "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
+                "objective_id": "work-with-hana",
+                "target_input_group_id": "work-with-hana-from-assist-nolans-project"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-claire-client-call"
+                  }
+                ],
+                "id": "assist-nolans-project-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
+                "objective_id": "help-claire-client-call",
+                "target_input_group_id": "help-claire-client-call-from-assist-nolans-project"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-data-with-marcus"
+                  }
+                ],
+                "id": "assist-nolans-project-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
+                "objective_id": "review-data-with-marcus",
+                "target_input_group_id": "review-data-with-marcus-from-assist-nolans-project"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  }
+                ],
+                "id": "assist-nolans-project-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
+                "objective_id": "join-sophies-welcome-lunch",
+                "target_input_group_id": "join-sophies-welcome-lunch-from-assist-nolans-project"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "work-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-claire-client-call"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-data-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "join-sophies-welcome-lunch"
+                  }
+                ],
+                "id": "assist-nolans-project-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Nolan's route through steadiness, reliability, and quiet care.",
+                "objective_id": "finish-first-week",
+                "target_input_group_id": "finish-first-week-from-assist-nolans-project"
               }
             ],
             "travel_location_id": "",
@@ -2738,6 +3151,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "office_warmth"
                 ],
                 "amount": 2,
@@ -2746,6 +3160,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -2761,11 +3176,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-team-event-approach",
                 "id": "finish-first-week-output-1",
-                "completion_instruction": "Summarize the week through cozy office details and relationship momentum. Rika should point out that the player survived because they kept trying.",
                 "rewards": [],
-                "target_input_group_id": "from-finish-first-week"
+                "completion_instruction": "Summarize the week through cozy office details and relationship momentum. Rika should point out that the player survived because they kept trying.",
+                "objective_id": "choose-team-event-approach",
+                "target_input_group_id": "choose-team-event-approach-from-finish-first-week"
               }
             ],
             "travel_location_id": "",
@@ -2821,6 +3236,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "confidence"
                     ],
                     "amount": 2,
@@ -2839,9 +3255,9 @@
                     "text": "The player practiced social basics with Rika before the team event."
                   }
                 ],
+                "completion_instruction": "Resolve the approach and let it set up the confession arc. Honor the selected choice: Practice With Rika First.",
                 "next_objective_id": "survive-after-work-event",
-                "completion_instruction": "Resolve the approach and let it set up the confession arc.",
-                "target_input_group_id": "from-choose-team-event-approach"
+                "target_input_group_id": "survive-after-work-event-from-choose-team-event-approach"
               },
               {
                 "id": "bring-useful-work",
@@ -2854,6 +3270,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "competence_reputation"
                     ],
                     "amount": 2,
@@ -2865,9 +3282,9 @@
                     "text": "The player brought useful work notes to an after-work social event because competence felt safer than small talk."
                   }
                 ],
+                "completion_instruction": "Resolve the approach and let it set up the confession arc. Honor the selected choice: Bring Useful Work Notes.",
                 "next_objective_id": "survive-after-work-event",
-                "completion_instruction": "Resolve the approach and let it set up the confession arc.",
-                "target_input_group_id": "from-choose-team-event-approach"
+                "target_input_group_id": "survive-after-work-event-from-choose-team-event-approach"
               },
               {
                 "id": "try-direct-compliment",
@@ -2880,6 +3297,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "romance_momentum"
                     ],
                     "amount": 2,
@@ -2891,9 +3309,9 @@
                     "text": "The player tried giving one direct compliment at the team event."
                   }
                 ],
+                "completion_instruction": "Resolve the approach and let it set up the confession arc. Honor the selected choice: Try One Direct Compliment.",
                 "next_objective_id": "survive-after-work-event",
-                "completion_instruction": "Resolve the approach and let it set up the confession arc.",
-                "target_input_group_id": "from-choose-team-event-approach"
+                "target_input_group_id": "survive-after-work-event-from-choose-team-event-approach"
               },
               {
                 "id": "almost-cancel",
@@ -2907,6 +3325,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "confidence"
                     ],
                     "amount": 1,
@@ -2915,6 +3334,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "office_warmth"
                     ],
                     "amount": 1,
@@ -2926,9 +3346,9 @@
                     "text": "The player nearly canceled the team event but showed up anyway."
                   }
                 ],
+                "completion_instruction": "Resolve the approach and let it set up the confession arc. Honor the selected choice: Almost Cancel, Then Show Up Anyway.",
                 "next_objective_id": "survive-after-work-event",
-                "completion_instruction": "Resolve the approach and let it set up the confession arc.",
-                "target_input_group_id": "from-choose-team-event-approach"
+                "target_input_group_id": "survive-after-work-event-from-choose-team-event-approach"
               }
             ],
             "while_active_guidance": "A small after-work team event becomes another chance to connect badly but sincerely."
@@ -2943,6 +3363,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "romance_momentum"
                 ],
                 "amount": 1,
@@ -2951,6 +3372,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -2963,10 +3385,38 @@
             "next_objectives": [
               {
                 "id": "survive-after-work-event-output-1",
-                "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
                 "rewards": [],
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
+                "objective_id": "coffee-with-hana",
+                "target_input_group_id": "coffee-with-hana-from-survive-after-work-event"
+              },
+              {
+                "id": "survive-after-work-event-output-2",
+                "rewards": [],
+                "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
+                "objective_id": "walk-back-with-claire",
+                "target_input_group_id": "walk-back-with-claire-from-survive-after-work-event"
+              },
+              {
+                "id": "survive-after-work-event-output-3",
+                "rewards": [],
+                "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
+                "objective_id": "stay-late-with-marcus",
+                "target_input_group_id": "stay-late-with-marcus-from-survive-after-work-event"
+              },
+              {
+                "id": "survive-after-work-event-output-4",
+                "rewards": [],
+                "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
+                "objective_id": "help-sophie-after-hours",
+                "target_input_group_id": "help-sophie-after-hours-from-survive-after-work-event"
+              },
+              {
+                "id": "survive-after-work-event-output-5",
+                "rewards": [],
+                "completion_instruction": "Keep the scene general-audience, cozy, and romantic. Let love interests show interest without forcing the player into a relationship.",
+                "objective_id": "review-plans-with-nolan",
+                "target_input_group_id": "review-plans-with-nolan-from-survive-after-work-event"
               }
             ],
             "travel_location_id": "",
@@ -2985,7 +3435,7 @@
           {
             "id": "coffee-with-hana",
             "title": "Share a Quiet Coffee With Hana",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Hana invites the player into a calmer corner of the day where neither of them has to perform.",
             "rewards": [
@@ -3001,6 +3451,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "romance_momentum"
                 ],
                 "amount": 1,
@@ -3012,11 +3463,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "walk-back-with-claire",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "walk-back-with-claire"
+                  }
+                ],
                 "id": "coffee-with-hana-output-1",
-                "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
                 "rewards": [],
-                "target_input_group_id": "from-coffee-with-hana"
+                "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
+                "objective_id": "walk-back-with-claire",
+                "target_input_group_id": "walk-back-with-claire-from-coffee-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "stay-late-with-marcus"
+                  }
+                ],
+                "id": "coffee-with-hana-output-2",
+                "rewards": [],
+                "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
+                "objective_id": "stay-late-with-marcus",
+                "target_input_group_id": "stay-late-with-marcus-from-coffee-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-sophie-after-hours"
+                  }
+                ],
+                "id": "coffee-with-hana-output-3",
+                "rewards": [],
+                "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
+                "objective_id": "help-sophie-after-hours",
+                "target_input_group_id": "help-sophie-after-hours-from-coffee-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "coffee-with-hana-output-4",
+                "rewards": [],
+                "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
+                "objective_id": "review-plans-with-nolan",
+                "target_input_group_id": "review-plans-with-nolan-from-coffee-with-hana"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "walk-back-with-claire"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "stay-late-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-sophie-after-hours"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "coffee-with-hana-output-5",
+                "rewards": [],
+                "completion_instruction": "Make this a gentle relationship scene. Hana should connect through small observations, shared quiet, and honest encouragement rather than dramatic flirting.",
+                "objective_id": "ask-rika-for-final-advice",
+                "target_input_group_id": "ask-rika-for-final-advice-from-coffee-with-hana"
               }
             ],
             "travel_location_id": "",
@@ -3035,7 +3556,7 @@
           {
             "id": "walk-back-with-claire",
             "title": "Walk Back With Claire",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Claire slows down long enough for the player to see the person behind the confident office sparkle.",
             "rewards": [
@@ -3051,6 +3572,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "romance_momentum"
                 ],
                 "amount": 1,
@@ -3062,11 +3584,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "stay-late-with-marcus",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "coffee-with-hana"
+                  }
+                ],
                 "id": "walk-back-with-claire-output-1",
-                "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
                 "rewards": [],
-                "target_input_group_id": "from-walk-back-with-claire"
+                "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
+                "objective_id": "coffee-with-hana",
+                "target_input_group_id": "coffee-with-hana-from-walk-back-with-claire"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "stay-late-with-marcus"
+                  }
+                ],
+                "id": "walk-back-with-claire-output-2",
+                "rewards": [],
+                "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
+                "objective_id": "stay-late-with-marcus",
+                "target_input_group_id": "stay-late-with-marcus-from-walk-back-with-claire"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-sophie-after-hours"
+                  }
+                ],
+                "id": "walk-back-with-claire-output-3",
+                "rewards": [],
+                "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
+                "objective_id": "help-sophie-after-hours",
+                "target_input_group_id": "help-sophie-after-hours-from-walk-back-with-claire"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "walk-back-with-claire-output-4",
+                "rewards": [],
+                "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
+                "objective_id": "review-plans-with-nolan",
+                "target_input_group_id": "review-plans-with-nolan-from-walk-back-with-claire"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "coffee-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "stay-late-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-sophie-after-hours"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "walk-back-with-claire-output-5",
+                "rewards": [],
+                "completion_instruction": "Let Claire stay playful, but show sincerity underneath it. She should appreciate the player's effort more than smooth confidence.",
+                "objective_id": "ask-rika-for-final-advice",
+                "target_input_group_id": "ask-rika-for-final-advice-from-walk-back-with-claire"
               }
             ],
             "travel_location_id": "",
@@ -3085,7 +3677,7 @@
           {
             "id": "stay-late-with-marcus",
             "title": "Stay Late With Marcus",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Marcus and the player work in comfortable quiet after most of the office has gone home.",
             "rewards": [
@@ -3101,6 +3693,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -3112,11 +3705,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "help-sophie-after-hours",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "coffee-with-hana"
+                  }
+                ],
                 "id": "stay-late-with-marcus-output-1",
-                "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
                 "rewards": [],
-                "target_input_group_id": "from-stay-late-with-marcus"
+                "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
+                "objective_id": "coffee-with-hana",
+                "target_input_group_id": "coffee-with-hana-from-stay-late-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "walk-back-with-claire"
+                  }
+                ],
+                "id": "stay-late-with-marcus-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
+                "objective_id": "walk-back-with-claire",
+                "target_input_group_id": "walk-back-with-claire-from-stay-late-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-sophie-after-hours"
+                  }
+                ],
+                "id": "stay-late-with-marcus-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
+                "objective_id": "help-sophie-after-hours",
+                "target_input_group_id": "help-sophie-after-hours-from-stay-late-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "stay-late-with-marcus-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
+                "objective_id": "review-plans-with-nolan",
+                "target_input_group_id": "review-plans-with-nolan-from-stay-late-with-marcus"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "coffee-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "walk-back-with-claire"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-sophie-after-hours"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "stay-late-with-marcus-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Marcus through patience, dry humor, and steady attention. He should make space for the player instead of pushing them to perform socially.",
+                "objective_id": "ask-rika-for-final-advice",
+                "target_input_group_id": "ask-rika-for-final-advice-from-stay-late-with-marcus"
               }
             ],
             "travel_location_id": "",
@@ -3135,7 +3798,7 @@
           {
             "id": "help-sophie-after-hours",
             "title": "Help Sophie After Hours",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Sophie needs help with a small office kindness that turns into an unexpectedly honest conversation.",
             "rewards": [
@@ -3151,6 +3814,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "office_warmth"
                 ],
                 "amount": 1,
@@ -3162,11 +3826,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "review-plans-with-nolan",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "coffee-with-hana"
+                  }
+                ],
                 "id": "help-sophie-after-hours-output-1",
-                "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
                 "rewards": [],
-                "target_input_group_id": "from-help-sophie-after-hours"
+                "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
+                "objective_id": "coffee-with-hana",
+                "target_input_group_id": "coffee-with-hana-from-help-sophie-after-hours"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "walk-back-with-claire"
+                  }
+                ],
+                "id": "help-sophie-after-hours-output-2",
+                "rewards": [],
+                "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
+                "objective_id": "walk-back-with-claire",
+                "target_input_group_id": "walk-back-with-claire-from-help-sophie-after-hours"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "stay-late-with-marcus"
+                  }
+                ],
+                "id": "help-sophie-after-hours-output-3",
+                "rewards": [],
+                "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
+                "objective_id": "stay-late-with-marcus",
+                "target_input_group_id": "stay-late-with-marcus-from-help-sophie-after-hours"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "help-sophie-after-hours-output-4",
+                "rewards": [],
+                "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
+                "objective_id": "review-plans-with-nolan",
+                "target_input_group_id": "review-plans-with-nolan-from-help-sophie-after-hours"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "coffee-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "walk-back-with-claire"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "stay-late-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "review-plans-with-nolan"
+                  }
+                ],
+                "id": "help-sophie-after-hours-output-5",
+                "rewards": [],
+                "completion_instruction": "Make Sophie's scene warm but not shallow. She should show that her cheerfulness takes effort and that she values the player's awkward honesty.",
+                "objective_id": "ask-rika-for-final-advice",
+                "target_input_group_id": "ask-rika-for-final-advice-from-help-sophie-after-hours"
               }
             ],
             "travel_location_id": "",
@@ -3185,7 +3919,7 @@
           {
             "id": "review-plans-with-nolan",
             "title": "Review Tomorrow's Plans With Nolan",
-            "type": "side",
+            "type": "story",
             "status": "hidden",
             "summary": "Nolan asks for the player's opinion when nobody else is watching.",
             "rewards": [
@@ -3201,6 +3935,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "competence_reputation"
                 ],
                 "amount": 1,
@@ -3212,11 +3947,81 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "ask-rika-for-final-advice",
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "coffee-with-hana"
+                  }
+                ],
                 "id": "review-plans-with-nolan-output-1",
-                "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
                 "rewards": [],
-                "target_input_group_id": "from-review-plans-with-nolan"
+                "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
+                "objective_id": "coffee-with-hana",
+                "target_input_group_id": "coffee-with-hana-from-review-plans-with-nolan"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "walk-back-with-claire"
+                  }
+                ],
+                "id": "review-plans-with-nolan-output-2",
+                "rewards": [],
+                "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
+                "objective_id": "walk-back-with-claire",
+                "target_input_group_id": "walk-back-with-claire-from-review-plans-with-nolan"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "stay-late-with-marcus"
+                  }
+                ],
+                "id": "review-plans-with-nolan-output-3",
+                "rewards": [],
+                "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
+                "objective_id": "stay-late-with-marcus",
+                "target_input_group_id": "stay-late-with-marcus-from-review-plans-with-nolan"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_not_complete",
+                    "id": "help-sophie-after-hours"
+                  }
+                ],
+                "id": "review-plans-with-nolan-output-4",
+                "rewards": [],
+                "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
+                "objective_id": "help-sophie-after-hours",
+                "target_input_group_id": "help-sophie-after-hours-from-review-plans-with-nolan"
+              },
+              {
+                "requirements": [
+                  {
+                    "type": "objective_complete",
+                    "id": "coffee-with-hana"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "walk-back-with-claire"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "stay-late-with-marcus"
+                  },
+                  {
+                    "type": "objective_complete",
+                    "id": "help-sophie-after-hours"
+                  }
+                ],
+                "id": "review-plans-with-nolan-output-5",
+                "rewards": [],
+                "completion_instruction": "Build Nolan through mature respect and restrained warmth. He should treat the player as capable while letting a softer side show.",
+                "objective_id": "ask-rika-for-final-advice",
+                "target_input_group_id": "ask-rika-for-final-advice-from-review-plans-with-nolan"
               }
             ],
             "travel_location_id": "",
@@ -3250,6 +4055,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 1,
@@ -3272,11 +4078,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "choose-who-to-ask",
                 "id": "ask-rika-for-final-advice-output-1",
-                "completion_instruction": "Let Rika coach without choosing for the player. She should make the options feel emotionally clear: ask someone sincerely, or choose honest distance for now without treating that as failure.",
                 "rewards": [],
-                "target_input_group_id": "from-ask-rika-for-final-advice"
+                "completion_instruction": "Let Rika coach without choosing for the player. She should make the options feel emotionally clear: ask someone sincerely, or choose honest distance for now without treating that as failure.",
+                "objective_id": "choose-who-to-ask",
+                "target_input_group_id": "choose-who-to-ask-from-ask-rika-for-final-advice"
               }
             ],
             "travel_location_id": "loc-break-room",
@@ -3342,9 +4148,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet. Honor the selected choice: Ask Hana.",
                 "next_objective_id": "follow-through-honestly",
-                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
-                "target_input_group_id": "from-choose-who-to-ask"
+                "target_input_group_id": "follow-through-honestly-from-choose-who-to-ask"
               },
               {
                 "id": "ask-claire",
@@ -3375,9 +4181,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet. Honor the selected choice: Ask Claire.",
                 "next_objective_id": "follow-through-honestly",
-                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
-                "target_input_group_id": "from-choose-who-to-ask"
+                "target_input_group_id": "follow-through-honestly-from-choose-who-to-ask"
               },
               {
                 "id": "ask-marcus",
@@ -3408,9 +4214,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet. Honor the selected choice: Ask Marcus.",
                 "next_objective_id": "follow-through-honestly",
-                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
-                "target_input_group_id": "from-choose-who-to-ask"
+                "target_input_group_id": "follow-through-honestly-from-choose-who-to-ask"
               },
               {
                 "id": "ask-sophie",
@@ -3441,9 +4247,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet. Honor the selected choice: Ask Sophie.",
                 "next_objective_id": "follow-through-honestly",
-                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
-                "target_input_group_id": "from-choose-who-to-ask"
+                "target_input_group_id": "follow-through-honestly-from-choose-who-to-ask"
               },
               {
                 "id": "ask-nolan",
@@ -3474,9 +4280,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet. Honor the selected choice: Ask Nolan.",
                 "next_objective_id": "follow-through-honestly",
-                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
-                "target_input_group_id": "from-choose-who-to-ask"
+                "target_input_group_id": "follow-through-honestly-from-choose-who-to-ask"
               },
               {
                 "id": "not-yet",
@@ -3494,6 +4300,7 @@
                   {
                     "type": "adjust_story_inventory",
                     "field_path": [
+                      "story_inventory",
                       "confidence"
                     ],
                     "amount": 1,
@@ -3508,9 +4315,9 @@
                     ]
                   }
                 ],
+                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet. Honor the selected choice: Not Yet.",
                 "next_objective_id": "follow-through-honestly",
-                "completion_instruction": "Record the player's chosen route. The next scene should follow through on that route sincerely, whether it is a confession or an honest decision not to ask yet.",
-                "target_input_group_id": "from-choose-who-to-ask"
+                "target_input_group_id": "follow-through-honestly-from-choose-who-to-ask"
               }
             ],
             "while_active_guidance": "Decide whether to ask someone out now or admit you are not ready yet."
@@ -3525,6 +4332,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "confidence"
                 ],
                 "amount": 2,
@@ -3533,6 +4341,7 @@
               {
                 "type": "adjust_story_inventory",
                 "field_path": [
+                  "story_inventory",
                   "office_warmth"
                 ],
                 "amount": 1,
@@ -3551,11 +4360,11 @@
             ],
             "next_objectives": [
               {
-                "objective_id": "settle-into-office-rhythm",
                 "id": "follow-through-honestly-output-1",
-                "completion_instruction": "Resolve the route chosen in the previous objective. For a romantic route, the confession may be awkward but should reward sincerity and the relationship built so far. For the not-yet route, make it a warm, valid ending path about choosing connection without forcing romance.",
                 "rewards": [],
-                "target_input_group_id": "from-follow-through-honestly"
+                "completion_instruction": "Resolve the route chosen in the previous objective. For a romantic route, the confession may be awkward but should reward sincerity and the relationship built so far. For the not-yet route, make it a warm, valid ending path about choosing connection without forcing romance.",
+                "objective_id": "settle-into-office-rhythm",
+                "target_input_group_id": "settle-into-office-rhythm-from-follow-through-honestly"
               }
             ],
             "travel_location_id": "",
@@ -3597,10 +4406,9 @@
             "next_objectives": [
               {
                 "id": "settle-into-office-rhythm-output-1",
-                "completion_instruction": "End on a cozy slice-of-life note shaped by the chosen route. Work continues, Rika remains a trusted coach, and the player has built real connection through effort instead of smoothness.",
                 "rewards": [],
-                "ending_type": "freeplay",
-                "ending_message": ""
+                "completion_instruction": "End on a cozy slice-of-life note shaped by the chosen route. Work continues, Rika remains a trusted coach, and the player has built real connection through effort instead of smoothness.",
+                "ending_type": "freeplay"
               }
             ],
             "travel_location_id": "",
@@ -3627,14 +4435,13 @@
             "status": "locked",
             "role": "soft-spoken design lead",
             "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Brightleaf Analytics office",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "Hana Morikawa joins the office scene.",
             "full_character": {
-              "id": "hana_morikawa",
+              "id": "hana-morikawa",
               "name": "Hana Morikawa",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -3655,7 +4462,6 @@
               "appearance": {
                 "species": "adult Japanese human",
                 "height": 5,
-                "body_description": "A slender build.",
                 "skin_color": "light warm skin",
                 "eye_color": "dark brown eyes",
                 "hair_color": "black hair",
@@ -3663,7 +4469,16 @@
                 "hair_type": "straight hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 8,
+                "chest": 11,
+                "upper_body_build": 11,
+                "midsection_build": 11,
+                "hip_width": 9,
+                "butt_build": 10,
+                "lower_body_build": 11,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -3748,17 +4563,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": false
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Hana leads design review for client materials.",
+                "She likes calm workspaces, tea, stationery, and people who try even when embarrassed.",
+                "She can bond with the player through quiet competence and shared problem solving.",
+                "Her romantic route is gentle and slow-burn.",
+                "She becomes more direct only after trust builds."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Hana Morikawa",
               "fallback_outfits": [
                 {
@@ -3827,32 +4651,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "office-default",
-              "starting_known_facts": [
-                "Hana leads design review for client materials.",
-                "She likes calm workspaces, tea, stationery, and people who try even when embarrassed.",
-                "She can bond with the player through quiet competence and shared problem solving.",
-                "Her romantic route is gentle and slow-burn.",
-                "She becomes more direct only after trust builds."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
+                  "source": "none",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": true
                 },
                 "non_male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
+                  "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -3864,15 +4681,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 1,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
+            "scene_presence": "active",
             "npc_location_id": "brightleaf-analytics-office",
-            "note": "Hana Morikawa should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them."
+            "note": "Hana Morikawa should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+            "on_unlock": {
+              "greeting": "Hana Morikawa joins the office scene."
+            }
           },
           "claire_bennett": {
             "id": "claire_bennett",
@@ -3880,14 +4697,13 @@
             "status": "locked",
             "role": "confident sales manager",
             "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Brightleaf Analytics office",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "Claire Bennett joins the office scene.",
             "full_character": {
-              "id": "claire_bennett",
+              "id": "claire-bennett",
               "name": "Claire Bennett",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -3908,7 +4724,6 @@
               "appearance": {
                 "species": "adult white human",
                 "height": 6,
-                "body_description": "An average build.",
                 "skin_color": "fair skin",
                 "eye_color": "green eyes",
                 "hair_color": "auburn hair",
@@ -3916,7 +4731,16 @@
                 "hair_type": "wavy hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 13,
+                "upper_body_build": 8,
+                "midsection_build": 7,
+                "hip_width": 11,
+                "butt_build": 8,
+                "lower_body_build": 8,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -4001,17 +4825,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": false
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Claire manages client-facing sales and knows how to read a room.",
+                "She is openly interested in the player when they show competence under pressure.",
+                "Her route is playful, confident, and full of flustered misunderstandings.",
+                "She likes when the player tries to be honest instead of perfect.",
+                "She can help the player practice social confidence through low-stakes office challenges."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Claire Bennett",
               "fallback_outfits": [
                 {
@@ -4080,32 +4913,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "office-default",
-              "starting_known_facts": [
-                "Claire manages client-facing sales and knows how to read a room.",
-                "She is openly interested in the player when they show competence under pressure.",
-                "Her route is playful, confident, and full of flustered misunderstandings.",
-                "She likes when the player tries to be honest instead of perfect.",
-                "She can help the player practice social confidence through low-stakes office challenges."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
+                  "source": "none",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": true
                 },
                 "non_male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
+                  "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -4117,15 +4943,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 2,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
+            "scene_presence": "active",
             "npc_location_id": "brightleaf-analytics-office",
-            "note": "Claire Bennett should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them."
+            "note": "Claire Bennett should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+            "on_unlock": {
+              "greeting": "Claire Bennett joins the office scene."
+            }
           },
           "marcus_cho": {
             "id": "marcus_cho",
@@ -4133,14 +4959,13 @@
             "status": "locked",
             "role": "senior analyst",
             "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Brightleaf Analytics office",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "Marcus Cho joins the office scene.",
             "full_character": {
-              "id": "marcus_cho",
+              "id": "marcus-cho",
               "name": "Marcus Cho",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -4161,7 +4986,6 @@
               "appearance": {
                 "species": "adult Korean American human",
                 "height": 7,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "light warm skin",
                 "eye_color": "dark brown eyes",
                 "hair_color": "black hair",
@@ -4169,7 +4993,16 @@
                 "hair_type": "neatly styled hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 13,
+                "chest": 15,
+                "upper_body_build": 15,
+                "midsection_build": 14,
+                "hip_width": 11,
+                "butt_build": 14,
+                "lower_body_build": 15,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -4350,17 +5183,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": true
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Marcus is one of the best analysts in the office until the player starts catching things he missed.",
+                "He is secure enough to admire talent without making it a competition.",
+                "His route is quiet, respectful, and built around trust.",
+                "He often helps by reducing pressure rather than adding attention.",
+                "He notices when the player is overwhelmed before most people do."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Marcus Cho",
               "fallback_outfits": [
                 {
@@ -4525,32 +5367,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "office-default",
-              "starting_known_facts": [
-                "Marcus is one of the best analysts in the office until the player starts catching things he missed.",
-                "He is secure enough to admire talent without making it a competition.",
-                "His route is quiet, respectful, and built around trust.",
-                "He often helps by reducing pressure rather than adding attention.",
-                "He notices when the player is overwhelmed before most people do."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": "",
-                  "male": true
-                },
-                "non_male": {
-                  "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "source": "none",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -4562,15 +5397,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 3,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
+            "scene_presence": "active",
             "npc_location_id": "brightleaf-analytics-office",
-            "note": "Marcus Cho should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them."
+            "note": "Marcus Cho should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+            "on_unlock": {
+              "greeting": "Marcus Cho joins the office scene."
+            }
           },
           "sophie_reed": {
             "id": "sophie_reed",
@@ -4578,14 +5413,13 @@
             "status": "locked",
             "role": "cheerful HR assistant",
             "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Brightleaf Analytics office",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "Sophie Reed joins the office scene.",
             "full_character": {
-              "id": "sophie_reed",
+              "id": "sophie-reed",
               "name": "Sophie Reed",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -4606,7 +5440,6 @@
               "appearance": {
                 "species": "adult Latina human",
                 "height": 5,
-                "body_description": "An average build.",
                 "skin_color": "warm brown skin",
                 "eye_color": "brown eyes",
                 "hair_color": "dark brown hair",
@@ -4614,7 +5447,16 @@
                 "hair_type": "curly hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 10,
+                "chest": 12,
+                "upper_body_build": 8,
+                "midsection_build": 8,
+                "hip_width": 10,
+                "butt_build": 8,
+                "lower_body_build": 9,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -4699,17 +5541,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": false
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Sophie organizes onboarding, office birthdays, and team lunches.",
+                "She is one of the first people to openly compliment the player.",
+                "Her route is bright, supportive, and cozy.",
+                "She can help the player feel included without demanding they become extroverted.",
+                "She gets hurt if the player repeatedly treats kindness like a trap."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Sophie Reed",
               "fallback_outfits": [
                 {
@@ -4778,32 +5629,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "office-default",
-              "starting_known_facts": [
-                "Sophie organizes onboarding, office birthdays, and team lunches.",
-                "She is one of the first people to openly compliment the player.",
-                "Her route is bright, supportive, and cozy.",
-                "She can help the player feel included without demanding they become extroverted.",
-                "She gets hurt if the player repeatedly treats kindness like a trap."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
+                  "source": "none",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": true
                 },
                 "non_male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
+                  "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -4815,15 +5659,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 4,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
+            "scene_presence": "active",
             "npc_location_id": "brightleaf-analytics-office",
-            "note": "Sophie Reed should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them."
+            "note": "Sophie Reed should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+            "on_unlock": {
+              "greeting": "Sophie Reed joins the office scene."
+            }
           },
           "nolan_price": {
             "id": "nolan_price",
@@ -4831,14 +5675,13 @@
             "status": "locked",
             "role": "quiet project manager",
             "meet_condition": "Introduced during early office onboarding and relationship-building objectives.",
-            "join_condition": "",
+            "join_condition": null,
             "location_hint": "Brightleaf Analytics office",
-            "on_unlock": {},
             "unlocked_by": "",
             "last_triggered_reason": "",
             "greeting": "Nolan Price joins the office scene.",
             "full_character": {
-              "id": "nolan_price",
+              "id": "nolan-price",
               "name": "Nolan Price",
               "source": "Player",
               "creation_tool": "Codex 5.5 (Medium)",
@@ -4859,7 +5702,6 @@
               "appearance": {
                 "species": "adult Black human",
                 "height": 7,
-                "body_description": "A strong, athletic build.",
                 "skin_color": "dark brown skin",
                 "eye_color": "dark brown eyes",
                 "hair_color": "black hair",
@@ -4867,7 +5709,16 @@
                 "hair_type": "close-cropped hair",
                 "extra_description": "",
                 "extra_description_lower_body": "",
-                "nonhuman_lower_body": false
+                "nonhuman_lower_body": false,
+                "shoulder_width": 13,
+                "chest": 15,
+                "upper_body_build": 15,
+                "midsection_build": 14,
+                "hip_width": 11,
+                "butt_build": 14,
+                "lower_body_build": 15,
+                "arm_length": 10,
+                "leg_length": 10
               },
               "outfits": [
                 {
@@ -5048,17 +5899,26 @@
               },
               "default_profile_image": {
                 "url": "",
-                "local_image_id": "",
                 "source": "none",
-                "seed": null,
+                "seed": 0,
                 "prompt": "",
                 "negative_prompt": "",
                 "note": "",
+                "local_image_id": "",
                 "male": true
               },
               "voice": null,
               "version": 1,
               "romanceable": true,
+              "starting_known_facts": [
+                "Nolan manages the team's most difficult client project.",
+                "He notices the player's talent early but does not embarrass them publicly unless necessary.",
+                "His route is mature, steady, and built through acts of consideration.",
+                "He respects boundaries and expects honesty.",
+                "He can become a calming anchor when office attention becomes too much."
+              ],
+              "created_at": "2026-06-29T00:00:00.000Z",
+              "updated_at": "2026-06-29T00:00:00.000Z",
               "fallback_name": "Nolan Price",
               "fallback_outfits": [
                 {
@@ -5223,32 +6083,25 @@
                 }
               ],
               "fallback_starting_outfit_id": "office-default",
-              "starting_known_facts": [
-                "Nolan manages the team's most difficult client project.",
-                "He notices the player's talent early but does not embarrass them publicly unless necessary.",
-                "His route is mature, steady, and built through acts of consideration.",
-                "He respects boundaries and expects honesty.",
-                "He can become a calming anchor when office attention becomes too much."
-              ],
               "profile_image_presentations": {
                 "male": {
                   "url": "",
-                  "local_image_id": "",
                   "source": "none",
-                  "seed": null,
-                  "prompt": "",
-                  "negative_prompt": "",
-                  "note": "",
-                  "male": true
-                },
-                "non_male": {
-                  "url": "",
-                  "local_image_id": "",
-                  "source": "hosted",
                   "seed": 0,
                   "prompt": "",
                   "negative_prompt": "",
                   "note": "",
+                  "local_image_id": "",
+                  "male": true
+                },
+                "non_male": {
+                  "url": "",
+                  "source": "none",
+                  "seed": 0,
+                  "prompt": "",
+                  "negative_prompt": "",
+                  "note": "",
+                  "local_image_id": "",
                   "male": false
                 }
               },
@@ -5260,15 +6113,15 @@
                 "active_image_id": "",
                 "image_ids": []
               },
-              "created_at": "2026-06-29T00:00:00.000Z",
-              "updated_at": "2026-08-31T06:03:35.951Z"
+              "lite": true
             },
-            "canonical_order": 5,
             "introduce_as": "npc",
-            "can_die": false,
-            "scene_presence": "none",
+            "scene_presence": "active",
             "npc_location_id": "brightleaf-analytics-office",
-            "note": "Nolan Price should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them."
+            "note": "Nolan Price should enter naturally as a coworker and potential love interest, noticing the player's talent and awkward charm without overwhelming them.",
+            "on_unlock": {
+              "greeting": "Nolan Price joins the office scene."
+            }
           }
         }
       },
@@ -5326,7 +6179,7 @@
       "recent_changes": [],
       "story_clock": {
         "elapsed_minutes": 0,
-        "label": "2026-04-06 08:50"
+        "label": "Day 6, 08:50"
       },
       "story_pacing": {
         "mode": "player_controlled",
@@ -5363,20 +6216,21 @@
       "cozy workplace romcom"
     ],
     "title_card_image": {
-      "id": "the-office-wallflower-title-card",
-      "title": "The Office Wallflower title card",
+      "url": "",
+      "source": "generated",
+      "seed": 0,
       "prompt": "cozy modern office reception on a bright morning, elevator doors, new-hire packet, coffee station, soft anime romcom atmosphere, clean professional workspace",
       "negativePrompt": "text, readable text, logo, watermark, signature",
-      "seed": 0,
+      "id": "the-office-wallflower-title-card",
+      "title": "The Office Wallflower",
       "model": "",
-      "source": "generated",
-      "url": "",
       "hosted_url": "",
       "html": "",
       "favorite": false
     },
     "allow_any_player": false,
-    "any_player_starting_state": {}
+    "any_player_starting_state": {},
+    "lite": true
   },
   "exportedAt": "2026-08-31T06:03:35.951Z"
 }

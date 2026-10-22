@@ -1,23 +1,22 @@
-# Verification
+# Verification — October 22, 2026 rebuild
 
-Current profile-removal/settings build: `ea-d101bbdd6ccbfddf`.
+Release build: `ea-7edd2543a90132e9`.
+Private-test build: `ea-2ecbbd50599bcb7e`.
 
-The profile-removal/settings update is newer than the full-suite results below. Its Node settings-contract checks and assembled JavaScript syntax checks passed. Browser smokes were updated but have not been rerun for that update.
+Both builds passed deterministic assembly, JavaScript parsing, and gzip round-trip checks. The generated release page matches `src/`. The current persistence contract has 77 stores, and the smoke index lists 163 scenarios without executing them.
 
-Verified 2026-09-18. The final `npm test` run exited successfully.
+Local checks use current production declarations and canonical validators:
 
-- Release build: `ea-deabf997d14ca7d1`.
-- Private test build: `ea-d10798b2fd7cedf1`.
-- Runtime tests: 74 passed, 0 failed.
-- Local browser smokes: 133 passed, 0 failed; completed at 2026-09-18T05:22:06.192Z.
-- Actual Perchance checks: 48, 49, and 110 passed on the private test build. These made real hosted text/image requests in an isolated, unsaved test generator.
-- Total retained smoke checks: 136 passed.
-- Current content validation: 366/366 passed (364 bundled characters and two current-schema examples).
+- The complete `npm test` gate covers settings/profiles, appearance, import/export, shared library formats/workers, persistence, state updates, images, HTTPS hosting, log retention, and private fixture producers.
+- Authoring validation passes 91 checks, including both ending paths of the short reference story.
+- Six larger stories pass 53 character/animal conversions and 144 routing scenarios, rewards, side-quest returns and invalid-input checks.
+- All 40 standalone characters, 55 stories and two documentation examples pass canonical validation. Both skill reference exports also pass: 99 exports total.
+- Clothing/reference checks cover 826 outfit collections and 2726 clothing records.
+- Ollama host/connector tests pass 39 checks. Hosted-provider/launcher tests pass 26 Node checks and 10 Python checks; the separate demo-checkout test is skipped because that checkout is unavailable.
+- Both Lite skills pass the skill validator; installed, repository, public-tool copies and ZIP use version 2.0.0.
 
-The local runner blocks external requests and starts a fresh Edge browser for each smoke. It waits for application readiness and the library UI before interaction. Results are written to `test-output/local-tests.json`; content results to `test-output/content-validation.json`; live results to `test-output/live-acceptance.txt`.
+The current rebuild's browser runtime/smoke suites have not been executed. Tests and the private build are prepared for a separately requested browser run. A stale pre-rebuild content script briefly opened an isolated browser against the old generated page during development; that obsolete result is not release evidence. The content entrypoint is now pure Node validation.
 
-The release preview was also checked for the library, settings, character creation/editor, starting states, outfits, body customization, and discard-progress confirmation. It was left running as a normal Perchance preview without the acceptance overlay.
+Live Supabase account/publication flows and the published Perchance page's connection to real HTTPS workers remain unverified. Local protocol/HTTP fixtures do not establish live service access or inference quality. No cloud models were provisioned or paid inference requested for these checks. Historical September/earlier-October browser results do not certify this rebuild.
 
-Repeated source/content reviews covered application fragments, workers, schemas, fixtures, documentation, bundled definitions, and assets. The copy uses independent storage names, has no configured public-hosting destination, and retains all 37 application manifest fragments.
-
-The 54 older story files are retained as reference material. They are not certified as current-schema imports and are not automatically loaded. Use the strict authoring guides and current examples for new imports.
+Detailed final Node totals and verification limits are recorded in `rebuild/status.json`. Disposable diagnostic inventories are archived in the task workspace, outside the release repository.

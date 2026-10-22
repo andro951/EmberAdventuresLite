@@ -1,7 +1,7 @@
 "use strict";
 
 self.EmberStorageSchema = {
-    "databaseName": "EmberAdventuresLiteRuntimeV1",
+    "databaseName": "EmberAdventuresLiteRuntimeV2",
     "version": 1,
     "source": "SAVE_STORAGE_SCHEMA_JSON.txt",
     "stores": {
@@ -32,6 +32,13 @@ self.EmberStorageSchema = {
                 }
             ],
             "fields": {
+                "lite": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "boolean",
+                    "example": true,
+                    "description": "true - Identifies the authored Lite story format. - boolean (required)"
+                },
                 "storyId": {
                     "required": true,
                     "kind": "scalar",
@@ -298,6 +305,7 @@ self.EmberStorageSchema = {
                             "image_action": "the newly reincarnated player seated in an elegant office-garden beneath an impossible open sky"
                         },
                         "player": {
+                            "lite": true,
                             "version": 1,
                             "id": "mara-quinn",
                             "name": "Mara Quinn",
@@ -340,7 +348,15 @@ self.EmberStorageSchema = {
                             "appearance": {
                                 "species": "Human",
                                 "height": 10,
-                                "body_description": "A sturdy, athletic build.",
+                                "shoulder_width": 10,
+                                "chest": 13,
+                                "upper_body_build": 8,
+                                "midsection_build": 8,
+                                "hip_width": 10,
+                                "butt_build": 8,
+                                "lower_body_build": 8,
+                                "arm_length": 10,
+                                "leg_length": 10,
                                 "skin_color": "medium olive skin",
                                 "eye_color": "green",
                                 "hair_color": "auburn",
@@ -429,6 +445,7 @@ self.EmberStorageSchema = {
                         },
                         "players": [
                             {
+                                "lite": true,
                                 "version": 1,
                                 "id": "mara-quinn",
                                 "name": "Mara Quinn",
@@ -471,7 +488,15 @@ self.EmberStorageSchema = {
                                 "appearance": {
                                     "species": "Human",
                                     "height": 10,
-                                    "body_description": "A sturdy, athletic build.",
+                                    "shoulder_width": 10,
+                                    "chest": 13,
+                                    "upper_body_build": 8,
+                                    "midsection_build": 8,
+                                    "hip_width": 10,
+                                    "butt_build": 8,
+                                    "lower_body_build": 8,
+                                    "arm_length": 10,
+                                    "leg_length": 10,
                                     "skin_color": "medium olive skin",
                                     "eye_color": "green",
                                     "hair_color": "auburn",
@@ -1128,6 +1153,7 @@ self.EmberStorageSchema = {
                             "image_action": "the newly reincarnated player seated in an elegant office-garden beneath an impossible open sky - The image action at this definition path. - string (required)"
                         },
                         "player": {
+                            "lite": "true - Identifies the authored Lite character format. - boolean (required)",
                             "version": "1 - Positive whole-number character definition version; current humanoid definitions use the exact 0-20 appearance shape. - integer (required)",
                             "id": "mara-quinn - Stable identifier within its owning definition. - string (required)",
                             "name": "Mara Quinn - Player-facing character name. - string (required)",
@@ -1169,8 +1195,16 @@ self.EmberStorageSchema = {
                             "starting_pose": "standing in the divine receiving room - Pose copied into runtime when play begins. - string (required)",
                             "appearance": {
                                 "species": "Human - The complete species identity, including any meaningful subtype or qualifier, at this definition path. - string (required)",
-                                "height": "10 - The height at this definition path; whole number from 0 through 20. - integer (required)",
-                                "body_description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+                                "height": "10 - The height at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "shoulder_width": "10 - The shoulder width at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "chest": "13 - The chest at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "upper_body_build": "8 - The upper body build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "midsection_build": "8 - The midsection build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "hip_width": "10 - The hip width at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "butt_build": "8 - The butt build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "lower_body_build": "8 - The lower body build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "arm_length": "10 - The arm length at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                "leg_length": "10 - The leg length at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
                                 "skin_color": "medium olive skin - The skin color at this definition path. - string (required)",
                                 "eye_color": "green - The eye color at this definition path. - string (required)",
                                 "hair_color": "auburn - The hair color at this definition path. - string (required)",
@@ -1259,6 +1293,7 @@ self.EmberStorageSchema = {
                         },
                         "players": [
                             {
+                                "lite": "true - Identifies the authored Lite character format. - boolean (required)",
                                 "version": "1 - Positive whole-number character definition version; current humanoid definitions use the exact 0-20 appearance shape. - integer (required)",
                                 "id": "mara-quinn - Stable identifier within its owning definition. - string (required)",
                                 "name": "Mara Quinn - Player-facing character name. - string (required)",
@@ -1300,8 +1335,16 @@ self.EmberStorageSchema = {
                                 "starting_pose": "standing in the divine receiving room - Pose copied into runtime when play begins. - string (required)",
                                 "appearance": {
                                     "species": "Human - The complete species identity, including any meaningful subtype or qualifier, at this definition path. - string (required)",
-                                    "height": "10 - The height at this definition path; whole number from 0 through 20. - integer (required)",
-                                    "body_description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+                                    "height": "10 - The height at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "shoulder_width": "10 - The shoulder width at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "chest": "13 - The chest at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "upper_body_build": "8 - The upper body build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "midsection_build": "8 - The midsection build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "hip_width": "10 - The hip width at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "butt_build": "8 - The butt build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "lower_body_build": "8 - The lower body build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "arm_length": "10 - The arm length at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                                    "leg_length": "10 - The leg length at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
                                     "skin_color": "medium olive skin - The skin color at this definition path. - string (required)",
                                     "eye_color": "green - The eye color at this definition path. - string (required)",
                                     "hair_color": "auburn - The hair color at this definition path. - string (required)",
@@ -2261,6 +2304,13 @@ self.EmberStorageSchema = {
                 }
             ],
             "fields": {
+                "lite": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "boolean",
+                    "example": true,
+                    "description": "true - Identifies the authored Lite character format. - boolean (required)"
+                },
                 "characterId": {
                     "required": true,
                     "kind": "scalar",
@@ -2575,7 +2625,15 @@ self.EmberStorageSchema = {
                     "example": {
                         "species": "Arachne",
                         "height": 10,
-                        "body_description": "A sturdy, athletic build.",
+                        "shoulder_width": 10,
+                        "chest": 13,
+                        "upper_body_build": 8,
+                        "midsection_build": 8,
+                        "hip_width": 10,
+                        "butt_build": 8,
+                        "lower_body_build": 8,
+                        "arm_length": 10,
+                        "leg_length": 10,
                         "skin_color": "warm brown skin with copper abdominal markings",
                         "eye_color": "amber",
                         "hair_color": "chestnut",
@@ -2587,8 +2645,16 @@ self.EmberStorageSchema = {
                     },
                     "description": {
                         "species": "Arachne - The complete species identity, including any meaningful subtype or qualifier, at this definition path. - string (required)",
-                        "height": "10 - The height at this definition path; whole number from 0 through 20. - integer (required)",
-                        "body_description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)",
+                        "height": "10 - The height at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "shoulder_width": "10 - The shoulder width at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "chest": "13 - The chest at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "upper_body_build": "8 - The upper body build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "midsection_build": "8 - The midsection build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "hip_width": "10 - The hip width at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "butt_build": "8 - The butt build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "lower_body_build": "8 - The lower body build at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "arm_length": "10 - The arm length at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
+                        "leg_length": "10 - The leg length at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)",
                         "skin_color": "warm brown skin with copper abdominal markings - The skin color at this definition path. - string (required)",
                         "eye_color": "amber - The eye color at this definition path. - string (required)",
                         "hair_color": "chestnut - The hair color at this definition path. - string (required)",
@@ -2639,7 +2705,7 @@ self.EmberStorageSchema = {
                             "name": "Private Silk Outfit",
                             "clothing": {
                                 "bra": "a plain copper-black woven undershirt",
-                                "underwear": "matching revealing lower piece described by the same private outfit",
+                                "underwear": "plain black linen briefs",
                                 "other_accessory": "the outfit-specific jewelry, chains, fasteners, and body accents described in the design",
                                 "legwear": "species-safe stockings, straps, or leg adornments when anatomically applicable",
                                 "leftHand": null,
@@ -2683,7 +2749,7 @@ self.EmberStorageSchema = {
                             "name": "Private Silk Outfit - Player-facing character name. - string (required)",
                             "clothing": {
                                 "bra": "a plain copper-black woven undershirt - The bra at this definition path. - string (required)",
-                                "underwear": "matching revealing lower piece described by the same private outfit - The underwear at this definition path. - string (required)",
+                                "underwear": "plain black linen briefs - The underwear at this definition path. - string (required)",
                                 "other_accessory": "the outfit-specific jewelry, chains, fasteners, and body accents described in the design - The other accessory at this definition path. - string (required)",
                                 "legwear": "species-safe stockings, straps, or leg adornments when anatomically applicable - The legwear at this definition path. - string (required)",
                                 "leftHand": "null - Exact authored hand-item description when occupied. - string/null (required)",
@@ -3995,14 +4061,70 @@ self.EmberStorageSchema = {
                     "kind": "scalar",
                     "typeSpec": "number/string",
                     "example": 10,
-                    "description": "10 - Current appearance.height, whole number from 0 through 20. - number/string (required)"
+                    "description": "10 - Current appearance.height, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
                 },
-                "bodyDescription": {
+                "shoulderWidth": {
                     "required": true,
                     "kind": "scalar",
-                    "typeSpec": "string",
-                    "example": "A sturdy, athletic build.",
-                    "description": "A sturdy, athletic build. - Overall body build and proportions; empty text is allowed. - string (required)"
+                    "typeSpec": "number/string",
+                    "example": 10,
+                    "description": "10 - Current appearance.shoulder_width, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "chest": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 13,
+                    "description": "13 - The chest at this definition path; whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "upperBodyBuild": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 8,
+                    "description": "8 - Current appearance.upper_body_build, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "midsectionBuild": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 8,
+                    "description": "8 - Current appearance.midsection_build, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "hipWidth": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 10,
+                    "description": "10 - Current appearance.hip_width, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "buttBuild": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 8,
+                    "description": "8 - Current appearance.butt_build, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "lowerBodyBuild": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 8,
+                    "description": "8 - Current appearance.lower_body_build, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "armLength": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 10,
+                    "description": "10 - Current appearance.arm_length, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
+                },
+                "legLength": {
+                    "required": true,
+                    "kind": "scalar",
+                    "typeSpec": "number/string",
+                    "example": 10,
+                    "description": "10 - Current appearance.leg_length, whole number from 0 through 20 or a non-empty custom description. - number/string (required)"
                 },
                 "skinColor": {
                     "required": true,
@@ -4608,13 +4730,6 @@ self.EmberStorageSchema = {
                     "typeSpec": "number",
                     "example": 0,
                     "description": "0 - Exact outfit.formality. - number (required)"
-                },
-                "revealing": {
-                    "required": true,
-                    "kind": "scalar",
-                    "typeSpec": "number",
-                    "example": 0,
-                    "description": "0 - Exact outfit.revealing. - number (required)"
                 },
                 "origin": {
                     "required": true,

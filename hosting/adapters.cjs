@@ -109,7 +109,9 @@ function createAdapters(config, options = {}) {
     } catch (error) {
       if (signal?.aborted) {
         // Explicit caller cancellation only. No wall-clock job deadline or resubmission.
-        void http(c, `/cancel/${id}`, {}, undefined).catch(() => {});
+        void http(c, `/cancel/${id}`, {}, undefined).catch(() => {
+          console.error("RunPod cancellation could not be confirmed. Check the provider before submitting another request.");
+        });
       }
       throw error;
     }
@@ -163,7 +165,7 @@ function createAdapters(config, options = {}) {
     if (role === "text") {
       // Chat APIs do not universally support assistant prefilling. Carry the requested prefix
       // as an instruction, then restore it once at the browser boundary if it was omitted.
-      const messages = [{role: "system", content: "You are the generation engine for a general-audience fantasy RPG. Follow the requested format exactly. Keep all content safe for work." + (request.startWith ? ` Begin your answer with this exact prefix: ${JSON.stringify(request.startWith)}.` : "")}, {role: "user", content: request.instruction}];
+      const messages = [{role: "system", content: "You are EmberAdventures's text generation engine. Follow the supplied instructions and requested output format exactly." + (request.startWith ? ` Begin your answer with this exact prefix: ${JSON.stringify(request.startWith)}.` : "")}, {role: "user", content: request.instruction}];
       const sampling = {max_tokens: c.maxTokens, temperature: c.temperature, top_p: c.topP, top_k: c.topK, ...(c.enableThinking === null ? {} : {chat_template_kwargs: {enable_thinking: c.enableThinking}}), ...(request.stopSequences.length ? {stop: request.stopSequences} : {})};
       if (c.kind === "runpod-vllm") {
         const output = await runpod(c, {route: "/v1/chat/completions", body: {model: c.model, messages, stream: false, ...sampling}}, signal);

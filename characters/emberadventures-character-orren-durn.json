@@ -100,7 +100,6 @@
     "appearance": {
       "species": "Mountain dwarf",
       "height": 11,
-      "body_description": "Compact and lean.",
       "skin_color": "Warm ruddy-brown skin with copper freckles.",
       "eye_color": "Dark moss-green.",
       "hair_color": "Copper-brown",
@@ -108,7 +107,16 @@
       "hair_type": "Straight hair tied into a narrow work braid.",
       "extra_description": "Unmistakable dwarf facial structure: heavy brow, broad nose, strong square jaw, short thick neck, dense hands and broad palms despite an unusually tall narrow frame.",
       "extra_description_lower_body": "Broad dwarf feet with thick toes.",
-      "nonhuman_lower_body": false
+      "nonhuman_lower_body": false,
+      "shoulder_width": 11,
+      "chest": 12,
+      "upper_body_build": 12,
+      "midsection_build": 11,
+      "hip_width": 10,
+      "butt_build": 11,
+      "lower_body_build": 12,
+      "arm_length": 9,
+      "leg_length": 9
     },
     "outfits": [
       {
@@ -255,6 +263,7 @@
     },
     "voice": null,
     "created_at": "2026-09-07T16:51:01Z",
-    "updated_at": "2026-09-08T19:01:27Z"
+    "updated_at": "2026-09-08T19:01:27Z",
+    "lite": true
   }
 }
