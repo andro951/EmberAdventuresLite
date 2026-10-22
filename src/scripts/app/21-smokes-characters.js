@@ -6221,13 +6221,6 @@
                     creator: "tester",
                     at: feedbackAt,
                 }),
-                createPublicStoryFeedback({
-                    entry_id: feedbackEntry.id,
-                    type: "tag_suggestion",
-                    comment: "Smoke tag suggestion.",
-                    creator: "tester",
-                    at: feedbackAt,
-                }),
             ].filter(Boolean);
             const summary = publicLibraryStoryFeedbackSummary(feedbackIndex, feedbackEntry.id);
 
@@ -6251,6 +6244,7 @@
         async function devRunCreatorIdentityOwnershipSmokeTest() {
             devTestLog("Scenario start: creator-identity-ownership-smoke");
             const originalRegistry = clone(creatorIdentityRegistry());
+            const originalStoredRegistry = await largeStorageGet(CREATOR_IDENTITY_KEY);
             const originalMineCreatorId = app.mineCreatorId;
             const originalStories = app.storyTemplates;
             const originalStoryCreatorMetadata = new Map(storyLibraryCreatorMetadataMap());
@@ -6574,7 +6568,11 @@
                 app.devCreatorIdentityImportSelection = originalSelection;
                 chooseCreatorIdentityForImport =
                     originalChooseCreatorIdentityForImport;
-                saveCreatorIdentityRegistry("creator identity smoke restored registry");
+                await flushLargeSaves();
+                if (originalStoredRegistry === undefined || originalStoredRegistry === null)
+                    await awaitLargeStorageRemove(CREATOR_IDENTITY_KEY);
+                else
+                    await awaitLargeStorageSet(CREATOR_IDENTITY_KEY, originalStoredRegistry);
             }
         }
 

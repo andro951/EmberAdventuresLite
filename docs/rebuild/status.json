@@ -1,5 +1,5 @@
 {
-  "phase": "complete",
+  "phase": "smoke-fixes-awaiting-browser-verification",
   "readyToBuild": true,
   "normalBaselineCommit": "d8b7418",
   "backupDirectory": "C:/Users/isaac/Documents/Codex/2026-09-07/i/work/lite-before-rebuild-20261022",
@@ -8,7 +8,9 @@
   "profileWorkflowPass": "Creation, selection, deletion, strict import/export, world-setup continuation, and new-adventure profile selection use ordinary preferences without content gates.",
   "directHttpsIntegrated": true,
   "archiveRetentionFixIntegrated": true,
-  "pending": [],
+  "pending": [
+    "Browser smoke rerun on the corrected build."
+  ],
   "sharedPresentationPolicy": "Use each normal SFW futanari character's required authored fallback_gender. Preserve IDs and sliders; switch alternate name/outfits/profile when male. Missing fallbacks reject unchanged. Ordinary transgender/nonbinary labels remain supported.",
   "normalLiteImportCommit": "ad45dbf",
   "sharedImportConversionIntegrated": true,
@@ -36,9 +38,9 @@
     "Actual published-page HTTPS workers and live Supabase workflows have not been verified."
   ],
   "completedAt": "2026-10-22",
-  "releaseBuild": "ea-f93aaf2a7b45b945",
-  "releaseSourceHash": "f93aaf2a7b45b9451f87ca01339da09ed728e4b46509f291418c18b93c01bda2",
-  "privateBuild": "ea-e805f0a5e760bd9a",
+  "releaseBuild": "ea-2163b3b283772f3e",
+  "releaseSourceHash": "2163b3b283772f3e16b295582c89ec35bc836a0630c179221930552947f44a24",
+  "privateBuild": "ea-3ab5003212f8079a",
   "contentExportsValidated": 100,
   "smokeScenariosRegistered": 163,
   "skillArchiveChecksPassed": 5,
@@ -48,9 +50,19 @@
   },
   "skillDistribution": "Complete ZIP only; editable folders remain local.",
   "lastFullNodeTestRun": {
-    "build": "ea-7edd2543a90132e9",
-    "passed": 110,
+    "build": "ea-2163b3b283772f3e",
+    "passed": 124,
     "skipped": 1,
     "failed": 0
-  }
+  },
+  "receivedBrowserSmokeReport": {
+    "build": "ea-7edd2543a90132e9",
+    "executed": 160,
+    "passed": 127,
+    "failed": 26,
+    "skipped": 7,
+    "fixReview": "smoke-report-20261022-fixes.md",
+    "correctedBrowserBuildVerified": false
+  },
+  "smokeRegressionNodeChecksPassed": 9
 }

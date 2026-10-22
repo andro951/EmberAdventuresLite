@@ -1447,6 +1447,7 @@
                     },
                 ]);
                 app.settings.activeUserProfileId = "gender-policy-smoke";
+                activeUserProfile().settings.preferredCharacterGender = "male";
                 app.settings.swapAllGendersToPreferred = false;
                 const fallbackOutfit = {
                     id: "fallback",
@@ -1709,6 +1710,7 @@
                 delete missingFallback.fallback_name;
                 delete missingFallback.fallback_outfits;
                 delete missingFallback.fallback_starting_outfit_id;
+                activeUserProfile().settings.preferredCharacterGender = "female";
                 adaptRuntimeCharacterGender(missingFallback, "fake-missing-fallback");
                 devAssert(
                     missingFallback.gender === "female" &&
@@ -1718,6 +1720,7 @@
                     "missing non-male fallback outfits are synthesized with a generic bra while preserving the male outfit",
                     missingFallback,
                 );
+                activeUserProfile().settings.preferredCharacterGender = "male";
                 const nonRomanceable = {
                     ...blankCharacterTemplate("Fake Official"),
                     name: "Fake Official",
@@ -2037,6 +2040,7 @@
                         smokePlaceholderPresentationIssues,
                     },
                 );
+                activeUserProfile().settings.preferredCharacterGender = "female";
                 const localProjectedCard = characterLibraryRecordHtml(publicReadyRecord);
                 const publicMetadata = publicLibraryCharacterMetadata(
                     publicReadyRecord,
@@ -2066,6 +2070,7 @@
                     "fake-public-female-canonical",
                     "female",
                 );
+                activeUserProfile().settings.preferredCharacterGender = "male";
                 const reverseProjectedCard = characterLibraryRecordHtml(
                     femaleCanonicalRecord,
                 );

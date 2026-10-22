@@ -495,7 +495,6 @@
 
         function joinVisibleClothing(clothing, options = {}) {
             const visible = [];
-            const malePresentation = normalizedCharacterGender(options.entity?.gender) === "male";
             const allowedSlots = options.profile
                 ? PROFILE_IMAGE_CLOTHING_SLOTS
                 : new Set(IMAGE_PROMPT_CLOTHING_SLOT_ORDER);
@@ -530,17 +529,12 @@
                     (slot === "underwear" && ["pants", "skirt", "legwear"].some(
                         (coveringSlot) => clothingSlotHasValue(clothing, coveringSlot),
                     ));
-                const promptValue = slot === "bra" && isUnderneath
-                    ? coveredBraSlotImageText(value)
-                    : slot === "underwear" && isUnderneath && malePresentation
-                      ? coveredUnderwearSlotImageText(value)
-                      : value;
+                if (isUnderneath) continue;
+                const promptValue = value;
                 visible.push(
                     sideLabel
                         ? `${sideLabel}: ${promptValue}`
-                        : isUnderneath
-                          ? `with ${promptValue} underneath`
-                          : promptValue,
+                        : promptValue,
                 );
             }
             return joinPromptPartsExact(visible);

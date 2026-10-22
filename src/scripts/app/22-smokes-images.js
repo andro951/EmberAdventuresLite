@@ -5349,8 +5349,8 @@
                 devAssert(
                     /Publish Publicly/i.test(publishConfirmText) &&
                         /Public Publish Confirm Cancel Story Smoke/.test(publishConfirmText) &&
-                        /real people/i.test(publishConfirmText) &&
-                        /underage-looking/i.test(publishConfirmText) &&
+                        /own original work/i.test(publishConfirmText) &&
+                        /suitable for a general audience/i.test(publishConfirmText) &&
                         publishConfirmButton?.disabled === true &&
                         uploadedPayloads.length === beforeConfirmCancelUploads,
                     "public publish confirmation states ownership and content rules and requires explicit acceptance",
@@ -14094,7 +14094,7 @@ Do not include JSON.`,
                                     clothing: { shirt: "hidden starting shirt" },
                                 },
                             ],
-                            active_outfit_id: "hidden-active",
+                            active_outfit_id: "hidden-starting",
                             starting_outfit_id: "hidden-starting",
                         },
                     },
@@ -14216,13 +14216,14 @@ Do not include JSON.`,
                     "Batch Character Images card selection retains the chosen outfit",
                 );
 
+                setBatchCharacterImageOutfit(hiddenLibraryRecord.id, "hidden-active");
                 modal?.querySelector(
                     "[data-batch-character-image-restore-outfits]",
                 )?.click();
                 devAssert(
-                    firstState.outfitByCharacterId[libraryRecord.id] === "travel" &&
+                    firstState.outfitByCharacterId[libraryRecord.id] === "formal" &&
                         firstState.outfitByCharacterId[hiddenLibraryRecord.id] ===
-                            "hidden-active",
+                            "hidden-starting",
                     "Restore Outfits returns every character to the authored starting outfit",
                 );
                 setBatchCharacterImageOutfit(libraryRecord.id, "travel");

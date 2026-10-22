@@ -1786,7 +1786,7 @@
             const selectedPlayerId = textSlot(app.state?.player?.id, "");
             if (!selectedPlayerId)
                 throw new Error("Generated adventure player id is required.");
-            const normalizedGame = await app.library.materializeRuntimeGame({lite: true,
+            const normalizedGame = await app.library.materializeRuntimeGame({
                 storyId: definition.storyId,
                 revisionId: definition.revisionId,
                 contentHash: definition.contentHash,

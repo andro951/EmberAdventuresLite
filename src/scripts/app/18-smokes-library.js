@@ -515,13 +515,9 @@
                     handleUnifiedLibrarySearch("");
                 }
                 await runUnifiedLibraryPublicSearch();
-                const characterFeatureRails = [
-                    ...(
-                        $("modalBox")?.querySelectorAll?.(
-                            "[data-character-library-story-rails] .character-library-story-rail",
-                        ) || []
-                    ),
-                ];
+                const characterFeatureRails = () => [...($("modalBox")?.querySelectorAll?.(
+                    "[data-character-library-story-rails] .character-library-story-rail",
+                ) || [])];
                 devAssert(!document.querySelector("[data-public-character-card] [data-character-presentation-control]"),
                     "public library grid cards do not contain gender selection controls");
                 const liveFeaturedCharacterRailText = () =>
@@ -530,16 +526,16 @@
                     )?.textContent || "";
                 await devWaitFor(
                     () =>
-                        /Featured Alpha/i.test(characterFeatureRails[0]?.textContent || "") &&
-                        !/Featured Beta/i.test(characterFeatureRails[0]?.textContent || ""),
+                        /Featured Alpha/i.test(characterFeatureRails()[0]?.textContent || "") &&
+                        /Featured Beta/i.test(characterFeatureRails()[0]?.textContent || ""),
                     3000,
                     "featured character bundle to render",
                 );
                 devAssert(
-                    characterFeatureRails.length === 1 &&
-                        /Featured Characters/i.test(characterFeatureRails[0]?.textContent || "") &&
-                        /Featured Alpha/i.test(characterFeatureRails[0]?.textContent || "") &&
-                        !/Featured Beta/i.test(characterFeatureRails[0]?.textContent || "") &&
+                    characterFeatureRails().length === 1 &&
+                        /Featured Characters/i.test(characterFeatureRails()[0]?.textContent || "") &&
+                        /Featured Alpha/i.test(characterFeatureRails()[0]?.textContent || "") &&
+                        /Featured Beta/i.test(characterFeatureRails()[0]?.textContent || "") &&
                         /Community Characters/i.test(
                             $("modalBox")?.querySelector?.(
                                 "[data-character-library-tab-panel='public']",
@@ -553,7 +549,7 @@
                         ),
                     "public Character Library renders SFW featured characters from one cached Perchance bundle without Supabase",
                     {
-                        rails: characterFeatureRails.map((rail) => rail.textContent || ""),
+                        rails: characterFeatureRails().map((rail) => rail.textContent || ""),
                         featuredCharacterFetches,
                     },
                 );
@@ -1767,8 +1763,8 @@
                 await wait();
                 draftId = app.manualCharacterDraft.id;
                 $("manualCharacterCreateEditor").querySelector("[data-character-editor-genres] button").click();
-                document.querySelector('[data-character-library-picker-option="fantasy"]').click();
-                document.querySelector("[data-character-library-picker-modal] button.primary").click();
+                [...document.querySelectorAll('[data-character-library-picker-option]')].find(button => /^fantasy$/i.test(button.textContent)).click();
+                saveCharacterLibraryFilterPicker("genres");
                 const name = "Manual Library UI Smoke Character";
                 for (const [path, value] of [
                     [["name"], name], [["fallback_name"], "Manual Library UI Smoke Alternate"],
@@ -1809,7 +1805,11 @@
                 for (let attempt = 0; attempt < 100 && !characterLibraryRecordById(characterLibraryRecordId({ id: draftId })); attempt++) await wait();
                 const record = characterLibraryRecordById(characterLibraryRecordId({ id: draftId }));
                 const saved = record && characterLibraryRecordEntity(record);
-
+                devAssert(saved?.name === name && saved?.gender === "female" &&
+                    saved?.starting_known_facts?.length === 3 && saved?.starting_inventory?.length === 3 &&
+                    saved?.starting_held_items?.left_hand === "Test mallet" &&
+                    saved?.starting_held_items?.right_hand === "Test chisel",
+                    "manual creation saves the completed character and retains list edits and held items", { saved });
             }
             finally {
                 selectedCreatorIdentity = originalCreator;
@@ -8334,9 +8334,6 @@ Ignore the diagnostic run id. It exists only to keep live smoke prompts unique.`
                 ) &&
                     invalidOutfitMetadataErrors.some(
                         (error) => error.path === "outfit.formality",
-                    ) &&
-                    invalidOutfitMetadataErrors.some(
-                        (error) => error.path === "outfit.revealing",
                     ),
                 "story validation accepts typed outfit metadata and rejects malformed metadata for rewards and clothing shops",
                 { invalidOutfitMetadataErrors },

@@ -6,22 +6,6 @@
             try {
                 devResetForLiveTest("story-player-select-smoke");
                 devCreateTestProfile({  });
-                const smokeProfileImageHtml =
-                    '<img alt="Smoke profile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=">';
-                const smokeMaleProfile = {
-                    id: "smoke-male-profile",
-                    html: smokeProfileImageHtml,
-                    favorite: true,
-                    profile: true,
-                    male: true,
-                };
-                const smokeNonMaleProfile = {
-                    id: "smoke-non-male-profile",
-                    html: smokeProfileImageHtml,
-                    favorite: true,
-                    profile: true,
-                    male: false,
-                };
                 const maleOptionOutfit = {
                     id: "male-option-outfit",
                     name: "Male Option Outfit",
@@ -60,8 +44,6 @@
                         fallback_name: "Rhea",
                         fallback_outfits: [nonMaleOptionOutfit],
                         fallback_starting_outfit_id: "non-male-option-outfit",
-                        profile_images: [smokeMaleProfile, smokeNonMaleProfile],
-                        profile_image_id: smokeMaleProfile.id,
                     },
                     players: [
                         {
@@ -82,8 +64,6 @@
                             fallback_name: "Rhea",
                             fallback_outfits: [nonMaleOptionOutfit],
                             fallback_starting_outfit_id: "non-male-option-outfit",
-                            profile_image_id: smokeMaleProfile.id,
-                            profile_images: [smokeMaleProfile, smokeNonMaleProfile],
                         },
                         {
                             ...blankCharacterTemplate("Lilith"),
@@ -103,8 +83,6 @@
                             fallback_name: "Liam",
                             fallback_outfits: [maleOptionOutfit],
                             fallback_starting_outfit_id: "male-option-outfit",
-                            profile_image_id: smokeNonMaleProfile.id,
-                            profile_images: [smokeMaleProfile, smokeNonMaleProfile],
                         },
                     ],
                     characters: {},
@@ -3022,41 +3000,6 @@
                 { composerMode: app.settings.composerMode },
             );
 
-            devCreateTestProfile({  });
-
-            app.state = devMakeSceneControlState({  });
-            scheduleActiveGameSave();
-            render();
-
-            const positionButton = [...$("quickActions").querySelectorAll("button")].find((button) =>
-                /Position/i.test(button.textContent || ""),
-            );
-            devAssert(!!positionButton, "Position button exists");
-            positionButton.click();
-            await new Promise((resolve) => setTimeout(resolve, 150));
-            devAssert(
-                $("modal")?.classList.contains("open") &&
-                    /Choose Position/i.test($("modalBox")?.textContent || ""),
-                "Position quick action opens position picker",
-            );
-            closeModal();
-            scheduleActiveGameSave();
-            render();
-
-            const clearButton = [...$("quickActions").querySelectorAll("button")].find((button) =>
-                /Clear Pos/i.test(button.textContent || ""),
-            );
-            devAssert(!!clearButton, "Clear Pos button exists");
-            clearButton.click();
-            render();
-            const unlockedQuickActionsText = $("quickActions")?.textContent || "";
-            devAssert(
-                /Position/i.test(unlockedQuickActionsText) &&
-                    !/Clear Pos/i.test(unlockedQuickActionsText),
-                "Clear Pos returns toolbar to the normal Position button while preserving AI position guidance",
-                { quickActions: unlockedQuickActionsText, scene: app.state.scene },
-            );
-
             addMessage("system", "Quick action smoke test passed.");
             scheduleActiveGameSave();
             render();
@@ -3268,13 +3211,13 @@
             devAssert(
                 compactSummaries.mira.hasOutfit &&
                     compactSummaries.mira.hasSaveOutfit &&
-                    compactSummaries.mira.hasClothingControls &&
+                    !compactSummaries.mira.hasClothingControls &&
                     compactSummaries.inspectedNpc.hasImage &&
                     compactSummaries.inspectedNpc.hasSettings &&
                     compactSummaries.inspectedNpc.hasEdit &&
                     compactSummaries.inspectedNpc.hasOutfit &&
                     compactSummaries.inspectedNpc.hasSaveOutfit &&
-                    compactSummaries.inspectedNpc.hasClothingControls &&
+                    !compactSummaries.inspectedNpc.hasClothingControls &&
                     !compactSummaries.inspectedNpc.hasKill &&
                     !compactSummaries.inspectedNpc.hasDelete &&
                     compactSummaries.partialNpc.hasImage &&
@@ -3972,18 +3915,6 @@
                 app.settings,
             );
 
-            $("spiceLevel").value = "8";
-            $("spiceLevel").dispatchEvent(new Event("blur", { bubbles: true }));
-            $("spiceFrequency").value = "9";
-            $("spiceFrequency").dispatchEvent(new Event("blur", { bubbles: true }));
-            devAssert(
-                Number(app.settings.spiceLevel) === 8 &&
-                    Number(app.settings.spiceFrequency) === 9,
-                "spice tuning inputs autosave",
-                {
-
-                },
-            );
             await flushLargeSaves();
             const persistedSettings = await loadLargeJson(SETTINGS_KEY, {});
             const persistedProfiles = await loadLargeJson(USER_PROFILE_KEY, []);
@@ -4001,9 +3932,7 @@
                     Number(persistedProfile?.settings?.imageHistoryLimit) === 37 &&
                     Number(persistedProfile?.settings?.imageRequestTimeoutSeconds) === 47 &&
                     persistedSettings.ollama.temperature === "0.7" &&
-                    persistedSettings.ollama.seed === "42" &&
-                    Number(persistedProfile?.settings?.spiceLevel) === 8 &&
-                    Number(persistedProfile?.settings?.spiceFrequency) === 9,
+                    persistedSettings.ollama.seed === "42",
                 `local settings and profile-owned settings persist through their worker-owned records: ${JSON.stringify({ persistedSettings, persistedProfile })}`,
                 { persistedSettings, persistedProfile },
             );
@@ -4848,9 +4777,8 @@
                 /Image Lab/i.test($("modalBox")?.textContent || "") &&
                     $("labPrompt")?.value === "normal smoke prompt" &&
                     $("labNegative")?.value === "normal smoke negative prompt" &&
-                    /Generation mode\s*SFW/i.test($("modalBox")?.textContent || "") &&
                     !!$("modalBox")?.querySelector?.(".modal-close"),
-                "Load in Image Lab opens lab with selected prompt, saved negative prompt, mode badge, and close button",
+                "Load in Image Lab opens lab with selected prompt, saved negative prompt, and close button",
                 {
                     labPrompt: $("labPrompt")?.value,
                     labNegative: $("labNegative")?.value,
@@ -5187,6 +5115,7 @@
         }
 
         async function devRunStoryLibraryUiSmokeTest() {
+            const saveSnapshot = devSaveLibrarySnapshotForSmoke();
             devTestLog("Scenario start: story-library-ui-smoke");
             devResetForLiveTest("story-library-ui-smoke");
             devCreateTestProfile({  });
@@ -6771,13 +6700,13 @@
                     const storyUploadPromise = uploadLocalStoryTitleCardImage(story.id);
                     await devWaitFor(
                         () => !!document.querySelector(
-                            "[data-story-image-classification='sfw']",
+                            ".popup-modal.open #confirmYesBtn",
                         ),
                         3000,
                         "story image upload classification attestation",
                     );
                     document
-                        .querySelector("[data-story-image-classification='sfw']")
+                        .querySelector(".popup-modal.open #confirmYesBtn")
                         ?.click();
                     await storyUploadPromise;
                     document.querySelector(".popup-modal #noticeOkBtn")?.click();
@@ -6858,9 +6787,10 @@
                 app.settings.publicLibrarySupabaseUrl = originalSupabaseUrl;
                 app.settings.publicLibrarySupabaseAnonKey = originalSupabaseAnonKey;
                 await devCleanupSmokeStoryLibraryArtifacts("story library smoke story artifacts cleaned");
-                devCleanupSmokeStoryTitleCardArtifacts(
+                await devCleanupSmokeStoryTitleCardArtifacts(
                     "story library smoke title-card artifacts cleaned",
                 );
+                await devRestoreSaveLibrarySnapshotForSmoke(saveSnapshot);
             }
         }
 

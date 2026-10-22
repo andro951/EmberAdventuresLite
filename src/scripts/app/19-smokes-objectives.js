@@ -2532,7 +2532,7 @@
                 app.snapshots = [];
                                                 app.state.scene.summary = `${kind} backup summary`;
                 const full = kind.includes("full");
-                const partial = kind === "partial";
+                const processing = kind === "processing";
                 app.messages = [
                     {
                         id: `${kind}-user`,
@@ -2541,7 +2541,7 @@
                         speaker: "Message Tester",
                         text: `${kind} user text.`,
                         at: new Date().toISOString(),
-                        stateSyncStatus: full ? "synced" : "pending",
+                        stateSyncStatus: full ? "synced" : processing ? "processing" : "pending",
                     },
                     {
                         id: `${kind}-assistant`,
@@ -2550,7 +2550,7 @@
                         speaker: "Narrator",
                         text: `${kind} assistant text.`,
                         at: new Date().toISOString(),
-                        stateSyncStatus: full ? "synced" : "pending",
+                        stateSyncStatus: full ? "synced" : processing ? "processing" : "pending",
                     },
                     {
                         id: `${kind}-tail`,
@@ -2562,7 +2562,7 @@
                         stateSyncStatus: "pending",
                     },
                 ];
-                if (partial || full) {
+                if (processing || full) {
                     createMessageStateBackup(
                         [`${kind}-user`, `${kind}-assistant`],
                         `${kind} mutation smoke backup`,
@@ -2850,7 +2850,7 @@
                 },
             );
 
-            setupMutationFixture("partial");
+            setupMutationFixture("processing");
             let partialStateCheckCancelled = false;
             app.state.npc_directory ||= { locations: {} };
             app.state.npc_directory.locations ||= {};
@@ -2867,23 +2867,23 @@
             app.stateSync.running = true;
             app.stateSync.queued = true;
             app.stateSync.generation = 0;
-            app.stateSync.startMessageId = "partial-assistant";
+            app.stateSync.startMessageId = "processing-assistant";
             app.stateSync.blockStartEntryId = 2;
             app.stateSync.blockEndEntryId = 2;
-            app.stateSync.processingMessageIds = ["partial-assistant"];
+            app.stateSync.processingMessageIds = ["processing-assistant"];
             app.stateSync.stateSnapshot = clone(app.state);
             app.stateSync.currentGroup = "character_body";
             app.stateSync.lastRangeText = "partial stale range";
             app.activeStateCheck = {
                 id: "partial-mutation-check",
                 source: "assistant",
-                messageIds: ["partial-assistant"],
+                messageIds: ["processing-assistant"],
                 cancel: () => {
                     partialStateCheckCancelled = true;
                 },
             };
             const partialMutation = prepareMessageStateMutation(
-                findMessageById("partial-assistant"),
+                findMessageById("processing-assistant"),
                 { mode: "delete", reason: "partial delete smoke" },
             );
             const partialRange = stateRecheckMessageRangeByEntryIds(
@@ -2892,10 +2892,10 @@
             );
             devAssert(
                 partialMutation?.restored &&
-                    !partialMutation.needsFullStateRecheck &&
-                    app.state.scene.summary === "partial backup summary" &&
-                    !findMessageById("partial-assistant") &&
-                    !findMessageById("partial-tail") &&
+                    partialMutation.needsFullStateRecheck &&
+                    app.state.scene.summary === "processing backup summary" &&
+                    !findMessageById("processing-assistant") &&
+                    !findMessageById("processing-tail") &&
                     partialStateCheckCancelled &&
                     !JSON.stringify(app.state.npc_directory || {}).includes(
                         "Post Backup NPC",
@@ -2904,7 +2904,7 @@
                     app.stateSync.running === false &&
                     partialRange.map((message) => Number(message.entryId)).join(",") ===
                         "1",
-                "partial delete cancels active state sync, restores small-pass backup, removes target/later messages, and rechecks only remaining range",
+                "processing delete cancels active state sync, restores its backup, removes target/later messages, and rechecks only remaining range",
                 {
                     partialMutation,
                     partialRange,

@@ -6458,6 +6458,7 @@ JSON PATCH:`;
             const timestamp = new Date().toISOString();
             const outfit = id => ({ id, name: "", clothing: blankClothingTemplate() });
             return {
+                lite: true,
                 version: 1,
                 id: generatedPersistentId(RUNTIME_DEFINITION_NAMESPACES.character.replace(/-$/, "")),
                 name: "", source: "Original", creation_tool: "EmberAdventures Character Editor",

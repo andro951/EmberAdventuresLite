@@ -396,7 +396,7 @@
 
         function batchCharacterImageToolInitialOutfitId(entity = {}) {
             const outfits = exactEntityOutfits(clone(entity));
-            const preferredIds = [entity.active_outfit_id, entity.starting_outfit_id];
+            const preferredIds = [entity.starting_outfit_id, entity.active_outfit_id];
             return String(
                 preferredIds.find((id) =>
                     outfits.some((outfit) => String(outfit.id) === String(id || "")),

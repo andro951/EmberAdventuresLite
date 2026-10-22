@@ -349,26 +349,6 @@
             );
 
             resetStats();
-
-            await waitForRegionRender();
-            stats = assertNoFullRender("single character clothing action avoids full app redraw");
-            devAssert(
-                !clothingItemText(app.state.characters["Redraw Ally"]?.clothing?.shirt),
-                "single character clothing action updates runtime clothing state",
-                app.state.characters["Redraw Ally"]?.clothing,
-            );
-
-            resetStats();
-
-            await waitForRegionRender();
-            stats = assertNoFullRender("single character dress action avoids full app redraw");
-            devAssert(
-                clothingItemText(app.state.characters["Redraw Ally"]?.clothing?.shirt) === "blue shirt",
-                "single character dress action restores runtime clothing state",
-                app.state.characters["Redraw Ally"]?.clothing,
-            );
-
-            resetStats();
             selectCharacterOutfit("Redraw Ally", "formal");
             await waitForRegionRender();
             stats = assertNoFullRender("outfit selection avoids full app redraw");
@@ -6507,9 +6487,9 @@
                             clothing: {
                                 ...blankClothingTemplate(),
                                 hat: "orange safety goggles pushed onto her forehead",
-                                shirt: "black sports bra",
-                                coat: "gray coveralls unzipped and tied at waist",
-                                pants: "gray coveralls tied at waist",
+                                shirt: "black long-sleeved work shirt",
+                                coat: "gray work vest",
+                                pants: "gray canvas trousers",
                                 feet: "magnetic boots",
                             },
                             active_outfit_id: "profile-smoke-outfit",
@@ -6521,9 +6501,9 @@
                                     clothing: {
                                         ...blankClothingTemplate(),
                                         hat: "orange safety goggles pushed onto her forehead",
-                                        shirt: "black sports bra",
-                                        coat: "gray coveralls unzipped and tied at waist",
-                                        pants: "gray coveralls tied at waist",
+                                        shirt: "black long-sleeved work shirt",
+                                        coat: "gray work vest",
+                                        pants: "gray canvas trousers",
                                         feet: "magnetic boots",
                                     },
                                 },
@@ -6707,10 +6687,10 @@
                         /lower clothing may meet the bottom edge of the frame/i.test(prompt) &&
                         /no full-body composition/i.test(prompt) &&
                         /orange safety goggles pushed onto her forehead/i.test(prompt) &&
-                        /black sports bra/i.test(prompt) &&
-                        /gray coveralls unzipped and tied at waist/i.test(prompt) &&
-                        /gray coveralls tied at waist/i.test(prompt) &&
-                        /average-soft abdomen with mild natural fullness/i.test(prompt),
+                        /black long-sleeved work shirt/i.test(prompt) &&
+                        /gray work vest/i.test(prompt) &&
+                        /gray canvas trousers/i.test(prompt) &&
+                        /Slim midsection with a little softness/i.test(prompt),
                     "profile image prompt is story-free, visual-only, role-aware, upper-body focused, and includes upper-body clothing",
                     { prompt, forbidden },
                 );
