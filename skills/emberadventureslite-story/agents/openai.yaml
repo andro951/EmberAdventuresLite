@@ -1,4 +1,0 @@
-interface:
-  display_name: "EmberAdventuresLite Story"
-  short_description: "Create and validate Lite story templates"
-  default_prompt: "Use $emberadventureslite-story to create and validate an importable EmberAdventuresLite story."

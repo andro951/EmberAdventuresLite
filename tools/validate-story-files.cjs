@@ -2,7 +2,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname,"..");
-const validator = require("../skills/emberadventureslite-character/scripts/validate-content.cjs").createValidator(root);
+const validator = require("./lib/authoring-skills.cjs").loadAuthoringSkills(root, "EmberAdventuresLite").validator().createValidator(root);
 if (require.main === module) {
     const files = process.argv.slice(2);
     if (!files.length)

@@ -16,11 +16,11 @@
   "publicSearchScopeIntegrated": true,
   "browserSmokesRun": false,
   "contentInventory": {
-    "standaloneCharacters": 40,
+    "standaloneCharacters": 41,
     "storyFiles": 55,
     "documentationExamples": 2,
     "skillReferences": 2,
-    "canonicalExportsValidated": 99
+    "canonicalExportsValidated": 100
   },
   "authoringChecksPassed": 91,
   "installedSkillsUpdated": true,
@@ -36,12 +36,21 @@
     "Actual published-page HTTPS workers and live Supabase workflows have not been verified."
   ],
   "completedAt": "2026-10-22",
-  "releaseBuild": "ea-7edd2543a90132e9",
-  "releaseSourceHash": "7edd2543a90132e97e756a747be33110717eafca82485aee779bd9de2073a4d3",
-  "privateBuild": "ea-2ecbbd50599bcb7e",
-  "nodeTestsPassed": 110,
-  "nodeTestsSkipped": 1,
-  "nodeTestsFailed": 0,
-  "contentExportsValidated": 99,
-  "smokeScenariosRegistered": 163
+  "releaseBuild": "ea-f93aaf2a7b45b945",
+  "releaseSourceHash": "f93aaf2a7b45b9451f87ca01339da09ed728e4b46509f291418c18b93c01bda2",
+  "privateBuild": "ea-e805f0a5e760bd9a",
+  "contentExportsValidated": 100,
+  "smokeScenariosRegistered": 163,
+  "skillArchiveChecksPassed": 5,
+  "installedSkillVersions": {
+    "character": "2.0.1",
+    "story": "2.0.1"
+  },
+  "skillDistribution": "Complete ZIP only; editable folders remain local.",
+  "lastFullNodeTestRun": {
+    "build": "ea-7edd2543a90132e9",
+    "passed": 110,
+    "skipped": 1,
+    "failed": 0
+  }
 }

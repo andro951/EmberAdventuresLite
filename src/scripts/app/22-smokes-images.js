@@ -844,7 +844,7 @@
                 openManualCharacterCreateModal({ library });
                 const tree = $("manualCharacterCreateEditor");
                 devAssert(tree.querySelector('[data-authoring-skill-link="character"]')?.href ===
-                    "https://github.com/andro951/ember-adventures-tools/blob/main/skills/emberadventureslite-character/SKILL.md",
+                    "https://github.com/andro951/ember-adventures-tools/raw/refs/heads/main/downloads/EmberAdventuresLite-skills.zip",
                     "character creator links to its GitHub skill");
                 const nameField = devFieldByPath("#manualCharacterCreateEditor", ["character_definition", "name"]);
                 devAssert(devFieldByPath("#manualCharacterCreateEditor", ["character_definition", "age"]).value === "" &&
@@ -971,8 +971,8 @@
             devUpsertStoryTemplatesForSmoke([template]);
             openStoryBuilder(template.id);
             devAssert($("storyBuilderOverlay").querySelector('[data-authoring-skill-link="story"]')?.href ===
-                "https://github.com/andro951/ember-adventures-tools/blob/main/skills/emberadventureslite-story/SKILL.md",
-                "story editor links to its GitHub skill");
+                "https://github.com/andro951/ember-adventures-tools/raw/refs/heads/main/downloads/EmberAdventuresLite-skills.zip",
+                "story editor links to its complete skill ZIP");
             setStoryBuilderPanel("overview");
 
             setStoryBuilderPanel("state");

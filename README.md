@@ -37,9 +37,9 @@ Valid general-audience stories retain their authored character ages when publish
 
 ## Content and authoring
 
-The bundled standalone roster has 40 characters, 20 male and 20 female. There are 55 stories across the complete `stories/` tree. Story files are imported manually. Outfits use complete opaque coverage; romance, flirting, dating, ordinary body customization, and inner clothing slots remain supported.
+The bundled standalone roster has 41 characters, 21 male and 20 female. There are 55 stories across the complete `stories/` tree. Story files are imported manually. Outfits use complete opaque coverage; romance, flirting, dating, ordinary body customization, and inner clothing slots remain supported.
 
-Use [character authoring](docs/character-authoring.md), [story authoring](docs/story-authoring.md), and the two bundled Lite skills. Appearances use ten scales; the grouped body-description field is not part of this format. `docs/examples/` and the skill reference exports pass the canonical validators.
+Use [character authoring](docs/character-authoring.md), [story authoring](docs/story-authoring.md), and the complete [Lite skills ZIP](skills/EmberAdventuresLite-skills.zip). Appearances use ten scales; the grouped body-description field is not part of this format. `docs/examples/` and the skill reference exports pass the canonical validators.
 
 ## Verification
 

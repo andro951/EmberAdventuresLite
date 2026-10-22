@@ -1,6 +1,6 @@
 # Hosting verification — October 22, 2026 rebuild
 
-This record supersedes the pre-rebuild adapter verification. Current release: `ea-7edd2543a90132e9`.
+This record supersedes the pre-rebuild adapter verification. Current release: `ea-f93aaf2a7b45b945`.
 
 - `node --test tools/test-direct-hosting.cjs tools/test-hosted-generation.cjs` passes within the complete Node gate. It checks strict endpoint/ticket boundaries, in-memory credentials, sampling/resolution, routing, queueing, cancellation and uncertain-request behavior with local fixtures.
 - `node --test tools/ollama-host/test.cjs tools/ollama-host/window-test.cjs tools/ollama-host/player-discovery-test.cjs`: 39 passed. Covers approved pairing, model discovery, actual local HTTP streaming, cancellation and the exact packaged player connector. No real model inference.

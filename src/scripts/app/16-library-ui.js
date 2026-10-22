@@ -1126,14 +1126,7 @@
             }
         }
 
-        const AI_STORY_PROMPT_URLS = {
-            chatgpt: "https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/GPT-prompt.md",
-            codex: "https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/Codex-prompt.md",
-        };
-        const AI_CHARACTER_PROMPT_URLS = {
-            chatgpt: "https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/skills/emberadventureslite-character/SKILL.md",
-            codex: "https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/skills/emberadventureslite-character/SKILL.md",
-        };
+        const AUTHORING_SKILLS_ZIP_URL = "https://github.com/andro951/ember-adventures-tools/raw/refs/heads/main/downloads/EmberAdventuresLite-skills.zip";
         const AI_STORY_PROMPT_FALLBACKS = {
             chatgpt: `I want to create an EmberAdventures story.
 
@@ -1148,12 +1141,11 @@ First, perform this model-readiness gate before doing anything else:
 
 Use the EmberAdventures skill files as instruction documents. Do not try to install Codex skills, plugins, browser extensions, or GitHub extensions.
 
-If you can access GitHub files, read these files as ordinary reference text:
+Download and open this complete skills ZIP. Read emberadventureslite-character/SKILL.md and emberadventureslite-story/SKILL.md, following their required references as ordinary instruction documents:
 
-https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/skills/emberadventureslite-character/SKILL.md
-https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/skills/emberadventureslite-story/SKILL.md
+${AUTHORING_SKILLS_ZIP_URL}
 
-If you cannot access those files directly, ask me to paste or upload them. Do not claim that you used them unless you actually read them.
+If you cannot open the archive directly, ask me to upload the ZIP. Do not claim that you used them unless you actually read them.
 
 After reading the skill files, start the story workflow by asking where I want to store the working files, then asking what story I want to make.
 
@@ -1171,9 +1163,9 @@ First, perform this model-readiness gate before doing anything else:
 - If the current model is below the minimum, stop and warn that it is extremely unlikely to create a valid EmberAdventures story JSON file. Do not say you are perfectly capable. Recommend switching to at least the minimum first.
 - Instant/light/non-thinking models, including 5.5 Instant, should recommend an upgrade before story design begins.
 
-Use the installed emberadventureslite-story skill and its required emberadventureslite-character character-definition guidance. If the skills are not installed in this Codex environment, install or load the EmberAdventures skills from:
+Use the installed emberadventureslite-story skill and its required emberadventureslite-character character-definition guidance. If the skills are not installed in this Codex environment, download this ZIP and install or load its complete skill folders, including required references:
 
-https://github.com/andro951/ember-adventures-tools
+${AUTHORING_SKILLS_ZIP_URL}
 
 Do not clone, create, download, or configure a GitHub story-storage repository before asking where I want to store the working story files. Installing/loading the Codex skill instructions is separate from choosing story storage.
 
@@ -1188,11 +1180,11 @@ Only help set up Google Drive or a GitHub stories repository if I choose that as
 
 Use the EmberAdventures character skill file as an instruction document. Do not try to install Codex skills, plugins, browser extensions, or GitHub extensions.
 
-If you can access GitHub files, read this file as ordinary reference text:
+Download and open this complete skills ZIP. Read emberadventureslite-character/SKILL.md and its required references as ordinary instruction documents:
 
-https://raw.githubusercontent.com/andro951/ember-adventures-tools/main/skills/emberadventureslite-character/SKILL.md
+${AUTHORING_SKILLS_ZIP_URL}
 
-If you cannot access that file directly, ask me to paste or upload it. Do not claim that you used it unless you actually read it.
+If you cannot open the archive directly, ask me to upload the ZIP. Do not claim that you used it unless you actually read it.
 
 If my current model is below 5.6 Sol High or a similar strong thinking model, recommend upgrading because it will likely create a better character, but you may continue if I choose to proceed.
 
@@ -1201,9 +1193,9 @@ After reading the skill file, ask what character I want to make. When the charac
 `,
             codex: `I want to create an EmberAdventures character.
 
-Use the installed emberadventureslite-character skill. If the skill is not installed in this Codex environment, install or load the EmberAdventures skills from:
+Use the installed emberadventureslite-character skill. If the skill is not installed in this Codex environment, download this ZIP and install or load its complete skill folders, including required references:
 
-https://github.com/andro951/ember-adventures-tools
+${AUTHORING_SKILLS_ZIP_URL}
 
 If my current model is below 5.6 Sol High or a similar strong thinking model, recommend upgrading because it will likely create a better character, but you may continue if I choose to proceed.
 
@@ -1291,46 +1283,11 @@ After the skill instructions are available, ask what character I want to make. W
 
         async function loadExternalAiStoryPrompt(target = "chatgpt") {
             const key = target === "codex" ? "codex" : "chatgpt";
-            try {
-                const response = await fetch(AI_STORY_PROMPT_URLS[key], {
-                    cache: "no-store",
-                });
-                if (response.ok) {
-                    const text = await response.text();
-                    if (text.trim()) return externalAiStoryPromptWithCursorSpace(text);
-                }
-            } catch (err) {
-                log("AI story prompt fetch failed", err?.message || String(err), {
-                    type: "troubleshooting",
-                    level: "warn",
-                });
-            }
             return externalAiStoryPromptWithCursorSpace(AI_STORY_PROMPT_FALLBACKS[key]);
         }
 
         async function loadExternalAiCharacterPrompt(target = "chatgpt") {
             const key = target === "codex" ? "codex" : "chatgpt";
-            try {
-                const response = await fetch(AI_CHARACTER_PROMPT_URLS[key], {
-                    cache: "no-store",
-                });
-                if (response.ok) {
-                    const skillText = await response.text();
-                    if (skillText.trim()) {
-                        const wrapper = key === "codex"
-                            ? AI_CHARACTER_PROMPT_FALLBACKS.codex
-                            : AI_CHARACTER_PROMPT_FALLBACKS.chatgpt;
-                        return externalAiStoryPromptWithCursorSpace(
-                            `${wrapper}\n\nREFERENCE CHARACTER SKILL:\n\n${skillText}`,
-                        );
-                    }
-                }
-            } catch (err) {
-                log("AI character prompt fetch failed", err?.message || String(err), {
-                    type: "troubleshooting",
-                    level: "warn",
-                });
-            }
             return externalAiStoryPromptWithCursorSpace(AI_CHARACTER_PROMPT_FALLBACKS[key]);
         }
 

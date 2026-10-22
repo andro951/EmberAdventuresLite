@@ -18,3 +18,6 @@ tools/ollama-host/*.cer
 tools/ollama-host/host.*.log
 tools/ollama-host/sessions/
 tools/ollama-host/node-runtime-path.txt
+
+#Skill sources remain local; publish the complete skill archives only.
+skills/*/

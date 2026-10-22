@@ -1,6 +1,6 @@
 # Story authoring
 
-Use the [Lite story skill](../skills/emberadventureslite-story/SKILL.md) and its [field contract](../skills/emberadventureslite-story/references/story-contract.md). The Lite character skill supplies the embedded cast format.
+Download the complete [Lite authoring skills ZIP](https://github.com/andro951/ember-adventures-tools/raw/refs/heads/main/downloads/EmberAdventuresLite-skills.zip) and extract it. Start with `emberadventureslite-story/SKILL.md` and follow its bundled references. The package includes complete JSON exports, exact field snapshots and a validator using the Lite checkout.
 
 A story export has the exact `app`, `exportType`, `storyTemplate`, and `exportedAt` wrapper. The `app` discriminator remains `EmberAdventures`. Include `lite: true` on the template and every full embedded humanoid or animal definition. Uninspected NPC shells are separate lightweight records.
 
@@ -15,7 +15,7 @@ Romance, flirting, and dating are welcome. All character outfits and image instr
 Validate from the repository with:
 
 ```text
-node skills/emberadventureslite-character/scripts/validate-content.cjs . path/to/story.json
+node <extracted-skills>/emberadventureslite-character/scripts/validate-content.cjs . path/to/story.json
 ```
 
 This is canonical schema validation, not an AI playthrough. Browser import, start, save/reload, branch play, and actual generation are separate checks and must be reported accurately.

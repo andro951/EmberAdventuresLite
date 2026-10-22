@@ -42,6 +42,6 @@ Rebuilt from the current normal engine while preserving ordinary gameplay and th
 
 ## Completion and evidence
 
-All 40 standalone characters and 55 stories, documentation examples, and skill references use the current format. The installed/public Lite skills and downloadable ZIP match repository version 2.0.0. Detailed implementation inventories are archived in the task workspace rather than bundled with the game. See status.json, ../verification.md and ../../hosting/VERIFICATION.md for build and check results.
+All 41 standalone characters and 55 stories, documentation examples, and skill references use the current format. The installed/public Lite skills and downloadable ZIP match repository version 2.0.1. Detailed implementation inventories are archived in the task workspace rather than bundled with the game. See status.json, ../verification.md and ../../hosting/VERIFICATION.md for build and check results.
 
 Browser smokes and live backend/model checks remain distinct verification gates. Local Node tests do not establish browser or paid-provider success.

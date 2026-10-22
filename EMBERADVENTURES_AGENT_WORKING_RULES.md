@@ -73,3 +73,12 @@ Purpose: keep Codex work on EmberAdventuresLite cheap, targeted, and predictable
 - `bottom_compressed.html` is generated output. Rebuild it when explicitly requested or as part of a user-requested smoke run after changing `bottom.html`.
 - `left.js` is the Perchance left pane.
 - Do not use browser/runtime validation unless the user explicitly asks.
+
+## Skill publication
+
+After any change to an EmberAdventures skill, preserve its complete guidance,
+validate its examples/scripts, rebuild the complete ZIP bundle, update installed
+copies and archive links, and push the updated ZIP. Publish skill ZIPs only,
+never extracted skill directories or separate version files. Editable sources
+are local; the public tools repository contains downloads/*.zip only.
+Each bundle includes maintainer/package_skills.py for repeatable packaging.

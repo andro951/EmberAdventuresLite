@@ -1,3 +1,7 @@
+# Current ZIP-only distribution
+
+Current Lite skills: 2.0.1. Download the complete [Lite skills ZIP](https://github.com/andro951/ember-adventures-tools/raw/refs/heads/main/downloads/EmberAdventuresLite-skills.zip). Extracted authoring folders are local development copies; only the ZIP is published. Older dated review notes below describe earlier distributions.
+
 # Current authoring skills — 2026-10-22
 
 Version 2.0.0 uses required Lite markers, ten appearance scales, complete covered outfits, current field-set snapshots, and manifest-based canonical validation. Both skill packages passed quick validation; 91 authoring/contract checks passed, including both short-story ending paths. The installed copies and public tools distribution were updated.

@@ -2,7 +2,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname,"..");
-const validator = require("../skills/emberadventureslite-character/scripts/validate-content.cjs").createValidator(root);
+const validator = require("./lib/authoring-skills.cjs").loadAuthoringSkills(root, "EmberAdventuresLite").validator().createValidator(root);
 function files(folder) {
     return fs.readdirSync(folder,{withFileTypes:true}).flatMap(entry => entry.isDirectory() ? files(path.join(folder,entry.name)) : entry.name.endsWith(".json") ? [path.join(folder,entry.name)] : []);
 }

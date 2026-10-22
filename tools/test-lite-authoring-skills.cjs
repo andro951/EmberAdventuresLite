@@ -1,10 +1,11 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const {createValidator} = require('../skills/emberadventureslite-character/scripts/validate-content.cjs');
+const {loadAuthoringSkills} = require('./lib/authoring-skills.cjs');
 const root = path.resolve(__dirname, '..');
-const validator = createValidator(root);
-const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
+const packaged = loadAuthoringSkills(root, "EmberAdventuresLite");
+const validator = packaged.validator().createValidator(root);
+const read = file => file.startsWith('skills/') ? packaged.json(file.slice(7)) : JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const character = read('skills/emberadventureslite-character/references/reference-character.json');
 const reference = read('skills/emberadventureslite-story/references/reference-story.json');
 const story = read('stories/The-Last-Light-at-Bramble-Bridge.json');
