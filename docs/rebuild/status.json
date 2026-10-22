@@ -1,5 +1,5 @@
 {
-  "phase": "failed-smokes-passed-awaiting-user-full-suite",
+  "phase": "feedback-smoke-fixed-awaiting-live-rerun",
   "readyToBuild": true,
   "normalBaselineCommit": "d8b7418",
   "backupDirectory": "C:/Users/isaac/Documents/Codex/2026-09-07/i/work/lite-before-rebuild-20261022",
@@ -9,7 +9,7 @@
   "directHttpsIntegrated": true,
   "archiveRetentionFixIntegrated": true,
   "pending": [
-    "User will run the full smoke suite on the updated published build."
+    "User to rerun smoke 139 on the updated published build."
   ],
   "sharedPresentationPolicy": "Use each normal SFW futanari character's required authored fallback_gender. Preserve IDs and sliders; switch alternate name/outfits/profile when male. Missing fallbacks reject unchanged. Ordinary transgender/nonbinary labels remain supported.",
   "normalLiteImportCommit": "ad45dbf",
@@ -34,14 +34,14 @@
   "pythonChecksPassed": 10,
   "pythonChecksSkipped": 1,
   "verificationLimits": [
-    "Only the five reported failures were rerun in isolated local Edge, using mocked providers/public-library responses.",
-    "The user will run the complete suite on the published Perchance build.",
-    "Actual published-page HTTPS workers and live Supabase workflows have not been verified."
+    "The user full browser report passed 153 and skipped seven; the follow-up ran those seven with six passes and one failure (139).",
+    "The corrected 139 production scenario passes isolated Node hosting fixtures; it has not been rerun against live Supabase.",
+    "Actual published-page HTTPS workers remain unverified; no full suite was rerun for this fix."
   ],
   "completedAt": "2026-10-22",
-  "releaseBuild": "ea-46eaf28bfc498d2d",
-  "releaseSourceHash": "46eaf28bfc498d2d34287ca6f6dcacdb8e02f8ce1b91bf69cd78b5202ea97359",
-  "privateBuild": "ea-76e090f4dc4e9396",
+  "releaseBuild": "ea-d9e0f1c1c6299a9a",
+  "releaseSourceHash": "d9e0f1c1c6299a9ad014ad17d751931da8e5377d5829c77e016ee889d7c312c8",
+  "privateBuild": "ea-e5e8e409382f87b9",
   "contentExportsValidated": 100,
   "smokeScenariosRegistered": 163,
   "skillArchiveChecksPassed": 5,
@@ -57,26 +57,23 @@
     "failed": 0
   },
   "receivedBrowserSmokeReport": {
-    "build": "ea-2163b3b283772f3e",
-    "executed": 160,
-    "passed": 148,
-    "failed": 5,
-    "skipped": 7,
-    "fixReview": "failed-smokes-20261022.md",
+    "build": "ea-46eaf28bfc498d2d",
+    "executed": 7,
+    "passed": 6,
+    "failed": 1,
+    "skipped": 0,
     "failedNumbers": [
-      15,
-      22,
-      33,
-      86,
-      152
-    ]
+      139
+    ],
+    "report": "emberadventureslite-smoke-report-2026-10-22T19-30-37-458Z.txt"
   },
   "smokeRegressionNodeChecksPassed": 9,
   "lastTargetedNodeTestRun": {
-    "build": "ea-46eaf28bfc498d2d",
-    "scope": "Player patch routing regression only",
+    "build": "ea-d9e0f1c1c6299a9a",
+    "scope": "Smoke 139 production scenario with mocked hosting: successful anonymous report and cleanup, missing report rejection/cleanup, unexpected rating rejection/cleanup",
     "passed": 1,
-    "failed": 0
+    "failed": 0,
+    "fullSuiteRun": false
   },
   "defaultProfilePolicy": "Create and select Default after valid storage hydration when no profiles exist. Reuse an existing selected profile or the first existing profile; story selection and world setup do not require profile dialogs.",
   "lastBrowserSmokeRun": {
@@ -123,5 +120,13 @@
         "durationMs": 1714
       }
     ]
+  },
+  "receivedFullBrowserSmokeReport": {
+    "build": "ea-46eaf28bfc498d2d",
+    "executed": 160,
+    "passed": 153,
+    "failed": 0,
+    "skipped": 7,
+    "report": "emberadventureslite-smoke-report-2026-10-22T19-18-47-479Z.txt"
   }
 }

@@ -242,3 +242,108 @@ test("player patches routed through characters retain exact player ownership and
     assert.equal(mixed.player.role,"Route fixture player");
     assert.equal(mixed.characters["Smoke Routed Ally"].role,"Route fixture ally");
 });
+
+test("smoke 139 verifies anonymous reports and cleans temporary hosting records on success or failed assertions",async()=>{
+    for (const fault of ["", "missing report", "unexpected rating"]) {
+        const p = production();
+        const originalIndex = {items:[]};
+        p.context.app.publicLibraryLastIndex = originalIndex;
+        const reports = new Map();
+        const items = new Map();
+        const uploads = new Set();
+        const assertions = [];
+        let creatorCleaned = false;
+        let sessionSaved = false;
+        let saved = false;
+        let rendered = false;
+        Object.assign(p.context,{
+            crypto:require("node:crypto").webcrypto,
+            devTestLog:()=>{},
+            devAssert:(condition,message)=>{assert(condition,message);assertions.push(message);},
+            publicLibrarySupabaseConfigured:()=>true,
+            publicLibrarySupabaseUrl:()=>"https://fixture.invalid",
+            publicLibrarySupabaseAnonKey:()=>"fixture-public-key",
+            hostedUploadSupported:()=>true,
+            devRequireLivePublicHostingSmokeUser:async()=>({id:"fixture-user"}),
+            devCreateTemporaryPublicHostingCreator:async()=>({creator_name:"Fixture Creator",creator_id:"fixture-creator"}),
+            devSmokeTemplateRecord:value=>value,
+            devUploadTemporaryStoryTemplatePayload:async()=>{uploads.add("fixture-upload");return {fileName:"fixture-upload"};},
+            publicUploadFileUrl:name=>`https://fixture.invalid/${name}`,
+            publicLibraryStoryMetadata:story=>({id:story.id,url:"https://fixture.invalid/payload"}),
+            upsertPublicLibraryEntryToSupabase:async entry=>{
+                items.set("fixture-item",{id:"fixture-item"});
+                return {entry,item:{id:"fixture-item"}};
+            },
+            devSmokePublicLibraryIndex:value=>value,
+            submitPublicStoryRating:async()=>{throw new Error("Cannot rate your own published item");},
+            addPublicStoryFeedback:async()=>{throw new Error("Obsolete feedback submission must not run");},
+            postgrestValue:encodeURIComponent,
+            publicLibraryFetch:async(route,options={})=>{
+                const url = new URL(route,"https://fixture.invalid");
+                const table = url.pathname.split("/").at(-1);
+                if (table === "library_feedback" && options.method === "POST")
+                    throw new Error("403 row-level security policy");
+
+                if (table === "library_reports") {
+                    if (options.method === "POST") {
+                        assert.equal(options.auth,false);
+                        assert.equal(options.body.uploader_id,"fixture-user");
+                        reports.set(options.body.id,{...options.body,reporter_id:null});
+                        return [];
+                    }
+
+                    const id = url.searchParams.get("id").slice(3);
+                    if (options.method === "DELETE") {
+                        reports.delete(id);
+                        return [];
+                    }
+
+                    return fault === "missing report" ? [] : [...reports.values()].filter(row=>row.id === id);
+                }
+
+                if (table === "library_items")
+                    return [...items.values()];
+
+                if (table === "library_feedback")
+                    return [];
+
+                if (table === "library_ratings")
+                    return fault === "unexpected rating" && items.size ? [{item_id:"fixture-item",rating:5}] : [];
+
+                throw new Error(`Unexpected fixture request: ${route}`);
+            },
+            cleanupPublicLibrarySupabaseResults:async results=>{
+                for (const result of results) {
+                    assert.equal(result.item.id,"fixture-item");
+                    items.delete(result.item.id);
+                }
+            },
+            cleanupHostedUploads:async values=>{
+                for (const upload of values)
+                    uploads.delete(upload.fileName);
+            },
+            devCleanupTemporaryPublicHostingCreators:async()=>{creatorCleaned = true;},
+            saveSupabaseSession:()=>{sessionSaved = true;},
+            addMessage:()=>{},
+            scheduleActiveGameSave:()=>{saved = true;},
+            render:()=>{rendered = true;},
+        });
+        const run = p.invoke("devRunSupabaseLiveFeedbackCleanupSmokeTest");
+        if (fault)
+            await assert.rejects(run,fault === "missing report" ? /anonymous feedback report is stored/ : /leave no feedback or rating rows/);
+        else {
+            await run;
+            assert(assertions.some(message=>message.includes("anonymous feedback report is stored")));
+            assert(assertions.some(message=>message.includes("deleted temporary rating, report, and item rows")));
+        }
+
+        assert.equal(reports.size,0,fault);
+        assert.equal(items.size,0,fault);
+        assert.equal(uploads.size,0,fault);
+        assert.deepEqual(plain(p.context.app.publicLibraryLastIndex),originalIndex);
+        assert(creatorCleaned);
+        assert(sessionSaved);
+        assert.equal(saved,!fault);
+        assert.equal(rendered,!fault);
+    }
+});

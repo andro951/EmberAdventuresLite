@@ -3655,10 +3655,6 @@
                         content_url: entry.url,
                     },
                 });
-                await addPublicStoryFeedback(result.entry.id, {
-                    type: "tag_suggestion",
-                    comment: "Live feedback smoke tag suggestion.",
-                });
                 const feedbackRows =
                     (await publicLibraryFetch(
                         `/rest/v1/library_feedback?select=*&item_id=eq.${postgrestValue(result.item.id)}&order=created_at.asc`,
@@ -3673,6 +3669,21 @@
                     (await publicLibraryFetch(
                         `/rest/v1/library_reports?select=id,item_id,reporter_id,reasons&id=eq.${postgrestValue(reportId)}&limit=1`,
                     )) || [];
+                devAssert(
+                    feedbackRows.length === 0 && ratingRows.length === 0,
+                    "rejected self-rating and obsolete report writes leave no feedback or rating rows",
+                    { feedbackRows, ratingRows },
+                );
+                devAssert(
+                    reportRows.length === 1 &&
+                        reportRows[0].id === reportId &&
+                        reportRows[0].item_id === result.item.id &&
+                        reportRows[0].reporter_id === null &&
+                        reportRows[0].reasons?.length === 1 &&
+                        reportRows[0].reasons[0] === "wrong_genre",
+                    "anonymous feedback report is stored in the public report inbox",
+                    { reportRows },
+                );
 
                 const cleanedReportId = reportId;
                 await publicLibraryFetch(
