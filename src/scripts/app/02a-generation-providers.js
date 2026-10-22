@@ -1,6 +1,13 @@
   // Separate preference record leaves the existing strict game/settings schema intact.
   function generationPreferences() {
     if (app.generationPreferences) return app.generationPreferences;
+    const launch = EmberGenerationContract.launchPreferences(window.location.search);
+    if (launch) {
+      // An explicit Hosting Setup link selects both roles for this page only.
+      // The player's stored provider preferences and game data remain untouched.
+      app.generationPreferences = launch;
+      return launch;
+    }
     const stored = localStorage.getItem("emberadventures-lite-generation-v1");
     const value = stored === null ? {text: "perchance", image: "perchance", proxyUrl: "http://127.0.0.1:51840"} : JSON.parse(stored);
     app.generationPreferences = EmberGenerationContract.preferences(value);

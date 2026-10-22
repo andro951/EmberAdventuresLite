@@ -1,5 +1,7 @@
 # Ember Adventures Lite generation hosting
 
+Hosting Setup can open the published game with `?emberHosting=http%3A%2F%2F127.0.0.1%3A51840`. The canonical generation contract validates that loopback origin and selects hosted text and images for this page only, without writing stored preferences. The receiver must be included in the published bottom pane. The local model bridge allows only the exact configured Perchance origins; cloud credentials remain local. A normal visit uses the player's existing provider selections.
+
 This branch connects the **actual game's text queue and image generator** to independently selected providers. Perchance is the default for both. The existing `?localCodexText=1` developer launch still takes precedence for text. No account, paid resource, secret, model download, GPU load or live deployment was created during implementation.
 
 ## Start locally without PowerShell

@@ -28,6 +28,29 @@ test("strict shared boundaries reject unknown fields, credentials and unsafe ima
   assert.throws(() => validateConfig({text:{...chat, apiKey:"secret"},image:disabled()}));
   assert.throws(() => validateConfig({text:{...chat, baseUrl:"https://text.example?api_key=secret"},image:disabled()}));
 });
+
+test("explicit live-site launch selects both hosted roles without changing stored preferences", () => {
+  const saved = {text:"perchance", image:"perchance", proxyUrl:"http://127.0.0.1:51840"};
+  const source = fs.readFileSync(path.join(__dirname,"../src/scripts/app/02a-generation-providers.js"),"utf8");
+  const context = {app:{}, EmberGenerationContract:contract,
+    window:{location:{search:"?emberHosting=http%3A%2F%2F127.0.0.1%3A51840"}},
+    localStorage:{getItem:()=>JSON.stringify(saved),setItem:()=>{throw Error("Launch must not persist preferences");}}};
+  const value = vm.runInNewContext(source+"\ngenerationPreferences();",context);
+  assert.equal(value.text,"hosting-proxy");assert.equal(value.image,"hosting-proxy");
+  assert.equal(value.proxyUrl,"http://127.0.0.1:51840");
+  assert.equal(saved.text,"perchance");
+  context.app={};context.window.location.search="";
+  const normal=vm.runInNewContext(source+"\ngenerationPreferences();",context);
+  assert.equal(normal.text,"perchance");assert.equal(normal.image,"perchance");
+});
+
+test("launch contract refuses duplicates, remote URLs and credentials without Perchance fallback", () => {
+  assert.equal(contract.launchPreferences("?other=value"),null);
+  for(const query of ["?emberHosting=", "?emberHosting=https://remote.example", "?emberHosting=http://secret@127.0.0.1:51840",
+    "?emberHosting=http://127.0.0.1:51840&emberHosting=http://127.0.0.1:51841"]){
+    assert.throws(()=>contract.launchPreferences(query));
+  }
+});
 test("hosted portrait and square defaults validate without changing explicit nondefault dimensions",()=>{
   assert.equal(contract.hostedImageResolution(),"832x1216");
   assert.equal(contract.hostedImageResolution("512x768"),"832x1216");

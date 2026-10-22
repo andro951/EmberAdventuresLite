@@ -20,6 +20,8 @@ This is the living record of project behavior rules that should be preserved whe
 
 ## Startup And State
 
+- Opening an explicit `emberHosting` launch URL selects hosted text and images for that page through the canonical generation contract. It must not persist provider preferences or modify saves; a normal URL uses the player's stored selections. Invalid or duplicate launch parameters must be rejected rather than falling back to Perchance.
+
 - The opening narration is treated as already included in the initial state. It must not be picked up by later state catch-up passes.
 - There should be no state check at the end of new story creation. The new game state was just created and the opening message is already represented by that state.
 - Active game state, chat history, normal images, active profile-image selections/references, and snapshots are saved as one active-game record for the active `save_id`. Profile image history can be shared by the same character across games. Do not split one active game into independently writable save parts.

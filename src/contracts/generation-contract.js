@@ -23,6 +23,12 @@
     proxyUrl(value.proxyUrl);
     return value;
   }
+  function launchPreferences(search) {
+    const params = new URLSearchParams(search);
+    if (!params.has("emberHosting")) return null;
+    if (params.getAll("emberHosting").length !== 1) throw new Error("emberHosting must appear exactly once in the launch URL.");
+    return preferences({text: "hosting-proxy", image: "hosting-proxy", proxyUrl: proxyUrl(params.get("emberHosting"))});
+  }
   const hostedImageDefaults = Object.freeze({portrait: "832x1216", square: "1024x1024"});
   function hostedImageResolution(value = "512x768") {
     // Translate only the game's existing default projections at the hosted boundary.
@@ -57,7 +63,7 @@
     if (role === "text") string(value.text, "response.text"); else imageSource(value.image);
     return value;
   }
-  const api = {exact, string, proxyUrl, preferences, request, response, imageSource, hostedImageDefaults, hostedImageResolution};
+  const api = {exact, string, proxyUrl, preferences, launchPreferences, request, response, imageSource, hostedImageDefaults, hostedImageResolution};
   if (typeof module === "object" && module.exports) module.exports = api;
   else root.EmberGenerationContract = api;
 })(globalThis);
