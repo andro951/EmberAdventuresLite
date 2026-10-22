@@ -1,0 +1,4 @@
+interface:
+  display_name: "EmberAdventuresLite Character"
+  short_description: "Create and validate Lite characters"
+  default_prompt: "Use $emberadventureslite-character to create and validate an importable EmberAdventuresLite character."
